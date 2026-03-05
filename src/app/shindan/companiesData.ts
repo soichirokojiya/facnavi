@@ -40,7 +40,9 @@ const companiesData: Company[] = [
       "飲食業"
     ],
     "overallRating": 4.1,
-    "rankPosition": 1
+    "rankPosition": 1,
+    "soleProprietorOk": false,
+    "weekendPayment": false
   },
   {
     "slug": "betrading",
@@ -81,7 +83,9 @@ const companiesData: Company[] = [
       "卸売業"
     ],
     "overallRating": 4.6,
-    "rankPosition": 2
+    "rankPosition": 2,
+    "soleProprietorOk": false,
+    "weekendPayment": false
   },
   {
     "slug": "olta",
@@ -121,7 +125,9 @@ const companiesData: Company[] = [
       "製造業"
     ],
     "overallRating": 4.7,
-    "rankPosition": 3
+    "rankPosition": 3,
+    "soleProprietorOk": false,
+    "weekendPayment": false
   },
   {
     "slug": "ququmo",
@@ -162,7 +168,9 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 4.3,
-    "rankPosition": 4
+    "rankPosition": 4,
+    "soleProprietorOk": true,
+    "weekendPayment": false
   },
   {
     "slug": "labol",
@@ -203,7 +211,9 @@ const companiesData: Company[] = [
       "ゲーム開発"
     ],
     "overallRating": 3.9,
-    "rankPosition": 5
+    "rankPosition": 5,
+    "soleProprietorOk": false,
+    "weekendPayment": true
   },
   {
     "slug": "freenance",
@@ -244,7 +254,9 @@ const companiesData: Company[] = [
       "デザイナー"
     ],
     "overallRating": 4.3,
-    "rankPosition": 6
+    "rankPosition": 6,
+    "soleProprietorOk": false,
+    "weekendPayment": false
   },
   {
     "slug": "no1",
@@ -284,7 +296,9 @@ const companiesData: Company[] = [
       "製造業"
     ],
     "overallRating": 4,
-    "rankPosition": 7
+    "rankPosition": 7,
+    "soleProprietorOk": false,
+    "weekendPayment": false
   },
   {
     "slug": "goodplus",
@@ -325,7 +339,9 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 4.1,
-    "rankPosition": 8
+    "rankPosition": 8,
+    "soleProprietorOk": false,
+    "weekendPayment": true
   },
   {
     "slug": "msfj",
@@ -366,7 +382,9 @@ const companiesData: Company[] = [
       "卸売業"
     ],
     "overallRating": 4.2,
-    "rankPosition": 9
+    "rankPosition": 9,
+    "soleProprietorOk": false,
+    "weekendPayment": false
   },
   {
     "slug": "best-factor",
@@ -407,7 +425,9 @@ const companiesData: Company[] = [
       "医療・介護"
     ],
     "overallRating": 4.5,
-    "rankPosition": 10
+    "rankPosition": 10,
+    "soleProprietorOk": true,
+    "weekendPayment": false
   },
   {
     "slug": "kaisoku",
@@ -448,7 +468,9 @@ const companiesData: Company[] = [
       "飲食業"
     ],
     "overallRating": 4.2,
-    "rankPosition": 11
+    "rankPosition": 11,
+    "soleProprietorOk": false,
+    "weekendPayment": false
   },
   {
     "slug": "top-management",
@@ -489,7 +511,9 @@ const companiesData: Company[] = [
       "人材派遣"
     ],
     "overallRating": 4.2,
-    "rankPosition": 12
+    "rankPosition": 12,
+    "soleProprietorOk": false,
+    "weekendPayment": false
   },
   {
     "slug": "ace-trust",
@@ -530,7 +554,9 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 4,
-    "rankPosition": 13
+    "rankPosition": 13,
+    "soleProprietorOk": true,
+    "weekendPayment": false
   },
   {
     "slug": "ad-planning",
@@ -571,7 +597,9 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 4,
-    "rankPosition": 14
+    "rankPosition": 14,
+    "soleProprietorOk": false,
+    "weekendPayment": false
   },
   {
     "slug": "sankyo-service",
@@ -612,7 +640,9 @@ const companiesData: Company[] = [
       "人材派遣"
     ],
     "overallRating": 4,
-    "rankPosition": 15
+    "rankPosition": 15,
+    "soleProprietorOk": false,
+    "weekendPayment": false
   },
   {
     "slug": "act-will",
@@ -653,7 +683,9 @@ const companiesData: Company[] = [
       "卸売業"
     ],
     "overallRating": 3.9,
-    "rankPosition": 16
+    "rankPosition": 16,
+    "soleProprietorOk": false,
+    "weekendPayment": false
   },
   {
     "slug": "factoring-zero",
@@ -694,7 +726,9 @@ const companiesData: Company[] = [
       "小売業"
     ],
     "overallRating": 3.9,
-    "rankPosition": 17
+    "rankPosition": 17,
+    "soleProprietorOk": false,
+    "weekendPayment": false
   },
   {
     "slug": "nishi-nihon-factor",
@@ -735,7 +769,9 @@ const companiesData: Company[] = [
       "小売業"
     ],
     "overallRating": 3.9,
-    "rankPosition": 18
+    "rankPosition": 18,
+    "soleProprietorOk": false,
+    "weekendPayment": false
   },
   {
     "slug": "factorplan",
@@ -776,7 +812,9 @@ const companiesData: Company[] = [
       "製造業"
     ],
     "overallRating": 3.8,
-    "rankPosition": 19
+    "rankPosition": 19,
+    "soleProprietorOk": false,
+    "weekendPayment": false
   },
   {
     "slug": "japan-management",
@@ -817,7 +855,9 @@ const companiesData: Company[] = [
       "飲食業"
     ],
     "overallRating": 3.8,
-    "rankPosition": 20
+    "rankPosition": 20,
+    "soleProprietorOk": false,
+    "weekendPayment": true
   },
   {
     "slug": "next-one",
@@ -858,7 +898,9 @@ const companiesData: Company[] = [
       "土木業"
     ],
     "overallRating": 3.8,
-    "rankPosition": 21
+    "rankPosition": 21,
+    "soleProprietorOk": false,
+    "weekendPayment": false
   },
   {
     "slug": "trust-gateway",
@@ -899,7 +941,9 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.8,
-    "rankPosition": 22
+    "rankPosition": 22,
+    "soleProprietorOk": false,
+    "weekendPayment": false
   },
   {
     "slug": "urikakedo",
@@ -940,7 +984,9 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.8,
-    "rankPosition": 23
+    "rankPosition": 23,
+    "soleProprietorOk": true,
+    "weekendPayment": false
   },
   {
     "slug": "ennavi",
@@ -981,7 +1027,9 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.7,
-    "rankPosition": 24
+    "rankPosition": 24,
+    "soleProprietorOk": false,
+    "weekendPayment": true
   },
   {
     "slug": "factoring-try",
@@ -1022,7 +1070,9 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.7,
-    "rankPosition": 25
+    "rankPosition": 25,
+    "soleProprietorOk": false,
+    "weekendPayment": true
   },
   {
     "slug": "kyoei-support",
@@ -1062,7 +1112,9 @@ const companiesData: Company[] = [
       "IT・Web"
     ],
     "overallRating": 3.7,
-    "rankPosition": 26
+    "rankPosition": 26,
+    "soleProprietorOk": false,
+    "weekendPayment": false
   },
   {
     "slug": "jps-factoring",
@@ -1102,7 +1154,9 @@ const companiesData: Company[] = [
       "卸売業"
     ],
     "overallRating": 3.6,
-    "rankPosition": 27
+    "rankPosition": 27,
+    "soleProprietorOk": false,
+    "weekendPayment": false
   },
   {
     "slug": "axia-plus",
@@ -1143,7 +1197,9 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.4,
-    "rankPosition": 28
+    "rankPosition": 28,
+    "soleProprietorOk": true,
+    "weekendPayment": false
   },
   {
     "slug": "3s-factoring",
@@ -1184,7 +1240,9 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.3,
-    "rankPosition": 29
+    "rankPosition": 29,
+    "soleProprietorOk": true,
+    "weekendPayment": false
   },
   {
     "slug": "active-support",
@@ -1225,7 +1283,9 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.3,
-    "rankPosition": 30
+    "rankPosition": 30,
+    "soleProprietorOk": true,
+    "weekendPayment": false
   },
   {
     "slug": "paybridge",
@@ -1266,7 +1326,9 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.3,
-    "rankPosition": 31
+    "rankPosition": 31,
+    "soleProprietorOk": true,
+    "weekendPayment": false
   },
   {
     "slug": "urikakekin-pay",
@@ -1307,7 +1369,9 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.3,
-    "rankPosition": 32
+    "rankPosition": 32,
+    "soleProprietorOk": true,
+    "weekendPayment": false
   },
   {
     "slug": "bitresy",
@@ -1348,7 +1412,9 @@ const companiesData: Company[] = [
       "人材派遣業"
     ],
     "overallRating": 4.6,
-    "rankPosition": 33
+    "rankPosition": 33,
+    "soleProprietorOk": false,
+    "weekendPayment": false
   },
   {
     "slug": "ag-business",
@@ -1389,7 +1455,9 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 4.4,
-    "rankPosition": 34
+    "rankPosition": 34,
+    "soleProprietorOk": false,
+    "weekendPayment": false
   },
   {
     "slug": "japan-maison",
@@ -1430,7 +1498,9 @@ const companiesData: Company[] = [
       "小売業"
     ],
     "overallRating": 4.4,
-    "rankPosition": 35
+    "rankPosition": 35,
+    "soleProprietorOk": false,
+    "weekendPayment": false
   },
   {
     "slug": "accel-factor",
@@ -1471,7 +1541,9 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 4.3,
-    "rankPosition": 36
+    "rankPosition": 36,
+    "soleProprietorOk": false,
+    "weekendPayment": false
   },
   {
     "slug": "mizuho-factor",
@@ -1511,7 +1583,9 @@ const companiesData: Company[] = [
       "大企業"
     ],
     "overallRating": 4.3,
-    "rankPosition": 37
+    "rankPosition": 37,
+    "soleProprietorOk": false,
+    "weekendPayment": false
   },
   {
     "slug": "mufg-factor",
@@ -1551,7 +1625,9 @@ const companiesData: Company[] = [
       "大企業"
     ],
     "overallRating": 4.3,
-    "rankPosition": 38
+    "rankPosition": 38,
+    "soleProprietorOk": false,
+    "weekendPayment": false
   },
   {
     "slug": "pay-today",
@@ -1591,7 +1667,9 @@ const companiesData: Company[] = [
       "広告・メディア"
     ],
     "overallRating": 4.3,
-    "rankPosition": 39
+    "rankPosition": 39,
+    "soleProprietorOk": false,
+    "weekendPayment": false
   },
   {
     "slug": "anew",
@@ -1632,7 +1710,9 @@ const companiesData: Company[] = [
       "広告業"
     ],
     "overallRating": 4.2,
-    "rankPosition": 40
+    "rankPosition": 40,
+    "soleProprietorOk": false,
+    "weekendPayment": false
   },
   {
     "slug": "gmo-btob",
@@ -1673,7 +1753,9 @@ const companiesData: Company[] = [
       "運送業"
     ],
     "overallRating": 4.2,
-    "rankPosition": 41
+    "rankPosition": 41,
+    "soleProprietorOk": false,
+    "weekendPayment": false
   },
   {
     "slug": "mf-early-payment",
@@ -1714,7 +1796,9 @@ const companiesData: Company[] = [
       "広告業"
     ],
     "overallRating": 4.2,
-    "rankPosition": 42
+    "rankPosition": 42,
+    "soleProprietorOk": false,
+    "weekendPayment": false
   },
   {
     "slug": "chusho-support",
@@ -1755,7 +1839,9 @@ const companiesData: Company[] = [
       "小売業"
     ],
     "overallRating": 4.1,
-    "rankPosition": 43
+    "rankPosition": 43,
+    "soleProprietorOk": false,
+    "weekendPayment": false
   },
   {
     "slug": "mentor-capital",
@@ -1796,7 +1882,9 @@ const companiesData: Company[] = [
       "人材派遣業"
     ],
     "overallRating": 4.1,
-    "rankPosition": 44
+    "rankPosition": 44,
+    "soleProprietorOk": false,
+    "weekendPayment": false
   },
   {
     "slug": "pmg",
@@ -1837,7 +1925,9 @@ const companiesData: Company[] = [
       "人材派遣"
     ],
     "overallRating": 4.1,
-    "rankPosition": 45
+    "rankPosition": 45,
+    "soleProprietorOk": false,
+    "weekendPayment": false
   },
   {
     "slug": "quartett",
@@ -1877,7 +1967,9 @@ const companiesData: Company[] = [
       "小売業"
     ],
     "overallRating": 4.1,
-    "rankPosition": 46
+    "rankPosition": 46,
+    "soleProprietorOk": true,
+    "weekendPayment": false
   },
   {
     "slug": "sbi-factoring",
@@ -1918,7 +2010,9 @@ const companiesData: Company[] = [
       "建設業"
     ],
     "overallRating": 4.1,
-    "rankPosition": 47
+    "rankPosition": 47,
+    "soleProprietorOk": false,
+    "weekendPayment": false
   },
   {
     "slug": "accretive",
@@ -1959,7 +2053,9 @@ const companiesData: Company[] = [
       "介護施設"
     ],
     "overallRating": 4,
-    "rankPosition": 48
+    "rankPosition": 48,
+    "soleProprietorOk": false,
+    "weekendPayment": false
   },
   {
     "slug": "factoru",
@@ -2000,7 +2096,9 @@ const companiesData: Company[] = [
       "医療・介護"
     ],
     "overallRating": 4,
-    "rankPosition": 49
+    "rankPosition": 49,
+    "soleProprietorOk": false,
+    "weekendPayment": false
   },
   {
     "slug": "jigyou-agent",
@@ -2041,7 +2139,9 @@ const companiesData: Company[] = [
       "医療・介護"
     ],
     "overallRating": 4,
-    "rankPosition": 50
+    "rankPosition": 50,
+    "soleProprietorOk": false,
+    "weekendPayment": false
   },
   {
     "slug": "jtc",
@@ -2082,7 +2182,9 @@ const companiesData: Company[] = [
       "医療・介護"
     ],
     "overallRating": 4,
-    "rankPosition": 51
+    "rankPosition": 51,
+    "soleProprietorOk": false,
+    "weekendPayment": false
   },
   {
     "slug": "kkt",
@@ -2123,7 +2225,9 @@ const companiesData: Company[] = [
       "卸売業"
     ],
     "overallRating": 4,
-    "rankPosition": 52
+    "rankPosition": 52,
+    "soleProprietorOk": false,
+    "weekendPayment": false
   },
   {
     "slug": "shikin-quick",
@@ -2164,7 +2268,9 @@ const companiesData: Company[] = [
       "飲食業"
     ],
     "overallRating": 4,
-    "rankPosition": 53
+    "rankPosition": 53,
+    "soleProprietorOk": true,
+    "weekendPayment": false
   },
   {
     "slug": "trusfort",
@@ -2205,7 +2311,9 @@ const companiesData: Company[] = [
       "飲食業"
     ],
     "overallRating": 4,
-    "rankPosition": 54
+    "rankPosition": 54,
+    "soleProprietorOk": true,
+    "weekendPayment": false
   },
   {
     "slug": "finto",
@@ -2246,7 +2354,9 @@ const companiesData: Company[] = [
       "広告業"
     ],
     "overallRating": 3.9,
-    "rankPosition": 55
+    "rankPosition": 55,
+    "soleProprietorOk": false,
+    "weekendPayment": false
   },
   {
     "slug": "invoice-pay",
@@ -2287,7 +2397,9 @@ const companiesData: Company[] = [
       "製造業"
     ],
     "overallRating": 3.9,
-    "rankPosition": 56
+    "rankPosition": 56,
+    "soleProprietorOk": false,
+    "weekendPayment": false
   },
   {
     "slug": "kensetsukun",
@@ -2325,7 +2437,9 @@ const companiesData: Company[] = [
       "土木業"
     ],
     "overallRating": 3.9,
-    "rankPosition": 57
+    "rankPosition": 57,
+    "soleProprietorOk": true,
+    "weekendPayment": false
   },
   {
     "slug": "norikae-plus",
@@ -2366,7 +2480,9 @@ const companiesData: Company[] = [
       "医療・介護"
     ],
     "overallRating": 3.9,
-    "rankPosition": 58
+    "rankPosition": 58,
+    "soleProprietorOk": false,
+    "weekendPayment": false
   },
   {
     "slug": "quick-management",
@@ -2406,7 +2522,9 @@ const companiesData: Company[] = [
       "広告・メディア"
     ],
     "overallRating": 3.9,
-    "rankPosition": 59
+    "rankPosition": 59,
+    "soleProprietorOk": false,
+    "weekendPayment": false
   },
   {
     "slug": "soreiyu",
@@ -2447,7 +2565,9 @@ const companiesData: Company[] = [
       "飲食業"
     ],
     "overallRating": 3.9,
-    "rankPosition": 60
+    "rankPosition": 60,
+    "soleProprietorOk": true,
+    "weekendPayment": false
   },
   {
     "slug": "zero-factoring",
@@ -2488,7 +2608,9 @@ const companiesData: Company[] = [
       "飲食業"
     ],
     "overallRating": 3.9,
-    "rankPosition": 61
+    "rankPosition": 61,
+    "soleProprietorOk": true,
+    "weekendPayment": false
   },
   {
     "slug": "anchor-guardian",
@@ -2529,7 +2651,9 @@ const companiesData: Company[] = [
       "飲食業"
     ],
     "overallRating": 3.8,
-    "rankPosition": 62
+    "rankPosition": 62,
+    "soleProprietorOk": false,
+    "weekendPayment": false
   },
   {
     "slug": "bestpay",
@@ -2570,7 +2694,9 @@ const companiesData: Company[] = [
       "広告業"
     ],
     "overallRating": 3.8,
-    "rankPosition": 63
+    "rankPosition": 63,
+    "soleProprietorOk": false,
+    "weekendPayment": false
   },
   {
     "slug": "ja-mitsui-lease",
@@ -2612,7 +2738,9 @@ const companiesData: Company[] = [
       "運送業"
     ],
     "overallRating": 3.8,
-    "rankPosition": 64
+    "rankPosition": 64,
+    "soleProprietorOk": false,
+    "weekendPayment": false
   },
   {
     "slug": "japanfactor",
@@ -2653,7 +2781,9 @@ const companiesData: Company[] = [
       "製造業"
     ],
     "overallRating": 3.8,
-    "rankPosition": 65
+    "rankPosition": 65,
+    "soleProprietorOk": true,
+    "weekendPayment": false
   },
   {
     "slug": "onebank",
@@ -2694,7 +2824,9 @@ const companiesData: Company[] = [
       "飲食業"
     ],
     "overallRating": 3.8,
-    "rankPosition": 66
+    "rankPosition": 66,
+    "soleProprietorOk": false,
+    "weekendPayment": false
   },
   {
     "slug": "orix-factoring",
@@ -2736,7 +2868,9 @@ const companiesData: Company[] = [
       "運送業"
     ],
     "overallRating": 3.8,
-    "rankPosition": 67
+    "rankPosition": 67,
+    "soleProprietorOk": false,
+    "weekendPayment": false
   },
   {
     "slug": "sokumu",
@@ -2776,7 +2910,9 @@ const companiesData: Company[] = [
       "小売業"
     ],
     "overallRating": 3.8,
-    "rankPosition": 68
+    "rankPosition": 68,
+    "soleProprietorOk": false,
+    "weekendPayment": false
   },
   {
     "slug": "trapay",
@@ -2816,7 +2952,9 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.8,
-    "rankPosition": 69
+    "rankPosition": 69,
+    "soleProprietorOk": false,
+    "weekendPayment": false
   },
   {
     "slug": "bion",
@@ -2857,7 +2995,9 @@ const companiesData: Company[] = [
       "飲食業"
     ],
     "overallRating": 3.7,
-    "rankPosition": 70
+    "rankPosition": 70,
+    "soleProprietorOk": false,
+    "weekendPayment": false
   },
   {
     "slug": "fukuoka-factoring",
@@ -2898,7 +3038,9 @@ const companiesData: Company[] = [
       "小売業"
     ],
     "overallRating": 3.7,
-    "rankPosition": 71
+    "rankPosition": 71,
+    "soleProprietorOk": true,
+    "weekendPayment": false
   },
   {
     "slug": "minnano-factoring",
@@ -2938,7 +3080,9 @@ const companiesData: Company[] = [
       "飲食業"
     ],
     "overallRating": 3.7,
-    "rankPosition": 72
+    "rankPosition": 72,
+    "soleProprietorOk": true,
+    "weekendPayment": false
   },
   {
     "slug": "ntt-finance",
@@ -2980,7 +3124,9 @@ const companiesData: Company[] = [
       "建設業"
     ],
     "overallRating": 3.7,
-    "rankPosition": 73
+    "rankPosition": 73,
+    "soleProprietorOk": false,
+    "weekendPayment": false
   },
   {
     "slug": "otti",
@@ -3021,7 +3167,9 @@ const companiesData: Company[] = [
       "飲食業"
     ],
     "overallRating": 3.7,
-    "rankPosition": 74
+    "rankPosition": 74,
+    "soleProprietorOk": true,
+    "weekendPayment": false
   },
   {
     "slug": "shikin-pay",
@@ -3061,7 +3209,9 @@ const companiesData: Company[] = [
       "小売業"
     ],
     "overallRating": 3.7,
-    "rankPosition": 75
+    "rankPosition": 75,
+    "soleProprietorOk": true,
+    "weekendPayment": false
   },
   {
     "slug": "smbc-fs",
@@ -3102,7 +3252,9 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.7,
-    "rankPosition": 76
+    "rankPosition": 76,
+    "soleProprietorOk": false,
+    "weekendPayment": false
   },
   {
     "slug": "smfl",
@@ -3143,7 +3295,9 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.7,
-    "rankPosition": 77
+    "rankPosition": 77,
+    "soleProprietorOk": false,
+    "weekendPayment": false
   },
   {
     "slug": "tokyo-century",
@@ -3184,7 +3338,9 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.7,
-    "rankPosition": 78
+    "rankPosition": 78,
+    "soleProprietorOk": false,
+    "weekendPayment": false
   },
   {
     "slug": "vistia",
@@ -3225,7 +3381,9 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.7,
-    "rankPosition": 79
+    "rankPosition": 79,
+    "soleProprietorOk": false,
+    "weekendPayment": false
   },
   {
     "slug": "factoring-japan",
@@ -3266,7 +3424,9 @@ const companiesData: Company[] = [
       "卸売業"
     ],
     "overallRating": 3.6,
-    "rankPosition": 80
+    "rankPosition": 80,
+    "soleProprietorOk": false,
+    "weekendPayment": false
   },
   {
     "slug": "jfs",
@@ -3307,7 +3467,9 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.6,
-    "rankPosition": 81
+    "rankPosition": 81,
+    "soleProprietorOk": false,
+    "weekendPayment": false
   },
   {
     "slug": "kaipoke-early",
@@ -3344,7 +3506,9 @@ const companiesData: Company[] = [
       "医療・介護"
     ],
     "overallRating": 3.6,
-    "rankPosition": 82
+    "rankPosition": 82,
+    "soleProprietorOk": false,
+    "weekendPayment": false
   },
   {
     "slug": "nec-capital",
@@ -3385,7 +3549,9 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.6,
-    "rankPosition": 83
+    "rankPosition": 83,
+    "soleProprietorOk": false,
+    "weekendPayment": false
   },
   {
     "slug": "ntt-tc-lease",
@@ -3426,7 +3592,9 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.6,
-    "rankPosition": 84
+    "rankPosition": 84,
+    "soleProprietorOk": false,
+    "weekendPayment": false
   },
   {
     "slug": "paypal-biz-loan",
@@ -3467,7 +3635,9 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.6,
-    "rankPosition": 85
+    "rankPosition": 85,
+    "soleProprietorOk": true,
+    "weekendPayment": false
   },
   {
     "slug": "s-factoring",
@@ -3507,7 +3677,9 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.6,
-    "rankPosition": 86
+    "rankPosition": 86,
+    "soleProprietorOk": true,
+    "weekendPayment": false
   },
   {
     "slug": "saison-invoice",
@@ -3548,7 +3720,9 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.6,
-    "rankPosition": 87
+    "rankPosition": 87,
+    "soleProprietorOk": false,
+    "weekendPayment": false
   },
   {
     "slug": "saison-medical",
@@ -3585,7 +3759,9 @@ const companiesData: Company[] = [
       "医療・介護"
     ],
     "overallRating": 3.6,
-    "rankPosition": 88
+    "rankPosition": 88,
+    "soleProprietorOk": false,
+    "weekendPayment": false
   },
   {
     "slug": "showa-lease",
@@ -3626,7 +3802,9 @@ const companiesData: Company[] = [
       "運送業"
     ],
     "overallRating": 3.6,
-    "rankPosition": 89
+    "rankPosition": 89,
+    "soleProprietorOk": false,
+    "weekendPayment": false
   },
   {
     "slug": "tokyo-spc",
@@ -3667,7 +3845,9 @@ const companiesData: Company[] = [
       "不動産業"
     ],
     "overallRating": 3.6,
-    "rankPosition": 90
+    "rankPosition": 90,
+    "soleProprietorOk": false,
+    "weekendPayment": false
   },
   {
     "slug": "witt",
@@ -3708,7 +3888,9 @@ const companiesData: Company[] = [
       "建設業"
     ],
     "overallRating": 3.6,
-    "rankPosition": 91
+    "rankPosition": 91,
+    "soleProprietorOk": true,
+    "weekendPayment": false
   },
   {
     "slug": "alpharia",
@@ -3749,7 +3931,9 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.5,
-    "rankPosition": 92
+    "rankPosition": 92,
+    "soleProprietorOk": true,
+    "weekendPayment": false
   },
   {
     "slug": "besus",
@@ -3790,7 +3974,9 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.5,
-    "rankPosition": 93
+    "rankPosition": 93,
+    "soleProprietorOk": true,
+    "weekendPayment": false
   },
   {
     "slug": "chatwork-sakibarai",
@@ -3831,7 +4017,9 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.5,
-    "rankPosition": 94
+    "rankPosition": 94,
+    "soleProprietorOk": false,
+    "weekendPayment": false
   },
   {
     "slug": "cool-pay",
@@ -3872,7 +4060,9 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.5,
-    "rankPosition": 95
+    "rankPosition": 95,
+    "soleProprietorOk": true,
+    "weekendPayment": false
   },
   {
     "slug": "cool-services",
@@ -3913,7 +4103,9 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.5,
-    "rankPosition": 96
+    "rankPosition": 96,
+    "soleProprietorOk": true,
+    "weekendPayment": false
   },
   {
     "slug": "crayfish",
@@ -3954,7 +4146,9 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.5,
-    "rankPosition": 97
+    "rankPosition": 97,
+    "soleProprietorOk": false,
+    "weekendPayment": false
   },
   {
     "slug": "denshi-hayabarai",
@@ -3995,7 +4189,9 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.5,
-    "rankPosition": 98
+    "rankPosition": 98,
+    "soleProprietorOk": false,
+    "weekendPayment": false
   },
   {
     "slug": "facnet",
@@ -4036,7 +4232,9 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.5,
-    "rankPosition": 99
+    "rankPosition": 99,
+    "soleProprietorOk": true,
+    "weekendPayment": false
   },
   {
     "slug": "factor-com",
@@ -4077,7 +4275,9 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.5,
-    "rankPosition": 100
+    "rankPosition": 100,
+    "soleProprietorOk": true,
+    "weekendPayment": false
   },
   {
     "slug": "factoring-pro",
@@ -4118,7 +4318,9 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.5,
-    "rankPosition": 101
+    "rankPosition": 101,
+    "soleProprietorOk": true,
+    "weekendPayment": false
   },
   {
     "slug": "fps-medical",
@@ -4155,7 +4357,9 @@ const companiesData: Company[] = [
       "医療・介護"
     ],
     "overallRating": 3.5,
-    "rankPosition": 102
+    "rankPosition": 102,
+    "soleProprietorOk": false,
+    "weekendPayment": false
   },
   {
     "slug": "fukuoka-bank-ep",
@@ -4196,7 +4400,9 @@ const companiesData: Company[] = [
       "小売業"
     ],
     "overallRating": 3.5,
-    "rankPosition": 103
+    "rankPosition": 103,
+    "soleProprietorOk": false,
+    "weekendPayment": false
   },
   {
     "slug": "hamagin-finance",
@@ -4237,7 +4443,9 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.5,
-    "rankPosition": 104
+    "rankPosition": 104,
+    "soleProprietorOk": false,
+    "weekendPayment": false
   },
   {
     "slug": "j-cloud",
@@ -4278,7 +4486,9 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.5,
-    "rankPosition": 105
+    "rankPosition": 105,
+    "soleProprietorOk": true,
+    "weekendPayment": false
   },
   {
     "slug": "kensetsu-keiei",
@@ -4315,7 +4525,9 @@ const companiesData: Company[] = [
       "建設業"
     ],
     "overallRating": 3.5,
-    "rankPosition": 106
+    "rankPosition": 106,
+    "soleProprietorOk": true,
+    "weekendPayment": false
   },
   {
     "slug": "linx-japan",
@@ -4356,7 +4568,9 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.5,
-    "rankPosition": 107
+    "rankPosition": 107,
+    "soleProprietorOk": true,
+    "weekendPayment": false
   },
   {
     "slug": "medley-fs",
@@ -4393,7 +4607,9 @@ const companiesData: Company[] = [
       "医療・介護"
     ],
     "overallRating": 3.5,
-    "rankPosition": 108
+    "rankPosition": 108,
+    "soleProprietorOk": false,
+    "weekendPayment": false
   },
   {
     "slug": "mita-securities",
@@ -4434,7 +4650,9 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.5,
-    "rankPosition": 109
+    "rankPosition": 109,
+    "soleProprietorOk": false,
+    "weekendPayment": false
   },
   {
     "slug": "nx-capital",
@@ -4475,7 +4693,9 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.5,
-    "rankPosition": 110
+    "rankPosition": 110,
+    "soleProprietorOk": false,
+    "weekendPayment": false
   },
   {
     "slug": "onfact",
@@ -4516,7 +4736,9 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.5,
-    "rankPosition": 111
+    "rankPosition": 111,
+    "soleProprietorOk": true,
+    "weekendPayment": false
   },
   {
     "slug": "prosper-consulting",
@@ -4557,7 +4779,9 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.5,
-    "rankPosition": 112
+    "rankPosition": 112,
+    "soleProprietorOk": false,
+    "weekendPayment": false
   },
   {
     "slug": "resona-ks",
@@ -4598,7 +4822,9 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.5,
-    "rankPosition": 113
+    "rankPosition": 113,
+    "soleProprietorOk": false,
+    "weekendPayment": false
   },
   {
     "slug": "rico-lease",
@@ -4638,7 +4864,9 @@ const companiesData: Company[] = [
       "卸売業"
     ],
     "overallRating": 3.5,
-    "rankPosition": 114
+    "rankPosition": 114,
+    "soleProprietorOk": false,
+    "weekendPayment": false
   },
   {
     "slug": "seino-financial",
@@ -4677,7 +4905,9 @@ const companiesData: Company[] = [
       "製造業"
     ],
     "overallRating": 3.5,
-    "rankPosition": 115
+    "rankPosition": 115,
+    "soleProprietorOk": false,
+    "weekendPayment": false
   },
   {
     "slug": "smart-factor",
@@ -4718,7 +4948,9 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.5,
-    "rankPosition": 116
+    "rankPosition": 116,
+    "soleProprietorOk": true,
+    "weekendPayment": false
   },
   {
     "slug": "sokula",
@@ -4759,7 +4991,9 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.5,
-    "rankPosition": 117
+    "rankPosition": 117,
+    "soleProprietorOk": true,
+    "weekendPayment": false
   },
   {
     "slug": "techpay",
@@ -4800,7 +5034,9 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.5,
-    "rankPosition": 118
+    "rankPosition": 118,
+    "soleProprietorOk": true,
+    "weekendPayment": false
   },
   {
     "slug": "transaction-finance",
@@ -4841,7 +5077,9 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.5,
-    "rankPosition": 119
+    "rankPosition": 119,
+    "soleProprietorOk": true,
+    "weekendPayment": false
   },
   {
     "slug": "tranzax",
@@ -4882,7 +5120,9 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.5,
-    "rankPosition": 120
+    "rankPosition": 120,
+    "soleProprietorOk": false,
+    "weekendPayment": false
   },
   {
     "slug": "yamato-credit",
@@ -4923,7 +5163,9 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.5,
-    "rankPosition": 121
+    "rankPosition": 121,
+    "soleProprietorOk": false,
+    "weekendPayment": false
   },
   {
     "slug": "zaimu-saisei",
@@ -4964,7 +5206,9 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.5,
-    "rankPosition": 122
+    "rankPosition": 122,
+    "soleProprietorOk": false,
+    "weekendPayment": false
   },
   {
     "slug": "zaizen-group",
@@ -5005,7 +5249,9 @@ const companiesData: Company[] = [
       "飲食業"
     ],
     "overallRating": 3.5,
-    "rankPosition": 123
+    "rankPosition": 123,
+    "soleProprietorOk": true,
+    "weekendPayment": false
   },
   {
     "slug": "zerofac",
@@ -5046,7 +5292,9 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.5,
-    "rankPosition": 124
+    "rankPosition": 124,
+    "soleProprietorOk": true,
+    "weekendPayment": false
   },
   {
     "slug": "animo",
@@ -5087,7 +5335,9 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.4,
-    "rankPosition": 125
+    "rankPosition": 125,
+    "soleProprietorOk": true,
+    "weekendPayment": false
   },
   {
     "slug": "archier",
@@ -5128,7 +5378,9 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.4,
-    "rankPosition": 126
+    "rankPosition": 126,
+    "soleProprietorOk": true,
+    "weekendPayment": false
   },
   {
     "slug": "atest-capital",
@@ -5169,7 +5421,9 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.4,
-    "rankPosition": 127
+    "rankPosition": 127,
+    "soleProprietorOk": true,
+    "weekendPayment": false
   },
   {
     "slug": "biz-partner",
@@ -5210,7 +5464,9 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.4,
-    "rankPosition": 128
+    "rankPosition": 128,
+    "soleProprietorOk": true,
+    "weekendPayment": false
   },
   {
     "slug": "business-assist",
@@ -5251,7 +5507,9 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.4,
-    "rankPosition": 129
+    "rankPosition": 129,
+    "soleProprietorOk": true,
+    "weekendPayment": false
   },
   {
     "slug": "buy-factor",
@@ -5292,7 +5550,9 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.4,
-    "rankPosition": 130
+    "rankPosition": 130,
+    "soleProprietorOk": true,
+    "weekendPayment": false
   },
   {
     "slug": "cb-factor",
@@ -5333,7 +5593,9 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.4,
-    "rankPosition": 131
+    "rankPosition": 131,
+    "soleProprietorOk": true,
+    "weekendPayment": false
   },
   {
     "slug": "central-medience",
@@ -5370,7 +5632,9 @@ const companiesData: Company[] = [
       "医療・介護"
     ],
     "overallRating": 3.4,
-    "rankPosition": 132
+    "rankPosition": 132,
+    "soleProprietorOk": false,
+    "weekendPayment": false
   },
   {
     "slug": "cs-planning",
@@ -5411,7 +5675,9 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.4,
-    "rankPosition": 133
+    "rankPosition": 133,
+    "soleProprietorOk": true,
+    "weekendPayment": false
   },
   {
     "slug": "denfac",
@@ -5452,7 +5718,9 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.4,
-    "rankPosition": 134
+    "rankPosition": 134,
+    "soleProprietorOk": true,
+    "weekendPayment": false
   },
   {
     "slug": "dmc-factoring",
@@ -5493,7 +5761,9 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.4,
-    "rankPosition": 135
+    "rankPosition": 135,
+    "soleProprietorOk": true,
+    "weekendPayment": false
   },
   {
     "slug": "dokenkun",
@@ -5530,7 +5800,9 @@ const companiesData: Company[] = [
       "建設業"
     ],
     "overallRating": 3.4,
-    "rankPosition": 136
+    "rankPosition": 136,
+    "soleProprietorOk": true,
+    "weekendPayment": false
   },
   {
     "slug": "e-bank",
@@ -5571,7 +5843,9 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.4,
-    "rankPosition": 137
+    "rankPosition": 137,
+    "soleProprietorOk": true,
+    "weekendPayment": false
   },
   {
     "slug": "easy-factor",
@@ -5612,7 +5886,9 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.4,
-    "rankPosition": 138
+    "rankPosition": 138,
+    "soleProprietorOk": true,
+    "weekendPayment": false
   },
   {
     "slug": "efc-express",
@@ -5653,7 +5929,9 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.4,
-    "rankPosition": 139
+    "rankPosition": 139,
+    "soleProprietorOk": true,
+    "weekendPayment": false
   },
   {
     "slug": "elnest",
@@ -5694,7 +5972,9 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.4,
-    "rankPosition": 140
+    "rankPosition": 140,
+    "soleProprietorOk": true,
+    "weekendPayment": false
   },
   {
     "slug": "enable-factoring",
@@ -5735,7 +6015,9 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.4,
-    "rankPosition": 141
+    "rankPosition": 141,
+    "soleProprietorOk": true,
+    "weekendPayment": false
   },
   {
     "slug": "factbank",
@@ -5776,7 +6058,9 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.4,
-    "rankPosition": 142
+    "rankPosition": 142,
+    "soleProprietorOk": false,
+    "weekendPayment": false
   },
   {
     "slug": "factoring-gold",
@@ -5817,7 +6101,9 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.4,
-    "rankPosition": 143
+    "rankPosition": 143,
+    "soleProprietorOk": true,
+    "weekendPayment": false
   },
   {
     "slug": "factoring-north",
@@ -5858,7 +6144,9 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.4,
-    "rankPosition": 144
+    "rankPosition": 144,
+    "soleProprietorOk": true,
+    "weekendPayment": false
   },
   {
     "slug": "factoring-tokyo",
@@ -5899,7 +6187,9 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.4,
-    "rankPosition": 145
+    "rankPosition": 145,
+    "soleProprietorOk": true,
+    "weekendPayment": false
   },
   {
     "slug": "factors",
@@ -5940,7 +6230,9 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.4,
-    "rankPosition": 146
+    "rankPosition": 146,
+    "soleProprietorOk": true,
+    "weekendPayment": false
   },
   {
     "slug": "fakutarikun",
@@ -5981,7 +6273,9 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.4,
-    "rankPosition": 147
+    "rankPosition": 147,
+    "soleProprietorOk": true,
+    "weekendPayment": false
   },
   {
     "slug": "fast-factoring",
@@ -6022,7 +6316,9 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.4,
-    "rankPosition": 148
+    "rankPosition": 148,
+    "soleProprietorOk": true,
+    "weekendPayment": false
   },
   {
     "slug": "finding-labo",
@@ -6063,7 +6359,9 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.4,
-    "rankPosition": 149
+    "rankPosition": 149,
+    "soleProprietorOk": true,
+    "weekendPayment": false
   },
   {
     "slug": "finfin",
@@ -6104,7 +6402,9 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.4,
-    "rankPosition": 150
+    "rankPosition": 150,
+    "soleProprietorOk": true,
+    "weekendPayment": false
   },
   {
     "slug": "fk-management",
@@ -6145,7 +6445,9 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.4,
-    "rankPosition": 151
+    "rankPosition": 151,
+    "soleProprietorOk": true,
+    "weekendPayment": false
   },
   {
     "slug": "fortune-partners",
@@ -6186,7 +6488,9 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.4,
-    "rankPosition": 152
+    "rankPosition": 152,
+    "soleProprietorOk": true,
+    "weekendPayment": false
   },
   {
     "slug": "healthee-one",
@@ -6223,7 +6527,9 @@ const companiesData: Company[] = [
       "医療・介護"
     ],
     "overallRating": 3.4,
-    "rankPosition": 153
+    "rankPosition": 153,
+    "soleProprietorOk": false,
+    "weekendPayment": false
   },
   {
     "slug": "japan-trust",
@@ -6264,7 +6570,9 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.4,
-    "rankPosition": 154
+    "rankPosition": 154,
+    "soleProprietorOk": true,
+    "weekendPayment": false
   },
   {
     "slug": "kensetsu-pay",
@@ -6301,7 +6609,9 @@ const companiesData: Company[] = [
       "建設業"
     ],
     "overallRating": 3.4,
-    "rankPosition": 155
+    "rankPosition": 155,
+    "soleProprietorOk": true,
+    "weekendPayment": false
   },
   {
     "slug": "kis-management",
@@ -6342,7 +6652,9 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.4,
-    "rankPosition": 156
+    "rankPosition": 156,
+    "soleProprietorOk": true,
+    "weekendPayment": false
   },
   {
     "slug": "kyushu-factor",
@@ -6383,7 +6695,9 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.4,
-    "rankPosition": 157
+    "rankPosition": 157,
+    "soleProprietorOk": true,
+    "weekendPayment": false
   },
   {
     "slug": "lagless",
@@ -6424,7 +6738,9 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.4,
-    "rankPosition": 158
+    "rankPosition": 158,
+    "soleProprietorOk": true,
+    "weekendPayment": false
   },
   {
     "slug": "line-profect",
@@ -6465,7 +6781,9 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.4,
-    "rankPosition": 159
+    "rankPosition": 159,
+    "soleProprietorOk": true,
+    "weekendPayment": false
   },
   {
     "slug": "link-japan",
@@ -6506,7 +6824,9 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.4,
-    "rankPosition": 160
+    "rankPosition": 160,
+    "soleProprietorOk": true,
+    "weekendPayment": false
   },
   {
     "slug": "mainavy-factoring",
@@ -6547,7 +6867,9 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.4,
-    "rankPosition": 161
+    "rankPosition": 161,
+    "soleProprietorOk": true,
+    "weekendPayment": false
   },
   {
     "slug": "minaoshi-honpo",
@@ -6588,7 +6910,9 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.4,
-    "rankPosition": 162
+    "rankPosition": 162,
+    "soleProprietorOk": true,
+    "weekendPayment": false
   },
   {
     "slug": "mk-trust",
@@ -6629,7 +6953,9 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.4,
-    "rankPosition": 163
+    "rankPosition": 163,
+    "soleProprietorOk": true,
+    "weekendPayment": false
   },
   {
     "slug": "next-funding",
@@ -6670,7 +6996,9 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.4,
-    "rankPosition": 164
+    "rankPosition": 164,
+    "soleProprietorOk": true,
+    "weekendPayment": false
   },
   {
     "slug": "next-style",
@@ -6711,7 +7039,9 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.4,
-    "rankPosition": 165
+    "rankPosition": 165,
+    "soleProprietorOk": true,
+    "weekendPayment": false
   },
   {
     "slug": "nihon-planner",
@@ -6752,7 +7082,9 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.4,
-    "rankPosition": 166
+    "rankPosition": 166,
+    "soleProprietorOk": true,
+    "weekendPayment": false
   },
   {
     "slug": "owl-keizai",
@@ -6793,7 +7125,9 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.4,
-    "rankPosition": 167
+    "rankPosition": 167,
+    "soleProprietorOk": true,
+    "weekendPayment": false
   },
   {
     "slug": "quick-factor",
@@ -6834,7 +7168,9 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.4,
-    "rankPosition": 168
+    "rankPosition": 168,
+    "soleProprietorOk": true,
+    "weekendPayment": false
   },
   {
     "slug": "replan",
@@ -6875,7 +7211,9 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.4,
-    "rankPosition": 169
+    "rankPosition": 169,
+    "soleProprietorOk": true,
+    "weekendPayment": false
   },
   {
     "slug": "rise-factoring",
@@ -6916,7 +7254,9 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.4,
-    "rankPosition": 170
+    "rankPosition": 170,
+    "soleProprietorOk": true,
+    "weekendPayment": false
   },
   {
     "slug": "rising-investment",
@@ -6957,7 +7297,9 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.4,
-    "rankPosition": 171
+    "rankPosition": 171,
+    "soleProprietorOk": true,
+    "weekendPayment": false
   },
   {
     "slug": "sanko-factoring",
@@ -6998,7 +7340,9 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.4,
-    "rankPosition": 172
+    "rankPosition": 172,
+    "soleProprietorOk": true,
+    "weekendPayment": false
   },
   {
     "slug": "sc-medical",
@@ -7035,7 +7379,9 @@ const companiesData: Company[] = [
       "医療・介護"
     ],
     "overallRating": 3.4,
-    "rankPosition": 173
+    "rankPosition": 173,
+    "soleProprietorOk": false,
+    "weekendPayment": false
   },
   {
     "slug": "seikyusho-pay",
@@ -7076,7 +7422,9 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.4,
-    "rankPosition": 174
+    "rankPosition": 174,
+    "soleProprietorOk": true,
+    "weekendPayment": false
   },
   {
     "slug": "shikin-plus",
@@ -7117,7 +7465,9 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.4,
-    "rankPosition": 175
+    "rankPosition": 175,
+    "soleProprietorOk": true,
+    "weekendPayment": false
   },
   {
     "slug": "shikinchotatsu-direct",
@@ -7158,7 +7508,9 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.4,
-    "rankPosition": 176
+    "rankPosition": 176,
+    "soleProprietorOk": true,
+    "weekendPayment": false
   },
   {
     "slug": "shinki-corp",
@@ -7199,7 +7551,9 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.4,
-    "rankPosition": 177
+    "rankPosition": 177,
+    "soleProprietorOk": true,
+    "weekendPayment": false
   },
   {
     "slug": "shukran",
@@ -7240,7 +7594,9 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.4,
-    "rankPosition": 178
+    "rankPosition": 178,
+    "soleProprietorOk": true,
+    "weekendPayment": false
   },
   {
     "slug": "sme-support",
@@ -7281,7 +7637,9 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.4,
-    "rankPosition": 179
+    "rankPosition": 179,
+    "soleProprietorOk": true,
+    "weekendPayment": false
   },
   {
     "slug": "sokuderu",
@@ -7322,7 +7680,9 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.4,
-    "rankPosition": 180
+    "rankPosition": 180,
+    "soleProprietorOk": true,
+    "weekendPayment": false
   },
   {
     "slug": "sokuji-online",
@@ -7363,7 +7723,9 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.4,
-    "rankPosition": 181
+    "rankPosition": 181,
+    "soleProprietorOk": true,
+    "weekendPayment": false
   },
   {
     "slug": "sts-factoring",
@@ -7404,7 +7766,9 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.4,
-    "rankPosition": 182
+    "rankPosition": 182,
+    "soleProprietorOk": true,
+    "weekendPayment": false
   },
   {
     "slug": "suga-finance",
@@ -7445,7 +7809,9 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.4,
-    "rankPosition": 183
+    "rankPosition": 183,
+    "soleProprietorOk": true,
+    "weekendPayment": false
   },
   {
     "slug": "t-and-s",
@@ -7486,7 +7852,9 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.4,
-    "rankPosition": 184
+    "rankPosition": 184,
+    "soleProprietorOk": true,
+    "weekendPayment": false
   },
   {
     "slug": "taihei-fs",
@@ -7527,7 +7895,9 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.4,
-    "rankPosition": 185
+    "rankPosition": 185,
+    "soleProprietorOk": false,
+    "weekendPayment": false
   },
   {
     "slug": "third-eye",
@@ -7568,7 +7938,9 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.4,
-    "rankPosition": 186
+    "rankPosition": 186,
+    "soleProprietorOk": true,
+    "weekendPayment": false
   },
   {
     "slug": "toshin-shoji",
@@ -7609,7 +7981,9 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.4,
-    "rankPosition": 187
+    "rankPosition": 187,
+    "soleProprietorOk": true,
+    "weekendPayment": false
   },
   {
     "slug": "whatever",
@@ -7650,7 +8024,9 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.4,
-    "rankPosition": 188
+    "rankPosition": 188,
+    "soleProprietorOk": true,
+    "weekendPayment": false
   },
   {
     "slug": "yamaki-shoji",
@@ -7691,7 +8067,9 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.4,
-    "rankPosition": 189
+    "rankPosition": 189,
+    "soleProprietorOk": true,
+    "weekendPayment": false
   },
   {
     "slug": "actbiz",
@@ -7732,7 +8110,9 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.3,
-    "rankPosition": 190
+    "rankPosition": 190,
+    "soleProprietorOk": true,
+    "weekendPayment": false
   },
   {
     "slug": "alps-finance",
@@ -7773,7 +8153,9 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.3,
-    "rankPosition": 191
+    "rankPosition": 191,
+    "soleProprietorOk": true,
+    "weekendPayment": false
   },
   {
     "slug": "aslead",
@@ -7814,7 +8196,9 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.3,
-    "rankPosition": 192
+    "rankPosition": 192,
+    "soleProprietorOk": true,
+    "weekendPayment": false
   },
   {
     "slug": "avantia",
@@ -7855,7 +8239,9 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.3,
-    "rankPosition": 193
+    "rankPosition": 193,
+    "soleProprietorOk": true,
+    "weekendPayment": false
   },
   {
     "slug": "belle-system",
@@ -7896,7 +8282,9 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.3,
-    "rankPosition": 194
+    "rankPosition": 194,
+    "soleProprietorOk": true,
+    "weekendPayment": false
   },
   {
     "slug": "business-fund",
@@ -7937,7 +8325,9 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.3,
-    "rankPosition": 195
+    "rankPosition": 195,
+    "soleProprietorOk": true,
+    "weekendPayment": false
   },
   {
     "slug": "cuc-factoring",
@@ -7978,7 +8368,9 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.3,
-    "rankPosition": 196
+    "rankPosition": 196,
+    "soleProprietorOk": true,
+    "weekendPayment": false
   },
   {
     "slug": "danbury",
@@ -8019,7 +8411,9 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.3,
-    "rankPosition": 197
+    "rankPosition": 197,
+    "soleProprietorOk": true,
+    "weekendPayment": false
   },
   {
     "slug": "dm-company",
@@ -8060,7 +8454,9 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.3,
-    "rankPosition": 198
+    "rankPosition": 198,
+    "soleProprietorOk": true,
+    "weekendPayment": false
   },
   {
     "slug": "ebis-holdings",
@@ -8101,7 +8497,9 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.3,
-    "rankPosition": 199
+    "rankPosition": 199,
+    "soleProprietorOk": true,
+    "weekendPayment": false
   },
   {
     "slug": "f-style",
@@ -8142,7 +8540,9 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.3,
-    "rankPosition": 200
+    "rankPosition": 200,
+    "soleProprietorOk": true,
+    "weekendPayment": false
   },
   {
     "slug": "factor-associates",
@@ -8183,7 +8583,9 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.3,
-    "rankPosition": 201
+    "rankPosition": 201,
+    "soleProprietorOk": true,
+    "weekendPayment": false
   },
   {
     "slug": "faith-factoring",
@@ -8224,7 +8626,9 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.3,
-    "rankPosition": 202
+    "rankPosition": 202,
+    "soleProprietorOk": true,
+    "weekendPayment": false
   },
   {
     "slug": "global-service",
@@ -8265,7 +8669,9 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.3,
-    "rankPosition": 203
+    "rankPosition": 203,
+    "soleProprietorOk": true,
+    "weekendPayment": false
   },
   {
     "slug": "gmmi",
@@ -8306,7 +8712,9 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.3,
-    "rankPosition": 204
+    "rankPosition": 204,
+    "soleProprietorOk": true,
+    "weekendPayment": false
   },
   {
     "slug": "growrize",
@@ -8347,7 +8755,9 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.3,
-    "rankPosition": 205
+    "rankPosition": 205,
+    "soleProprietorOk": true,
+    "weekendPayment": false
   },
   {
     "slug": "heartful-life",
@@ -8388,7 +8798,9 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.3,
-    "rankPosition": 206
+    "rankPosition": 206,
+    "soleProprietorOk": true,
+    "weekendPayment": false
   },
   {
     "slug": "i-service",
@@ -8429,7 +8841,9 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.3,
-    "rankPosition": 207
+    "rankPosition": 207,
+    "soleProprietorOk": true,
+    "weekendPayment": false
   },
   {
     "slug": "ichifuku",
@@ -8470,7 +8884,9 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.3,
-    "rankPosition": 208
+    "rankPosition": 208,
+    "soleProprietorOk": true,
+    "weekendPayment": false
   },
   {
     "slug": "jsc-factoring",
@@ -8511,7 +8927,9 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.3,
-    "rankPosition": 209
+    "rankPosition": 209,
+    "soleProprietorOk": true,
+    "weekendPayment": false
   },
   {
     "slug": "k-support",
@@ -8552,7 +8970,9 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.3,
-    "rankPosition": 210
+    "rankPosition": 210,
+    "soleProprietorOk": true,
+    "weekendPayment": false
   },
   {
     "slug": "kosei",
@@ -8593,7 +9013,9 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.3,
-    "rankPosition": 211
+    "rankPosition": 211,
+    "soleProprietorOk": true,
+    "weekendPayment": false
   },
   {
     "slug": "life-factoring",
@@ -8634,7 +9056,9 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.3,
-    "rankPosition": 212
+    "rankPosition": 212,
+    "soleProprietorOk": true,
+    "weekendPayment": false
   },
   {
     "slug": "localworks-payment",
@@ -8672,7 +9096,9 @@ const companiesData: Company[] = [
       "運送業"
     ],
     "overallRating": 3.3,
-    "rankPosition": 213
+    "rankPosition": 213,
+    "soleProprietorOk": true,
+    "weekendPayment": false
   },
   {
     "slug": "lucia",
@@ -8713,7 +9139,9 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.3,
-    "rankPosition": 214
+    "rankPosition": 214,
+    "soleProprietorOk": true,
+    "weekendPayment": false
   },
   {
     "slug": "luxel-partner",
@@ -8754,7 +9182,9 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.3,
-    "rankPosition": 215
+    "rankPosition": 215,
+    "soleProprietorOk": true,
+    "weekendPayment": false
   },
   {
     "slug": "make-move",
@@ -8795,7 +9225,9 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.3,
-    "rankPosition": 216
+    "rankPosition": 216,
+    "soleProprietorOk": true,
+    "weekendPayment": false
   },
   {
     "slug": "mb-pay",
@@ -8836,7 +9268,9 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.3,
-    "rankPosition": 217
+    "rankPosition": 217,
+    "soleProprietorOk": true,
+    "weekendPayment": false
   },
   {
     "slug": "meisei-enterprise",
@@ -8877,7 +9311,9 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.3,
-    "rankPosition": 218
+    "rankPosition": 218,
+    "soleProprietorOk": true,
+    "weekendPayment": false
   },
   {
     "slug": "ms-quest",
@@ -8918,7 +9354,9 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.3,
-    "rankPosition": 219
+    "rankPosition": 219,
+    "soleProprietorOk": true,
+    "weekendPayment": false
   },
   {
     "slug": "nikkei-financial",
@@ -8959,7 +9397,9 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.3,
-    "rankPosition": 220
+    "rankPosition": 220,
+    "soleProprietorOk": false,
+    "weekendPayment": false
   },
   {
     "slug": "ns-partners",
@@ -9000,7 +9440,9 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.3,
-    "rankPosition": 221
+    "rankPosition": 221,
+    "soleProprietorOk": true,
+    "weekendPayment": false
   },
   {
     "slug": "oj-factoring",
@@ -9041,7 +9483,9 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.3,
-    "rankPosition": 222
+    "rankPosition": 222,
+    "soleProprietorOk": true,
+    "weekendPayment": false
   },
   {
     "slug": "plus-line",
@@ -9082,7 +9526,9 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.3,
-    "rankPosition": 223
+    "rankPosition": 223,
+    "soleProprietorOk": true,
+    "weekendPayment": false
   },
   {
     "slug": "progress-factoring",
@@ -9123,7 +9569,9 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.3,
-    "rankPosition": 224
+    "rankPosition": 224,
+    "soleProprietorOk": true,
+    "weekendPayment": false
   },
   {
     "slug": "protect-one",
@@ -9164,7 +9612,9 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.3,
-    "rankPosition": 225
+    "rankPosition": 225,
+    "soleProprietorOk": true,
+    "weekendPayment": false
   },
   {
     "slug": "rearth",
@@ -9205,7 +9655,9 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.3,
-    "rankPosition": 226
+    "rankPosition": 226,
+    "soleProprietorOk": true,
+    "weekendPayment": false
   },
   {
     "slug": "regu-pay",
@@ -9246,7 +9698,9 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.3,
-    "rankPosition": 227
+    "rankPosition": 227,
+    "soleProprietorOk": true,
+    "weekendPayment": false
   },
   {
     "slug": "rising",
@@ -9287,7 +9741,9 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.3,
-    "rankPosition": 228
+    "rankPosition": 228,
+    "soleProprietorOk": true,
+    "weekendPayment": false
   },
   {
     "slug": "ryfety",
@@ -9328,7 +9784,9 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.3,
-    "rankPosition": 229
+    "rankPosition": 229,
+    "soleProprietorOk": true,
+    "weekendPayment": false
   },
   {
     "slug": "s-com",
@@ -9369,7 +9827,9 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.3,
-    "rankPosition": 230
+    "rankPosition": 230,
+    "soleProprietorOk": true,
+    "weekendPayment": false
   },
   {
     "slug": "s-radikal",
@@ -9410,7 +9870,9 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.3,
-    "rankPosition": 231
+    "rankPosition": 231,
+    "soleProprietorOk": true,
+    "weekendPayment": false
   },
   {
     "slug": "sanctuary",
@@ -9451,7 +9913,9 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.3,
-    "rankPosition": 232
+    "rankPosition": 232,
+    "soleProprietorOk": true,
+    "weekendPayment": false
   },
   {
     "slug": "sfi-leasing",
@@ -9492,7 +9956,9 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.3,
-    "rankPosition": 233
+    "rankPosition": 233,
+    "soleProprietorOk": false,
+    "weekendPayment": false
   },
   {
     "slug": "shikin-honpo",
@@ -9533,7 +9999,9 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.3,
-    "rankPosition": 234
+    "rankPosition": 234,
+    "soleProprietorOk": true,
+    "weekendPayment": false
   },
   {
     "slug": "shoko-shoji",
@@ -9574,7 +10042,9 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.3,
-    "rankPosition": 235
+    "rankPosition": 235,
+    "soleProprietorOk": true,
+    "weekendPayment": false
   },
   {
     "slug": "sig-solution",
@@ -9615,7 +10085,9 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.3,
-    "rankPosition": 236
+    "rankPosition": 236,
+    "soleProprietorOk": true,
+    "weekendPayment": false
   },
   {
     "slug": "sinsia",
@@ -9656,7 +10128,9 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.3,
-    "rankPosition": 237
+    "rankPosition": 237,
+    "soleProprietorOk": true,
+    "weekendPayment": false
   },
   {
     "slug": "sk-service",
@@ -9697,7 +10171,9 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.3,
-    "rankPosition": 238
+    "rankPosition": 238,
+    "soleProprietorOk": true,
+    "weekendPayment": false
   },
   {
     "slug": "sms-financial",
@@ -9738,7 +10214,9 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.3,
-    "rankPosition": 239
+    "rankPosition": 239,
+    "soleProprietorOk": true,
+    "weekendPayment": false
   },
   {
     "slug": "sol-support",
@@ -9779,7 +10257,9 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.3,
-    "rankPosition": 240
+    "rankPosition": 240,
+    "soleProprietorOk": true,
+    "weekendPayment": false
   },
   {
     "slug": "sowa-enterprise",
@@ -9820,7 +10300,9 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.3,
-    "rankPosition": 241
+    "rankPosition": 241,
+    "soleProprietorOk": false,
+    "weekendPayment": false
   },
   {
     "slug": "ssk-factoring",
@@ -9861,7 +10343,9 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.3,
-    "rankPosition": 242
+    "rankPosition": 242,
+    "soleProprietorOk": true,
+    "weekendPayment": false
   },
   {
     "slug": "supporter-bank",
@@ -9902,7 +10386,9 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.3,
-    "rankPosition": 243
+    "rankPosition": 243,
+    "soleProprietorOk": true,
+    "weekendPayment": false
   },
   {
     "slug": "terasu",
@@ -9943,7 +10429,9 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.3,
-    "rankPosition": 244
+    "rankPosition": 244,
+    "soleProprietorOk": true,
+    "weekendPayment": false
   },
   {
     "slug": "tick",
@@ -9984,7 +10472,9 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.3,
-    "rankPosition": 245
+    "rankPosition": 245,
+    "soleProprietorOk": true,
+    "weekendPayment": false
   },
   {
     "slug": "tomin-shinpan",
@@ -10025,7 +10515,9 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.3,
-    "rankPosition": 246
+    "rankPosition": 246,
+    "soleProprietorOk": true,
+    "weekendPayment": false
   },
   {
     "slug": "trust-pay",
@@ -10066,7 +10558,9 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.3,
-    "rankPosition": 247
+    "rankPosition": 247,
+    "soleProprietorOk": true,
+    "weekendPayment": false
   },
   {
     "slug": "unity-factoring",
@@ -10107,7 +10601,9 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.3,
-    "rankPosition": 248
+    "rankPosition": 248,
+    "soleProprietorOk": true,
+    "weekendPayment": false
   },
   {
     "slug": "wadatumi",
@@ -10148,7 +10644,9 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.3,
-    "rankPosition": 249
+    "rankPosition": 249,
+    "soleProprietorOk": true,
+    "weekendPayment": false
   },
   {
     "slug": "west-factoring",
@@ -10189,7 +10687,9 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.3,
-    "rankPosition": 250
+    "rankPosition": 250,
+    "soleProprietorOk": true,
+    "weekendPayment": false
   },
   {
     "slug": "ys-corporation",
@@ -10230,7 +10730,9 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.3,
-    "rankPosition": 251
+    "rankPosition": 251,
+    "soleProprietorOk": true,
+    "weekendPayment": false
   },
   {
     "slug": "zaimukaikei-shien",
@@ -10271,7 +10773,9 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.3,
-    "rankPosition": 252
+    "rankPosition": 252,
+    "soleProprietorOk": false,
+    "weekendPayment": false
   },
   {
     "slug": "zen-confiance",
@@ -10312,7 +10816,9 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.3,
-    "rankPosition": 253
+    "rankPosition": 253,
+    "soleProprietorOk": true,
+    "weekendPayment": false
   },
   {
     "slug": "zist",
@@ -10353,8 +10859,10 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.3,
-    "rankPosition": 254
+    "rankPosition": 254,
+    "soleProprietorOk": true,
+    "weekendPayment": false
   }
-];
+]];
 
 export default companiesData;
