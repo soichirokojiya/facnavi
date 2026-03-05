@@ -3,7 +3,7 @@ import { Company } from "@/types/company";
 import { Card } from "@/components/ui/Card";
 import { Badge } from "@/components/ui/Badge";
 import { StarRating } from "@/components/ui/StarRating";
-import { formatFeeRange, formatAmount } from "@/lib/companies";
+import { formatFeeRange, formatAmount } from "@/lib/format";
 
 interface CompanyCardProps {
   company: Company;

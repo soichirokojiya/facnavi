@@ -12,7 +12,7 @@ import { Button } from "@/components/ui/Button";
 import { OrganizationJsonLd } from "@/components/seo/JsonLd";
 import { Logo } from "@/components/layout/Logo";
 import { SITE_NAME } from "@/lib/constants";
-import { formatFeeRange, formatAmount } from "@/lib/companies";
+import { formatFeeRange, formatAmount } from "@/lib/format";
 import { KeywordSearch, SearchableCompany } from "@/components/search/KeywordSearch";
 
 export default function HomePage() {

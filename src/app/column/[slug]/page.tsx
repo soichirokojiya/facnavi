@@ -11,7 +11,7 @@ import { StarRating } from "@/components/ui/StarRating";
 import { ArticleEyecatch } from "@/components/articles/ArticleEyecatch";
 import { BreadcrumbJsonLd, ArticleJsonLd } from "@/components/seo/JsonLd";
 import { SITE_URL } from "@/lib/constants";
-import { formatFeeRange } from "@/lib/companies";
+import { formatFeeRange } from "@/lib/format";
 
 interface Props {
   params: Promise<{ slug: string }>;

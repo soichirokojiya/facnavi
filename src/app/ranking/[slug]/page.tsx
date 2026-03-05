@@ -4,9 +4,8 @@ import {
   getAllCompanies,
   getCompanyBySlug,
   getCompanySlugs,
-  formatFeeRange,
-  formatAmount,
 } from "@/lib/companies";
+import { formatFeeRange, formatAmount } from "@/lib/format";
 import { getReviewsByCompany, getReviewSummary } from "@/lib/reviews";
 import { Breadcrumb } from "@/components/layout/Breadcrumb";
 import { Badge } from "@/components/ui/Badge";

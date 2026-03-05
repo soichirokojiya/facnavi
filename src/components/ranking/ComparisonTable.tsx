@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { Company } from "@/types/company";
 import { StarRating } from "@/components/ui/StarRating";
-import { formatFeeRange } from "@/lib/companies";
+import { formatFeeRange } from "@/lib/format";
 
 interface ComparisonTableProps {
   companies: Company[];
