@@ -6,17 +6,19 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const companiesDir = path.join(__dirname, "..", "content", "companies");
 
 // 固定上位ランク（手動設定）
-// ペイトナー・ラボルは常にTOP5内でランダムに配置
-const priorityPair = Math.random() < 0.5
-  ? ["paytner", "labol"]
-  : ["labol", "paytner"];
+// ペイトナー・ラボルはTOP5内でランダムに配置
+const base5 = ["betrading", "olta", "ququmo"];
+// ペイトナー・ラボルをランダムな位置(0~3)に挿入
+const pos1 = Math.floor(Math.random() * 4); // 0~3
+let pos2 = Math.floor(Math.random() * 4);   // 0~3
+while (pos2 === pos1) pos2 = Math.floor(Math.random() * 4);
+const top5 = [...base5];
+const [first, second] = pos1 < pos2 ? [pos1, pos2] : [pos2, pos1];
+top5.splice(first, 0, Math.random() < 0.5 ? "paytner" : "labol");
+top5.splice(second + 1, 0, top5.includes("paytner") ? "labol" : "paytner");
 
 const topRanks = [
-  priorityPair[0],     // 1. ペイトナー or ラボル（ランダム）[A8]
-  "betrading",         // 2. ビートレーディング
-  priorityPair[1],     // 3. ラボル or ペイトナー（ランダム）[A8]
-  "olta",              // 4. OLTA
-  "ququmo",            // 5. QuQuMo [A8]
+  ...top5,             // 1-5: ビートレーディング,OLTA,QuQuMo + ペイトナー,ラボル（ランダム配置）
   "freenance",         // 6. フリーナンス [A8]
   "no1",               // 7. No.1ファクタリング [A8]
   "goodplus",          // 8. GoodPlus [A8]
