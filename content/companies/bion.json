@@ -28,8 +28,6 @@
     "手数料が一律10%で割高な場合も",
     "2者間のみ"
   ],
-  "overallRating": 3.7,
-  "rankPosition": 64,
   "establishedYear": 2020,
   "targetIndustries": [
     "IT・Web",
@@ -37,5 +35,7 @@
     "サービス業",
     "建設業",
     "飲食業"
-  ]
+  ],
+  "overallRating": 3.7,
+  "rankPosition": 64
 }

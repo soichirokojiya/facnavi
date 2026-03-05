@@ -2,7 +2,7 @@
   "slug": "factoring-zero",
   "name": "ファクタリングZERO",
   "description": "福岡発、西日本を中心に展開するファクタリング会社。審査通過率96%、20万円〜5,000万円まで対応。",
-  "affiliateUrl": "https://factoring-zero.com/",
+  "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=4AX5KD+A2L06Q+4DJO+5YJRM",
   "factoringType": "2社間・3社間",
   "feeRange": {
     "min": 3,
@@ -28,8 +28,6 @@
     "東日本では対面対応が難しい場合あり",
     "手数料の上限がやや高め"
   ],
-  "overallRating": 3.9,
-  "rankPosition": 26,
   "establishedYear": 2011,
   "targetIndustries": [
     "建設業",
@@ -37,5 +35,7 @@
     "運送業",
     "製造業",
     "小売業"
-  ]
+  ],
+  "overallRating": 3.9,
+  "rankPosition": 26
 }

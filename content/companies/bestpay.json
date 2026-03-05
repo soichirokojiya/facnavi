@@ -28,8 +28,6 @@
     "手数料が高め",
     "最短翌営業日"
   ],
-  "overallRating": 3.8,
-  "rankPosition": 55,
   "establishedYear": 2017,
   "targetIndustries": [
     "建設業",
@@ -37,5 +35,7 @@
     "IT・Web",
     "運送業",
     "広告業"
-  ]
+  ],
+  "overallRating": 3.8,
+  "rankPosition": 55
 }

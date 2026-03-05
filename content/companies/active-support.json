@@ -2,7 +2,7 @@
   "slug": "active-support",
   "name": "アクティブサポート",
   "description": "中小企業の資金繰りを積極的にサポートするファクタリング会社。柔軟な審査が特長。",
-  "affiliateUrl": "https://active-support.co.jp/",
+  "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=4AX5KD+9R9ROY+4JGG+60OXD",
   "factoringType": "2社間・3社間",
   "feeRange": {
     "min": 3,
@@ -28,8 +28,6 @@
     "知名度がやや低い",
     "手数料は個別査定"
   ],
-  "overallRating": 3.3,
-  "rankPosition": 188,
   "establishedYear": 2018,
   "targetIndustries": [
     "建設業",
@@ -37,5 +35,7 @@
     "製造業",
     "IT・Web",
     "サービス業"
-  ]
+  ],
+  "overallRating": 3.3,
+  "rankPosition": 188
 }

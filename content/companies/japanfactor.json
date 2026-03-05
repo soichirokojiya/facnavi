@@ -28,8 +28,6 @@
     "手数料上限がやや高め",
     "大手と比べて規模が小さい"
   ],
-  "overallRating": 3.8,
-  "rankPosition": 58,
   "establishedYear": 2015,
   "targetIndustries": [
     "建設業",
@@ -37,5 +35,7 @@
     "運送業",
     "小売業",
     "製造業"
-  ]
+  ],
+  "overallRating": 3.8,
+  "rankPosition": 58
 }

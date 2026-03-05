@@ -28,13 +28,13 @@
     "2社間ファクタリングのみ",
     "新しい会社で実績が少なめ"
   ],
-  "overallRating": 3.9,
-  "rankPosition": 51,
   "establishedYear": 2021,
   "targetIndustries": [
     "IT・Web",
     "建設業",
     "運送業",
     "広告・メディア"
-  ]
+  ],
+  "overallRating": 3.9,
+  "rankPosition": 51
 }

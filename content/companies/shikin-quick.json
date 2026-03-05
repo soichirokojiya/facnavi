@@ -28,8 +28,6 @@
     "2者間のみ",
     "手数料上限が高い場合も"
   ],
-  "overallRating": 4,
-  "rankPosition": 44,
   "establishedYear": 2020,
   "targetIndustries": [
     "IT・Web",
@@ -37,5 +35,7 @@
     "小売業",
     "サービス業",
     "飲食業"
-  ]
+  ],
+  "overallRating": 4,
+  "rankPosition": 44
 }

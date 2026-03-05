@@ -28,8 +28,6 @@
     "大手のため審査がやや厳格な場合も",
     "手数料は案件による"
   ],
-  "overallRating": 4.4,
-  "rankPosition": 32,
   "establishedYear": 2001,
   "targetIndustries": [
     "建設業",
@@ -37,5 +35,7 @@
     "運送業",
     "小売業",
     "サービス業"
-  ]
+  ],
+  "overallRating": 4.4,
+  "rankPosition": 32
 }

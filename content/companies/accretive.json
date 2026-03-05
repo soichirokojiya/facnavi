@@ -28,8 +28,6 @@
     "3社間のみ",
     "入金まで日数がかかる"
   ],
-  "overallRating": 4,
-  "rankPosition": 38,
   "establishedYear": 2000,
   "targetIndustries": [
     "医療・介護",
@@ -37,5 +35,7 @@
     "歯科",
     "病院",
     "介護施設"
-  ]
+  ],
+  "overallRating": 4,
+  "rankPosition": 38
 }

@@ -28,8 +28,6 @@
     "法人向けの大口案件には不向き",
     "手数料の下限がやや高め"
   ],
-  "overallRating": 3.8,
-  "rankPosition": 59,
   "establishedYear": 2023,
   "targetIndustries": [
     "IT・Web",
@@ -37,5 +35,7 @@
     "デザイン",
     "映像制作",
     "飲食業"
-  ]
+  ],
+  "overallRating": 3.8,
+  "rankPosition": 59
 }

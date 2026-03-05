@@ -29,8 +29,6 @@
     "個人事業主不可",
     "審査に時間がかかる"
   ],
-  "overallRating": 3.7,
-  "rankPosition": 68,
   "establishedYear": 1985,
   "targetIndustries": [
     "IT・Web",
@@ -38,5 +36,7 @@
     "製造業",
     "サービス業",
     "建設業"
-  ]
+  ],
+  "overallRating": 3.7,
+  "rankPosition": 68
 }

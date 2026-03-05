@@ -28,8 +28,6 @@
     "少額案件は優先度が下がる場合あり",
     "手数料は案件による"
   ],
-  "overallRating": 4.1,
-  "rankPosition": 13,
   "establishedYear": 2015,
   "targetIndustries": [
     "建設業",
@@ -37,5 +35,7 @@
     "製造業",
     "医療・介護",
     "人材派遣"
-  ]
+  ],
+  "overallRating": 4.1,
+  "rankPosition": 13
 }

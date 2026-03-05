@@ -28,8 +28,6 @@
     "法人のみ対応（個人事業主不可）",
     "最短2営業日とやや遅め"
   ],
-  "overallRating": 4.2,
-  "rankPosition": 12,
   "establishedYear": 1995,
   "targetIndustries": [
     "製造業",
@@ -37,5 +35,7 @@
     "卸売業",
     "建設業",
     "運送業"
-  ]
+  ],
+  "overallRating": 4.2,
+  "rankPosition": 12
 }

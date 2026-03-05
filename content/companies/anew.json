@@ -28,8 +28,6 @@
     "審査がやや厳格で通過しない場合もある",
     "即日入金は原則非対応"
   ],
-  "overallRating": 4.2,
-  "rankPosition": 15,
   "establishedYear": 2020,
   "targetIndustries": [
     "IT・Web",
@@ -37,5 +35,7 @@
     "卸売業",
     "サービス業",
     "広告業"
-  ]
+  ],
+  "overallRating": 4.2,
+  "rankPosition": 15
 }

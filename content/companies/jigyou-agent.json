@@ -28,8 +28,6 @@
     "500万円超は面談が必要",
     "手数料の幅が広い"
   ],
-  "overallRating": 4,
-  "rankPosition": 41,
   "establishedYear": 2014,
   "targetIndustries": [
     "建設業",
@@ -37,5 +35,7 @@
     "製造業",
     "IT・Web",
     "医療・介護"
-  ]
+  ],
+  "overallRating": 4,
+  "rankPosition": 41
 }

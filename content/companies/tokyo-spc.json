@@ -28,8 +28,6 @@
     "手数料非公開",
     "個人事業主不可"
   ],
-  "overallRating": 3.6,
-  "rankPosition": 85,
   "establishedYear": 1999,
   "targetIndustries": [
     "医療・介護",
@@ -37,5 +35,7 @@
     "建設業",
     "卸売業",
     "不動産業"
-  ]
+  ],
+  "overallRating": 3.6,
+  "rankPosition": 85
 }

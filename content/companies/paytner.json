@@ -28,13 +28,13 @@
     "手数料10%固定で割高な場合も",
     "買取上限が100万円と低い"
   ],
-  "overallRating": 4.1,
-  "rankPosition": 10,
   "establishedYear": 2019,
   "targetIndustries": [
     "IT・Web",
     "デザイン",
     "広告・メディア",
     "飲食業"
-  ]
+  ],
+  "overallRating": 4.1,
+  "rankPosition": 10
 }

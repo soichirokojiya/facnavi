@@ -28,8 +28,6 @@
     "オンライン完結ではない",
     "東京に拠点がない"
   ],
-  "overallRating": 4,
-  "rankPosition": 24,
   "establishedYear": 2013,
   "targetIndustries": [
     "建設業",
@@ -37,5 +35,7 @@
     "運送業",
     "卸売業",
     "医療・介護"
-  ]
+  ],
+  "overallRating": 4,
+  "rankPosition": 24
 }

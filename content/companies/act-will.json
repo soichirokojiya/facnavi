@@ -28,8 +28,6 @@
     "オンライン完結に非対応",
     "少額案件には不向き"
   ],
-  "overallRating": 3.9,
-  "rankPosition": 46,
   "establishedYear": 2017,
   "targetIndustries": [
     "建設業",
@@ -37,5 +35,7 @@
     "製造業",
     "不動産業",
     "卸売業"
-  ]
+  ],
+  "overallRating": 3.9,
+  "rankPosition": 46
 }

@@ -2,7 +2,7 @@
   "slug": "ad-planning",
   "name": "アドプランニング",
   "description": "手数料2%～10%の業界最安水準。10万円からの少額買取にも対応。",
-  "affiliateUrl": "https://ad-planning.co.jp/factoring/",
+  "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=4AX1OL+BSI33M+5LZE+BXB8X",
   "factoringType": "2社間・3社間",
   "feeRange": {
     "min": 2,
@@ -28,8 +28,6 @@
     "知名度がやや低い",
     "大口案件は別途相談"
   ],
-  "overallRating": 4,
-  "rankPosition": 39,
   "establishedYear": 2018,
   "targetIndustries": [
     "IT・Web",
@@ -37,5 +35,7 @@
     "小売業",
     "飲食業",
     "サービス業"
-  ]
+  ],
+  "overallRating": 4,
+  "rankPosition": 39
 }

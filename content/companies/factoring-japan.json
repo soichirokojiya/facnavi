@@ -28,8 +28,6 @@
     "知名度が低め",
     "手数料は要相談"
   ],
-  "overallRating": 3.6,
-  "rankPosition": 74,
   "establishedYear": 2018,
   "targetIndustries": [
     "建設業",
@@ -37,5 +35,7 @@
     "IT・Web",
     "運送業",
     "卸売業"
-  ]
+  ],
+  "overallRating": 3.6,
+  "rankPosition": 74
 }

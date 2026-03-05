@@ -28,13 +28,13 @@
     "買取上限が500万円と低い",
     "法人の大口案件には不向き"
   ],
-  "overallRating": 3.7,
-  "rankPosition": 67,
   "establishedYear": 2021,
   "targetIndustries": [
     "IT・Web",
     "デザイン",
     "広告・メディア",
     "飲食業"
-  ]
+  ],
+  "overallRating": 3.7,
+  "rankPosition": 67
 }

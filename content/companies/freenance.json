@@ -28,8 +28,6 @@
     "法人向けの大口案件には不向き",
     "フリーランス以外は利用しにくい"
   ],
-  "overallRating": 4.3,
-  "rankPosition": 9,
   "establishedYear": 2018,
   "targetIndustries": [
     "フリーランス",
@@ -37,5 +35,7 @@
     "エンジニア",
     "ライター",
     "デザイナー"
-  ]
+  ],
+  "overallRating": 4.3,
+  "rankPosition": 9
 }

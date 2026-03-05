@@ -28,13 +28,13 @@
     "新しいサービスで実績が少ない",
     "電話サポートが限定的"
   ],
-  "overallRating": 4.3,
-  "rankPosition": 8,
   "establishedYear": 2021,
   "targetIndustries": [
     "IT・Web",
     "小売業",
     "飲食業",
     "広告・メディア"
-  ]
+  ],
+  "overallRating": 4.3,
+  "rankPosition": 8
 }

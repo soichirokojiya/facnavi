@@ -28,8 +28,6 @@
     "手数料がやや高め",
     "即日ではなく翌日になる場合も"
   ],
-  "overallRating": 3.7,
-  "rankPosition": 29,
   "establishedYear": 2017,
   "targetIndustries": [
     "建設業",
@@ -37,5 +35,7 @@
     "製造業",
     "小売業",
     "サービス業"
-  ]
+  ],
+  "overallRating": 3.7,
+  "rankPosition": 29
 }

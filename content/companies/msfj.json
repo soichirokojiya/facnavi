@@ -2,7 +2,7 @@
   "slug": "msfj",
   "name": "MSFJ",
   "description": "業界最安水準の手数料1%〜が最大の魅力。コスト重視の企業に選ばれているファクタリング会社で、手数料の透明性にも定評があります。",
-  "affiliateUrl": "https://msfj.jp/",
+  "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=4AX1OL+BMJR1U+42NG+C03K1",
   "factoringType": "2社間・3社間",
   "feeRange": {
     "min": 1,
@@ -28,8 +28,6 @@
     "入金まで最短2日かかる",
     "高額案件の対応上限がやや低め"
   ],
-  "overallRating": 4.2,
-  "rankPosition": 16,
   "establishedYear": 2017,
   "targetIndustries": [
     "IT・Web",
@@ -37,5 +35,7 @@
     "コンサルティング",
     "製造業",
     "卸売業"
-  ]
+  ],
+  "overallRating": 4.2,
+  "rankPosition": 16
 }

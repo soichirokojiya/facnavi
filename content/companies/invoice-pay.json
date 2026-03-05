@@ -28,8 +28,6 @@
     "比較的新しい会社",
     "知名度が低め"
   ],
-  "overallRating": 3.9,
-  "rankPosition": 48,
   "establishedYear": 2019,
   "targetIndustries": [
     "IT・Web",
@@ -37,5 +35,7 @@
     "サービス業",
     "小売業",
     "製造業"
-  ]
+  ],
+  "overallRating": 3.9,
+  "rankPosition": 48
 }

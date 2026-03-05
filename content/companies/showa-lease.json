@@ -28,8 +28,6 @@
     "個人事業主不可",
     "入金まで時間がかかる"
   ],
-  "overallRating": 3.6,
-  "rankPosition": 84,
   "establishedYear": 1969,
   "targetIndustries": [
     "製造業",
@@ -37,5 +35,7 @@
     "不動産業",
     "卸売業",
     "運送業"
-  ]
+  ],
+  "overallRating": 3.6,
+  "rankPosition": 84
 }

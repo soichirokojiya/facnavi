@@ -32,8 +32,6 @@ const companiesData: Company[] = [
       "大手のため審査がやや厳しい場合も",
       "3社間は時間がかかる場合あり"
     ],
-    "overallRating": 4.6,
-    "rankPosition": 1,
     "establishedYear": 2012,
     "targetIndustries": [
       "建設業",
@@ -41,7 +39,9 @@ const companiesData: Company[] = [
       "製造業",
       "医療・介護",
       "卸売業"
-    ]
+    ],
+    "overallRating": 4.6,
+    "rankPosition": 1
   },
   {
     "slug": "olta",
@@ -73,21 +73,21 @@ const companiesData: Company[] = [
       "2社間ファクタリングのみ",
       "対面での相談ができない"
     ],
-    "overallRating": 4.7,
-    "rankPosition": 2,
     "establishedYear": 2017,
     "targetIndustries": [
       "IT・Web",
       "広告・メディア",
       "人材派遣",
       "製造業"
-    ]
+    ],
+    "overallRating": 4.7,
+    "rankPosition": 2
   },
   {
     "slug": "ququmo",
     "name": "QuQuMo（ククモ）",
     "description": "オンライン完結で最速2時間入金。手数料1%～14.8%、個人事業主もOK。",
-    "affiliateUrl": "https://ququmo.net/",
+    "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=4AX5KD+9QOC36+4JGG+BXIYP",
     "factoringType": "2社間",
     "feeRange": {
       "min": 1,
@@ -113,8 +113,6 @@ const companiesData: Company[] = [
       "2者間のみ",
       "電話サポートの時間が限られる"
     ],
-    "overallRating": 4.3,
-    "rankPosition": 3,
     "establishedYear": 2017,
     "targetIndustries": [
       "IT・Web",
@@ -122,7 +120,9 @@ const companiesData: Company[] = [
       "製造業",
       "小売業",
       "サービス業"
-    ]
+    ],
+    "overallRating": 4.3,
+    "rankPosition": 3
   },
   {
     "slug": "best-factor",
@@ -154,8 +154,6 @@ const companiesData: Company[] = [
       "3社間ファクタリングは時間がかかる場合あり",
       "初回は審査に時間がかかることも"
     ],
-    "overallRating": 4.5,
-    "rankPosition": 4,
     "establishedYear": 2017,
     "targetIndustries": [
       "建設業",
@@ -163,13 +161,15 @@ const companiesData: Company[] = [
       "製造業",
       "IT・Web",
       "医療・介護"
-    ]
+    ],
+    "overallRating": 4.5,
+    "rankPosition": 4
   },
   {
     "slug": "labol",
     "name": "ラボル",
     "description": "IT・クリエイター業界に特化したファクタリングサービス。業界の商習慣を理解した審査体制で、Web制作やシステム開発など長期プロジェクトの売掛金にも柔軟に対応します。",
-    "affiliateUrl": "https://labol.co.jp/",
+    "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=4AX5KD+A4DB02+40JM+TWTFL",
     "factoringType": "2社間",
     "feeRange": {
       "min": 3,
@@ -195,8 +195,6 @@ const companiesData: Company[] = [
       "IT・クリエイター以外の業種は審査が厳しい場合あり",
       "上限金額がやや低め"
     ],
-    "overallRating": 3.9,
-    "rankPosition": 5,
     "establishedYear": 2021,
     "targetIndustries": [
       "IT・Web",
@@ -204,7 +202,9 @@ const companiesData: Company[] = [
       "デザイン",
       "映像制作",
       "ゲーム開発"
-    ]
+    ],
+    "overallRating": 3.9,
+    "rankPosition": 5
   },
   {
     "slug": "accel-factor",
@@ -236,8 +236,6 @@ const companiesData: Company[] = [
       "手数料が他社よりやや高めになる場合がある",
       "電話対応が混み合うことがある"
     ],
-    "overallRating": 4.3,
-    "rankPosition": 6,
     "establishedYear": 2018,
     "targetIndustries": [
       "建設業",
@@ -245,7 +243,9 @@ const companiesData: Company[] = [
       "製造業",
       "小売業",
       "サービス業"
-    ]
+    ],
+    "overallRating": 4.3,
+    "rankPosition": 6
   },
   {
     "slug": "chusho-support",
@@ -277,8 +277,6 @@ const companiesData: Company[] = [
       "知名度がやや低い",
       "土日祝は対応不可"
     ],
-    "overallRating": 4.1,
-    "rankPosition": 7,
     "establishedYear": 2017,
     "targetIndustries": [
       "建設業",
@@ -286,7 +284,9 @@ const companiesData: Company[] = [
       "製造業",
       "医療・介護",
       "小売業"
-    ]
+    ],
+    "overallRating": 4.1,
+    "rankPosition": 7
   },
   {
     "slug": "pay-today",
@@ -318,15 +318,15 @@ const companiesData: Company[] = [
       "新しいサービスで実績が少ない",
       "電話サポートが限定的"
     ],
-    "overallRating": 4.3,
-    "rankPosition": 8,
     "establishedYear": 2021,
     "targetIndustries": [
       "IT・Web",
       "小売業",
       "飲食業",
       "広告・メディア"
-    ]
+    ],
+    "overallRating": 4.3,
+    "rankPosition": 8
   },
   {
     "slug": "freenance",
@@ -358,8 +358,6 @@ const companiesData: Company[] = [
       "法人向けの大口案件には不向き",
       "フリーランス以外は利用しにくい"
     ],
-    "overallRating": 4.3,
-    "rankPosition": 9,
     "establishedYear": 2018,
     "targetIndustries": [
       "フリーランス",
@@ -367,7 +365,9 @@ const companiesData: Company[] = [
       "エンジニア",
       "ライター",
       "デザイナー"
-    ]
+    ],
+    "overallRating": 4.3,
+    "rankPosition": 9
   },
   {
     "slug": "paytner",
@@ -399,15 +399,15 @@ const companiesData: Company[] = [
       "手数料10%固定で割高な場合も",
       "買取上限が100万円と低い"
     ],
-    "overallRating": 4.1,
-    "rankPosition": 10,
     "establishedYear": 2019,
     "targetIndustries": [
       "IT・Web",
       "デザイン",
       "広告・メディア",
       "飲食業"
-    ]
+    ],
+    "overallRating": 4.1,
+    "rankPosition": 10
   },
   {
     "slug": "mf-early-payment",
@@ -439,8 +439,6 @@ const companiesData: Company[] = [
       "法人専門で個人事業主不可",
       "比較的新しいサービス"
     ],
-    "overallRating": 4.2,
-    "rankPosition": 11,
     "establishedYear": 2017,
     "targetIndustries": [
       "IT・Web",
@@ -448,7 +446,9 @@ const companiesData: Company[] = [
       "サービス業",
       "卸売業",
       "広告業"
-    ]
+    ],
+    "overallRating": 4.2,
+    "rankPosition": 11
   },
   {
     "slug": "gmo-btob",
@@ -480,8 +480,6 @@ const companiesData: Company[] = [
       "法人のみ対応（個人事業主不可）",
       "最短2営業日とやや遅め"
     ],
-    "overallRating": 4.2,
-    "rankPosition": 12,
     "establishedYear": 1995,
     "targetIndustries": [
       "製造業",
@@ -489,7 +487,9 @@ const companiesData: Company[] = [
       "卸売業",
       "建設業",
       "運送業"
-    ]
+    ],
+    "overallRating": 4.2,
+    "rankPosition": 12
   },
   {
     "slug": "pmg",
@@ -521,8 +521,6 @@ const companiesData: Company[] = [
       "少額案件は優先度が下がる場合あり",
       "手数料は案件による"
     ],
-    "overallRating": 4.1,
-    "rankPosition": 13,
     "establishedYear": 2015,
     "targetIndustries": [
       "建設業",
@@ -530,13 +528,15 @@ const companiesData: Company[] = [
       "製造業",
       "医療・介護",
       "人材派遣"
-    ]
+    ],
+    "overallRating": 4.1,
+    "rankPosition": 13
   },
   {
     "slug": "no1",
     "name": "No.1ファクタリング",
     "description": "建設業界に強いファクタリング会社。対面相談も可能で、手厚いサポートが魅力。全国出張対応。",
-    "affiliateUrl": "https://no1service.co.jp/",
+    "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=4AX5KD+A5K67M+4EKW+5ZEMP",
     "factoringType": "2社間・3社間",
     "feeRange": {
       "min": 1,
@@ -562,15 +562,15 @@ const companiesData: Company[] = [
       "オンライン完結ではない",
       "手数料の幅が広い"
     ],
-    "overallRating": 4,
-    "rankPosition": 14,
     "establishedYear": 2016,
     "targetIndustries": [
       "建設業",
       "運送業",
       "医療・介護",
       "製造業"
-    ]
+    ],
+    "overallRating": 4,
+    "rankPosition": 14
   },
   {
     "slug": "anew",
@@ -602,8 +602,6 @@ const companiesData: Company[] = [
       "審査がやや厳格で通過しない場合もある",
       "即日入金は原則非対応"
     ],
-    "overallRating": 4.2,
-    "rankPosition": 15,
     "establishedYear": 2020,
     "targetIndustries": [
       "IT・Web",
@@ -611,13 +609,15 @@ const companiesData: Company[] = [
       "卸売業",
       "サービス業",
       "広告業"
-    ]
+    ],
+    "overallRating": 4.2,
+    "rankPosition": 15
   },
   {
     "slug": "msfj",
     "name": "MSFJ",
     "description": "業界最安水準の手数料1%〜が最大の魅力。コスト重視の企業に選ばれているファクタリング会社で、手数料の透明性にも定評があります。",
-    "affiliateUrl": "https://msfj.jp/",
+    "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=4AX1OL+BMJR1U+42NG+C03K1",
     "factoringType": "2社間・3社間",
     "feeRange": {
       "min": 1,
@@ -643,8 +643,6 @@ const companiesData: Company[] = [
       "入金まで最短2日かかる",
       "高額案件の対応上限がやや低め"
     ],
-    "overallRating": 4.2,
-    "rankPosition": 16,
     "establishedYear": 2017,
     "targetIndustries": [
       "IT・Web",
@@ -652,13 +650,15 @@ const companiesData: Company[] = [
       "コンサルティング",
       "製造業",
       "卸売業"
-    ]
+    ],
+    "overallRating": 4.2,
+    "rankPosition": 16
   },
   {
     "slug": "goodplus",
     "name": "GoodPlus（グッドプラス）",
     "description": "土日祝も対応。最短90分で入金。手数料5%～15%。他社比較で1%以上安くする保証付き。",
-    "affiliateUrl": "https://good-plus.jp/",
+    "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=4AX5KD+A1ZKKY+5DD4+5ZU29",
     "factoringType": "2社間",
     "feeRange": {
       "min": 5,
@@ -684,8 +684,6 @@ const companiesData: Company[] = [
       "手数料下限が5%とやや高め",
       "法人のみ対応の場合あり"
     ],
-    "overallRating": 4.1,
-    "rankPosition": 17,
     "establishedYear": 2020,
     "targetIndustries": [
       "建設業",
@@ -693,7 +691,9 @@ const companiesData: Company[] = [
       "製造業",
       "IT・Web",
       "サービス業"
-    ]
+    ],
+    "overallRating": 4.1,
+    "rankPosition": 17
   },
   {
     "slug": "next-one",
@@ -725,8 +725,6 @@ const companiesData: Company[] = [
       "対応業界以外の審査はやや時間がかかる",
       "オンライン完結に対応していない"
     ],
-    "overallRating": 3.8,
-    "rankPosition": 18,
     "establishedYear": 2019,
     "targetIndustries": [
       "建設業",
@@ -734,7 +732,9 @@ const companiesData: Company[] = [
       "調剤薬局",
       "歯科",
       "土木業"
-    ]
+    ],
+    "overallRating": 3.8,
+    "rankPosition": 18
   },
   {
     "slug": "mentor-capital",
@@ -766,8 +766,6 @@ const companiesData: Company[] = [
       "少額案件には対応していない",
       "オンライン完結には非対応で面談が必要"
     ],
-    "overallRating": 4.1,
-    "rankPosition": 19,
     "establishedYear": 2016,
     "targetIndustries": [
       "建設業",
@@ -775,13 +773,15 @@ const companiesData: Company[] = [
       "卸売業",
       "不動産業",
       "人材派遣業"
-    ]
+    ],
+    "overallRating": 4.1,
+    "rankPosition": 19
   },
   {
     "slug": "top-management",
     "name": "トップ・マネジメント",
     "description": "累計取引件数5万件超の実績。最短即日入金、2社間・3社間両対応で幅広いニーズに応える。",
-    "affiliateUrl": "https://top-management.co.jp/",
+    "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=4AX5KD+9UUDBM+3JLM+5YJRM",
     "factoringType": "2社間・3社間",
     "feeRange": {
       "min": 1,
@@ -807,8 +807,6 @@ const companiesData: Company[] = [
       "審査基準がやや厳しい場合も",
       "大口以外は対応が遅くなる場合も"
     ],
-    "overallRating": 4.2,
-    "rankPosition": 20,
     "establishedYear": 2009,
     "targetIndustries": [
       "建設業",
@@ -816,13 +814,15 @@ const companiesData: Company[] = [
       "製造業",
       "医療・介護",
       "人材派遣"
-    ]
+    ],
+    "overallRating": 4.2,
+    "rankPosition": 20
   },
   {
     "slug": "factoring-try",
     "name": "ファクタリングのTRY",
     "description": "ノンリコース契約で売掛先倒産リスクなし。10万円〜5,000万円以上、24時間365日電話受付。",
-    "affiliateUrl": "https://www.factoring-try.com/",
+    "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=4AX1ON+BGLF02+50EQ+609HT",
     "factoringType": "2社間",
     "feeRange": {
       "min": 3,
@@ -848,8 +848,6 @@ const companiesData: Company[] = [
       "手数料の上限がやや高い",
       "オンライン審査の精度は他社に劣る場合も"
     ],
-    "overallRating": 3.7,
-    "rankPosition": 21,
     "establishedYear": 2018,
     "targetIndustries": [
       "建設業",
@@ -857,13 +855,15 @@ const companiesData: Company[] = [
       "製造業",
       "小売業",
       "サービス業"
-    ]
+    ],
+    "overallRating": 3.7,
+    "rankPosition": 21
   },
   {
     "slug": "nishi-nihon-factor",
     "name": "西日本ファクター",
     "description": "中国・九州エリア密着型のファクタリング会社。最短即日で1,000万円まで買取可能。地域企業に強い。",
-    "affiliateUrl": "https://www.242first.com/",
+    "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=4AX1ON+BMJR1U+3XT0+5YJRM",
     "factoringType": "2社間・3社間",
     "feeRange": {
       "min": 2,
@@ -889,8 +889,6 @@ const companiesData: Company[] = [
       "東日本では利用しにくい",
       "オンライン完結に非対応"
     ],
-    "overallRating": 3.9,
-    "rankPosition": 22,
     "establishedYear": 2017,
     "targetIndustries": [
       "建設業",
@@ -898,13 +896,15 @@ const companiesData: Company[] = [
       "製造業",
       "医療・介護",
       "小売業"
-    ]
+    ],
+    "overallRating": 3.9,
+    "rankPosition": 22
   },
   {
     "slug": "trust-gateway",
     "name": "トラストゲートウェイ",
     "description": "福岡拠点のファクタリング会社。審査通過率95%以上、クラウド契約で来店不要。医療系にも対応。",
-    "affiliateUrl": "https://trustgateway.co.jp/",
+    "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=4AX5KD+A0SPDE+3RD2+5YJRM",
     "factoringType": "2社間・3社間",
     "feeRange": {
       "min": 3,
@@ -930,8 +930,6 @@ const companiesData: Company[] = [
       "福岡以外の対面は難しい",
       "手数料の上限がやや高め"
     ],
-    "overallRating": 3.8,
-    "rankPosition": 23,
     "establishedYear": 2018,
     "targetIndustries": [
       "医療・介護",
@@ -939,7 +937,9 @@ const companiesData: Company[] = [
       "運送業",
       "製造業",
       "サービス業"
-    ]
+    ],
+    "overallRating": 3.8,
+    "rankPosition": 23
   },
   {
     "slug": "jtc",
@@ -971,8 +971,6 @@ const companiesData: Company[] = [
       "オンライン完結ではない",
       "東京に拠点がない"
     ],
-    "overallRating": 4,
-    "rankPosition": 24,
     "establishedYear": 2013,
     "targetIndustries": [
       "建設業",
@@ -980,13 +978,15 @@ const companiesData: Company[] = [
       "運送業",
       "卸売業",
       "医療・介護"
-    ]
+    ],
+    "overallRating": 4,
+    "rankPosition": 24
   },
   {
     "slug": "ace-trust",
     "name": "エーストラスト",
     "description": "独自の柔軟な審査基準で高い契約率を誇るファクタリング会社。最短2時間で送金完了、最大5,000万円まで対応。",
-    "affiliateUrl": "https://ace-trust.co.jp/",
+    "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=4AX5KD+9TNI42+5T7O+5Z6WX",
     "factoringType": "2社間",
     "feeRange": {
       "min": 1,
@@ -1012,8 +1012,6 @@ const companiesData: Company[] = [
       "知名度がやや低い",
       "手数料の幅が広い"
     ],
-    "overallRating": 4,
-    "rankPosition": 25,
     "establishedYear": 2018,
     "targetIndustries": [
       "建設業",
@@ -1021,13 +1019,15 @@ const companiesData: Company[] = [
       "製造業",
       "IT・Web",
       "サービス業"
-    ]
+    ],
+    "overallRating": 4,
+    "rankPosition": 25
   },
   {
     "slug": "factoring-zero",
     "name": "ファクタリングZERO",
     "description": "福岡発、西日本を中心に展開するファクタリング会社。審査通過率96%、20万円〜5,000万円まで対応。",
-    "affiliateUrl": "https://factoring-zero.com/",
+    "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=4AX5KD+A2L06Q+4DJO+5YJRM",
     "factoringType": "2社間・3社間",
     "feeRange": {
       "min": 3,
@@ -1053,8 +1053,6 @@ const companiesData: Company[] = [
       "東日本では対面対応が難しい場合あり",
       "手数料の上限がやや高め"
     ],
-    "overallRating": 3.9,
-    "rankPosition": 26,
     "establishedYear": 2011,
     "targetIndustries": [
       "建設業",
@@ -1062,7 +1060,9 @@ const companiesData: Company[] = [
       "運送業",
       "製造業",
       "小売業"
-    ]
+    ],
+    "overallRating": 3.9,
+    "rankPosition": 26
   },
   {
     "slug": "kaisoku",
@@ -1094,8 +1094,6 @@ const companiesData: Company[] = [
       "2社間ファクタリングのみ",
       "対面での相談ができない"
     ],
-    "overallRating": 4.2,
-    "rankPosition": 27,
     "establishedYear": 2020,
     "targetIndustries": [
       "建設業",
@@ -1103,7 +1101,9 @@ const companiesData: Company[] = [
       "製造業",
       "小売業",
       "飲食業"
-    ]
+    ],
+    "overallRating": 4.2,
+    "rankPosition": 27
   },
   {
     "slug": "otti",
@@ -1135,8 +1135,6 @@ const companiesData: Company[] = [
       "手数料上限が高め",
       "手数料上限非公開"
     ],
-    "overallRating": 3.7,
-    "rankPosition": 28,
     "establishedYear": 2017,
     "targetIndustries": [
       "建設業",
@@ -1144,7 +1142,9 @@ const companiesData: Company[] = [
       "IT・Web",
       "小売業",
       "飲食業"
-    ]
+    ],
+    "overallRating": 3.7,
+    "rankPosition": 28
   },
   {
     "slug": "ennavi",
@@ -1176,8 +1176,6 @@ const companiesData: Company[] = [
       "手数料がやや高め",
       "即日ではなく翌日になる場合も"
     ],
-    "overallRating": 3.7,
-    "rankPosition": 29,
     "establishedYear": 2017,
     "targetIndustries": [
       "建設業",
@@ -1185,13 +1183,15 @@ const companiesData: Company[] = [
       "製造業",
       "小売業",
       "サービス業"
-    ]
+    ],
+    "overallRating": 3.7,
+    "rankPosition": 29
   },
   {
     "slug": "factorplan",
     "name": "ファクタープラン",
     "description": "「会わずに、迷わず、すぐ進む」がコンセプト。最短4時間で資金化、調達成功率95.2%。",
-    "affiliateUrl": "https://factor-plan.com/",
+    "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=4AX5KD+A079RM+5RC6+5YJRM",
     "factoringType": "2社間",
     "feeRange": {
       "min": 3,
@@ -1217,8 +1217,6 @@ const companiesData: Company[] = [
       "2社間ファクタリングのみ",
       "手数料がやや高めの場合がある"
     ],
-    "overallRating": 3.8,
-    "rankPosition": 30,
     "establishedYear": 2019,
     "targetIndustries": [
       "建設業",
@@ -1226,7 +1224,9 @@ const companiesData: Company[] = [
       "広告・メディア",
       "運送業",
       "製造業"
-    ]
+    ],
+    "overallRating": 3.8,
+    "rankPosition": 30
   },
   {
     "slug": "bitresy",
@@ -1258,8 +1258,6 @@ const companiesData: Company[] = [
       "即日入金は条件による",
       "手数料は案件ごとに変動が大きい"
     ],
-    "overallRating": 4.6,
-    "rankPosition": 31,
     "establishedYear": 2012,
     "targetIndustries": [
       "建設業",
@@ -1267,7 +1265,9 @@ const companiesData: Company[] = [
       "製造業",
       "医療・介護",
       "人材派遣業"
-    ]
+    ],
+    "overallRating": 4.6,
+    "rankPosition": 31
   },
   {
     "slug": "ag-business",
@@ -1299,8 +1299,6 @@ const companiesData: Company[] = [
       "大手のため審査がやや厳格な場合も",
       "手数料は案件による"
     ],
-    "overallRating": 4.4,
-    "rankPosition": 32,
     "establishedYear": 2001,
     "targetIndustries": [
       "建設業",
@@ -1308,7 +1306,9 @@ const companiesData: Company[] = [
       "運送業",
       "小売業",
       "サービス業"
-    ]
+    ],
+    "overallRating": 4.4,
+    "rankPosition": 32
   },
   {
     "slug": "japan-maison",
@@ -1340,8 +1340,6 @@ const companiesData: Company[] = [
       "入金まで最短3日と時間がかかる",
       "急ぎの資金調達には不向き"
     ],
-    "overallRating": 4.4,
-    "rankPosition": 33,
     "establishedYear": 2017,
     "targetIndustries": [
       "建設業",
@@ -1349,7 +1347,9 @@ const companiesData: Company[] = [
       "運送業",
       "医療・介護",
       "小売業"
-    ]
+    ],
+    "overallRating": 4.4,
+    "rankPosition": 33
   },
   {
     "slug": "mizuho-factor",
@@ -1381,15 +1381,15 @@ const companiesData: Company[] = [
       "中小企業・個人事業主は利用が難しい",
       "入金まで時間がかかる"
     ],
-    "overallRating": 4.3,
-    "rankPosition": 34,
     "establishedYear": 1977,
     "targetIndustries": [
       "製造業",
       "卸売業",
       "商社",
       "大企業"
-    ]
+    ],
+    "overallRating": 4.3,
+    "rankPosition": 34
   },
   {
     "slug": "mufg-factor",
@@ -1421,15 +1421,15 @@ const companiesData: Company[] = [
       "中小企業・個人事業主には不向き",
       "審査・入金に時間がかかる"
     ],
-    "overallRating": 4.3,
-    "rankPosition": 35,
     "establishedYear": 1977,
     "targetIndustries": [
       "製造業",
       "卸売業",
       "商社",
       "大企業"
-    ]
+    ],
+    "overallRating": 4.3,
+    "rankPosition": 35
   },
   {
     "slug": "quartett",
@@ -1461,15 +1461,15 @@ const companiesData: Company[] = [
       "手数料の上限がやや高め",
       "3社間ファクタリングに非対応"
     ],
-    "overallRating": 4.1,
-    "rankPosition": 36,
     "establishedYear": 2020,
     "targetIndustries": [
       "建設業",
       "運送業",
       "製造業",
       "小売業"
-    ]
+    ],
+    "overallRating": 4.1,
+    "rankPosition": 36
   },
   {
     "slug": "sbi-factoring",
@@ -1501,8 +1501,6 @@ const companiesData: Company[] = [
       "法人限定",
       "最短2営業日"
     ],
-    "overallRating": 4.1,
-    "rankPosition": 37,
     "establishedYear": 2015,
     "targetIndustries": [
       "IT・Web",
@@ -1510,7 +1508,9 @@ const companiesData: Company[] = [
       "卸売業",
       "サービス業",
       "建設業"
-    ]
+    ],
+    "overallRating": 4.1,
+    "rankPosition": 37
   },
   {
     "slug": "accretive",
@@ -1542,8 +1542,6 @@ const companiesData: Company[] = [
       "3社間のみ",
       "入金まで日数がかかる"
     ],
-    "overallRating": 4,
-    "rankPosition": 38,
     "establishedYear": 2000,
     "targetIndustries": [
       "医療・介護",
@@ -1551,13 +1549,15 @@ const companiesData: Company[] = [
       "歯科",
       "病院",
       "介護施設"
-    ]
+    ],
+    "overallRating": 4,
+    "rankPosition": 38
   },
   {
     "slug": "ad-planning",
     "name": "アドプランニング",
     "description": "手数料2%～10%の業界最安水準。10万円からの少額買取にも対応。",
-    "affiliateUrl": "https://ad-planning.co.jp/factoring/",
+    "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=4AX1OL+BSI33M+5LZE+BXB8X",
     "factoringType": "2社間・3社間",
     "feeRange": {
       "min": 2,
@@ -1583,8 +1583,6 @@ const companiesData: Company[] = [
       "知名度がやや低い",
       "大口案件は別途相談"
     ],
-    "overallRating": 4,
-    "rankPosition": 39,
     "establishedYear": 2018,
     "targetIndustries": [
       "IT・Web",
@@ -1592,7 +1590,9 @@ const companiesData: Company[] = [
       "小売業",
       "飲食業",
       "サービス業"
-    ]
+    ],
+    "overallRating": 4,
+    "rankPosition": 39
   },
   {
     "slug": "factoru",
@@ -1624,8 +1624,6 @@ const companiesData: Company[] = [
       "知名度がまだ低い",
       "2者間のみ"
     ],
-    "overallRating": 4,
-    "rankPosition": 40,
     "establishedYear": 2017,
     "targetIndustries": [
       "建設業",
@@ -1633,7 +1631,9 @@ const companiesData: Company[] = [
       "製造業",
       "IT・Web",
       "医療・介護"
-    ]
+    ],
+    "overallRating": 4,
+    "rankPosition": 40
   },
   {
     "slug": "jigyou-agent",
@@ -1665,8 +1665,6 @@ const companiesData: Company[] = [
       "500万円超は面談が必要",
       "手数料の幅が広い"
     ],
-    "overallRating": 4,
-    "rankPosition": 41,
     "establishedYear": 2014,
     "targetIndustries": [
       "建設業",
@@ -1674,7 +1672,9 @@ const companiesData: Company[] = [
       "製造業",
       "IT・Web",
       "医療・介護"
-    ]
+    ],
+    "overallRating": 4,
+    "rankPosition": 41
   },
   {
     "slug": "kkt",
@@ -1706,8 +1706,6 @@ const companiesData: Company[] = [
       "法人のみ対応",
       "土日祝は休み"
     ],
-    "overallRating": 4,
-    "rankPosition": 42,
     "establishedYear": 2018,
     "targetIndustries": [
       "建設業",
@@ -1715,13 +1713,15 @@ const companiesData: Company[] = [
       "製造業",
       "飲食業",
       "卸売業"
-    ]
+    ],
+    "overallRating": 4,
+    "rankPosition": 42
   },
   {
     "slug": "sankyo-service",
     "name": "三共サービス",
     "description": "創業20年以上の老舗ファクタリング会社。元金融マンによる丁寧な対応と業界最安水準の手数料が魅力。",
-    "affiliateUrl": "https://www.sankyo-fs.jp/",
+    "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=4AX5KD+A36FSI+57YY+5YRHE",
     "factoringType": "2社間・3社間",
     "feeRange": {
       "min": 1.5,
@@ -1747,8 +1747,6 @@ const companiesData: Company[] = [
       "個人事業主は利用不可",
       "入金まで2日程度かかる"
     ],
-    "overallRating": 4,
-    "rankPosition": 43,
     "establishedYear": 2001,
     "targetIndustries": [
       "建設業",
@@ -1756,7 +1754,9 @@ const companiesData: Company[] = [
       "運送業",
       "卸売業",
       "人材派遣"
-    ]
+    ],
+    "overallRating": 4,
+    "rankPosition": 43
   },
   {
     "slug": "shikin-quick",
@@ -1788,8 +1788,6 @@ const companiesData: Company[] = [
       "2者間のみ",
       "手数料上限が高い場合も"
     ],
-    "overallRating": 4,
-    "rankPosition": 44,
     "establishedYear": 2020,
     "targetIndustries": [
       "IT・Web",
@@ -1797,7 +1795,9 @@ const companiesData: Company[] = [
       "小売業",
       "サービス業",
       "飲食業"
-    ]
+    ],
+    "overallRating": 4,
+    "rankPosition": 44
   },
   {
     "slug": "trusfort",
@@ -1829,8 +1829,6 @@ const companiesData: Company[] = [
       "法人向けの大口案件には不向き",
       "3社間ファクタリングに非対応"
     ],
-    "overallRating": 4,
-    "rankPosition": 45,
     "establishedYear": 2019,
     "targetIndustries": [
       "フリーランス",
@@ -1838,7 +1836,9 @@ const companiesData: Company[] = [
       "クリエイター",
       "士業",
       "飲食業"
-    ]
+    ],
+    "overallRating": 4,
+    "rankPosition": 45
   },
   {
     "slug": "act-will",
@@ -1870,8 +1870,6 @@ const companiesData: Company[] = [
       "オンライン完結に非対応",
       "少額案件には不向き"
     ],
-    "overallRating": 3.9,
-    "rankPosition": 46,
     "establishedYear": 2017,
     "targetIndustries": [
       "建設業",
@@ -1879,7 +1877,9 @@ const companiesData: Company[] = [
       "製造業",
       "不動産業",
       "卸売業"
-    ]
+    ],
+    "overallRating": 3.9,
+    "rankPosition": 46
   },
   {
     "slug": "finto",
@@ -1911,8 +1911,6 @@ const companiesData: Company[] = [
       "最短翌日と即日ではない",
       "知名度がやや低い"
     ],
-    "overallRating": 3.9,
-    "rankPosition": 47,
     "establishedYear": 2020,
     "targetIndustries": [
       "IT・Web",
@@ -1920,7 +1918,9 @@ const companiesData: Company[] = [
       "サービス業",
       "製造業",
       "広告業"
-    ]
+    ],
+    "overallRating": 3.9,
+    "rankPosition": 47
   },
   {
     "slug": "invoice-pay",
@@ -1952,8 +1952,6 @@ const companiesData: Company[] = [
       "比較的新しい会社",
       "知名度が低め"
     ],
-    "overallRating": 3.9,
-    "rankPosition": 48,
     "establishedYear": 2019,
     "targetIndustries": [
       "IT・Web",
@@ -1961,7 +1959,9 @@ const companiesData: Company[] = [
       "サービス業",
       "小売業",
       "製造業"
-    ]
+    ],
+    "overallRating": 3.9,
+    "rankPosition": 48
   },
   {
     "slug": "kensetsukun",
@@ -1993,13 +1993,13 @@ const companiesData: Company[] = [
       "建設業以外は利用できない",
       "手数料がやや高め"
     ],
-    "overallRating": 3.9,
-    "rankPosition": 49,
     "establishedYear": 2018,
     "targetIndustries": [
       "建設業",
       "土木業"
-    ]
+    ],
+    "overallRating": 3.9,
+    "rankPosition": 49
   },
   {
     "slug": "norikae-plus",
@@ -2031,8 +2031,6 @@ const companiesData: Company[] = [
       "新規利用者は対象外",
       "乗り換え元の情報提示が必要"
     ],
-    "overallRating": 3.9,
-    "rankPosition": 50,
     "establishedYear": 2020,
     "targetIndustries": [
       "建設業",
@@ -2040,7 +2038,9 @@ const companiesData: Company[] = [
       "製造業",
       "IT・Web",
       "医療・介護"
-    ]
+    ],
+    "overallRating": 3.9,
+    "rankPosition": 50
   },
   {
     "slug": "quick-management",
@@ -2072,15 +2072,15 @@ const companiesData: Company[] = [
       "2社間ファクタリングのみ",
       "新しい会社で実績が少なめ"
     ],
-    "overallRating": 3.9,
-    "rankPosition": 51,
     "establishedYear": 2021,
     "targetIndustries": [
       "IT・Web",
       "建設業",
       "運送業",
       "広告・メディア"
-    ]
+    ],
+    "overallRating": 3.9,
+    "rankPosition": 51
   },
   {
     "slug": "soreiyu",
@@ -2112,8 +2112,6 @@ const companiesData: Company[] = [
       "手数料上限がやや高い",
       "知名度がやや低い"
     ],
-    "overallRating": 3.9,
-    "rankPosition": 52,
     "establishedYear": 2018,
     "targetIndustries": [
       "建設業",
@@ -2121,7 +2119,9 @@ const companiesData: Company[] = [
       "IT・Web",
       "小売業",
       "飲食業"
-    ]
+    ],
+    "overallRating": 3.9,
+    "rankPosition": 52
   },
   {
     "slug": "zero-factoring",
@@ -2153,8 +2153,6 @@ const companiesData: Company[] = [
       "東日本では対面対応が難しい場合も",
       "大口案件は別途相談"
     ],
-    "overallRating": 3.9,
-    "rankPosition": 53,
     "establishedYear": 2018,
     "targetIndustries": [
       "建設業",
@@ -2162,7 +2160,9 @@ const companiesData: Company[] = [
       "製造業",
       "小売業",
       "飲食業"
-    ]
+    ],
+    "overallRating": 3.9,
+    "rankPosition": 53
   },
   {
     "slug": "anchor-guardian",
@@ -2194,8 +2194,6 @@ const companiesData: Company[] = [
       "西日本限定",
       "東日本は対面対応不可"
     ],
-    "overallRating": 3.8,
-    "rankPosition": 54,
     "establishedYear": 2016,
     "targetIndustries": [
       "建設業",
@@ -2203,7 +2201,9 @@ const companiesData: Company[] = [
       "製造業",
       "小売業",
       "飲食業"
-    ]
+    ],
+    "overallRating": 3.8,
+    "rankPosition": 54
   },
   {
     "slug": "bestpay",
@@ -2235,8 +2235,6 @@ const companiesData: Company[] = [
       "手数料が高め",
       "最短翌営業日"
     ],
-    "overallRating": 3.8,
-    "rankPosition": 55,
     "establishedYear": 2017,
     "targetIndustries": [
       "建設業",
@@ -2244,7 +2242,9 @@ const companiesData: Company[] = [
       "IT・Web",
       "運送業",
       "広告業"
-    ]
+    ],
+    "overallRating": 3.8,
+    "rankPosition": 55
   },
   {
     "slug": "ja-mitsui-lease",
@@ -2277,8 +2277,6 @@ const companiesData: Company[] = [
       "個人事業主は不可",
       "入金まで時間がかかる"
     ],
-    "overallRating": 3.8,
-    "rankPosition": 56,
     "establishedYear": 2008,
     "targetIndustries": [
       "農業",
@@ -2286,13 +2284,15 @@ const companiesData: Company[] = [
       "製造業",
       "卸売業",
       "運送業"
-    ]
+    ],
+    "overallRating": 3.8,
+    "rankPosition": 56
   },
   {
     "slug": "japan-management",
     "name": "ジャパンマネジメント",
     "description": "東京・福岡の2拠点で全国対応。2社間・3社間両対応、24時間相談受付で最短即日審査完了。",
-    "affiliateUrl": "https://japan-management.com/",
+    "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=4AX1ON+BN56NM+3V6A+5YJRM",
     "factoringType": "2社間・3社間",
     "feeRange": {
       "min": 3,
@@ -2318,8 +2318,6 @@ const companiesData: Company[] = [
       "オンライン完結ではない",
       "手数料の上限がやや高め"
     ],
-    "overallRating": 3.8,
-    "rankPosition": 57,
     "establishedYear": 2016,
     "targetIndustries": [
       "建設業",
@@ -2327,7 +2325,9 @@ const companiesData: Company[] = [
       "製造業",
       "医療・介護",
       "飲食業"
-    ]
+    ],
+    "overallRating": 3.8,
+    "rankPosition": 57
   },
   {
     "slug": "japanfactor",
@@ -2359,8 +2359,6 @@ const companiesData: Company[] = [
       "手数料上限がやや高め",
       "大手と比べて規模が小さい"
     ],
-    "overallRating": 3.8,
-    "rankPosition": 58,
     "establishedYear": 2015,
     "targetIndustries": [
       "建設業",
@@ -2368,7 +2366,9 @@ const companiesData: Company[] = [
       "運送業",
       "小売業",
       "製造業"
-    ]
+    ],
+    "overallRating": 3.8,
+    "rankPosition": 58
   },
   {
     "slug": "onebank",
@@ -2400,8 +2400,6 @@ const companiesData: Company[] = [
       "法人向けの大口案件には不向き",
       "手数料の下限がやや高め"
     ],
-    "overallRating": 3.8,
-    "rankPosition": 59,
     "establishedYear": 2023,
     "targetIndustries": [
       "IT・Web",
@@ -2409,7 +2407,9 @@ const companiesData: Company[] = [
       "デザイン",
       "映像制作",
       "飲食業"
-    ]
+    ],
+    "overallRating": 3.8,
+    "rankPosition": 59
   },
   {
     "slug": "orix-factoring",
@@ -2442,8 +2442,6 @@ const companiesData: Company[] = [
       "個人事業主不可",
       "審査に時間がかかる"
     ],
-    "overallRating": 3.8,
-    "rankPosition": 60,
     "establishedYear": 1964,
     "targetIndustries": [
       "製造業",
@@ -2451,7 +2449,9 @@ const companiesData: Company[] = [
       "不動産業",
       "卸売業",
       "運送業"
-    ]
+    ],
+    "overallRating": 3.8,
+    "rankPosition": 60
   },
   {
     "slug": "sokumu",
@@ -2483,15 +2483,15 @@ const companiesData: Company[] = [
       "知名度がまだ低い",
       "実績が少なめ"
     ],
-    "overallRating": 3.8,
-    "rankPosition": 61,
     "establishedYear": 2021,
     "targetIndustries": [
       "IT・Web",
       "建設業",
       "製造業",
       "小売業"
-    ]
+    ],
+    "overallRating": 3.8,
+    "rankPosition": 61
   },
   {
     "slug": "trapay",
@@ -2523,15 +2523,15 @@ const companiesData: Company[] = [
       "対面での相談ができない",
       "知名度がまだ低い"
     ],
-    "overallRating": 3.8,
-    "rankPosition": 62,
     "establishedYear": 2022,
     "targetIndustries": [
       "IT・Web",
       "製造業",
       "小売業",
       "サービス業"
-    ]
+    ],
+    "overallRating": 3.8,
+    "rankPosition": 62
   },
   {
     "slug": "urikakedo",
@@ -2563,8 +2563,6 @@ const companiesData: Company[] = [
       "知名度がまだ低い",
       "大口案件の対応は要相談"
     ],
-    "overallRating": 3.8,
-    "rankPosition": 63,
     "establishedYear": 2019,
     "targetIndustries": [
       "建設業",
@@ -2572,7 +2570,9 @@ const companiesData: Company[] = [
       "製造業",
       "小売業",
       "サービス業"
-    ]
+    ],
+    "overallRating": 3.8,
+    "rankPosition": 63
   },
   {
     "slug": "bion",
@@ -2604,8 +2604,6 @@ const companiesData: Company[] = [
       "手数料が一律10%で割高な場合も",
       "2者間のみ"
     ],
-    "overallRating": 3.7,
-    "rankPosition": 64,
     "establishedYear": 2020,
     "targetIndustries": [
       "IT・Web",
@@ -2613,7 +2611,9 @@ const companiesData: Company[] = [
       "サービス業",
       "建設業",
       "飲食業"
-    ]
+    ],
+    "overallRating": 3.7,
+    "rankPosition": 64
   },
   {
     "slug": "fukuoka-factoring",
@@ -2645,8 +2645,6 @@ const companiesData: Company[] = [
       "九州以外は対面不可",
       "手数料上限がやや高い"
     ],
-    "overallRating": 3.7,
-    "rankPosition": 65,
     "establishedYear": 2004,
     "targetIndustries": [
       "建設業",
@@ -2654,13 +2652,15 @@ const companiesData: Company[] = [
       "製造業",
       "飲食業",
       "小売業"
-    ]
+    ],
+    "overallRating": 3.7,
+    "rankPosition": 65
   },
   {
     "slug": "kyoei-support",
     "name": "共栄サポート",
     "description": "中小企業向けファクタリングを提供。柔軟な審査と丁寧なサポートで初めての方にも安心。",
-    "affiliateUrl": "https://kyoei-support.co.jp/",
+    "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=4AX5KD+9Q2WHE+5U8W+5YJRM",
     "factoringType": "2社間",
     "feeRange": {
       "min": 3,
@@ -2686,15 +2686,15 @@ const companiesData: Company[] = [
       "大口案件には不向き",
       "知名度がまだ低い"
     ],
-    "overallRating": 3.7,
-    "rankPosition": 66,
     "establishedYear": 2019,
     "targetIndustries": [
       "小売業",
       "飲食業",
       "サービス業",
       "IT・Web"
-    ]
+    ],
+    "overallRating": 3.7,
+    "rankPosition": 66
   },
   {
     "slug": "minnano-factoring",
@@ -2726,15 +2726,15 @@ const companiesData: Company[] = [
       "買取上限が500万円と低い",
       "法人の大口案件には不向き"
     ],
-    "overallRating": 3.7,
-    "rankPosition": 67,
     "establishedYear": 2021,
     "targetIndustries": [
       "IT・Web",
       "デザイン",
       "広告・メディア",
       "飲食業"
-    ]
+    ],
+    "overallRating": 3.7,
+    "rankPosition": 67
   },
   {
     "slug": "ntt-finance",
@@ -2767,8 +2767,6 @@ const companiesData: Company[] = [
       "個人事業主不可",
       "審査に時間がかかる"
     ],
-    "overallRating": 3.7,
-    "rankPosition": 68,
     "establishedYear": 1985,
     "targetIndustries": [
       "IT・Web",
@@ -2776,7 +2774,9 @@ const companiesData: Company[] = [
       "製造業",
       "サービス業",
       "建設業"
-    ]
+    ],
+    "overallRating": 3.7,
+    "rankPosition": 68
   },
   {
     "slug": "shikin-pay",
@@ -2808,15 +2808,15 @@ const companiesData: Company[] = [
       "対面相談ができない",
       "知名度がまだ低い"
     ],
-    "overallRating": 3.7,
-    "rankPosition": 69,
     "establishedYear": 2020,
     "targetIndustries": [
       "IT・Web",
       "建設業",
       "製造業",
       "小売業"
-    ]
+    ],
+    "overallRating": 3.7,
+    "rankPosition": 69
   },
   {
     "slug": "smbc-fs",
@@ -2848,8 +2848,6 @@ const companiesData: Company[] = [
       "知名度がやや低い",
       "手数料は個別査定"
     ],
-    "overallRating": 3.7,
-    "rankPosition": 70,
     "establishedYear": 1988,
     "targetIndustries": [
       "建設業",
@@ -2857,7 +2855,9 @@ const companiesData: Company[] = [
       "製造業",
       "IT・Web",
       "サービス業"
-    ]
+    ],
+    "overallRating": 3.7,
+    "rankPosition": 70
   },
   {
     "slug": "smfl",
@@ -2889,8 +2889,6 @@ const companiesData: Company[] = [
       "知名度がやや低い",
       "手数料は個別査定"
     ],
-    "overallRating": 3.7,
-    "rankPosition": 71,
     "establishedYear": 1963,
     "targetIndustries": [
       "建設業",
@@ -2898,7 +2896,9 @@ const companiesData: Company[] = [
       "製造業",
       "IT・Web",
       "サービス業"
-    ]
+    ],
+    "overallRating": 3.7,
+    "rankPosition": 71
   },
   {
     "slug": "tokyo-century",
@@ -2930,8 +2930,6 @@ const companiesData: Company[] = [
       "知名度がやや低い",
       "手数料は個別査定"
     ],
-    "overallRating": 3.7,
-    "rankPosition": 72,
     "establishedYear": 1969,
     "targetIndustries": [
       "建設業",
@@ -2939,7 +2937,9 @@ const companiesData: Company[] = [
       "製造業",
       "IT・Web",
       "サービス業"
-    ]
+    ],
+    "overallRating": 3.7,
+    "rankPosition": 72
   },
   {
     "slug": "vistia",
@@ -2971,8 +2971,6 @@ const companiesData: Company[] = [
       "知名度がやや低い",
       "手数料上限がやや高い"
     ],
-    "overallRating": 3.7,
-    "rankPosition": 73,
     "establishedYear": 2019,
     "targetIndustries": [
       "建設業",
@@ -2980,7 +2978,9 @@ const companiesData: Company[] = [
       "IT・Web",
       "製造業",
       "サービス業"
-    ]
+    ],
+    "overallRating": 3.7,
+    "rankPosition": 73
   },
   {
     "slug": "factoring-japan",
@@ -3012,8 +3012,6 @@ const companiesData: Company[] = [
       "知名度が低め",
       "手数料は要相談"
     ],
-    "overallRating": 3.6,
-    "rankPosition": 74,
     "establishedYear": 2018,
     "targetIndustries": [
       "建設業",
@@ -3021,7 +3019,9 @@ const companiesData: Company[] = [
       "IT・Web",
       "運送業",
       "卸売業"
-    ]
+    ],
+    "overallRating": 3.6,
+    "rankPosition": 74
   },
   {
     "slug": "jfs",
@@ -3053,8 +3053,6 @@ const companiesData: Company[] = [
       "知名度が低め",
       "手数料は個別査定"
     ],
-    "overallRating": 3.6,
-    "rankPosition": 75,
     "establishedYear": 2018,
     "targetIndustries": [
       "建設業",
@@ -3062,13 +3060,15 @@ const companiesData: Company[] = [
       "製造業",
       "IT・Web",
       "サービス業"
-    ]
+    ],
+    "overallRating": 3.6,
+    "rankPosition": 75
   },
   {
     "slug": "jps-factoring",
     "name": "JPS",
     "description": "法人向けファクタリングサービス。売掛金の買取を通じた中小企業の資金繰り支援を行う。",
-    "affiliateUrl": "https://jps-factoring.com/",
+    "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=4AX1ON+BKRG8I+5RPI+60H7L",
     "factoringType": "2社間・3社間",
     "feeRange": {
       "min": 2,
@@ -3094,15 +3094,15 @@ const companiesData: Company[] = [
       "オンライン完結に非対応",
       "入金まで2日程度かかる"
     ],
-    "overallRating": 3.6,
-    "rankPosition": 76,
     "establishedYear": 2016,
     "targetIndustries": [
       "建設業",
       "製造業",
       "運送業",
       "卸売業"
-    ]
+    ],
+    "overallRating": 3.6,
+    "rankPosition": 76
   },
   {
     "slug": "kaipoke-early",
@@ -3134,12 +3134,12 @@ const companiesData: Company[] = [
       "知名度がやや低い",
       "手数料は個別査定"
     ],
-    "overallRating": 3.6,
-    "rankPosition": 77,
     "establishedYear": 2015,
     "targetIndustries": [
       "医療・介護"
-    ]
+    ],
+    "overallRating": 3.6,
+    "rankPosition": 77
   },
   {
     "slug": "nec-capital",
@@ -3171,8 +3171,6 @@ const companiesData: Company[] = [
       "知名度がやや低い",
       "手数料は個別査定"
     ],
-    "overallRating": 3.6,
-    "rankPosition": 78,
     "establishedYear": 1978,
     "targetIndustries": [
       "建設業",
@@ -3180,7 +3178,9 @@ const companiesData: Company[] = [
       "製造業",
       "IT・Web",
       "サービス業"
-    ]
+    ],
+    "overallRating": 3.6,
+    "rankPosition": 78
   },
   {
     "slug": "ntt-tc-lease",
@@ -3212,8 +3212,6 @@ const companiesData: Company[] = [
       "知名度がやや低い",
       "手数料は個別査定"
     ],
-    "overallRating": 3.6,
-    "rankPosition": 79,
     "establishedYear": 1985,
     "targetIndustries": [
       "建設業",
@@ -3221,7 +3219,9 @@ const companiesData: Company[] = [
       "製造業",
       "IT・Web",
       "サービス業"
-    ]
+    ],
+    "overallRating": 3.6,
+    "rankPosition": 79
   },
   {
     "slug": "paypal-biz-loan",
@@ -3253,8 +3253,6 @@ const companiesData: Company[] = [
       "知名度がやや低い",
       "手数料は個別査定"
     ],
-    "overallRating": 3.6,
-    "rankPosition": 80,
     "establishedYear": 2000,
     "targetIndustries": [
       "建設業",
@@ -3262,7 +3260,9 @@ const companiesData: Company[] = [
       "製造業",
       "IT・Web",
       "サービス業"
-    ]
+    ],
+    "overallRating": 3.6,
+    "rankPosition": 80
   },
   {
     "slug": "s-factoring",
@@ -3294,15 +3294,15 @@ const companiesData: Company[] = [
       "知名度が低い",
       "手数料の幅が広い"
     ],
-    "overallRating": 3.6,
-    "rankPosition": 81,
     "establishedYear": 2020,
     "targetIndustries": [
       "IT・Web",
       "建設業",
       "小売業",
       "サービス業"
-    ]
+    ],
+    "overallRating": 3.6,
+    "rankPosition": 81
   },
   {
     "slug": "saison-invoice",
@@ -3334,8 +3334,6 @@ const companiesData: Company[] = [
       "知名度がやや低い",
       "手数料は個別査定"
     ],
-    "overallRating": 3.6,
-    "rankPosition": 82,
     "establishedYear": 2019,
     "targetIndustries": [
       "建設業",
@@ -3343,7 +3341,9 @@ const companiesData: Company[] = [
       "製造業",
       "IT・Web",
       "サービス業"
-    ]
+    ],
+    "overallRating": 3.6,
+    "rankPosition": 82
   },
   {
     "slug": "saison-medical",
@@ -3375,12 +3375,12 @@ const companiesData: Company[] = [
       "知名度がやや低い",
       "手数料は個別査定"
     ],
-    "overallRating": 3.6,
-    "rankPosition": 83,
     "establishedYear": 2000,
     "targetIndustries": [
       "医療・介護"
-    ]
+    ],
+    "overallRating": 3.6,
+    "rankPosition": 83
   },
   {
     "slug": "showa-lease",
@@ -3412,8 +3412,6 @@ const companiesData: Company[] = [
       "個人事業主不可",
       "入金まで時間がかかる"
     ],
-    "overallRating": 3.6,
-    "rankPosition": 84,
     "establishedYear": 1969,
     "targetIndustries": [
       "製造業",
@@ -3421,7 +3419,9 @@ const companiesData: Company[] = [
       "不動産業",
       "卸売業",
       "運送業"
-    ]
+    ],
+    "overallRating": 3.6,
+    "rankPosition": 84
   },
   {
     "slug": "tokyo-spc",
@@ -3453,8 +3453,6 @@ const companiesData: Company[] = [
       "手数料非公開",
       "個人事業主不可"
     ],
-    "overallRating": 3.6,
-    "rankPosition": 85,
     "establishedYear": 1999,
     "targetIndustries": [
       "医療・介護",
@@ -3462,7 +3460,9 @@ const companiesData: Company[] = [
       "建設業",
       "卸売業",
       "不動産業"
-    ]
+    ],
+    "overallRating": 3.6,
+    "rankPosition": 85
   },
   {
     "slug": "witt",
@@ -3494,8 +3494,6 @@ const companiesData: Company[] = [
       "500万円超の案件は対応不可",
       "手数料がやや高め"
     ],
-    "overallRating": 3.6,
-    "rankPosition": 86,
     "establishedYear": 2016,
     "targetIndustries": [
       "小売業",
@@ -3503,7 +3501,9 @@ const companiesData: Company[] = [
       "サービス業",
       "IT・Web",
       "建設業"
-    ]
+    ],
+    "overallRating": 3.6,
+    "rankPosition": 86
   },
   {
     "slug": "alpharia",
@@ -3535,8 +3535,6 @@ const companiesData: Company[] = [
       "知名度がやや低い",
       "手数料は個別査定"
     ],
-    "overallRating": 3.5,
-    "rankPosition": 87,
     "establishedYear": 2018,
     "targetIndustries": [
       "建設業",
@@ -3544,7 +3542,9 @@ const companiesData: Company[] = [
       "製造業",
       "IT・Web",
       "サービス業"
-    ]
+    ],
+    "overallRating": 3.5,
+    "rankPosition": 87
   },
   {
     "slug": "besus",
@@ -3576,8 +3576,6 @@ const companiesData: Company[] = [
       "知名度がやや低い",
       "手数料は個別査定"
     ],
-    "overallRating": 3.5,
-    "rankPosition": 88,
     "establishedYear": 2018,
     "targetIndustries": [
       "建設業",
@@ -3585,7 +3583,9 @@ const companiesData: Company[] = [
       "製造業",
       "IT・Web",
       "サービス業"
-    ]
+    ],
+    "overallRating": 3.5,
+    "rankPosition": 88
   },
   {
     "slug": "chatwork-sakibarai",
@@ -3617,8 +3617,6 @@ const companiesData: Company[] = [
       "知名度がやや低い",
       "手数料は個別査定"
     ],
-    "overallRating": 3.5,
-    "rankPosition": 89,
     "establishedYear": 2020,
     "targetIndustries": [
       "建設業",
@@ -3626,7 +3624,9 @@ const companiesData: Company[] = [
       "製造業",
       "IT・Web",
       "サービス業"
-    ]
+    ],
+    "overallRating": 3.5,
+    "rankPosition": 89
   },
   {
     "slug": "cool-pay",
@@ -3658,8 +3658,6 @@ const companiesData: Company[] = [
       "知名度がやや低い",
       "手数料は個別査定"
     ],
-    "overallRating": 3.5,
-    "rankPosition": 90,
     "establishedYear": 2020,
     "targetIndustries": [
       "建設業",
@@ -3667,7 +3665,9 @@ const companiesData: Company[] = [
       "製造業",
       "IT・Web",
       "サービス業"
-    ]
+    ],
+    "overallRating": 3.5,
+    "rankPosition": 90
   },
   {
     "slug": "cool-services",
@@ -3699,8 +3699,6 @@ const companiesData: Company[] = [
       "知名度がやや低い",
       "手数料は個別査定"
     ],
-    "overallRating": 3.5,
-    "rankPosition": 91,
     "establishedYear": 2018,
     "targetIndustries": [
       "建設業",
@@ -3708,7 +3706,9 @@ const companiesData: Company[] = [
       "製造業",
       "IT・Web",
       "サービス業"
-    ]
+    ],
+    "overallRating": 3.5,
+    "rankPosition": 91
   },
   {
     "slug": "crayfish",
@@ -3740,8 +3740,6 @@ const companiesData: Company[] = [
       "知名度がやや低い",
       "手数料は個別査定"
     ],
-    "overallRating": 3.5,
-    "rankPosition": 92,
     "establishedYear": 2018,
     "targetIndustries": [
       "建設業",
@@ -3749,7 +3747,9 @@ const companiesData: Company[] = [
       "製造業",
       "IT・Web",
       "サービス業"
-    ]
+    ],
+    "overallRating": 3.5,
+    "rankPosition": 92
   },
   {
     "slug": "denshi-hayabarai",
@@ -3781,8 +3781,6 @@ const companiesData: Company[] = [
       "知名度がやや低い",
       "手数料は個別査定"
     ],
-    "overallRating": 3.5,
-    "rankPosition": 93,
     "establishedYear": 2020,
     "targetIndustries": [
       "建設業",
@@ -3790,7 +3788,9 @@ const companiesData: Company[] = [
       "製造業",
       "IT・Web",
       "サービス業"
-    ]
+    ],
+    "overallRating": 3.5,
+    "rankPosition": 93
   },
   {
     "slug": "facnet",
@@ -3822,8 +3822,6 @@ const companiesData: Company[] = [
       "知名度がやや低い",
       "手数料は個別査定"
     ],
-    "overallRating": 3.5,
-    "rankPosition": 94,
     "establishedYear": 2018,
     "targetIndustries": [
       "建設業",
@@ -3831,7 +3829,9 @@ const companiesData: Company[] = [
       "製造業",
       "IT・Web",
       "サービス業"
-    ]
+    ],
+    "overallRating": 3.5,
+    "rankPosition": 94
   },
   {
     "slug": "factor-com",
@@ -3863,8 +3863,6 @@ const companiesData: Company[] = [
       "知名度がやや低い",
       "手数料は個別査定"
     ],
-    "overallRating": 3.5,
-    "rankPosition": 95,
     "establishedYear": 2018,
     "targetIndustries": [
       "建設業",
@@ -3872,7 +3870,9 @@ const companiesData: Company[] = [
       "製造業",
       "IT・Web",
       "サービス業"
-    ]
+    ],
+    "overallRating": 3.5,
+    "rankPosition": 95
   },
   {
     "slug": "factoring-pro",
@@ -3904,8 +3904,6 @@ const companiesData: Company[] = [
       "知名度がやや低い",
       "手数料は個別査定"
     ],
-    "overallRating": 3.5,
-    "rankPosition": 96,
     "establishedYear": 2018,
     "targetIndustries": [
       "建設業",
@@ -3913,7 +3911,9 @@ const companiesData: Company[] = [
       "製造業",
       "IT・Web",
       "サービス業"
-    ]
+    ],
+    "overallRating": 3.5,
+    "rankPosition": 96
   },
   {
     "slug": "fps-medical",
@@ -3945,12 +3945,12 @@ const companiesData: Company[] = [
       "知名度がやや低い",
       "手数料は個別査定"
     ],
-    "overallRating": 3.5,
-    "rankPosition": 97,
     "establishedYear": 2010,
     "targetIndustries": [
       "医療・介護"
-    ]
+    ],
+    "overallRating": 3.5,
+    "rankPosition": 97
   },
   {
     "slug": "fukuoka-bank-ep",
@@ -3982,8 +3982,6 @@ const companiesData: Company[] = [
       "知名度がやや低い",
       "手数料は個別査定"
     ],
-    "overallRating": 3.5,
-    "rankPosition": 98,
     "establishedYear": 2018,
     "targetIndustries": [
       "建設業",
@@ -3991,7 +3989,9 @@ const companiesData: Company[] = [
       "製造業",
       "サービス業",
       "小売業"
-    ]
+    ],
+    "overallRating": 3.5,
+    "rankPosition": 98
   },
   {
     "slug": "hamagin-finance",
@@ -4023,8 +4023,6 @@ const companiesData: Company[] = [
       "エリアが限定的",
       "個人事業主不可"
     ],
-    "overallRating": 3.5,
-    "rankPosition": 99,
     "establishedYear": 1979,
     "targetIndustries": [
       "製造業",
@@ -4032,7 +4030,9 @@ const companiesData: Company[] = [
       "卸売業",
       "小売業",
       "サービス業"
-    ]
+    ],
+    "overallRating": 3.5,
+    "rankPosition": 99
   },
   {
     "slug": "j-cloud",
@@ -4064,8 +4064,6 @@ const companiesData: Company[] = [
       "知名度がやや低い",
       "手数料は個別査定"
     ],
-    "overallRating": 3.5,
-    "rankPosition": 100,
     "establishedYear": 2018,
     "targetIndustries": [
       "建設業",
@@ -4073,7 +4071,9 @@ const companiesData: Company[] = [
       "製造業",
       "IT・Web",
       "サービス業"
-    ]
+    ],
+    "overallRating": 3.5,
+    "rankPosition": 100
   },
   {
     "slug": "kensetsu-keiei",
@@ -4105,12 +4105,12 @@ const companiesData: Company[] = [
       "知名度がやや低い",
       "手数料は個別査定"
     ],
-    "overallRating": 3.5,
-    "rankPosition": 101,
     "establishedYear": 2015,
     "targetIndustries": [
       "建設業"
-    ]
+    ],
+    "overallRating": 3.5,
+    "rankPosition": 101
   },
   {
     "slug": "linx-japan",
@@ -4142,8 +4142,6 @@ const companiesData: Company[] = [
       "知名度がやや低い",
       "手数料は個別査定"
     ],
-    "overallRating": 3.5,
-    "rankPosition": 102,
     "establishedYear": 2018,
     "targetIndustries": [
       "建設業",
@@ -4151,7 +4149,9 @@ const companiesData: Company[] = [
       "製造業",
       "IT・Web",
       "サービス業"
-    ]
+    ],
+    "overallRating": 3.5,
+    "rankPosition": 102
   },
   {
     "slug": "medley-fs",
@@ -4183,12 +4183,12 @@ const companiesData: Company[] = [
       "知名度がやや低い",
       "手数料は個別査定"
     ],
-    "overallRating": 3.5,
-    "rankPosition": 103,
     "establishedYear": 2015,
     "targetIndustries": [
       "医療・介護"
-    ]
+    ],
+    "overallRating": 3.5,
+    "rankPosition": 103
   },
   {
     "slug": "mita-securities",
@@ -4220,8 +4220,6 @@ const companiesData: Company[] = [
       "知名度がやや低い",
       "手数料は個別査定"
     ],
-    "overallRating": 3.5,
-    "rankPosition": 104,
     "establishedYear": 2018,
     "targetIndustries": [
       "建設業",
@@ -4229,7 +4227,9 @@ const companiesData: Company[] = [
       "製造業",
       "IT・Web",
       "サービス業"
-    ]
+    ],
+    "overallRating": 3.5,
+    "rankPosition": 104
   },
   {
     "slug": "nx-capital",
@@ -4261,8 +4261,6 @@ const companiesData: Company[] = [
       "知名度がやや低い",
       "手数料は個別査定"
     ],
-    "overallRating": 3.5,
-    "rankPosition": 105,
     "establishedYear": 2000,
     "targetIndustries": [
       "建設業",
@@ -4270,7 +4268,9 @@ const companiesData: Company[] = [
       "製造業",
       "IT・Web",
       "サービス業"
-    ]
+    ],
+    "overallRating": 3.5,
+    "rankPosition": 105
   },
   {
     "slug": "onfact",
@@ -4302,8 +4302,6 @@ const companiesData: Company[] = [
       "知名度がやや低い",
       "手数料は個別査定"
     ],
-    "overallRating": 3.5,
-    "rankPosition": 106,
     "establishedYear": 2020,
     "targetIndustries": [
       "建設業",
@@ -4311,7 +4309,9 @@ const companiesData: Company[] = [
       "製造業",
       "IT・Web",
       "サービス業"
-    ]
+    ],
+    "overallRating": 3.5,
+    "rankPosition": 106
   },
   {
     "slug": "prosper-consulting",
@@ -4343,8 +4343,6 @@ const companiesData: Company[] = [
       "知名度がやや低い",
       "手数料は個別査定"
     ],
-    "overallRating": 3.5,
-    "rankPosition": 107,
     "establishedYear": 2018,
     "targetIndustries": [
       "建設業",
@@ -4352,7 +4350,9 @@ const companiesData: Company[] = [
       "製造業",
       "IT・Web",
       "サービス業"
-    ]
+    ],
+    "overallRating": 3.5,
+    "rankPosition": 107
   },
   {
     "slug": "resona-ks",
@@ -4384,8 +4384,6 @@ const companiesData: Company[] = [
       "知名度がやや低い",
       "手数料は個別査定"
     ],
-    "overallRating": 3.5,
-    "rankPosition": 108,
     "establishedYear": 2001,
     "targetIndustries": [
       "建設業",
@@ -4393,7 +4391,9 @@ const companiesData: Company[] = [
       "製造業",
       "IT・Web",
       "サービス業"
-    ]
+    ],
+    "overallRating": 3.5,
+    "rankPosition": 108
   },
   {
     "slug": "rico-lease",
@@ -4424,8 +4424,6 @@ const companiesData: Company[] = [
       "3社間のみ",
       "個人事業主不可"
     ],
-    "overallRating": 3.5,
-    "rankPosition": 109,
     "establishedYear": 1976,
     "targetIndustries": [
       "製造業",
@@ -4433,7 +4431,9 @@ const companiesData: Company[] = [
       "サービス業",
       "建設業",
       "卸売業"
-    ]
+    ],
+    "overallRating": 3.5,
+    "rankPosition": 109
   },
   {
     "slug": "seino-financial",
@@ -4465,14 +4465,14 @@ const companiesData: Company[] = [
       "知名度がやや低い",
       "手数料は個別査定"
     ],
-    "overallRating": 3.5,
-    "rankPosition": 110,
     "establishedYear": 2000,
     "targetIndustries": [
       "運送業",
       "物流",
       "製造業"
-    ]
+    ],
+    "overallRating": 3.5,
+    "rankPosition": 110
   },
   {
     "slug": "smart-factor",
@@ -4504,8 +4504,6 @@ const companiesData: Company[] = [
       "知名度がやや低い",
       "手数料は個別査定"
     ],
-    "overallRating": 3.5,
-    "rankPosition": 111,
     "establishedYear": 2020,
     "targetIndustries": [
       "建設業",
@@ -4513,7 +4511,9 @@ const companiesData: Company[] = [
       "製造業",
       "IT・Web",
       "サービス業"
-    ]
+    ],
+    "overallRating": 3.5,
+    "rankPosition": 111
   },
   {
     "slug": "sokula",
@@ -4545,8 +4545,6 @@ const companiesData: Company[] = [
       "知名度がやや低い",
       "手数料は個別査定"
     ],
-    "overallRating": 3.5,
-    "rankPosition": 112,
     "establishedYear": 2018,
     "targetIndustries": [
       "建設業",
@@ -4554,7 +4552,9 @@ const companiesData: Company[] = [
       "製造業",
       "IT・Web",
       "サービス業"
-    ]
+    ],
+    "overallRating": 3.5,
+    "rankPosition": 112
   },
   {
     "slug": "techpay",
@@ -4586,8 +4586,6 @@ const companiesData: Company[] = [
       "知名度がやや低い",
       "手数料は個別査定"
     ],
-    "overallRating": 3.5,
-    "rankPosition": 113,
     "establishedYear": 2018,
     "targetIndustries": [
       "建設業",
@@ -4595,7 +4593,9 @@ const companiesData: Company[] = [
       "製造業",
       "IT・Web",
       "サービス業"
-    ]
+    ],
+    "overallRating": 3.5,
+    "rankPosition": 113
   },
   {
     "slug": "transaction-finance",
@@ -4627,8 +4627,6 @@ const companiesData: Company[] = [
       "知名度がやや低い",
       "手数料は個別査定"
     ],
-    "overallRating": 3.5,
-    "rankPosition": 114,
     "establishedYear": 2018,
     "targetIndustries": [
       "建設業",
@@ -4636,7 +4634,9 @@ const companiesData: Company[] = [
       "製造業",
       "IT・Web",
       "サービス業"
-    ]
+    ],
+    "overallRating": 3.5,
+    "rankPosition": 114
   },
   {
     "slug": "tranzax",
@@ -4668,8 +4668,6 @@ const companiesData: Company[] = [
       "知名度がやや低い",
       "手数料は個別査定"
     ],
-    "overallRating": 3.5,
-    "rankPosition": 115,
     "establishedYear": 2016,
     "targetIndustries": [
       "建設業",
@@ -4677,7 +4675,9 @@ const companiesData: Company[] = [
       "製造業",
       "IT・Web",
       "サービス業"
-    ]
+    ],
+    "overallRating": 3.5,
+    "rankPosition": 115
   },
   {
     "slug": "yamato-credit",
@@ -4709,8 +4709,6 @@ const companiesData: Company[] = [
       "知名度がやや低い",
       "手数料は個別査定"
     ],
-    "overallRating": 3.5,
-    "rankPosition": 116,
     "establishedYear": 2002,
     "targetIndustries": [
       "建設業",
@@ -4718,7 +4716,9 @@ const companiesData: Company[] = [
       "製造業",
       "IT・Web",
       "サービス業"
-    ]
+    ],
+    "overallRating": 3.5,
+    "rankPosition": 116
   },
   {
     "slug": "zaimu-saisei",
@@ -4750,8 +4750,6 @@ const companiesData: Company[] = [
       "知名度がやや低い",
       "手数料は個別査定"
     ],
-    "overallRating": 3.5,
-    "rankPosition": 117,
     "establishedYear": 2018,
     "targetIndustries": [
       "建設業",
@@ -4759,7 +4757,9 @@ const companiesData: Company[] = [
       "製造業",
       "IT・Web",
       "サービス業"
-    ]
+    ],
+    "overallRating": 3.5,
+    "rankPosition": 117
   },
   {
     "slug": "zaizen-group",
@@ -4791,8 +4791,6 @@ const companiesData: Company[] = [
       "知名度がやや低い",
       "手数料は個別査定"
     ],
-    "overallRating": 3.5,
-    "rankPosition": 118,
     "establishedYear": 2010,
     "targetIndustries": [
       "建設業",
@@ -4800,7 +4798,9 @@ const companiesData: Company[] = [
       "製造業",
       "農業",
       "飲食業"
-    ]
+    ],
+    "overallRating": 3.5,
+    "rankPosition": 118
   },
   {
     "slug": "zerofac",
@@ -4832,8 +4832,6 @@ const companiesData: Company[] = [
       "知名度がやや低い",
       "手数料は個別査定"
     ],
-    "overallRating": 3.5,
-    "rankPosition": 119,
     "establishedYear": 2018,
     "targetIndustries": [
       "建設業",
@@ -4841,7 +4839,9 @@ const companiesData: Company[] = [
       "製造業",
       "IT・Web",
       "サービス業"
-    ]
+    ],
+    "overallRating": 3.5,
+    "rankPosition": 119
   },
   {
     "slug": "animo",
@@ -4873,8 +4873,6 @@ const companiesData: Company[] = [
       "知名度がやや低い",
       "手数料は個別査定"
     ],
-    "overallRating": 3.4,
-    "rankPosition": 120,
     "establishedYear": 2018,
     "targetIndustries": [
       "建設業",
@@ -4882,7 +4880,9 @@ const companiesData: Company[] = [
       "製造業",
       "IT・Web",
       "サービス業"
-    ]
+    ],
+    "overallRating": 3.4,
+    "rankPosition": 120
   },
   {
     "slug": "archier",
@@ -4914,8 +4914,6 @@ const companiesData: Company[] = [
       "知名度がやや低い",
       "手数料は個別査定"
     ],
-    "overallRating": 3.4,
-    "rankPosition": 121,
     "establishedYear": 2018,
     "targetIndustries": [
       "建設業",
@@ -4923,7 +4921,9 @@ const companiesData: Company[] = [
       "製造業",
       "IT・Web",
       "サービス業"
-    ]
+    ],
+    "overallRating": 3.4,
+    "rankPosition": 121
   },
   {
     "slug": "atest-capital",
@@ -4955,8 +4955,6 @@ const companiesData: Company[] = [
       "知名度がやや低い",
       "手数料は個別査定"
     ],
-    "overallRating": 3.4,
-    "rankPosition": 122,
     "establishedYear": 2018,
     "targetIndustries": [
       "建設業",
@@ -4964,13 +4962,15 @@ const companiesData: Company[] = [
       "製造業",
       "IT・Web",
       "サービス業"
-    ]
+    ],
+    "overallRating": 3.4,
+    "rankPosition": 122
   },
   {
     "slug": "axia-plus",
     "name": "アクシアプラス",
     "description": "ファクタリング・資金調達サポート。",
-    "affiliateUrl": "https://axiaplus.co.jp/",
+    "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=4AX5KD+9VFSXE+4HV8+BXQOH",
     "factoringType": "2社間・3社間",
     "feeRange": {
       "min": 3,
@@ -4996,8 +4996,6 @@ const companiesData: Company[] = [
       "知名度がやや低い",
       "手数料は個別査定"
     ],
-    "overallRating": 3.4,
-    "rankPosition": 123,
     "establishedYear": 2018,
     "targetIndustries": [
       "建設業",
@@ -5005,7 +5003,9 @@ const companiesData: Company[] = [
       "製造業",
       "IT・Web",
       "サービス業"
-    ]
+    ],
+    "overallRating": 3.4,
+    "rankPosition": 123
   },
   {
     "slug": "biz-partner",
@@ -5037,8 +5037,6 @@ const companiesData: Company[] = [
       "知名度がやや低い",
       "手数料は個別査定"
     ],
-    "overallRating": 3.4,
-    "rankPosition": 124,
     "establishedYear": 2018,
     "targetIndustries": [
       "建設業",
@@ -5046,7 +5044,9 @@ const companiesData: Company[] = [
       "製造業",
       "IT・Web",
       "サービス業"
-    ]
+    ],
+    "overallRating": 3.4,
+    "rankPosition": 124
   },
   {
     "slug": "business-assist",
@@ -5078,8 +5078,6 @@ const companiesData: Company[] = [
       "知名度がやや低い",
       "手数料は個別査定"
     ],
-    "overallRating": 3.4,
-    "rankPosition": 125,
     "establishedYear": 2018,
     "targetIndustries": [
       "建設業",
@@ -5087,7 +5085,9 @@ const companiesData: Company[] = [
       "製造業",
       "IT・Web",
       "サービス業"
-    ]
+    ],
+    "overallRating": 3.4,
+    "rankPosition": 125
   },
   {
     "slug": "buy-factor",
@@ -5119,8 +5119,6 @@ const companiesData: Company[] = [
       "知名度がやや低い",
       "手数料は個別査定"
     ],
-    "overallRating": 3.4,
-    "rankPosition": 126,
     "establishedYear": 2018,
     "targetIndustries": [
       "建設業",
@@ -5128,7 +5126,9 @@ const companiesData: Company[] = [
       "製造業",
       "IT・Web",
       "サービス業"
-    ]
+    ],
+    "overallRating": 3.4,
+    "rankPosition": 126
   },
   {
     "slug": "cb-factor",
@@ -5160,8 +5160,6 @@ const companiesData: Company[] = [
       "知名度がやや低い",
       "手数料は個別査定"
     ],
-    "overallRating": 3.4,
-    "rankPosition": 127,
     "establishedYear": 2018,
     "targetIndustries": [
       "建設業",
@@ -5169,7 +5167,9 @@ const companiesData: Company[] = [
       "製造業",
       "IT・Web",
       "サービス業"
-    ]
+    ],
+    "overallRating": 3.4,
+    "rankPosition": 127
   },
   {
     "slug": "central-medience",
@@ -5201,12 +5201,12 @@ const companiesData: Company[] = [
       "知名度がやや低い",
       "手数料は個別査定"
     ],
-    "overallRating": 3.4,
-    "rankPosition": 128,
     "establishedYear": 2018,
     "targetIndustries": [
       "医療・介護"
-    ]
+    ],
+    "overallRating": 3.4,
+    "rankPosition": 128
   },
   {
     "slug": "cs-planning",
@@ -5238,8 +5238,6 @@ const companiesData: Company[] = [
       "知名度がやや低い",
       "手数料は個別査定"
     ],
-    "overallRating": 3.4,
-    "rankPosition": 129,
     "establishedYear": 2018,
     "targetIndustries": [
       "建設業",
@@ -5247,7 +5245,9 @@ const companiesData: Company[] = [
       "製造業",
       "IT・Web",
       "サービス業"
-    ]
+    ],
+    "overallRating": 3.4,
+    "rankPosition": 129
   },
   {
     "slug": "denfac",
@@ -5279,8 +5279,6 @@ const companiesData: Company[] = [
       "知名度がやや低い",
       "手数料は個別査定"
     ],
-    "overallRating": 3.4,
-    "rankPosition": 130,
     "establishedYear": 2018,
     "targetIndustries": [
       "建設業",
@@ -5288,7 +5286,9 @@ const companiesData: Company[] = [
       "製造業",
       "IT・Web",
       "サービス業"
-    ]
+    ],
+    "overallRating": 3.4,
+    "rankPosition": 130
   },
   {
     "slug": "dmc-factoring",
@@ -5320,8 +5320,6 @@ const companiesData: Company[] = [
       "知名度がやや低い",
       "手数料は個別査定"
     ],
-    "overallRating": 3.4,
-    "rankPosition": 131,
     "establishedYear": 2018,
     "targetIndustries": [
       "建設業",
@@ -5329,7 +5327,9 @@ const companiesData: Company[] = [
       "製造業",
       "IT・Web",
       "サービス業"
-    ]
+    ],
+    "overallRating": 3.4,
+    "rankPosition": 131
   },
   {
     "slug": "dokenkun",
@@ -5361,12 +5361,12 @@ const companiesData: Company[] = [
       "知名度がやや低い",
       "手数料は個別査定"
     ],
-    "overallRating": 3.4,
-    "rankPosition": 132,
     "establishedYear": 2019,
     "targetIndustries": [
       "建設業"
-    ]
+    ],
+    "overallRating": 3.4,
+    "rankPosition": 132
   },
   {
     "slug": "e-bank",
@@ -5398,8 +5398,6 @@ const companiesData: Company[] = [
       "知名度がやや低い",
       "手数料は個別査定"
     ],
-    "overallRating": 3.4,
-    "rankPosition": 133,
     "establishedYear": 2019,
     "targetIndustries": [
       "建設業",
@@ -5407,7 +5405,9 @@ const companiesData: Company[] = [
       "製造業",
       "IT・Web",
       "サービス業"
-    ]
+    ],
+    "overallRating": 3.4,
+    "rankPosition": 133
   },
   {
     "slug": "easy-factor",
@@ -5439,8 +5439,6 @@ const companiesData: Company[] = [
       "知名度がやや低い",
       "手数料は個別査定"
     ],
-    "overallRating": 3.4,
-    "rankPosition": 134,
     "establishedYear": 2020,
     "targetIndustries": [
       "建設業",
@@ -5448,7 +5446,9 @@ const companiesData: Company[] = [
       "製造業",
       "IT・Web",
       "サービス業"
-    ]
+    ],
+    "overallRating": 3.4,
+    "rankPosition": 134
   },
   {
     "slug": "efc-express",
@@ -5480,8 +5480,6 @@ const companiesData: Company[] = [
       "知名度がやや低い",
       "手数料は個別査定"
     ],
-    "overallRating": 3.4,
-    "rankPosition": 135,
     "establishedYear": 2018,
     "targetIndustries": [
       "建設業",
@@ -5489,7 +5487,9 @@ const companiesData: Company[] = [
       "製造業",
       "IT・Web",
       "サービス業"
-    ]
+    ],
+    "overallRating": 3.4,
+    "rankPosition": 135
   },
   {
     "slug": "elnest",
@@ -5521,8 +5521,6 @@ const companiesData: Company[] = [
       "知名度がやや低い",
       "手数料は個別査定"
     ],
-    "overallRating": 3.4,
-    "rankPosition": 136,
     "establishedYear": 2018,
     "targetIndustries": [
       "建設業",
@@ -5530,7 +5528,9 @@ const companiesData: Company[] = [
       "製造業",
       "IT・Web",
       "サービス業"
-    ]
+    ],
+    "overallRating": 3.4,
+    "rankPosition": 136
   },
   {
     "slug": "enable-factoring",
@@ -5562,8 +5562,6 @@ const companiesData: Company[] = [
       "知名度がやや低い",
       "手数料は個別査定"
     ],
-    "overallRating": 3.4,
-    "rankPosition": 137,
     "establishedYear": 2018,
     "targetIndustries": [
       "建設業",
@@ -5571,7 +5569,9 @@ const companiesData: Company[] = [
       "製造業",
       "IT・Web",
       "サービス業"
-    ]
+    ],
+    "overallRating": 3.4,
+    "rankPosition": 137
   },
   {
     "slug": "factbank",
@@ -5603,8 +5603,6 @@ const companiesData: Company[] = [
       "知名度がやや低い",
       "手数料は個別査定"
     ],
-    "overallRating": 3.4,
-    "rankPosition": 138,
     "establishedYear": 2018,
     "targetIndustries": [
       "建設業",
@@ -5612,7 +5610,9 @@ const companiesData: Company[] = [
       "製造業",
       "IT・Web",
       "サービス業"
-    ]
+    ],
+    "overallRating": 3.4,
+    "rankPosition": 138
   },
   {
     "slug": "factoring-gold",
@@ -5644,8 +5644,6 @@ const companiesData: Company[] = [
       "知名度がやや低い",
       "手数料は個別査定"
     ],
-    "overallRating": 3.4,
-    "rankPosition": 139,
     "establishedYear": 2018,
     "targetIndustries": [
       "建設業",
@@ -5653,7 +5651,9 @@ const companiesData: Company[] = [
       "製造業",
       "IT・Web",
       "サービス業"
-    ]
+    ],
+    "overallRating": 3.4,
+    "rankPosition": 139
   },
   {
     "slug": "factoring-north",
@@ -5685,8 +5685,6 @@ const companiesData: Company[] = [
       "知名度がやや低い",
       "手数料は個別査定"
     ],
-    "overallRating": 3.4,
-    "rankPosition": 140,
     "establishedYear": 2018,
     "targetIndustries": [
       "建設業",
@@ -5694,7 +5692,9 @@ const companiesData: Company[] = [
       "農業",
       "水産業",
       "サービス業"
-    ]
+    ],
+    "overallRating": 3.4,
+    "rankPosition": 140
   },
   {
     "slug": "factoring-tokyo",
@@ -5726,8 +5726,6 @@ const companiesData: Company[] = [
       "知名度がやや低い",
       "手数料は個別査定"
     ],
-    "overallRating": 3.4,
-    "rankPosition": 141,
     "establishedYear": 2018,
     "targetIndustries": [
       "建設業",
@@ -5735,7 +5733,9 @@ const companiesData: Company[] = [
       "製造業",
       "IT・Web",
       "サービス業"
-    ]
+    ],
+    "overallRating": 3.4,
+    "rankPosition": 141
   },
   {
     "slug": "factors",
@@ -5767,8 +5767,6 @@ const companiesData: Company[] = [
       "知名度がやや低い",
       "手数料は個別査定"
     ],
-    "overallRating": 3.4,
-    "rankPosition": 142,
     "establishedYear": 2018,
     "targetIndustries": [
       "建設業",
@@ -5776,7 +5774,9 @@ const companiesData: Company[] = [
       "製造業",
       "IT・Web",
       "サービス業"
-    ]
+    ],
+    "overallRating": 3.4,
+    "rankPosition": 142
   },
   {
     "slug": "fakutarikun",
@@ -5808,8 +5808,6 @@ const companiesData: Company[] = [
       "知名度がやや低い",
       "手数料は個別査定"
     ],
-    "overallRating": 3.4,
-    "rankPosition": 143,
     "establishedYear": 2018,
     "targetIndustries": [
       "建設業",
@@ -5817,7 +5815,9 @@ const companiesData: Company[] = [
       "製造業",
       "IT・Web",
       "サービス業"
-    ]
+    ],
+    "overallRating": 3.4,
+    "rankPosition": 143
   },
   {
     "slug": "fast-factoring",
@@ -5849,8 +5849,6 @@ const companiesData: Company[] = [
       "知名度がやや低い",
       "手数料は個別査定"
     ],
-    "overallRating": 3.4,
-    "rankPosition": 144,
     "establishedYear": 2018,
     "targetIndustries": [
       "建設業",
@@ -5858,7 +5856,9 @@ const companiesData: Company[] = [
       "製造業",
       "IT・Web",
       "サービス業"
-    ]
+    ],
+    "overallRating": 3.4,
+    "rankPosition": 144
   },
   {
     "slug": "finding-labo",
@@ -5890,8 +5890,6 @@ const companiesData: Company[] = [
       "知名度がやや低い",
       "手数料は個別査定"
     ],
-    "overallRating": 3.4,
-    "rankPosition": 145,
     "establishedYear": 2018,
     "targetIndustries": [
       "建設業",
@@ -5899,7 +5897,9 @@ const companiesData: Company[] = [
       "製造業",
       "IT・Web",
       "サービス業"
-    ]
+    ],
+    "overallRating": 3.4,
+    "rankPosition": 145
   },
   {
     "slug": "finfin",
@@ -5931,8 +5931,6 @@ const companiesData: Company[] = [
       "知名度がやや低い",
       "手数料は個別査定"
     ],
-    "overallRating": 3.4,
-    "rankPosition": 146,
     "establishedYear": 2018,
     "targetIndustries": [
       "建設業",
@@ -5940,7 +5938,9 @@ const companiesData: Company[] = [
       "製造業",
       "IT・Web",
       "サービス業"
-    ]
+    ],
+    "overallRating": 3.4,
+    "rankPosition": 146
   },
   {
     "slug": "fk-management",
@@ -5972,8 +5972,6 @@ const companiesData: Company[] = [
       "知名度がやや低い",
       "手数料は個別査定"
     ],
-    "overallRating": 3.4,
-    "rankPosition": 147,
     "establishedYear": 2018,
     "targetIndustries": [
       "建設業",
@@ -5981,7 +5979,9 @@ const companiesData: Company[] = [
       "製造業",
       "IT・Web",
       "サービス業"
-    ]
+    ],
+    "overallRating": 3.4,
+    "rankPosition": 147
   },
   {
     "slug": "fortune-partners",
@@ -6013,8 +6013,6 @@ const companiesData: Company[] = [
       "知名度がやや低い",
       "手数料は個別査定"
     ],
-    "overallRating": 3.4,
-    "rankPosition": 148,
     "establishedYear": 2018,
     "targetIndustries": [
       "建設業",
@@ -6022,7 +6020,9 @@ const companiesData: Company[] = [
       "製造業",
       "IT・Web",
       "サービス業"
-    ]
+    ],
+    "overallRating": 3.4,
+    "rankPosition": 148
   },
   {
     "slug": "healthee-one",
@@ -6054,12 +6054,12 @@ const companiesData: Company[] = [
       "知名度がやや低い",
       "手数料は個別査定"
     ],
-    "overallRating": 3.4,
-    "rankPosition": 149,
     "establishedYear": 2018,
     "targetIndustries": [
       "医療・介護"
-    ]
+    ],
+    "overallRating": 3.4,
+    "rankPosition": 149
   },
   {
     "slug": "japan-trust",
@@ -6091,8 +6091,6 @@ const companiesData: Company[] = [
       "知名度がやや低い",
       "手数料は個別査定"
     ],
-    "overallRating": 3.4,
-    "rankPosition": 150,
     "establishedYear": 2018,
     "targetIndustries": [
       "建設業",
@@ -6100,7 +6098,9 @@ const companiesData: Company[] = [
       "製造業",
       "IT・Web",
       "サービス業"
-    ]
+    ],
+    "overallRating": 3.4,
+    "rankPosition": 150
   },
   {
     "slug": "kensetsu-pay",
@@ -6132,12 +6132,12 @@ const companiesData: Company[] = [
       "知名度がやや低い",
       "手数料は個別査定"
     ],
-    "overallRating": 3.4,
-    "rankPosition": 151,
     "establishedYear": 2019,
     "targetIndustries": [
       "建設業"
-    ]
+    ],
+    "overallRating": 3.4,
+    "rankPosition": 151
   },
   {
     "slug": "kis-management",
@@ -6169,8 +6169,6 @@ const companiesData: Company[] = [
       "知名度がやや低い",
       "手数料は個別査定"
     ],
-    "overallRating": 3.4,
-    "rankPosition": 152,
     "establishedYear": 2018,
     "targetIndustries": [
       "建設業",
@@ -6178,7 +6176,9 @@ const companiesData: Company[] = [
       "製造業",
       "IT・Web",
       "サービス業"
-    ]
+    ],
+    "overallRating": 3.4,
+    "rankPosition": 152
   },
   {
     "slug": "kyushu-factor",
@@ -6210,8 +6210,6 @@ const companiesData: Company[] = [
       "知名度がやや低い",
       "手数料は個別査定"
     ],
-    "overallRating": 3.4,
-    "rankPosition": 153,
     "establishedYear": 2018,
     "targetIndustries": [
       "建設業",
@@ -6219,7 +6217,9 @@ const companiesData: Company[] = [
       "製造業",
       "農業",
       "サービス業"
-    ]
+    ],
+    "overallRating": 3.4,
+    "rankPosition": 153
   },
   {
     "slug": "lagless",
@@ -6251,8 +6251,6 @@ const companiesData: Company[] = [
       "知名度がやや低い",
       "手数料は個別査定"
     ],
-    "overallRating": 3.4,
-    "rankPosition": 154,
     "establishedYear": 2018,
     "targetIndustries": [
       "建設業",
@@ -6260,7 +6258,9 @@ const companiesData: Company[] = [
       "製造業",
       "IT・Web",
       "サービス業"
-    ]
+    ],
+    "overallRating": 3.4,
+    "rankPosition": 154
   },
   {
     "slug": "line-profect",
@@ -6292,8 +6292,6 @@ const companiesData: Company[] = [
       "知名度がやや低い",
       "手数料は個別査定"
     ],
-    "overallRating": 3.4,
-    "rankPosition": 155,
     "establishedYear": 2018,
     "targetIndustries": [
       "建設業",
@@ -6301,7 +6299,9 @@ const companiesData: Company[] = [
       "製造業",
       "IT・Web",
       "サービス業"
-    ]
+    ],
+    "overallRating": 3.4,
+    "rankPosition": 155
   },
   {
     "slug": "link-japan",
@@ -6333,8 +6333,6 @@ const companiesData: Company[] = [
       "知名度がやや低い",
       "手数料は個別査定"
     ],
-    "overallRating": 3.4,
-    "rankPosition": 156,
     "establishedYear": 2018,
     "targetIndustries": [
       "建設業",
@@ -6342,7 +6340,9 @@ const companiesData: Company[] = [
       "製造業",
       "IT・Web",
       "サービス業"
-    ]
+    ],
+    "overallRating": 3.4,
+    "rankPosition": 156
   },
   {
     "slug": "mainavy-factoring",
@@ -6374,8 +6374,6 @@ const companiesData: Company[] = [
       "知名度がやや低い",
       "手数料は個別査定"
     ],
-    "overallRating": 3.4,
-    "rankPosition": 157,
     "establishedYear": 2018,
     "targetIndustries": [
       "建設業",
@@ -6383,7 +6381,9 @@ const companiesData: Company[] = [
       "製造業",
       "IT・Web",
       "サービス業"
-    ]
+    ],
+    "overallRating": 3.4,
+    "rankPosition": 157
   },
   {
     "slug": "minaoshi-honpo",
@@ -6415,8 +6415,6 @@ const companiesData: Company[] = [
       "知名度がやや低い",
       "手数料は個別査定"
     ],
-    "overallRating": 3.4,
-    "rankPosition": 158,
     "establishedYear": 2018,
     "targetIndustries": [
       "建設業",
@@ -6424,7 +6422,9 @@ const companiesData: Company[] = [
       "製造業",
       "IT・Web",
       "サービス業"
-    ]
+    ],
+    "overallRating": 3.4,
+    "rankPosition": 158
   },
   {
     "slug": "mk-trust",
@@ -6456,8 +6456,6 @@ const companiesData: Company[] = [
       "知名度がやや低い",
       "手数料は個別査定"
     ],
-    "overallRating": 3.4,
-    "rankPosition": 159,
     "establishedYear": 2018,
     "targetIndustries": [
       "建設業",
@@ -6465,7 +6463,9 @@ const companiesData: Company[] = [
       "製造業",
       "IT・Web",
       "サービス業"
-    ]
+    ],
+    "overallRating": 3.4,
+    "rankPosition": 159
   },
   {
     "slug": "next-funding",
@@ -6497,8 +6497,6 @@ const companiesData: Company[] = [
       "知名度がやや低い",
       "手数料は個別査定"
     ],
-    "overallRating": 3.4,
-    "rankPosition": 160,
     "establishedYear": 2018,
     "targetIndustries": [
       "建設業",
@@ -6506,7 +6504,9 @@ const companiesData: Company[] = [
       "製造業",
       "IT・Web",
       "サービス業"
-    ]
+    ],
+    "overallRating": 3.4,
+    "rankPosition": 160
   },
   {
     "slug": "next-style",
@@ -6538,8 +6538,6 @@ const companiesData: Company[] = [
       "知名度がやや低い",
       "手数料は個別査定"
     ],
-    "overallRating": 3.4,
-    "rankPosition": 161,
     "establishedYear": 2018,
     "targetIndustries": [
       "建設業",
@@ -6547,7 +6545,9 @@ const companiesData: Company[] = [
       "製造業",
       "IT・Web",
       "サービス業"
-    ]
+    ],
+    "overallRating": 3.4,
+    "rankPosition": 161
   },
   {
     "slug": "nihon-planner",
@@ -6579,8 +6579,6 @@ const companiesData: Company[] = [
       "知名度がやや低い",
       "手数料は個別査定"
     ],
-    "overallRating": 3.4,
-    "rankPosition": 162,
     "establishedYear": 2018,
     "targetIndustries": [
       "建設業",
@@ -6588,7 +6586,9 @@ const companiesData: Company[] = [
       "製造業",
       "IT・Web",
       "サービス業"
-    ]
+    ],
+    "overallRating": 3.4,
+    "rankPosition": 162
   },
   {
     "slug": "owl-keizai",
@@ -6620,8 +6620,6 @@ const companiesData: Company[] = [
       "知名度がやや低い",
       "手数料は個別査定"
     ],
-    "overallRating": 3.4,
-    "rankPosition": 163,
     "establishedYear": 2018,
     "targetIndustries": [
       "建設業",
@@ -6629,7 +6627,9 @@ const companiesData: Company[] = [
       "製造業",
       "IT・Web",
       "サービス業"
-    ]
+    ],
+    "overallRating": 3.4,
+    "rankPosition": 163
   },
   {
     "slug": "quick-factor",
@@ -6661,8 +6661,6 @@ const companiesData: Company[] = [
       "知名度がやや低い",
       "手数料は個別査定"
     ],
-    "overallRating": 3.4,
-    "rankPosition": 164,
     "establishedYear": 2018,
     "targetIndustries": [
       "建設業",
@@ -6670,7 +6668,9 @@ const companiesData: Company[] = [
       "製造業",
       "IT・Web",
       "サービス業"
-    ]
+    ],
+    "overallRating": 3.4,
+    "rankPosition": 164
   },
   {
     "slug": "replan",
@@ -6702,8 +6702,6 @@ const companiesData: Company[] = [
       "知名度がやや低い",
       "手数料は個別査定"
     ],
-    "overallRating": 3.4,
-    "rankPosition": 165,
     "establishedYear": 2018,
     "targetIndustries": [
       "建設業",
@@ -6711,7 +6709,9 @@ const companiesData: Company[] = [
       "製造業",
       "IT・Web",
       "サービス業"
-    ]
+    ],
+    "overallRating": 3.4,
+    "rankPosition": 165
   },
   {
     "slug": "rise-factoring",
@@ -6743,8 +6743,6 @@ const companiesData: Company[] = [
       "知名度がやや低い",
       "手数料は個別査定"
     ],
-    "overallRating": 3.4,
-    "rankPosition": 166,
     "establishedYear": 2018,
     "targetIndustries": [
       "建設業",
@@ -6752,7 +6750,9 @@ const companiesData: Company[] = [
       "製造業",
       "IT・Web",
       "サービス業"
-    ]
+    ],
+    "overallRating": 3.4,
+    "rankPosition": 166
   },
   {
     "slug": "rising-investment",
@@ -6784,8 +6784,6 @@ const companiesData: Company[] = [
       "知名度がやや低い",
       "手数料は個別査定"
     ],
-    "overallRating": 3.4,
-    "rankPosition": 167,
     "establishedYear": 2018,
     "targetIndustries": [
       "建設業",
@@ -6793,7 +6791,9 @@ const companiesData: Company[] = [
       "製造業",
       "IT・Web",
       "サービス業"
-    ]
+    ],
+    "overallRating": 3.4,
+    "rankPosition": 167
   },
   {
     "slug": "sanko-factoring",
@@ -6825,8 +6825,6 @@ const companiesData: Company[] = [
       "知名度がやや低い",
       "手数料は個別査定"
     ],
-    "overallRating": 3.4,
-    "rankPosition": 168,
     "establishedYear": 2018,
     "targetIndustries": [
       "建設業",
@@ -6834,7 +6832,9 @@ const companiesData: Company[] = [
       "製造業",
       "IT・Web",
       "サービス業"
-    ]
+    ],
+    "overallRating": 3.4,
+    "rankPosition": 168
   },
   {
     "slug": "sc-medical",
@@ -6866,12 +6866,12 @@ const companiesData: Company[] = [
       "知名度がやや低い",
       "手数料は個別査定"
     ],
-    "overallRating": 3.4,
-    "rankPosition": 169,
     "establishedYear": 2018,
     "targetIndustries": [
       "医療・介護"
-    ]
+    ],
+    "overallRating": 3.4,
+    "rankPosition": 169
   },
   {
     "slug": "seikyusho-pay",
@@ -6903,8 +6903,6 @@ const companiesData: Company[] = [
       "知名度がやや低い",
       "手数料は個別査定"
     ],
-    "overallRating": 3.4,
-    "rankPosition": 170,
     "establishedYear": 2018,
     "targetIndustries": [
       "建設業",
@@ -6912,7 +6910,9 @@ const companiesData: Company[] = [
       "製造業",
       "IT・Web",
       "サービス業"
-    ]
+    ],
+    "overallRating": 3.4,
+    "rankPosition": 170
   },
   {
     "slug": "shikin-plus",
@@ -6944,8 +6944,6 @@ const companiesData: Company[] = [
       "知名度がやや低い",
       "手数料は個別査定"
     ],
-    "overallRating": 3.4,
-    "rankPosition": 171,
     "establishedYear": 2018,
     "targetIndustries": [
       "建設業",
@@ -6953,7 +6951,9 @@ const companiesData: Company[] = [
       "製造業",
       "IT・Web",
       "サービス業"
-    ]
+    ],
+    "overallRating": 3.4,
+    "rankPosition": 171
   },
   {
     "slug": "shikinchotatsu-direct",
@@ -6985,8 +6985,6 @@ const companiesData: Company[] = [
       "知名度がやや低い",
       "手数料は個別査定"
     ],
-    "overallRating": 3.4,
-    "rankPosition": 172,
     "establishedYear": 2018,
     "targetIndustries": [
       "建設業",
@@ -6994,7 +6992,9 @@ const companiesData: Company[] = [
       "製造業",
       "IT・Web",
       "サービス業"
-    ]
+    ],
+    "overallRating": 3.4,
+    "rankPosition": 172
   },
   {
     "slug": "shinki-corp",
@@ -7026,8 +7026,6 @@ const companiesData: Company[] = [
       "知名度がやや低い",
       "手数料は個別査定"
     ],
-    "overallRating": 3.4,
-    "rankPosition": 173,
     "establishedYear": 2018,
     "targetIndustries": [
       "建設業",
@@ -7035,7 +7033,9 @@ const companiesData: Company[] = [
       "製造業",
       "IT・Web",
       "サービス業"
-    ]
+    ],
+    "overallRating": 3.4,
+    "rankPosition": 173
   },
   {
     "slug": "shukran",
@@ -7067,8 +7067,6 @@ const companiesData: Company[] = [
       "知名度がやや低い",
       "手数料は個別査定"
     ],
-    "overallRating": 3.4,
-    "rankPosition": 174,
     "establishedYear": 2018,
     "targetIndustries": [
       "建設業",
@@ -7076,7 +7074,9 @@ const companiesData: Company[] = [
       "製造業",
       "IT・Web",
       "サービス業"
-    ]
+    ],
+    "overallRating": 3.4,
+    "rankPosition": 174
   },
   {
     "slug": "sme-support",
@@ -7108,8 +7108,6 @@ const companiesData: Company[] = [
       "知名度がやや低い",
       "手数料は個別査定"
     ],
-    "overallRating": 3.4,
-    "rankPosition": 175,
     "establishedYear": 2018,
     "targetIndustries": [
       "建設業",
@@ -7117,7 +7115,9 @@ const companiesData: Company[] = [
       "製造業",
       "IT・Web",
       "サービス業"
-    ]
+    ],
+    "overallRating": 3.4,
+    "rankPosition": 175
   },
   {
     "slug": "sokuderu",
@@ -7149,8 +7149,6 @@ const companiesData: Company[] = [
       "知名度がやや低い",
       "手数料は個別査定"
     ],
-    "overallRating": 3.4,
-    "rankPosition": 176,
     "establishedYear": 2018,
     "targetIndustries": [
       "建設業",
@@ -7158,7 +7156,9 @@ const companiesData: Company[] = [
       "製造業",
       "IT・Web",
       "サービス業"
-    ]
+    ],
+    "overallRating": 3.4,
+    "rankPosition": 176
   },
   {
     "slug": "sokuji-online",
@@ -7190,8 +7190,6 @@ const companiesData: Company[] = [
       "知名度がやや低い",
       "手数料は個別査定"
     ],
-    "overallRating": 3.4,
-    "rankPosition": 177,
     "establishedYear": 2018,
     "targetIndustries": [
       "建設業",
@@ -7199,7 +7197,9 @@ const companiesData: Company[] = [
       "製造業",
       "IT・Web",
       "サービス業"
-    ]
+    ],
+    "overallRating": 3.4,
+    "rankPosition": 177
   },
   {
     "slug": "sts-factoring",
@@ -7231,8 +7231,6 @@ const companiesData: Company[] = [
       "知名度がやや低い",
       "手数料は個別査定"
     ],
-    "overallRating": 3.4,
-    "rankPosition": 178,
     "establishedYear": 2018,
     "targetIndustries": [
       "建設業",
@@ -7240,7 +7238,9 @@ const companiesData: Company[] = [
       "製造業",
       "IT・Web",
       "サービス業"
-    ]
+    ],
+    "overallRating": 3.4,
+    "rankPosition": 178
   },
   {
     "slug": "suga-finance",
@@ -7272,8 +7272,6 @@ const companiesData: Company[] = [
       "知名度がやや低い",
       "手数料は個別査定"
     ],
-    "overallRating": 3.4,
-    "rankPosition": 179,
     "establishedYear": 2018,
     "targetIndustries": [
       "建設業",
@@ -7281,7 +7279,9 @@ const companiesData: Company[] = [
       "製造業",
       "IT・Web",
       "サービス業"
-    ]
+    ],
+    "overallRating": 3.4,
+    "rankPosition": 179
   },
   {
     "slug": "t-and-s",
@@ -7313,8 +7313,6 @@ const companiesData: Company[] = [
       "知名度がやや低い",
       "手数料は個別査定"
     ],
-    "overallRating": 3.4,
-    "rankPosition": 180,
     "establishedYear": 2018,
     "targetIndustries": [
       "建設業",
@@ -7322,7 +7320,9 @@ const companiesData: Company[] = [
       "製造業",
       "IT・Web",
       "サービス業"
-    ]
+    ],
+    "overallRating": 3.4,
+    "rankPosition": 180
   },
   {
     "slug": "taihei-fs",
@@ -7354,8 +7354,6 @@ const companiesData: Company[] = [
       "知名度がやや低い",
       "手数料は個別査定"
     ],
-    "overallRating": 3.4,
-    "rankPosition": 181,
     "establishedYear": 2000,
     "targetIndustries": [
       "建設業",
@@ -7363,7 +7361,9 @@ const companiesData: Company[] = [
       "製造業",
       "IT・Web",
       "サービス業"
-    ]
+    ],
+    "overallRating": 3.4,
+    "rankPosition": 181
   },
   {
     "slug": "third-eye",
@@ -7395,8 +7395,6 @@ const companiesData: Company[] = [
       "知名度がやや低い",
       "手数料は個別査定"
     ],
-    "overallRating": 3.4,
-    "rankPosition": 182,
     "establishedYear": 2018,
     "targetIndustries": [
       "建設業",
@@ -7404,7 +7402,9 @@ const companiesData: Company[] = [
       "製造業",
       "IT・Web",
       "サービス業"
-    ]
+    ],
+    "overallRating": 3.4,
+    "rankPosition": 182
   },
   {
     "slug": "toshin-shoji",
@@ -7436,8 +7436,6 @@ const companiesData: Company[] = [
       "知名度がやや低い",
       "手数料は個別査定"
     ],
-    "overallRating": 3.4,
-    "rankPosition": 183,
     "establishedYear": 2018,
     "targetIndustries": [
       "建設業",
@@ -7445,7 +7443,9 @@ const companiesData: Company[] = [
       "製造業",
       "IT・Web",
       "サービス業"
-    ]
+    ],
+    "overallRating": 3.4,
+    "rankPosition": 183
   },
   {
     "slug": "whatever",
@@ -7477,8 +7477,6 @@ const companiesData: Company[] = [
       "知名度がやや低い",
       "手数料は個別査定"
     ],
-    "overallRating": 3.4,
-    "rankPosition": 184,
     "establishedYear": 2018,
     "targetIndustries": [
       "建設業",
@@ -7486,7 +7484,9 @@ const companiesData: Company[] = [
       "製造業",
       "IT・Web",
       "サービス業"
-    ]
+    ],
+    "overallRating": 3.4,
+    "rankPosition": 184
   },
   {
     "slug": "yamaki-shoji",
@@ -7518,8 +7518,6 @@ const companiesData: Company[] = [
       "知名度がやや低い",
       "手数料は個別査定"
     ],
-    "overallRating": 3.4,
-    "rankPosition": 185,
     "establishedYear": 2018,
     "targetIndustries": [
       "建設業",
@@ -7527,13 +7525,15 @@ const companiesData: Company[] = [
       "製造業",
       "IT・Web",
       "サービス業"
-    ]
+    ],
+    "overallRating": 3.4,
+    "rankPosition": 185
   },
   {
     "slug": "3s-factoring",
     "name": "3S",
     "description": "スリーエスのファクタリングサービス。少額から大口まで対応。",
-    "affiliateUrl": "https://3s-factoring.jp/",
+    "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=4AX1OL+BPIX2Q+5QRM+5YJRM",
     "factoringType": "2社間・3社間",
     "feeRange": {
       "min": 3,
@@ -7559,8 +7559,6 @@ const companiesData: Company[] = [
       "知名度がやや低い",
       "手数料は個別査定"
     ],
-    "overallRating": 3.3,
-    "rankPosition": 186,
     "establishedYear": 2018,
     "targetIndustries": [
       "建設業",
@@ -7568,7 +7566,9 @@ const companiesData: Company[] = [
       "製造業",
       "IT・Web",
       "サービス業"
-    ]
+    ],
+    "overallRating": 3.3,
+    "rankPosition": 186
   },
   {
     "slug": "actbiz",
@@ -7600,8 +7600,6 @@ const companiesData: Company[] = [
       "知名度がやや低い",
       "手数料は個別査定"
     ],
-    "overallRating": 3.3,
-    "rankPosition": 187,
     "establishedYear": 2018,
     "targetIndustries": [
       "建設業",
@@ -7609,13 +7607,15 @@ const companiesData: Company[] = [
       "製造業",
       "IT・Web",
       "サービス業"
-    ]
+    ],
+    "overallRating": 3.3,
+    "rankPosition": 187
   },
   {
     "slug": "active-support",
     "name": "アクティブサポート",
     "description": "中小企業の資金繰りを積極的にサポートするファクタリング会社。柔軟な審査が特長。",
-    "affiliateUrl": "https://active-support.co.jp/",
+    "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=4AX5KD+9R9ROY+4JGG+60OXD",
     "factoringType": "2社間・3社間",
     "feeRange": {
       "min": 3,
@@ -7641,8 +7641,6 @@ const companiesData: Company[] = [
       "知名度がやや低い",
       "手数料は個別査定"
     ],
-    "overallRating": 3.3,
-    "rankPosition": 188,
     "establishedYear": 2018,
     "targetIndustries": [
       "建設業",
@@ -7650,7 +7648,9 @@ const companiesData: Company[] = [
       "製造業",
       "IT・Web",
       "サービス業"
-    ]
+    ],
+    "overallRating": 3.3,
+    "rankPosition": 188
   },
   {
     "slug": "alps-finance",
@@ -7682,8 +7682,6 @@ const companiesData: Company[] = [
       "知名度がやや低い",
       "手数料は個別査定"
     ],
-    "overallRating": 3.3,
-    "rankPosition": 189,
     "establishedYear": 2018,
     "targetIndustries": [
       "建設業",
@@ -7691,7 +7689,9 @@ const companiesData: Company[] = [
       "製造業",
       "IT・Web",
       "サービス業"
-    ]
+    ],
+    "overallRating": 3.3,
+    "rankPosition": 189
   },
   {
     "slug": "aslead",
@@ -7723,8 +7723,6 @@ const companiesData: Company[] = [
       "知名度がやや低い",
       "手数料は個別査定"
     ],
-    "overallRating": 3.3,
-    "rankPosition": 190,
     "establishedYear": 2018,
     "targetIndustries": [
       "建設業",
@@ -7732,7 +7730,9 @@ const companiesData: Company[] = [
       "製造業",
       "IT・Web",
       "サービス業"
-    ]
+    ],
+    "overallRating": 3.3,
+    "rankPosition": 190
   },
   {
     "slug": "avantia",
@@ -7764,8 +7764,6 @@ const companiesData: Company[] = [
       "知名度がやや低い",
       "手数料は個別査定"
     ],
-    "overallRating": 3.3,
-    "rankPosition": 191,
     "establishedYear": 2018,
     "targetIndustries": [
       "建設業",
@@ -7773,7 +7771,9 @@ const companiesData: Company[] = [
       "製造業",
       "IT・Web",
       "サービス業"
-    ]
+    ],
+    "overallRating": 3.3,
+    "rankPosition": 191
   },
   {
     "slug": "belle-system",
@@ -7805,8 +7805,6 @@ const companiesData: Company[] = [
       "知名度がやや低い",
       "手数料は個別査定"
     ],
-    "overallRating": 3.3,
-    "rankPosition": 192,
     "establishedYear": 2018,
     "targetIndustries": [
       "建設業",
@@ -7814,7 +7812,9 @@ const companiesData: Company[] = [
       "製造業",
       "IT・Web",
       "サービス業"
-    ]
+    ],
+    "overallRating": 3.3,
+    "rankPosition": 192
   },
   {
     "slug": "business-fund",
@@ -7846,8 +7846,6 @@ const companiesData: Company[] = [
       "知名度がやや低い",
       "手数料は個別査定"
     ],
-    "overallRating": 3.3,
-    "rankPosition": 193,
     "establishedYear": 2018,
     "targetIndustries": [
       "建設業",
@@ -7855,7 +7853,9 @@ const companiesData: Company[] = [
       "製造業",
       "IT・Web",
       "サービス業"
-    ]
+    ],
+    "overallRating": 3.3,
+    "rankPosition": 193
   },
   {
     "slug": "cuc-factoring",
@@ -7887,8 +7887,6 @@ const companiesData: Company[] = [
       "知名度がやや低い",
       "手数料は個別査定"
     ],
-    "overallRating": 3.3,
-    "rankPosition": 194,
     "establishedYear": 2018,
     "targetIndustries": [
       "建設業",
@@ -7896,7 +7894,9 @@ const companiesData: Company[] = [
       "製造業",
       "IT・Web",
       "サービス業"
-    ]
+    ],
+    "overallRating": 3.3,
+    "rankPosition": 194
   },
   {
     "slug": "danbury",
@@ -7928,8 +7928,6 @@ const companiesData: Company[] = [
       "知名度がやや低い",
       "手数料は個別査定"
     ],
-    "overallRating": 3.3,
-    "rankPosition": 195,
     "establishedYear": 2018,
     "targetIndustries": [
       "建設業",
@@ -7937,7 +7935,9 @@ const companiesData: Company[] = [
       "製造業",
       "IT・Web",
       "サービス業"
-    ]
+    ],
+    "overallRating": 3.3,
+    "rankPosition": 195
   },
   {
     "slug": "dm-company",
@@ -7969,8 +7969,6 @@ const companiesData: Company[] = [
       "知名度がやや低い",
       "手数料は個別査定"
     ],
-    "overallRating": 3.3,
-    "rankPosition": 196,
     "establishedYear": 2018,
     "targetIndustries": [
       "建設業",
@@ -7978,7 +7976,9 @@ const companiesData: Company[] = [
       "製造業",
       "IT・Web",
       "サービス業"
-    ]
+    ],
+    "overallRating": 3.3,
+    "rankPosition": 196
   },
   {
     "slug": "ebis-holdings",
@@ -8010,8 +8010,6 @@ const companiesData: Company[] = [
       "知名度がやや低い",
       "手数料は個別査定"
     ],
-    "overallRating": 3.3,
-    "rankPosition": 197,
     "establishedYear": 2018,
     "targetIndustries": [
       "建設業",
@@ -8019,7 +8017,9 @@ const companiesData: Company[] = [
       "製造業",
       "IT・Web",
       "サービス業"
-    ]
+    ],
+    "overallRating": 3.3,
+    "rankPosition": 197
   },
   {
     "slug": "f-style",
@@ -8051,8 +8051,6 @@ const companiesData: Company[] = [
       "知名度がやや低い",
       "手数料は個別査定"
     ],
-    "overallRating": 3.3,
-    "rankPosition": 198,
     "establishedYear": 2018,
     "targetIndustries": [
       "建設業",
@@ -8060,7 +8058,9 @@ const companiesData: Company[] = [
       "製造業",
       "IT・Web",
       "サービス業"
-    ]
+    ],
+    "overallRating": 3.3,
+    "rankPosition": 198
   },
   {
     "slug": "factor-associates",
@@ -8092,8 +8092,6 @@ const companiesData: Company[] = [
       "知名度がやや低い",
       "手数料は個別査定"
     ],
-    "overallRating": 3.3,
-    "rankPosition": 199,
     "establishedYear": 2018,
     "targetIndustries": [
       "建設業",
@@ -8101,7 +8099,9 @@ const companiesData: Company[] = [
       "製造業",
       "IT・Web",
       "サービス業"
-    ]
+    ],
+    "overallRating": 3.3,
+    "rankPosition": 199
   },
   {
     "slug": "faith-factoring",
@@ -8133,8 +8133,6 @@ const companiesData: Company[] = [
       "知名度がやや低い",
       "手数料は個別査定"
     ],
-    "overallRating": 3.3,
-    "rankPosition": 200,
     "establishedYear": 2018,
     "targetIndustries": [
       "建設業",
@@ -8142,7 +8140,9 @@ const companiesData: Company[] = [
       "製造業",
       "IT・Web",
       "サービス業"
-    ]
+    ],
+    "overallRating": 3.3,
+    "rankPosition": 200
   },
   {
     "slug": "global-service",
@@ -8174,8 +8174,6 @@ const companiesData: Company[] = [
       "知名度がやや低い",
       "手数料は個別査定"
     ],
-    "overallRating": 3.3,
-    "rankPosition": 201,
     "establishedYear": 2018,
     "targetIndustries": [
       "建設業",
@@ -8183,7 +8181,9 @@ const companiesData: Company[] = [
       "製造業",
       "IT・Web",
       "サービス業"
-    ]
+    ],
+    "overallRating": 3.3,
+    "rankPosition": 201
   },
   {
     "slug": "gmmi",
@@ -8215,8 +8215,6 @@ const companiesData: Company[] = [
       "知名度がやや低い",
       "手数料は個別査定"
     ],
-    "overallRating": 3.3,
-    "rankPosition": 202,
     "establishedYear": 2018,
     "targetIndustries": [
       "建設業",
@@ -8224,7 +8222,9 @@ const companiesData: Company[] = [
       "製造業",
       "IT・Web",
       "サービス業"
-    ]
+    ],
+    "overallRating": 3.3,
+    "rankPosition": 202
   },
   {
     "slug": "growrize",
@@ -8256,8 +8256,6 @@ const companiesData: Company[] = [
       "知名度がやや低い",
       "手数料は個別査定"
     ],
-    "overallRating": 3.3,
-    "rankPosition": 203,
     "establishedYear": 2018,
     "targetIndustries": [
       "建設業",
@@ -8265,7 +8263,9 @@ const companiesData: Company[] = [
       "製造業",
       "IT・Web",
       "サービス業"
-    ]
+    ],
+    "overallRating": 3.3,
+    "rankPosition": 203
   },
   {
     "slug": "heartful-life",
@@ -8297,8 +8297,6 @@ const companiesData: Company[] = [
       "知名度がやや低い",
       "手数料は個別査定"
     ],
-    "overallRating": 3.3,
-    "rankPosition": 204,
     "establishedYear": 2018,
     "targetIndustries": [
       "建設業",
@@ -8306,7 +8304,9 @@ const companiesData: Company[] = [
       "製造業",
       "IT・Web",
       "サービス業"
-    ]
+    ],
+    "overallRating": 3.3,
+    "rankPosition": 204
   },
   {
     "slug": "i-service",
@@ -8338,8 +8338,6 @@ const companiesData: Company[] = [
       "知名度がやや低い",
       "手数料は個別査定"
     ],
-    "overallRating": 3.3,
-    "rankPosition": 205,
     "establishedYear": 2018,
     "targetIndustries": [
       "建設業",
@@ -8347,7 +8345,9 @@ const companiesData: Company[] = [
       "製造業",
       "IT・Web",
       "サービス業"
-    ]
+    ],
+    "overallRating": 3.3,
+    "rankPosition": 205
   },
   {
     "slug": "ichifuku",
@@ -8379,8 +8379,6 @@ const companiesData: Company[] = [
       "知名度がやや低い",
       "手数料は個別査定"
     ],
-    "overallRating": 3.3,
-    "rankPosition": 206,
     "establishedYear": 2018,
     "targetIndustries": [
       "建設業",
@@ -8388,7 +8386,9 @@ const companiesData: Company[] = [
       "製造業",
       "IT・Web",
       "サービス業"
-    ]
+    ],
+    "overallRating": 3.3,
+    "rankPosition": 206
   },
   {
     "slug": "jsc-factoring",
@@ -8420,8 +8420,6 @@ const companiesData: Company[] = [
       "知名度がやや低い",
       "手数料は個別査定"
     ],
-    "overallRating": 3.3,
-    "rankPosition": 207,
     "establishedYear": 2018,
     "targetIndustries": [
       "建設業",
@@ -8429,7 +8427,9 @@ const companiesData: Company[] = [
       "製造業",
       "IT・Web",
       "サービス業"
-    ]
+    ],
+    "overallRating": 3.3,
+    "rankPosition": 207
   },
   {
     "slug": "k-support",
@@ -8461,8 +8461,6 @@ const companiesData: Company[] = [
       "知名度がやや低い",
       "手数料は個別査定"
     ],
-    "overallRating": 3.3,
-    "rankPosition": 208,
     "establishedYear": 2018,
     "targetIndustries": [
       "建設業",
@@ -8470,7 +8468,9 @@ const companiesData: Company[] = [
       "製造業",
       "IT・Web",
       "サービス業"
-    ]
+    ],
+    "overallRating": 3.3,
+    "rankPosition": 208
   },
   {
     "slug": "kosei",
@@ -8502,8 +8502,6 @@ const companiesData: Company[] = [
       "知名度がやや低い",
       "手数料は個別査定"
     ],
-    "overallRating": 3.3,
-    "rankPosition": 209,
     "establishedYear": 2018,
     "targetIndustries": [
       "建設業",
@@ -8511,7 +8509,9 @@ const companiesData: Company[] = [
       "製造業",
       "IT・Web",
       "サービス業"
-    ]
+    ],
+    "overallRating": 3.3,
+    "rankPosition": 209
   },
   {
     "slug": "life-factoring",
@@ -8543,8 +8543,6 @@ const companiesData: Company[] = [
       "知名度がやや低い",
       "手数料は個別査定"
     ],
-    "overallRating": 3.3,
-    "rankPosition": 210,
     "establishedYear": 2018,
     "targetIndustries": [
       "建設業",
@@ -8552,7 +8550,9 @@ const companiesData: Company[] = [
       "製造業",
       "IT・Web",
       "サービス業"
-    ]
+    ],
+    "overallRating": 3.3,
+    "rankPosition": 210
   },
   {
     "slug": "localworks-payment",
@@ -8584,13 +8584,13 @@ const companiesData: Company[] = [
       "知名度がやや低い",
       "手数料は個別査定"
     ],
-    "overallRating": 3.3,
-    "rankPosition": 211,
     "establishedYear": 2018,
     "targetIndustries": [
       "建設業",
       "運送業"
-    ]
+    ],
+    "overallRating": 3.3,
+    "rankPosition": 211
   },
   {
     "slug": "lucia",
@@ -8622,8 +8622,6 @@ const companiesData: Company[] = [
       "知名度がやや低い",
       "手数料は個別査定"
     ],
-    "overallRating": 3.3,
-    "rankPosition": 212,
     "establishedYear": 2018,
     "targetIndustries": [
       "建設業",
@@ -8631,7 +8629,9 @@ const companiesData: Company[] = [
       "製造業",
       "IT・Web",
       "サービス業"
-    ]
+    ],
+    "overallRating": 3.3,
+    "rankPosition": 212
   },
   {
     "slug": "luxel-partner",
@@ -8663,8 +8663,6 @@ const companiesData: Company[] = [
       "知名度がやや低い",
       "手数料は個別査定"
     ],
-    "overallRating": 3.3,
-    "rankPosition": 213,
     "establishedYear": 2018,
     "targetIndustries": [
       "建設業",
@@ -8672,7 +8670,9 @@ const companiesData: Company[] = [
       "製造業",
       "IT・Web",
       "サービス業"
-    ]
+    ],
+    "overallRating": 3.3,
+    "rankPosition": 213
   },
   {
     "slug": "make-move",
@@ -8704,8 +8704,6 @@ const companiesData: Company[] = [
       "知名度がやや低い",
       "手数料は個別査定"
     ],
-    "overallRating": 3.3,
-    "rankPosition": 214,
     "establishedYear": 2018,
     "targetIndustries": [
       "建設業",
@@ -8713,7 +8711,9 @@ const companiesData: Company[] = [
       "製造業",
       "IT・Web",
       "サービス業"
-    ]
+    ],
+    "overallRating": 3.3,
+    "rankPosition": 214
   },
   {
     "slug": "mb-pay",
@@ -8745,8 +8745,6 @@ const companiesData: Company[] = [
       "知名度がやや低い",
       "手数料は個別査定"
     ],
-    "overallRating": 3.3,
-    "rankPosition": 215,
     "establishedYear": 2018,
     "targetIndustries": [
       "建設業",
@@ -8754,7 +8752,9 @@ const companiesData: Company[] = [
       "製造業",
       "IT・Web",
       "サービス業"
-    ]
+    ],
+    "overallRating": 3.3,
+    "rankPosition": 215
   },
   {
     "slug": "meisei-enterprise",
@@ -8786,8 +8786,6 @@ const companiesData: Company[] = [
       "知名度がやや低い",
       "手数料は個別査定"
     ],
-    "overallRating": 3.3,
-    "rankPosition": 216,
     "establishedYear": 2018,
     "targetIndustries": [
       "建設業",
@@ -8795,7 +8793,9 @@ const companiesData: Company[] = [
       "製造業",
       "IT・Web",
       "サービス業"
-    ]
+    ],
+    "overallRating": 3.3,
+    "rankPosition": 216
   },
   {
     "slug": "ms-quest",
@@ -8827,8 +8827,6 @@ const companiesData: Company[] = [
       "知名度がやや低い",
       "手数料は個別査定"
     ],
-    "overallRating": 3.3,
-    "rankPosition": 217,
     "establishedYear": 2018,
     "targetIndustries": [
       "建設業",
@@ -8836,7 +8834,9 @@ const companiesData: Company[] = [
       "製造業",
       "IT・Web",
       "サービス業"
-    ]
+    ],
+    "overallRating": 3.3,
+    "rankPosition": 217
   },
   {
     "slug": "nikkei-financial",
@@ -8868,8 +8868,6 @@ const companiesData: Company[] = [
       "知名度がやや低い",
       "手数料は個別査定"
     ],
-    "overallRating": 3.3,
-    "rankPosition": 218,
     "establishedYear": 2018,
     "targetIndustries": [
       "建設業",
@@ -8877,7 +8875,9 @@ const companiesData: Company[] = [
       "製造業",
       "IT・Web",
       "サービス業"
-    ]
+    ],
+    "overallRating": 3.3,
+    "rankPosition": 218
   },
   {
     "slug": "ns-partners",
@@ -8909,8 +8909,6 @@ const companiesData: Company[] = [
       "知名度がやや低い",
       "手数料は個別査定"
     ],
-    "overallRating": 3.3,
-    "rankPosition": 219,
     "establishedYear": 2018,
     "targetIndustries": [
       "建設業",
@@ -8918,7 +8916,9 @@ const companiesData: Company[] = [
       "製造業",
       "IT・Web",
       "サービス業"
-    ]
+    ],
+    "overallRating": 3.3,
+    "rankPosition": 219
   },
   {
     "slug": "oj-factoring",
@@ -8950,8 +8950,6 @@ const companiesData: Company[] = [
       "知名度がやや低い",
       "手数料は個別査定"
     ],
-    "overallRating": 3.3,
-    "rankPosition": 220,
     "establishedYear": 2018,
     "targetIndustries": [
       "建設業",
@@ -8959,7 +8957,9 @@ const companiesData: Company[] = [
       "製造業",
       "IT・Web",
       "サービス業"
-    ]
+    ],
+    "overallRating": 3.3,
+    "rankPosition": 220
   },
   {
     "slug": "paybridge",
@@ -8991,8 +8991,6 @@ const companiesData: Company[] = [
       "知名度がやや低い",
       "手数料は個別査定"
     ],
-    "overallRating": 3.3,
-    "rankPosition": 221,
     "establishedYear": 2018,
     "targetIndustries": [
       "建設業",
@@ -9000,7 +8998,9 @@ const companiesData: Company[] = [
       "製造業",
       "IT・Web",
       "サービス業"
-    ]
+    ],
+    "overallRating": 3.3,
+    "rankPosition": 221
   },
   {
     "slug": "plus-line",
@@ -9032,8 +9032,6 @@ const companiesData: Company[] = [
       "知名度がやや低い",
       "手数料は個別査定"
     ],
-    "overallRating": 3.3,
-    "rankPosition": 222,
     "establishedYear": 2018,
     "targetIndustries": [
       "建設業",
@@ -9041,7 +9039,9 @@ const companiesData: Company[] = [
       "製造業",
       "IT・Web",
       "サービス業"
-    ]
+    ],
+    "overallRating": 3.3,
+    "rankPosition": 222
   },
   {
     "slug": "progress-factoring",
@@ -9073,8 +9073,6 @@ const companiesData: Company[] = [
       "知名度がやや低い",
       "手数料は個別査定"
     ],
-    "overallRating": 3.3,
-    "rankPosition": 223,
     "establishedYear": 2018,
     "targetIndustries": [
       "建設業",
@@ -9082,7 +9080,9 @@ const companiesData: Company[] = [
       "製造業",
       "IT・Web",
       "サービス業"
-    ]
+    ],
+    "overallRating": 3.3,
+    "rankPosition": 223
   },
   {
     "slug": "protect-one",
@@ -9114,8 +9114,6 @@ const companiesData: Company[] = [
       "知名度がやや低い",
       "手数料は個別査定"
     ],
-    "overallRating": 3.3,
-    "rankPosition": 224,
     "establishedYear": 2018,
     "targetIndustries": [
       "建設業",
@@ -9123,7 +9121,9 @@ const companiesData: Company[] = [
       "製造業",
       "IT・Web",
       "サービス業"
-    ]
+    ],
+    "overallRating": 3.3,
+    "rankPosition": 224
   },
   {
     "slug": "rearth",
@@ -9155,8 +9155,6 @@ const companiesData: Company[] = [
       "知名度がやや低い",
       "手数料は個別査定"
     ],
-    "overallRating": 3.3,
-    "rankPosition": 225,
     "establishedYear": 2018,
     "targetIndustries": [
       "建設業",
@@ -9164,7 +9162,9 @@ const companiesData: Company[] = [
       "製造業",
       "IT・Web",
       "サービス業"
-    ]
+    ],
+    "overallRating": 3.3,
+    "rankPosition": 225
   },
   {
     "slug": "regu-pay",
@@ -9196,8 +9196,6 @@ const companiesData: Company[] = [
       "知名度がやや低い",
       "手数料は個別査定"
     ],
-    "overallRating": 3.3,
-    "rankPosition": 226,
     "establishedYear": 2018,
     "targetIndustries": [
       "建設業",
@@ -9205,7 +9203,9 @@ const companiesData: Company[] = [
       "製造業",
       "IT・Web",
       "サービス業"
-    ]
+    ],
+    "overallRating": 3.3,
+    "rankPosition": 226
   },
   {
     "slug": "rising",
@@ -9237,8 +9237,6 @@ const companiesData: Company[] = [
       "知名度がやや低い",
       "手数料は個別査定"
     ],
-    "overallRating": 3.3,
-    "rankPosition": 227,
     "establishedYear": 2018,
     "targetIndustries": [
       "建設業",
@@ -9246,7 +9244,9 @@ const companiesData: Company[] = [
       "製造業",
       "IT・Web",
       "サービス業"
-    ]
+    ],
+    "overallRating": 3.3,
+    "rankPosition": 227
   },
   {
     "slug": "ryfety",
@@ -9278,8 +9278,6 @@ const companiesData: Company[] = [
       "知名度がやや低い",
       "手数料は個別査定"
     ],
-    "overallRating": 3.3,
-    "rankPosition": 228,
     "establishedYear": 2018,
     "targetIndustries": [
       "建設業",
@@ -9287,7 +9285,9 @@ const companiesData: Company[] = [
       "製造業",
       "IT・Web",
       "サービス業"
-    ]
+    ],
+    "overallRating": 3.3,
+    "rankPosition": 228
   },
   {
     "slug": "s-com",
@@ -9319,8 +9319,6 @@ const companiesData: Company[] = [
       "知名度がやや低い",
       "手数料は個別査定"
     ],
-    "overallRating": 3.3,
-    "rankPosition": 229,
     "establishedYear": 2018,
     "targetIndustries": [
       "建設業",
@@ -9328,7 +9326,9 @@ const companiesData: Company[] = [
       "製造業",
       "IT・Web",
       "サービス業"
-    ]
+    ],
+    "overallRating": 3.3,
+    "rankPosition": 229
   },
   {
     "slug": "s-radikal",
@@ -9360,8 +9360,6 @@ const companiesData: Company[] = [
       "知名度がやや低い",
       "手数料は個別査定"
     ],
-    "overallRating": 3.3,
-    "rankPosition": 230,
     "establishedYear": 2018,
     "targetIndustries": [
       "建設業",
@@ -9369,7 +9367,9 @@ const companiesData: Company[] = [
       "製造業",
       "IT・Web",
       "サービス業"
-    ]
+    ],
+    "overallRating": 3.3,
+    "rankPosition": 230
   },
   {
     "slug": "sanctuary",
@@ -9401,8 +9401,6 @@ const companiesData: Company[] = [
       "知名度がやや低い",
       "手数料は個別査定"
     ],
-    "overallRating": 3.3,
-    "rankPosition": 231,
     "establishedYear": 2018,
     "targetIndustries": [
       "建設業",
@@ -9410,7 +9408,9 @@ const companiesData: Company[] = [
       "製造業",
       "IT・Web",
       "サービス業"
-    ]
+    ],
+    "overallRating": 3.3,
+    "rankPosition": 231
   },
   {
     "slug": "sfi-leasing",
@@ -9442,8 +9442,6 @@ const companiesData: Company[] = [
       "知名度がやや低い",
       "手数料は個別査定"
     ],
-    "overallRating": 3.3,
-    "rankPosition": 232,
     "establishedYear": 2005,
     "targetIndustries": [
       "建設業",
@@ -9451,7 +9449,9 @@ const companiesData: Company[] = [
       "製造業",
       "IT・Web",
       "サービス業"
-    ]
+    ],
+    "overallRating": 3.3,
+    "rankPosition": 232
   },
   {
     "slug": "shikin-honpo",
@@ -9483,8 +9483,6 @@ const companiesData: Company[] = [
       "知名度がやや低い",
       "手数料は個別査定"
     ],
-    "overallRating": 3.3,
-    "rankPosition": 233,
     "establishedYear": 2018,
     "targetIndustries": [
       "建設業",
@@ -9492,7 +9490,9 @@ const companiesData: Company[] = [
       "製造業",
       "IT・Web",
       "サービス業"
-    ]
+    ],
+    "overallRating": 3.3,
+    "rankPosition": 233
   },
   {
     "slug": "shoko-shoji",
@@ -9524,8 +9524,6 @@ const companiesData: Company[] = [
       "知名度がやや低い",
       "手数料は個別査定"
     ],
-    "overallRating": 3.3,
-    "rankPosition": 234,
     "establishedYear": 2005,
     "targetIndustries": [
       "建設業",
@@ -9533,7 +9531,9 @@ const companiesData: Company[] = [
       "製造業",
       "IT・Web",
       "サービス業"
-    ]
+    ],
+    "overallRating": 3.3,
+    "rankPosition": 234
   },
   {
     "slug": "sig-solution",
@@ -9565,8 +9565,6 @@ const companiesData: Company[] = [
       "知名度がやや低い",
       "手数料は個別査定"
     ],
-    "overallRating": 3.3,
-    "rankPosition": 235,
     "establishedYear": 2018,
     "targetIndustries": [
       "建設業",
@@ -9574,7 +9572,9 @@ const companiesData: Company[] = [
       "製造業",
       "IT・Web",
       "サービス業"
-    ]
+    ],
+    "overallRating": 3.3,
+    "rankPosition": 235
   },
   {
     "slug": "sinsia",
@@ -9606,8 +9606,6 @@ const companiesData: Company[] = [
       "知名度がやや低い",
       "手数料は個別査定"
     ],
-    "overallRating": 3.3,
-    "rankPosition": 236,
     "establishedYear": 2018,
     "targetIndustries": [
       "建設業",
@@ -9615,7 +9613,9 @@ const companiesData: Company[] = [
       "製造業",
       "IT・Web",
       "サービス業"
-    ]
+    ],
+    "overallRating": 3.3,
+    "rankPosition": 236
   },
   {
     "slug": "sk-service",
@@ -9647,8 +9647,6 @@ const companiesData: Company[] = [
       "知名度がやや低い",
       "手数料は個別査定"
     ],
-    "overallRating": 3.3,
-    "rankPosition": 237,
     "establishedYear": 2018,
     "targetIndustries": [
       "建設業",
@@ -9656,7 +9654,9 @@ const companiesData: Company[] = [
       "製造業",
       "IT・Web",
       "サービス業"
-    ]
+    ],
+    "overallRating": 3.3,
+    "rankPosition": 237
   },
   {
     "slug": "sms-financial",
@@ -9688,8 +9688,6 @@ const companiesData: Company[] = [
       "知名度がやや低い",
       "手数料は個別査定"
     ],
-    "overallRating": 3.3,
-    "rankPosition": 238,
     "establishedYear": 2018,
     "targetIndustries": [
       "建設業",
@@ -9697,7 +9695,9 @@ const companiesData: Company[] = [
       "製造業",
       "IT・Web",
       "サービス業"
-    ]
+    ],
+    "overallRating": 3.3,
+    "rankPosition": 238
   },
   {
     "slug": "sol-support",
@@ -9729,8 +9729,6 @@ const companiesData: Company[] = [
       "知名度がやや低い",
       "手数料は個別査定"
     ],
-    "overallRating": 3.3,
-    "rankPosition": 239,
     "establishedYear": 2018,
     "targetIndustries": [
       "建設業",
@@ -9738,7 +9736,9 @@ const companiesData: Company[] = [
       "製造業",
       "IT・Web",
       "サービス業"
-    ]
+    ],
+    "overallRating": 3.3,
+    "rankPosition": 239
   },
   {
     "slug": "sowa-enterprise",
@@ -9770,8 +9770,6 @@ const companiesData: Company[] = [
       "知名度がやや低い",
       "手数料は個別査定"
     ],
-    "overallRating": 3.3,
-    "rankPosition": 240,
     "establishedYear": 2018,
     "targetIndustries": [
       "建設業",
@@ -9779,7 +9777,9 @@ const companiesData: Company[] = [
       "製造業",
       "IT・Web",
       "サービス業"
-    ]
+    ],
+    "overallRating": 3.3,
+    "rankPosition": 240
   },
   {
     "slug": "ssk-factoring",
@@ -9811,8 +9811,6 @@ const companiesData: Company[] = [
       "知名度がやや低い",
       "手数料は個別査定"
     ],
-    "overallRating": 3.3,
-    "rankPosition": 241,
     "establishedYear": 2018,
     "targetIndustries": [
       "建設業",
@@ -9820,7 +9818,9 @@ const companiesData: Company[] = [
       "製造業",
       "IT・Web",
       "サービス業"
-    ]
+    ],
+    "overallRating": 3.3,
+    "rankPosition": 241
   },
   {
     "slug": "supporter-bank",
@@ -9852,8 +9852,6 @@ const companiesData: Company[] = [
       "知名度がやや低い",
       "手数料は個別査定"
     ],
-    "overallRating": 3.3,
-    "rankPosition": 242,
     "establishedYear": 2018,
     "targetIndustries": [
       "建設業",
@@ -9861,7 +9859,9 @@ const companiesData: Company[] = [
       "製造業",
       "IT・Web",
       "サービス業"
-    ]
+    ],
+    "overallRating": 3.3,
+    "rankPosition": 242
   },
   {
     "slug": "terasu",
@@ -9893,8 +9893,6 @@ const companiesData: Company[] = [
       "知名度がやや低い",
       "手数料は個別査定"
     ],
-    "overallRating": 3.3,
-    "rankPosition": 243,
     "establishedYear": 2018,
     "targetIndustries": [
       "建設業",
@@ -9902,7 +9900,9 @@ const companiesData: Company[] = [
       "製造業",
       "IT・Web",
       "サービス業"
-    ]
+    ],
+    "overallRating": 3.3,
+    "rankPosition": 243
   },
   {
     "slug": "tick",
@@ -9934,8 +9934,6 @@ const companiesData: Company[] = [
       "知名度がやや低い",
       "手数料は個別査定"
     ],
-    "overallRating": 3.3,
-    "rankPosition": 244,
     "establishedYear": 2018,
     "targetIndustries": [
       "建設業",
@@ -9943,7 +9941,9 @@ const companiesData: Company[] = [
       "製造業",
       "IT・Web",
       "サービス業"
-    ]
+    ],
+    "overallRating": 3.3,
+    "rankPosition": 244
   },
   {
     "slug": "tomin-shinpan",
@@ -9975,8 +9975,6 @@ const companiesData: Company[] = [
       "知名度がやや低い",
       "手数料は個別査定"
     ],
-    "overallRating": 3.3,
-    "rankPosition": 245,
     "establishedYear": 2000,
     "targetIndustries": [
       "建設業",
@@ -9984,7 +9982,9 @@ const companiesData: Company[] = [
       "製造業",
       "IT・Web",
       "サービス業"
-    ]
+    ],
+    "overallRating": 3.3,
+    "rankPosition": 245
   },
   {
     "slug": "trust-pay",
@@ -10016,8 +10016,6 @@ const companiesData: Company[] = [
       "知名度がやや低い",
       "手数料は個別査定"
     ],
-    "overallRating": 3.3,
-    "rankPosition": 246,
     "establishedYear": 2018,
     "targetIndustries": [
       "建設業",
@@ -10025,7 +10023,9 @@ const companiesData: Company[] = [
       "製造業",
       "IT・Web",
       "サービス業"
-    ]
+    ],
+    "overallRating": 3.3,
+    "rankPosition": 246
   },
   {
     "slug": "unity-factoring",
@@ -10057,8 +10057,6 @@ const companiesData: Company[] = [
       "知名度がやや低い",
       "手数料は個別査定"
     ],
-    "overallRating": 3.3,
-    "rankPosition": 247,
     "establishedYear": 2018,
     "targetIndustries": [
       "建設業",
@@ -10066,7 +10064,9 @@ const companiesData: Company[] = [
       "製造業",
       "IT・Web",
       "サービス業"
-    ]
+    ],
+    "overallRating": 3.3,
+    "rankPosition": 247
   },
   {
     "slug": "urikakekin-pay",
@@ -10098,8 +10098,6 @@ const companiesData: Company[] = [
       "知名度がやや低い",
       "手数料は個別査定"
     ],
-    "overallRating": 3.3,
-    "rankPosition": 248,
     "establishedYear": 2018,
     "targetIndustries": [
       "建設業",
@@ -10107,7 +10105,9 @@ const companiesData: Company[] = [
       "製造業",
       "IT・Web",
       "サービス業"
-    ]
+    ],
+    "overallRating": 3.3,
+    "rankPosition": 248
   },
   {
     "slug": "wadatumi",
@@ -10139,8 +10139,6 @@ const companiesData: Company[] = [
       "知名度がやや低い",
       "手数料は個別査定"
     ],
-    "overallRating": 3.3,
-    "rankPosition": 249,
     "establishedYear": 2018,
     "targetIndustries": [
       "建設業",
@@ -10148,7 +10146,9 @@ const companiesData: Company[] = [
       "製造業",
       "IT・Web",
       "サービス業"
-    ]
+    ],
+    "overallRating": 3.3,
+    "rankPosition": 249
   },
   {
     "slug": "west-factoring",
@@ -10180,8 +10180,6 @@ const companiesData: Company[] = [
       "知名度がやや低い",
       "手数料は個別査定"
     ],
-    "overallRating": 3.3,
-    "rankPosition": 250,
     "establishedYear": 2018,
     "targetIndustries": [
       "建設業",
@@ -10189,7 +10187,9 @@ const companiesData: Company[] = [
       "製造業",
       "IT・Web",
       "サービス業"
-    ]
+    ],
+    "overallRating": 3.3,
+    "rankPosition": 250
   },
   {
     "slug": "ys-corporation",
@@ -10221,8 +10221,6 @@ const companiesData: Company[] = [
       "知名度がやや低い",
       "手数料は個別査定"
     ],
-    "overallRating": 3.3,
-    "rankPosition": 251,
     "establishedYear": 2018,
     "targetIndustries": [
       "建設業",
@@ -10230,7 +10228,9 @@ const companiesData: Company[] = [
       "製造業",
       "IT・Web",
       "サービス業"
-    ]
+    ],
+    "overallRating": 3.3,
+    "rankPosition": 251
   },
   {
     "slug": "zaimukaikei-shien",
@@ -10262,8 +10262,6 @@ const companiesData: Company[] = [
       "知名度がやや低い",
       "手数料は個別査定"
     ],
-    "overallRating": 3.3,
-    "rankPosition": 252,
     "establishedYear": 2018,
     "targetIndustries": [
       "建設業",
@@ -10271,7 +10269,9 @@ const companiesData: Company[] = [
       "製造業",
       "IT・Web",
       "サービス業"
-    ]
+    ],
+    "overallRating": 3.3,
+    "rankPosition": 252
   },
   {
     "slug": "zen-confiance",
@@ -10303,8 +10303,6 @@ const companiesData: Company[] = [
       "知名度がやや低い",
       "手数料は個別査定"
     ],
-    "overallRating": 3.3,
-    "rankPosition": 253,
     "establishedYear": 2018,
     "targetIndustries": [
       "建設業",
@@ -10312,7 +10310,9 @@ const companiesData: Company[] = [
       "製造業",
       "IT・Web",
       "サービス業"
-    ]
+    ],
+    "overallRating": 3.3,
+    "rankPosition": 253
   },
   {
     "slug": "zist",
@@ -10344,8 +10344,6 @@ const companiesData: Company[] = [
       "知名度がやや低い",
       "手数料は個別査定"
     ],
-    "overallRating": 3.3,
-    "rankPosition": 254,
     "establishedYear": 2018,
     "targetIndustries": [
       "建設業",
@@ -10353,7 +10351,9 @@ const companiesData: Company[] = [
       "製造業",
       "IT・Web",
       "サービス業"
-    ]
+    ],
+    "overallRating": 3.3,
+    "rankPosition": 254
   }
 ];
 

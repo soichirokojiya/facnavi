@@ -28,8 +28,6 @@
     "手数料上限がやや高い",
     "知名度がやや低い"
   ],
-  "overallRating": 3.9,
-  "rankPosition": 52,
   "establishedYear": 2018,
   "targetIndustries": [
     "建設業",
@@ -37,5 +35,7 @@
     "IT・Web",
     "小売業",
     "飲食業"
-  ]
+  ],
+  "overallRating": 3.9,
+  "rankPosition": 52
 }

@@ -28,11 +28,11 @@
     "建設業以外は利用できない",
     "手数料がやや高め"
   ],
-  "overallRating": 3.9,
-  "rankPosition": 49,
   "establishedYear": 2018,
   "targetIndustries": [
     "建設業",
     "土木業"
-  ]
+  ],
+  "overallRating": 3.9,
+  "rankPosition": 49
 }

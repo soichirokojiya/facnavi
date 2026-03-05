@@ -28,8 +28,6 @@
     "知名度がやや低い",
     "土日祝は対応不可"
   ],
-  "overallRating": 4.1,
-  "rankPosition": 7,
   "establishedYear": 2017,
   "targetIndustries": [
     "建設業",
@@ -37,5 +35,7 @@
     "製造業",
     "医療・介護",
     "小売業"
-  ]
+  ],
+  "overallRating": 4.1,
+  "rankPosition": 7
 }

@@ -28,8 +28,6 @@
     "知名度がまだ低い",
     "大口案件の対応は要相談"
   ],
-  "overallRating": 3.8,
-  "rankPosition": 63,
   "establishedYear": 2019,
   "targetIndustries": [
     "建設業",
@@ -37,5 +35,7 @@
     "製造業",
     "小売業",
     "サービス業"
-  ]
+  ],
+  "overallRating": 3.8,
+  "rankPosition": 63
 }

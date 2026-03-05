@@ -28,8 +28,6 @@
     "少額案件には対応していない",
     "オンライン完結には非対応で面談が必要"
   ],
-  "overallRating": 4.1,
-  "rankPosition": 19,
   "establishedYear": 2016,
   "targetIndustries": [
     "建設業",
@@ -37,5 +35,7 @@
     "卸売業",
     "不動産業",
     "人材派遣業"
-  ]
+  ],
+  "overallRating": 4.1,
+  "rankPosition": 19
 }

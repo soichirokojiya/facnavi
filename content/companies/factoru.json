@@ -28,8 +28,6 @@
     "知名度がまだ低い",
     "2者間のみ"
   ],
-  "overallRating": 4,
-  "rankPosition": 40,
   "establishedYear": 2017,
   "targetIndustries": [
     "建設業",
@@ -37,5 +35,7 @@
     "製造業",
     "IT・Web",
     "医療・介護"
-  ]
+  ],
+  "overallRating": 4,
+  "rankPosition": 40
 }

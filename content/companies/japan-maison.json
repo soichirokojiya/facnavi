@@ -28,8 +28,6 @@
     "入金まで最短3日と時間がかかる",
     "急ぎの資金調達には不向き"
   ],
-  "overallRating": 4.4,
-  "rankPosition": 33,
   "establishedYear": 2017,
   "targetIndustries": [
     "建設業",
@@ -37,5 +35,7 @@
     "運送業",
     "医療・介護",
     "小売業"
-  ]
+  ],
+  "overallRating": 4.4,
+  "rankPosition": 33
 }

@@ -28,8 +28,6 @@
     "エリアが限定的",
     "個人事業主不可"
   ],
-  "overallRating": 3.5,
-  "rankPosition": 99,
   "establishedYear": 1979,
   "targetIndustries": [
     "製造業",
@@ -37,5 +35,7 @@
     "卸売業",
     "小売業",
     "サービス業"
-  ]
+  ],
+  "overallRating": 3.5,
+  "rankPosition": 99
 }

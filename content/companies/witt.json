@@ -28,8 +28,6 @@
     "500万円超の案件は対応不可",
     "手数料がやや高め"
   ],
-  "overallRating": 3.6,
-  "rankPosition": 86,
   "establishedYear": 2016,
   "targetIndustries": [
     "小売業",
@@ -37,5 +35,7 @@
     "サービス業",
     "IT・Web",
     "建設業"
-  ]
+  ],
+  "overallRating": 3.6,
+  "rankPosition": 86
 }

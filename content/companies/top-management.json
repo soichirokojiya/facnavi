@@ -2,7 +2,7 @@
   "slug": "top-management",
   "name": "トップ・マネジメント",
   "description": "累計取引件数5万件超の実績。最短即日入金、2社間・3社間両対応で幅広いニーズに応える。",
-  "affiliateUrl": "https://top-management.co.jp/",
+  "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=4AX5KD+9UUDBM+3JLM+5YJRM",
   "factoringType": "2社間・3社間",
   "feeRange": {
     "min": 1,
@@ -28,8 +28,6 @@
     "審査基準がやや厳しい場合も",
     "大口以外は対応が遅くなる場合も"
   ],
-  "overallRating": 4.2,
-  "rankPosition": 20,
   "establishedYear": 2009,
   "targetIndustries": [
     "建設業",
@@ -37,5 +35,7 @@
     "製造業",
     "医療・介護",
     "人材派遣"
-  ]
+  ],
+  "overallRating": 4.2,
+  "rankPosition": 20
 }

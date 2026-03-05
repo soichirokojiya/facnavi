@@ -28,8 +28,6 @@
     "即日入金は条件による",
     "手数料は案件ごとに変動が大きい"
   ],
-  "overallRating": 4.6,
-  "rankPosition": 31,
   "establishedYear": 2012,
   "targetIndustries": [
     "建設業",
@@ -37,5 +35,7 @@
     "製造業",
     "医療・介護",
     "人材派遣業"
-  ]
+  ],
+  "overallRating": 4.6,
+  "rankPosition": 31
 }

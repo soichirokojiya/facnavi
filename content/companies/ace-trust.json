@@ -2,7 +2,7 @@
   "slug": "ace-trust",
   "name": "エーストラスト",
   "description": "独自の柔軟な審査基準で高い契約率を誇るファクタリング会社。最短2時間で送金完了、最大5,000万円まで対応。",
-  "affiliateUrl": "https://ace-trust.co.jp/",
+  "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=4AX5KD+9TNI42+5T7O+5Z6WX",
   "factoringType": "2社間",
   "feeRange": {
     "min": 1,
@@ -28,8 +28,6 @@
     "知名度がやや低い",
     "手数料の幅が広い"
   ],
-  "overallRating": 4,
-  "rankPosition": 25,
   "establishedYear": 2018,
   "targetIndustries": [
     "建設業",
@@ -37,5 +35,7 @@
     "製造業",
     "IT・Web",
     "サービス業"
-  ]
+  ],
+  "overallRating": 4,
+  "rankPosition": 25
 }

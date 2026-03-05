@@ -28,8 +28,6 @@
     "法人限定",
     "最短2営業日"
   ],
-  "overallRating": 4.1,
-  "rankPosition": 37,
   "establishedYear": 2015,
   "targetIndustries": [
     "IT・Web",
@@ -37,5 +35,7 @@
     "卸売業",
     "サービス業",
     "建設業"
-  ]
+  ],
+  "overallRating": 4.1,
+  "rankPosition": 37
 }

@@ -2,7 +2,7 @@
   "slug": "nishi-nihon-factor",
   "name": "西日本ファクター",
   "description": "中国・九州エリア密着型のファクタリング会社。最短即日で1,000万円まで買取可能。地域企業に強い。",
-  "affiliateUrl": "https://www.242first.com/",
+  "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=4AX1ON+BMJR1U+3XT0+5YJRM",
   "factoringType": "2社間・3社間",
   "feeRange": {
     "min": 2,
@@ -28,8 +28,6 @@
     "東日本では利用しにくい",
     "オンライン完結に非対応"
   ],
-  "overallRating": 3.9,
-  "rankPosition": 22,
   "establishedYear": 2017,
   "targetIndustries": [
     "建設業",
@@ -37,5 +35,7 @@
     "製造業",
     "医療・介護",
     "小売業"
-  ]
+  ],
+  "overallRating": 3.9,
+  "rankPosition": 22
 }

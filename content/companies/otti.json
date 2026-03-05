@@ -28,8 +28,6 @@
     "手数料上限が高め",
     "手数料上限非公開"
   ],
-  "overallRating": 3.7,
-  "rankPosition": 28,
   "establishedYear": 2017,
   "targetIndustries": [
     "建設業",
@@ -37,5 +35,7 @@
     "IT・Web",
     "小売業",
     "飲食業"
-  ]
+  ],
+  "overallRating": 3.7,
+  "rankPosition": 28
 }

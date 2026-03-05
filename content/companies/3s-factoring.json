@@ -2,7 +2,7 @@
   "slug": "3s-factoring",
   "name": "3S",
   "description": "スリーエスのファクタリングサービス。少額から大口まで対応。",
-  "affiliateUrl": "https://3s-factoring.jp/",
+  "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=4AX1OL+BPIX2Q+5QRM+5YJRM",
   "factoringType": "2社間・3社間",
   "feeRange": {
     "min": 3,
@@ -28,8 +28,6 @@
     "知名度がやや低い",
     "手数料は個別査定"
   ],
-  "overallRating": 3.3,
-  "rankPosition": 186,
   "establishedYear": 2018,
   "targetIndustries": [
     "建設業",
@@ -37,5 +35,7 @@
     "製造業",
     "IT・Web",
     "サービス業"
-  ]
+  ],
+  "overallRating": 3.3,
+  "rankPosition": 186
 }

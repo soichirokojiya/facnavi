@@ -2,7 +2,7 @@
   "slug": "labol",
   "name": "ラボル",
   "description": "IT・クリエイター業界に特化したファクタリングサービス。業界の商習慣を理解した審査体制で、Web制作やシステム開発など長期プロジェクトの売掛金にも柔軟に対応します。",
-  "affiliateUrl": "https://labol.co.jp/",
+  "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=4AX5KD+A4DB02+40JM+TWTFL",
   "factoringType": "2社間",
   "feeRange": {
     "min": 3,
@@ -28,8 +28,6 @@
     "IT・クリエイター以外の業種は審査が厳しい場合あり",
     "上限金額がやや低め"
   ],
-  "overallRating": 3.9,
-  "rankPosition": 5,
   "establishedYear": 2021,
   "targetIndustries": [
     "IT・Web",
@@ -37,5 +35,7 @@
     "デザイン",
     "映像制作",
     "ゲーム開発"
-  ]
+  ],
+  "overallRating": 3.9,
+  "rankPosition": 5
 }

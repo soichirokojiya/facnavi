@@ -2,7 +2,7 @@
   "slug": "factorplan",
   "name": "ファクタープラン",
   "description": "「会わずに、迷わず、すぐ進む」がコンセプト。最短4時間で資金化、調達成功率95.2%。",
-  "affiliateUrl": "https://factor-plan.com/",
+  "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=4AX5KD+A079RM+5RC6+5YJRM",
   "factoringType": "2社間",
   "feeRange": {
     "min": 3,
@@ -28,8 +28,6 @@
     "2社間ファクタリングのみ",
     "手数料がやや高めの場合がある"
   ],
-  "overallRating": 3.8,
-  "rankPosition": 30,
   "establishedYear": 2019,
   "targetIndustries": [
     "建設業",
@@ -37,5 +35,7 @@
     "広告・メディア",
     "運送業",
     "製造業"
-  ]
+  ],
+  "overallRating": 3.8,
+  "rankPosition": 30
 }

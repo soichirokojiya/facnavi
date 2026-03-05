@@ -28,13 +28,13 @@
     "手数料の上限がやや高め",
     "3社間ファクタリングに非対応"
   ],
-  "overallRating": 4.1,
-  "rankPosition": 36,
   "establishedYear": 2020,
   "targetIndustries": [
     "建設業",
     "運送業",
     "製造業",
     "小売業"
-  ]
+  ],
+  "overallRating": 4.1,
+  "rankPosition": 36
 }

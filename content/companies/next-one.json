@@ -28,8 +28,6 @@
     "対応業界以外の審査はやや時間がかかる",
     "オンライン完結に対応していない"
   ],
-  "overallRating": 3.8,
-  "rankPosition": 18,
   "establishedYear": 2019,
   "targetIndustries": [
     "建設業",
@@ -37,5 +35,7 @@
     "調剤薬局",
     "歯科",
     "土木業"
-  ]
+  ],
+  "overallRating": 3.8,
+  "rankPosition": 18
 }

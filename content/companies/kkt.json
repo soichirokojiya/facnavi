@@ -28,8 +28,6 @@
     "法人のみ対応",
     "土日祝は休み"
   ],
-  "overallRating": 4,
-  "rankPosition": 42,
   "establishedYear": 2018,
   "targetIndustries": [
     "建設業",
@@ -37,5 +35,7 @@
     "製造業",
     "飲食業",
     "卸売業"
-  ]
+  ],
+  "overallRating": 4,
+  "rankPosition": 42
 }

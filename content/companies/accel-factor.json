@@ -28,8 +28,6 @@
     "手数料が他社よりやや高めになる場合がある",
     "電話対応が混み合うことがある"
   ],
-  "overallRating": 4.3,
-  "rankPosition": 6,
   "establishedYear": 2018,
   "targetIndustries": [
     "建設業",
@@ -37,5 +35,7 @@
     "製造業",
     "小売業",
     "サービス業"
-  ]
+  ],
+  "overallRating": 4.3,
+  "rankPosition": 6
 }

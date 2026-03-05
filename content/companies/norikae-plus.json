@@ -28,8 +28,6 @@
     "新規利用者は対象外",
     "乗り換え元の情報提示が必要"
   ],
-  "overallRating": 3.9,
-  "rankPosition": 50,
   "establishedYear": 2020,
   "targetIndustries": [
     "建設業",
@@ -37,5 +35,7 @@
     "製造業",
     "IT・Web",
     "医療・介護"
-  ]
+  ],
+  "overallRating": 3.9,
+  "rankPosition": 50
 }

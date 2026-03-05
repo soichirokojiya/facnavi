@@ -28,8 +28,6 @@
     "知名度がやや低い",
     "手数料は個別査定"
   ],
-  "overallRating": 3.5,
-  "rankPosition": 98,
   "establishedYear": 2018,
   "targetIndustries": [
     "建設業",
@@ -37,5 +35,7 @@
     "製造業",
     "サービス業",
     "小売業"
-  ]
+  ],
+  "overallRating": 3.5,
+  "rankPosition": 98
 }

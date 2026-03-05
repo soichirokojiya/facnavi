@@ -28,13 +28,13 @@
     "中小企業・個人事業主には不向き",
     "審査・入金に時間がかかる"
   ],
-  "overallRating": 4.3,
-  "rankPosition": 35,
   "establishedYear": 1977,
   "targetIndustries": [
     "製造業",
     "卸売業",
     "商社",
     "大企業"
-  ]
+  ],
+  "overallRating": 4.3,
+  "rankPosition": 35
 }

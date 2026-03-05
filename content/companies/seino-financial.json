@@ -28,12 +28,12 @@
     "知名度がやや低い",
     "手数料は個別査定"
   ],
-  "overallRating": 3.5,
-  "rankPosition": 110,
   "establishedYear": 2000,
   "targetIndustries": [
     "運送業",
     "物流",
     "製造業"
-  ]
+  ],
+  "overallRating": 3.5,
+  "rankPosition": 110
 }

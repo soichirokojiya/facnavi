@@ -28,13 +28,13 @@
     "中小企業・個人事業主は利用が難しい",
     "入金まで時間がかかる"
   ],
-  "overallRating": 4.3,
-  "rankPosition": 34,
   "establishedYear": 1977,
   "targetIndustries": [
     "製造業",
     "卸売業",
     "商社",
     "大企業"
-  ]
+  ],
+  "overallRating": 4.3,
+  "rankPosition": 34
 }

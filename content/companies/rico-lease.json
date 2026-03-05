@@ -27,8 +27,6 @@
     "3社間のみ",
     "個人事業主不可"
   ],
-  "overallRating": 3.5,
-  "rankPosition": 109,
   "establishedYear": 1976,
   "targetIndustries": [
     "製造業",
@@ -36,5 +34,7 @@
     "サービス業",
     "建設業",
     "卸売業"
-  ]
+  ],
+  "overallRating": 3.5,
+  "rankPosition": 109
 }

@@ -28,8 +28,6 @@
     "西日本限定",
     "東日本は対面対応不可"
   ],
-  "overallRating": 3.8,
-  "rankPosition": 54,
   "establishedYear": 2016,
   "targetIndustries": [
     "建設業",
@@ -37,5 +35,7 @@
     "製造業",
     "小売業",
     "飲食業"
-  ]
+  ],
+  "overallRating": 3.8,
+  "rankPosition": 54
 }

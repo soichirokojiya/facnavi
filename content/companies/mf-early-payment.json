@@ -28,8 +28,6 @@
     "法人専門で個人事業主不可",
     "比較的新しいサービス"
   ],
-  "overallRating": 4.2,
-  "rankPosition": 11,
   "establishedYear": 2017,
   "targetIndustries": [
     "IT・Web",
@@ -37,5 +35,7 @@
     "サービス業",
     "卸売業",
     "広告業"
-  ]
+  ],
+  "overallRating": 4.2,
+  "rankPosition": 11
 }

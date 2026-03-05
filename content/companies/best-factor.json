@@ -28,8 +28,6 @@
     "3社間ファクタリングは時間がかかる場合あり",
     "初回は審査に時間がかかることも"
   ],
-  "overallRating": 4.5,
-  "rankPosition": 4,
   "establishedYear": 2017,
   "targetIndustries": [
     "建設業",
@@ -37,5 +35,7 @@
     "製造業",
     "IT・Web",
     "医療・介護"
-  ]
+  ],
+  "overallRating": 4.5,
+  "rankPosition": 4
 }

@@ -28,8 +28,6 @@
     "東日本では対面対応が難しい場合も",
     "大口案件は別途相談"
   ],
-  "overallRating": 3.9,
-  "rankPosition": 53,
   "establishedYear": 2018,
   "targetIndustries": [
     "建設業",
@@ -37,5 +35,7 @@
     "製造業",
     "小売業",
     "飲食業"
-  ]
+  ],
+  "overallRating": 3.9,
+  "rankPosition": 53
 }

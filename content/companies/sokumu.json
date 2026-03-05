@@ -28,13 +28,13 @@
     "知名度がまだ低い",
     "実績が少なめ"
   ],
-  "overallRating": 3.8,
-  "rankPosition": 61,
   "establishedYear": 2021,
   "targetIndustries": [
     "IT・Web",
     "建設業",
     "製造業",
     "小売業"
-  ]
+  ],
+  "overallRating": 3.8,
+  "rankPosition": 61
 }
