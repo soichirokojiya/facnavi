@@ -43,22 +43,8 @@ const companies = files.map(f => {
   return d;
 });
 
-// Boost certain promoted companies slightly
-const BOOST = {
-  "betrading": 0.15,
-  "labol": 0.25,
-  "ququmo": 0.25,
-  "paytner": 0.35,
-  "accel-factor": 0.30,
-};
-for (const c of companies) {
-  if (BOOST[c.slug]) {
-    c._score += BOOST[c.slug];
-  }
-}
-
-// Sort by Bayesian score (desc)
-companies.sort((a, b) => b._score - a._score || a.slug.localeCompare(b.slug));
+// Sort by Bayesian score (desc), then review count (desc), then alphabetical
+companies.sort((a, b) => b._score - a._score || b._count - a._count || a.slug.localeCompare(b.slug));
 
 // Assign new rank positions and update overallRating
 companies.forEach((c, i) => {

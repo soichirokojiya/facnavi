@@ -31,9 +31,18 @@ export const metadata: Metadata = {
     siteName: SITE_NAME,
     title: `${SITE_NAME} - ファクタリング会社の口コミ・比較ランキング【日本最大級】`,
     description: siteDescription,
+    images: [
+      {
+        url: `${SITE_URL}/opengraph-image`,
+        width: 1200,
+        height: 630,
+        alt: `${SITE_NAME} - ファクタリング会社の口コミ・比較ランキング`,
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
+    images: [`${SITE_URL}/opengraph-image`],
   },
   alternates: {
     canonical: SITE_URL,
