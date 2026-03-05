@@ -10863,6 +10863,6 @@ const companiesData: Company[] = [
     "soleProprietorOk": true,
     "weekendPayment": false
   }
-]];
+];
 
 export default companiesData;
