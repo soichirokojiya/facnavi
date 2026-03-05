@@ -1,10 +1,13 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import { Noto_Sans_JP } from "next/font/google";
 import "./globals.css";
 import { SITE_NAME, SITE_DESCRIPTION_TEMPLATE, SITE_URL } from "@/lib/constants";
 import { getCompanyCount } from "@/lib/companies";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
+
+const GA_ID = "G-JYDBVBP448";
 
 const notoSansJP = Noto_Sans_JP({
   subsets: ["latin"],
@@ -44,6 +47,17 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ja">
+      <head>
+        <Script src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`} strategy="afterInteractive" />
+        <Script id="gtag-init" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${GA_ID}');
+          `}
+        </Script>
+      </head>
       <body className={`${notoSansJP.className} antialiased`}>
         <Header />
         <main className="min-h-screen">{children}</main>
