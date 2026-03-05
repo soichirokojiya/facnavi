@@ -37,5 +37,7 @@
     "サービス業"
   ],
   "overallRating": 3.4,
-  "rankPosition": 130
+  "rankPosition": 130,
+  "soleProprietorOk": true,
+  "weekendPayment": false
 }

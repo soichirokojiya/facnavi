@@ -36,5 +36,7 @@
     "大企業"
   ],
   "overallRating": 4.3,
-  "rankPosition": 37
+  "rankPosition": 37,
+  "soleProprietorOk": false,
+  "weekendPayment": false
 }

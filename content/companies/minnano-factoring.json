@@ -36,5 +36,7 @@
     "飲食業"
   ],
   "overallRating": 3.7,
-  "rankPosition": 72
+  "rankPosition": 72,
+  "soleProprietorOk": true,
+  "weekendPayment": false
 }

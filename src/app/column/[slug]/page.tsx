@@ -45,6 +45,9 @@ function renderMarkdownToHtml(content: string): string {
     return `<h2 id="${id}">${text}</h2>`;
   });
 
+  // Images
+  html = html.replace(/!\[([^\]]*)\]\(([^)]+)\)/g, '<figure class="my-8"><img src="$2" alt="$1" class="w-full rounded-lg shadow-sm" loading="lazy" /><figcaption class="text-sm text-gray-500 text-center mt-2">$1</figcaption></figure>');
+
   // Bold
   html = html.replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>");
 
@@ -78,7 +81,8 @@ function renderMarkdownToHtml(content: string): string {
         trimmed.startsWith("<ul") ||
         trimmed.startsWith("<ol") ||
         trimmed.startsWith("<table") ||
-        trimmed.startsWith("<li")
+        trimmed.startsWith("<li") ||
+        trimmed.startsWith("<figure")
       )
         return trimmed;
       return `<p>${trimmed}</p>`;

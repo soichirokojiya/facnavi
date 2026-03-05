@@ -37,5 +37,7 @@
     "ゲーム開発"
   ],
   "overallRating": 3.9,
-  "rankPosition": 5
+  "rankPosition": 5,
+  "soleProprietorOk": false,
+  "weekendPayment": true
 }

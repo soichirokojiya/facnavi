@@ -37,5 +37,7 @@
     "医療・介護"
   ],
   "overallRating": 4,
-  "rankPosition": 51
+  "rankPosition": 51,
+  "soleProprietorOk": false,
+  "weekendPayment": false
 }

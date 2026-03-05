@@ -13,12 +13,19 @@ import { OrganizationJsonLd } from "@/components/seo/JsonLd";
 import { Logo } from "@/components/layout/Logo";
 import { SITE_NAME } from "@/lib/constants";
 import { formatFeeRange, formatAmount } from "@/lib/companies";
+import { KeywordSearch, SearchableCompany } from "@/components/search/KeywordSearch";
 
 export default function HomePage() {
   const companies = getAllCompanies();
   const reviews = getAllReviews();
   const articles = getAllArticles().slice(0, 6);
   const companyMap = Object.fromEntries(companies.map((c) => [c.slug, c.name]));
+  const searchData: SearchableCompany[] = companies.map((c) => ({
+    slug: c.slug,
+    name: c.name,
+    overallRating: c.overallRating,
+    features: c.features,
+  }));
 
   return (
     <>
@@ -33,7 +40,7 @@ export default function HomePage() {
           priority
           className="object-cover brightness-110"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-white/90 via-sky-50/80 to-blue-50/70" />
+        <div className="absolute inset-0 bg-gradient-to-b from-white/80 via-sky-50/60 to-blue-100/50" />
 
         <div className="relative max-w-4xl mx-auto px-4 pt-16 pb-20 md:pt-20 md:pb-24 text-center">
           <div className="flex justify-center mb-5">
@@ -71,6 +78,10 @@ export default function HomePage() {
                 ランキングを見る
               </Button>
             </Link>
+          </div>
+
+          <div className="mt-8">
+            <KeywordSearch companies={searchData} />
           </div>
         </div>
       </section>
@@ -207,16 +218,16 @@ export default function HomePage() {
                         <div className="font-bold text-primary">{formatFeeRange(company.feeRange.min, company.feeRange.max)}</div>
                       </div>
                       <div>
-                        <span className="text-gray-400 text-xs">入金</span>
-                        <div className="font-bold">最短{company.speedDays === 1 ? "即日" : `${company.speedDays}日`}</div>
-                      </div>
-                      <div>
-                        <span className="text-gray-400 text-xs">形態</span>
-                        <div className="font-bold">{company.factoringType}</div>
-                      </div>
-                      <div>
                         <span className="text-gray-400 text-xs">上限</span>
                         <div className="font-bold">{formatAmount(company.maxAmount)}</div>
+                      </div>
+                      <div>
+                        <span className="text-gray-400 text-xs">個人事業主</span>
+                        <div className={`font-bold ${company.soleProprietorOk ? "text-green-600" : "text-gray-400"}`}>{company.soleProprietorOk ? "対応" : "−"}</div>
+                      </div>
+                      <div>
+                        <span className="text-gray-400 text-xs">土日入金</span>
+                        <div className={`font-bold ${company.weekendPayment ? "text-green-600" : "text-gray-400"}`}>{company.weekendPayment ? "対応" : "−"}</div>
                       </div>
                     </div>
                     <div className="flex flex-wrap gap-1.5">

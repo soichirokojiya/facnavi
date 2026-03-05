@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <rect width="800" height="400" fill="#f0f4ff" rx="12"/>
+  <!-- Grid lines -->
+  <line x1="120" y1="320" x2="700" y2="320" stroke="#e2e8f0" stroke-width="2"/>
+  <line x1="120" y1="260" x2="700" y2="260" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="4,4"/>
+  <line x1="120" y1="200" x2="700" y2="200" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="4,4"/>
+  <line x1="120" y1="140" x2="700" y2="140" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="4,4"/>
+  <line x1="120" y1="80" x2="700" y2="80" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="4,4"/>
+  <!-- Bar 1 -->
+  <rect x="160" y="120" width="80" height="200" rx="8" fill="#1e40af"/>
+  <!-- Bar 2 -->
+  <rect x="280" y="180" width="80" height="140" rx="8" fill="#3b82f6"/>
+  <!-- Bar 3 -->
+  <rect x="400" y="220" width="80" height="100" rx="8" fill="#10b981"/>
+  <!-- Bar 4 -->
+  <rect x="520" y="160" width="80" height="160" rx="8" fill="#f59e0b"/>
+  <!-- Percentage symbols -->
+  <circle cx="200" cy="100" r="14" fill="#1e40af" opacity="0.2"/>
+  <circle cx="200" cy="100" r="4" fill="#1e40af"/>
+  <circle cx="320" cy="160" r="14" fill="#3b82f6" opacity="0.2"/>
+  <circle cx="320" cy="160" r="4" fill="#3b82f6"/>
+  <circle cx="440" cy="200" r="14" fill="#10b981" opacity="0.2"/>
+  <circle cx="440" cy="200" r="4" fill="#10b981"/>
+  <circle cx="560" cy="140" r="14" fill="#f59e0b" opacity="0.2"/>
+  <circle cx="560" cy="140" r="4" fill="#f59e0b"/>
+  <!-- Coins decoration -->
+  <ellipse cx="680" cy="100" rx="30" ry="12" fill="#fbbf24"/>
+  <ellipse cx="680" cy="90" rx="30" ry="12" fill="#f59e0b"/>
+  <ellipse cx="680" cy="80" rx="30" ry="12" fill="#fbbf24"/>
+  <!-- Y-axis -->
+  <line x1="120" y1="60" x2="120" y2="320" stroke="#94a3b8" stroke-width="2"/>
+  <!-- Decorative -->
+  <circle cx="60" cy="60" r="15" fill="#3b82f6" opacity="0.1"/>
+  <circle cx="750" cy="350" r="20" fill="#10b981" opacity="0.1"/>
+</svg>

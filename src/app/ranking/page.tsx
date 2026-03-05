@@ -1,11 +1,10 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { getAllCompanies } from "@/lib/companies";
-import { CompanyCard } from "@/components/ranking/CompanyCard";
-import { ComparisonTable } from "@/components/ranking/ComparisonTable";
 import { Breadcrumb } from "@/components/layout/Breadcrumb";
 import { BreadcrumbJsonLd, JsonLd } from "@/components/seo/JsonLd";
 import { SITE_URL } from "@/lib/constants";
+import { RankingFilter } from "@/components/ranking/RankingFilter";
 
 const PER_PAGE = 10;
 
@@ -52,27 +51,7 @@ export default function RankingPage() {
         手数料・入金スピード・口コミ評価を総合的に比較し、おすすめのファクタリング業者をランキング形式でご紹介します。
       </p>
 
-      <section className="mb-12">
-        <h2 className="text-xl font-bold text-gray-900 mb-4">
-          比較表で一覧チェック（TOP {PER_PAGE}）
-        </h2>
-        <ComparisonTable companies={topCompanies} />
-      </section>
-
-      <section>
-        <h2 className="text-xl font-bold text-gray-900 mb-6">
-          各社の詳細
-        </h2>
-        <div className="space-y-6">
-          {topCompanies.map((company) => (
-            <CompanyCard
-              key={company.slug}
-              company={company}
-              rank={company.rankPosition}
-            />
-          ))}
-        </div>
-      </section>
+      <RankingFilter companies={topCompanies} />
 
       {/* Pagination */}
       {totalPages > 1 && (

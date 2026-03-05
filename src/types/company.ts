@@ -11,6 +11,8 @@ export interface Company {
   maxAmount: number;
   speedDays: number;
   onlineComplete: boolean;
+  soleProprietorOk: boolean;
+  weekendPayment: boolean;
   features: string[];
   pros: string[];
   cons: string[];

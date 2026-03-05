@@ -37,5 +37,7 @@
     "人材派遣"
   ],
   "overallRating": 4,
-  "rankPosition": 15
+  "rankPosition": 15,
+  "soleProprietorOk": false,
+  "weekendPayment": false
 }

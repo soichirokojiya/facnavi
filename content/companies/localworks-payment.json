@@ -34,5 +34,7 @@
     "運送業"
   ],
   "overallRating": 3.3,
-  "rankPosition": 213
+  "rankPosition": 213,
+  "soleProprietorOk": true,
+  "weekendPayment": false
 }

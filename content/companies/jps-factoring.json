@@ -36,5 +36,7 @@
     "卸売業"
   ],
   "overallRating": 3.6,
-  "rankPosition": 27
+  "rankPosition": 27,
+  "soleProprietorOk": false,
+  "weekendPayment": false
 }

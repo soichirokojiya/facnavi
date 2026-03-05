@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <rect width="800" height="400" fill="#f0f4ff" rx="12"/>
+  <!-- Table -->
+  <ellipse cx="400" cy="300" rx="250" ry="40" fill="#1e40af" opacity="0.1"/>
+  <rect x="200" y="230" width="400" height="20" rx="10" fill="#1e40af" opacity="0.2"/>
+  <rect x="250" y="250" width="10" height="80" rx="3" fill="#1e40af" opacity="0.15"/>
+  <rect x="540" y="250" width="10" height="80" rx="3" fill="#1e40af" opacity="0.15"/>
+  <!-- Person 1 (left) -->
+  <circle cx="260" cy="130" r="35" fill="#1e40af"/>
+  <circle cx="260" cy="118" r="18" fill="#93c5fd"/>
+  <rect x="235" y="165" width="50" height="70" rx="15" fill="#1e40af"/>
+  <!-- Person 1 arms -->
+  <rect x="210" y="180" width="40" height="12" rx="6" fill="#1e40af"/>
+  <rect x="285" y="185" width="30" height="10" rx="5" fill="#1e40af"/>
+  <!-- Person 2 (right) -->
+  <circle cx="540" cy="130" r="35" fill="#3b82f6"/>
+  <circle cx="540" cy="118" r="18" fill="#bfdbfe"/>
+  <rect x="515" y="165" width="50" height="70" rx="15" fill="#3b82f6"/>
+  <!-- Person 2 arms -->
+  <rect x="490" y="185" width="30" height="10" rx="5" fill="#3b82f6"/>
+  <rect x="555" y="180" width="40" height="12" rx="6" fill="#3b82f6"/>
+  <!-- Speech bubbles -->
+  <rect x="310" y="70" width="80" height="50" rx="12" fill="#10b981" opacity="0.3"/>
+  <polygon points="320,120 330,120 310,135" fill="#10b981" opacity="0.3"/>
+  <rect x="410" y="55" width="80" height="50" rx="12" fill="#f59e0b" opacity="0.3"/>
+  <polygon points="470,105 460,105 480,120" fill="#f59e0b" opacity="0.3"/>
+  <!-- Bubble content lines -->
+  <rect x="325" y="85" width="50" height="5" rx="2" fill="#fff" opacity="0.8"/>
+  <rect x="325" y="95" width="35" height="5" rx="2" fill="#fff" opacity="0.6"/>
+  <rect x="425" y="70" width="50" height="5" rx="2" fill="#fff" opacity="0.8"/>
+  <rect x="425" y="80" width="35" height="5" rx="2" fill="#fff" opacity="0.6"/>
+  <!-- Document on table -->
+  <rect x="360" y="215" width="50" height="35" rx="4" fill="#fff" stroke="#cbd5e1" stroke-width="1"/>
+  <rect x="370" y="225" width="30" height="4" rx="2" fill="#cbd5e1"/>
+  <rect x="370" y="233" width="20" height="4" rx="2" fill="#cbd5e1"/>
+  <!-- Decorative -->
+  <circle cx="100" cy="60" r="20" fill="#3b82f6" opacity="0.08"/>
+  <circle cx="700" cy="60" r="25" fill="#f59e0b" opacity="0.08"/>
+</svg>

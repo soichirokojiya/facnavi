@@ -37,5 +37,7 @@
     "小売業"
   ],
   "overallRating": 4.1,
-  "rankPosition": 43
+  "rankPosition": 43,
+  "soleProprietorOk": false,
+  "weekendPayment": false
 }

@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { Company } from "@/types/company";
 import { StarRating } from "@/components/ui/StarRating";
-import { formatFeeRange, formatAmount } from "@/lib/companies";
+import { formatFeeRange } from "@/lib/companies";
 
 interface ComparisonTableProps {
   companies: Company[];
@@ -16,10 +16,10 @@ export function ComparisonTable({ companies }: ComparisonTableProps) {
             <th className="px-4 py-3 text-left font-bold">順位</th>
             <th className="px-4 py-3 text-left font-bold">業者名</th>
             <th className="px-4 py-3 text-left font-bold">手数料</th>
-            <th className="px-4 py-3 text-left font-bold">入金</th>
-            <th className="px-4 py-3 text-left font-bold">形態</th>
             <th className="px-4 py-3 text-left font-bold">評価</th>
-            <th className="px-4 py-3 text-left font-bold">オンライン</th>
+            <th className="px-4 py-3 text-center font-bold">オンライン</th>
+            <th className="px-4 py-3 text-center font-bold">個人事業主</th>
+            <th className="px-4 py-3 text-center font-bold">土日入金</th>
             <th className="px-4 py-3 text-center font-bold">詳細</th>
           </tr>
         </thead>
@@ -46,10 +46,6 @@ export function ComparisonTable({ companies }: ComparisonTableProps) {
                 {formatFeeRange(company.feeRange.min, company.feeRange.max)}
               </td>
               <td className="px-4 py-3">
-                最短{company.speedDays === 1 ? "即日" : `${company.speedDays}日`}
-              </td>
-              <td className="px-4 py-3">{company.factoringType}</td>
-              <td className="px-4 py-3">
                 <StarRating rating={company.overallRating} size="sm" />
               </td>
               <td className="px-4 py-3 text-center">
@@ -57,6 +53,20 @@ export function ComparisonTable({ companies }: ComparisonTableProps) {
                   <span className="text-success font-bold">◎</span>
                 ) : (
                   <span className="text-gray-400">△</span>
+                )}
+              </td>
+              <td className="px-4 py-3 text-center">
+                {company.soleProprietorOk ? (
+                  <span className="text-success font-bold">◎</span>
+                ) : (
+                  <span className="text-gray-400">−</span>
+                )}
+              </td>
+              <td className="px-4 py-3 text-center">
+                {company.weekendPayment ? (
+                  <span className="text-success font-bold">◎</span>
+                ) : (
+                  <span className="text-gray-400">−</span>
                 )}
               </td>
               <td className="px-4 py-3 text-center">

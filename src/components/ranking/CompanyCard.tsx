@@ -43,17 +43,21 @@ export function CompanyCard({ company, rank }: CompanyCardProps) {
               </span>
             </div>
             <div>
-              <span className="text-gray-500 block">入金スピード</span>
-              <span className="font-bold">最短{company.speedDays === 1 ? "即日" : `${company.speedDays}日`}</span>
-            </div>
-            <div>
-              <span className="text-gray-500 block">取引形態</span>
-              <span className="font-bold">{company.factoringType}</span>
-            </div>
-            <div>
               <span className="text-gray-500 block">買取上限</span>
               <span className="font-bold">
                 {formatAmount(company.maxAmount)}
+              </span>
+            </div>
+            <div>
+              <span className="text-gray-500 block">個人事業主</span>
+              <span className={`font-bold ${company.soleProprietorOk ? "text-success" : "text-gray-400"}`}>
+                {company.soleProprietorOk ? "対応" : "−"}
+              </span>
+            </div>
+            <div>
+              <span className="text-gray-500 block">土日入金</span>
+              <span className={`font-bold ${company.weekendPayment ? "text-success" : "text-gray-400"}`}>
+                {company.weekendPayment ? "対応" : "−"}
               </span>
             </div>
           </div>

@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <rect width="800" height="400" fill="#f0f4ff" rx="12"/>
+  <!-- Ground -->
+  <rect x="0" y="340" width="800" height="60" rx="0" fill="#1e40af" opacity="0.1"/>
+  <!-- Building 1 -->
+  <rect x="80" y="140" width="120" height="200" rx="4" fill="#1e40af"/>
+  <rect x="95" y="160" width="25" height="25" rx="4" fill="#93c5fd" opacity="0.5"/>
+  <rect x="130" y="160" width="25" height="25" rx="4" fill="#93c5fd" opacity="0.5"/>
+  <rect x="165" y="160" width="25" height="25" rx="4" fill="#93c5fd" opacity="0.5"/>
+  <rect x="95" y="200" width="25" height="25" rx="4" fill="#93c5fd" opacity="0.5"/>
+  <rect x="130" y="200" width="25" height="25" rx="4" fill="#93c5fd" opacity="0.5"/>
+  <rect x="165" y="200" width="25" height="25" rx="4" fill="#93c5fd" opacity="0.5"/>
+  <rect x="95" y="240" width="25" height="25" rx="4" fill="#93c5fd" opacity="0.5"/>
+  <rect x="130" y="240" width="25" height="25" rx="4" fill="#93c5fd" opacity="0.5"/>
+  <rect x="165" y="240" width="25" height="25" rx="4" fill="#93c5fd" opacity="0.5"/>
+  <rect x="95" y="280" width="25" height="25" rx="4" fill="#93c5fd" opacity="0.5"/>
+  <rect x="130" y="280" width="25" height="25" rx="4" fill="#fbbf24" opacity="0.7"/>
+  <rect x="165" y="280" width="25" height="25" rx="4" fill="#93c5fd" opacity="0.5"/>
+  <!-- Building 2 (taller) -->
+  <rect x="220" y="80" width="100" height="260" rx="4" fill="#3b82f6"/>
+  <rect x="235" y="100" width="20" height="20" rx="3" fill="#bfdbfe" opacity="0.5"/>
+  <rect x="265" y="100" width="20" height="20" rx="3" fill="#bfdbfe" opacity="0.5"/>
+  <rect x="295" y="100" width="20" height="20" rx="3" fill="#bfdbfe" opacity="0.5"/>
+  <rect x="235" y="135" width="20" height="20" rx="3" fill="#bfdbfe" opacity="0.5"/>
+  <rect x="265" y="135" width="20" height="20" rx="3" fill="#bfdbfe" opacity="0.5"/>
+  <rect x="295" y="135" width="20" height="20" rx="3" fill="#bfdbfe" opacity="0.5"/>
+  <rect x="235" y="170" width="20" height="20" rx="3" fill="#bfdbfe" opacity="0.5"/>
+  <rect x="265" y="170" width="20" height="20" rx="3" fill="#bfdbfe" opacity="0.5"/>
+  <rect x="295" y="170" width="20" height="20" rx="3" fill="#bfdbfe" opacity="0.5"/>
+  <rect x="235" y="205" width="20" height="20" rx="3" fill="#bfdbfe" opacity="0.5"/>
+  <rect x="265" y="205" width="20" height="20" rx="3" fill="#bfdbfe" opacity="0.5"/>
+  <rect x="295" y="205" width="20" height="20" rx="3" fill="#bfdbfe" opacity="0.5"/>
+  <!-- Crane -->
+  <rect x="500" y="60" width="14" height="280" rx="2" fill="#f59e0b"/>
+  <!-- Crane arm horizontal -->
+  <rect x="400" y="55" width="250" height="12" rx="3" fill="#f59e0b"/>
+  <!-- Crane diagonal support -->
+  <line x1="514" y1="67" x2="620" y2="55" stroke="#d97706" stroke-width="4"/>
+  <line x1="500" y1="67" x2="440" y2="55" stroke="#d97706" stroke-width="4"/>
+  <!-- Crane cable -->
+  <line x1="430" y1="67" x2="430" y2="180" stroke="#94a3b8" stroke-width="2"/>
+  <!-- Crane hook -->
+  <path d="M425,175 L435,175 L435,195 C435,205 420,205 420,195 L420,190" stroke="#94a3b8" stroke-width="3" fill="none"/>
+  <!-- Crane counterweight -->
+  <rect x="600" y="35" width="40" height="22" rx="3" fill="#d97706"/>
+  <!-- Small building right -->
+  <rect x="600" y="220" width="80" height="120" rx="4" fill="#1e40af" opacity="0.6"/>
+  <rect x="615" y="240" width="20" height="20" rx="3" fill="#93c5fd" opacity="0.4"/>
+  <rect x="645" y="240" width="20" height="20" rx="3" fill="#93c5fd" opacity="0.4"/>
+  <rect x="615" y="275" width="20" height="20" rx="3" fill="#93c5fd" opacity="0.4"/>
+  <rect x="645" y="275" width="20" height="20" rx="3" fill="#93c5fd" opacity="0.4"/>
+  <!-- Hard hat decoration -->
+  <g transform="translate(700, 140)">
+    <ellipse cx="30" cy="35" rx="30" ry="10" fill="#f59e0b"/>
+    <path d="M5,35 Q5,10 30,5 Q55,10 55,35" fill="#fbbf24"/>
+    <rect x="15" y="15" width="30" height="4" rx="2" fill="#f59e0b"/>
+  </g>
+</svg>

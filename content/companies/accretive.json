@@ -37,5 +37,7 @@
     "介護施設"
   ],
   "overallRating": 4,
-  "rankPosition": 48
+  "rankPosition": 48,
+  "soleProprietorOk": false,
+  "weekendPayment": false
 }

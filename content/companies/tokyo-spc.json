@@ -37,5 +37,7 @@
     "不動産業"
   ],
   "overallRating": 3.6,
-  "rankPosition": 90
+  "rankPosition": 90,
+  "soleProprietorOk": false,
+  "weekendPayment": false
 }

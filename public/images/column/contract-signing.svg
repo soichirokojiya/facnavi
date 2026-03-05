@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <rect width="800" height="400" fill="#f0f4ff" rx="12"/>
+  <!-- Document -->
+  <rect x="220" y="50" width="300" height="320" rx="12" fill="#fff" stroke="#1e40af" stroke-width="2"/>
+  <!-- Document lines -->
+  <rect x="260" y="90" width="200" height="8" rx="4" fill="#cbd5e1"/>
+  <rect x="260" y="115" width="160" height="8" rx="4" fill="#e2e8f0"/>
+  <rect x="260" y="140" width="220" height="8" rx="4" fill="#e2e8f0"/>
+  <rect x="260" y="165" width="180" height="8" rx="4" fill="#e2e8f0"/>
+  <rect x="260" y="190" width="200" height="8" rx="4" fill="#e2e8f0"/>
+  <rect x="260" y="215" width="140" height="8" rx="4" fill="#e2e8f0"/>
+  <rect x="260" y="240" width="220" height="8" rx="4" fill="#e2e8f0"/>
+  <!-- Signature line -->
+  <line x1="300" y1="310" x2="480" y2="310" stroke="#1e40af" stroke-width="2"/>
+  <!-- Signature scribble -->
+  <path d="M310,305 C320,290 340,300 350,295 C360,290 370,300 380,295 C390,285 400,300 420,290 C430,285 450,295 460,290" stroke="#1e40af" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <!-- Pen -->
+  <g transform="translate(470, 230) rotate(35)">
+    <rect x="0" y="0" width="14" height="120" rx="4" fill="#1e40af"/>
+    <polygon points="3,120 11,120 7,140" fill="#334155"/>
+    <rect x="0" y="0" width="14" height="20" rx="4" fill="#f59e0b"/>
+    <rect x="3" y="15" width="8" height="4" rx="1" fill="#d97706"/>
+    <!-- Pen clip -->
+    <rect x="12" y="5" width="4" height="35" rx="2" fill="#94a3b8"/>
+  </g>
+  <!-- Stamp/seal -->
+  <circle cx="440" cy="340" r="20" fill="none" stroke="#ef4444" stroke-width="2.5" opacity="0.6"/>
+  <circle cx="440" cy="340" r="13" fill="#ef4444" opacity="0.1"/>
+  <!-- Decorative -->
+  <circle cx="120" cy="100" r="40" fill="#1e40af" opacity="0.06"/>
+  <circle cx="120" cy="100" r="25" fill="#1e40af" opacity="0.06"/>
+  <circle cx="680" cy="300" r="40" fill="#10b981" opacity="0.06"/>
+  <!-- Checkmark badge -->
+  <g transform="translate(100, 250)">
+    <circle cx="30" cy="30" r="28" fill="#10b981" opacity="0.15"/>
+    <circle cx="30" cy="30" r="20" fill="#10b981"/>
+    <path d="M20,30 l6,6 l14,-16" stroke="#fff" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

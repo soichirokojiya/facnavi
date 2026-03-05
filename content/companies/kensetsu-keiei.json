@@ -33,5 +33,7 @@
     "建設業"
   ],
   "overallRating": 3.5,
-  "rankPosition": 106
+  "rankPosition": 106,
+  "soleProprietorOk": true,
+  "weekendPayment": false
 }

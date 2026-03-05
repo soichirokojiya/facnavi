@@ -35,5 +35,7 @@
     "製造業"
   ],
   "overallRating": 3.5,
-  "rankPosition": 115
+  "rankPosition": 115,
+  "soleProprietorOk": false,
+  "weekendPayment": false
 }

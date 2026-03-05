@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <rect width="800" height="400" fill="#f0f4ff" rx="12"/>
+  <!-- Laptop body -->
+  <rect x="200" y="80" width="400" height="250" rx="16" fill="#1e40af"/>
+  <!-- Screen -->
+  <rect x="220" y="100" width="360" height="200" rx="8" fill="#fff"/>
+  <!-- Screen content - form elements -->
+  <rect x="260" y="130" width="140" height="12" rx="6" fill="#e2e8f0"/>
+  <rect x="260" y="155" width="280" height="30" rx="8" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+  <rect x="260" y="200" width="280" height="30" rx="8" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+  <rect x="260" y="245" width="120" height="35" rx="8" fill="#10b981"/>
+  <path d="M305,258 l5,6 l12,-14" stroke="#fff" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <!-- Laptop base -->
+  <path d="M160,330 L200,330 L210,355 L590,355 L600,330 L640,330 L620,370 L180,370 Z" fill="#1e40af"/>
+  <rect x="360" y="335" width="80" height="6" rx="3" fill="#3b82f6"/>
+  <!-- WiFi signal -->
+  <g transform="translate(640, 100)">
+    <path d="M20,50 C20,50 5,35 20,20" stroke="#3b82f6" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.4"/>
+    <path d="M20,50 C20,50 -5,25 20,5" stroke="#3b82f6" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.3"/>
+    <circle cx="20" cy="50" r="5" fill="#3b82f6"/>
+  </g>
+  <!-- Arrows showing digital flow -->
+  <g transform="translate(100, 150)">
+    <circle cx="30" cy="30" r="25" fill="#3b82f6" opacity="0.2"/>
+    <polygon points="20,30 40,20 40,40" fill="#3b82f6" opacity="0.5"/>
+  </g>
+  <g transform="translate(660, 200)">
+    <circle cx="30" cy="30" r="25" fill="#10b981" opacity="0.2"/>
+    <polygon points="40,30 20,20 20,40" fill="#10b981" opacity="0.5"/>
+  </g>
+  <!-- Cloud icon top right -->
+  <g transform="translate(620, 50)">
+    <ellipse cx="50" cy="30" rx="35" ry="20" fill="#3b82f6" opacity="0.15"/>
+    <ellipse cx="35" cy="30" rx="20" ry="15" fill="#3b82f6" opacity="0.15"/>
+    <ellipse cx="65" cy="30" rx="20" ry="15" fill="#3b82f6" opacity="0.15"/>
+  </g>
+</svg>

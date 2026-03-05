@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <rect width="800" height="400" fill="#f0f4ff" rx="12"/>
+  <!-- Background circle glow -->
+  <circle cx="400" cy="200" r="160" fill="#1e40af" opacity="0.05"/>
+  <circle cx="400" cy="200" r="130" fill="#1e40af" opacity="0.05"/>
+  <!-- Shield -->
+  <path d="M400,50 L530,100 L530,220 C530,300 400,360 400,360 C400,360 270,300 270,220 L270,100 Z" fill="#1e40af"/>
+  <path d="M400,70 L515,115 L515,218 C515,288 400,342 400,342 C400,342 285,288 285,218 L285,115 Z" fill="#fff"/>
+  <path d="M400,90 L500,130 L500,216 C500,276 400,324 400,324 C400,324 300,276 300,216 L300,130 Z" fill="#fef3c7"/>
+  <!-- Exclamation mark -->
+  <rect x="386" y="140" width="28" height="100" rx="14" fill="#ef4444"/>
+  <circle cx="400" cy="275" r="16" fill="#ef4444"/>
+  <!-- Decorative warning triangles -->
+  <g transform="translate(80, 80)">
+    <polygon points="25,0 50,40 0,40" fill="#f59e0b" opacity="0.3"/>
+  </g>
+  <g transform="translate(650, 100)">
+    <polygon points="20,0 40,35 0,35" fill="#f59e0b" opacity="0.3"/>
+  </g>
+  <g transform="translate(100, 300)">
+    <polygon points="18,0 36,30 0,30" fill="#ef4444" opacity="0.2"/>
+  </g>
+  <g transform="translate(670, 280)">
+    <polygon points="22,0 44,38 0,38" fill="#ef4444" opacity="0.2"/>
+  </g>
+  <!-- X marks -->
+  <g transform="translate(140, 180)">
+    <line x1="0" y1="0" x2="20" y2="20" stroke="#ef4444" stroke-width="4" stroke-linecap="round" opacity="0.3"/>
+    <line x1="20" y1="0" x2="0" y2="20" stroke="#ef4444" stroke-width="4" stroke-linecap="round" opacity="0.3"/>
+  </g>
+  <g transform="translate(640, 200)">
+    <line x1="0" y1="0" x2="20" y2="20" stroke="#ef4444" stroke-width="4" stroke-linecap="round" opacity="0.3"/>
+    <line x1="20" y1="0" x2="0" y2="20" stroke="#ef4444" stroke-width="4" stroke-linecap="round" opacity="0.3"/>
+  </g>
+</svg>

@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <rect width="800" height="400" fill="#f0f4ff" rx="12"/>
+  <!-- Table background -->
+  <rect x="100" y="50" width="600" height="300" rx="12" fill="#fff" stroke="#1e40af" stroke-width="2"/>
+  <!-- Header row -->
+  <rect x="100" y="50" width="600" height="55" rx="12" fill="#1e40af"/>
+  <rect x="100" y="85" width="600" height="20" fill="#1e40af"/>
+  <!-- Header dividers -->
+  <line x1="300" y1="55" x2="300" y2="100" stroke="#3b82f6" stroke-width="1"/>
+  <line x1="500" y1="55" x2="500" y2="100" stroke="#3b82f6" stroke-width="1"/>
+  <!-- Header placeholders -->
+  <rect x="160" y="70" width="80" height="10" rx="5" fill="#93c5fd"/>
+  <rect x="360" y="70" width="80" height="10" rx="5" fill="#93c5fd"/>
+  <rect x="540" y="70" width="80" height="10" rx="5" fill="#93c5fd"/>
+  <!-- Row dividers -->
+  <line x1="110" y1="165" x2="690" y2="165" stroke="#e2e8f0" stroke-width="1"/>
+  <line x1="110" y1="230" x2="690" y2="230" stroke="#e2e8f0" stroke-width="1"/>
+  <line x1="110" y1="295" x2="690" y2="295" stroke="#e2e8f0" stroke-width="1"/>
+  <!-- Column dividers -->
+  <line x1="300" y1="105" x2="300" y2="345" stroke="#e2e8f0" stroke-width="1"/>
+  <line x1="500" y1="105" x2="500" y2="345" stroke="#e2e8f0" stroke-width="1"/>
+  <!-- Row 1 -->
+  <rect x="140" y="125" width="100" height="10" rx="5" fill="#cbd5e1"/>
+  <circle cx="390" cy="130" r="14" fill="#10b981" opacity="0.2"/>
+  <path d="M382,130 l5,5 l10,-12" stroke="#10b981" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <circle cx="590" cy="130" r="14" fill="#10b981" opacity="0.2"/>
+  <path d="M582,130 l5,5 l10,-12" stroke="#10b981" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <!-- Row 2 -->
+  <rect x="140" y="190" width="80" height="10" rx="5" fill="#cbd5e1"/>
+  <circle cx="390" cy="195" r="14" fill="#10b981" opacity="0.2"/>
+  <path d="M382,195 l5,5 l10,-12" stroke="#10b981" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <circle cx="590" cy="195" r="14" fill="#ef4444" opacity="0.2"/>
+  <line x1="580" y1="185" x2="600" y2="205" stroke="#ef4444" stroke-width="3" stroke-linecap="round"/>
+  <line x1="600" y1="185" x2="580" y2="205" stroke="#ef4444" stroke-width="3" stroke-linecap="round"/>
+  <!-- Row 3 -->
+  <rect x="140" y="255" width="90" height="10" rx="5" fill="#cbd5e1"/>
+  <circle cx="390" cy="260" r="14" fill="#ef4444" opacity="0.2"/>
+  <line x1="380" y1="250" x2="400" y2="270" stroke="#ef4444" stroke-width="3" stroke-linecap="round"/>
+  <line x1="400" y1="250" x2="380" y2="270" stroke="#ef4444" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="590" cy="260" r="14" fill="#10b981" opacity="0.2"/>
+  <path d="M582,260 l5,5 l10,-12" stroke="#10b981" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <!-- Row 4 -->
+  <rect x="140" y="315" width="70" height="10" rx="5" fill="#cbd5e1"/>
+  <circle cx="390" cy="320" r="14" fill="#10b981" opacity="0.2"/>
+  <path d="M382,320 l5,5 l10,-12" stroke="#10b981" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <circle cx="590" cy="320" r="14" fill="#f59e0b" opacity="0.2"/>
+  <rect x="583" y="316" width="14" height="8" rx="3" fill="#f59e0b"/>
+</svg>

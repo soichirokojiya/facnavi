@@ -37,5 +37,7 @@
     "人材派遣業"
   ],
   "overallRating": 4.1,
-  "rankPosition": 44
+  "rankPosition": 44,
+  "soleProprietorOk": false,
+  "weekendPayment": false
 }
