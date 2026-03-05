@@ -1,0 +1,40 @@
+{
+  "slug": "mizuho-factor",
+  "name": "みずほファクター",
+  "description": "みずほフィナンシャルグループの信頼性。大企業向けの3社間ファクタリングを中心に展開する老舗。",
+  "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=XXXXX43",
+  "factoringType": "3社間",
+  "feeRange": {
+    "min": 1,
+    "max": 5
+  },
+  "minAmount": 10000000,
+  "maxAmount": 0,
+  "speedDays": 7,
+  "onlineComplete": false,
+  "features": [
+    "みずほグループ",
+    "大企業向け",
+    "3社間専門",
+    "低手数料",
+    "国際ファクタリング対応"
+  ],
+  "pros": [
+    "メガバンクグループの圧倒的な信頼性",
+    "手数料が非常に低い",
+    "国際ファクタリングにも対応"
+  ],
+  "cons": [
+    "中小企業・個人事業主は利用が難しい",
+    "入金まで時間がかかる"
+  ],
+  "overallRating": 4.3,
+  "rankPosition": 43,
+  "establishedYear": 1977,
+  "targetIndustries": [
+    "製造業",
+    "卸売業",
+    "商社",
+    "大企業"
+  ]
+}

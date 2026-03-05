@@ -1,0 +1,41 @@
+{
+  "slug": "nishi-nihon-factor",
+  "name": "西日本ファクター",
+  "description": "中国・九州エリア密着型のファクタリング会社。最短即日で1,000万円まで買取可能。地域企業に強い。",
+  "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=XXXXX24",
+  "factoringType": "2社間・3社間",
+  "feeRange": {
+    "min": 2,
+    "max": 15
+  },
+  "minAmount": 300000,
+  "maxAmount": 30000000,
+  "speedDays": 1,
+  "onlineComplete": false,
+  "features": [
+    "中国・九州エリア特化",
+    "最短即日入金",
+    "対面相談可能",
+    "地域密着サポート",
+    "経営相談対応"
+  ],
+  "pros": [
+    "西日本エリアに密着した対応",
+    "対面での丁寧な相談が可能",
+    "地域企業の事情に精通"
+  ],
+  "cons": [
+    "東日本では利用しにくい",
+    "オンライン完結に非対応"
+  ],
+  "overallRating": 3.9,
+  "rankPosition": 24,
+  "establishedYear": 2017,
+  "targetIndustries": [
+    "建設業",
+    "運送業",
+    "製造業",
+    "医療・介護",
+    "小売業"
+  ]
+}

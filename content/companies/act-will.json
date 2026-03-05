@@ -1,0 +1,41 @@
+{
+  "slug": "act-will",
+  "name": "アクト・ウィル",
+  "description": "最高1億円までの大口ファクタリングに対応。審査通過率90%以上、最短即日で入金可能。",
+  "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=XXXXX26",
+  "factoringType": "2社間・3社間",
+  "feeRange": {
+    "min": 3,
+    "max": 20
+  },
+  "minAmount": 300000,
+  "maxAmount": 100000000,
+  "speedDays": 1,
+  "onlineComplete": false,
+  "features": [
+    "最高1億円対応",
+    "審査通過率90%以上",
+    "即日入金可能",
+    "大口案件に強い",
+    "全国出張対応"
+  ],
+  "pros": [
+    "大口の資金調達に対応",
+    "審査通過率が高い",
+    "全国出張対応で地方でも安心"
+  ],
+  "cons": [
+    "オンライン完結に非対応",
+    "少額案件には不向き"
+  ],
+  "overallRating": 3.9,
+  "rankPosition": 26,
+  "establishedYear": 2017,
+  "targetIndustries": [
+    "建設業",
+    "運送業",
+    "製造業",
+    "不動産業",
+    "卸売業"
+  ]
+}

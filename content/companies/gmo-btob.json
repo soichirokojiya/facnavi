@@ -1,0 +1,41 @@
+{
+  "slug": "gmo-btob",
+  "name": "GMO BtoB早払い",
+  "description": "GMOペイメントゲートウェイ運営。注文書・請求書の両方を買取可能。",
+  "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=GMOBTOB",
+  "factoringType": "2社間",
+  "feeRange": {
+    "min": 1,
+    "max": 12
+  },
+  "minAmount": 1000000,
+  "maxAmount": 1000000000,
+  "speedDays": 2,
+  "onlineComplete": true,
+  "features": [
+    "東証プライム上場企業運営",
+    "注文書買取対応",
+    "手数料1%〜",
+    "オンライン完結",
+    "法人専用"
+  ],
+  "pros": [
+    "上場企業の信頼性",
+    "注文書段階から買取可能",
+    "大口取引にも対応"
+  ],
+  "cons": [
+    "法人のみ対応（個人事業主不可）",
+    "最短2営業日とやや遅め"
+  ],
+  "overallRating": 4.2,
+  "establishedYear": 1995,
+  "targetIndustries": [
+    "製造業",
+    "IT・Web",
+    "卸売業",
+    "建設業",
+    "運送業"
+  ],
+  "rankPosition": 50
+}

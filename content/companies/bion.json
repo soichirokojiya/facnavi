@@ -1,0 +1,41 @@
+{
+  "slug": "bion",
+  "name": "バイオン",
+  "description": "AI審査で最短60分。手数料一律10%の明朗会計。オンライン完結。",
+  "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=BION",
+  "factoringType": "2社間",
+  "feeRange": {
+    "min": 10,
+    "max": 10
+  },
+  "minAmount": 50000,
+  "maxAmount": 0,
+  "speedDays": 1,
+  "onlineComplete": true,
+  "features": [
+    "AI審査",
+    "手数料一律10%",
+    "最短60分",
+    "5万円から対応",
+    "オンライン完結"
+  ],
+  "pros": [
+    "手数料が明確で分かりやすい",
+    "少額から利用可能",
+    "AI審査で早い"
+  ],
+  "cons": [
+    "手数料が一律10%で割高な場合も",
+    "2者間のみ"
+  ],
+  "overallRating": 3.7,
+  "establishedYear": 2020,
+  "targetIndustries": [
+    "IT・Web",
+    "小売業",
+    "サービス業",
+    "建設業",
+    "飲食業"
+  ],
+  "rankPosition": 68
+}

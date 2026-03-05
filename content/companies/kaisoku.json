@@ -1,0 +1,41 @@
+{
+  "slug": "kaisoku",
+  "name": "買速（KAISOKU）",
+  "description": "最短30分で入金可能な超スピード対応ファクタリング。審査通過率92%、10万円の少額から対応。",
+  "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=XXXXX17",
+  "factoringType": "2社間",
+  "feeRange": {
+    "min": 2,
+    "max": 10
+  },
+  "minAmount": 100000,
+  "maxAmount": 0,
+  "speedDays": 1,
+  "onlineComplete": true,
+  "features": [
+    "最短30分入金",
+    "審査通過率92%",
+    "10万円から対応",
+    "Zoom契約対応",
+    "CloudSign電子契約"
+  ],
+  "pros": [
+    "業界最速クラスの入金スピード",
+    "少額10万円から利用可能",
+    "赤字決算・税金滞納でも利用可"
+  ],
+  "cons": [
+    "2社間ファクタリングのみ",
+    "対面での相談ができない"
+  ],
+  "overallRating": 4.2,
+  "rankPosition": 17,
+  "establishedYear": 2020,
+  "targetIndustries": [
+    "建設業",
+    "運送業",
+    "製造業",
+    "小売業",
+    "飲食業"
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "slug": "nx-capital",
+  "name": "NXキャピタル",
+  "description": "日本通運グループのファイナンスサービス。物流業界に強い。",
+  "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=NXCAPITAL",
+  "factoringType": "3社間",
+  "feeRange": {
+    "min": 1,
+    "max": 5
+  },
+  "minAmount": 5000000,
+  "maxAmount": 50000000,
+  "speedDays": 5,
+  "onlineComplete": false,
+  "features": [
+    "日本通運グループ",
+    "物流業界特化",
+    "法人向け",
+    "大口対応",
+    "全国対応"
+  ],
+  "pros": [
+    "対応が迅速",
+    "審査が柔軟",
+    "全国対応"
+  ],
+  "cons": [
+    "知名度がやや低い",
+    "手数料は個別査定"
+  ],
+  "overallRating": 3.5,
+  "establishedYear": 2000,
+  "targetIndustries": [
+    "建設業",
+    "運送業",
+    "製造業",
+    "IT・Web",
+    "サービス業"
+  ],
+  "rankPosition": 79
+}

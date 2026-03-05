@@ -1,0 +1,41 @@
+{
+  "slug": "kkt",
+  "name": "KKTファクタリング",
+  "description": "累計買取額100億円超。手数料2社間1%～、3社間0.5%～の業界最安水準。法人向け。",
+  "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=KKT",
+  "factoringType": "2社間・3社間",
+  "feeRange": {
+    "min": 0.5,
+    "max": 15
+  },
+  "minAmount": 300000,
+  "maxAmount": 100000000,
+  "speedDays": 1,
+  "onlineComplete": true,
+  "features": [
+    "手数料0.5%〜",
+    "累計100億円超",
+    "リピート率89.6%",
+    "顧客満足度92.3%",
+    "法人向け"
+  ],
+  "pros": [
+    "業界最安水準の手数料",
+    "高いリピート率",
+    "幅広い業種に対応"
+  ],
+  "cons": [
+    "法人のみ対応",
+    "土日祝は休み"
+  ],
+  "overallRating": 4,
+  "rankPosition": 133,
+  "establishedYear": 2018,
+  "targetIndustries": [
+    "建設業",
+    "運送業",
+    "製造業",
+    "飲食業",
+    "卸売業"
+  ]
+}

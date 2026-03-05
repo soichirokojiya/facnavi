@@ -1,0 +1,41 @@
+{
+  "slug": "fukuoka-bank-ep",
+  "name": "福岡銀行アーリーペイメント",
+  "description": "福岡銀行グループのファクタリングサービス。九州地域に強い。",
+  "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=FUKUOKABANKEP",
+  "factoringType": "3社間",
+  "feeRange": {
+    "min": 1,
+    "max": 5
+  },
+  "minAmount": 300000,
+  "maxAmount": 50000000,
+  "speedDays": 3,
+  "onlineComplete": true,
+  "features": [
+    "福岡銀行グループ",
+    "九州に強い",
+    "法人向け",
+    "大手金融機関",
+    "安心のサービス"
+  ],
+  "pros": [
+    "対応が迅速",
+    "審査が柔軟",
+    "全国対応"
+  ],
+  "cons": [
+    "知名度がやや低い",
+    "手数料は個別査定"
+  ],
+  "overallRating": 3.5,
+  "establishedYear": 2018,
+  "targetIndustries": [
+    "建設業",
+    "運送業",
+    "製造業",
+    "サービス業",
+    "小売業"
+  ],
+  "rankPosition": 196
+}

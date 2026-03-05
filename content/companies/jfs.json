@@ -1,0 +1,41 @@
+{
+  "slug": "jfs",
+  "name": "ジャパン・ファイナンシャル・ソリューションズ",
+  "description": "法人向けファクタリング。柔軟な審査と丁寧な対応が特長。",
+  "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=JFS",
+  "factoringType": "2社間・3社間",
+  "feeRange": {
+    "min": 3,
+    "max": 15
+  },
+  "minAmount": 300000,
+  "maxAmount": 100000000,
+  "speedDays": 1,
+  "onlineComplete": true,
+  "features": [
+    "柔軟な審査",
+    "即日入金可能",
+    "全国対応",
+    "法人向け",
+    "丁寧なサポート"
+  ],
+  "pros": [
+    "審査が柔軟",
+    "対応が丁寧",
+    "即日入金可能"
+  ],
+  "cons": [
+    "知名度が低め",
+    "手数料は個別査定"
+  ],
+  "overallRating": 3.6,
+  "establishedYear": 2018,
+  "targetIndustries": [
+    "建設業",
+    "運送業",
+    "製造業",
+    "IT・Web",
+    "サービス業"
+  ],
+  "rankPosition": 74
+}

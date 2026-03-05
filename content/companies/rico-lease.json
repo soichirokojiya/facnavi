@@ -1,0 +1,40 @@
+{
+  "slug": "rico-lease",
+  "name": "リコーリース",
+  "description": "リコーグループのリース・ファクタリングサービス。安定基盤の大手。",
+  "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=RICOL",
+  "factoringType": "3社間",
+  "feeRange": {
+    "min": 1,
+    "max": 5
+  },
+  "minAmount": 5000000,
+  "maxAmount": 0,
+  "speedDays": 5,
+  "onlineComplete": false,
+  "features": [
+    "リコーグループ",
+    "東証プライム上場",
+    "法人向け",
+    "大口対応",
+    "全国対応"
+  ],
+  "pros": [
+    "上場企業グループ",
+    "安定した資金力"
+  ],
+  "cons": [
+    "3社間のみ",
+    "個人事業主不可"
+  ],
+  "overallRating": 3.5,
+  "establishedYear": 1976,
+  "targetIndustries": [
+    "製造業",
+    "IT・Web",
+    "サービス業",
+    "建設業",
+    "卸売業"
+  ],
+  "rankPosition": 77
+}

@@ -1,0 +1,41 @@
+{
+  "slug": "factoru",
+  "name": "FACTOR⁺U（ファクトル）",
+  "description": "日本中小企業金融サポート機構運営のAIファクタリング。手数料1.5%～、最短40分入金。",
+  "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=FACTORU",
+  "factoringType": "2社間",
+  "feeRange": {
+    "min": 1.5,
+    "max": 10
+  },
+  "minAmount": 10000,
+  "maxAmount": 0,
+  "speedDays": 1,
+  "onlineComplete": true,
+  "features": [
+    "AI審査",
+    "最短40分入金",
+    "手数料1.5%〜",
+    "非営利法人運営",
+    "必要書類2点のみ"
+  ],
+  "pros": [
+    "非営利法人の安心感",
+    "最短40分の超スピード",
+    "必要書類が少ない"
+  ],
+  "cons": [
+    "知名度がまだ低い",
+    "2者間のみ"
+  ],
+  "overallRating": 4,
+  "establishedYear": 2017,
+  "targetIndustries": [
+    "建設業",
+    "運送業",
+    "製造業",
+    "IT・Web",
+    "医療・介護"
+  ],
+  "rankPosition": 56
+}

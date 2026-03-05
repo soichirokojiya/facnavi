@@ -1,0 +1,41 @@
+{
+  "slug": "easy-factor",
+  "name": "Easy factor",
+  "description": "イージーファクターのファクタリングサービス。簡単・手軽な資金調達。",
+  "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=EASYFACTOR",
+  "factoringType": "2社間・3社間",
+  "feeRange": {
+    "min": 2,
+    "max": 14
+  },
+  "minAmount": 300000,
+  "maxAmount": 50000000,
+  "speedDays": 1,
+  "onlineComplete": true,
+  "features": [
+    "簡単手続き",
+    "即日入金",
+    "オンライン完結",
+    "個人事業主OK",
+    "全国対応"
+  ],
+  "pros": [
+    "対応が迅速",
+    "審査が柔軟",
+    "全国対応"
+  ],
+  "cons": [
+    "知名度がやや低い",
+    "手数料は個別査定"
+  ],
+  "overallRating": 3.4,
+  "establishedYear": 2020,
+  "targetIndustries": [
+    "建設業",
+    "運送業",
+    "製造業",
+    "IT・Web",
+    "サービス業"
+  ],
+  "rankPosition": 159
+}

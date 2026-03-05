@@ -1,0 +1,41 @@
+{
+  "slug": "ad-planning",
+  "name": "アドプランニング",
+  "description": "手数料2%～10%の業界最安水準。10万円からの少額買取にも対応。",
+  "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=ADPLAN",
+  "factoringType": "2社間・3社間",
+  "feeRange": {
+    "min": 2,
+    "max": 10
+  },
+  "minAmount": 100000,
+  "maxAmount": 100000000,
+  "speedDays": 1,
+  "onlineComplete": true,
+  "features": [
+    "手数料2%〜10%",
+    "少額10万円から対応",
+    "最短30分審査",
+    "審査通過率88%",
+    "資金繰りコンサル付き"
+  ],
+  "pros": [
+    "業界最安水準の手数料",
+    "少額からも利用可能",
+    "コンサルティングサービス付き"
+  ],
+  "cons": [
+    "知名度がやや低い",
+    "大口案件は別途相談"
+  ],
+  "overallRating": 4,
+  "establishedYear": 2018,
+  "targetIndustries": [
+    "IT・Web",
+    "建設業",
+    "小売業",
+    "飲食業",
+    "サービス業"
+  ],
+  "rankPosition": 51
+}

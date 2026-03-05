@@ -1,0 +1,41 @@
+{
+  "slug": "anchor-guardian",
+  "name": "アンカーガーディアン",
+  "description": "九州・西日本エリア特化。3社間3%～、2社間5%～の低手数料。",
+  "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=ANCHOR",
+  "factoringType": "2社間・3社間",
+  "feeRange": {
+    "min": 3,
+    "max": 15
+  },
+  "minAmount": 300000,
+  "maxAmount": 50000000,
+  "speedDays": 1,
+  "onlineComplete": true,
+  "features": [
+    "西日本特化",
+    "3社間3%〜",
+    "2社間5%〜",
+    "最短即日",
+    "対面相談可"
+  ],
+  "pros": [
+    "西日本エリアに強い",
+    "手数料が安い",
+    "即日対応可能"
+  ],
+  "cons": [
+    "西日本限定",
+    "東日本は対面対応不可"
+  ],
+  "overallRating": 3.8,
+  "establishedYear": 2016,
+  "targetIndustries": [
+    "建設業",
+    "運送業",
+    "製造業",
+    "小売業",
+    "飲食業"
+  ],
+  "rankPosition": 67
+}

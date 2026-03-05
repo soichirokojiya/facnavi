@@ -1,0 +1,41 @@
+{
+  "slug": "witt",
+  "name": "ウィット",
+  "description": "小口専門のファクタリング会社。500万円以下の少額債権に特化し、電話1本で即日対応。",
+  "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=XXXXX39",
+  "factoringType": "2社間",
+  "feeRange": {
+    "min": 5,
+    "max": 20
+  },
+  "minAmount": 100000,
+  "maxAmount": 5000000,
+  "speedDays": 1,
+  "onlineComplete": true,
+  "features": [
+    "小口専門500万円以下",
+    "電話1本で対応",
+    "即日入金",
+    "来店不要",
+    "個人事業主OK"
+  ],
+  "pros": [
+    "少額でも気軽に利用できる",
+    "電話1本で手続き開始",
+    "小回りの利く対応"
+  ],
+  "cons": [
+    "500万円超の案件は対応不可",
+    "手数料がやや高め"
+  ],
+  "overallRating": 3.6,
+  "rankPosition": 39,
+  "establishedYear": 2016,
+  "targetIndustries": [
+    "小売業",
+    "飲食業",
+    "サービス業",
+    "IT・Web",
+    "建設業"
+  ]
+}

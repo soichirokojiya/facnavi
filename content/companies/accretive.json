@@ -1,0 +1,41 @@
+{
+  "slug": "accretive",
+  "name": "アクリーティブ",
+  "description": "東証プライム上場・芙蓉リースグループ。医療・介護報酬ファクタリングに強い。",
+  "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=ACCRET",
+  "factoringType": "3社間",
+  "feeRange": {
+    "min": 0.25,
+    "max": 5
+  },
+  "minAmount": 1000000,
+  "maxAmount": 0,
+  "speedDays": 5,
+  "onlineComplete": false,
+  "features": [
+    "東証プライム上場",
+    "医療・介護特化",
+    "年間取扱2000億円超",
+    "手数料月0.25%〜",
+    "全国47都道府県対応"
+  ],
+  "pros": [
+    "上場企業の信頼性",
+    "医療・介護に強い",
+    "手数料が非常に安い"
+  ],
+  "cons": [
+    "3社間のみ",
+    "入金まで日数がかかる"
+  ],
+  "overallRating": 4,
+  "establishedYear": 2000,
+  "targetIndustries": [
+    "医療・介護",
+    "調剤薬局",
+    "歯科",
+    "病院",
+    "介護施設"
+  ],
+  "rankPosition": 58
+}

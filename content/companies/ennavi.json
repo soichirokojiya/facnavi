@@ -1,0 +1,41 @@
+{
+  "slug": "ennavi",
+  "name": "えんナビ",
+  "description": "24時間365日スタッフ対応。最短1日で資金化可能、少額から売掛債権の買取に対応。",
+  "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=XXXXX40",
+  "factoringType": "2社間・3社間",
+  "feeRange": {
+    "min": 5,
+    "max": 20
+  },
+  "minAmount": 300000,
+  "maxAmount": 50000000,
+  "speedDays": 1,
+  "onlineComplete": true,
+  "features": [
+    "24時間365日対応",
+    "最短1日入金",
+    "全国対応",
+    "オンライン完結",
+    "秘密厳守"
+  ],
+  "pros": [
+    "24時間いつでも相談できる",
+    "全国どこからでも利用可能",
+    "秘密厳守で安心"
+  ],
+  "cons": [
+    "手数料がやや高め",
+    "即日ではなく翌日になる場合も"
+  ],
+  "overallRating": 3.7,
+  "rankPosition": 40,
+  "establishedYear": 2017,
+  "targetIndustries": [
+    "建設業",
+    "運送業",
+    "製造業",
+    "小売業",
+    "サービス業"
+  ]
+}

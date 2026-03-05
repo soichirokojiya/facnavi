@@ -1,0 +1,41 @@
+{
+  "slug": "invoice-pay",
+  "name": "インボイスPay",
+  "description": "スマートヘッジ運営。手数料2.5%～、最短即日入金。累計100億円超の買取実績。",
+  "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=INVPAY",
+  "factoringType": "2社間",
+  "feeRange": {
+    "min": 2.5,
+    "max": 15
+  },
+  "minAmount": 100000,
+  "maxAmount": 0,
+  "speedDays": 1,
+  "onlineComplete": true,
+  "features": [
+    "最短即日入金",
+    "手数料2.5%〜",
+    "累計100億円超",
+    "債権譲渡登記不要",
+    "オンライン完結"
+  ],
+  "pros": [
+    "手数料が安い",
+    "債権譲渡登記不要",
+    "スピーディ"
+  ],
+  "cons": [
+    "比較的新しい会社",
+    "知名度が低め"
+  ],
+  "overallRating": 3.9,
+  "establishedYear": 2019,
+  "targetIndustries": [
+    "IT・Web",
+    "建設業",
+    "サービス業",
+    "小売業",
+    "製造業"
+  ],
+  "rankPosition": 73
+}

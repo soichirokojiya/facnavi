@@ -1,0 +1,41 @@
+{
+  "slug": "factorplan",
+  "name": "ファクタープラン",
+  "description": "「会わずに、迷わず、すぐ進む」がコンセプト。最短4時間で資金化、調達成功率95.2%。",
+  "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=XXXXX19",
+  "factoringType": "2社間",
+  "feeRange": {
+    "min": 3,
+    "max": 18
+  },
+  "minAmount": 100000,
+  "maxAmount": 50000000,
+  "speedDays": 1,
+  "onlineComplete": true,
+  "features": [
+    "最短4時間で資金化",
+    "調達成功率95.2%",
+    "スマホで完結",
+    "全国対応",
+    "リピート率92.7%"
+  ],
+  "pros": [
+    "スマホだけで申込から契約まで完結",
+    "調達成功率が非常に高い",
+    "チャットで進捗確認可能"
+  ],
+  "cons": [
+    "2社間ファクタリングのみ",
+    "手数料がやや高めの場合がある"
+  ],
+  "overallRating": 3.8,
+  "rankPosition": 19,
+  "establishedYear": 2019,
+  "targetIndustries": [
+    "建設業",
+    "IT・Web",
+    "広告・メディア",
+    "運送業",
+    "製造業"
+  ]
+}

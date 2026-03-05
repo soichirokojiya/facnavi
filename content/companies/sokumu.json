@@ -1,0 +1,40 @@
+{
+  "slug": "sokumu",
+  "name": "SoKuMo（ソクモ）",
+  "description": "即日お見積りのオンラインファクタリング。手数料1%〜、最短即日で入金。シンプルな手続きが特徴。",
+  "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=XXXXX25",
+  "factoringType": "2社間",
+  "feeRange": {
+    "min": 1,
+    "max": 15
+  },
+  "minAmount": 100000,
+  "maxAmount": 0,
+  "speedDays": 1,
+  "onlineComplete": true,
+  "features": [
+    "手数料1%〜",
+    "即日見積もり",
+    "オンライン完結",
+    "シンプル手続き",
+    "全国対応"
+  ],
+  "pros": [
+    "手数料が1%〜と低い",
+    "即日で見積もりが出る",
+    "オンラインで手軽に利用可能"
+  ],
+  "cons": [
+    "知名度がまだ低い",
+    "実績が少なめ"
+  ],
+  "overallRating": 3.8,
+  "rankPosition": 25,
+  "establishedYear": 2021,
+  "targetIndustries": [
+    "IT・Web",
+    "建設業",
+    "製造業",
+    "小売業"
+  ]
+}

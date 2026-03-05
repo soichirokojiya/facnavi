@@ -1,0 +1,40 @@
+{
+  "slug": "mufg-factor",
+  "name": "三菱UFJファクター",
+  "description": "三菱UFJフィナンシャル・グループの大手ファクタリング会社。大企業・中堅企業向けの信頼性の高いサービス。",
+  "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=XXXXX44",
+  "factoringType": "3社間",
+  "feeRange": {
+    "min": 1,
+    "max": 5
+  },
+  "minAmount": 10000000,
+  "maxAmount": 0,
+  "speedDays": 7,
+  "onlineComplete": false,
+  "features": [
+    "三菱UFJグループ",
+    "大企業向け",
+    "国際ファクタリング",
+    "一括ファクタリング",
+    "でんさい対応"
+  ],
+  "pros": [
+    "日本最大級の金融グループの信頼性",
+    "手数料が非常に低い",
+    "多様なファクタリングサービス"
+  ],
+  "cons": [
+    "中小企業・個人事業主には不向き",
+    "審査・入金に時間がかかる"
+  ],
+  "overallRating": 4.3,
+  "rankPosition": 44,
+  "establishedYear": 1977,
+  "targetIndustries": [
+    "製造業",
+    "卸売業",
+    "商社",
+    "大企業"
+  ]
+}

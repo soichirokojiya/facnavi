@@ -1,0 +1,41 @@
+{
+  "slug": "resona-ks",
+  "name": "りそな決済サービス",
+  "description": "りそなグループの決済サービス。ファクタリング・電子記録債権の買取に対応。",
+  "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=RESONAKS",
+  "factoringType": "3社間",
+  "feeRange": {
+    "min": 1,
+    "max": 5
+  },
+  "minAmount": 5000000,
+  "maxAmount": 50000000,
+  "speedDays": 3,
+  "onlineComplete": false,
+  "features": [
+    "りそなグループ",
+    "大手金融機関",
+    "法人向け",
+    "大口対応",
+    "全国対応"
+  ],
+  "pros": [
+    "対応が迅速",
+    "審査が柔軟",
+    "全国対応"
+  ],
+  "cons": [
+    "知名度がやや低い",
+    "手数料は個別査定"
+  ],
+  "overallRating": 3.5,
+  "establishedYear": 2001,
+  "targetIndustries": [
+    "建設業",
+    "運送業",
+    "製造業",
+    "IT・Web",
+    "サービス業"
+  ],
+  "rankPosition": 149
+}

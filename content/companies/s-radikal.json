@@ -1,0 +1,41 @@
+{
+  "slug": "s-radikal",
+  "name": "S-radikal",
+  "description": "ファクタリングサービス。中小企業向け資金調達。",
+  "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=SRADIKAL",
+  "factoringType": "2社間・3社間",
+  "feeRange": {
+    "min": 3,
+    "max": 15
+  },
+  "minAmount": 300000,
+  "maxAmount": 50000000,
+  "speedDays": 1,
+  "onlineComplete": true,
+  "features": [
+    "即日入金可能",
+    "オンライン対応",
+    "個人事業主OK",
+    "全国対応",
+    "柔軟な審査"
+  ],
+  "pros": [
+    "対応が迅速",
+    "審査が柔軟",
+    "全国対応"
+  ],
+  "cons": [
+    "知名度がやや低い",
+    "手数料は個別査定"
+  ],
+  "overallRating": 3.3,
+  "establishedYear": 2018,
+  "targetIndustries": [
+    "建設業",
+    "運送業",
+    "製造業",
+    "IT・Web",
+    "サービス業"
+  ],
+  "rankPosition": 228
+}

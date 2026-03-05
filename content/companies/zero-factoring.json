@@ -1,0 +1,41 @@
+{
+  "slug": "zero-factoring",
+  "name": "ファクタリングZERO",
+  "description": "西日本エリアに強いファクタリング会社。手数料が安く地域密着型。",
+  "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=ZEROFACT",
+  "factoringType": "2社間・3社間",
+  "feeRange": {
+    "min": 1.5,
+    "max": 10
+  },
+  "minAmount": 300000,
+  "maxAmount": 50000000,
+  "speedDays": 1,
+  "onlineComplete": true,
+  "features": [
+    "西日本に強い",
+    "手数料1.5%〜",
+    "最短即日入金",
+    "対面相談可",
+    "個人事業主OK"
+  ],
+  "pros": [
+    "西日本エリアに密着した対応",
+    "手数料が安い",
+    "対面でも相談可能"
+  ],
+  "cons": [
+    "東日本では対面対応が難しい場合も",
+    "大口案件は別途相談"
+  ],
+  "overallRating": 3.9,
+  "establishedYear": 2018,
+  "targetIndustries": [
+    "建設業",
+    "運送業",
+    "製造業",
+    "小売業",
+    "飲食業"
+  ],
+  "rankPosition": 53
+}

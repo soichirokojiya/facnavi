@@ -1,0 +1,41 @@
+{
+  "slug": "japan-management",
+  "name": "ジャパンマネジメント",
+  "description": "東京・福岡の2拠点で全国対応。2社間・3社間両対応、24時間相談受付で最短即日審査完了。",
+  "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=XXXXX27",
+  "factoringType": "2社間・3社間",
+  "feeRange": {
+    "min": 3,
+    "max": 20
+  },
+  "minAmount": 500000,
+  "maxAmount": 50000000,
+  "speedDays": 1,
+  "onlineComplete": false,
+  "features": [
+    "東京・福岡2拠点",
+    "24時間相談対応",
+    "全国出張可能",
+    "3社間で手数料優遇",
+    "即日審査完了"
+  ],
+  "pros": [
+    "24時間いつでも相談できる",
+    "2拠点で広いエリアをカバー",
+    "対面での丁寧なサポート"
+  ],
+  "cons": [
+    "オンライン完結ではない",
+    "手数料の上限がやや高め"
+  ],
+  "overallRating": 3.8,
+  "rankPosition": 27,
+  "establishedYear": 2016,
+  "targetIndustries": [
+    "建設業",
+    "運送業",
+    "製造業",
+    "医療・介護",
+    "飲食業"
+  ]
+}

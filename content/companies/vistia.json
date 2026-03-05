@@ -1,0 +1,41 @@
+{
+  "slug": "vistia",
+  "name": "VISTIA（ヴィスティア）",
+  "description": "東京秋葉原拠点のファクタリング会社。法人向け売掛金買取サービスを提供。",
+  "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=VISTIA",
+  "factoringType": "2社間・3社間",
+  "feeRange": {
+    "min": 3,
+    "max": 15
+  },
+  "minAmount": 100000,
+  "maxAmount": 50000000,
+  "speedDays": 1,
+  "onlineComplete": true,
+  "features": [
+    "即日入金対応",
+    "法人向け",
+    "柔軟な審査",
+    "全国対応",
+    "少額対応"
+  ],
+  "pros": [
+    "柔軟な審査基準",
+    "即日入金可能",
+    "対面でも相談可"
+  ],
+  "cons": [
+    "知名度がやや低い",
+    "手数料上限がやや高い"
+  ],
+  "overallRating": 3.7,
+  "establishedYear": 2019,
+  "targetIndustries": [
+    "建設業",
+    "運送業",
+    "IT・Web",
+    "製造業",
+    "サービス業"
+  ],
+  "rankPosition": 54
+}

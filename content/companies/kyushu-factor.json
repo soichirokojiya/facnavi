@@ -1,0 +1,41 @@
+{
+  "slug": "kyushu-factor",
+  "name": "九州ファクター",
+  "description": "九州拠点のファクタリング会社。九州地域に密着。",
+  "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=KYUSHUFACTOR",
+  "factoringType": "2社間・3社間",
+  "feeRange": {
+    "min": 3,
+    "max": 15
+  },
+  "minAmount": 300000,
+  "maxAmount": 50000000,
+  "speedDays": 1,
+  "onlineComplete": true,
+  "features": [
+    "九州拠点",
+    "地域密着",
+    "即日入金",
+    "個人事業主OK",
+    "対面相談可"
+  ],
+  "pros": [
+    "対応が迅速",
+    "審査が柔軟",
+    "全国対応"
+  ],
+  "cons": [
+    "知名度がやや低い",
+    "手数料は個別査定"
+  ],
+  "overallRating": 3.4,
+  "establishedYear": 2018,
+  "targetIndustries": [
+    "建設業",
+    "運送業",
+    "製造業",
+    "農業",
+    "サービス業"
+  ],
+  "rankPosition": 252
+}

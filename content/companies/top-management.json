@@ -1,0 +1,41 @@
+{
+  "slug": "top-management",
+  "name": "トップ・マネジメント",
+  "description": "累計取引件数5万件超の実績。最短即日入金、2社間・3社間両対応で幅広いニーズに応える。",
+  "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=XXXXX38",
+  "factoringType": "2社間・3社間",
+  "feeRange": {
+    "min": 1,
+    "max": 15
+  },
+  "minAmount": 300000,
+  "maxAmount": 300000000,
+  "speedDays": 1,
+  "onlineComplete": true,
+  "features": [
+    "累計5万件超の実績",
+    "最大3億円対応",
+    "即日入金",
+    "オンライン完結",
+    "ゼロファクタリングプラン"
+  ],
+  "pros": [
+    "豊富な取引実績で安心",
+    "大口案件にも対応可能",
+    "手数料0%のプランもある"
+  ],
+  "cons": [
+    "審査基準がやや厳しい場合も",
+    "大口以外は対応が遅くなる場合も"
+  ],
+  "overallRating": 4.2,
+  "rankPosition": 38,
+  "establishedYear": 2009,
+  "targetIndustries": [
+    "建設業",
+    "運送業",
+    "製造業",
+    "医療・介護",
+    "人材派遣"
+  ]
+}

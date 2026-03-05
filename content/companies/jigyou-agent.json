@@ -1,0 +1,41 @@
+{
+  "slug": "jigyou-agent",
+  "name": "事業資金エージェント",
+  "description": "最短2時間で資金化可能なファクタリング会社。500万円以下は来店不要、1.5%〜の低手数料。",
+  "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=XXXXX33",
+  "factoringType": "2社間・3社間",
+  "feeRange": {
+    "min": 1.5,
+    "max": 15
+  },
+  "minAmount": 100000,
+  "maxAmount": 200000000,
+  "speedDays": 1,
+  "onlineComplete": true,
+  "features": [
+    "最短2時間入金",
+    "500万円以下は来店不要",
+    "最大2億円対応",
+    "1.5%〜低手数料",
+    "リピート率90%以上"
+  ],
+  "pros": [
+    "手数料1.5%〜と低い",
+    "最大2億円の大口にも対応",
+    "500万円以下はオンライン完結"
+  ],
+  "cons": [
+    "500万円超は面談が必要",
+    "手数料の幅が広い"
+  ],
+  "overallRating": 4,
+  "rankPosition": 33,
+  "establishedYear": 2014,
+  "targetIndustries": [
+    "建設業",
+    "運送業",
+    "製造業",
+    "IT・Web",
+    "医療・介護"
+  ]
+}

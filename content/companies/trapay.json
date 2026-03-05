@@ -1,0 +1,40 @@
+{
+  "slug": "trapay",
+  "name": "トラペイ",
+  "description": "オンライン完結型ファクタリング。手数料は業界最安水準、必要書類も少なく初めてでも簡単に利用可能。",
+  "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=XXXXX35",
+  "factoringType": "2社間",
+  "feeRange": {
+    "min": 2,
+    "max": 12
+  },
+  "minAmount": 100000,
+  "maxAmount": 50000000,
+  "speedDays": 1,
+  "onlineComplete": true,
+  "features": [
+    "オンライン完結",
+    "業界最安水準の手数料",
+    "必要書類が少ない",
+    "全国対応",
+    "法人・個人対応"
+  ],
+  "pros": [
+    "手数料が低く抑えられる",
+    "オンラインで全て完結",
+    "書類が少なく手軽"
+  ],
+  "cons": [
+    "対面での相談ができない",
+    "知名度がまだ低い"
+  ],
+  "overallRating": 3.8,
+  "rankPosition": 35,
+  "establishedYear": 2022,
+  "targetIndustries": [
+    "IT・Web",
+    "製造業",
+    "小売業",
+    "サービス業"
+  ]
+}

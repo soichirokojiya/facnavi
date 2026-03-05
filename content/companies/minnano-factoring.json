@@ -1,0 +1,40 @@
+{
+  "slug": "minnano-factoring",
+  "name": "みんなのファクタリング",
+  "description": "個人事業主・フリーランス向けのオンラインファクタリング。手続きが簡単で少額から利用可能。",
+  "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=XXXXX36",
+  "factoringType": "2社間",
+  "feeRange": {
+    "min": 5,
+    "max": 15
+  },
+  "minAmount": 10000,
+  "maxAmount": 5000000,
+  "speedDays": 1,
+  "onlineComplete": true,
+  "features": [
+    "個人事業主向け",
+    "少額対応",
+    "オンライン完結",
+    "簡単手続き",
+    "即日入金"
+  ],
+  "pros": [
+    "1万円から少額利用可能",
+    "手続きが非常にシンプル",
+    "即日で入金される"
+  ],
+  "cons": [
+    "買取上限が500万円と低い",
+    "法人の大口案件には不向き"
+  ],
+  "overallRating": 3.7,
+  "rankPosition": 36,
+  "establishedYear": 2021,
+  "targetIndustries": [
+    "IT・Web",
+    "デザイン",
+    "広告・メディア",
+    "飲食業"
+  ]
+}

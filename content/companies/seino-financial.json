@@ -1,0 +1,39 @@
+{
+  "slug": "seino-financial",
+  "name": "セイノーフィナンシャル",
+  "description": "セイノーグループのファイナンスサービス。物流業界に強い。",
+  "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=SEINOFINANCIAL",
+  "factoringType": "3社間",
+  "feeRange": {
+    "min": 1,
+    "max": 5
+  },
+  "minAmount": 300000,
+  "maxAmount": 50000000,
+  "speedDays": 3,
+  "onlineComplete": true,
+  "features": [
+    "セイノーグループ",
+    "物流業界に強い",
+    "法人向け",
+    "大手運営",
+    "全国対応"
+  ],
+  "pros": [
+    "対応が迅速",
+    "審査が柔軟",
+    "全国対応"
+  ],
+  "cons": [
+    "知名度がやや低い",
+    "手数料は個別査定"
+  ],
+  "overallRating": 3.5,
+  "establishedYear": 2000,
+  "targetIndustries": [
+    "運送業",
+    "物流",
+    "製造業"
+  ],
+  "rankPosition": 224
+}

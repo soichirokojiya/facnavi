@@ -1,0 +1,41 @@
+{
+  "slug": "mf-early-payment",
+  "name": "マネーフォワード アーリーペイメント",
+  "description": "マネーフォワードグループ運営。法人専門ファクタリングで即日入金可能。",
+  "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=MFEP",
+  "factoringType": "2社間",
+  "feeRange": {
+    "min": 1,
+    "max": 10
+  },
+  "minAmount": 500000,
+  "maxAmount": 0,
+  "speedDays": 1,
+  "onlineComplete": true,
+  "features": [
+    "マネーフォワードグループ",
+    "法人専門",
+    "即日入金可能",
+    "債権譲渡登記不要",
+    "オンライン完結"
+  ],
+  "pros": [
+    "上場グループの安心感",
+    "登記不要で取引先に知られない",
+    "即日入金"
+  ],
+  "cons": [
+    "法人専門で個人事業主不可",
+    "比較的新しいサービス"
+  ],
+  "overallRating": 4.2,
+  "establishedYear": 2017,
+  "targetIndustries": [
+    "IT・Web",
+    "製造業",
+    "サービス業",
+    "卸売業",
+    "広告業"
+  ],
+  "rankPosition": 60
+}

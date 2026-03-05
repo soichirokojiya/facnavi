@@ -1,0 +1,41 @@
+{
+  "slug": "trust-gateway",
+  "name": "トラストゲートウェイ",
+  "description": "福岡拠点のファクタリング会社。審査通過率95%以上、クラウド契約で来店不要。医療系にも対応。",
+  "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=XXXXX30",
+  "factoringType": "2社間・3社間",
+  "feeRange": {
+    "min": 3,
+    "max": 18
+  },
+  "minAmount": 100000,
+  "maxAmount": 30000000,
+  "speedDays": 1,
+  "onlineComplete": true,
+  "features": [
+    "審査通過率95%以上",
+    "クラウド契約対応",
+    "医療系対応",
+    "福岡拠点",
+    "全国対応"
+  ],
+  "pros": [
+    "審査通過率が非常に高い",
+    "クラウド契約で来店不要",
+    "医療系の売掛金にも対応"
+  ],
+  "cons": [
+    "福岡以外の対面は難しい",
+    "手数料の上限がやや高め"
+  ],
+  "overallRating": 3.8,
+  "rankPosition": 30,
+  "establishedYear": 2018,
+  "targetIndustries": [
+    "医療・介護",
+    "建設業",
+    "運送業",
+    "製造業",
+    "サービス業"
+  ]
+}

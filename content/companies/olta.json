@@ -1,0 +1,19 @@
+{
+  "slug": "olta",
+  "name": "OLTA（オルタ）",
+  "description": "クラウドファクタリングのパイオニア。AIを活用した審査で最短即日、完全オンラインで手続きが完了します。",
+  "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=XXXXX2",
+  "factoringType": "2社間",
+  "feeRange": { "min": 2, "max": 9 },
+  "minAmount": 0,
+  "maxAmount": 0,
+  "speedDays": 1,
+  "onlineComplete": true,
+  "features": ["AI審査", "完全オンライン", "請求書のアップロードだけ", "手数料上限9%", "金額制限なし"],
+  "pros": ["手数料が業界最安（2〜9%）", "面談不要で完全オンライン", "AI審査で最短即日入金"],
+  "cons": ["2社間ファクタリングのみ", "対面での相談ができない"],
+  "overallRating": 4.7,
+  "rankPosition": 2,
+  "establishedYear": 2017,
+  "targetIndustries": ["IT・Web", "広告・メディア", "人材派遣", "製造業"]
+}

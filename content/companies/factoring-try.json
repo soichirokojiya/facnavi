@@ -1,0 +1,41 @@
+{
+  "slug": "factoring-try",
+  "name": "ファクタリングのTRY",
+  "description": "ノンリコース契約で売掛先倒産リスクなし。10万円〜5,000万円以上、24時間365日電話受付。",
+  "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=XXXXX22",
+  "factoringType": "2社間",
+  "feeRange": {
+    "min": 3,
+    "max": 20
+  },
+  "minAmount": 100000,
+  "maxAmount": 50000000,
+  "speedDays": 1,
+  "onlineComplete": true,
+  "features": [
+    "ノンリコース契約",
+    "24時間電話受付",
+    "税金滞納中でもOK",
+    "LINE申込対応",
+    "乗り換え手数料優遇"
+  ],
+  "pros": [
+    "24時間365日電話対応で安心",
+    "税金滞納中でも契約可能",
+    "乗り換え時に手数料優遇あり"
+  ],
+  "cons": [
+    "手数料の上限がやや高い",
+    "オンライン審査の精度は他社に劣る場合も"
+  ],
+  "overallRating": 3.7,
+  "rankPosition": 22,
+  "establishedYear": 2018,
+  "targetIndustries": [
+    "建設業",
+    "運送業",
+    "製造業",
+    "小売業",
+    "サービス業"
+  ]
+}

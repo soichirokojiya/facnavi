@@ -1,0 +1,41 @@
+{
+  "slug": "chusho-support",
+  "name": "日本中小企業金融サポート機構",
+  "description": "一般社団法人運営の安心感。手数料1.5%～10%で非営利ならではの低コスト。",
+  "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=CHUSHO",
+  "factoringType": "2社間・3社間",
+  "feeRange": {
+    "min": 1.5,
+    "max": 10
+  },
+  "minAmount": 10000,
+  "maxAmount": 0,
+  "speedDays": 1,
+  "onlineComplete": true,
+  "features": [
+    "一般社団法人運営",
+    "手数料1.5%〜",
+    "金額制限なし",
+    "オンライン完結",
+    "経営サポート付き"
+  ],
+  "pros": [
+    "非営利法人で信頼性が高い",
+    "低手数料",
+    "経営改善のアドバイスも受けられる"
+  ],
+  "cons": [
+    "知名度がやや低い",
+    "土日祝は対応不可"
+  ],
+  "overallRating": 4.1,
+  "establishedYear": 2017,
+  "targetIndustries": [
+    "建設業",
+    "運送業",
+    "製造業",
+    "医療・介護",
+    "小売業"
+  ],
+  "rankPosition": 52
+}

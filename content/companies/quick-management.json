@@ -1,0 +1,40 @@
+{
+  "slug": "quick-management",
+  "name": "クイックマネジメント",
+  "description": "最短30分のスピード入金。オンライン完結で全国対応、AIを活用した審査で手続きがスムーズ。",
+  "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=XXXXX34",
+  "factoringType": "2社間",
+  "feeRange": {
+    "min": 1,
+    "max": 15
+  },
+  "minAmount": 0,
+  "maxAmount": 0,
+  "speedDays": 1,
+  "onlineComplete": true,
+  "features": [
+    "最短30分入金",
+    "AI審査",
+    "オンライン完結",
+    "金額制限なし",
+    "全国対応"
+  ],
+  "pros": [
+    "最短30分のスピード入金",
+    "AI審査でスムーズ",
+    "金額制限がない"
+  ],
+  "cons": [
+    "2社間ファクタリングのみ",
+    "新しい会社で実績が少なめ"
+  ],
+  "overallRating": 3.9,
+  "rankPosition": 34,
+  "establishedYear": 2021,
+  "targetIndustries": [
+    "IT・Web",
+    "建設業",
+    "運送業",
+    "広告・メディア"
+  ]
+}

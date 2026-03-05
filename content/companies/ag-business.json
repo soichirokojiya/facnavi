@@ -1,0 +1,41 @@
+{
+  "slug": "ag-business",
+  "name": "AGビジネスサポート",
+  "description": "アイフルグループ運営の信頼性抜群のファクタリング。契約実績15万件以上、請求書1枚から申込可能。",
+  "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=XXXXX20",
+  "factoringType": "2社間・3社間",
+  "feeRange": {
+    "min": 2,
+    "max": 12
+  },
+  "minAmount": 0,
+  "maxAmount": 0,
+  "speedDays": 1,
+  "onlineComplete": true,
+  "features": [
+    "アイフルグループ",
+    "契約実績15万件超",
+    "請求書1枚からOK",
+    "5秒診断あり",
+    "赤字決算でも対応"
+  ],
+  "pros": [
+    "大手アイフルグループの安心感",
+    "請求書1枚から気軽に利用可能",
+    "赤字決算・債務超過でも対応"
+  ],
+  "cons": [
+    "大手のため審査がやや厳格な場合も",
+    "手数料は案件による"
+  ],
+  "overallRating": 4.4,
+  "rankPosition": 20,
+  "establishedYear": 2001,
+  "targetIndustries": [
+    "建設業",
+    "製造業",
+    "運送業",
+    "小売業",
+    "サービス業"
+  ]
+}

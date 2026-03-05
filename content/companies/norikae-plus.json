@@ -1,0 +1,41 @@
+{
+  "slug": "norikae-plus",
+  "name": "のりかえPLUS",
+  "description": "他社からの乗り換え専門ファクタリング。現在利用中の手数料より安くなることを保証するサービス。",
+  "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=XXXXX46",
+  "factoringType": "2社間",
+  "feeRange": {
+    "min": 1,
+    "max": 10
+  },
+  "minAmount": 300000,
+  "maxAmount": 50000000,
+  "speedDays": 1,
+  "onlineComplete": true,
+  "features": [
+    "乗り換え専門",
+    "手数料引き下げ保証",
+    "オンライン完結",
+    "即日入金",
+    "秘密厳守"
+  ],
+  "pros": [
+    "他社より手数料が安くなることを保証",
+    "既にファクタリング利用中なら審査がスムーズ",
+    "即日入金対応"
+  ],
+  "cons": [
+    "新規利用者は対象外",
+    "乗り換え元の情報提示が必要"
+  ],
+  "overallRating": 3.9,
+  "rankPosition": 46,
+  "establishedYear": 2020,
+  "targetIndustries": [
+    "建設業",
+    "運送業",
+    "製造業",
+    "IT・Web",
+    "医療・介護"
+  ]
+}

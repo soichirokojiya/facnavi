@@ -1,0 +1,41 @@
+{
+  "slug": "paypal-biz-loan",
+  "name": "PayPay銀行ビジネスローン",
+  "description": "PayPay銀行が提供するビジネスローン。ファクタリングではなく融資型の資金調達。",
+  "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=PAYPALBIZLOAN",
+  "factoringType": "2社間",
+  "feeRange": {
+    "min": 1.8,
+    "max": 13.8
+  },
+  "minAmount": 300000,
+  "maxAmount": 50000000,
+  "speedDays": 3,
+  "onlineComplete": true,
+  "features": [
+    "PayPay銀行運営",
+    "最短翌営業日融資",
+    "来店不要",
+    "法人・個人事業主OK",
+    "ビジネスローン"
+  ],
+  "pros": [
+    "対応が迅速",
+    "審査が柔軟",
+    "全国対応"
+  ],
+  "cons": [
+    "知名度がやや低い",
+    "手数料は個別査定"
+  ],
+  "overallRating": 3.6,
+  "establishedYear": 2000,
+  "targetIndustries": [
+    "建設業",
+    "運送業",
+    "製造業",
+    "IT・Web",
+    "サービス業"
+  ],
+  "rankPosition": 78
+}
