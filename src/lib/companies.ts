@@ -55,6 +55,10 @@ export function getCompanySlugs(): string[] {
     .map((f) => f.replace(".json", ""));
 }
 
+export function getCompanyCount(): number {
+  return fs.readdirSync(companiesDir).filter((f) => f.endsWith(".json")).length;
+}
+
 export function formatAmount(amount: number): string {
   if (amount === 0) return "制限なし";
   if (amount >= 100000000) return `${amount / 100000000}億円`;

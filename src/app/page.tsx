@@ -40,8 +40,9 @@ export default function HomePage() {
           <div className="flex justify-center mb-5">
             <Logo size="lg" />
           </div>
-          <p className="inline-block bg-amber-400 text-white text-xs font-bold px-3 py-1 rounded-full mb-4">
-            日本最大級 — ファクタリング会社{companies.length}社掲載
+          <p className="inline-block bg-amber-400 text-white font-bold px-5 py-2 rounded-full mb-4">
+            <span className="text-lg md:text-2xl">日本最大級</span>
+            <span className="text-xs md:text-sm ml-2">— ファクタリング会社{companies.length}社掲載</span>
           </p>
           <h1 className="text-2xl md:text-4xl font-bold mb-3 leading-tight text-gray-900">
             口コミと比較で選ぶ

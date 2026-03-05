@@ -1,6 +1,7 @@
 export const SITE_NAME = "ファクナビ";
-export const SITE_DESCRIPTION =
-  "【日本最大級】ファクタリング会社254社の口コミ・評判を徹底比較！手数料・スピード・口コミで選ぶおすすめランキング。あなたに最適な業者が見つかる無料診断ツールも。";
+export const SITE_DESCRIPTION_TEMPLATE = (count: number) =>
+  `【日本最大級】ファクタリング会社${count}社の口コミ・評判を徹底比較！手数料・スピード・口コミで選ぶおすすめランキング。あなたに最適な業者が見つかる無料診断ツールも。`;
+export const SITE_DESCRIPTION = SITE_DESCRIPTION_TEMPLATE(254);
 export const SITE_URL = "https://facnavi.info";
 
 export const NAV_ITEMS = [
