@@ -18,7 +18,7 @@ export function OrganizationJsonLd() {
         "@context": "https://schema.org",
         "@type": "Organization",
         name: "ファクナビ",
-        url: "https://facnavi.com",
+        url: "https://facnavi.info",
         description:
           "ファクタリング業者の比較・口コミ情報サイト",
       }}

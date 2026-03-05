@@ -3,6 +3,46 @@ import { Company } from "@/types/company";
 // Auto-generated from content/companies/*.json
 const companiesData: Company[] = [
   {
+    "slug": "paytner",
+    "name": "ペイトナー",
+    "description": "最短10分で請求書を現金化。手数料一律10%で明瞭、1万円の少額から利用可能なフリーランス向けサービス。",
+    "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=4AX0WK+EMWN5E+4PF6+644DT",
+    "factoringType": "2社間",
+    "feeRange": {
+      "min": 10,
+      "max": 10
+    },
+    "minAmount": 10000,
+    "maxAmount": 1000000,
+    "speedDays": 1,
+    "onlineComplete": true,
+    "features": [
+      "最短10分入金",
+      "手数料一律10%",
+      "1万円から利用OK",
+      "書類3点のみ",
+      "アプリ対応"
+    ],
+    "pros": [
+      "最短10分の超高速入金",
+      "手数料が一律で分かりやすい",
+      "必要書類が非常に少ない"
+    ],
+    "cons": [
+      "手数料10%固定で割高な場合も",
+      "買取上限が100万円と低い"
+    ],
+    "establishedYear": 2019,
+    "targetIndustries": [
+      "IT・Web",
+      "デザイン",
+      "広告・メディア",
+      "飲食業"
+    ],
+    "overallRating": 4.1,
+    "rankPosition": 1
+  },
+  {
     "slug": "betrading",
     "name": "ビートレーディング",
     "description": "累計取引社数8.5万社超、累積買取額1,745億円の業界最大手。最短2時間で入金。",
@@ -41,7 +81,7 @@ const companiesData: Company[] = [
       "卸売業"
     ],
     "overallRating": 4.6,
-    "rankPosition": 1
+    "rankPosition": 2
   },
   {
     "slug": "olta",
@@ -81,47 +121,6 @@ const companiesData: Company[] = [
       "製造業"
     ],
     "overallRating": 4.7,
-    "rankPosition": 2
-  },
-  {
-    "slug": "labol",
-    "name": "ラボル",
-    "description": "IT・クリエイター業界に特化したファクタリングサービス。業界の商習慣を理解した審査体制で、Web制作やシステム開発など長期プロジェクトの売掛金にも柔軟に対応します。",
-    "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=4AX0WK+F2DWVM+40JM+1BP19T",
-    "factoringType": "2社間",
-    "feeRange": {
-      "min": 3,
-      "max": 10
-    },
-    "minAmount": 10000,
-    "maxAmount": 10000000,
-    "speedDays": 1,
-    "onlineComplete": true,
-    "features": [
-      "IT・クリエイター特化",
-      "最短60分入金",
-      "1万円から利用OK",
-      "24時間申込可能",
-      "オンライン完結"
-    ],
-    "pros": [
-      "IT業界の商習慣を理解した審査",
-      "最短60分のスピード入金",
-      "少額1万円から気軽に利用可能"
-    ],
-    "cons": [
-      "IT・クリエイター以外の業種は審査が厳しい場合あり",
-      "上限金額がやや低め"
-    ],
-    "establishedYear": 2021,
-    "targetIndustries": [
-      "IT・Web",
-      "システム開発",
-      "デザイン",
-      "映像制作",
-      "ゲーム開発"
-    ],
-    "overallRating": 3.9,
     "rankPosition": 3
   },
   {
@@ -166,43 +165,44 @@ const companiesData: Company[] = [
     "rankPosition": 4
   },
   {
-    "slug": "paytner",
-    "name": "ペイトナー",
-    "description": "最短10分で請求書を現金化。手数料一律10%で明瞭、1万円の少額から利用可能なフリーランス向けサービス。",
-    "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=4AX0WK+EMWN5E+4PF6+644DT",
+    "slug": "labol",
+    "name": "ラボル",
+    "description": "IT・クリエイター業界に特化したファクタリングサービス。業界の商習慣を理解した審査体制で、Web制作やシステム開発など長期プロジェクトの売掛金にも柔軟に対応します。",
+    "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=4AX0WK+F2DWVM+40JM+1BP19T",
     "factoringType": "2社間",
     "feeRange": {
-      "min": 10,
+      "min": 3,
       "max": 10
     },
     "minAmount": 10000,
-    "maxAmount": 1000000,
+    "maxAmount": 10000000,
     "speedDays": 1,
     "onlineComplete": true,
     "features": [
-      "最短10分入金",
-      "手数料一律10%",
+      "IT・クリエイター特化",
+      "最短60分入金",
       "1万円から利用OK",
-      "書類3点のみ",
-      "アプリ対応"
+      "24時間申込可能",
+      "オンライン完結"
     ],
     "pros": [
-      "最短10分の超高速入金",
-      "手数料が一律で分かりやすい",
-      "必要書類が非常に少ない"
+      "IT業界の商習慣を理解した審査",
+      "最短60分のスピード入金",
+      "少額1万円から気軽に利用可能"
     ],
     "cons": [
-      "手数料10%固定で割高な場合も",
-      "買取上限が100万円と低い"
+      "IT・クリエイター以外の業種は審査が厳しい場合あり",
+      "上限金額がやや低め"
     ],
-    "establishedYear": 2019,
+    "establishedYear": 2021,
     "targetIndustries": [
       "IT・Web",
+      "システム開発",
       "デザイン",
-      "広告・メディア",
-      "飲食業"
+      "映像制作",
+      "ゲーム開発"
     ],
-    "overallRating": 4.1,
+    "overallRating": 3.9,
     "rankPosition": 5
   },
   {

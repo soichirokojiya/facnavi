@@ -11,11 +11,11 @@ export const metadata: Metadata = {
 };
 
 const companyInfo = [
-  ["運営者", "ファクナビ運営事務局"],
-  ["所在地", "東京都渋谷区○○ 1-2-3"],
-  ["設立", "2024年"],
+  ["運営者", "Common Future & Co.株式会社"],
+  ["所在地", "神奈川県逗子市小坪6-6-46"],
+  ["設立", "2015年"],
   ["事業内容", "ファクタリング関連の情報メディア運営"],
-  ["メール", "info@facnavi.com"],
+  ["メール", "info@cfac.co.jp"],
 ];
 
 export default function AboutPage() {
