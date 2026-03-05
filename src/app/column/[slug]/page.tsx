@@ -8,6 +8,7 @@ import { TableOfContents } from "@/components/articles/TableOfContents";
 import { Card } from "@/components/ui/Card";
 import { Badge } from "@/components/ui/Badge";
 import { StarRating } from "@/components/ui/StarRating";
+import { ArticleEyecatch } from "@/components/articles/ArticleEyecatch";
 import { BreadcrumbJsonLd, ArticleJsonLd } from "@/components/seo/JsonLd";
 import { SITE_URL } from "@/lib/constants";
 import { formatFeeRange } from "@/lib/companies";
@@ -130,7 +131,8 @@ export default async function ArticleDetailPage({ params }: Props) {
 
       <article>
         <div className="mb-8">
-          <div className="flex items-center gap-2 mb-3">
+          <ArticleEyecatch category={article.category} title={article.title} size="lg" />
+          <div className="flex items-center gap-2 mt-5 mb-3">
             <Badge>{article.category}</Badge>
             <time className="text-sm text-gray-500">{article.publishedAt}</time>
           </div>
