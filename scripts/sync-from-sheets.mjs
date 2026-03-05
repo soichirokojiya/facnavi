@@ -39,7 +39,7 @@ const companiesDir = path.join(__dirname, "..", "content", "companies");
 // ============================================================
 // ↓↓↓ ここにGoogle SheetsのCSV公開URLを設定 ↓↓↓
 // ============================================================
-const SHEET_CSV_URL = process.env.SHEET_CSV_URL || "";
+const SHEET_CSV_URL = process.env.SHEET_CSV_URL || "https://docs.google.com/spreadsheets/d/e/2PACX-1vSwZj5xFxmG8gI2MLnyjP5-OOb1s4Eehqxdc1oAF3eNMqrSY1U521EUMBE0zbTcwVEgBEJ5homQMLjg/pub?output=csv";
 
 if (!SHEET_CSV_URL) {
   console.log(`
@@ -119,6 +119,8 @@ async function main() {
       maxAmount: parseInt(obj.maxAmount) || 50000000,
       speedDays: parseInt(obj.speedDays) || 1,
       onlineComplete: obj.onlineComplete?.toUpperCase() !== "FALSE",
+      soleProprietorOk: obj.soleProprietorOk?.toUpperCase() === "TRUE",
+      weekendPayment: obj.weekendPayment?.toUpperCase() === "TRUE",
       features: splitCSVField(obj.features) || ["即日入金可能", "オンライン対応", "個人事業主OK", "全国対応", "柔軟な審査"],
       pros: splitCSVField(obj.pros) || ["対応が迅速", "審査が柔軟", "全国対応"],
       cons: splitCSVField(obj.cons) || ["知名度がやや低い", "手数料は個別査定"],

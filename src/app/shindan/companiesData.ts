@@ -42,7 +42,7 @@ const companiesData: Company[] = [
     "overallRating": 4.8,
     "rankPosition": 1,
     "soleProprietorOk": true,
-    "weekendPayment": false
+    "weekendPayment": true
   },
   {
     "slug": "betrading",
