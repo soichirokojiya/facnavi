@@ -39,7 +39,7 @@ const companiesData: Company[] = [
       "広告・メディア",
       "飲食業"
     ],
-    "overallRating": 4.1,
+    "overallRating": 4.8,
     "rankPosition": 1,
     "soleProprietorOk": true,
     "weekendPayment": false
@@ -82,8 +82,8 @@ const companiesData: Company[] = [
       "医療・介護",
       "卸売業"
     ],
-    "overallRating": 4.6,
-    "rankPosition": 2,
+    "overallRating": 4.7,
+    "rankPosition": 6,
     "soleProprietorOk": true,
     "weekendPayment": false
   },
@@ -167,7 +167,7 @@ const companiesData: Company[] = [
       "小売業",
       "サービス業"
     ],
-    "overallRating": 4.3,
+    "overallRating": 4.7,
     "rankPosition": 4,
     "soleProprietorOk": true,
     "weekendPayment": false
@@ -210,8 +210,8 @@ const companiesData: Company[] = [
       "映像制作",
       "ゲーム開発"
     ],
-    "overallRating": 3.9,
-    "rankPosition": 5,
+    "overallRating": 4.8,
+    "rankPosition": 2,
     "soleProprietorOk": true,
     "weekendPayment": true
   },
@@ -253,8 +253,8 @@ const companiesData: Company[] = [
       "ライター",
       "デザイナー"
     ],
-    "overallRating": 4.3,
-    "rankPosition": 6,
+    "overallRating": 4.6,
+    "rankPosition": 5,
     "soleProprietorOk": true,
     "weekendPayment": false
   },
@@ -295,7 +295,7 @@ const companiesData: Company[] = [
       "医療・介護",
       "製造業"
     ],
-    "overallRating": 4,
+    "overallRating": 4.6,
     "rankPosition": 7,
     "soleProprietorOk": true,
     "weekendPayment": false
@@ -338,8 +338,8 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 4.1,
-    "rankPosition": 8,
+    "overallRating": 4.4,
+    "rankPosition": 10,
     "soleProprietorOk": true,
     "weekendPayment": true
   },
@@ -381,8 +381,8 @@ const companiesData: Company[] = [
       "製造業",
       "卸売業"
     ],
-    "overallRating": 4.2,
-    "rankPosition": 9,
+    "overallRating": 4.5,
+    "rankPosition": 8,
     "soleProprietorOk": true,
     "weekendPayment": false
   },
@@ -425,7 +425,7 @@ const companiesData: Company[] = [
       "医療・介護"
     ],
     "overallRating": 4.5,
-    "rankPosition": 10,
+    "rankPosition": 9,
     "soleProprietorOk": true,
     "weekendPayment": false
   },
@@ -467,7 +467,7 @@ const companiesData: Company[] = [
       "小売業",
       "飲食業"
     ],
-    "overallRating": 4.2,
+    "overallRating": 4.3,
     "rankPosition": 11,
     "soleProprietorOk": true,
     "weekendPayment": false
@@ -511,7 +511,7 @@ const companiesData: Company[] = [
       "人材派遣"
     ],
     "overallRating": 4.2,
-    "rankPosition": 12,
+    "rankPosition": 14,
     "soleProprietorOk": true,
     "weekendPayment": false
   },
@@ -553,8 +553,8 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 4,
-    "rankPosition": 13,
+    "overallRating": 4.3,
+    "rankPosition": 12,
     "soleProprietorOk": false,
     "weekendPayment": false
   },
@@ -596,8 +596,8 @@ const companiesData: Company[] = [
       "飲食業",
       "サービス業"
     ],
-    "overallRating": 4,
-    "rankPosition": 14,
+    "overallRating": 4.2,
+    "rankPosition": 16,
     "soleProprietorOk": true,
     "weekendPayment": false
   },
@@ -639,8 +639,8 @@ const companiesData: Company[] = [
       "卸売業",
       "人材派遣"
     ],
-    "overallRating": 4,
-    "rankPosition": 15,
+    "overallRating": 4.3,
+    "rankPosition": 13,
     "soleProprietorOk": false,
     "weekendPayment": false
   },
@@ -682,8 +682,8 @@ const companiesData: Company[] = [
       "不動産業",
       "卸売業"
     ],
-    "overallRating": 3.9,
-    "rankPosition": 16,
+    "overallRating": 4.0,
+    "rankPosition": 62,
     "soleProprietorOk": false,
     "weekendPayment": false
   },
@@ -725,7 +725,7 @@ const companiesData: Company[] = [
       "製造業",
       "小売業"
     ],
-    "overallRating": 3.9,
+    "overallRating": 4.2,
     "rankPosition": 17,
     "soleProprietorOk": true,
     "weekendPayment": false
@@ -768,8 +768,8 @@ const companiesData: Company[] = [
       "医療・介護",
       "小売業"
     ],
-    "overallRating": 3.9,
-    "rankPosition": 18,
+    "overallRating": 4.2,
+    "rankPosition": 15,
     "soleProprietorOk": true,
     "weekendPayment": true
   },
@@ -811,8 +811,8 @@ const companiesData: Company[] = [
       "運送業",
       "製造業"
     ],
-    "overallRating": 3.8,
-    "rankPosition": 19,
+    "overallRating": 4.0,
+    "rankPosition": 64,
     "soleProprietorOk": true,
     "weekendPayment": false
   },
@@ -854,8 +854,8 @@ const companiesData: Company[] = [
       "医療・介護",
       "飲食業"
     ],
-    "overallRating": 3.8,
-    "rankPosition": 20,
+    "overallRating": 4.0,
+    "rankPosition": 65,
     "soleProprietorOk": false,
     "weekendPayment": true
   },
@@ -897,8 +897,8 @@ const companiesData: Company[] = [
       "歯科",
       "土木業"
     ],
-    "overallRating": 3.8,
-    "rankPosition": 21,
+    "overallRating": 4.0,
+    "rankPosition": 60,
     "soleProprietorOk": false,
     "weekendPayment": false
   },
@@ -940,8 +940,8 @@ const companiesData: Company[] = [
       "製造業",
       "サービス業"
     ],
-    "overallRating": 3.8,
-    "rankPosition": 22,
+    "overallRating": 4.0,
+    "rankPosition": 67,
     "soleProprietorOk": true,
     "weekendPayment": false
   },
@@ -983,8 +983,8 @@ const companiesData: Company[] = [
       "小売業",
       "サービス業"
     ],
-    "overallRating": 3.8,
-    "rankPosition": 23,
+    "overallRating": 4.0,
+    "rankPosition": 81,
     "soleProprietorOk": true,
     "weekendPayment": false
   },
@@ -1026,8 +1026,8 @@ const companiesData: Company[] = [
       "小売業",
       "サービス業"
     ],
-    "overallRating": 3.7,
-    "rankPosition": 24,
+    "overallRating": 4.0,
+    "rankPosition": 63,
     "soleProprietorOk": true,
     "weekendPayment": false
   },
@@ -1069,8 +1069,8 @@ const companiesData: Company[] = [
       "小売業",
       "サービス業"
     ],
-    "overallRating": 3.7,
-    "rankPosition": 25,
+    "overallRating": 4.0,
+    "rankPosition": 77,
     "soleProprietorOk": true,
     "weekendPayment": false
   },
@@ -1111,8 +1111,8 @@ const companiesData: Company[] = [
       "サービス業",
       "IT・Web"
     ],
-    "overallRating": 3.7,
-    "rankPosition": 26,
+    "overallRating": 4.2,
+    "rankPosition": 18,
     "soleProprietorOk": false,
     "weekendPayment": false
   },
@@ -1153,8 +1153,8 @@ const companiesData: Company[] = [
       "運送業",
       "卸売業"
     ],
-    "overallRating": 3.6,
-    "rankPosition": 27,
+    "overallRating": 4.0,
+    "rankPosition": 79,
     "soleProprietorOk": true,
     "weekendPayment": false
   },
@@ -1196,8 +1196,8 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 3.4,
-    "rankPosition": 28,
+    "overallRating": 4.0,
+    "rankPosition": 75,
     "soleProprietorOk": true,
     "weekendPayment": true
   },
@@ -1239,8 +1239,8 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 3.3,
-    "rankPosition": 29,
+    "overallRating": 4.0,
+    "rankPosition": 61,
     "soleProprietorOk": true,
     "weekendPayment": false
   },
@@ -1282,8 +1282,8 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 3.3,
-    "rankPosition": 30,
+    "overallRating": 4.0,
+    "rankPosition": 74,
     "soleProprietorOk": true,
     "weekendPayment": false
   },
@@ -1325,8 +1325,8 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 3.3,
-    "rankPosition": 31,
+    "overallRating": 3.7,
+    "rankPosition": 105,
     "soleProprietorOk": true,
     "weekendPayment": false
   },
@@ -1368,8 +1368,8 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 3.3,
-    "rankPosition": 32,
+    "overallRating": 4.0,
+    "rankPosition": 82,
     "soleProprietorOk": true,
     "weekendPayment": false
   },
@@ -1411,8 +1411,8 @@ const companiesData: Company[] = [
       "医療・介護",
       "人材派遣業"
     ],
-    "overallRating": 4.6,
-    "rankPosition": 33,
+    "overallRating": 4.0,
+    "rankPosition": 76,
     "soleProprietorOk": false,
     "weekendPayment": false
   },
@@ -1454,8 +1454,8 @@ const companiesData: Company[] = [
       "小売業",
       "サービス業"
     ],
-    "overallRating": 4.4,
-    "rankPosition": 34,
+    "overallRating": 3.7,
+    "rankPosition": 94,
     "soleProprietorOk": false,
     "weekendPayment": false
   },
@@ -1497,8 +1497,8 @@ const companiesData: Company[] = [
       "医療・介護",
       "小売業"
     ],
-    "overallRating": 4.4,
-    "rankPosition": 35,
+    "overallRating": 3.7,
+    "rankPosition": 100,
     "soleProprietorOk": false,
     "weekendPayment": false
   },
@@ -1540,8 +1540,8 @@ const companiesData: Company[] = [
       "小売業",
       "サービス業"
     ],
-    "overallRating": 4.3,
-    "rankPosition": 36,
+    "overallRating": 3.9,
+    "rankPosition": 68,
     "soleProprietorOk": false,
     "weekendPayment": false
   },
@@ -1582,8 +1582,8 @@ const companiesData: Company[] = [
       "商社",
       "大企業"
     ],
-    "overallRating": 4.3,
-    "rankPosition": 37,
+    "overallRating": 3.8,
+    "rankPosition": 87,
     "soleProprietorOk": false,
     "weekendPayment": false
   },
@@ -1624,8 +1624,8 @@ const companiesData: Company[] = [
       "商社",
       "大企業"
     ],
-    "overallRating": 4.3,
-    "rankPosition": 38,
+    "overallRating": 4.0,
+    "rankPosition": 66,
     "soleProprietorOk": false,
     "weekendPayment": false
   },
@@ -1666,8 +1666,8 @@ const companiesData: Company[] = [
       "飲食業",
       "広告・メディア"
     ],
-    "overallRating": 4.3,
-    "rankPosition": 39,
+    "overallRating": 3.9,
+    "rankPosition": 69,
     "soleProprietorOk": false,
     "weekendPayment": false
   },
@@ -1709,8 +1709,8 @@ const companiesData: Company[] = [
       "サービス業",
       "広告業"
     ],
-    "overallRating": 4.2,
-    "rankPosition": 40,
+    "overallRating": 3.9,
+    "rankPosition": 71,
     "soleProprietorOk": false,
     "weekendPayment": false
   },
@@ -1752,8 +1752,8 @@ const companiesData: Company[] = [
       "建設業",
       "運送業"
     ],
-    "overallRating": 4.2,
-    "rankPosition": 41,
+    "overallRating": 3.9,
+    "rankPosition": 83,
     "soleProprietorOk": false,
     "weekendPayment": false
   },
@@ -1795,8 +1795,8 @@ const companiesData: Company[] = [
       "卸売業",
       "広告業"
     ],
-    "overallRating": 4.2,
-    "rankPosition": 42,
+    "overallRating": 3.9,
+    "rankPosition": 72,
     "soleProprietorOk": false,
     "weekendPayment": false
   },
@@ -1838,8 +1838,8 @@ const companiesData: Company[] = [
       "医療・介護",
       "小売業"
     ],
-    "overallRating": 4.1,
-    "rankPosition": 43,
+    "overallRating": 3.9,
+    "rankPosition": 70,
     "soleProprietorOk": false,
     "weekendPayment": false
   },
@@ -1881,8 +1881,8 @@ const companiesData: Company[] = [
       "不動産業",
       "人材派遣業"
     ],
-    "overallRating": 4.1,
-    "rankPosition": 44,
+    "overallRating": 3.9,
+    "rankPosition": 84,
     "soleProprietorOk": false,
     "weekendPayment": false
   },
@@ -1924,8 +1924,8 @@ const companiesData: Company[] = [
       "医療・介護",
       "人材派遣"
     ],
-    "overallRating": 4.1,
-    "rankPosition": 45,
+    "overallRating": 3.9,
+    "rankPosition": 85,
     "soleProprietorOk": false,
     "weekendPayment": false
   },
@@ -1966,8 +1966,8 @@ const companiesData: Company[] = [
       "製造業",
       "小売業"
     ],
-    "overallRating": 4.1,
-    "rankPosition": 46,
+    "overallRating": 3.8,
+    "rankPosition": 90,
     "soleProprietorOk": true,
     "weekendPayment": false
   },
@@ -2009,8 +2009,8 @@ const companiesData: Company[] = [
       "サービス業",
       "建設業"
     ],
-    "overallRating": 4.1,
-    "rankPosition": 47,
+    "overallRating": 4.0,
+    "rankPosition": 80,
     "soleProprietorOk": false,
     "weekendPayment": false
   },
@@ -2052,8 +2052,8 @@ const companiesData: Company[] = [
       "病院",
       "介護施設"
     ],
-    "overallRating": 4,
-    "rankPosition": 48,
+    "overallRating": 4.0,
+    "rankPosition": 73,
     "soleProprietorOk": false,
     "weekendPayment": false
   },
@@ -2095,8 +2095,8 @@ const companiesData: Company[] = [
       "IT・Web",
       "医療・介護"
     ],
-    "overallRating": 4,
-    "rankPosition": 49,
+    "overallRating": 4.0,
+    "rankPosition": 78,
     "soleProprietorOk": false,
     "weekendPayment": false
   },
@@ -2138,8 +2138,8 @@ const companiesData: Company[] = [
       "IT・Web",
       "医療・介護"
     ],
-    "overallRating": 4,
-    "rankPosition": 50,
+    "overallRating": 3.7,
+    "rankPosition": 101,
     "soleProprietorOk": false,
     "weekendPayment": false
   },
@@ -2181,8 +2181,8 @@ const companiesData: Company[] = [
       "卸売業",
       "医療・介護"
     ],
-    "overallRating": 4,
-    "rankPosition": 51,
+    "overallRating": 3.8,
+    "rankPosition": 86,
     "soleProprietorOk": false,
     "weekendPayment": false
   },
@@ -2224,8 +2224,8 @@ const companiesData: Company[] = [
       "飲食業",
       "卸売業"
     ],
-    "overallRating": 4,
-    "rankPosition": 52,
+    "overallRating": 3.3,
+    "rankPosition": 199,
     "soleProprietorOk": false,
     "weekendPayment": false
   },
@@ -2267,8 +2267,8 @@ const companiesData: Company[] = [
       "サービス業",
       "飲食業"
     ],
-    "overallRating": 4,
-    "rankPosition": 53,
+    "overallRating": 3.3,
+    "rankPosition": 230,
     "soleProprietorOk": true,
     "weekendPayment": false
   },
@@ -2310,8 +2310,8 @@ const companiesData: Company[] = [
       "士業",
       "飲食業"
     ],
-    "overallRating": 4,
-    "rankPosition": 54,
+    "overallRating": 3.6,
+    "rankPosition": 111,
     "soleProprietorOk": true,
     "weekendPayment": false
   },
@@ -2353,8 +2353,8 @@ const companiesData: Company[] = [
       "製造業",
       "広告業"
     ],
-    "overallRating": 3.9,
-    "rankPosition": 55,
+    "overallRating": 3.3,
+    "rankPosition": 185,
     "soleProprietorOk": false,
     "weekendPayment": false
   },
@@ -2396,8 +2396,8 @@ const companiesData: Company[] = [
       "小売業",
       "製造業"
     ],
-    "overallRating": 3.9,
-    "rankPosition": 56,
+    "overallRating": 3.3,
+    "rankPosition": 191,
     "soleProprietorOk": false,
     "weekendPayment": false
   },
@@ -2436,8 +2436,8 @@ const companiesData: Company[] = [
       "建設業",
       "土木業"
     ],
-    "overallRating": 3.9,
-    "rankPosition": 57,
+    "overallRating": 3.3,
+    "rankPosition": 197,
     "soleProprietorOk": true,
     "weekendPayment": false
   },
@@ -2479,8 +2479,8 @@ const companiesData: Company[] = [
       "IT・Web",
       "医療・介護"
     ],
-    "overallRating": 3.9,
-    "rankPosition": 58,
+    "overallRating": 3.7,
+    "rankPosition": 104,
     "soleProprietorOk": false,
     "weekendPayment": false
   },
@@ -2521,8 +2521,8 @@ const companiesData: Company[] = [
       "運送業",
       "広告・メディア"
     ],
-    "overallRating": 3.9,
-    "rankPosition": 59,
+    "overallRating": 3.3,
+    "rankPosition": 216,
     "soleProprietorOk": false,
     "weekendPayment": false
   },
@@ -2564,8 +2564,8 @@ const companiesData: Company[] = [
       "小売業",
       "飲食業"
     ],
-    "overallRating": 3.9,
-    "rankPosition": 60,
+    "overallRating": 3.7,
+    "rankPosition": 108,
     "soleProprietorOk": true,
     "weekendPayment": false
   },
@@ -2607,8 +2607,8 @@ const companiesData: Company[] = [
       "小売業",
       "飲食業"
     ],
-    "overallRating": 3.9,
-    "rankPosition": 61,
+    "overallRating": 3.3,
+    "rankPosition": 254,
     "soleProprietorOk": true,
     "weekendPayment": false
   },
@@ -2650,8 +2650,8 @@ const companiesData: Company[] = [
       "小売業",
       "飲食業"
     ],
-    "overallRating": 3.8,
-    "rankPosition": 62,
+    "overallRating": 3.7,
+    "rankPosition": 96,
     "soleProprietorOk": false,
     "weekendPayment": false
   },
@@ -2693,8 +2693,8 @@ const companiesData: Company[] = [
       "運送業",
       "広告業"
     ],
-    "overallRating": 3.8,
-    "rankPosition": 63,
+    "overallRating": 3.3,
+    "rankPosition": 159,
     "soleProprietorOk": false,
     "weekendPayment": false
   },
@@ -2737,8 +2737,8 @@ const companiesData: Company[] = [
       "卸売業",
       "運送業"
     ],
-    "overallRating": 3.8,
-    "rankPosition": 64,
+    "overallRating": 3.7,
+    "rankPosition": 99,
     "soleProprietorOk": false,
     "weekendPayment": false
   },
@@ -2780,8 +2780,8 @@ const companiesData: Company[] = [
       "小売業",
       "製造業"
     ],
-    "overallRating": 3.8,
-    "rankPosition": 65,
+    "overallRating": 3.3,
+    "rankPosition": 193,
     "soleProprietorOk": true,
     "weekendPayment": false
   },
@@ -2823,8 +2823,8 @@ const companiesData: Company[] = [
       "映像制作",
       "飲食業"
     ],
-    "overallRating": 3.8,
-    "rankPosition": 66,
+    "overallRating": 3.3,
+    "rankPosition": 212,
     "soleProprietorOk": false,
     "weekendPayment": false
   },
@@ -2868,7 +2868,7 @@ const companiesData: Company[] = [
       "運送業"
     ],
     "overallRating": 3.8,
-    "rankPosition": 67,
+    "rankPosition": 88,
     "soleProprietorOk": false,
     "weekendPayment": false
   },
@@ -2909,8 +2909,8 @@ const companiesData: Company[] = [
       "製造業",
       "小売業"
     ],
-    "overallRating": 3.8,
-    "rankPosition": 68,
+    "overallRating": 3.7,
+    "rankPosition": 107,
     "soleProprietorOk": false,
     "weekendPayment": false
   },
@@ -2951,8 +2951,8 @@ const companiesData: Company[] = [
       "小売業",
       "サービス業"
     ],
-    "overallRating": 3.8,
-    "rankPosition": 69,
+    "overallRating": 3.3,
+    "rankPosition": 247,
     "soleProprietorOk": false,
     "weekendPayment": false
   },
@@ -2994,8 +2994,8 @@ const companiesData: Company[] = [
       "建設業",
       "飲食業"
     ],
-    "overallRating": 3.7,
-    "rankPosition": 70,
+    "overallRating": 3.3,
+    "rankPosition": 161,
     "soleProprietorOk": false,
     "weekendPayment": false
   },
@@ -3037,8 +3037,8 @@ const companiesData: Company[] = [
       "飲食業",
       "小売業"
     ],
-    "overallRating": 3.7,
-    "rankPosition": 71,
+    "overallRating": 3.3,
+    "rankPosition": 188,
     "soleProprietorOk": true,
     "weekendPayment": false
   },
@@ -3079,8 +3079,8 @@ const companiesData: Company[] = [
       "広告・メディア",
       "飲食業"
     ],
-    "overallRating": 3.7,
-    "rankPosition": 72,
+    "overallRating": 3.3,
+    "rankPosition": 204,
     "soleProprietorOk": true,
     "weekendPayment": false
   },
@@ -3123,8 +3123,8 @@ const companiesData: Company[] = [
       "サービス業",
       "建設業"
     ],
-    "overallRating": 3.7,
-    "rankPosition": 73,
+    "overallRating": 3.3,
+    "rankPosition": 210,
     "soleProprietorOk": false,
     "weekendPayment": false
   },
@@ -3166,8 +3166,8 @@ const companiesData: Company[] = [
       "小売業",
       "飲食業"
     ],
-    "overallRating": 3.7,
-    "rankPosition": 74,
+    "overallRating": 3.8,
+    "rankPosition": 89,
     "soleProprietorOk": true,
     "weekendPayment": false
   },
@@ -3208,8 +3208,8 @@ const companiesData: Company[] = [
       "製造業",
       "小売業"
     ],
-    "overallRating": 3.7,
-    "rankPosition": 75,
+    "overallRating": 3.3,
+    "rankPosition": 229,
     "soleProprietorOk": true,
     "weekendPayment": false
   },
@@ -3252,7 +3252,7 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.7,
-    "rankPosition": 76,
+    "rankPosition": 93,
     "soleProprietorOk": false,
     "weekendPayment": false
   },
@@ -3294,8 +3294,8 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 3.7,
-    "rankPosition": 77,
+    "overallRating": 4.3,
+    "rankPosition": 49,
     "soleProprietorOk": false,
     "weekendPayment": false
   },
@@ -3338,7 +3338,7 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.7,
-    "rankPosition": 78,
+    "rankPosition": 109,
     "soleProprietorOk": false,
     "weekendPayment": false
   },
@@ -3380,8 +3380,8 @@ const companiesData: Company[] = [
       "製造業",
       "サービス業"
     ],
-    "overallRating": 3.7,
-    "rankPosition": 79,
+    "overallRating": 3.3,
+    "rankPosition": 248,
     "soleProprietorOk": false,
     "weekendPayment": false
   },
@@ -3423,8 +3423,8 @@ const companiesData: Company[] = [
       "運送業",
       "卸売業"
     ],
-    "overallRating": 3.6,
-    "rankPosition": 80,
+    "overallRating": 3.3,
+    "rankPosition": 177,
     "soleProprietorOk": false,
     "weekendPayment": false
   },
@@ -3466,8 +3466,8 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 3.6,
-    "rankPosition": 81,
+    "overallRating": 3.3,
+    "rankPosition": 194,
     "soleProprietorOk": false,
     "weekendPayment": false
   },
@@ -3505,8 +3505,8 @@ const companiesData: Company[] = [
     "targetIndustries": [
       "医療・介護"
     ],
-    "overallRating": 3.6,
-    "rankPosition": 82,
+    "overallRating": 3.7,
+    "rankPosition": 102,
     "soleProprietorOk": false,
     "weekendPayment": false
   },
@@ -3548,8 +3548,8 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 3.6,
-    "rankPosition": 83,
+    "overallRating": 3.7,
+    "rankPosition": 103,
     "soleProprietorOk": false,
     "weekendPayment": false
   },
@@ -3591,8 +3591,8 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 3.6,
-    "rankPosition": 84,
+    "overallRating": 4.3,
+    "rankPosition": 39,
     "soleProprietorOk": false,
     "weekendPayment": false
   },
@@ -3634,8 +3634,8 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 3.6,
-    "rankPosition": 85,
+    "overallRating": 3.3,
+    "rankPosition": 214,
     "soleProprietorOk": true,
     "weekendPayment": false
   },
@@ -3676,8 +3676,8 @@ const companiesData: Company[] = [
       "小売業",
       "サービス業"
     ],
-    "overallRating": 3.6,
-    "rankPosition": 86,
+    "overallRating": 3.3,
+    "rankPosition": 223,
     "soleProprietorOk": true,
     "weekendPayment": false
   },
@@ -3719,8 +3719,8 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 3.6,
-    "rankPosition": 87,
+    "overallRating": 3.7,
+    "rankPosition": 92,
     "soleProprietorOk": false,
     "weekendPayment": false
   },
@@ -3758,8 +3758,8 @@ const companiesData: Company[] = [
     "targetIndustries": [
       "医療・介護"
     ],
-    "overallRating": 3.6,
-    "rankPosition": 88,
+    "overallRating": 3.3,
+    "rankPosition": 224,
     "soleProprietorOk": false,
     "weekendPayment": false
   },
@@ -3801,8 +3801,8 @@ const companiesData: Company[] = [
       "卸売業",
       "運送業"
     ],
-    "overallRating": 3.6,
-    "rankPosition": 89,
+    "overallRating": 3.7,
+    "rankPosition": 106,
     "soleProprietorOk": false,
     "weekendPayment": false
   },
@@ -3844,8 +3844,8 @@ const companiesData: Company[] = [
       "卸売業",
       "不動産業"
     ],
-    "overallRating": 3.6,
-    "rankPosition": 90,
+    "overallRating": 3.7,
+    "rankPosition": 110,
     "soleProprietorOk": false,
     "weekendPayment": false
   },
@@ -3887,8 +3887,8 @@ const companiesData: Company[] = [
       "IT・Web",
       "建設業"
     ],
-    "overallRating": 3.6,
-    "rankPosition": 91,
+    "overallRating": 3.3,
+    "rankPosition": 250,
     "soleProprietorOk": true,
     "weekendPayment": false
   },
@@ -3930,8 +3930,8 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 3.5,
-    "rankPosition": 92,
+    "overallRating": 3.7,
+    "rankPosition": 95,
     "soleProprietorOk": true,
     "weekendPayment": false
   },
@@ -3973,8 +3973,8 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 3.5,
-    "rankPosition": 93,
+    "overallRating": 3.3,
+    "rankPosition": 160,
     "soleProprietorOk": true,
     "weekendPayment": false
   },
@@ -4016,8 +4016,8 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 3.5,
-    "rankPosition": 94,
+    "overallRating": 3.7,
+    "rankPosition": 91,
     "soleProprietorOk": false,
     "weekendPayment": false
   },
@@ -4059,8 +4059,8 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 3.5,
-    "rankPosition": 95,
+    "overallRating": 4.3,
+    "rankPosition": 21,
     "soleProprietorOk": true,
     "weekendPayment": false
   },
@@ -4102,8 +4102,8 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 3.5,
-    "rankPosition": 96,
+    "overallRating": 3.3,
+    "rankPosition": 166,
     "soleProprietorOk": true,
     "weekendPayment": false
   },
@@ -4145,8 +4145,8 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 3.5,
-    "rankPosition": 97,
+    "overallRating": 3.3,
+    "rankPosition": 167,
     "soleProprietorOk": false,
     "weekendPayment": false
   },
@@ -4188,8 +4188,8 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 3.5,
-    "rankPosition": 98,
+    "overallRating": 3.7,
+    "rankPosition": 97,
     "soleProprietorOk": false,
     "weekendPayment": false
   },
@@ -4231,8 +4231,8 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 3.5,
-    "rankPosition": 99,
+    "overallRating": 3.3,
+    "rankPosition": 174,
     "soleProprietorOk": true,
     "weekendPayment": false
   },
@@ -4274,8 +4274,8 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 3.5,
-    "rankPosition": 100,
+    "overallRating": 3.7,
+    "rankPosition": 98,
     "soleProprietorOk": true,
     "weekendPayment": false
   },
@@ -4317,8 +4317,8 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 3.5,
-    "rankPosition": 101,
+    "overallRating": 3.3,
+    "rankPosition": 179,
     "soleProprietorOk": true,
     "weekendPayment": false
   },
@@ -4356,8 +4356,8 @@ const companiesData: Company[] = [
     "targetIndustries": [
       "医療・介護"
     ],
-    "overallRating": 3.5,
-    "rankPosition": 102,
+    "overallRating": 3.3,
+    "rankPosition": 187,
     "soleProprietorOk": false,
     "weekendPayment": false
   },
@@ -4400,7 +4400,7 @@ const companiesData: Company[] = [
       "小売業"
     ],
     "overallRating": 3.5,
-    "rankPosition": 103,
+    "rankPosition": 123,
     "soleProprietorOk": false,
     "weekendPayment": false
   },
@@ -4442,8 +4442,8 @@ const companiesData: Company[] = [
       "小売業",
       "サービス業"
     ],
-    "overallRating": 3.5,
-    "rankPosition": 104,
+    "overallRating": 3.3,
+    "rankPosition": 189,
     "soleProprietorOk": false,
     "weekendPayment": false
   },
@@ -4485,8 +4485,8 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 3.5,
-    "rankPosition": 105,
+    "overallRating": 3.3,
+    "rankPosition": 192,
     "soleProprietorOk": true,
     "weekendPayment": false
   },
@@ -4524,8 +4524,8 @@ const companiesData: Company[] = [
     "targetIndustries": [
       "建設業"
     ],
-    "overallRating": 3.5,
-    "rankPosition": 106,
+    "overallRating": 3.3,
+    "rankPosition": 195,
     "soleProprietorOk": true,
     "weekendPayment": false
   },
@@ -4568,7 +4568,7 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.5,
-    "rankPosition": 107,
+    "rankPosition": 128,
     "soleProprietorOk": true,
     "weekendPayment": false
   },
@@ -4607,7 +4607,7 @@ const companiesData: Company[] = [
       "医療・介護"
     ],
     "overallRating": 3.5,
-    "rankPosition": 108,
+    "rankPosition": 132,
     "soleProprietorOk": false,
     "weekendPayment": false
   },
@@ -4649,8 +4649,8 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 3.5,
-    "rankPosition": 109,
+    "overallRating": 3.3,
+    "rankPosition": 205,
     "soleProprietorOk": false,
     "weekendPayment": false
   },
@@ -4693,7 +4693,7 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.5,
-    "rankPosition": 110,
+    "rankPosition": 135,
     "soleProprietorOk": false,
     "weekendPayment": false
   },
@@ -4736,7 +4736,7 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.5,
-    "rankPosition": 111,
+    "rankPosition": 136,
     "soleProprietorOk": true,
     "weekendPayment": false
   },
@@ -4779,7 +4779,7 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.5,
-    "rankPosition": 112,
+    "rankPosition": 139,
     "soleProprietorOk": false,
     "weekendPayment": false
   },
@@ -4821,8 +4821,8 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 3.5,
-    "rankPosition": 113,
+    "overallRating": 3.3,
+    "rankPosition": 219,
     "soleProprietorOk": false,
     "weekendPayment": false
   },
@@ -4863,8 +4863,8 @@ const companiesData: Company[] = [
       "建設業",
       "卸売業"
     ],
-    "overallRating": 3.5,
-    "rankPosition": 114,
+    "overallRating": 3.3,
+    "rankPosition": 220,
     "soleProprietorOk": false,
     "weekendPayment": false
   },
@@ -4904,8 +4904,8 @@ const companiesData: Company[] = [
       "物流",
       "製造業"
     ],
-    "overallRating": 3.5,
-    "rankPosition": 115,
+    "overallRating": 3.3,
+    "rankPosition": 227,
     "soleProprietorOk": false,
     "weekendPayment": false
   },
@@ -4947,8 +4947,8 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 3.5,
-    "rankPosition": 116,
+    "overallRating": 4.3,
+    "rankPosition": 48,
     "soleProprietorOk": true,
     "weekendPayment": false
   },
@@ -4990,8 +4990,8 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 3.5,
-    "rankPosition": 117,
+    "overallRating": 4.3,
+    "rankPosition": 51,
     "soleProprietorOk": true,
     "weekendPayment": false
   },
@@ -5033,8 +5033,8 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 3.5,
-    "rankPosition": 118,
+    "overallRating": 3.3,
+    "rankPosition": 242,
     "soleProprietorOk": true,
     "weekendPayment": false
   },
@@ -5076,8 +5076,8 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 3.5,
-    "rankPosition": 119,
+    "overallRating": 3.3,
+    "rankPosition": 246,
     "soleProprietorOk": true,
     "weekendPayment": false
   },
@@ -5119,8 +5119,8 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 3.5,
-    "rankPosition": 120,
+    "overallRating": 4.3,
+    "rankPosition": 55,
     "soleProprietorOk": false,
     "weekendPayment": false
   },
@@ -5163,7 +5163,7 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.5,
-    "rankPosition": 121,
+    "rankPosition": 150,
     "soleProprietorOk": false,
     "weekendPayment": false
   },
@@ -5205,8 +5205,8 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 3.5,
-    "rankPosition": 122,
+    "overallRating": 3.3,
+    "rankPosition": 252,
     "soleProprietorOk": false,
     "weekendPayment": false
   },
@@ -5249,7 +5249,7 @@ const companiesData: Company[] = [
       "飲食業"
     ],
     "overallRating": 3.5,
-    "rankPosition": 123,
+    "rankPosition": 152,
     "soleProprietorOk": true,
     "weekendPayment": false
   },
@@ -5291,8 +5291,8 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 3.5,
-    "rankPosition": 124,
+    "overallRating": 4.3,
+    "rankPosition": 59,
     "soleProprietorOk": true,
     "weekendPayment": false
   },
@@ -5334,8 +5334,8 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 3.4,
-    "rankPosition": 125,
+    "overallRating": 3.3,
+    "rankPosition": 154,
     "soleProprietorOk": true,
     "weekendPayment": false
   },
@@ -5377,8 +5377,8 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 3.4,
-    "rankPosition": 126,
+    "overallRating": 3.3,
+    "rankPosition": 155,
     "soleProprietorOk": true,
     "weekendPayment": false
   },
@@ -5420,8 +5420,8 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 3.4,
-    "rankPosition": 127,
+    "overallRating": 3.3,
+    "rankPosition": 157,
     "soleProprietorOk": true,
     "weekendPayment": false
   },
@@ -5463,8 +5463,8 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 3.4,
-    "rankPosition": 128,
+    "overallRating": 3.3,
+    "rankPosition": 162,
     "soleProprietorOk": true,
     "weekendPayment": false
   },
@@ -5506,8 +5506,8 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 3.4,
-    "rankPosition": 129,
+    "overallRating": 3.3,
+    "rankPosition": 163,
     "soleProprietorOk": true,
     "weekendPayment": false
   },
@@ -5549,8 +5549,8 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 3.4,
-    "rankPosition": 130,
+    "overallRating": 3.5,
+    "rankPosition": 114,
     "soleProprietorOk": true,
     "weekendPayment": false
   },
@@ -5592,8 +5592,8 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 3.4,
-    "rankPosition": 131,
+    "overallRating": 3.3,
+    "rankPosition": 165,
     "soleProprietorOk": true,
     "weekendPayment": false
   },
@@ -5631,8 +5631,8 @@ const companiesData: Company[] = [
     "targetIndustries": [
       "医療・介護"
     ],
-    "overallRating": 3.4,
-    "rankPosition": 132,
+    "overallRating": 4.3,
+    "rankPosition": 20,
     "soleProprietorOk": false,
     "weekendPayment": false
   },
@@ -5674,8 +5674,8 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 3.4,
-    "rankPosition": 133,
+    "overallRating": 3.3,
+    "rankPosition": 168,
     "soleProprietorOk": true,
     "weekendPayment": false
   },
@@ -5717,8 +5717,8 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 3.4,
-    "rankPosition": 134,
+    "overallRating": 3.3,
+    "rankPosition": 170,
     "soleProprietorOk": true,
     "weekendPayment": false
   },
@@ -5760,8 +5760,8 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 3.4,
-    "rankPosition": 135,
+    "overallRating": 3.5,
+    "rankPosition": 117,
     "soleProprietorOk": true,
     "weekendPayment": false
   },
@@ -5799,8 +5799,8 @@ const companiesData: Company[] = [
     "targetIndustries": [
       "建設業"
     ],
-    "overallRating": 3.4,
-    "rankPosition": 136,
+    "overallRating": 3.5,
+    "rankPosition": 118,
     "soleProprietorOk": true,
     "weekendPayment": false
   },
@@ -5842,8 +5842,8 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 3.4,
-    "rankPosition": 137,
+    "overallRating": 4.3,
+    "rankPosition": 22,
     "soleProprietorOk": true,
     "weekendPayment": false
   },
@@ -5885,8 +5885,8 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 3.4,
-    "rankPosition": 138,
+    "overallRating": 3.5,
+    "rankPosition": 119,
     "soleProprietorOk": true,
     "weekendPayment": false
   },
@@ -5928,8 +5928,8 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 3.4,
-    "rankPosition": 139,
+    "overallRating": 3.3,
+    "rankPosition": 171,
     "soleProprietorOk": true,
     "weekendPayment": false
   },
@@ -5971,8 +5971,8 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 3.4,
-    "rankPosition": 140,
+    "overallRating": 3.5,
+    "rankPosition": 120,
     "soleProprietorOk": true,
     "weekendPayment": false
   },
@@ -6014,8 +6014,8 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 3.4,
-    "rankPosition": 141,
+    "overallRating": 3.3,
+    "rankPosition": 172,
     "soleProprietorOk": true,
     "weekendPayment": false
   },
@@ -6057,8 +6057,8 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 3.4,
-    "rankPosition": 142,
+    "overallRating": 4.3,
+    "rankPosition": 24,
     "soleProprietorOk": false,
     "weekendPayment": false
   },
@@ -6100,8 +6100,8 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 3.4,
-    "rankPosition": 143,
+    "overallRating": 3.3,
+    "rankPosition": 176,
     "soleProprietorOk": true,
     "weekendPayment": false
   },
@@ -6143,8 +6143,8 @@ const companiesData: Company[] = [
       "水産業",
       "サービス業"
     ],
-    "overallRating": 3.4,
-    "rankPosition": 144,
+    "overallRating": 3.3,
+    "rankPosition": 178,
     "soleProprietorOk": true,
     "weekendPayment": false
   },
@@ -6186,8 +6186,8 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 3.4,
-    "rankPosition": 145,
+    "overallRating": 3.5,
+    "rankPosition": 121,
     "soleProprietorOk": true,
     "weekendPayment": false
   },
@@ -6229,8 +6229,8 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 3.4,
-    "rankPosition": 146,
+    "overallRating": 3.3,
+    "rankPosition": 180,
     "soleProprietorOk": true,
     "weekendPayment": false
   },
@@ -6272,8 +6272,8 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 3.4,
-    "rankPosition": 147,
+    "overallRating": 3.3,
+    "rankPosition": 182,
     "soleProprietorOk": true,
     "weekendPayment": false
   },
@@ -6315,8 +6315,8 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 3.4,
-    "rankPosition": 148,
+    "overallRating": 4.3,
+    "rankPosition": 25,
     "soleProprietorOk": true,
     "weekendPayment": false
   },
@@ -6358,8 +6358,8 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 3.4,
-    "rankPosition": 149,
+    "overallRating": 3.3,
+    "rankPosition": 183,
     "soleProprietorOk": true,
     "weekendPayment": false
   },
@@ -6401,8 +6401,8 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 3.4,
-    "rankPosition": 150,
+    "overallRating": 3.3,
+    "rankPosition": 184,
     "soleProprietorOk": true,
     "weekendPayment": false
   },
@@ -6444,8 +6444,8 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 3.4,
-    "rankPosition": 151,
+    "overallRating": 3.3,
+    "rankPosition": 186,
     "soleProprietorOk": true,
     "weekendPayment": false
   },
@@ -6487,8 +6487,8 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 3.4,
-    "rankPosition": 152,
+    "overallRating": 3.5,
+    "rankPosition": 122,
     "soleProprietorOk": true,
     "weekendPayment": false
   },
@@ -6526,8 +6526,8 @@ const companiesData: Company[] = [
     "targetIndustries": [
       "医療・介護"
     ],
-    "overallRating": 3.4,
-    "rankPosition": 153,
+    "overallRating": 4.3,
+    "rankPosition": 27,
     "soleProprietorOk": false,
     "weekendPayment": false
   },
@@ -6569,8 +6569,8 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 3.4,
-    "rankPosition": 154,
+    "overallRating": 4.3,
+    "rankPosition": 30,
     "soleProprietorOk": true,
     "weekendPayment": false
   },
@@ -6608,8 +6608,8 @@ const companiesData: Company[] = [
     "targetIndustries": [
       "建設業"
     ],
-    "overallRating": 3.4,
-    "rankPosition": 155,
+    "overallRating": 3.3,
+    "rankPosition": 196,
     "soleProprietorOk": true,
     "weekendPayment": false
   },
@@ -6651,8 +6651,8 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 3.4,
-    "rankPosition": 156,
+    "overallRating": 3.3,
+    "rankPosition": 198,
     "soleProprietorOk": true,
     "weekendPayment": false
   },
@@ -6694,8 +6694,8 @@ const companiesData: Company[] = [
       "農業",
       "サービス業"
     ],
-    "overallRating": 3.4,
-    "rankPosition": 157,
+    "overallRating": 4.3,
+    "rankPosition": 34,
     "soleProprietorOk": true,
     "weekendPayment": false
   },
@@ -6737,8 +6737,8 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 3.4,
-    "rankPosition": 158,
+    "overallRating": 3.3,
+    "rankPosition": 200,
     "soleProprietorOk": true,
     "weekendPayment": false
   },
@@ -6780,8 +6780,8 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 3.4,
-    "rankPosition": 159,
+    "overallRating": 3.5,
+    "rankPosition": 127,
     "soleProprietorOk": true,
     "weekendPayment": false
   },
@@ -6823,8 +6823,8 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 3.4,
-    "rankPosition": 160,
+    "overallRating": 3.3,
+    "rankPosition": 201,
     "soleProprietorOk": true,
     "weekendPayment": false
   },
@@ -6866,8 +6866,8 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 3.4,
-    "rankPosition": 161,
+    "overallRating": 3.5,
+    "rankPosition": 131,
     "soleProprietorOk": true,
     "weekendPayment": false
   },
@@ -6909,8 +6909,8 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 3.4,
-    "rankPosition": 162,
+    "overallRating": 3.3,
+    "rankPosition": 203,
     "soleProprietorOk": true,
     "weekendPayment": false
   },
@@ -6952,8 +6952,8 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 3.4,
-    "rankPosition": 163,
+    "overallRating": 3.3,
+    "rankPosition": 206,
     "soleProprietorOk": true,
     "weekendPayment": false
   },
@@ -6995,8 +6995,8 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 3.4,
-    "rankPosition": 164,
+    "overallRating": 3.5,
+    "rankPosition": 133,
     "soleProprietorOk": true,
     "weekendPayment": false
   },
@@ -7038,8 +7038,8 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 3.4,
-    "rankPosition": 165,
+    "overallRating": 3.5,
+    "rankPosition": 134,
     "soleProprietorOk": true,
     "weekendPayment": false
   },
@@ -7081,8 +7081,8 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 3.4,
-    "rankPosition": 166,
+    "overallRating": 3.3,
+    "rankPosition": 207,
     "soleProprietorOk": true,
     "weekendPayment": false
   },
@@ -7124,8 +7124,8 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 3.4,
-    "rankPosition": 167,
+    "overallRating": 3.3,
+    "rankPosition": 213,
     "soleProprietorOk": true,
     "weekendPayment": false
   },
@@ -7167,8 +7167,8 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 3.4,
-    "rankPosition": 168,
+    "overallRating": 3.3,
+    "rankPosition": 215,
     "soleProprietorOk": true,
     "weekendPayment": false
   },
@@ -7210,8 +7210,8 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 3.4,
-    "rankPosition": 169,
+    "overallRating": 3.3,
+    "rankPosition": 218,
     "soleProprietorOk": true,
     "weekendPayment": false
   },
@@ -7253,8 +7253,8 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 3.4,
-    "rankPosition": 170,
+    "overallRating": 3.3,
+    "rankPosition": 221,
     "soleProprietorOk": true,
     "weekendPayment": false
   },
@@ -7296,8 +7296,8 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 3.4,
-    "rankPosition": 171,
+    "overallRating": 3.3,
+    "rankPosition": 222,
     "soleProprietorOk": true,
     "weekendPayment": false
   },
@@ -7339,8 +7339,8 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 3.4,
-    "rankPosition": 172,
+    "overallRating": 3.5,
+    "rankPosition": 142,
     "soleProprietorOk": true,
     "weekendPayment": false
   },
@@ -7378,8 +7378,8 @@ const companiesData: Company[] = [
     "targetIndustries": [
       "医療・介護"
     ],
-    "overallRating": 3.4,
-    "rankPosition": 173,
+    "overallRating": 3.3,
+    "rankPosition": 226,
     "soleProprietorOk": false,
     "weekendPayment": false
   },
@@ -7421,8 +7421,8 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 3.4,
-    "rankPosition": 174,
+    "overallRating": 3.5,
+    "rankPosition": 143,
     "soleProprietorOk": true,
     "weekendPayment": false
   },
@@ -7464,8 +7464,8 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 3.4,
-    "rankPosition": 175,
+    "overallRating": 4.3,
+    "rankPosition": 45,
     "soleProprietorOk": true,
     "weekendPayment": false
   },
@@ -7507,8 +7507,8 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 3.4,
-    "rankPosition": 176,
+    "overallRating": 3.3,
+    "rankPosition": 231,
     "soleProprietorOk": true,
     "weekendPayment": false
   },
@@ -7550,8 +7550,8 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 3.4,
-    "rankPosition": 177,
+    "overallRating": 3.3,
+    "rankPosition": 232,
     "soleProprietorOk": true,
     "weekendPayment": false
   },
@@ -7593,8 +7593,8 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 3.4,
-    "rankPosition": 178,
+    "overallRating": 3.3,
+    "rankPosition": 234,
     "soleProprietorOk": true,
     "weekendPayment": false
   },
@@ -7636,8 +7636,8 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 3.4,
-    "rankPosition": 179,
+    "overallRating": 3.3,
+    "rankPosition": 236,
     "soleProprietorOk": true,
     "weekendPayment": false
   },
@@ -7679,8 +7679,8 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 3.4,
-    "rankPosition": 180,
+    "overallRating": 4.3,
+    "rankPosition": 50,
     "soleProprietorOk": true,
     "weekendPayment": false
   },
@@ -7722,8 +7722,8 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 3.4,
-    "rankPosition": 181,
+    "overallRating": 3.5,
+    "rankPosition": 144,
     "soleProprietorOk": true,
     "weekendPayment": false
   },
@@ -7765,8 +7765,8 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 3.4,
-    "rankPosition": 182,
+    "overallRating": 3.5,
+    "rankPosition": 145,
     "soleProprietorOk": true,
     "weekendPayment": false
   },
@@ -7808,8 +7808,8 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 3.4,
-    "rankPosition": 183,
+    "overallRating": 3.3,
+    "rankPosition": 240,
     "soleProprietorOk": true,
     "weekendPayment": false
   },
@@ -7851,8 +7851,8 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 3.4,
-    "rankPosition": 184,
+    "overallRating": 3.3,
+    "rankPosition": 241,
     "soleProprietorOk": true,
     "weekendPayment": false
   },
@@ -7894,8 +7894,8 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 3.4,
-    "rankPosition": 185,
+    "overallRating": 4.3,
+    "rankPosition": 53,
     "soleProprietorOk": false,
     "weekendPayment": false
   },
@@ -7937,8 +7937,8 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 3.4,
-    "rankPosition": 186,
+    "overallRating": 3.3,
+    "rankPosition": 243,
     "soleProprietorOk": true,
     "weekendPayment": false
   },
@@ -7980,8 +7980,8 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 3.4,
-    "rankPosition": 187,
+    "overallRating": 3.3,
+    "rankPosition": 245,
     "soleProprietorOk": true,
     "weekendPayment": false
   },
@@ -8023,8 +8023,8 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 3.4,
-    "rankPosition": 188,
+    "overallRating": 3.3,
+    "rankPosition": 249,
     "soleProprietorOk": true,
     "weekendPayment": false
   },
@@ -8066,8 +8066,8 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 3.4,
-    "rankPosition": 189,
+    "overallRating": 3.3,
+    "rankPosition": 251,
     "soleProprietorOk": true,
     "weekendPayment": false
   },
@@ -8109,8 +8109,8 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 3.3,
-    "rankPosition": 190,
+    "overallRating": 3.5,
+    "rankPosition": 112,
     "soleProprietorOk": true,
     "weekendPayment": false
   },
@@ -8152,8 +8152,8 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 3.3,
-    "rankPosition": 191,
+    "overallRating": 4.3,
+    "rankPosition": 19,
     "soleProprietorOk": true,
     "weekendPayment": false
   },
@@ -8196,7 +8196,7 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.3,
-    "rankPosition": 192,
+    "rankPosition": 156,
     "soleProprietorOk": true,
     "weekendPayment": false
   },
@@ -8238,8 +8238,8 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 3.3,
-    "rankPosition": 193,
+    "overallRating": 3.5,
+    "rankPosition": 113,
     "soleProprietorOk": true,
     "weekendPayment": false
   },
@@ -8282,7 +8282,7 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.3,
-    "rankPosition": 194,
+    "rankPosition": 158,
     "soleProprietorOk": true,
     "weekendPayment": false
   },
@@ -8325,7 +8325,7 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.3,
-    "rankPosition": 195,
+    "rankPosition": 164,
     "soleProprietorOk": true,
     "weekendPayment": false
   },
@@ -8368,7 +8368,7 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.3,
-    "rankPosition": 196,
+    "rankPosition": 169,
     "soleProprietorOk": true,
     "weekendPayment": false
   },
@@ -8410,8 +8410,8 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 3.3,
-    "rankPosition": 197,
+    "overallRating": 3.5,
+    "rankPosition": 115,
     "soleProprietorOk": true,
     "weekendPayment": false
   },
@@ -8453,8 +8453,8 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 3.3,
-    "rankPosition": 198,
+    "overallRating": 3.5,
+    "rankPosition": 116,
     "soleProprietorOk": true,
     "weekendPayment": false
   },
@@ -8496,8 +8496,8 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 3.3,
-    "rankPosition": 199,
+    "overallRating": 4.3,
+    "rankPosition": 23,
     "soleProprietorOk": true,
     "weekendPayment": false
   },
@@ -8540,7 +8540,7 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.3,
-    "rankPosition": 200,
+    "rankPosition": 173,
     "soleProprietorOk": true,
     "weekendPayment": false
   },
@@ -8583,7 +8583,7 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.3,
-    "rankPosition": 201,
+    "rankPosition": 175,
     "soleProprietorOk": true,
     "weekendPayment": false
   },
@@ -8626,7 +8626,7 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.3,
-    "rankPosition": 202,
+    "rankPosition": 181,
     "soleProprietorOk": true,
     "weekendPayment": false
   },
@@ -8668,8 +8668,8 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 3.3,
-    "rankPosition": 203,
+    "overallRating": 3.5,
+    "rankPosition": 124,
     "soleProprietorOk": true,
     "weekendPayment": false
   },
@@ -8711,8 +8711,8 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 3.3,
-    "rankPosition": 204,
+    "overallRating": 3.5,
+    "rankPosition": 125,
     "soleProprietorOk": true,
     "weekendPayment": false
   },
@@ -8754,8 +8754,8 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 3.3,
-    "rankPosition": 205,
+    "overallRating": 4.3,
+    "rankPosition": 26,
     "soleProprietorOk": true,
     "weekendPayment": false
   },
@@ -8798,7 +8798,7 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.3,
-    "rankPosition": 206,
+    "rankPosition": 190,
     "soleProprietorOk": true,
     "weekendPayment": false
   },
@@ -8840,8 +8840,8 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 3.3,
-    "rankPosition": 207,
+    "overallRating": 4.3,
+    "rankPosition": 28,
     "soleProprietorOk": true,
     "weekendPayment": false
   },
@@ -8883,8 +8883,8 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 3.3,
-    "rankPosition": 208,
+    "overallRating": 4.3,
+    "rankPosition": 29,
     "soleProprietorOk": true,
     "weekendPayment": false
   },
@@ -8926,8 +8926,8 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 3.3,
-    "rankPosition": 209,
+    "overallRating": 4.3,
+    "rankPosition": 31,
     "soleProprietorOk": true,
     "weekendPayment": false
   },
@@ -8969,8 +8969,8 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 3.3,
-    "rankPosition": 210,
+    "overallRating": 4.3,
+    "rankPosition": 32,
     "soleProprietorOk": true,
     "weekendPayment": false
   },
@@ -9012,8 +9012,8 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 3.3,
-    "rankPosition": 211,
+    "overallRating": 4.3,
+    "rankPosition": 33,
     "soleProprietorOk": true,
     "weekendPayment": false
   },
@@ -9055,8 +9055,8 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 3.3,
-    "rankPosition": 212,
+    "overallRating": 3.5,
+    "rankPosition": 126,
     "soleProprietorOk": true,
     "weekendPayment": false
   },
@@ -9095,8 +9095,8 @@ const companiesData: Company[] = [
       "建設業",
       "運送業"
     ],
-    "overallRating": 3.3,
-    "rankPosition": 213,
+    "overallRating": 4.3,
+    "rankPosition": 35,
     "soleProprietorOk": true,
     "weekendPayment": false
   },
@@ -9138,8 +9138,8 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 3.3,
-    "rankPosition": 214,
+    "overallRating": 3.5,
+    "rankPosition": 129,
     "soleProprietorOk": true,
     "weekendPayment": false
   },
@@ -9181,8 +9181,8 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 3.3,
-    "rankPosition": 215,
+    "overallRating": 3.5,
+    "rankPosition": 130,
     "soleProprietorOk": true,
     "weekendPayment": false
   },
@@ -9224,8 +9224,8 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 3.3,
-    "rankPosition": 216,
+    "overallRating": 4.3,
+    "rankPosition": 36,
     "soleProprietorOk": true,
     "weekendPayment": false
   },
@@ -9268,7 +9268,7 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.3,
-    "rankPosition": 217,
+    "rankPosition": 202,
     "soleProprietorOk": true,
     "weekendPayment": false
   },
@@ -9310,8 +9310,8 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 3.3,
-    "rankPosition": 218,
+    "overallRating": 4.3,
+    "rankPosition": 37,
     "soleProprietorOk": true,
     "weekendPayment": false
   },
@@ -9353,8 +9353,8 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 3.3,
-    "rankPosition": 219,
+    "overallRating": 4.3,
+    "rankPosition": 38,
     "soleProprietorOk": true,
     "weekendPayment": false
   },
@@ -9397,7 +9397,7 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.3,
-    "rankPosition": 220,
+    "rankPosition": 208,
     "soleProprietorOk": false,
     "weekendPayment": false
   },
@@ -9440,7 +9440,7 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.3,
-    "rankPosition": 221,
+    "rankPosition": 209,
     "soleProprietorOk": true,
     "weekendPayment": false
   },
@@ -9483,7 +9483,7 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.3,
-    "rankPosition": 222,
+    "rankPosition": 211,
     "soleProprietorOk": true,
     "weekendPayment": false
   },
@@ -9525,8 +9525,8 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 3.3,
-    "rankPosition": 223,
+    "overallRating": 3.5,
+    "rankPosition": 137,
     "soleProprietorOk": true,
     "weekendPayment": false
   },
@@ -9568,8 +9568,8 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 3.3,
-    "rankPosition": 224,
+    "overallRating": 3.5,
+    "rankPosition": 138,
     "soleProprietorOk": true,
     "weekendPayment": false
   },
@@ -9611,8 +9611,8 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 3.3,
-    "rankPosition": 225,
+    "overallRating": 3.5,
+    "rankPosition": 140,
     "soleProprietorOk": true,
     "weekendPayment": false
   },
@@ -9654,8 +9654,8 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 3.3,
-    "rankPosition": 226,
+    "overallRating": 4.3,
+    "rankPosition": 40,
     "soleProprietorOk": true,
     "weekendPayment": false
   },
@@ -9698,7 +9698,7 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.3,
-    "rankPosition": 227,
+    "rankPosition": 217,
     "soleProprietorOk": true,
     "weekendPayment": false
   },
@@ -9740,8 +9740,8 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 3.3,
-    "rankPosition": 228,
+    "overallRating": 4.3,
+    "rankPosition": 41,
     "soleProprietorOk": true,
     "weekendPayment": false
   },
@@ -9783,8 +9783,8 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 3.3,
-    "rankPosition": 229,
+    "overallRating": 4.3,
+    "rankPosition": 42,
     "soleProprietorOk": true,
     "weekendPayment": false
   },
@@ -9826,8 +9826,8 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 3.3,
-    "rankPosition": 230,
+    "overallRating": 4.3,
+    "rankPosition": 43,
     "soleProprietorOk": true,
     "weekendPayment": false
   },
@@ -9869,8 +9869,8 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 3.3,
-    "rankPosition": 231,
+    "overallRating": 3.5,
+    "rankPosition": 141,
     "soleProprietorOk": true,
     "weekendPayment": false
   },
@@ -9913,7 +9913,7 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.3,
-    "rankPosition": 232,
+    "rankPosition": 225,
     "soleProprietorOk": true,
     "weekendPayment": false
   },
@@ -9955,8 +9955,8 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 3.3,
-    "rankPosition": 233,
+    "overallRating": 4.3,
+    "rankPosition": 44,
     "soleProprietorOk": false,
     "weekendPayment": false
   },
@@ -9999,7 +9999,7 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.3,
-    "rankPosition": 234,
+    "rankPosition": 228,
     "soleProprietorOk": true,
     "weekendPayment": false
   },
@@ -10042,7 +10042,7 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.3,
-    "rankPosition": 235,
+    "rankPosition": 233,
     "soleProprietorOk": true,
     "weekendPayment": false
   },
@@ -10085,7 +10085,7 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.3,
-    "rankPosition": 236,
+    "rankPosition": 235,
     "soleProprietorOk": true,
     "weekendPayment": false
   },
@@ -10127,8 +10127,8 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 3.3,
-    "rankPosition": 237,
+    "overallRating": 4.3,
+    "rankPosition": 46,
     "soleProprietorOk": true,
     "weekendPayment": false
   },
@@ -10170,8 +10170,8 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 3.3,
-    "rankPosition": 238,
+    "overallRating": 4.3,
+    "rankPosition": 47,
     "soleProprietorOk": true,
     "weekendPayment": false
   },
@@ -10214,7 +10214,7 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.3,
-    "rankPosition": 239,
+    "rankPosition": 237,
     "soleProprietorOk": true,
     "weekendPayment": false
   },
@@ -10257,7 +10257,7 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.3,
-    "rankPosition": 240,
+    "rankPosition": 238,
     "soleProprietorOk": true,
     "weekendPayment": false
   },
@@ -10299,8 +10299,8 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 3.3,
-    "rankPosition": 241,
+    "overallRating": 4.3,
+    "rankPosition": 52,
     "soleProprietorOk": false,
     "weekendPayment": false
   },
@@ -10343,7 +10343,7 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.3,
-    "rankPosition": 242,
+    "rankPosition": 239,
     "soleProprietorOk": true,
     "weekendPayment": false
   },
@@ -10385,8 +10385,8 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 3.3,
-    "rankPosition": 243,
+    "overallRating": 3.5,
+    "rankPosition": 146,
     "soleProprietorOk": true,
     "weekendPayment": false
   },
@@ -10428,8 +10428,8 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 3.3,
-    "rankPosition": 244,
+    "overallRating": 3.5,
+    "rankPosition": 147,
     "soleProprietorOk": true,
     "weekendPayment": false
   },
@@ -10472,7 +10472,7 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.3,
-    "rankPosition": 245,
+    "rankPosition": 244,
     "soleProprietorOk": true,
     "weekendPayment": false
   },
@@ -10514,8 +10514,8 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 3.3,
-    "rankPosition": 246,
+    "overallRating": 4.3,
+    "rankPosition": 54,
     "soleProprietorOk": true,
     "weekendPayment": false
   },
@@ -10557,8 +10557,8 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 3.3,
-    "rankPosition": 247,
+    "overallRating": 4.3,
+    "rankPosition": 56,
     "soleProprietorOk": true,
     "weekendPayment": false
   },
@@ -10600,8 +10600,8 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 3.3,
-    "rankPosition": 248,
+    "overallRating": 4.3,
+    "rankPosition": 57,
     "soleProprietorOk": true,
     "weekendPayment": false
   },
@@ -10643,8 +10643,8 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 3.3,
-    "rankPosition": 249,
+    "overallRating": 3.5,
+    "rankPosition": 148,
     "soleProprietorOk": true,
     "weekendPayment": false
   },
@@ -10686,8 +10686,8 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 3.3,
-    "rankPosition": 250,
+    "overallRating": 3.5,
+    "rankPosition": 149,
     "soleProprietorOk": true,
     "weekendPayment": false
   },
@@ -10729,8 +10729,8 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 3.3,
-    "rankPosition": 251,
+    "overallRating": 3.5,
+    "rankPosition": 151,
     "soleProprietorOk": true,
     "weekendPayment": false
   },
@@ -10773,7 +10773,7 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.3,
-    "rankPosition": 252,
+    "rankPosition": 253,
     "soleProprietorOk": false,
     "weekendPayment": false
   },
@@ -10815,8 +10815,8 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 3.3,
-    "rankPosition": 253,
+    "overallRating": 4.3,
+    "rankPosition": 58,
     "soleProprietorOk": true,
     "weekendPayment": false
   },
@@ -10858,8 +10858,8 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 3.3,
-    "rankPosition": 254,
+    "overallRating": 3.5,
+    "rankPosition": 153,
     "soleProprietorOk": true,
     "weekendPayment": false
   }

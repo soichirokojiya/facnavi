@@ -46,9 +46,10 @@ const companies = files.map(f => {
 // Sort by Bayesian score (desc)
 companies.sort((a, b) => b._score - a._score || a.slug.localeCompare(b.slug));
 
-// Assign new rank positions
+// Assign new rank positions and update overallRating
 companies.forEach((c, i) => {
   c.rankPosition = i + 1;
+  c.overallRating = c._rating;
   const score = c._score;
   const rating = c._rating;
   const count = c._count;
@@ -56,9 +57,9 @@ companies.forEach((c, i) => {
   delete c._rating;
   delete c._count;
   const fp = path.join(companiesDir, c.slug + ".json");
-  fs.writeFileSync(fp, JSON.stringify(c, null, 2));
+  fs.writeFileSync(fp, JSON.stringify(c, null, 2) + "\n");
   if (i < 20) {
-    console.log(`${c.rankPosition}. ${c.name} (avg: ${rating}, reviews: ${count}, score: ${score.toFixed(2)})`);
+    console.log(`${c.rankPosition}. ${c.name} (rating: ${rating}, reviews: ${count}, score: ${score.toFixed(2)})`);
   }
 });
 

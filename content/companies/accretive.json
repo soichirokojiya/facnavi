@@ -36,8 +36,8 @@
     "病院",
     "介護施設"
   ],
-  "overallRating": 4,
-  "rankPosition": 48,
+  "overallRating": 4.0,
+  "rankPosition": 73,
   "soleProprietorOk": false,
   "weekendPayment": false
 }
