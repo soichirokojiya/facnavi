@@ -19,7 +19,6 @@ export default function HomePage() {
   const reviews = getAllReviews();
   const articles = getAllArticles().slice(0, 6);
   const companyMap = Object.fromEntries(companies.map((c) => [c.slug, c.name]));
-  const totalReviews = reviews.length;
 
   return (
     <>
@@ -54,15 +53,10 @@ export default function HomePage() {
           </p>
 
           {/* Stats */}
-          <div className="flex justify-center gap-8 md:gap-12 mb-8">
+          <div className="flex justify-center mb-8">
             <div>
               <div className="text-5xl md:text-7xl font-extrabold text-primary">{companies.length}</div>
               <div className="text-sm text-gray-500 mt-1">掲載社数</div>
-            </div>
-            <div className="w-px bg-gray-200" />
-            <div>
-              <div className="text-5xl md:text-7xl font-extrabold text-primary">{totalReviews}</div>
-              <div className="text-sm text-gray-500 mt-1">口コミ数</div>
             </div>
           </div>
 
