@@ -38,16 +38,6 @@ export function Footer() {
               ファクタリング会社の口コミ・評判を比較できる情報サイト。
               手数料・入金スピード・審査の通りやすさなど、あなたに最適なファクタリング会社が見つかります。
             </p>
-            <div className="flex items-center gap-3">
-              <a
-                href="https://note.com/financing_tokyo"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-xs bg-gray-800 hover:bg-gray-700 px-3 py-1.5 rounded transition-colors"
-              >
-                ファクタリング比較ラボ
-              </a>
-            </div>
           </div>
 
           {/* Popular companies */}
@@ -128,6 +118,16 @@ export function Footer() {
                 <Link href="/contact" className="text-sm hover:text-white transition-colors">
                   お問い合わせ
                 </Link>
+              </li>
+              <li>
+                <a
+                  href="https://note.com/financing_tokyo"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm hover:text-white transition-colors"
+                >
+                  ファクタリング比較ラボ
+                </a>
               </li>
             </ul>
 

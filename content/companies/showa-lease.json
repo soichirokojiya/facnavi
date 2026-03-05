@@ -2,14 +2,14 @@
   "slug": "showa-lease",
   "name": "昭和リース",
   "description": "SBIグループの大手リース会社。売掛債権ファクタリングを提供。",
-  "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=SHOWA",
+  "affiliateUrl": "https://www.s-lease.com/",
   "factoringType": "3社間",
   "feeRange": {
     "min": 1,
     "max": 5
   },
   "minAmount": 5000000,
-  "maxAmount": 0,
+  "maxAmount": 50000000,
   "speedDays": 5,
   "onlineComplete": false,
   "features": [
@@ -29,6 +29,7 @@
     "入金まで時間がかかる"
   ],
   "overallRating": 3.6,
+  "rankPosition": 84,
   "establishedYear": 1969,
   "targetIndustries": [
     "製造業",
@@ -36,6 +37,5 @@
     "不動産業",
     "卸売業",
     "運送業"
-  ],
-  "rankPosition": 75
+  ]
 }

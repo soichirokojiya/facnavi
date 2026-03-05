@@ -2,7 +2,7 @@
   "slug": "faith-factoring",
   "name": "faith",
   "description": "ファクタリングサービス。中小企業の資金繰りをサポート。",
-  "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=FAITHFACTORING",
+  "affiliateUrl": "https://faith-factoring.jp/",
   "factoringType": "2社間・3社間",
   "feeRange": {
     "min": 3,
@@ -29,6 +29,7 @@
     "手数料は個別査定"
   ],
   "overallRating": 3.3,
+  "rankPosition": 200,
   "establishedYear": 2018,
   "targetIndustries": [
     "建設業",
@@ -36,6 +37,5 @@
     "製造業",
     "IT・Web",
     "サービス業"
-  ],
-  "rankPosition": 194
+  ]
 }

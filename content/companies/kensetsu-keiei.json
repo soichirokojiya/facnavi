@@ -2,7 +2,7 @@
   "slug": "kensetsu-keiei",
   "name": "建設経営サービス",
   "description": "建設業界特化のファクタリング。建設会社の資金繰りをサポート。",
-  "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=KENSETSUKEIEI",
+  "affiliateUrl": "https://kensetsu-keiei.com/",
   "factoringType": "2社間・3社間",
   "feeRange": {
     "min": 3,
@@ -29,9 +29,9 @@
     "手数料は個別査定"
   ],
   "overallRating": 3.5,
+  "rankPosition": 101,
   "establishedYear": 2015,
   "targetIndustries": [
     "建設業"
-  ],
-  "rankPosition": 80
+  ]
 }

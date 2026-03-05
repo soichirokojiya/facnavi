@@ -2,7 +2,7 @@
   "slug": "anchor-guardian",
   "name": "アンカーガーディアン",
   "description": "九州・西日本エリア特化。3社間3%～、2社間5%～の低手数料。",
-  "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=ANCHOR",
+  "affiliateUrl": "https://anchorguardian.com/",
   "factoringType": "2社間・3社間",
   "feeRange": {
     "min": 3,
@@ -29,6 +29,7 @@
     "東日本は対面対応不可"
   ],
   "overallRating": 3.8,
+  "rankPosition": 54,
   "establishedYear": 2016,
   "targetIndustries": [
     "建設業",
@@ -36,6 +37,5 @@
     "製造業",
     "小売業",
     "飲食業"
-  ],
-  "rankPosition": 67
+  ]
 }

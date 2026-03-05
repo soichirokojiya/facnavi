@@ -2,7 +2,7 @@
   "slug": "factoring-north",
   "name": "ファクタリングノース",
   "description": "北海道拠点のファクタリング会社。地元密着の対応。",
-  "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=FACTORINGNORTH",
+  "affiliateUrl": "https://factoring-north.jp/",
   "factoringType": "2社間・3社間",
   "feeRange": {
     "min": 3,
@@ -29,6 +29,7 @@
     "手数料は個別査定"
   ],
   "overallRating": 3.4,
+  "rankPosition": 140,
   "establishedYear": 2018,
   "targetIndustries": [
     "建設業",
@@ -36,6 +37,5 @@
     "農業",
     "水産業",
     "サービス業"
-  ],
-  "rankPosition": 185
+  ]
 }

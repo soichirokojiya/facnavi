@@ -2,7 +2,7 @@
   "slug": "next-funding",
   "name": "NEXTFUNDING",
   "description": "ファクタリングサービス。次世代の資金調達を提供。",
-  "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=NEXTFUNDING",
+  "affiliateUrl": "https://next-funding.jp/",
   "factoringType": "2社間・3社間",
   "feeRange": {
     "min": 3,
@@ -29,6 +29,7 @@
     "手数料は個別査定"
   ],
   "overallRating": 3.4,
+  "rankPosition": 160,
   "establishedYear": 2018,
   "targetIndustries": [
     "建設業",
@@ -36,6 +37,5 @@
     "製造業",
     "IT・Web",
     "サービス業"
-  ],
-  "rankPosition": 200
+  ]
 }

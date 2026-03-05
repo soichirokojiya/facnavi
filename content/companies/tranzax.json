@@ -2,7 +2,7 @@
   "slug": "tranzax",
   "name": "Tranzax",
   "description": "電子記録債権を活用したファクタリングサービス。",
-  "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=TRANZAX",
+  "affiliateUrl": "https://tranzax.co.jp/",
   "factoringType": "3社間",
   "feeRange": {
     "min": 1,
@@ -29,6 +29,7 @@
     "手数料は個別査定"
   ],
   "overallRating": 3.5,
+  "rankPosition": 115,
   "establishedYear": 2016,
   "targetIndustries": [
     "建設業",
@@ -36,6 +37,5 @@
     "製造業",
     "IT・Web",
     "サービス業"
-  ],
-  "rankPosition": 191
+  ]
 }

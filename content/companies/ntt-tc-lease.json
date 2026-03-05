@@ -2,7 +2,7 @@
   "slug": "ntt-tc-lease",
   "name": "NTT・TCリース",
   "description": "NTTグループのリース・ファクタリングサービス。",
-  "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=NTTTCLEASE",
+  "affiliateUrl": "https://www.ntt-tc-lease.com/",
   "factoringType": "3社間",
   "feeRange": {
     "min": 0.5,
@@ -29,6 +29,7 @@
     "手数料は個別査定"
   ],
   "overallRating": 3.6,
+  "rankPosition": 79,
   "establishedYear": 1985,
   "targetIndustries": [
     "建設業",
@@ -36,6 +37,5 @@
     "製造業",
     "IT・Web",
     "サービス業"
-  ],
-  "rankPosition": 203
+  ]
 }

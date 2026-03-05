@@ -2,7 +2,7 @@
   "slug": "gmo-btob",
   "name": "GMO BtoB早払い",
   "description": "GMOペイメントゲートウェイ運営。注文書・請求書の両方を買取可能。",
-  "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=GMOBTOB",
+  "affiliateUrl": "https://www.gmo-pg.com/lpc/hayabarai/",
   "factoringType": "2社間",
   "feeRange": {
     "min": 1,
@@ -29,6 +29,7 @@
     "最短2営業日とやや遅め"
   ],
   "overallRating": 4.2,
+  "rankPosition": 12,
   "establishedYear": 1995,
   "targetIndustries": [
     "製造業",
@@ -36,6 +37,5 @@
     "卸売業",
     "建設業",
     "運送業"
-  ],
-  "rankPosition": 50
+  ]
 }

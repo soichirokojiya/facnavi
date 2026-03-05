@@ -2,18 +2,39 @@
   "slug": "quartett",
   "name": "QuQuMo（ククモ）",
   "description": "最短2時間で入金可能なスピード特化型ファクタリング。手続きもシンプルでオンライン完結。",
-  "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=XXXXX4",
+  "affiliateUrl": "https://ququmo.net/",
   "factoringType": "2社間",
-  "feeRange": { "min": 1, "max": 14.8 },
-  "minAmount": 0,
-  "maxAmount": 0,
+  "feeRange": {
+    "min": 1,
+    "max": 14.8
+  },
+  "minAmount": 300000,
+  "maxAmount": 50000000,
   "speedDays": 1,
   "onlineComplete": true,
-  "features": ["最短2時間入金", "オンライン完結", "必要書類が少ない", "個人事業主OK", "法人専用プランあり"],
-  "pros": ["入金スピードが非常に速い", "必要書類が少なく手軽", "手数料が比較的安い"],
-  "cons": ["手数料の上限がやや高め", "3社間ファクタリングに非対応"],
+  "features": [
+    "最短2時間入金",
+    "オンライン完結",
+    "必要書類が少ない",
+    "個人事業主OK",
+    "法人専用プランあり"
+  ],
+  "pros": [
+    "入金スピードが非常に速い",
+    "必要書類が少なく手軽",
+    "手数料が比較的安い"
+  ],
+  "cons": [
+    "手数料の上限がやや高め",
+    "3社間ファクタリングに非対応"
+  ],
   "overallRating": 4.1,
-  "rankPosition": 4,
+  "rankPosition": 36,
   "establishedYear": 2020,
-  "targetIndustries": ["建設業", "運送業", "製造業", "小売業"]
+  "targetIndustries": [
+    "建設業",
+    "運送業",
+    "製造業",
+    "小売業"
+  ]
 }

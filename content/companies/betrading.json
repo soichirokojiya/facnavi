@@ -2,7 +2,7 @@
   "slug": "betrading",
   "name": "ビートレーディング",
   "description": "累計取引社数8.5万社超、累積買取額1,745億円の業界最大手。最短2時間で入金。",
-  "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=BETRADING",
+  "affiliateUrl": "https://betrading.jp/",
   "factoringType": "2社間・3社間",
   "feeRange": {
     "min": 2,
@@ -29,6 +29,7 @@
     "3社間は時間がかかる場合あり"
   ],
   "overallRating": 4.6,
+  "rankPosition": 1,
   "establishedYear": 2012,
   "targetIndustries": [
     "建設業",
@@ -36,6 +37,5 @@
     "製造業",
     "医療・介護",
     "卸売業"
-  ],
-  "rankPosition": 48
+  ]
 }

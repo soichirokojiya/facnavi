@@ -2,7 +2,7 @@
   "slug": "factoring-tokyo",
   "name": "ファクタリング東京",
   "description": "東京拠点のファクタリング会社。首都圏に強い。",
-  "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=FACTORINGTOKYO",
+  "affiliateUrl": "https://factoring-tokyo.jp/",
   "factoringType": "2社間・3社間",
   "feeRange": {
     "min": 3,
@@ -29,6 +29,7 @@
     "手数料は個別査定"
   ],
   "overallRating": 3.4,
+  "rankPosition": 141,
   "establishedYear": 2018,
   "targetIndustries": [
     "建設業",
@@ -36,6 +37,5 @@
     "製造業",
     "IT・Web",
     "サービス業"
-  ],
-  "rankPosition": 201
+  ]
 }

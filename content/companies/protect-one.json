@@ -2,7 +2,7 @@
   "slug": "protect-one",
   "name": "プロテクト・ワン",
   "description": "ファクタリング・資金調達サービス。安心の対応。",
-  "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=PROTECTONE",
+  "affiliateUrl": "https://protect-one.co.jp/",
   "factoringType": "2社間・3社間",
   "feeRange": {
     "min": 3,
@@ -29,6 +29,7 @@
     "手数料は個別査定"
   ],
   "overallRating": 3.3,
+  "rankPosition": 224,
   "establishedYear": 2018,
   "targetIndustries": [
     "建設業",
@@ -36,6 +37,5 @@
     "製造業",
     "IT・Web",
     "サービス業"
-  ],
-  "rankPosition": 166
+  ]
 }

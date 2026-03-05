@@ -2,18 +2,40 @@
   "slug": "bitresy",
   "name": "ビートレーディング",
   "description": "累計取引実績5万件以上を誇る業界の老舗ファクタリング会社。豊富な実績とノウハウで、幅広い業種・規模の企業に対応。安定したサービス品質が信頼されています。",
-  "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=XXXXX13",
+  "affiliateUrl": "https://betrading.jp/",
   "factoringType": "2社間・3社間",
-  "feeRange": { "min": 2, "max": 12 },
+  "feeRange": {
+    "min": 2,
+    "max": 12
+  },
   "minAmount": 500000,
   "maxAmount": 300000000,
   "speedDays": 2,
   "onlineComplete": true,
-  "features": ["累計取引5万件超", "最大3億円対応", "全国5拠点", "オンライン完結", "専任担当者制"],
-  "pros": ["業界トップクラスの取引実績で安心", "少額から大口まで幅広く対応", "全国に拠点があり対面相談も可能"],
-  "cons": ["即日入金は条件による", "手数料は案件ごとに変動が大きい"],
+  "features": [
+    "累計取引5万件超",
+    "最大3億円対応",
+    "全国5拠点",
+    "オンライン完結",
+    "専任担当者制"
+  ],
+  "pros": [
+    "業界トップクラスの取引実績で安心",
+    "少額から大口まで幅広く対応",
+    "全国に拠点があり対面相談も可能"
+  ],
+  "cons": [
+    "即日入金は条件による",
+    "手数料は案件ごとに変動が大きい"
+  ],
   "overallRating": 4.6,
-  "rankPosition": 13,
+  "rankPosition": 31,
   "establishedYear": 2012,
-  "targetIndustries": ["建設業", "運送業", "製造業", "医療・介護", "人材派遣業"]
+  "targetIndustries": [
+    "建設業",
+    "運送業",
+    "製造業",
+    "医療・介護",
+    "人材派遣業"
+  ]
 }

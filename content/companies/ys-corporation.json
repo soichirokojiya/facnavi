@@ -2,7 +2,7 @@
   "slug": "ys-corporation",
   "name": "Y's Corporation",
   "description": "ファクタリングサービス。法人向け資金調達。",
-  "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=YSCORPORATION",
+  "affiliateUrl": "https://ys-corporation.co.jp/",
   "factoringType": "2社間・3社間",
   "feeRange": {
     "min": 3,
@@ -29,6 +29,7 @@
     "手数料は個別査定"
   ],
   "overallRating": 3.3,
+  "rankPosition": 251,
   "establishedYear": 2018,
   "targetIndustries": [
     "建設業",
@@ -36,6 +37,5 @@
     "製造業",
     "IT・Web",
     "サービス業"
-  ],
-  "rankPosition": 254
+  ]
 }

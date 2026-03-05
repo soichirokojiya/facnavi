@@ -2,14 +2,14 @@
   "slug": "accretive",
   "name": "アクリーティブ",
   "description": "東証プライム上場・芙蓉リースグループ。医療・介護報酬ファクタリングに強い。",
-  "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=ACCRET",
+  "affiliateUrl": "https://www.accretive.jp/",
   "factoringType": "3社間",
   "feeRange": {
     "min": 0.25,
     "max": 5
   },
   "minAmount": 1000000,
-  "maxAmount": 0,
+  "maxAmount": 50000000,
   "speedDays": 5,
   "onlineComplete": false,
   "features": [
@@ -29,6 +29,7 @@
     "入金まで日数がかかる"
   ],
   "overallRating": 4,
+  "rankPosition": 38,
   "establishedYear": 2000,
   "targetIndustries": [
     "医療・介護",
@@ -36,6 +37,5 @@
     "歯科",
     "病院",
     "介護施設"
-  ],
-  "rankPosition": 58
+  ]
 }

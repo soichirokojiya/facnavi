@@ -122,8 +122,7 @@ async function main() {
       features: splitCSVField(obj.features) || ["即日入金可能", "オンライン対応", "個人事業主OK", "全国対応", "柔軟な審査"],
       pros: splitCSVField(obj.pros) || ["対応が迅速", "審査が柔軟", "全国対応"],
       cons: splitCSVField(obj.cons) || ["知名度がやや低い", "手数料は個別査定"],
-      overallRating: parseFloat(obj.overallRating) || 3.5,
-      rankPosition: parseInt(obj.rankPosition) || 999,
+      // overallRating and rankPosition are managed by scripts, not spreadsheet
       establishedYear: parseInt(obj.establishedYear) || undefined,
       targetIndustries: splitCSVField(obj.targetIndustries) || ["建設業", "運送業", "製造業", "IT・Web", "サービス業"],
     };
@@ -136,12 +135,18 @@ async function main() {
 
     if (exists) {
       const existing = JSON.parse(fs.readFileSync(filePath, "utf-8"));
+      // Preserve rankPosition and overallRating from existing file
+      company.overallRating = existing.overallRating;
+      company.rankPosition = existing.rankPosition;
       if (JSON.stringify(existing) === JSON.stringify(company)) {
         unchanged++;
         continue;
       }
       updated++;
     } else {
+      // New company gets defaults
+      company.overallRating = 3.5;
+      company.rankPosition = 999;
       created++;
     }
 
@@ -162,8 +167,8 @@ function exportCurrentData() {
   const headers = [
     "slug", "name", "description", "affiliateUrl", "factoringType",
     "feeMin", "feeMax", "minAmount", "maxAmount", "speedDays",
-    "onlineComplete", "features", "pros", "cons", "overallRating",
-    "rankPosition", "establishedYear", "targetIndustries"
+    "onlineComplete", "features", "pros", "cons",
+    "establishedYear", "targetIndustries"
   ];
 
   const rows = companies.map(c => [
@@ -181,8 +186,6 @@ function exportCurrentData() {
     (c.features || []).join("、"),
     (c.pros || []).join("、"),
     (c.cons || []).join("、"),
-    c.overallRating || "",
-    c.rankPosition || "",
     c.establishedYear || "",
     (c.targetIndustries || []).join("、"),
   ]);

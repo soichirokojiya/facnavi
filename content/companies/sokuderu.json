@@ -2,7 +2,7 @@
   "slug": "sokuderu",
   "name": "ソクデル",
   "description": "即日入金に特化したファクタリングサービス。スピード重視の資金調達。",
-  "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=SOKUDERU",
+  "affiliateUrl": "https://sokuderu.jp/",
   "factoringType": "2社間・3社間",
   "feeRange": {
     "min": 3,
@@ -29,6 +29,7 @@
     "手数料は個別査定"
   ],
   "overallRating": 3.4,
+  "rankPosition": 176,
   "establishedYear": 2018,
   "targetIndustries": [
     "建設業",
@@ -36,6 +37,5 @@
     "製造業",
     "IT・Web",
     "サービス業"
-  ],
-  "rankPosition": 136
+  ]
 }

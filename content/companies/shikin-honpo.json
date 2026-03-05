@@ -2,7 +2,7 @@
   "slug": "shikin-honpo",
   "name": "資金調達本舗",
   "description": "資金調達の専門サービス。ファクタリングを中心とした資金繰り支援。",
-  "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=SHIKINHONPO",
+  "affiliateUrl": "https://shikin-honpo.jp/",
   "factoringType": "2社間・3社間",
   "feeRange": {
     "min": 3,
@@ -29,6 +29,7 @@
     "手数料は個別査定"
   ],
   "overallRating": 3.3,
+  "rankPosition": 233,
   "establishedYear": 2018,
   "targetIndustries": [
     "建設業",
@@ -36,6 +37,5 @@
     "製造業",
     "IT・Web",
     "サービス業"
-  ],
-  "rankPosition": 142
+  ]
 }

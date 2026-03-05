@@ -2,7 +2,7 @@
   "slug": "transaction-finance",
   "name": "トランザクションファイナンス",
   "description": "取引金融のプロフェッショナル。ファクタリング対応。",
-  "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=TRANSACTIONFINANCE",
+  "affiliateUrl": "https://transaction-finance.jp/",
   "factoringType": "2社間・3社間",
   "feeRange": {
     "min": 2,
@@ -29,6 +29,7 @@
     "手数料は個別査定"
   ],
   "overallRating": 3.5,
+  "rankPosition": 114,
   "establishedYear": 2018,
   "targetIndustries": [
     "建設業",
@@ -36,6 +37,5 @@
     "製造業",
     "IT・Web",
     "サービス業"
-  ],
-  "rankPosition": 110
+  ]
 }

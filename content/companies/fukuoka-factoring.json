@@ -2,7 +2,7 @@
   "slug": "fukuoka-factoring",
   "name": "ファクタリング福岡",
   "description": "創業20年の九州エリア特化ファクタリング。最短3時間で資金化。",
-  "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=FUKUOKA",
+  "affiliateUrl": "https://fukuoka-factoring.com/",
   "factoringType": "2社間・3社間",
   "feeRange": {
     "min": 2,
@@ -29,6 +29,7 @@
     "手数料上限がやや高い"
   ],
   "overallRating": 3.7,
+  "rankPosition": 65,
   "establishedYear": 2004,
   "targetIndustries": [
     "建設業",
@@ -36,6 +37,5 @@
     "製造業",
     "飲食業",
     "小売業"
-  ],
-  "rankPosition": 69
+  ]
 }

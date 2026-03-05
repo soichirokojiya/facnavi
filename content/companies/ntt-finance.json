@@ -2,14 +2,14 @@
   "slug": "ntt-finance",
   "name": "NTTファイナンス",
   "description": "NTTグループのファクタリングサービス。安定基盤と低手数料が魅力。",
-  "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=NTTF",
+  "affiliateUrl": "https://www.ntt-finance.co.jp/",
   "factoringType": "3社間",
   "feeRange": {
     "min": 0.5,
     "max": 3
   },
   "minAmount": 5000000,
-  "maxAmount": 0,
+  "maxAmount": 50000000,
   "speedDays": 5,
   "onlineComplete": false,
   "features": [
@@ -30,6 +30,7 @@
     "審査に時間がかかる"
   ],
   "overallRating": 3.7,
+  "rankPosition": 68,
   "establishedYear": 1985,
   "targetIndustries": [
     "IT・Web",
@@ -37,6 +38,5 @@
     "製造業",
     "サービス業",
     "建設業"
-  ],
-  "rankPosition": 62
+  ]
 }

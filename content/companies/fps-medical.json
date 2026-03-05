@@ -2,7 +2,7 @@
   "slug": "fps-medical",
   "name": "FPSメディカル",
   "description": "医療・介護業界向けファクタリング。診療報酬・介護報酬の早期資金化。",
-  "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=FPSMEDICAL",
+  "affiliateUrl": "https://fps-medical.co.jp/",
   "factoringType": "3社間",
   "feeRange": {
     "min": 1,
@@ -29,9 +29,9 @@
     "手数料は個別査定"
   ],
   "overallRating": 3.5,
+  "rankPosition": 97,
   "establishedYear": 2010,
   "targetIndustries": [
     "医療・介護"
-  ],
-  "rankPosition": 154
+  ]
 }

@@ -2,7 +2,7 @@
   "slug": "central-medience",
   "name": "セントラルメディエンスペイメンツ",
   "description": "医療・調剤報酬ファクタリング。医療機関向けの資金調達。",
-  "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=CENTRALMEDIENCE",
+  "affiliateUrl": "https://central-medience.co.jp/",
   "factoringType": "3社間",
   "feeRange": {
     "min": 1,
@@ -29,9 +29,9 @@
     "手数料は個別査定"
   ],
   "overallRating": 3.4,
+  "rankPosition": 128,
   "establishedYear": 2018,
   "targetIndustries": [
     "医療・介護"
-  ],
-  "rankPosition": 172
+  ]
 }

@@ -2,7 +2,7 @@
   "slug": "dokenkun",
   "name": "土建くん",
   "description": "建設業界専門のファクタリングサービス。工事代金の早期資金化に対応。",
-  "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=DOKENKUN",
+  "affiliateUrl": "https://dokenkun.jp/",
   "factoringType": "2社間・3社間",
   "feeRange": {
     "min": 3,
@@ -29,9 +29,9 @@
     "手数料は個別査定"
   ],
   "overallRating": 3.4,
+  "rankPosition": 132,
   "establishedYear": 2019,
   "targetIndustries": [
     "建設業"
-  ],
-  "rankPosition": 138
+  ]
 }

@@ -2,7 +2,7 @@
   "slug": "bestpay",
   "name": "ベストペイ（BESTPAY）",
   "description": "注文書ファクタリング専門。受注段階で資金化可能。手数料5%～。",
-  "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=BESTPAY",
+  "affiliateUrl": "https://best-pay.jp/",
   "factoringType": "2社間",
   "feeRange": {
     "min": 5,
@@ -29,6 +29,7 @@
     "最短翌営業日"
   ],
   "overallRating": 3.8,
+  "rankPosition": 55,
   "establishedYear": 2017,
   "targetIndustries": [
     "建設業",
@@ -36,6 +37,5 @@
     "IT・Web",
     "運送業",
     "広告業"
-  ],
-  "rankPosition": 64
+  ]
 }

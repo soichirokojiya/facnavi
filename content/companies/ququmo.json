@@ -2,14 +2,14 @@
   "slug": "ququmo",
   "name": "QuQuMo（ククモ）",
   "description": "オンライン完結で最速2時間入金。手数料1%～14.8%、個人事業主もOK。",
-  "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=QUQUMO",
+  "affiliateUrl": "https://ququmo.net/",
   "factoringType": "2社間",
   "feeRange": {
     "min": 1,
     "max": 14.8
   },
   "minAmount": 10000,
-  "maxAmount": 0,
+  "maxAmount": 50000000,
   "speedDays": 1,
   "onlineComplete": true,
   "features": [
@@ -29,6 +29,7 @@
     "電話サポートの時間が限られる"
   ],
   "overallRating": 4.3,
+  "rankPosition": 3,
   "establishedYear": 2017,
   "targetIndustries": [
     "IT・Web",
@@ -36,6 +37,5 @@
     "製造業",
     "小売業",
     "サービス業"
-  ],
-  "rankPosition": 49
+  ]
 }

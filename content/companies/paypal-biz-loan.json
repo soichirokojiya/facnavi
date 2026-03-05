@@ -2,7 +2,7 @@
   "slug": "paypal-biz-loan",
   "name": "PayPay銀行ビジネスローン",
   "description": "PayPay銀行が提供するビジネスローン。ファクタリングではなく融資型の資金調達。",
-  "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=PAYPALBIZLOAN",
+  "affiliateUrl": "https://www.paypay-bank.co.jp/business/",
   "factoringType": "2社間",
   "feeRange": {
     "min": 1.8,
@@ -29,6 +29,7 @@
     "手数料は個別査定"
   ],
   "overallRating": 3.6,
+  "rankPosition": 80,
   "establishedYear": 2000,
   "targetIndustries": [
     "建設業",
@@ -36,6 +37,5 @@
     "製造業",
     "IT・Web",
     "サービス業"
-  ],
-  "rankPosition": 78
+  ]
 }

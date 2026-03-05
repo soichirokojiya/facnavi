@@ -2,18 +2,40 @@
   "slug": "labol",
   "name": "ラボル",
   "description": "IT・クリエイター業界に特化したファクタリングサービス。業界の商習慣を理解した審査体制で、Web制作やシステム開発など長期プロジェクトの売掛金にも柔軟に対応します。",
-  "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=XXXXX12",
+  "affiliateUrl": "https://labol.co.jp/",
   "factoringType": "2社間",
-  "feeRange": { "min": 3, "max": 10 },
+  "feeRange": {
+    "min": 3,
+    "max": 10
+  },
   "minAmount": 10000,
   "maxAmount": 10000000,
   "speedDays": 1,
   "onlineComplete": true,
-  "features": ["IT・クリエイター特化", "最短60分入金", "1万円から利用OK", "24時間申込可能", "オンライン完結"],
-  "pros": ["IT業界の商習慣を理解した審査", "最短60分のスピード入金", "少額1万円から気軽に利用可能"],
-  "cons": ["IT・クリエイター以外の業種は審査が厳しい場合あり", "上限金額がやや低め"],
+  "features": [
+    "IT・クリエイター特化",
+    "最短60分入金",
+    "1万円から利用OK",
+    "24時間申込可能",
+    "オンライン完結"
+  ],
+  "pros": [
+    "IT業界の商習慣を理解した審査",
+    "最短60分のスピード入金",
+    "少額1万円から気軽に利用可能"
+  ],
+  "cons": [
+    "IT・クリエイター以外の業種は審査が厳しい場合あり",
+    "上限金額がやや低め"
+  ],
   "overallRating": 3.9,
-  "rankPosition": 12,
+  "rankPosition": 5,
   "establishedYear": 2021,
-  "targetIndustries": ["IT・Web", "システム開発", "デザイン", "映像制作", "ゲーム開発"]
+  "targetIndustries": [
+    "IT・Web",
+    "システム開発",
+    "デザイン",
+    "映像制作",
+    "ゲーム開発"
+  ]
 }

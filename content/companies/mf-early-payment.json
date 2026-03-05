@@ -2,14 +2,14 @@
   "slug": "mf-early-payment",
   "name": "マネーフォワード アーリーペイメント",
   "description": "マネーフォワードグループ運営。法人専門ファクタリングで即日入金可能。",
-  "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=MFEP",
+  "affiliateUrl": "https://mfkessai.co.jp/ep/top",
   "factoringType": "2社間",
   "feeRange": {
     "min": 1,
     "max": 10
   },
   "minAmount": 500000,
-  "maxAmount": 0,
+  "maxAmount": 50000000,
   "speedDays": 1,
   "onlineComplete": true,
   "features": [
@@ -29,6 +29,7 @@
     "比較的新しいサービス"
   ],
   "overallRating": 4.2,
+  "rankPosition": 11,
   "establishedYear": 2017,
   "targetIndustries": [
     "IT・Web",
@@ -36,6 +37,5 @@
     "サービス業",
     "卸売業",
     "広告業"
-  ],
-  "rankPosition": 60
+  ]
 }

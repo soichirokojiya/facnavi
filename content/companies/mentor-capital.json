@@ -2,18 +2,40 @@
   "slug": "mentor-capital",
   "name": "メンターキャピタル",
   "description": "最大1億円までの大口ファクタリングに対応。中堅〜大企業の大型債権の買取に強みを持ち、経験豊富な専任担当者がサポートします。",
-  "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=XXXXX9",
+  "affiliateUrl": "https://mentor-capital.jp/",
   "factoringType": "2社間・3社間",
-  "feeRange": { "min": 2, "max": 15 },
+  "feeRange": {
+    "min": 2,
+    "max": 15
+  },
   "minAmount": 1000000,
   "maxAmount": 100000000,
   "speedDays": 2,
   "onlineComplete": false,
-  "features": ["最大1億円対応", "専任担当者制", "大口案件に強い", "3社間で手数料優遇", "法人向けサービス充実"],
-  "pros": ["大口債権にも柔軟に対応可能", "専任担当者による手厚いサポート", "3社間利用で手数料を抑えられる"],
-  "cons": ["少額案件には対応していない", "オンライン完結には非対応で面談が必要"],
+  "features": [
+    "最大1億円対応",
+    "専任担当者制",
+    "大口案件に強い",
+    "3社間で手数料優遇",
+    "法人向けサービス充実"
+  ],
+  "pros": [
+    "大口債権にも柔軟に対応可能",
+    "専任担当者による手厚いサポート",
+    "3社間利用で手数料を抑えられる"
+  ],
+  "cons": [
+    "少額案件には対応していない",
+    "オンライン完結には非対応で面談が必要"
+  ],
   "overallRating": 4.1,
-  "rankPosition": 9,
+  "rankPosition": 19,
   "establishedYear": 2016,
-  "targetIndustries": ["建設業", "製造業", "卸売業", "不動産業", "人材派遣業"]
+  "targetIndustries": [
+    "建設業",
+    "製造業",
+    "卸売業",
+    "不動産業",
+    "人材派遣業"
+  ]
 }

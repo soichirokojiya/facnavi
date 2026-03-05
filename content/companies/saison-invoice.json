@@ -2,7 +2,7 @@
   "slug": "saison-invoice",
   "name": "SAISON INVOICE",
   "description": "セゾンが提供するインボイスファクタリング。大手の安心感。",
-  "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=SAISONINVOICE",
+  "affiliateUrl": "https://www.saisoninvoice.com/",
   "factoringType": "2社間・3社間",
   "feeRange": {
     "min": 1,
@@ -29,6 +29,7 @@
     "手数料は個別査定"
   ],
   "overallRating": 3.6,
+  "rankPosition": 82,
   "establishedYear": 2019,
   "targetIndustries": [
     "建設業",
@@ -36,6 +37,5 @@
     "製造業",
     "IT・Web",
     "サービス業"
-  ],
-  "rankPosition": 179
+  ]
 }

@@ -2,7 +2,7 @@
   "slug": "kensetsu-pay",
   "name": "建設Pay",
   "description": "建設業界向けファクタリングサービス。工事代金の早期資金化に対応。",
-  "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=KENSETSUPAY",
+  "affiliateUrl": "https://kensetsu-pay.jp/",
   "factoringType": "2社間・3社間",
   "feeRange": {
     "min": 3,
@@ -29,9 +29,9 @@
     "手数料は個別査定"
   ],
   "overallRating": 3.4,
+  "rankPosition": 151,
   "establishedYear": 2019,
   "targetIndustries": [
     "建設業"
-  ],
-  "rankPosition": 161
+  ]
 }

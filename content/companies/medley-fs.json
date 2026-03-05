@@ -2,7 +2,7 @@
   "slug": "medley-fs",
   "name": "メドレーフィナンシャルサービス",
   "description": "医療・介護業界向けファイナンスサービス。診療報酬ファクタリング。",
-  "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=MEDLEYFS",
+  "affiliateUrl": "https://www.medley-fs.co.jp/",
   "factoringType": "3社間",
   "feeRange": {
     "min": 1,
@@ -29,9 +29,9 @@
     "手数料は個別査定"
   ],
   "overallRating": 3.5,
+  "rankPosition": 103,
   "establishedYear": 2015,
   "targetIndustries": [
     "医療・介護"
-  ],
-  "rankPosition": 171
+  ]
 }

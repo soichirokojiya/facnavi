@@ -2,14 +2,14 @@
   "slug": "invoice-pay",
   "name": "インボイスPay",
   "description": "スマートヘッジ運営。手数料2.5%～、最短即日入金。累計100億円超の買取実績。",
-  "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=INVPAY",
+  "affiliateUrl": "https://invoice-pay.jp/",
   "factoringType": "2社間",
   "feeRange": {
     "min": 2.5,
     "max": 15
   },
   "minAmount": 100000,
-  "maxAmount": 0,
+  "maxAmount": 50000000,
   "speedDays": 1,
   "onlineComplete": true,
   "features": [
@@ -29,6 +29,7 @@
     "知名度が低め"
   ],
   "overallRating": 3.9,
+  "rankPosition": 48,
   "establishedYear": 2019,
   "targetIndustries": [
     "IT・Web",
@@ -36,6 +37,5 @@
     "サービス業",
     "小売業",
     "製造業"
-  ],
-  "rankPosition": 73
+  ]
 }

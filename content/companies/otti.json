@@ -2,7 +2,7 @@
   "slug": "otti",
   "name": "OTTI（オッティ）",
   "description": "個人事業主から法人まで対応。最短即日入金、30万円から利用可能。",
-  "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=OTTI",
+  "affiliateUrl": "https://otti.jp/",
   "factoringType": "2社間・3社間",
   "feeRange": {
     "min": 5,
@@ -29,6 +29,7 @@
     "手数料上限非公開"
   ],
   "overallRating": 3.7,
+  "rankPosition": 28,
   "establishedYear": 2017,
   "targetIndustries": [
     "建設業",
@@ -36,6 +37,5 @@
     "IT・Web",
     "小売業",
     "飲食業"
-  ],
-  "rankPosition": 65
+  ]
 }

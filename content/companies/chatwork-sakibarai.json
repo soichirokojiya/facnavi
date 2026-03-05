@@ -2,7 +2,7 @@
   "slug": "chatwork-sakibarai",
   "name": "Chatwork先払い",
   "description": "Chatworkが提供する先払いサービス。請求書の早期資金化。",
-  "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=CHATWORKSAKIBARAI",
+  "affiliateUrl": "https://go.chatwork.com/ja/early-payment/",
   "factoringType": "2社間・3社間",
   "feeRange": {
     "min": 1,
@@ -29,6 +29,7 @@
     "手数料は個別査定"
   ],
   "overallRating": 3.5,
+  "rankPosition": 89,
   "establishedYear": 2020,
   "targetIndustries": [
     "建設業",
@@ -36,6 +37,5 @@
     "製造業",
     "IT・Web",
     "サービス業"
-  ],
-  "rankPosition": 169
+  ]
 }

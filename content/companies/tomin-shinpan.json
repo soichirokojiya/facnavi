@@ -2,7 +2,7 @@
   "slug": "tomin-shinpan",
   "name": "トミンシンパン",
   "description": "東京・都民信販のファクタリングサービス。首都圏に強い。",
-  "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=TOMINSHINPAN",
+  "affiliateUrl": "https://www.tomin.co.jp/",
   "factoringType": "2社間・3社間",
   "feeRange": {
     "min": 3,
@@ -29,6 +29,7 @@
     "手数料は個別査定"
   ],
   "overallRating": 3.3,
+  "rankPosition": 245,
   "establishedYear": 2000,
   "targetIndustries": [
     "建設業",
@@ -36,6 +37,5 @@
     "製造業",
     "IT・Web",
     "サービス業"
-  ],
-  "rankPosition": 221
+  ]
 }

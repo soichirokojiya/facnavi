@@ -2,7 +2,7 @@
   "slug": "fukuoka-bank-ep",
   "name": "福岡銀行アーリーペイメント",
   "description": "福岡銀行グループのファクタリングサービス。九州地域に強い。",
-  "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=FUKUOKABANKEP",
+  "affiliateUrl": "https://www.fukuokabank.co.jp/",
   "factoringType": "3社間",
   "feeRange": {
     "min": 1,
@@ -29,6 +29,7 @@
     "手数料は個別査定"
   ],
   "overallRating": 3.5,
+  "rankPosition": 98,
   "establishedYear": 2018,
   "targetIndustries": [
     "建設業",
@@ -36,6 +37,5 @@
     "製造業",
     "サービス業",
     "小売業"
-  ],
-  "rankPosition": 196
+  ]
 }

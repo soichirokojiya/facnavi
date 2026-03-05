@@ -1,10 +1,13 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { getAllCompanies } from "@/lib/companies";
 import { CompanyCard } from "@/components/ranking/CompanyCard";
 import { ComparisonTable } from "@/components/ranking/ComparisonTable";
 import { Breadcrumb } from "@/components/layout/Breadcrumb";
 import { BreadcrumbJsonLd, JsonLd } from "@/components/seo/JsonLd";
 import { SITE_URL } from "@/lib/constants";
+
+const PER_PAGE = 10;
 
 export const metadata: Metadata = {
   title: "ファクタリング業者おすすめランキング",
@@ -15,6 +18,8 @@ export const metadata: Metadata = {
 
 export default function RankingPage() {
   const companies = getAllCompanies();
+  const topCompanies = companies.slice(0, PER_PAGE);
+  const totalPages = Math.ceil(companies.length / PER_PAGE);
 
   return (
     <div className="max-w-6xl mx-auto px-4 py-8">
@@ -29,7 +34,7 @@ export default function RankingPage() {
           "@context": "https://schema.org",
           "@type": "ItemList",
           name: "ファクタリング業者おすすめランキング",
-          itemListElement: companies.map((c, i) => ({
+          itemListElement: topCompanies.map((c, i) => ({
             "@type": "ListItem",
             position: i + 1,
             name: c.name,
@@ -49,9 +54,9 @@ export default function RankingPage() {
 
       <section className="mb-12">
         <h2 className="text-xl font-bold text-gray-900 mb-4">
-          比較表で一覧チェック
+          比較表で一覧チェック（TOP {PER_PAGE}）
         </h2>
-        <ComparisonTable companies={companies} />
+        <ComparisonTable companies={topCompanies} />
       </section>
 
       <section>
@@ -59,7 +64,7 @@ export default function RankingPage() {
           各社の詳細
         </h2>
         <div className="space-y-6">
-          {companies.map((company) => (
+          {topCompanies.map((company) => (
             <CompanyCard
               key={company.slug}
               company={company}
@@ -68,6 +73,30 @@ export default function RankingPage() {
           ))}
         </div>
       </section>
+
+      {/* Pagination */}
+      {totalPages > 1 && (
+        <nav className="flex justify-center items-center gap-2 mt-10">
+          <span className="w-10 h-10 flex items-center justify-center rounded-lg bg-blue-600 text-white font-bold text-sm">
+            1
+          </span>
+          {Array.from({ length: totalPages - 1 }, (_, i) => i + 2).map((p) => (
+            <Link
+              key={p}
+              href={`/ranking/page/${p}`}
+              className="w-10 h-10 flex items-center justify-center rounded-lg bg-gray-100 hover:bg-gray-200 text-gray-700 text-sm transition-colors"
+            >
+              {p}
+            </Link>
+          ))}
+          <Link
+            href="/ranking/page/2"
+            className="px-4 py-2 rounded-lg bg-gray-100 hover:bg-gray-200 text-gray-700 text-sm transition-colors"
+          >
+            次へ →
+          </Link>
+        </nav>
+      )}
     </div>
   );
 }

@@ -2,7 +2,7 @@
   "slug": "soreiyu",
   "name": "ソレイユ",
   "description": "手数料1%～、最短30分で資金化。審査通過率90%の柔軟な対応。",
-  "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=SOREIYU",
+  "affiliateUrl": "https://solejapan.com/",
   "factoringType": "2社間・3社間",
   "feeRange": {
     "min": 1,
@@ -29,6 +29,7 @@
     "知名度がやや低い"
   ],
   "overallRating": 3.9,
+  "rankPosition": 52,
   "establishedYear": 2018,
   "targetIndustries": [
     "建設業",
@@ -36,6 +37,5 @@
     "IT・Web",
     "小売業",
     "飲食業"
-  ],
-  "rankPosition": 63
+  ]
 }

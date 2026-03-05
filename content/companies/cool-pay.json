@@ -2,7 +2,7 @@
   "slug": "cool-pay",
   "name": "CoolPay",
   "description": "クールペイはAIを活用したオンラインファクタリング。即日資金調達が可能。",
-  "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=COOLPAY",
+  "affiliateUrl": "https://cool-pay.jp/",
   "factoringType": "2社間・3社間",
   "feeRange": {
     "min": 2,
@@ -29,6 +29,7 @@
     "手数料は個別査定"
   ],
   "overallRating": 3.5,
+  "rankPosition": 90,
   "establishedYear": 2020,
   "targetIndustries": [
     "建設業",
@@ -36,6 +37,5 @@
     "製造業",
     "IT・Web",
     "サービス業"
-  ],
-  "rankPosition": 134
+  ]
 }

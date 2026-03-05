@@ -2,14 +2,14 @@
   "slug": "ja-mitsui-lease",
   "name": "JA三井リース",
   "description": "JA系×三井系の大手リース会社。売掛債権・手形債権の買取に対応。",
-  "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=JAMITSUI",
+  "affiliateUrl": "https://www.jamitsuilease.co.jp/",
   "factoringType": "3社間",
   "feeRange": {
     "min": 1,
     "max": 5
   },
   "minAmount": 5000000,
-  "maxAmount": 0,
+  "maxAmount": 50000000,
   "speedDays": 5,
   "onlineComplete": false,
   "features": [
@@ -30,6 +30,7 @@
     "入金まで時間がかかる"
   ],
   "overallRating": 3.8,
+  "rankPosition": 56,
   "establishedYear": 2008,
   "targetIndustries": [
     "農業",
@@ -37,6 +38,5 @@
     "製造業",
     "卸売業",
     "運送業"
-  ],
-  "rankPosition": 59
+  ]
 }

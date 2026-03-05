@@ -2,7 +2,7 @@
   "slug": "alps-finance",
   "name": "アルプスファイナンスサービス",
   "description": "ファクタリング・金融サービス。地域密着型。",
-  "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=ALPSFINANCE",
+  "affiliateUrl": "https://alps-finance.co.jp/",
   "factoringType": "2社間・3社間",
   "feeRange": {
     "min": 3,
@@ -29,6 +29,7 @@
     "手数料は個別査定"
   ],
   "overallRating": 3.3,
+  "rankPosition": 189,
   "establishedYear": 2018,
   "targetIndustries": [
     "建設業",
@@ -36,6 +37,5 @@
     "製造業",
     "IT・Web",
     "サービス業"
-  ],
-  "rankPosition": 241
+  ]
 }

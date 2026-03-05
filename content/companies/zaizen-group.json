@@ -2,7 +2,7 @@
   "slug": "zaizen-group",
   "name": "財全グループ",
   "description": "札幌拠点のファクタリング会社。北海道・東北に強い。",
-  "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=ZAIZENGROUP",
+  "affiliateUrl": "https://zaizen-group.co.jp/",
   "factoringType": "2社間・3社間",
   "feeRange": {
     "min": 3,
@@ -29,6 +29,7 @@
     "手数料は個別査定"
   ],
   "overallRating": 3.5,
+  "rankPosition": 118,
   "establishedYear": 2010,
   "targetIndustries": [
     "建設業",
@@ -36,6 +37,5 @@
     "製造業",
     "農業",
     "飲食業"
-  ],
-  "rankPosition": 83
+  ]
 }

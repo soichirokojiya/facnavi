@@ -2,7 +2,7 @@
   "slug": "factoring-japan",
   "name": "ファクタリングジャパン",
   "description": "2社間・3社間対応。50万円～最大3億円まで。最短即日入金。",
-  "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=FCTJP",
+  "affiliateUrl": "https://factoring-japan.jp/",
   "factoringType": "2社間・3社間",
   "feeRange": {
     "min": 3,
@@ -29,6 +29,7 @@
     "手数料は要相談"
   ],
   "overallRating": 3.6,
+  "rankPosition": 74,
   "establishedYear": 2018,
   "targetIndustries": [
     "建設業",
@@ -36,6 +37,5 @@
     "IT・Web",
     "運送業",
     "卸売業"
-  ],
-  "rankPosition": 70
+  ]
 }

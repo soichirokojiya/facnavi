@@ -2,14 +2,14 @@
   "slug": "shikin-quick",
   "name": "資金調達QUICK",
   "description": "手数料1%～。最短10分入金、累計申込10万件超のオンラインファクタリング。",
-  "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=SQUICK",
+  "affiliateUrl": "https://shikin-quick.com/",
   "factoringType": "2社間",
   "feeRange": {
     "min": 1,
     "max": 15
   },
   "minAmount": 10000,
-  "maxAmount": 0,
+  "maxAmount": 50000000,
   "speedDays": 1,
   "onlineComplete": true,
   "features": [
@@ -29,6 +29,7 @@
     "手数料上限が高い場合も"
   ],
   "overallRating": 4,
+  "rankPosition": 44,
   "establishedYear": 2020,
   "targetIndustries": [
     "IT・Web",
@@ -36,6 +37,5 @@
     "小売業",
     "サービス業",
     "飲食業"
-  ],
-  "rankPosition": 72
+  ]
 }

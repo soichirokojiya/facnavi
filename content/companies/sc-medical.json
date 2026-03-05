@@ -2,7 +2,7 @@
   "slug": "sc-medical",
   "name": "SCメディカル",
   "description": "医療業界向けファクタリング。診療報酬の早期資金化。",
-  "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=SCMEDICAL",
+  "affiliateUrl": "https://sc-medical.co.jp/",
   "factoringType": "3社間",
   "feeRange": {
     "min": 1,
@@ -29,9 +29,9 @@
     "手数料は個別査定"
   ],
   "overallRating": 3.4,
+  "rankPosition": 169,
   "establishedYear": 2018,
   "targetIndustries": [
     "医療・介護"
-  ],
-  "rankPosition": 244
+  ]
 }

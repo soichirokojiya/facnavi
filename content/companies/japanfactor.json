@@ -2,7 +2,7 @@
   "slug": "japanfactor",
   "name": "ジャパンファクター",
   "description": "福岡・東京2拠点。手数料5%～、診療報酬債権にも対応。",
-  "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=JPFACTOR",
+  "affiliateUrl": "https://japanfactor.jp/",
   "factoringType": "2社間・3社間",
   "feeRange": {
     "min": 5,
@@ -29,6 +29,7 @@
     "大手と比べて規模が小さい"
   ],
   "overallRating": 3.8,
+  "rankPosition": 58,
   "establishedYear": 2015,
   "targetIndustries": [
     "建設業",
@@ -36,6 +37,5 @@
     "運送業",
     "小売業",
     "製造業"
-  ],
-  "rankPosition": 66
+  ]
 }

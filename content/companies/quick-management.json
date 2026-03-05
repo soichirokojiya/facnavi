@@ -2,14 +2,14 @@
   "slug": "quick-management",
   "name": "クイックマネジメント",
   "description": "最短30分のスピード入金。オンライン完結で全国対応、AIを活用した審査で手続きがスムーズ。",
-  "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=XXXXX34",
+  "affiliateUrl": "https://qm-factoring.com/",
   "factoringType": "2社間",
   "feeRange": {
     "min": 1,
     "max": 15
   },
-  "minAmount": 0,
-  "maxAmount": 0,
+  "minAmount": 300000,
+  "maxAmount": 50000000,
   "speedDays": 1,
   "onlineComplete": true,
   "features": [
@@ -29,7 +29,7 @@
     "新しい会社で実績が少なめ"
   ],
   "overallRating": 3.9,
-  "rankPosition": 34,
+  "rankPosition": 51,
   "establishedYear": 2021,
   "targetIndustries": [
     "IT・Web",

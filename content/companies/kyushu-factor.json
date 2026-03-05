@@ -2,7 +2,7 @@
   "slug": "kyushu-factor",
   "name": "九州ファクター",
   "description": "九州拠点のファクタリング会社。九州地域に密着。",
-  "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=KYUSHUFACTOR",
+  "affiliateUrl": "https://kyushu-factor.jp/",
   "factoringType": "2社間・3社間",
   "feeRange": {
     "min": 3,
@@ -29,6 +29,7 @@
     "手数料は個別査定"
   ],
   "overallRating": 3.4,
+  "rankPosition": 153,
   "establishedYear": 2018,
   "targetIndustries": [
     "建設業",
@@ -36,6 +37,5 @@
     "製造業",
     "農業",
     "サービス業"
-  ],
-  "rankPosition": 252
+  ]
 }
