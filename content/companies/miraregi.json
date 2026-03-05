@@ -1,0 +1,39 @@
+{
+  "slug": "miraregi",
+  "name": "miraregi（ミラレジ）",
+  "description": "株式会社エムライズが運営するEC事業者特化型ファクタリング。最短1時間で入金、請求書不要で売上金額から対応可能。オンライン完結。",
+  "affiliateUrl": "https://neo7.net/link.php?id=N0000272&adwares=A0000208&tag=",
+  "factoringType": "2社間",
+  "feeRange": {
+    "min": 5,
+    "max": 15
+  },
+  "minAmount": 150000,
+  "maxAmount": 10000000,
+  "speedDays": 1,
+  "onlineComplete": true,
+  "features": [
+    "EC事業者特化",
+    "最短1時間入金",
+    "請求書不要",
+    "オンライン完結",
+    "個人事業主OK"
+  ],
+  "pros": [
+    "EC事業者に特化した専門サービス",
+    "請求書がなくても売上金額で対応可能",
+    "最短1時間のスピード入金"
+  ],
+  "cons": [
+    "手数料の上限が非公開",
+    "売掛先が個人事業主の場合は利用不可"
+  ],
+  "establishedYear": null,
+  "targetIndustries": [
+    "IT・Web"
+  ],
+  "overallRating": 3.5,
+  "rankPosition": 176,
+  "soleProprietorOk": true,
+  "weekendPayment": false
+}

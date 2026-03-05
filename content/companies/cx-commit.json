@@ -1,0 +1,37 @@
+{
+  "slug": "cx-commit",
+  "name": "CXコミット",
+  "description": "株式会社CXが運営するオンライン完結型ファクタリング。最短30分で振込、24時間365日対応。請求書と通帳の2点で申込可能。",
+  "affiliateUrl": "https://neo7.net/link.php?id=N0000272&adwares=A0000213&tag=",
+  "factoringType": "2社間",
+  "feeRange": {
+    "min": 2,
+    "max": 15
+  },
+  "minAmount": 100000,
+  "maxAmount": 10000000,
+  "speedDays": 1,
+  "onlineComplete": true,
+  "features": [
+    "最短30分入金",
+    "24時間365日対応",
+    "オンライン完結",
+    "必要書類2点のみ",
+    "個人事業主OK"
+  ],
+  "pros": [
+    "最短30分のスピード入金",
+    "24時間365日いつでも申込可能",
+    "必要書類は請求書と通帳のみ"
+  ],
+  "cons": [
+    "手数料の詳細は要見積もり",
+    "買取先からの入金履歴が必要"
+  ],
+  "establishedYear": null,
+  "targetIndustries": [],
+  "overallRating": 3.5,
+  "rankPosition": 174,
+  "soleProprietorOk": true,
+  "weekendPayment": true
+}

@@ -1,0 +1,37 @@
+{
+  "slug": "kantan-factoring",
+  "name": "簡単ファクタリング",
+  "description": "有限会社INOが運営するファクタリングサービス。最短2時間で入金、10万円〜5,000万円まで対応。非対面契約で全国から利用可能。",
+  "affiliateUrl": "https://kantanfactoring.co.jp/ino-neo/?aid=53367d175ba455d89ad36d1f11ae76cf&neo7_sid=141bb7068afa73c41bcdd1354c9fe1ca&cid=A0000229&neo7_nid=N0000272",
+  "factoringType": "2社間・3社間",
+  "feeRange": {
+    "min": 3,
+    "max": 15
+  },
+  "minAmount": 100000,
+  "maxAmount": 50000000,
+  "speedDays": 1,
+  "onlineComplete": true,
+  "features": [
+    "最短2時間入金",
+    "10万円から対応",
+    "非対面契約OK",
+    "全国対応",
+    "他社並行利用可"
+  ],
+  "pros": [
+    "最短2時間のスピード入金",
+    "少額10万円から利用可能",
+    "非対面・オンラインで全国対応"
+  ],
+  "cons": [
+    "手数料の詳細は要見積もり",
+    "初回は5,000万円まで"
+  ],
+  "establishedYear": null,
+  "targetIndustries": [],
+  "overallRating": 3.5,
+  "rankPosition": 175,
+  "soleProprietorOk": true,
+  "weekendPayment": false
+}
