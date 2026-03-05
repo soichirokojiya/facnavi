@@ -5,8 +5,8 @@
   "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=4AX5KD+9R9ROY+4JGG+60OXD",
   "factoringType": "2社間・3社間",
   "feeRange": {
-    "min": 3,
-    "max": 15
+    "min": 2,
+    "max": 14.8
   },
   "minAmount": 300000,
   "maxAmount": 50000000,

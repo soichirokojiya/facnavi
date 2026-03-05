@@ -5,7 +5,7 @@
   "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=4AX0WK+F2DWVM+40JM+1BP19T",
   "factoringType": "2社間",
   "feeRange": {
-    "min": 3,
+    "min": 10,
     "max": 10
   },
   "minAmount": 10000,
@@ -38,6 +38,6 @@
   ],
   "overallRating": 3.9,
   "rankPosition": 5,
-  "soleProprietorOk": false,
+  "soleProprietorOk": true,
   "weekendPayment": true
 }

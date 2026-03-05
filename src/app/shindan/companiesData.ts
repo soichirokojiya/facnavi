@@ -41,7 +41,7 @@ const companiesData: Company[] = [
     ],
     "overallRating": 4.1,
     "rankPosition": 1,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false
   },
   {
@@ -84,7 +84,7 @@ const companiesData: Company[] = [
     ],
     "overallRating": 4.6,
     "rankPosition": 2,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false
   },
   {
@@ -126,7 +126,7 @@ const companiesData: Company[] = [
     ],
     "overallRating": 4.7,
     "rankPosition": 3,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false
   },
   {
@@ -179,7 +179,7 @@ const companiesData: Company[] = [
     "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=4AX0WK+F2DWVM+40JM+1BP19T",
     "factoringType": "2社間",
     "feeRange": {
-      "min": 3,
+      "min": 10,
       "max": 10
     },
     "minAmount": 10000,
@@ -212,7 +212,7 @@ const companiesData: Company[] = [
     ],
     "overallRating": 3.9,
     "rankPosition": 5,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": true
   },
   {
@@ -255,7 +255,7 @@ const companiesData: Company[] = [
     ],
     "overallRating": 4.3,
     "rankPosition": 6,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false
   },
   {
@@ -297,7 +297,7 @@ const companiesData: Company[] = [
     ],
     "overallRating": 4,
     "rankPosition": 7,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false
   },
   {
@@ -340,7 +340,7 @@ const companiesData: Company[] = [
     ],
     "overallRating": 4.1,
     "rankPosition": 8,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": true
   },
   {
@@ -350,8 +350,8 @@ const companiesData: Company[] = [
     "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=4AX1OL+BMJR1U+42NG+C03K1",
     "factoringType": "2社間・3社間",
     "feeRange": {
-      "min": 1,
-      "max": 10
+      "min": 1.8,
+      "max": 9.8
     },
     "minAmount": 100000,
     "maxAmount": 50000000,
@@ -383,7 +383,7 @@ const companiesData: Company[] = [
     ],
     "overallRating": 4.2,
     "rankPosition": 9,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false
   },
   {
@@ -436,7 +436,7 @@ const companiesData: Company[] = [
     "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=4AX1OL+BRWNHU+5LZE+HVV0H",
     "factoringType": "2社間",
     "feeRange": {
-      "min": 2,
+      "min": 1,
       "max": 10
     },
     "minAmount": 100000,
@@ -469,7 +469,7 @@ const companiesData: Company[] = [
     ],
     "overallRating": 4.2,
     "rankPosition": 11,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false
   },
   {
@@ -479,8 +479,8 @@ const companiesData: Company[] = [
     "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=4AX5KD+9UUDBM+3JLM+5YJRM",
     "factoringType": "2社間・3社間",
     "feeRange": {
-      "min": 1,
-      "max": 15
+      "min": 0.5,
+      "max": 12.5
     },
     "minAmount": 300000,
     "maxAmount": 300000000,
@@ -512,7 +512,7 @@ const companiesData: Company[] = [
     ],
     "overallRating": 4.2,
     "rankPosition": 12,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false
   },
   {
@@ -555,7 +555,7 @@ const companiesData: Company[] = [
     ],
     "overallRating": 4,
     "rankPosition": 13,
-    "soleProprietorOk": true,
+    "soleProprietorOk": false,
     "weekendPayment": false
   },
   {
@@ -598,7 +598,7 @@ const companiesData: Company[] = [
     ],
     "overallRating": 4,
     "rankPosition": 14,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false
   },
   {
@@ -609,7 +609,7 @@ const companiesData: Company[] = [
     "factoringType": "2社間・3社間",
     "feeRange": {
       "min": 1.5,
-      "max": 10
+      "max": 8
     },
     "minAmount": 500000,
     "maxAmount": 100000000,
@@ -651,7 +651,7 @@ const companiesData: Company[] = [
     "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=4AX1OL+BIDPTE+5KPA+BWVTE",
     "factoringType": "2社間・3社間",
     "feeRange": {
-      "min": 3,
+      "min": 10,
       "max": 20
     },
     "minAmount": 300000,
@@ -694,8 +694,8 @@ const companiesData: Company[] = [
     "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=4AX5KD+A2L06Q+4DJO+5YJRM",
     "factoringType": "2社間・3社間",
     "feeRange": {
-      "min": 3,
-      "max": 18
+      "min": 1.5,
+      "max": 10
     },
     "minAmount": 200000,
     "maxAmount": 50000000,
@@ -727,7 +727,7 @@ const companiesData: Company[] = [
     ],
     "overallRating": 3.9,
     "rankPosition": 17,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false
   },
   {
@@ -737,7 +737,7 @@ const companiesData: Company[] = [
     "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=4AX1ON+BMJR1U+3XT0+5YJRM",
     "factoringType": "2社間・3社間",
     "feeRange": {
-      "min": 2,
+      "min": 2.8,
       "max": 15
     },
     "minAmount": 300000,
@@ -770,8 +770,8 @@ const companiesData: Company[] = [
     ],
     "overallRating": 3.9,
     "rankPosition": 18,
-    "soleProprietorOk": false,
-    "weekendPayment": false
+    "soleProprietorOk": true,
+    "weekendPayment": true
   },
   {
     "slug": "factorplan",
@@ -813,7 +813,7 @@ const companiesData: Company[] = [
     ],
     "overallRating": 3.8,
     "rankPosition": 19,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false
   },
   {
@@ -867,7 +867,7 @@ const companiesData: Company[] = [
     "factoringType": "2社間・3社間",
     "feeRange": {
       "min": 1.5,
-      "max": 15
+      "max": 10
     },
     "minAmount": 300000,
     "maxAmount": 50000000,
@@ -909,8 +909,8 @@ const companiesData: Company[] = [
     "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=4AX5KD+A0SPDE+3RD2+5YJRM",
     "factoringType": "2社間・3社間",
     "feeRange": {
-      "min": 3,
-      "max": 18
+      "min": 1.5,
+      "max": 9.5
     },
     "minAmount": 100000,
     "maxAmount": 30000000,
@@ -942,7 +942,7 @@ const companiesData: Company[] = [
     ],
     "overallRating": 3.8,
     "rankPosition": 22,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false
   },
   {
@@ -1028,8 +1028,8 @@ const companiesData: Company[] = [
     ],
     "overallRating": 3.7,
     "rankPosition": 24,
-    "soleProprietorOk": false,
-    "weekendPayment": true
+    "soleProprietorOk": true,
+    "weekendPayment": false
   },
   {
     "slug": "factoring-try",
@@ -1071,8 +1071,8 @@ const companiesData: Company[] = [
     ],
     "overallRating": 3.7,
     "rankPosition": 25,
-    "soleProprietorOk": false,
-    "weekendPayment": true
+    "soleProprietorOk": true,
+    "weekendPayment": false
   },
   {
     "slug": "kyoei-support",
@@ -1081,7 +1081,7 @@ const companiesData: Company[] = [
     "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=4AX5KD+9Q2WHE+5U8W+5YJRM",
     "factoringType": "2社間",
     "feeRange": {
-      "min": 3,
+      "min": 2,
       "max": 15
     },
     "minAmount": 300000,
@@ -1124,7 +1124,7 @@ const companiesData: Company[] = [
     "factoringType": "2社間・3社間",
     "feeRange": {
       "min": 2,
-      "max": 15
+      "max": 10
     },
     "minAmount": 500000,
     "maxAmount": 50000000,
@@ -1155,7 +1155,7 @@ const companiesData: Company[] = [
     ],
     "overallRating": 3.6,
     "rankPosition": 27,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false
   },
   {
@@ -1165,8 +1165,8 @@ const companiesData: Company[] = [
     "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=4AX5KD+9VFSXE+4HV8+BXQOH",
     "factoringType": "2社間・3社間",
     "feeRange": {
-      "min": 3,
-      "max": 15
+      "min": 4,
+      "max": 9
     },
     "minAmount": 300000,
     "maxAmount": 50000000,
@@ -1199,7 +1199,7 @@ const companiesData: Company[] = [
     "overallRating": 3.4,
     "rankPosition": 28,
     "soleProprietorOk": true,
-    "weekendPayment": false
+    "weekendPayment": true
   },
   {
     "slug": "3s-factoring",
@@ -1208,8 +1208,8 @@ const companiesData: Company[] = [
     "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=4AX1OL+BPIX2Q+5QRM+5YJRM",
     "factoringType": "2社間・3社間",
     "feeRange": {
-      "min": 3,
-      "max": 15
+      "min": 2,
+      "max": 19
     },
     "minAmount": 300000,
     "maxAmount": 50000000,
@@ -1251,8 +1251,8 @@ const companiesData: Company[] = [
     "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=4AX5KD+9R9ROY+4JGG+60OXD",
     "factoringType": "2社間・3社間",
     "feeRange": {
-      "min": 3,
-      "max": 15
+      "min": 2,
+      "max": 14.8
     },
     "minAmount": 300000,
     "maxAmount": 50000000,

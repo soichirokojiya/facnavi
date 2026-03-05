@@ -38,6 +38,6 @@
   ],
   "overallRating": 3.7,
   "rankPosition": 25,
-  "soleProprietorOk": false,
-  "weekendPayment": true
+  "soleProprietorOk": true,
+  "weekendPayment": false
 }

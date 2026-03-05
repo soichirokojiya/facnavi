@@ -6,7 +6,7 @@
   "factoringType": "2社間・3社間",
   "feeRange": {
     "min": 1.5,
-    "max": 10
+    "max": 8
   },
   "minAmount": 500000,
   "maxAmount": 100000000,
