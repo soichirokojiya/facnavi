@@ -17,7 +17,7 @@ import { formatFeeRange, formatAmount } from "@/lib/companies";
 export default function HomePage() {
   const companies = getAllCompanies();
   const reviews = getAllReviews();
-  const articles = getAllArticles().slice(0, 4);
+  const articles = getAllArticles().slice(0, 6);
   const companyMap = Object.fromEntries(companies.map((c) => [c.slug, c.name]));
   const totalReviews = reviews.length;
 
@@ -304,7 +304,7 @@ export default function HomePage() {
               すべて見る →
             </Link>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {articles.map((article) => (
               <ArticleCard key={article.slug} article={article} />
             ))}
