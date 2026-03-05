@@ -169,7 +169,7 @@ const companiesData: Company[] = [
     "slug": "labol",
     "name": "ラボル",
     "description": "IT・クリエイター業界に特化したファクタリングサービス。業界の商習慣を理解した審査体制で、Web制作やシステム開発など長期プロジェクトの売掛金にも柔軟に対応します。",
-    "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=4AX5KD+A4DB02+40JM+TWTFL",
+    "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=4AX0WK+F2DWVM+40JM+1BP19T",
     "factoringType": "2社間",
     "feeRange": {
       "min": 3,
@@ -332,7 +332,7 @@ const companiesData: Company[] = [
     "slug": "freenance",
     "name": "フリーナンス",
     "description": "GMOグループが運営するフリーランス向け総合サービス。ファクタリング機能「即日払い」に加え、損害賠償保険やバーチャルオフィスなど、フリーランスの働き方を総合的にサポートします。",
-    "affiliateUrl": "https://freenance.net/",
+    "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=4AX0WK+FEW0KY+47L8+5ZU29",
     "factoringType": "2社間",
     "feeRange": {
       "min": 3,
@@ -373,7 +373,7 @@ const companiesData: Company[] = [
     "slug": "paytner",
     "name": "ペイトナー",
     "description": "最短10分で請求書を現金化。手数料一律10%で明瞭、1万円の少額から利用可能なフリーランス向けサービス。",
-    "affiliateUrl": "https://paytner.co.jp/factoring",
+    "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=4AX0WK+EMWN5E+4PF6+644DT",
     "factoringType": "2社間",
     "feeRange": {
       "min": 10,
@@ -699,7 +699,7 @@ const companiesData: Company[] = [
     "slug": "next-one",
     "name": "ネクストワン",
     "description": "建設業・医療業界に特化したファクタリング会社。業界特有の支払いサイトの長さや売掛金の特性を熟知しており、専門性の高い審査と柔軟な対応が強みです。",
-    "affiliateUrl": "https://factoring-nextone.jp/",
+    "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=4AX1OL+BRB7W2+4OCU+5ZMCH",
     "factoringType": "2社間・3社間",
     "feeRange": {
       "min": 1.5,
@@ -1068,7 +1068,7 @@ const companiesData: Company[] = [
     "slug": "kaisoku",
     "name": "買速（KAISOKU）",
     "description": "最短30分で入金可能な超スピード対応ファクタリング。審査通過率92%、10万円の少額から対応。",
-    "affiliateUrl": "https://kai-soku.com/",
+    "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=4AX1OL+BRWNHU+5LZE+HVV0H",
     "factoringType": "2社間",
     "feeRange": {
       "min": 2,
@@ -1150,7 +1150,7 @@ const companiesData: Company[] = [
     "slug": "ennavi",
     "name": "えんナビ",
     "description": "24時間365日スタッフ対応。最短1日で資金化可能、少額から売掛債権の買取に対応。",
-    "affiliateUrl": "https://ennavi.tokyo/",
+    "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=4AX0WK+FOEY9E+44CA+61C2P",
     "factoringType": "2社間・3社間",
     "feeRange": {
       "min": 5,
@@ -1844,7 +1844,7 @@ const companiesData: Company[] = [
     "slug": "act-will",
     "name": "アクト・ウィル",
     "description": "最高1億円までの大口ファクタリングに対応。審査通過率90%以上、最短即日で入金可能。",
-    "affiliateUrl": "https://actwill.co.jp/",
+    "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=4AX1OL+BIDPTE+5KPA+BWVTE",
     "factoringType": "2社間・3社間",
     "feeRange": {
       "min": 3,
@@ -2537,7 +2537,7 @@ const companiesData: Company[] = [
     "slug": "urikakedo",
     "name": "うりかけ堂",
     "description": "低手数料とスピーディーな入金が特徴。最短2時間で資金化、全国対応のオンラインファクタリング。",
-    "affiliateUrl": "https://urikakedo.com/",
+    "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=4AX1OL+BOXHGY+4S8A+5YJRM",
     "factoringType": "2社間・3社間",
     "feeRange": {
       "min": 2,
@@ -8965,7 +8965,7 @@ const companiesData: Company[] = [
     "slug": "paybridge",
     "name": "PAYBRIDGE",
     "description": "ファクタリング・決済サービス。中小企業の資金調達に対応。",
-    "affiliateUrl": "https://paybridge.jp/",
+    "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=4AX1OL+BQPSAA+3JLM+BWVTE",
     "factoringType": "2社間・3社間",
     "feeRange": {
       "min": 3,
@@ -10072,7 +10072,7 @@ const companiesData: Company[] = [
     "slug": "urikakekin-pay",
     "name": "売掛金PAY JBL",
     "description": "JBLが提供する売掛金買取サービス。法人・個人事業主対応。",
-    "affiliateUrl": "https://jbl-factoring.jp/",
+    "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=4AX1OL+BK60MQ+4V1O+5ZEMQ",
     "factoringType": "2社間・3社間",
     "feeRange": {
       "min": 3,
