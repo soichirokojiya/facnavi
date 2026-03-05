@@ -241,7 +241,7 @@ export default function HomePage() {
                       href={company.affiliateUrl}
                       target="_blank"
                       rel="nofollow sponsored noopener"
-                      className="block text-center py-2.5 bg-primary text-white font-bold text-sm rounded-lg hover:bg-primary-dark transition-colors"
+                      className="block text-center py-2.5 bg-[#43a047] text-white font-bold text-sm rounded-lg hover:bg-[#2e7d32] transition-colors"
                     >
                       公式サイトを見る
                     </a>
