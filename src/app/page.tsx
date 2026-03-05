@@ -75,7 +75,7 @@ export default function HomePage() {
               <div className="text-sm font-bold text-gray-600 mt-1">口コミ件数</div>
             </div>
           </div>
-          <p className="text-xs text-gray-400 mb-6">※ {currentDate} 現在</p>
+          <p className="text-sm text-gray-600 font-medium mb-6">※ {currentDate} 現在</p>
 
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <Link href="/shindan">
