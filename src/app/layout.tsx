@@ -13,7 +13,7 @@ const notoSansJP = Noto_Sans_JP({
 
 export const metadata: Metadata = {
   title: {
-    default: `${SITE_NAME} - ファクタリング業者比較・おすすめランキング`,
+    default: `${SITE_NAME} - ファクタリング会社の口コミ・比較ランキング【日本最大級】`,
     template: `%s | ${SITE_NAME}`,
   },
   description: SITE_DESCRIPTION,
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     type: "website",
     locale: "ja_JP",
     siteName: SITE_NAME,
-    title: `${SITE_NAME} - ファクタリング業者比較・おすすめランキング`,
+    title: `${SITE_NAME} - ファクタリング会社の口コミ・比較ランキング【日本最大級】`,
     description: SITE_DESCRIPTION,
   },
   twitter: {

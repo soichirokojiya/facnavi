@@ -40,13 +40,16 @@ export default function HomePage() {
           <div className="flex justify-center mb-5">
             <Logo size="lg" />
           </div>
+          <p className="inline-block bg-amber-400 text-white text-xs font-bold px-3 py-1 rounded-full mb-4">
+            日本最大級 — ファクタリング会社{companies.length}社掲載
+          </p>
           <h1 className="text-2xl md:text-4xl font-bold mb-3 leading-tight text-gray-900">
-            利用者に評価された
+            口コミと比較で選ぶ
             <br />
             <span className="text-primary">本当に良いファクタリング会社</span>に出会える
           </h1>
           <p className="text-gray-500 mb-6">
-            ファクタリング会社の口コミ・比較サイト
+            ファクタリング会社の口コミ・評判を徹底比較
           </p>
 
           {/* Stats */}
@@ -81,8 +84,8 @@ export default function HomePage() {
       <section className="py-14 bg-white">
         <div className="max-w-6xl mx-auto px-4">
           <div className="text-center mb-8">
-            <h2 className="text-2xl font-bold text-gray-900">おすすめのファクタリング会社</h2>
-            <p className="text-sm text-gray-500 mt-2">口コミ評価の高い厳選業者をご紹介</p>
+            <h2 className="text-2xl font-bold text-gray-900">おすすめのファクタリング会社を比較</h2>
+            <p className="text-sm text-gray-500 mt-2">口コミ・評判で選ばれた厳選業者をご紹介</p>
             <p className="text-xs text-gray-400 mt-1">本ページにはプロモーションが含まれています</p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
@@ -127,8 +130,8 @@ export default function HomePage() {
       <section className="py-14 bg-gray-50">
         <div className="max-w-6xl mx-auto px-4">
           <div className="text-center mb-8">
-            <h2 className="text-2xl font-bold text-gray-900">カテゴリ別ランキング</h2>
-            <p className="text-sm text-gray-500 mt-2">あなたの重視するポイントで比較</p>
+            <h2 className="text-2xl font-bold text-gray-900">カテゴリ別に比較・ランキング</h2>
+            <p className="text-sm text-gray-500 mt-2">口コミ・手数料・スピードなど重視するポイントで比較</p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
             {[
@@ -179,7 +182,7 @@ export default function HomePage() {
       <section className="py-14 bg-white">
         <div className="max-w-4xl mx-auto px-4">
           <div className="flex items-center justify-between mb-8">
-            <h2 className="text-2xl font-bold text-gray-900">ファクタリング会社 TOP10</h2>
+            <h2 className="text-2xl font-bold text-gray-900">ファクタリング会社 口コミ比較 TOP10</h2>
             <Link href="/ranking" className="text-primary text-sm font-medium hover:underline">
               すべて見る →
             </Link>
@@ -278,7 +281,7 @@ export default function HomePage() {
       <section className="py-14 bg-white">
         <div className="max-w-4xl mx-auto px-4">
           <div className="flex items-center justify-between mb-8">
-            <h2 className="text-2xl font-bold text-gray-900">最新の口コミ</h2>
+            <h2 className="text-2xl font-bold text-gray-900">ファクタリング会社の最新口コミ・評判</h2>
             <Link href="/kuchikomi" className="text-primary text-sm font-medium hover:underline">
               すべて見る →
             </Link>
