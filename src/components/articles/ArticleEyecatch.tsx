@@ -1,11 +1,31 @@
-const categoryStyles: Record<string, { gradient: string; emoji: string }> = {
-  基礎知識: { gradient: "from-blue-500 to-cyan-400", emoji: "📘" },
-  選び方: { gradient: "from-emerald-500 to-teal-400", emoji: "🔍" },
-  業種別: { gradient: "from-amber-500 to-orange-400", emoji: "🏢" },
-  比較: { gradient: "from-purple-500 to-pink-400", emoji: "⚖️" },
+const categoryStyles: Record<string, { gradient: string; icon: string; label: string }> = {
+  基礎知識: {
+    gradient: "from-blue-600 via-blue-500 to-cyan-400",
+    icon: "📘",
+    label: "基礎知識",
+  },
+  選び方: {
+    gradient: "from-emerald-600 via-emerald-500 to-teal-400",
+    icon: "🔍",
+    label: "選び方ガイド",
+  },
+  業種別: {
+    gradient: "from-amber-600 via-amber-500 to-orange-400",
+    icon: "🏢",
+    label: "業種別ガイド",
+  },
+  比較: {
+    gradient: "from-purple-600 via-purple-500 to-pink-400",
+    icon: "⚖️",
+    label: "徹底比較",
+  },
 };
 
-const defaultStyle = { gradient: "from-gray-500 to-gray-400", emoji: "📄" };
+const defaultStyle = {
+  gradient: "from-gray-600 via-gray-500 to-gray-400",
+  icon: "📄",
+  label: "コラム",
+};
 
 interface ArticleEyecatchProps {
   category: string;
@@ -19,18 +39,37 @@ export function ArticleEyecatch({ category, title, size = "sm" }: ArticleEyecatc
 
   return (
     <div
-      className={`bg-gradient-to-br ${style.gradient} rounded-lg flex flex-col items-center justify-center text-white ${
-        isLarge ? "h-48 md:h-64 px-8" : "h-36 px-4"
+      className={`relative bg-gradient-to-br ${style.gradient} rounded-lg overflow-hidden ${
+        isLarge ? "h-56 md:h-72" : "h-40"
       }`}
     >
-      <span className={isLarge ? "text-5xl mb-3" : "text-3xl mb-2"}>{style.emoji}</span>
-      <p
-        className={`font-bold text-center leading-snug ${
-          isLarge ? "text-lg md:text-xl line-clamp-3" : "text-xs line-clamp-2"
-        }`}
-      >
-        {title}
-      </p>
+      {/* Background pattern */}
+      <div className="absolute inset-0 opacity-10">
+        <div className="absolute -right-6 -top-6 text-[120px] leading-none select-none">
+          {style.icon}
+        </div>
+        <div className="absolute -left-4 -bottom-4 text-[80px] leading-none select-none rotate-12">
+          {style.icon}
+        </div>
+      </div>
+
+      {/* Content */}
+      <div className={`relative h-full flex flex-col justify-end ${
+        isLarge ? "p-6 md:p-8" : "p-4"
+      }`}>
+        <span className={`inline-block bg-white/20 backdrop-blur-sm text-white font-bold rounded-full mb-2 ${
+          isLarge ? "text-sm px-4 py-1" : "text-[11px] px-3 py-0.5 w-fit"
+        }`}>
+          {style.label}
+        </span>
+        <p className={`font-bold text-white leading-snug ${
+          isLarge
+            ? "text-xl md:text-2xl line-clamp-3"
+            : "text-sm line-clamp-2"
+        }`}>
+          {title}
+        </p>
+      </div>
     </div>
   );
 }
