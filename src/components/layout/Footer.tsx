@@ -23,7 +23,6 @@ const COLUMN_LINKS = [
   { href: "/column/2sha-vs-3sha", label: "2社間・3社間の違い" },
   { href: "/column/factoring-fee-guide", label: "手数料の相場と安くするコツ" },
   { href: "/column/sole-proprietor-guide", label: "個人事業主のファクタリング" },
-  { href: "/column/construction-factoring", label: "建設業向けファクタリング" },
 ];
 
 export function Footer() {
@@ -100,6 +99,11 @@ export function Footer() {
                   </Link>
                 </li>
               ))}
+              <li>
+                <Link href="/column" className="text-sm text-primary-light hover:text-white transition-colors font-medium">
+                  すべての記事を見る →
+                </Link>
+              </li>
             </ul>
           </div>
 
