@@ -48,8 +48,14 @@ function renderMarkdownToHtml(content: string): string {
   // Images
   html = html.replace(/!\[([^\]]*)\]\(([^)]+)\)/g, '<figure class="my-8"><img src="$2" alt="$1" class="w-full rounded-lg shadow-sm" loading="lazy" /><figcaption class="text-sm text-gray-500 text-center mt-2">$1</figcaption></figure>');
 
+  // Links
+  html = html.replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" class="text-primary hover:underline">$1</a>');
+
   // Bold
   html = html.replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>");
+
+  // Blockquotes
+  html = html.replace(/^> (.+)$/gm, '<blockquote class="border-l-4 border-gray-300 pl-4 text-gray-600 italic">$1</blockquote>');
 
   // Lists
   html = html.replace(/^- (.+)$/gm, "<li>$1</li>");
@@ -82,7 +88,8 @@ function renderMarkdownToHtml(content: string): string {
         trimmed.startsWith("<ol") ||
         trimmed.startsWith("<table") ||
         trimmed.startsWith("<li") ||
-        trimmed.startsWith("<figure")
+        trimmed.startsWith("<figure") ||
+        trimmed.startsWith("<blockquote")
       )
         return trimmed;
       return `<p>${trimmed}</p>`;

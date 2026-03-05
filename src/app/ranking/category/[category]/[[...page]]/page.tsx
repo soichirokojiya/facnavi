@@ -103,7 +103,14 @@ export default async function CategoryPage({ params }: Props) {
       />
 
       <h1 className="text-3xl font-bold text-gray-900 mb-2">{cat.h1}</h1>
-      <p className="text-gray-600 mb-6">{cat.description}</p>
+      <p className="text-gray-600 mb-4">{cat.description}</p>
+
+      {/* Intro article */}
+      {cat.intro && (
+        <div className="bg-green-50 border-l-4 border-[#43a047] rounded-r-lg p-5 mb-8">
+          <p className="text-gray-700 text-sm leading-relaxed">{cat.intro}</p>
+        </div>
+      )}
 
       {/* Category navigation */}
       <div className="flex flex-wrap gap-2 mb-8">

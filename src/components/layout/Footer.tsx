@@ -88,6 +88,11 @@ export function Footer() {
                   コラム・お役立ち記事
                 </Link>
               </li>
+              <li>
+                <Link href="/faq" className="text-sm hover:text-white transition-colors">
+                  よくある質問（FAQ）
+                </Link>
+              </li>
             </ul>
 
             <h3 className="text-white font-bold text-sm mt-6 mb-4">人気の記事</h3>
@@ -117,6 +122,11 @@ export function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="/terms" className="text-sm hover:text-white transition-colors">
+                  利用規約
+                </Link>
+              </li>
+              <li>
                 <Link href="/privacy" className="text-sm hover:text-white transition-colors">
                   プライバシーポリシー
                 </Link>
@@ -138,38 +148,24 @@ export function Footer() {
               </li>
             </ul>
 
-            <h3 className="text-white font-bold text-sm mt-6 mb-4">カテゴリで探す</h3>
+            <h3 className="text-white font-bold text-sm mt-6 mb-4">条件から探す</h3>
             <ul className="space-y-1.5 text-sm">
-              <li>
-                <Link href="/ranking/category/low-fees" className="hover:text-white transition-colors">
-                  手数料が安い会社
-                </Link>
-              </li>
-              <li>
-                <Link href="/ranking/category/same-day" className="hover:text-white transition-colors">
-                  即日入金対応の会社
-                </Link>
-              </li>
-              <li>
-                <Link href="/ranking/category/sole-proprietor" className="hover:text-white transition-colors">
-                  個人事業主OKの会社
-                </Link>
-              </li>
-              <li>
-                <Link href="/ranking/category/online-complete" className="hover:text-white transition-colors">
-                  オンライン完結の会社
-                </Link>
-              </li>
-              <li>
-                <Link href="/ranking/category/construction" className="hover:text-white transition-colors">
-                  建設業向けの会社
-                </Link>
-              </li>
-              <li>
-                <Link href="/ranking/category/medical" className="hover:text-white transition-colors">
-                  医療・介護向けの会社
-                </Link>
-              </li>
+              <li><Link href="/ranking/category/no-financial-statements" className="hover:text-white transition-colors">決算書不要</Link></li>
+              <li><Link href="/ranking/category/online-complete" className="hover:text-white transition-colors">オンライン契約</Link></li>
+              <li><Link href="/ranking/category/no-tax-return" className="hover:text-white transition-colors">確定申告書なし</Link></li>
+              <li><Link href="/ranking/category/few-documents" className="hover:text-white transition-colors">必要書類が少ない</Link></li>
+              <li><Link href="/ranking/category/easy-screening" className="hover:text-white transition-colors">審査が通りやすい</Link></li>
+              <li><Link href="/ranking/category/same-day" className="hover:text-white transition-colors">即日・当日入金</Link></li>
+              <li><Link href="/ranking/category/weekend" className="hover:text-white transition-colors">土日対応</Link></li>
+              <li><Link href="/ranking/category/no-registration" className="hover:text-white transition-colors">債権譲渡登記不要</Link></li>
+              <li><Link href="/ranking/category/sole-proprietor" className="hover:text-white transition-colors">個人事業主・フリーランス</Link></li>
+              <li><Link href="/ranking/category/all-companies" className="hover:text-white transition-colors">ファクタリング会社一覧</Link></li>
+              <li><Link href="/ranking/category/small-amount" className="hover:text-white transition-colors">少額ファクタリング</Link></li>
+              <li><Link href="/ranking/category/large-amount" className="hover:text-white transition-colors">高額ファクタリング</Link></li>
+              <li><Link href="/ranking/category/medical-reward" className="hover:text-white transition-colors">診療報酬ファクタリング</Link></li>
+              <li><Link href="/ranking/category/nursing-reward" className="hover:text-white transition-colors">介護報酬ファクタリング</Link></li>
+              <li><Link href="/ranking/category/construction" className="hover:text-white transition-colors">建設業向け</Link></li>
+              <li><Link href="/ranking/category/low-fees" className="hover:text-white transition-colors">手数料が安い</Link></li>
             </ul>
           </div>
         </div>
