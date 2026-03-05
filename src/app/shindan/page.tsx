@@ -27,7 +27,7 @@ export default function ShindanPage() {
           ファクタリング診断ツール
         </h1>
         <p className="text-gray-600">
-          6つの質問に答えるだけで、あなたに最適な業者が見つかります
+          5つの質問に答えるだけで、あなたに最適な業者が見つかります
         </p>
       </div>
 

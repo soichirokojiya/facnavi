@@ -119,30 +119,6 @@ export function DiagnosisForm({
         {step === 4 && (
           <div>
             <h3 className="text-lg font-bold mb-4">
-              希望するファクタリングの形態は？
-            </h3>
-            <div className="space-y-3">
-              {(["2社間", "3社間", "どちらでも"] as const).map((opt) => (
-                <OptionButton
-                  key={opt}
-                  selected={input.factoringType === opt}
-                  onClick={() => updateField("factoringType", opt)}
-                >
-                  <span className="block font-bold">{opt}</span>
-                  <span className="text-sm text-gray-500">
-                    {opt === "2社間" && "売掛先に知られない（手数料やや高め）"}
-                    {opt === "3社間" && "手数料が安い（売掛先に通知あり）"}
-                    {opt === "どちらでも" && "条件の良い方を提案してほしい"}
-                  </span>
-                </OptionButton>
-              ))}
-            </div>
-          </div>
-        )}
-
-        {step === 5 && (
-          <div>
-            <h3 className="text-lg font-bold mb-4">
               最も重視するポイントは？
             </h3>
             <div className="space-y-3">
@@ -167,7 +143,7 @@ export function DiagnosisForm({
           </div>
         )}
 
-        {step === 6 && (
+        {step === 5 && (
           <div>
             <h3 className="text-lg font-bold mb-4">
               オンラインで手続きを完結したいですか？

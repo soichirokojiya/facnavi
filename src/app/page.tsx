@@ -262,7 +262,7 @@ export default function HomePage() {
             どの業者を選べばいい？
           </h2>
           <p className="text-lg mb-6 opacity-90">
-            6つの質問に答えるだけで、あなたに最適な業者がわかります
+            5つの質問に答えるだけで、あなたに最適な業者がわかります
           </p>
           <Link href="/shindan">
             <Button className="text-lg px-8 py-4 bg-white text-primary font-bold hover:bg-gray-100 shadow-lg">

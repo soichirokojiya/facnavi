@@ -3,13 +3,12 @@
 import { useState, useCallback } from "react";
 import { DiagnosisInput } from "@/types/diagnosis";
 
-const TOTAL_STEPS = 6;
+const TOTAL_STEPS = 5;
 
 const initialInput: DiagnosisInput = {
   amount: 0,
   urgency: "3日以内",
   industry: "",
-  factoringType: "どちらでも",
   priority: "手数料",
   isOnlinePreferred: true,
 };

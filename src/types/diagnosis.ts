@@ -5,7 +5,6 @@ export interface DiagnosisInput {
   amount: number;
   urgency: Urgency;
   industry: string;
-  factoringType: "2社間" | "3社間" | "どちらでも";
   priority: Priority;
   isOnlinePreferred: boolean;
 }

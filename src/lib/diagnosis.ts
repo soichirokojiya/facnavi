@@ -44,17 +44,6 @@ export function diagnose(
       reasons.push("オンライン完結対応");
     }
 
-    // Factoring type match
-    if (input.factoringType !== "どちらでも") {
-      if (
-        company.factoringType.includes(input.factoringType) ||
-        company.factoringType === "2社間・3社間"
-      ) {
-        score += 10;
-        reasons.push(`${input.factoringType}ファクタリングに対応`);
-      }
-    }
-
     // Amount range
     if (input.amount > 0) {
       if (
