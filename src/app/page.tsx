@@ -14,12 +14,15 @@ import { Logo } from "@/components/layout/Logo";
 import { SITE_NAME } from "@/lib/constants";
 import { formatFeeRange, formatAmount } from "@/lib/format";
 import { KeywordSearch, SearchableCompany } from "@/components/search/KeywordSearch";
+import { FAQ_DATA } from "@/lib/faq";
 
 export default function HomePage() {
   const companies = getAllCompanies();
   const reviews = getAllReviews();
   const articles = getAllArticles().slice(0, 6);
   const companyMap = Object.fromEntries(companies.map((c) => [c.slug, c.name]));
+  const topFaq = FAQ_DATA.slice(0, 5);
+  const faqCount = FAQ_DATA.length;
   const searchData: SearchableCompany[] = companies.map((c) => ({
     slug: c.slug,
     name: c.name,
@@ -317,6 +320,44 @@ export default function HomePage() {
             {articles.map((article) => (
               <ArticleCard key={article.slug} article={article} />
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section className="py-14 bg-white">
+        <div className="max-w-4xl mx-auto px-4">
+          <div className="flex items-center justify-between mb-8">
+            <h2 className="text-2xl font-bold text-gray-900">よくある質問</h2>
+            <Link href="/faq" className="text-primary text-sm font-medium hover:underline">
+              すべて見る →
+            </Link>
+          </div>
+          <div className="space-y-4">
+            {topFaq.map((item, i) => (
+              <Card key={i} className="p-5">
+                <div className="flex items-start gap-3 mb-2">
+                  <span className="flex-shrink-0 w-7 h-7 rounded-full bg-[#43a047] text-white flex items-center justify-center text-sm font-bold">
+                    Q
+                  </span>
+                  <span className="font-bold text-gray-900 pt-0.5">{item.question}</span>
+                </div>
+                <div className="flex items-start gap-3 ml-0">
+                  <span className="flex-shrink-0 w-7 h-7 rounded-full bg-primary text-white flex items-center justify-center text-sm font-bold">
+                    A
+                  </span>
+                  <p className="text-gray-600 text-sm leading-relaxed pt-0.5">{item.answer}</p>
+                </div>
+              </Card>
+            ))}
+          </div>
+          <div className="text-center mt-6">
+            <Link
+              href="/faq"
+              className="inline-block px-6 py-2.5 border border-gray-200 text-gray-700 font-medium text-sm rounded-lg hover:bg-gray-50 transition-colors"
+            >
+              よくある質問をもっと見る（{faqCount}件）→
+            </Link>
           </div>
         </div>
       </section>

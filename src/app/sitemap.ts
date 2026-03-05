@@ -19,6 +19,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${SITE_URL}/kuchikomi`, changeFrequency: "weekly", priority: 0.8 },
     { url: `${SITE_URL}/column`, changeFrequency: "weekly", priority: 0.8 },
     { url: `${SITE_URL}/shindan`, changeFrequency: "monthly", priority: 0.7 },
+    { url: `${SITE_URL}/faq`, changeFrequency: "monthly", priority: 0.7 },
   ];
 
   // Ranking pagination pages
