@@ -5,7 +5,7 @@
   "affiliateUrl": "https://www.mufg-factor.jp/",
   "factoringType": "3社間",
   "feeRange": {
-    "min": 1,
+    "min": 0.8,
     "max": 5
   },
   "minAmount": 10000000,

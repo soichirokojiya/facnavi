@@ -5,8 +5,8 @@
   "affiliateUrl": "https://norikae-plus.jp/",
   "factoringType": "2社間",
   "feeRange": {
-    "min": 1,
-    "max": 10
+    "min": 5,
+    "max": 15
   },
   "minAmount": 300000,
   "maxAmount": 50000000,
@@ -38,6 +38,6 @@
   ],
   "overallRating": 4,
   "rankPosition": 68,
-  "soleProprietorOk": false,
-  "weekendPayment": false
+  "soleProprietorOk": true,
+  "weekendPayment": true
 }

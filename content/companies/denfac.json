@@ -5,8 +5,8 @@
   "affiliateUrl": "https://denfac.jp/",
   "factoringType": "2社間・3社間",
   "feeRange": {
-    "min": 2,
-    "max": 12
+    "min": 1.8,
+    "max": 8
   },
   "minAmount": 300000,
   "maxAmount": 50000000,

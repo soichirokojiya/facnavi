@@ -5,7 +5,7 @@
   "affiliateUrl": "https://j-t-c.info/",
   "factoringType": "2社間・3社間",
   "feeRange": {
-    "min": 2,
+    "min": 1.2,
     "max": 10
   },
   "minAmount": 1000000,
@@ -38,6 +38,6 @@
   ],
   "overallRating": 4,
   "rankPosition": 36,
-  "soleProprietorOk": false,
+  "soleProprietorOk": true,
   "weekendPayment": false
 }

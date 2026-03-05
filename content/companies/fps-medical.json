@@ -5,12 +5,12 @@
   "affiliateUrl": "https://fps-medical.co.jp/",
   "factoringType": "3社間",
   "feeRange": {
-    "min": 1,
+    "min": 0.25,
     "max": 5
   },
   "minAmount": 300000,
   "maxAmount": 50000000,
-  "speedDays": 3,
+  "speedDays": 14,
   "onlineComplete": true,
   "features": [
     "医療業界特化",
