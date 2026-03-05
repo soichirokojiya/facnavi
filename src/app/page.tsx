@@ -45,20 +45,20 @@ export default function HomePage() {
           priority
           className="object-cover brightness-110"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-white/80 via-sky-50/60 to-blue-100/50" />
+        <div className="absolute inset-0 bg-gradient-to-b from-white/85 via-green-50/60 to-emerald-50/50" />
 
         <div className="relative max-w-4xl mx-auto px-4 pt-16 pb-20 md:pt-20 md:pb-24 text-center">
           <div className="flex justify-center mb-5">
             <Logo size="lg" />
           </div>
-          <p className="inline-block bg-amber-400 text-white font-bold px-5 py-2 rounded-full mb-4">
+          <p className="inline-block bg-[#2e7d32] text-white font-bold px-5 py-2 rounded-full mb-4">
             <span className="text-lg md:text-2xl">日本最大級</span>
             <span className="text-xs md:text-sm ml-2">— ファクタリング会社{companies.length}社掲載</span>
           </p>
           <h1 className="text-2xl md:text-4xl font-bold mb-3 leading-tight text-gray-900">
             口コミと比較で選ぶ
             <br />
-            <span className="text-primary">本当に良いファクタリング会社</span>に出会える
+            <span className="text-[#2e7d32]">本当に良いファクタリング会社</span>に出会える
           </h1>
           <p className="text-gray-500 mb-6">
             ファクタリング会社の口コミ・評判を徹底比較
@@ -67,7 +67,7 @@ export default function HomePage() {
           {/* Stats */}
           <div className="flex justify-center gap-10 md:gap-16 mb-8">
             <div className="text-center">
-              <div className="text-5xl md:text-7xl font-black text-primary">{companies.length}</div>
+              <div className="text-5xl md:text-7xl font-black text-[#2e7d32]">{companies.length}</div>
               <div className="text-sm font-bold text-gray-600 mt-1">掲載社数</div>
             </div>
             <div className="text-center">
@@ -79,12 +79,12 @@ export default function HomePage() {
 
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <Link href="/shindan">
-              <Button variant="accent" className="text-base px-8 py-3.5 w-full sm:w-auto shadow-lg shadow-amber-200/40">
+              <Button variant="accent" className="text-base px-8 py-3.5 w-full sm:w-auto shadow-lg shadow-green-200/40 !bg-[#43a047] hover:!bg-[#2e7d32] !text-white">
                 無料で診断する
               </Button>
             </Link>
             <Link href="/ranking">
-              <Button variant="primary" className="text-base px-8 py-3.5 w-full sm:w-auto shadow-lg shadow-blue-200/40">
+              <Button variant="primary" className="text-base px-8 py-3.5 w-full sm:w-auto shadow-lg shadow-green-200/40 !bg-[#2e7d32] hover:!bg-[#1b5e20] !text-white">
                 ランキングを見る
               </Button>
             </Link>
