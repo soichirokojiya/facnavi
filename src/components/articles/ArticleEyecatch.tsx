@@ -40,7 +40,7 @@ export function ArticleEyecatch({ category, title, size = "sm" }: ArticleEyecatc
   return (
     <div
       className={`relative bg-gradient-to-br ${style.gradient} rounded-lg overflow-hidden ${
-        isLarge ? "h-56 md:h-72" : "h-40"
+        isLarge ? "h-56 md:h-72" : "h-44"
       }`}
     >
       {/* Background pattern */}
@@ -65,7 +65,7 @@ export function ArticleEyecatch({ category, title, size = "sm" }: ArticleEyecatc
         <p className={`font-bold text-white leading-snug ${
           isLarge
             ? "text-xl md:text-2xl line-clamp-3"
-            : "text-sm line-clamp-2"
+            : "text-base line-clamp-2"
         }`}>
           {title}
         </p>

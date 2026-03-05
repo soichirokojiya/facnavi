@@ -27,10 +27,7 @@ export function ArticleCard({ article }: ArticleCardProps) {
             </Badge>
             <span className="text-xs text-gray-500">{article.publishedAt}</span>
           </div>
-          <h3 className="font-bold text-gray-900 mb-1 line-clamp-2 text-sm">
-            {article.title}
-          </h3>
-          <p className="text-xs text-gray-600 line-clamp-2">
+          <p className="text-xs text-gray-600 line-clamp-3">
             {article.description}
           </p>
         </div>
