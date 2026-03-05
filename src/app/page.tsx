@@ -148,15 +148,15 @@ export default function HomePage() {
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
             {[
-              { title: "総合評価", key: "overall" as const, emoji: "🏆" },
-              { title: "手数料の安さ", key: "fee" as const, emoji: "💰" },
-              { title: "入金スピード", key: "speed" as const, emoji: "⚡" },
-              { title: "口コミ評価", key: "review" as const, emoji: "⭐" },
+              { title: "総合ランキング", key: "overall" as const, emoji: "🏆" },
+              { title: "手数料が安い", key: "fee" as const, emoji: "💰" },
+              { title: "入金が早い", key: "speed" as const, emoji: "⚡" },
+              { title: "口コミ人気", key: "review" as const, emoji: "⭐" },
             ].map((cat) => {
               const sorted = [...companies].sort((a, b) => {
-                if (cat.key === "fee") return (a.feeRange.min + a.feeRange.max) / 2 - (b.feeRange.min + b.feeRange.max) / 2;
-                if (cat.key === "speed") return a.speedDays - b.speedDays;
-                return b.overallRating - a.overallRating;
+                if (cat.key === "fee") return (a.feeRange.min + a.feeRange.max) / 2 - (b.feeRange.min + b.feeRange.max) / 2 || a.rankPosition - b.rankPosition;
+                if (cat.key === "speed") return a.speedDays - b.speedDays || a.rankPosition - b.rankPosition;
+                return a.rankPosition - b.rankPosition;
               });
               const top3 = sorted.slice(0, 3);
               return (
