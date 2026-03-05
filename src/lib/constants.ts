@@ -1,7 +1,7 @@
 export const SITE_NAME = "ファクナビ";
 export const SITE_DESCRIPTION =
   "ファクタリング業者を徹底比較！手数料・スピード・口コミで選ぶおすすめランキング。あなたに最適な業者が見つかる診断ツールも。";
-export const SITE_URL = "https://facnavi.com";
+export const SITE_URL = "https://facnavi.info";
 
 export const NAV_ITEMS = [
   { label: "ランキング", href: "/ranking" },
