@@ -28,7 +28,7 @@ body {
   align-items: center;
   gap: 0.5rem;
   padding: 0.75rem 1.5rem;
-  background: linear-gradient(135deg, #f59e0b, #d97706);
+  background: linear-gradient(135deg, #43a047, #2e7d32);
   color: #ffffff;
   font-weight: 700;
   border-radius: 0.5rem;
@@ -38,7 +38,7 @@ body {
 }
 
 .affiliate-link:hover {
-  background: linear-gradient(135deg, #d97706, #b45309);
+  background: linear-gradient(135deg, #2e7d32, #1b5e20);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
   transform: translateY(-1px);
 }

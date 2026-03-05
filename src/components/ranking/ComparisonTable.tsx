@@ -74,7 +74,7 @@ export function ComparisonTable({ companies }: ComparisonTableProps) {
                   href={company.affiliateUrl}
                   target="_blank"
                   rel="nofollow sponsored noopener"
-                  className="inline-block px-3 py-1 bg-accent text-white text-xs font-bold rounded hover:bg-amber-600 transition-colors"
+                  className="inline-block px-3 py-1 bg-[#43a047] text-white text-xs font-bold rounded hover:bg-[#2e7d32] transition-colors"
                 >
                   公式サイト
                 </a>
