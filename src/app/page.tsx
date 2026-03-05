@@ -60,10 +60,14 @@ export default function HomePage() {
           </p>
 
           {/* Stats */}
-          <div className="flex justify-center mb-8">
-            <div>
+          <div className="flex justify-center gap-10 md:gap-16 mb-8">
+            <div className="text-center">
               <div className="text-5xl md:text-7xl font-extrabold text-primary">{companies.length}</div>
               <div className="text-sm text-gray-500 mt-1">掲載社数</div>
+            </div>
+            <div className="text-center">
+              <div className="text-5xl md:text-7xl font-extrabold text-[#43a047]">{reviews.length.toLocaleString()}</div>
+              <div className="text-sm text-gray-500 mt-1">口コミ件数</div>
             </div>
           </div>
 
