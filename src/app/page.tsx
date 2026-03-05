@@ -23,6 +23,8 @@ export default function HomePage() {
   const companyMap = Object.fromEntries(companies.map((c) => [c.slug, c.name]));
   const topFaq = FAQ_DATA.slice(0, 5);
   const faqCount = FAQ_DATA.length;
+  const now = new Date();
+  const currentDate = `${now.getFullYear()}年${now.getMonth() + 1}月${now.getDate()}日`;
   const searchData: SearchableCompany[] = companies.map((c) => ({
     slug: c.slug,
     name: c.name,
@@ -65,14 +67,15 @@ export default function HomePage() {
           {/* Stats */}
           <div className="flex justify-center gap-10 md:gap-16 mb-8">
             <div className="text-center">
-              <div className="text-5xl md:text-7xl font-extrabold text-primary">{companies.length}</div>
-              <div className="text-sm text-gray-500 mt-1">掲載社数</div>
+              <div className="text-5xl md:text-7xl font-black text-primary">{companies.length}</div>
+              <div className="text-sm font-bold text-gray-600 mt-1">掲載社数</div>
             </div>
             <div className="text-center">
-              <div className="text-5xl md:text-7xl font-extrabold text-[#43a047]">{reviews.length.toLocaleString()}</div>
-              <div className="text-sm text-gray-500 mt-1">口コミ件数</div>
+              <div className="text-5xl md:text-7xl font-black text-[#43a047]">{reviews.length.toLocaleString()}</div>
+              <div className="text-sm font-bold text-gray-600 mt-1">口コミ件数</div>
             </div>
           </div>
+          <p className="text-xs text-gray-400 mb-6">※ {currentDate} 現在</p>
 
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <Link href="/shindan">
