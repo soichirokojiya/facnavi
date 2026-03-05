@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 };
 
 const companyInfo = [
-  ["運営者", "Common Future & Co.株式会社"],
+  ["運営者", "Common Future & Co.株式会社", "https://www.cfac.co.jp/"],
   ["所在地", "神奈川県逗子市小坪6-6-46"],
   ["設立", "2015年"],
   ["事業内容", "ファクタリング関連の情報メディア運営"],
@@ -34,12 +34,20 @@ export default function AboutPage() {
       <Card className="p-6 mb-10">
         <h2 className="text-lg font-bold mb-4">会社概要</h2>
         <dl className="divide-y divide-gray-100">
-          {companyInfo.map(([label, value]) => (
+          {companyInfo.map(([label, value, url]) => (
             <div key={label} className="flex py-3 text-sm">
               <dt className="w-32 flex-shrink-0 font-medium text-gray-500">
                 {label}
               </dt>
-              <dd className="text-gray-900">{value}</dd>
+              <dd className="text-gray-900">
+                {url ? (
+                  <a href={url} target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
+                    {value}
+                  </a>
+                ) : (
+                  value
+                )}
+              </dd>
             </div>
           ))}
         </dl>
