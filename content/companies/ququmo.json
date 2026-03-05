@@ -1,7 +1,7 @@
 {
   "slug": "ququmo",
   "name": "QuQuMo（ククモ）",
-  "description": "オンライン完結で最速2時間入金。手数料1%～14.8%、個人事業主もOK。",
+  "description": "",
   "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=4AX5KD+9QOC36+4JGG+BXIYP",
   "factoringType": "2社間",
   "feeRange": {
@@ -12,6 +12,8 @@
   "maxAmount": 50000000,
   "speedDays": 1,
   "onlineComplete": true,
+  "soleProprietorOk": true,
+  "weekendPayment": false,
   "features": [
     "最速2時間入金",
     "手数料1%〜",
@@ -20,24 +22,21 @@
     "金額上限なし"
   ],
   "pros": [
-    "業界最安水準の手数料1%〜",
-    "最速2時間で資金化",
-    "必要書類が少ない"
+    "対応が迅速",
+    "審査が柔軟",
+    "全国対応"
   ],
   "cons": [
-    "2者間のみ",
-    "電話サポートの時間が限られる"
+    "知名度がやや低い",
+    "手数料は個別査定"
   ],
-  "establishedYear": 2017,
   "targetIndustries": [
-    "IT・Web",
     "建設業",
+    "運送業",
     "製造業",
-    "小売業",
+    "IT・Web",
     "サービス業"
   ],
   "overallRating": 4.8,
-  "rankPosition": 5,
-  "soleProprietorOk": true,
-  "weekendPayment": false
+  "rankPosition": 5
 }

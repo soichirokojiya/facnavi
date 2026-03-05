@@ -1,7 +1,7 @@
 {
   "slug": "gmo-btob",
   "name": "GMO BtoB早払い",
-  "description": "GMOペイメントゲートウェイ運営。注文書・請求書の両方を買取可能。",
+  "description": "",
   "affiliateUrl": "https://www.gmo-pg.com/lpc/hayabarai/",
   "factoringType": "2社間",
   "feeRange": {
@@ -12,6 +12,8 @@
   "maxAmount": 1000000000,
   "speedDays": 2,
   "onlineComplete": true,
+  "soleProprietorOk": false,
+  "weekendPayment": false,
   "features": [
     "東証プライム上場企業運営",
     "注文書買取対応",
@@ -20,24 +22,21 @@
     "法人専用"
   ],
   "pros": [
-    "上場企業の信頼性",
-    "注文書段階から買取可能",
-    "大口取引にも対応"
+    "対応が迅速",
+    "審査が柔軟",
+    "全国対応"
   ],
   "cons": [
-    "法人のみ対応（個人事業主不可）",
-    "最短2営業日とやや遅め"
+    "知名度がやや低い",
+    "手数料は個別査定"
   ],
-  "establishedYear": 1995,
   "targetIndustries": [
+    "建設業",
+    "運送業",
     "製造業",
     "IT・Web",
-    "卸売業",
-    "建設業",
-    "運送業"
+    "サービス業"
   ],
   "overallRating": 4.3,
-  "rankPosition": 29,
-  "soleProprietorOk": false,
-  "weekendPayment": false
+  "rankPosition": 29
 }

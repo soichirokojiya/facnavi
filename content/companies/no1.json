@@ -1,7 +1,7 @@
 {
   "slug": "no1",
   "name": "No.1ファクタリング",
-  "description": "建設業界に強いファクタリング会社。対面相談も可能で、手厚いサポートが魅力。全国出張対応。",
+  "description": "",
   "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=4AX5KD+A5K67M+4EKW+5ZEMP",
   "factoringType": "2社間・3社間",
   "feeRange": {
@@ -12,6 +12,8 @@
   "maxAmount": 50000000,
   "speedDays": 1,
   "onlineComplete": false,
+  "soleProprietorOk": true,
+  "weekendPayment": false,
   "features": [
     "建設業特化",
     "対面相談可能",
@@ -20,23 +22,21 @@
     "診療報酬対応"
   ],
   "pros": [
-    "建設業の実績が豊富",
-    "対面で丁寧に相談できる",
-    "3社間ファクタリングにも対応"
+    "対応が迅速",
+    "審査が柔軟",
+    "全国対応"
   ],
   "cons": [
-    "オンライン完結ではない",
-    "手数料の幅が広い"
+    "知名度がやや低い",
+    "手数料は個別査定"
   ],
-  "establishedYear": 2016,
   "targetIndustries": [
     "建設業",
     "運送業",
-    "医療・介護",
-    "製造業"
+    "製造業",
+    "IT・Web",
+    "サービス業"
   ],
   "overallRating": 4.5,
-  "rankPosition": 10,
-  "soleProprietorOk": true,
-  "weekendPayment": false
+  "rankPosition": 10
 }

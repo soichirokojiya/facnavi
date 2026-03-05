@@ -1,7 +1,7 @@
 {
   "slug": "soreiyu",
   "name": "ソレイユ",
-  "description": "手数料1%～、最短30分で資金化。審査通過率90%の柔軟な対応。",
+  "description": "",
   "affiliateUrl": "https://solejapan.com/",
   "factoringType": "2社間・3社間",
   "feeRange": {
@@ -12,6 +12,8 @@
   "maxAmount": 50000000,
   "speedDays": 1,
   "onlineComplete": true,
+  "soleProprietorOk": true,
+  "weekendPayment": false,
   "features": [
     "最短30分審査",
     "手数料1%〜",
@@ -20,24 +22,21 @@
     "個人事業主OK"
   ],
   "pros": [
+    "対応が迅速",
     "審査が柔軟",
-    "手数料が安い",
-    "スピード対応"
+    "全国対応"
   ],
   "cons": [
-    "手数料上限がやや高い",
-    "知名度がやや低い"
+    "知名度がやや低い",
+    "手数料は個別査定"
   ],
-  "establishedYear": 2018,
   "targetIndustries": [
     "建設業",
     "運送業",
+    "製造業",
     "IT・Web",
-    "小売業",
-    "飲食業"
+    "サービス業"
   ],
   "overallRating": 4,
-  "rankPosition": 79,
-  "soleProprietorOk": true,
-  "weekendPayment": false
+  "rankPosition": 79
 }

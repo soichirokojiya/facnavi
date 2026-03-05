@@ -1,7 +1,7 @@
 {
   "slug": "prosper-consulting",
   "name": "プロスパーコンサルティング",
-  "description": "資金調達コンサルティング＆ファクタリング。経営支援も提供。",
+  "description": "",
   "affiliateUrl": "https://prosper-consulting.jp/",
   "factoringType": "2社間・3社間",
   "feeRange": {
@@ -12,6 +12,8 @@
   "maxAmount": 50000000,
   "speedDays": 1,
   "onlineComplete": true,
+  "soleProprietorOk": false,
+  "weekendPayment": false,
   "features": [
     "コンサルティング付き",
     "即日入金",
@@ -28,7 +30,6 @@
     "知名度がやや低い",
     "手数料は個別査定"
   ],
-  "establishedYear": 2018,
   "targetIndustries": [
     "建設業",
     "運送業",
@@ -37,7 +38,5 @@
     "サービス業"
   ],
   "overallRating": 3.7,
-  "rankPosition": 191,
-  "soleProprietorOk": false,
-  "weekendPayment": false
+  "rankPosition": 191
 }

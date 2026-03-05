@@ -1,7 +1,7 @@
 {
   "slug": "jtc",
   "name": "JTC",
-  "description": "入金前払いシステムを提供するファクタリング会社。売掛金を入金日より前に前払い。名古屋・大阪に拠点。",
+  "description": "",
   "affiliateUrl": "https://j-t-c.info/",
   "factoringType": "2社間・3社間",
   "feeRange": {
@@ -12,6 +12,8 @@
   "maxAmount": 100000000,
   "speedDays": 1,
   "onlineComplete": false,
+  "soleProprietorOk": true,
+  "weekendPayment": false,
   "features": [
     "入金前払いシステム",
     "名古屋・大阪拠点",
@@ -20,24 +22,21 @@
     "経営コンサル対応"
   ],
   "pros": [
-    "手数料が比較的低い",
-    "対面で丁寧に相談できる",
-    "大口案件にも対応"
+    "対応が迅速",
+    "審査が柔軟",
+    "全国対応"
   ],
   "cons": [
-    "オンライン完結ではない",
-    "東京に拠点がない"
+    "知名度がやや低い",
+    "手数料は個別査定"
   ],
-  "establishedYear": 2013,
   "targetIndustries": [
     "建設業",
-    "製造業",
     "運送業",
-    "卸売業",
-    "医療・介護"
+    "製造業",
+    "IT・Web",
+    "サービス業"
   ],
   "overallRating": 4,
-  "rankPosition": 36,
-  "soleProprietorOk": true,
-  "weekendPayment": false
+  "rankPosition": 36
 }

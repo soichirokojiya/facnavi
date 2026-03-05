@@ -1,7 +1,7 @@
 {
   "slug": "shikin-honpo",
   "name": "資金調達本舗",
-  "description": "資金調達の専門サービス。ファクタリングを中心とした資金繰り支援。",
+  "description": "",
   "affiliateUrl": "https://shikin-honpo.jp/",
   "factoringType": "2社間・3社間",
   "feeRange": {
@@ -12,6 +12,8 @@
   "maxAmount": 50000000,
   "speedDays": 1,
   "onlineComplete": true,
+  "soleProprietorOk": true,
+  "weekendPayment": false,
   "features": [
     "即日入金可能",
     "オンライン対応",
@@ -28,7 +30,6 @@
     "知名度がやや低い",
     "手数料は個別査定"
   ],
-  "establishedYear": 2018,
   "targetIndustries": [
     "建設業",
     "運送業",
@@ -37,7 +38,5 @@
     "サービス業"
   ],
   "overallRating": 4,
-  "rankPosition": 152,
-  "soleProprietorOk": true,
-  "weekendPayment": false
+  "rankPosition": 152
 }

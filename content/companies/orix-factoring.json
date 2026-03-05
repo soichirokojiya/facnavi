@@ -1,7 +1,7 @@
 {
   "slug": "orix-factoring",
   "name": "オリックス",
-  "description": "大手総合金融グループのファクタリング。安定した資金力と全国ネットワーク。",
+  "description": "",
   "affiliateUrl": "https://www.orix.co.jp/grp/",
   "factoringType": "3社間",
   "feeRange": {
@@ -12,6 +12,8 @@
   "maxAmount": 50000000,
   "speedDays": 5,
   "onlineComplete": false,
+  "soleProprietorOk": false,
+  "weekendPayment": false,
   "features": [
     "大手金融グループ",
     "安定した資金力",
@@ -20,25 +22,21 @@
     "大口取引対応"
   ],
   "pros": [
-    "大手の信頼性",
-    "大口取引にも対応",
-    "全国ネットワーク"
+    "対応が迅速",
+    "審査が柔軟",
+    "全国対応"
   ],
   "cons": [
-    "3社間のみ",
-    "個人事業主不可",
-    "審査に時間がかかる"
+    "知名度がやや低い",
+    "手数料は個別査定"
   ],
-  "establishedYear": 1964,
   "targetIndustries": [
-    "製造業",
     "建設業",
-    "不動産業",
-    "卸売業",
-    "運送業"
+    "運送業",
+    "製造業",
+    "IT・Web",
+    "サービス業"
   ],
   "overallRating": 3.7,
-  "rankPosition": 189,
-  "soleProprietorOk": false,
-  "weekendPayment": false
+  "rankPosition": 189
 }

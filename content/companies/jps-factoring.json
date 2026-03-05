@@ -1,7 +1,7 @@
 {
   "slug": "jps-factoring",
   "name": "JPS",
-  "description": "法人向けファクタリングサービス。売掛金の買取を通じた中小企業の資金繰り支援を行う。",
+  "description": "",
   "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=4AX1ON+BKRG8I+5RPI+60H7L",
   "factoringType": "2社間・3社間",
   "feeRange": {
@@ -12,6 +12,8 @@
   "maxAmount": 50000000,
   "speedDays": 2,
   "onlineComplete": false,
+  "soleProprietorOk": true,
+  "weekendPayment": false,
   "features": [
     "法人向け",
     "2社間・3社間対応",
@@ -20,23 +22,21 @@
     "経営相談対応"
   ],
   "pros": [
-    "2社間・3社間の選択が可能",
-    "対面で丁寧なサポート",
-    "経営相談にも対応"
+    "対応が迅速",
+    "審査が柔軟",
+    "全国対応"
   ],
   "cons": [
-    "オンライン完結に非対応",
-    "入金まで2日程度かかる"
+    "知名度がやや低い",
+    "手数料は個別査定"
   ],
-  "establishedYear": 2016,
   "targetIndustries": [
     "建設業",
-    "製造業",
     "運送業",
-    "卸売業"
+    "製造業",
+    "IT・Web",
+    "サービス業"
   ],
   "overallRating": 4,
-  "rankPosition": 60,
-  "soleProprietorOk": true,
-  "weekendPayment": false
+  "rankPosition": 60
 }

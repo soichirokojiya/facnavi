@@ -1,7 +1,7 @@
 {
   "slug": "quick-management",
   "name": "クイックマネジメント",
-  "description": "最短30分のスピード入金。オンライン完結で全国対応、AIを活用した審査で手続きがスムーズ。",
+  "description": "",
   "affiliateUrl": "https://qm-factoring.com/",
   "factoringType": "2社間",
   "feeRange": {
@@ -12,6 +12,8 @@
   "maxAmount": 50000000,
   "speedDays": 1,
   "onlineComplete": true,
+  "soleProprietorOk": false,
+  "weekendPayment": false,
   "features": [
     "最短30分入金",
     "AI審査",
@@ -20,23 +22,21 @@
     "全国対応"
   ],
   "pros": [
-    "最短30分のスピード入金",
-    "AI審査でスムーズ",
-    "金額制限がない"
+    "対応が迅速",
+    "審査が柔軟",
+    "全国対応"
   ],
   "cons": [
-    "2社間ファクタリングのみ",
-    "新しい会社で実績が少なめ"
+    "知名度がやや低い",
+    "手数料は個別査定"
   ],
-  "establishedYear": 2021,
   "targetIndustries": [
-    "IT・Web",
     "建設業",
     "運送業",
-    "広告・メディア"
+    "製造業",
+    "IT・Web",
+    "サービス業"
   ],
   "overallRating": 3.5,
-  "rankPosition": 209,
-  "soleProprietorOk": false,
-  "weekendPayment": false
+  "rankPosition": 209
 }

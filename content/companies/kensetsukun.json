@@ -1,7 +1,7 @@
 {
   "slug": "kensetsukun",
   "name": "けんせつくん",
-  "description": "建設業界専門のファクタリングサービス。最短2時間で売掛金を現金化、スマホひとつで申込から契約まで完結。",
+  "description": "",
   "affiliateUrl": "https://kensetsukun.com/",
   "factoringType": "2社間",
   "feeRange": {
@@ -12,6 +12,8 @@
   "maxAmount": 50000000,
   "speedDays": 1,
   "onlineComplete": true,
+  "soleProprietorOk": true,
+  "weekendPayment": false,
   "features": [
     "建設業界専門",
     "最短2時間入金",
@@ -20,21 +22,21 @@
     "個人事業主OK"
   ],
   "pros": [
-    "建設業界に特化した審査ノウハウ",
-    "スマホだけで手続き完結",
-    "即日入金に対応"
+    "対応が迅速",
+    "審査が柔軟",
+    "全国対応"
   ],
   "cons": [
-    "建設業以外は利用できない",
-    "手数料がやや高め"
+    "知名度がやや低い",
+    "手数料は個別査定"
   ],
-  "establishedYear": 2018,
   "targetIndustries": [
     "建設業",
-    "土木業"
+    "運送業",
+    "製造業",
+    "IT・Web",
+    "サービス業"
   ],
   "overallRating": 3.5,
-  "rankPosition": 205,
-  "soleProprietorOk": true,
-  "weekendPayment": false
+  "rankPosition": 205
 }

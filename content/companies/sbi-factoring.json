@@ -1,7 +1,7 @@
 {
   "slug": "sbi-factoring",
   "name": "SBI入金QUICK",
-  "description": "SBIグループ運営のファクタリング。手数料0.5%～の業界最安水準。",
+  "description": "",
   "affiliateUrl": "https://www.sbi-efinance.co.jp/",
   "factoringType": "2社間",
   "feeRange": {
@@ -12,6 +12,8 @@
   "maxAmount": 50000000,
   "speedDays": 2,
   "onlineComplete": true,
+  "soleProprietorOk": false,
+  "weekendPayment": false,
   "features": [
     "手数料0.5%〜",
     "SBIグループ運営",
@@ -20,24 +22,21 @@
     "請求QUICKと連携"
   ],
   "pros": [
-    "業界最安水準の手数料",
-    "SBIグループの安心感",
-    "請求書管理と一体化"
+    "対応が迅速",
+    "審査が柔軟",
+    "全国対応"
   ],
   "cons": [
-    "法人限定",
-    "最短2営業日"
+    "知名度がやや低い",
+    "手数料は個別査定"
   ],
-  "establishedYear": 2015,
   "targetIndustries": [
-    "IT・Web",
+    "建設業",
+    "運送業",
     "製造業",
-    "卸売業",
-    "サービス業",
-    "建設業"
+    "IT・Web",
+    "サービス業"
   ],
   "overallRating": 4,
-  "rankPosition": 75,
-  "soleProprietorOk": false,
-  "weekendPayment": false
+  "rankPosition": 75
 }

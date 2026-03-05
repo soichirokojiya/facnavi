@@ -1,7 +1,7 @@
 {
   "slug": "bestpay",
   "name": "ベストペイ（BESTPAY）",
-  "description": "注文書ファクタリング専門。受注段階で資金化可能。手数料5%～。",
+  "description": "",
   "affiliateUrl": "https://best-pay.jp/",
   "factoringType": "2社間",
   "feeRange": {
@@ -12,6 +12,8 @@
   "maxAmount": 300000000,
   "speedDays": 2,
   "onlineComplete": true,
+  "soleProprietorOk": false,
+  "weekendPayment": false,
   "features": [
     "注文書ファクタリング専門",
     "受注段階で資金化",
@@ -20,24 +22,21 @@
     "オンライン完結"
   ],
   "pros": [
-    "注文書段階で資金化可能",
-    "大口取引に対応",
-    "柔軟な審査"
+    "対応が迅速",
+    "審査が柔軟",
+    "全国対応"
   ],
   "cons": [
-    "手数料が高め",
-    "最短翌営業日"
+    "知名度がやや低い",
+    "手数料は個別査定"
   ],
-  "establishedYear": 2017,
   "targetIndustries": [
     "建設業",
+    "運送業",
     "製造業",
     "IT・Web",
-    "運送業",
-    "広告業"
+    "サービス業"
   ],
   "overallRating": 3.5,
-  "rankPosition": 196,
-  "soleProprietorOk": false,
-  "weekendPayment": false
+  "rankPosition": 196
 }

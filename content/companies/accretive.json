@@ -1,7 +1,7 @@
 {
   "slug": "accretive",
   "name": "アクリーティブ",
-  "description": "東証プライム上場・芙蓉リースグループ。医療・介護報酬ファクタリングに強い。",
+  "description": "",
   "affiliateUrl": "https://www.accretive.jp/",
   "factoringType": "3社間",
   "feeRange": {
@@ -12,6 +12,8 @@
   "maxAmount": 50000000,
   "speedDays": 5,
   "onlineComplete": false,
+  "soleProprietorOk": false,
+  "weekendPayment": false,
   "features": [
     "東証プライム上場",
     "医療・介護特化",
@@ -20,24 +22,21 @@
     "全国47都道府県対応"
   ],
   "pros": [
-    "上場企業の信頼性",
-    "医療・介護に強い",
-    "手数料が非常に安い"
+    "対応が迅速",
+    "審査が柔軟",
+    "全国対応"
   ],
   "cons": [
-    "3社間のみ",
-    "入金まで日数がかかる"
+    "知名度がやや低い",
+    "手数料は個別査定"
   ],
-  "establishedYear": 2000,
   "targetIndustries": [
-    "医療・介護",
-    "調剤薬局",
-    "歯科",
-    "病院",
-    "介護施設"
+    "建設業",
+    "運送業",
+    "製造業",
+    "IT・Web",
+    "サービス業"
   ],
   "overallRating": 4,
-  "rankPosition": 40,
-  "soleProprietorOk": false,
-  "weekendPayment": false
+  "rankPosition": 40
 }

@@ -1,7 +1,7 @@
 {
   "slug": "smfl",
   "name": "SMFL",
-  "description": "三井住友ファイナンス＆リースのファクタリングサービス。",
+  "description": "",
   "affiliateUrl": "https://www.smfl.co.jp/",
   "factoringType": "3社間",
   "feeRange": {
@@ -12,6 +12,8 @@
   "maxAmount": 50000000,
   "speedDays": 5,
   "onlineComplete": false,
+  "soleProprietorOk": false,
+  "weekendPayment": false,
   "features": [
     "三井住友グループ",
     "大手金融機関",
@@ -28,7 +30,6 @@
     "知名度がやや低い",
     "手数料は個別査定"
   ],
-  "establishedYear": 1963,
   "targetIndustries": [
     "建設業",
     "運送業",
@@ -37,7 +38,5 @@
     "サービス業"
   ],
   "overallRating": 3,
-  "rankPosition": 247,
-  "soleProprietorOk": false,
-  "weekendPayment": false
+  "rankPosition": 247
 }

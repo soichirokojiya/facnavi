@@ -1,7 +1,7 @@
 {
   "slug": "shikin-plus",
   "name": "SHIKIN+",
-  "description": "資金プラスのファクタリングサービス。中小企業・個人事業主の資金繰りを支援。",
+  "description": "",
   "affiliateUrl": "https://shikin-plus.jp/",
   "factoringType": "2社間・3社間",
   "feeRange": {
@@ -12,6 +12,8 @@
   "maxAmount": 50000000,
   "speedDays": 1,
   "onlineComplete": true,
+  "soleProprietorOk": true,
+  "weekendPayment": false,
   "features": [
     "即日入金",
     "個人事業主OK",
@@ -28,7 +30,6 @@
     "知名度がやや低い",
     "手数料は個別査定"
   ],
-  "establishedYear": 2018,
   "targetIndustries": [
     "建設業",
     "運送業",
@@ -37,7 +38,5 @@
     "サービス業"
   ],
   "overallRating": 3,
-  "rankPosition": 243,
-  "soleProprietorOk": true,
-  "weekendPayment": false
+  "rankPosition": 243
 }

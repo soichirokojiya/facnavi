@@ -1,7 +1,7 @@
 {
   "slug": "kensetsu-keiei",
   "name": "建設経営サービス",
-  "description": "建設業界特化のファクタリング。建設会社の資金繰りをサポート。",
+  "description": "",
   "affiliateUrl": "https://kensetsu-keiei.com/",
   "factoringType": "2社間・3社間",
   "feeRange": {
@@ -12,6 +12,8 @@
   "maxAmount": 50000000,
   "speedDays": 1,
   "onlineComplete": true,
+  "soleProprietorOk": true,
+  "weekendPayment": false,
   "features": [
     "建設業特化",
     "即日入金可能",
@@ -28,12 +30,13 @@
     "知名度がやや低い",
     "手数料は個別査定"
   ],
-  "establishedYear": 2015,
   "targetIndustries": [
-    "建設業"
+    "建設業",
+    "運送業",
+    "製造業",
+    "IT・Web",
+    "サービス業"
   ],
   "overallRating": 4,
-  "rankPosition": 125,
-  "soleProprietorOk": true,
-  "weekendPayment": false
+  "rankPosition": 125
 }

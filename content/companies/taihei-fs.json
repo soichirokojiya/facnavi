@@ -1,7 +1,7 @@
 {
   "slug": "taihei-fs",
   "name": "太平フィナンシャルサービス",
-  "description": "ファクタリング・リースのファイナンスサービス。",
+  "description": "",
   "affiliateUrl": "https://www.taihei-fs.co.jp/",
   "factoringType": "3社間",
   "feeRange": {
@@ -12,6 +12,8 @@
   "maxAmount": 50000000,
   "speedDays": 3,
   "onlineComplete": true,
+  "soleProprietorOk": false,
+  "weekendPayment": false,
   "features": [
     "リース対応",
     "ファクタリング",
@@ -28,7 +30,6 @@
     "知名度がやや低い",
     "手数料は個別査定"
   ],
-  "establishedYear": 2000,
   "targetIndustries": [
     "建設業",
     "運送業",
@@ -37,7 +38,5 @@
     "サービス業"
   ],
   "overallRating": 3,
-  "rankPosition": 251,
-  "soleProprietorOk": false,
-  "weekendPayment": false
+  "rankPosition": 251
 }

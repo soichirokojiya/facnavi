@@ -1,7 +1,7 @@
 {
   "slug": "labol",
   "name": "ラボル",
-  "description": "IT・クリエイター業界に特化したファクタリングサービス。業界の商習慣を理解した審査体制で、Web制作やシステム開発など長期プロジェクトの売掛金にも柔軟に対応します。",
+  "description": "",
   "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=4AX0WK+F2DWVM+40JM+1BP19T",
   "factoringType": "2社間",
   "feeRange": {
@@ -12,6 +12,8 @@
   "maxAmount": 10000000,
   "speedDays": 1,
   "onlineComplete": true,
+  "soleProprietorOk": true,
+  "weekendPayment": true,
   "features": [
     "IT・クリエイター特化",
     "最短60分入金",
@@ -20,24 +22,21 @@
     "オンライン完結"
   ],
   "pros": [
-    "IT業界の商習慣を理解した審査",
-    "最短60分のスピード入金",
-    "少額1万円から気軽に利用可能"
+    "対応が迅速",
+    "審査が柔軟",
+    "全国対応"
   ],
   "cons": [
-    "IT・クリエイター以外の業種は審査が厳しい場合あり",
-    "上限金額がやや低め"
+    "知名度がやや低い",
+    "手数料は個別査定"
   ],
-  "establishedYear": 2021,
   "targetIndustries": [
+    "建設業",
+    "運送業",
+    "製造業",
     "IT・Web",
-    "システム開発",
-    "デザイン",
-    "映像制作",
-    "ゲーム開発"
+    "サービス業"
   ],
   "overallRating": 4.8,
-  "rankPosition": 3,
-  "soleProprietorOk": true,
-  "weekendPayment": true
+  "rankPosition": 3
 }

@@ -1,7 +1,7 @@
 {
   "slug": "kaipoke-early",
   "name": "カイポケ早期入金",
-  "description": "エス・エム・エスが提供する介護事業者向けファクタリング。介護報酬の早期入金。",
+  "description": "",
   "affiliateUrl": "https://ads.kaipoke.biz/",
   "factoringType": "3社間",
   "feeRange": {
@@ -12,6 +12,8 @@
   "maxAmount": 50000000,
   "speedDays": 3,
   "onlineComplete": true,
+  "soleProprietorOk": false,
+  "weekendPayment": false,
   "features": [
     "介護事業者特化",
     "低手数料",
@@ -28,12 +30,13 @@
     "知名度がやや低い",
     "手数料は個別査定"
   ],
-  "establishedYear": 2015,
   "targetIndustries": [
-    "医療・介護"
+    "建設業",
+    "運送業",
+    "製造業",
+    "IT・Web",
+    "サービス業"
   ],
   "overallRating": 5,
-  "rankPosition": 19,
-  "soleProprietorOk": false,
-  "weekendPayment": false
+  "rankPosition": 19
 }

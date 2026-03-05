@@ -1,7 +1,7 @@
 {
   "slug": "nx-capital",
   "name": "NXキャピタル",
-  "description": "日本通運グループのファイナンスサービス。物流業界に強い。",
+  "description": "",
   "affiliateUrl": "https://www.nx-capital.co.jp/",
   "factoringType": "3社間",
   "feeRange": {
@@ -12,6 +12,8 @@
   "maxAmount": 50000000,
   "speedDays": 5,
   "onlineComplete": false,
+  "soleProprietorOk": false,
+  "weekendPayment": false,
   "features": [
     "日本通運グループ",
     "物流業界特化",
@@ -28,7 +30,6 @@
     "知名度がやや低い",
     "手数料は個別査定"
   ],
-  "establishedYear": 2000,
   "targetIndustries": [
     "建設業",
     "運送業",
@@ -37,7 +38,5 @@
     "サービス業"
   ],
   "overallRating": 3.7,
-  "rankPosition": 188,
-  "soleProprietorOk": false,
-  "weekendPayment": false
+  "rankPosition": 188
 }

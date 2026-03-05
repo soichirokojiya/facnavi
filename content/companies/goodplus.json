@@ -1,7 +1,7 @@
 {
   "slug": "goodplus",
   "name": "GoodPlus（グッドプラス）",
-  "description": "土日祝も対応。最短90分で入金。手数料5%～15%。他社比較で1%以上安くする保証付き。",
+  "description": "",
   "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=4AX5KD+A1ZKKY+5DD4+5ZU29",
   "factoringType": "2社間",
   "feeRange": {
@@ -12,6 +12,8 @@
   "maxAmount": 50000000,
   "speedDays": 1,
   "onlineComplete": true,
+  "soleProprietorOk": true,
+  "weekendPayment": true,
   "features": [
     "土日祝も対応",
     "最短90分入金",
@@ -20,15 +22,14 @@
     "オンライン完結"
   ],
   "pros": [
-    "土日祝日も営業",
-    "最短90分のスピード",
-    "他社見積より安くする保証"
+    "対応が迅速",
+    "審査が柔軟",
+    "全国対応"
   ],
   "cons": [
-    "手数料下限が5%とやや高め",
-    "法人のみ対応の場合あり"
+    "知名度がやや低い",
+    "手数料は個別査定"
   ],
-  "establishedYear": 2020,
   "targetIndustries": [
     "建設業",
     "運送業",
@@ -37,7 +38,5 @@
     "サービス業"
   ],
   "overallRating": 4.3,
-  "rankPosition": 30,
-  "soleProprietorOk": true,
-  "weekendPayment": true
+  "rankPosition": 30
 }

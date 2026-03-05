@@ -1,7 +1,7 @@
 {
   "slug": "sankyo-service",
   "name": "三共サービス",
-  "description": "創業20年以上の老舗ファクタリング会社。元金融マンによる丁寧な対応と業界最安水準の手数料が魅力。",
+  "description": "",
   "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=4AX5KD+A36FSI+57YY+5YRHE",
   "factoringType": "2社間・3社間",
   "feeRange": {
@@ -12,6 +12,8 @@
   "maxAmount": 100000000,
   "speedDays": 2,
   "onlineComplete": false,
+  "soleProprietorOk": false,
+  "weekendPayment": false,
   "features": [
     "創業20年以上",
     "元金融マン対応",
@@ -20,24 +22,21 @@
     "法人専門"
   ],
   "pros": [
-    "長年の実績と信頼性",
-    "手数料が低い",
-    "金融のプロによる丁寧なサポート"
+    "対応が迅速",
+    "審査が柔軟",
+    "全国対応"
   ],
   "cons": [
-    "個人事業主は利用不可",
-    "入金まで2日程度かかる"
+    "知名度がやや低い",
+    "手数料は個別査定"
   ],
-  "establishedYear": 2001,
   "targetIndustries": [
     "建設業",
-    "製造業",
     "運送業",
-    "卸売業",
-    "人材派遣"
+    "製造業",
+    "IT・Web",
+    "サービス業"
   ],
   "overallRating": 3.7,
-  "rankPosition": 192,
-  "soleProprietorOk": false,
-  "weekendPayment": false
+  "rankPosition": 192
 }

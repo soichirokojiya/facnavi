@@ -1,8 +1,8 @@
 {
   "slug": "mentor-capital",
   "name": "メンターキャピタル",
-  "description": "最大1億円までの大口ファクタリングに対応。中堅〜大企業の大型債権の買取に強みを持ち、経験豊富な専任担当者がサポートします。",
-  "affiliateUrl": "https://mentor-capital.jp/",
+  "description": "",
+  "affiliateUrl": "https://neo7.net/link.php?id=N0000272&adwares=A0000212&tag=",
   "factoringType": "2社間・3社間",
   "feeRange": {
     "min": 2,
@@ -12,6 +12,8 @@
   "maxAmount": 100000000,
   "speedDays": 2,
   "onlineComplete": false,
+  "soleProprietorOk": false,
+  "weekendPayment": false,
   "features": [
     "最大1億円対応",
     "専任担当者制",
@@ -20,24 +22,21 @@
     "法人向けサービス充実"
   ],
   "pros": [
-    "大口債権にも柔軟に対応可能",
-    "専任担当者による手厚いサポート",
-    "3社間利用で手数料を抑えられる"
+    "対応が迅速",
+    "審査が柔軟",
+    "全国対応"
   ],
   "cons": [
-    "少額案件には対応していない",
-    "オンライン完結には非対応で面談が必要"
+    "知名度がやや低い",
+    "手数料は個別査定"
   ],
-  "establishedYear": 2016,
   "targetIndustries": [
     "建設業",
+    "運送業",
     "製造業",
-    "卸売業",
-    "不動産業",
-    "人材派遣業"
+    "IT・Web",
+    "サービス業"
   ],
   "overallRating": 3.8,
-  "rankPosition": 177,
-  "soleProprietorOk": false,
-  "weekendPayment": false
+  "rankPosition": 177
 }

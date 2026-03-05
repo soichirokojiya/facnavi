@@ -1,7 +1,7 @@
 {
   "slug": "factoru",
   "name": "FACTOR⁺U（ファクトル）",
-  "description": "日本中小企業金融サポート機構運営のAIファクタリング。手数料1.5%～、最短40分入金。",
+  "description": "",
   "affiliateUrl": "https://chushokigyo-support.or.jp/factoru/",
   "factoringType": "2社間",
   "feeRange": {
@@ -12,6 +12,8 @@
   "maxAmount": 50000000,
   "speedDays": 1,
   "onlineComplete": true,
+  "soleProprietorOk": true,
+  "weekendPayment": false,
   "features": [
     "AI審査",
     "最短40分入金",
@@ -20,24 +22,21 @@
     "必要書類2点のみ"
   ],
   "pros": [
-    "非営利法人の安心感",
-    "最短40分の超スピード",
-    "必要書類が少ない"
+    "対応が迅速",
+    "審査が柔軟",
+    "全国対応"
   ],
   "cons": [
-    "知名度がまだ低い",
-    "2者間のみ"
+    "知名度がやや低い",
+    "手数料は個別査定"
   ],
-  "establishedYear": 2017,
   "targetIndustries": [
     "建設業",
     "運送業",
     "製造業",
     "IT・Web",
-    "医療・介護"
+    "サービス業"
   ],
   "overallRating": 4,
-  "rankPosition": 54,
-  "soleProprietorOk": true,
-  "weekendPayment": false
+  "rankPosition": 54
 }

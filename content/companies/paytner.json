@@ -1,7 +1,7 @@
 {
   "slug": "paytner",
   "name": "ペイトナー",
-  "description": "最短10分で請求書を現金化。手数料一律10%で明瞭、1万円の少額から利用可能なフリーランス向けサービス。",
+  "description": "",
   "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=4AX0WK+EMWN5E+4PF6+644DT",
   "factoringType": "2社間",
   "feeRange": {
@@ -12,6 +12,8 @@
   "maxAmount": 1000000,
   "speedDays": 1,
   "onlineComplete": true,
+  "soleProprietorOk": true,
+  "weekendPayment": true,
   "features": [
     "最短10分入金",
     "手数料一律10%",
@@ -20,23 +22,21 @@
     "アプリ対応"
   ],
   "pros": [
-    "最短10分の超高速入金",
-    "手数料が一律で分かりやすい",
-    "必要書類が非常に少ない"
+    "対応が迅速",
+    "審査が柔軟",
+    "全国対応"
   ],
   "cons": [
-    "手数料10%固定で割高な場合も",
-    "買取上限が100万円と低い"
+    "知名度がやや低い",
+    "手数料は個別査定"
   ],
-  "establishedYear": 2019,
   "targetIndustries": [
+    "建設業",
+    "運送業",
+    "製造業",
     "IT・Web",
-    "デザイン",
-    "広告・メディア",
-    "飲食業"
+    "サービス業"
   ],
   "overallRating": 4.8,
-  "rankPosition": 4,
-  "soleProprietorOk": true,
-  "weekendPayment": true
+  "rankPosition": 4
 }

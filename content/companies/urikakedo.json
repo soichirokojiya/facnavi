@@ -1,7 +1,7 @@
 {
   "slug": "urikakedo",
   "name": "うりかけ堂",
-  "description": "低手数料とスピーディーな入金が特徴。最短2時間で資金化、全国対応のオンラインファクタリング。",
+  "description": "",
   "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=4AX1OL+BOXHGY+4S8A+5YJRM",
   "factoringType": "2社間・3社間",
   "feeRange": {
@@ -12,6 +12,8 @@
   "maxAmount": 50000000,
   "speedDays": 1,
   "onlineComplete": true,
+  "soleProprietorOk": true,
+  "weekendPayment": false,
   "features": [
     "最短2時間入金",
     "低手数料",
@@ -20,24 +22,21 @@
     "個人事業主OK"
   ],
   "pros": [
-    "手数料が低く抑えられる",
-    "入金スピードが速い",
-    "3社間でさらに手数料を抑えられる"
+    "対応が迅速",
+    "審査が柔軟",
+    "全国対応"
   ],
   "cons": [
-    "知名度がまだ低い",
-    "大口案件の対応は要相談"
+    "知名度がやや低い",
+    "手数料は個別査定"
   ],
-  "establishedYear": 2019,
   "targetIndustries": [
     "建設業",
     "運送業",
     "製造業",
-    "小売業",
+    "IT・Web",
     "サービス業"
   ],
   "overallRating": 4,
-  "rankPosition": 83,
-  "soleProprietorOk": true,
-  "weekendPayment": false
+  "rankPosition": 83
 }

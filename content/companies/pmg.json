@@ -1,7 +1,7 @@
 {
   "slug": "pmg",
   "name": "PMG",
-  "description": "ピーエムジー株式会社が運営。月間取扱件数500件以上、新規契約率98%の業界トップクラスの実績。",
+  "description": "",
   "affiliateUrl": "https://p-m-g.tokyo/",
   "factoringType": "2社間・3社間",
   "feeRange": {
@@ -12,6 +12,8 @@
   "maxAmount": 200000000,
   "speedDays": 1,
   "onlineComplete": true,
+  "soleProprietorOk": false,
+  "weekendPayment": false,
   "features": [
     "月間500件以上の取扱",
     "新規契約率98%",
@@ -20,24 +22,21 @@
     "全国対応"
   ],
   "pros": [
-    "圧倒的な取扱実績で安心",
-    "大口案件にも対応可能",
-    "新規契約率が非常に高い"
+    "対応が迅速",
+    "審査が柔軟",
+    "全国対応"
   ],
   "cons": [
-    "少額案件は優先度が下がる場合あり",
-    "手数料は案件による"
+    "知名度がやや低い",
+    "手数料は個別査定"
   ],
-  "establishedYear": 2015,
   "targetIndustries": [
     "建設業",
     "運送業",
     "製造業",
-    "医療・介護",
-    "人材派遣"
+    "IT・Web",
+    "サービス業"
   ],
   "overallRating": 4.5,
-  "rankPosition": 13,
-  "soleProprietorOk": false,
-  "weekendPayment": false
+  "rankPosition": 13
 }

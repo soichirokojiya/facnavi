@@ -1,7 +1,7 @@
 {
   "slug": "nec-capital",
   "name": "NECキャピタルソリューション",
-  "description": "NECグループのファイナンスサービス。リース・ファクタリング。",
+  "description": "",
   "affiliateUrl": "https://www.necap.co.jp/",
   "factoringType": "3社間",
   "feeRange": {
@@ -12,6 +12,8 @@
   "maxAmount": 50000000,
   "speedDays": 5,
   "onlineComplete": false,
+  "soleProprietorOk": false,
+  "weekendPayment": false,
   "features": [
     "NECグループ",
     "大手運営",
@@ -28,7 +30,6 @@
     "知名度がやや低い",
     "手数料は個別査定"
   ],
-  "establishedYear": 1978,
   "targetIndustries": [
     "建設業",
     "運送業",
@@ -37,7 +38,5 @@
     "サービス業"
   ],
   "overallRating": 5,
-  "rankPosition": 20,
-  "soleProprietorOk": false,
-  "weekendPayment": false
+  "rankPosition": 20
 }

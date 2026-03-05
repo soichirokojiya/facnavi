@@ -1,7 +1,7 @@
 {
   "slug": "zaimukaikei-shien",
   "name": "財務会計支援機構",
-  "description": "ファクタリング・財務コンサルティングサービス。",
+  "description": "",
   "affiliateUrl": "https://zaimukaikei-shien.or.jp/",
   "factoringType": "2社間・3社間",
   "feeRange": {
@@ -12,6 +12,8 @@
   "maxAmount": 50000000,
   "speedDays": 1,
   "onlineComplete": true,
+  "soleProprietorOk": false,
+  "weekendPayment": false,
   "features": [
     "財務コンサル",
     "ファクタリング",
@@ -28,7 +30,6 @@
     "知名度がやや低い",
     "手数料は個別査定"
   ],
-  "establishedYear": 2018,
   "targetIndustries": [
     "建設業",
     "運送業",
@@ -37,7 +38,5 @@
     "サービス業"
   ],
   "overallRating": 4,
-  "rankPosition": 173,
-  "soleProprietorOk": false,
-  "weekendPayment": false
+  "rankPosition": 173
 }

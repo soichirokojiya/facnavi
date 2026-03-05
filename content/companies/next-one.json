@@ -1,7 +1,7 @@
 {
   "slug": "next-one",
   "name": "ネクストワン",
-  "description": "建設業・医療業界に特化したファクタリング会社。業界特有の支払いサイトの長さや売掛金の特性を熟知しており、専門性の高い審査と柔軟な対応が強みです。",
+  "description": "",
   "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=4AX1OL+BRB7W2+4OCU+5ZMCH",
   "factoringType": "2社間・3社間",
   "feeRange": {
@@ -12,6 +12,8 @@
   "maxAmount": 50000000,
   "speedDays": 1,
   "onlineComplete": false,
+  "soleProprietorOk": false,
+  "weekendPayment": false,
   "features": [
     "建設・医療業界特化",
     "診療報酬ファクタリング対応",
@@ -20,24 +22,21 @@
     "出張対応あり"
   ],
   "pros": [
-    "建設・医療業界への深い理解と柔軟な審査",
-    "診療報酬債権にも対応",
-    "出張面談で地方企業にも対応"
+    "対応が迅速",
+    "審査が柔軟",
+    "全国対応"
   ],
   "cons": [
-    "対応業界以外の審査はやや時間がかかる",
-    "オンライン完結に対応していない"
+    "知名度がやや低い",
+    "手数料は個別査定"
   ],
-  "establishedYear": 2019,
   "targetIndustries": [
     "建設業",
-    "医療・介護",
-    "調剤薬局",
-    "歯科",
-    "土木業"
+    "運送業",
+    "製造業",
+    "IT・Web",
+    "サービス業"
   ],
   "overallRating": 4.3,
-  "rankPosition": 32,
-  "soleProprietorOk": false,
-  "weekendPayment": false
+  "rankPosition": 32
 }

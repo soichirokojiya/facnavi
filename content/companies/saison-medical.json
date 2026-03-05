@@ -1,7 +1,7 @@
 {
   "slug": "saison-medical",
   "name": "セゾン診療報酬ファクタリング",
-  "description": "セゾンが提供する診療・介護・調剤報酬ファクタリング。",
+  "description": "",
   "affiliateUrl": "https://www.saisoncard.co.jp/business/factoring/",
   "factoringType": "3社間",
   "feeRange": {
@@ -12,6 +12,8 @@
   "maxAmount": 50000000,
   "speedDays": 5,
   "onlineComplete": true,
+  "soleProprietorOk": false,
+  "weekendPayment": false,
   "features": [
     "セゾングループ",
     "医療機関向け",
@@ -28,12 +30,13 @@
     "知名度がやや低い",
     "手数料は個別査定"
   ],
-  "establishedYear": 2000,
   "targetIndustries": [
-    "医療・介護"
+    "建設業",
+    "運送業",
+    "製造業",
+    "IT・Web",
+    "サービス業"
   ],
   "overallRating": 4,
-  "rankPosition": 148,
-  "soleProprietorOk": false,
-  "weekendPayment": false
+  "rankPosition": 148
 }

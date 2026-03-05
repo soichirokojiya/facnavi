@@ -1,7 +1,7 @@
 {
   "slug": "fukuoka-factoring",
   "name": "ファクタリング福岡",
-  "description": "創業20年の九州エリア特化ファクタリング。最短3時間で資金化。",
+  "description": "",
   "affiliateUrl": "https://fukuoka-factoring.com/",
   "factoringType": "2社間・3社間",
   "feeRange": {
@@ -12,6 +12,8 @@
   "maxAmount": 50000000,
   "speedDays": 1,
   "onlineComplete": true,
+  "soleProprietorOk": true,
+  "weekendPayment": false,
   "features": [
     "創業20年の実績",
     "九州特化",
@@ -20,24 +22,21 @@
     "全国対応"
   ],
   "pros": [
-    "九州の事業者に特化",
-    "長年の実績",
-    "スピード対応"
+    "対応が迅速",
+    "審査が柔軟",
+    "全国対応"
   ],
   "cons": [
-    "九州以外は対面不可",
-    "手数料上限がやや高い"
+    "知名度がやや低い",
+    "手数料は個別査定"
   ],
-  "establishedYear": 2004,
   "targetIndustries": [
     "建設業",
     "運送業",
     "製造業",
-    "飲食業",
-    "小売業"
+    "IT・Web",
+    "サービス業"
   ],
   "overallRating": 3.5,
-  "rankPosition": 201,
-  "soleProprietorOk": true,
-  "weekendPayment": false
+  "rankPosition": 201
 }

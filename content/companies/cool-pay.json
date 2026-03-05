@@ -1,8 +1,8 @@
 {
   "slug": "cool-pay",
   "name": "CoolPay",
-  "description": "クールペイはAIを活用したオンラインファクタリング。即日資金調達が可能。",
-  "affiliateUrl": "https://cool-pay.jp/",
+  "description": "",
+  "affiliateUrl": "https://neo7.net/link.php?id=N0000272&adwares=A0000115&tag=",
   "factoringType": "2社間・3社間",
   "feeRange": {
     "min": 2,
@@ -12,6 +12,8 @@
   "maxAmount": 50000000,
   "speedDays": 1,
   "onlineComplete": true,
+  "soleProprietorOk": true,
+  "weekendPayment": false,
   "features": [
     "AI審査",
     "即日入金",
@@ -28,7 +30,6 @@
     "知名度がやや低い",
     "手数料は個別査定"
   ],
-  "establishedYear": 2020,
   "targetIndustries": [
     "建設業",
     "運送業",
@@ -37,7 +38,5 @@
     "サービス業"
   ],
   "overallRating": 3,
-  "rankPosition": 219,
-  "soleProprietorOk": true,
-  "weekendPayment": false
+  "rankPosition": 219
 }

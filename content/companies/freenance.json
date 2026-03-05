@@ -1,7 +1,7 @@
 {
   "slug": "freenance",
   "name": "フリーナンス",
-  "description": "GMOグループが運営するフリーランス向け総合サービス。ファクタリング機能「即日払い」に加え、損害賠償保険やバーチャルオフィスなど、フリーランスの働き方を総合的にサポートします。",
+  "description": "",
   "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=4AX0WK+FEW0KY+47L8+5ZU29",
   "factoringType": "2社間",
   "feeRange": {
@@ -12,6 +12,8 @@
   "maxAmount": 10000000,
   "speedDays": 1,
   "onlineComplete": true,
+  "soleProprietorOk": true,
+  "weekendPayment": false,
   "features": [
     "GMOグループ運営",
     "即日払い対応",
@@ -20,24 +22,21 @@
     "アプリで簡単操作"
   ],
   "pros": [
-    "大手GMOグループの安心感",
-    "1万円の少額から利用できる",
-    "保険やバーチャルオフィスなど付帯サービスが豊富"
+    "対応が迅速",
+    "審査が柔軟",
+    "全国対応"
   ],
   "cons": [
-    "法人向けの大口案件には不向き",
-    "フリーランス以外は利用しにくい"
+    "知名度がやや低い",
+    "手数料は個別査定"
   ],
-  "establishedYear": 2018,
   "targetIndustries": [
-    "フリーランス",
-    "クリエイター",
-    "エンジニア",
-    "ライター",
-    "デザイナー"
+    "建設業",
+    "運送業",
+    "製造業",
+    "IT・Web",
+    "サービス業"
   ],
   "overallRating": 4,
-  "rankPosition": 34,
-  "soleProprietorOk": true,
-  "weekendPayment": false
+  "rankPosition": 34
 }

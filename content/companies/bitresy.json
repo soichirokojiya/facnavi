@@ -1,8 +1,8 @@
 {
   "slug": "bitresy",
   "name": "ビートレーディング",
-  "description": "累計取引実績5万件以上を誇る業界の老舗ファクタリング会社。豊富な実績とノウハウで、幅広い業種・規模の企業に対応。安定したサービス品質が信頼されています。",
-  "affiliateUrl": "https://betrading.jp/",
+  "description": "",
+  "affiliateUrl": "https://neo7.net/link.php?id=N0000272&adwares=A0000177&tag=",
   "factoringType": "2社間・3社間",
   "feeRange": {
     "min": 2,
@@ -12,6 +12,8 @@
   "maxAmount": 300000000,
   "speedDays": 2,
   "onlineComplete": true,
+  "soleProprietorOk": false,
+  "weekendPayment": false,
   "features": [
     "累計取引5万件超",
     "最大3億円対応",
@@ -20,24 +22,21 @@
     "専任担当者制"
   ],
   "pros": [
-    "業界トップクラスの取引実績で安心",
-    "少額から大口まで幅広く対応",
-    "全国に拠点があり対面相談も可能"
+    "対応が迅速",
+    "審査が柔軟",
+    "全国対応"
   ],
   "cons": [
-    "即日入金は条件による",
-    "手数料は案件ごとに変動が大きい"
+    "知名度がやや低い",
+    "手数料は個別査定"
   ],
-  "establishedYear": 2012,
   "targetIndustries": [
     "建設業",
     "運送業",
     "製造業",
-    "医療・介護",
-    "人材派遣業"
+    "IT・Web",
+    "サービス業"
   ],
   "overallRating": 3.5,
-  "rankPosition": 198,
-  "soleProprietorOk": false,
-  "weekendPayment": false
+  "rankPosition": 198
 }

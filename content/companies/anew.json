@@ -1,7 +1,7 @@
 {
   "slug": "anew",
   "name": "anew",
-  "description": "OLTAと新生銀行（SBI新生銀行）の共同出資で設立されたファクタリング会社。フィンテック企業と銀行の強みを融合し、低手数料かつ信頼性の高いサービスを提供しています。",
+  "description": "",
   "affiliateUrl": "https://anew-factoring.jp/",
   "factoringType": "2社間",
   "feeRange": {
@@ -12,6 +12,8 @@
   "maxAmount": 50000000,
   "speedDays": 2,
   "onlineComplete": true,
+  "soleProprietorOk": false,
+  "weekendPayment": false,
   "features": [
     "OLTA×新生銀行共同出資",
     "AI審査で低手数料",
@@ -20,24 +22,21 @@
     "秘密厳守"
   ],
   "pros": [
-    "銀行系の信頼性と透明性",
-    "AI審査により手数料が低く抑えられる",
-    "オンラインで手続きが完結"
+    "対応が迅速",
+    "審査が柔軟",
+    "全国対応"
   ],
   "cons": [
-    "審査がやや厳格で通過しない場合もある",
-    "即日入金は原則非対応"
+    "知名度がやや低い",
+    "手数料は個別査定"
   ],
-  "establishedYear": 2020,
   "targetIndustries": [
-    "IT・Web",
+    "建設業",
+    "運送業",
     "製造業",
-    "卸売業",
-    "サービス業",
-    "広告業"
+    "IT・Web",
+    "サービス業"
   ],
   "overallRating": 4.3,
-  "rankPosition": 24,
-  "soleProprietorOk": false,
-  "weekendPayment": false
+  "rankPosition": 24
 }

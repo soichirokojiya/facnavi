@@ -1,7 +1,7 @@
 {
   "slug": "mita-securities",
   "name": "三田証券",
-  "description": "証券会社系ファクタリング。金融のプロが対応。",
+  "description": "",
   "affiliateUrl": "https://www.mita-sec.co.jp/",
   "factoringType": "2社間・3社間",
   "feeRange": {
@@ -12,6 +12,8 @@
   "maxAmount": 50000000,
   "speedDays": 1,
   "onlineComplete": true,
+  "soleProprietorOk": false,
+  "weekendPayment": false,
   "features": [
     "証券会社運営",
     "ファクタリング",
@@ -28,7 +30,6 @@
     "知名度がやや低い",
     "手数料は個別査定"
   ],
-  "establishedYear": 2018,
   "targetIndustries": [
     "建設業",
     "運送業",
@@ -37,7 +38,5 @@
     "サービス業"
   ],
   "overallRating": 4,
-  "rankPosition": 133,
-  "soleProprietorOk": false,
-  "weekendPayment": false
+  "rankPosition": 133
 }

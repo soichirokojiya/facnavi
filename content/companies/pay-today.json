@@ -1,7 +1,7 @@
 {
   "slug": "pay-today",
   "name": "PayToday（ペイトゥデイ）",
-  "description": "AI審査で最短30分入金。手数料1%〜と業界最安水準を実現するオンラインファクタリングサービス。",
+  "description": "",
   "affiliateUrl": "https://paytoday.jp/",
   "factoringType": "2社間",
   "feeRange": {
@@ -12,6 +12,8 @@
   "maxAmount": 50000000,
   "speedDays": 1,
   "onlineComplete": true,
+  "soleProprietorOk": false,
+  "weekendPayment": false,
   "features": [
     "最短30分入金",
     "手数料1%〜",
@@ -20,23 +22,21 @@
     "少額OK"
   ],
   "pros": [
-    "手数料が1%〜と非常に安い",
-    "最短30分での入金実績",
-    "少額から利用可能"
+    "対応が迅速",
+    "審査が柔軟",
+    "全国対応"
   ],
   "cons": [
-    "新しいサービスで実績が少ない",
-    "電話サポートが限定的"
+    "知名度がやや低い",
+    "手数料は個別査定"
   ],
-  "establishedYear": 2021,
   "targetIndustries": [
+    "建設業",
+    "運送業",
+    "製造業",
     "IT・Web",
-    "小売業",
-    "飲食業",
-    "広告・メディア"
+    "サービス業"
   ],
   "overallRating": 4.5,
-  "rankPosition": 12,
-  "soleProprietorOk": false,
-  "weekendPayment": false
+  "rankPosition": 12
 }

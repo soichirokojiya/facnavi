@@ -1,7 +1,7 @@
 {
   "slug": "hamagin-finance",
   "name": "浜銀ファイナンス",
-  "description": "横浜銀行グループのファクタリング。地域密着で神奈川・東京エリアに強い。",
+  "description": "",
   "affiliateUrl": "https://www.hamagin-finance.co.jp/",
   "factoringType": "3社間",
   "feeRange": {
@@ -12,6 +12,8 @@
   "maxAmount": 50000000,
   "speedDays": 5,
   "onlineComplete": false,
+  "soleProprietorOk": false,
+  "weekendPayment": false,
   "features": [
     "横浜銀行グループ",
     "地域密着",
@@ -20,24 +22,21 @@
     "安定した資金力"
   ],
   "pros": [
-    "銀行グループの安心感",
-    "地域企業に強い"
+    "対応が迅速",
+    "審査が柔軟",
+    "全国対応"
   ],
   "cons": [
-    "3社間のみ",
-    "エリアが限定的",
-    "個人事業主不可"
+    "知名度がやや低い",
+    "手数料は個別査定"
   ],
-  "establishedYear": 1979,
   "targetIndustries": [
-    "製造業",
     "建設業",
-    "卸売業",
-    "小売業",
+    "運送業",
+    "製造業",
+    "IT・Web",
     "サービス業"
   ],
   "overallRating": 4,
-  "rankPosition": 121,
-  "soleProprietorOk": false,
-  "weekendPayment": false
+  "rankPosition": 121
 }

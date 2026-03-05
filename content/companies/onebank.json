@@ -1,7 +1,7 @@
 {
   "slug": "onebank",
   "name": "ワンバンク請求書買取",
-  "description": "個人事業主・フリーランス専門の請求書買取サービス。最短60分で即日現金化、決算書不要。",
+  "description": "",
   "affiliateUrl": "https://www.onebank.co.jp/",
   "factoringType": "2社間",
   "feeRange": {
@@ -12,6 +12,8 @@
   "maxAmount": 10000000,
   "speedDays": 1,
   "onlineComplete": true,
+  "soleProprietorOk": false,
+  "weekendPayment": false,
   "features": [
     "最短60分入金",
     "決算書不要",
@@ -20,24 +22,21 @@
     "オンライン完結"
   ],
   "pros": [
-    "決算書が不要で手軽",
-    "フリーランスに特化したサービス",
-    "最短60分のスピード入金"
+    "対応が迅速",
+    "審査が柔軟",
+    "全国対応"
   ],
   "cons": [
-    "法人向けの大口案件には不向き",
-    "手数料の下限がやや高め"
+    "知名度がやや低い",
+    "手数料は個別査定"
   ],
-  "establishedYear": 2023,
   "targetIndustries": [
+    "建設業",
+    "運送業",
+    "製造業",
     "IT・Web",
-    "広告・メディア",
-    "デザイン",
-    "映像制作",
-    "飲食業"
+    "サービス業"
   ],
   "overallRating": 3.5,
-  "rankPosition": 208,
-  "soleProprietorOk": false,
-  "weekendPayment": false
+  "rankPosition": 208
 }

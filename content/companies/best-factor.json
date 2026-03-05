@@ -1,7 +1,7 @@
 {
   "slug": "best-factor",
   "name": "ベストファクター",
-  "description": "業界最安水準の手数料と即日入金が魅力のファクタリング会社。オンライン完結で全国対応、幅広い業種に対応しています。",
+  "description": "",
   "affiliateUrl": "https://bestfactor.jp/",
   "factoringType": "2社間・3社間",
   "feeRange": {
@@ -12,6 +12,8 @@
   "maxAmount": 100000000,
   "speedDays": 1,
   "onlineComplete": true,
+  "soleProprietorOk": true,
+  "weekendPayment": false,
   "features": [
     "即日入金可能",
     "オンライン完結",
@@ -20,24 +22,21 @@
     "全国対応"
   ],
   "pros": [
-    "業界最安水準の手数料",
-    "最短即日で資金調達可能",
-    "オンラインで手続き完結"
+    "対応が迅速",
+    "審査が柔軟",
+    "全国対応"
   ],
   "cons": [
-    "3社間ファクタリングは時間がかかる場合あり",
-    "初回は審査に時間がかかることも"
+    "知名度がやや低い",
+    "手数料は個別査定"
   ],
-  "establishedYear": 2017,
   "targetIndustries": [
     "建設業",
     "運送業",
     "製造業",
     "IT・Web",
-    "医療・介護"
+    "サービス業"
   ],
   "overallRating": 4.5,
-  "rankPosition": 7,
-  "soleProprietorOk": true,
-  "weekendPayment": false
+  "rankPosition": 7
 }

@@ -1,7 +1,7 @@
 {
   "slug": "localworks-payment",
   "name": "ローカルワークスペイメント",
-  "description": "地域密着型のファクタリングサービス。建設業界に強い。",
+  "description": "",
   "affiliateUrl": "https://localworks-payment.jp/",
   "factoringType": "2社間・3社間",
   "feeRange": {
@@ -12,6 +12,8 @@
   "maxAmount": 50000000,
   "speedDays": 1,
   "onlineComplete": true,
+  "soleProprietorOk": true,
+  "weekendPayment": false,
   "features": [
     "地域密着",
     "建設業界に強い",
@@ -28,13 +30,13 @@
     "知名度がやや低い",
     "手数料は個別査定"
   ],
-  "establishedYear": 2018,
   "targetIndustries": [
     "建設業",
-    "運送業"
+    "運送業",
+    "製造業",
+    "IT・Web",
+    "サービス業"
   ],
   "overallRating": 3,
-  "rankPosition": 233,
-  "soleProprietorOk": true,
-  "weekendPayment": false
+  "rankPosition": 233
 }

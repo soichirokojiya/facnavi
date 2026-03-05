@@ -1,7 +1,7 @@
 {
   "slug": "kyoei-support",
   "name": "共栄サポート",
-  "description": "中小企業向けファクタリングを提供。柔軟な審査と丁寧なサポートで初めての方にも安心。",
+  "description": "",
   "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=4AX5KD+9Q2WHE+5U8W+5YJRM",
   "factoringType": "2社間",
   "feeRange": {
@@ -12,6 +12,8 @@
   "maxAmount": 30000000,
   "speedDays": 1,
   "onlineComplete": true,
+  "soleProprietorOk": false,
+  "weekendPayment": false,
   "features": [
     "中小企業向け",
     "柔軟な審査",
@@ -20,23 +22,21 @@
     "全国対応"
   ],
   "pros": [
-    "審査が柔軟で通りやすい",
-    "初めてでも丁寧にサポート",
-    "中小企業のニーズに合ったサービス"
+    "対応が迅速",
+    "審査が柔軟",
+    "全国対応"
   ],
   "cons": [
-    "大口案件には不向き",
-    "知名度がまだ低い"
+    "知名度がやや低い",
+    "手数料は個別査定"
   ],
-  "establishedYear": 2019,
   "targetIndustries": [
-    "小売業",
-    "飲食業",
-    "サービス業",
-    "IT・Web"
+    "建設業",
+    "運送業",
+    "製造業",
+    "IT・Web",
+    "サービス業"
   ],
   "overallRating": 3.7,
-  "rankPosition": 185,
-  "soleProprietorOk": false,
-  "weekendPayment": false
+  "rankPosition": 185
 }

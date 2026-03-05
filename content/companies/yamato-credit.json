@@ -1,7 +1,7 @@
 {
   "slug": "yamato-credit",
   "name": "ヤマトクレジットファイナンス",
-  "description": "ヤマトグループのクレジット・ファクタリングサービス。",
+  "description": "",
   "affiliateUrl": "https://www.yamatocf.com/",
   "factoringType": "3社間",
   "feeRange": {
@@ -12,6 +12,8 @@
   "maxAmount": 50000000,
   "speedDays": 3,
   "onlineComplete": true,
+  "soleProprietorOk": false,
+  "weekendPayment": false,
   "features": [
     "ヤマトグループ",
     "大手運営",
@@ -28,7 +30,6 @@
     "知名度がやや低い",
     "手数料は個別査定"
   ],
-  "establishedYear": 2002,
   "targetIndustries": [
     "建設業",
     "運送業",
@@ -37,7 +38,5 @@
     "サービス業"
   ],
   "overallRating": 4,
-  "rankPosition": 86,
-  "soleProprietorOk": false,
-  "weekendPayment": false
+  "rankPosition": 86
 }

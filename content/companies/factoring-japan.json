@@ -1,7 +1,7 @@
 {
   "slug": "factoring-japan",
   "name": "ファクタリングジャパン",
-  "description": "2社間・3社間対応。50万円～最大3億円まで。最短即日入金。",
+  "description": "",
   "affiliateUrl": "https://factoring-japan.jp/",
   "factoringType": "2社間・3社間",
   "feeRange": {
@@ -12,6 +12,8 @@
   "maxAmount": 300000000,
   "speedDays": 1,
   "onlineComplete": true,
+  "soleProprietorOk": false,
+  "weekendPayment": false,
   "features": [
     "最大3億円対応",
     "即日入金可能",
@@ -20,24 +22,21 @@
     "電子契約対応"
   ],
   "pros": [
-    "大口取引にも対応",
-    "即日入金可能",
-    "柔軟な対応"
+    "対応が迅速",
+    "審査が柔軟",
+    "全国対応"
   ],
   "cons": [
-    "知名度が低め",
-    "手数料は要相談"
+    "知名度がやや低い",
+    "手数料は個別査定"
   ],
-  "establishedYear": 2018,
   "targetIndustries": [
     "建設業",
+    "運送業",
     "製造業",
     "IT・Web",
-    "運送業",
-    "卸売業"
+    "サービス業"
   ],
   "overallRating": 3.5,
-  "rankPosition": 199,
-  "soleProprietorOk": false,
-  "weekendPayment": false
+  "rankPosition": 199
 }

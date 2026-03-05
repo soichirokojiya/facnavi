@@ -1,7 +1,7 @@
 {
   "slug": "tokyo-spc",
   "name": "東京SPCマネジメント",
-  "description": "流動化・証券化の専門会社。診療・介護報酬ファクタリングにも対応。",
+  "description": "",
   "affiliateUrl": "https://tokyo-spc.com/",
   "factoringType": "2社間・3社間",
   "feeRange": {
@@ -12,6 +12,8 @@
   "maxAmount": 50000000,
   "speedDays": 3,
   "onlineComplete": false,
+  "soleProprietorOk": false,
+  "weekendPayment": false,
   "features": [
     "証券化の専門家",
     "診療報酬対応",
@@ -20,24 +22,21 @@
     "法人向け"
   ],
   "pros": [
-    "証券化のプロ",
-    "医療・介護にも対応",
-    "自社資金で安定"
+    "対応が迅速",
+    "審査が柔軟",
+    "全国対応"
   ],
   "cons": [
-    "手数料非公開",
-    "個人事業主不可"
+    "知名度がやや低い",
+    "手数料は個別査定"
   ],
-  "establishedYear": 1999,
   "targetIndustries": [
-    "医療・介護",
-    "製造業",
     "建設業",
-    "卸売業",
-    "不動産業"
+    "運送業",
+    "製造業",
+    "IT・Web",
+    "サービス業"
   ],
   "overallRating": 4,
-  "rankPosition": 82,
-  "soleProprietorOk": false,
-  "weekendPayment": false
+  "rankPosition": 82
 }

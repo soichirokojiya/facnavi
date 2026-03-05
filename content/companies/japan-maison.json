@@ -1,7 +1,7 @@
 {
   "slug": "japan-maison",
   "name": "日本中小企業金融サポート機構",
-  "description": "一般社団法人が運営する非営利型のファクタリングサービス。営利目的ではないため手数料が低く抑えられ、中小企業の資金繰り改善を本格的に支援しています。",
+  "description": "",
   "affiliateUrl": "https://chushokigyo-support.or.jp/",
   "factoringType": "2社間・3社間",
   "feeRange": {
@@ -12,6 +12,8 @@
   "maxAmount": 300000000,
   "speedDays": 3,
   "onlineComplete": true,
+  "soleProprietorOk": false,
+  "weekendPayment": false,
   "features": [
     "一般社団法人運営",
     "非営利で手数料が低い",
@@ -20,24 +22,21 @@
     "資金繰りコンサル付き"
   ],
   "pros": [
-    "非営利団体のため手数料が低い",
-    "資金調達だけでなく経営相談もできる",
-    "社団法人の信頼性・安心感"
+    "対応が迅速",
+    "審査が柔軟",
+    "全国対応"
   ],
   "cons": [
-    "入金まで最短3日と時間がかかる",
-    "急ぎの資金調達には不向き"
+    "知名度がやや低い",
+    "手数料は個別査定"
   ],
-  "establishedYear": 2017,
   "targetIndustries": [
     "建設業",
-    "製造業",
     "運送業",
-    "医療・介護",
-    "小売業"
+    "製造業",
+    "IT・Web",
+    "サービス業"
   ],
   "overallRating": 3.5,
-  "rankPosition": 203,
-  "soleProprietorOk": false,
-  "weekendPayment": false
+  "rankPosition": 203
 }
