@@ -19,7 +19,7 @@ export function ArticleCard({ article }: ArticleCardProps) {
   return (
     <Link href={`/column/${article.slug}`}>
       <Card hover className="overflow-hidden">
-        <ArticleEyecatch category={article.category} title={article.title} size="sm" />
+        <ArticleEyecatch category={article.category} title={article.title} image={article.image} size="sm" />
         <div className="p-4">
           <div className="flex items-center gap-2 mb-2">
             <Badge variant={categoryVariant[article.category] ?? "gray"}>

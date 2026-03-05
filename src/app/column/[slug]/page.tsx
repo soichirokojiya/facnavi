@@ -142,7 +142,7 @@ export default async function ArticleDetailPage({ params }: Props) {
 
       <article>
         <div className="mb-8">
-          <ArticleEyecatch category={article.category} title={article.title} size="lg" />
+          <ArticleEyecatch category={article.category} title={article.title} image={article.image} size="lg" />
           <div className="flex items-center gap-2 mt-5 mb-3">
             <Badge>{article.category}</Badge>
             <time className="text-sm text-gray-500">{article.publishedAt}</time>

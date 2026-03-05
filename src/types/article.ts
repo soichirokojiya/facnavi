@@ -8,6 +8,7 @@ export interface ArticleFrontmatter {
   tags: string[];
   publishedAt: string;
   updatedAt?: string;
+  image?: string;
   relatedCompanies?: string[];
   relatedArticles?: string[];
 }
