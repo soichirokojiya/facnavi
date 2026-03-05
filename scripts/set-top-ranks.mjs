@@ -6,18 +6,22 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const companiesDir = path.join(__dirname, "..", "content", "companies");
 
 // 固定上位ランク（手動設定）
-// ペイトナー・ラボルは常に上位に
+// ペイトナー・ラボルは常にTOP5内でランダムに配置
+const priorityPair = Math.random() < 0.5
+  ? ["paytner", "labol"]
+  : ["labol", "paytner"];
+
 const topRanks = [
-  "labol",             // 1. ラボル - フリーランス向け、24時間対応
-  "paytner",           // 2. ペイトナー - 最短10分、手数料10%固定
-  "betrading",         // 3. ビートレーディング - 累計1745億円、7.1万社
-  "olta",              // 4. OLTA - クラウドファクタリングNo.1
-  "ququmo",            // 5. QuQuMo - 審査通過率98%
-  "freenance",         // 6. フリーナンス - 手数料3-10%、補償付き
-  "best-factor",       // 7. ベストファクター - 審査通過率92.2%
-  "accel-factor",      // 8. アクセルファクター - 審査通過率93%
-  "pay-today",         // 9. PayToday - AI審査
-  "chusho-support",    // 10. 日本中小企業金融サポート機構
+  priorityPair[0],     // 1. ペイトナー or ラボル（ランダム）[A8]
+  "betrading",         // 2. ビートレーディング
+  priorityPair[1],     // 3. ラボル or ペイトナー（ランダム）[A8]
+  "olta",              // 4. OLTA
+  "ququmo",            // 5. QuQuMo [A8]
+  "freenance",         // 6. フリーナンス [A8]
+  "no1",               // 7. No.1ファクタリング [A8]
+  "goodplus",          // 8. GoodPlus [A8]
+  "msfj",              // 9. MSFJ [A8]
+  "best-factor",       // 10. ベストファクター
 ];
 
 // Load all companies

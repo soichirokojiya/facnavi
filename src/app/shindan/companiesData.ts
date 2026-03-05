@@ -44,46 +44,6 @@ const companiesData: Company[] = [
     "rankPosition": 1
   },
   {
-    "slug": "paytner",
-    "name": "ペイトナー",
-    "description": "最短10分で請求書を現金化。手数料一律10%で明瞭、1万円の少額から利用可能なフリーランス向けサービス。",
-    "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=4AX0WK+EMWN5E+4PF6+644DT",
-    "factoringType": "2社間",
-    "feeRange": {
-      "min": 10,
-      "max": 10
-    },
-    "minAmount": 10000,
-    "maxAmount": 1000000,
-    "speedDays": 1,
-    "onlineComplete": true,
-    "features": [
-      "最短10分入金",
-      "手数料一律10%",
-      "1万円から利用OK",
-      "書類3点のみ",
-      "アプリ対応"
-    ],
-    "pros": [
-      "最短10分の超高速入金",
-      "手数料が一律で分かりやすい",
-      "必要書類が非常に少ない"
-    ],
-    "cons": [
-      "手数料10%固定で割高な場合も",
-      "買取上限が100万円と低い"
-    ],
-    "establishedYear": 2019,
-    "targetIndustries": [
-      "IT・Web",
-      "デザイン",
-      "広告・メディア",
-      "飲食業"
-    ],
-    "overallRating": 4.1,
-    "rankPosition": 2
-  },
-  {
     "slug": "betrading",
     "name": "ビートレーディング",
     "description": "累計取引社数8.5万社超、累積買取額1,745億円の業界最大手。最短2時間で入金。",
@@ -122,6 +82,46 @@ const companiesData: Company[] = [
       "卸売業"
     ],
     "overallRating": 4.6,
+    "rankPosition": 2
+  },
+  {
+    "slug": "paytner",
+    "name": "ペイトナー",
+    "description": "最短10分で請求書を現金化。手数料一律10%で明瞭、1万円の少額から利用可能なフリーランス向けサービス。",
+    "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=4AX0WK+EMWN5E+4PF6+644DT",
+    "factoringType": "2社間",
+    "feeRange": {
+      "min": 10,
+      "max": 10
+    },
+    "minAmount": 10000,
+    "maxAmount": 1000000,
+    "speedDays": 1,
+    "onlineComplete": true,
+    "features": [
+      "最短10分入金",
+      "手数料一律10%",
+      "1万円から利用OK",
+      "書類3点のみ",
+      "アプリ対応"
+    ],
+    "pros": [
+      "最短10分の超高速入金",
+      "手数料が一律で分かりやすい",
+      "必要書類が非常に少ない"
+    ],
+    "cons": [
+      "手数料10%固定で割高な場合も",
+      "買取上限が100万円と低い"
+    ],
+    "establishedYear": 2019,
+    "targetIndustries": [
+      "IT・Web",
+      "デザイン",
+      "広告・メディア",
+      "飲食業"
+    ],
+    "overallRating": 4.1,
     "rankPosition": 3
   },
   {
@@ -247,6 +247,128 @@ const companiesData: Company[] = [
     "rankPosition": 6
   },
   {
+    "slug": "no1",
+    "name": "No.1ファクタリング",
+    "description": "建設業界に強いファクタリング会社。対面相談も可能で、手厚いサポートが魅力。全国出張対応。",
+    "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=4AX5KD+A5K67M+4EKW+5ZEMP",
+    "factoringType": "2社間・3社間",
+    "feeRange": {
+      "min": 1,
+      "max": 15
+    },
+    "minAmount": 500000,
+    "maxAmount": 50000000,
+    "speedDays": 1,
+    "onlineComplete": false,
+    "features": [
+      "建設業特化",
+      "対面相談可能",
+      "全国出張対応",
+      "3社間対応",
+      "診療報酬対応"
+    ],
+    "pros": [
+      "建設業の実績が豊富",
+      "対面で丁寧に相談できる",
+      "3社間ファクタリングにも対応"
+    ],
+    "cons": [
+      "オンライン完結ではない",
+      "手数料の幅が広い"
+    ],
+    "establishedYear": 2016,
+    "targetIndustries": [
+      "建設業",
+      "運送業",
+      "医療・介護",
+      "製造業"
+    ],
+    "overallRating": 4,
+    "rankPosition": 7
+  },
+  {
+    "slug": "goodplus",
+    "name": "GoodPlus（グッドプラス）",
+    "description": "土日祝も対応。最短90分で入金。手数料5%～15%。他社比較で1%以上安くする保証付き。",
+    "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=4AX5KD+A1ZKKY+5DD4+5ZU29",
+    "factoringType": "2社間",
+    "feeRange": {
+      "min": 5,
+      "max": 15
+    },
+    "minAmount": 100000,
+    "maxAmount": 50000000,
+    "speedDays": 1,
+    "onlineComplete": true,
+    "features": [
+      "土日祝も対応",
+      "最短90分入金",
+      "他社より1%安い保証",
+      "審査通過率90%",
+      "オンライン完結"
+    ],
+    "pros": [
+      "土日祝日も営業",
+      "最短90分のスピード",
+      "他社見積より安くする保証"
+    ],
+    "cons": [
+      "手数料下限が5%とやや高め",
+      "法人のみ対応の場合あり"
+    ],
+    "establishedYear": 2020,
+    "targetIndustries": [
+      "建設業",
+      "運送業",
+      "製造業",
+      "IT・Web",
+      "サービス業"
+    ],
+    "overallRating": 4.1,
+    "rankPosition": 8
+  },
+  {
+    "slug": "msfj",
+    "name": "MSFJ",
+    "description": "業界最安水準の手数料1%〜が最大の魅力。コスト重視の企業に選ばれているファクタリング会社で、手数料の透明性にも定評があります。",
+    "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=4AX1OL+BMJR1U+42NG+C03K1",
+    "factoringType": "2社間・3社間",
+    "feeRange": {
+      "min": 1,
+      "max": 10
+    },
+    "minAmount": 100000,
+    "maxAmount": 50000000,
+    "speedDays": 2,
+    "onlineComplete": true,
+    "features": [
+      "手数料1%〜",
+      "手数料の明確提示",
+      "リピート割引あり",
+      "オンライン完結",
+      "秘密厳守"
+    ],
+    "pros": [
+      "業界最安水準の手数料体系",
+      "手数料が事前に明確に提示される",
+      "リピート利用で手数料がさらに優遇"
+    ],
+    "cons": [
+      "入金まで最短2日かかる",
+      "高額案件の対応上限がやや低め"
+    ],
+    "establishedYear": 2017,
+    "targetIndustries": [
+      "IT・Web",
+      "広告業",
+      "コンサルティング",
+      "製造業",
+      "卸売業"
+    ],
+    "overallRating": 4.2,
+    "rankPosition": 9
+  },
+  {
     "slug": "best-factor",
     "name": "ベストファクター",
     "description": "業界最安水準の手数料と即日入金が魅力のファクタリング会社。オンライン完結で全国対応、幅広い業種に対応しています。",
@@ -285,128 +407,6 @@ const companiesData: Company[] = [
       "医療・介護"
     ],
     "overallRating": 4.5,
-    "rankPosition": 7
-  },
-  {
-    "slug": "accel-factor",
-    "name": "アクセルファクター",
-    "description": "業界トップクラスのスピード対応が強み。最短2時間での入金実績があり、急ぎの資金調達に最適なファクタリング会社です。少額から利用可能で、中小企業・個人事業主に幅広く対応。",
-    "affiliateUrl": "https://accelfacter.co.jp/",
-    "factoringType": "2社間・3社間",
-    "feeRange": {
-      "min": 2,
-      "max": 20
-    },
-    "minAmount": 300000,
-    "maxAmount": 100000000,
-    "speedDays": 1,
-    "onlineComplete": true,
-    "features": [
-      "最短2時間入金",
-      "審査通過率93%以上",
-      "少額30万円から対応",
-      "オンライン完結",
-      "全国対応"
-    ],
-    "pros": [
-      "業界最速クラスの入金スピード",
-      "少額債権でも柔軟に対応",
-      "審査通過率が非常に高い"
-    ],
-    "cons": [
-      "手数料が他社よりやや高めになる場合がある",
-      "電話対応が混み合うことがある"
-    ],
-    "establishedYear": 2018,
-    "targetIndustries": [
-      "建設業",
-      "運送業",
-      "製造業",
-      "小売業",
-      "サービス業"
-    ],
-    "overallRating": 4.3,
-    "rankPosition": 8
-  },
-  {
-    "slug": "pay-today",
-    "name": "PayToday（ペイトゥデイ）",
-    "description": "AI審査で最短30分入金。手数料1%〜と業界最安水準を実現するオンラインファクタリングサービス。",
-    "affiliateUrl": "https://paytoday.jp/",
-    "factoringType": "2社間",
-    "feeRange": {
-      "min": 1,
-      "max": 9.5
-    },
-    "minAmount": 300000,
-    "maxAmount": 50000000,
-    "speedDays": 1,
-    "onlineComplete": true,
-    "features": [
-      "最短30分入金",
-      "手数料1%〜",
-      "AI審査",
-      "完全オンライン",
-      "少額OK"
-    ],
-    "pros": [
-      "手数料が1%〜と非常に安い",
-      "最短30分での入金実績",
-      "少額から利用可能"
-    ],
-    "cons": [
-      "新しいサービスで実績が少ない",
-      "電話サポートが限定的"
-    ],
-    "establishedYear": 2021,
-    "targetIndustries": [
-      "IT・Web",
-      "小売業",
-      "飲食業",
-      "広告・メディア"
-    ],
-    "overallRating": 4.3,
-    "rankPosition": 9
-  },
-  {
-    "slug": "chusho-support",
-    "name": "日本中小企業金融サポート機構",
-    "description": "一般社団法人運営の安心感。手数料1.5%～10%で非営利ならではの低コスト。",
-    "affiliateUrl": "https://chushokigyo-support.or.jp/",
-    "factoringType": "2社間・3社間",
-    "feeRange": {
-      "min": 1.5,
-      "max": 10
-    },
-    "minAmount": 10000,
-    "maxAmount": 50000000,
-    "speedDays": 1,
-    "onlineComplete": true,
-    "features": [
-      "一般社団法人運営",
-      "手数料1.5%〜",
-      "金額制限なし",
-      "オンライン完結",
-      "経営サポート付き"
-    ],
-    "pros": [
-      "非営利法人で信頼性が高い",
-      "低手数料",
-      "経営改善のアドバイスも受けられる"
-    ],
-    "cons": [
-      "知名度がやや低い",
-      "土日祝は対応不可"
-    ],
-    "establishedYear": 2017,
-    "targetIndustries": [
-      "建設業",
-      "運送業",
-      "製造業",
-      "医療・介護",
-      "小売業"
-    ],
-    "overallRating": 4.1,
     "rankPosition": 10
   },
   {
@@ -451,47 +451,6 @@ const companiesData: Company[] = [
     "rankPosition": 11
   },
   {
-    "slug": "msfj",
-    "name": "MSFJ",
-    "description": "業界最安水準の手数料1%〜が最大の魅力。コスト重視の企業に選ばれているファクタリング会社で、手数料の透明性にも定評があります。",
-    "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=4AX1OL+BMJR1U+42NG+C03K1",
-    "factoringType": "2社間・3社間",
-    "feeRange": {
-      "min": 1,
-      "max": 10
-    },
-    "minAmount": 100000,
-    "maxAmount": 50000000,
-    "speedDays": 2,
-    "onlineComplete": true,
-    "features": [
-      "手数料1%〜",
-      "手数料の明確提示",
-      "リピート割引あり",
-      "オンライン完結",
-      "秘密厳守"
-    ],
-    "pros": [
-      "業界最安水準の手数料体系",
-      "手数料が事前に明確に提示される",
-      "リピート利用で手数料がさらに優遇"
-    ],
-    "cons": [
-      "入金まで最短2日かかる",
-      "高額案件の対応上限がやや低め"
-    ],
-    "establishedYear": 2017,
-    "targetIndustries": [
-      "IT・Web",
-      "広告業",
-      "コンサルティング",
-      "製造業",
-      "卸売業"
-    ],
-    "overallRating": 4.2,
-    "rankPosition": 12
-  },
-  {
     "slug": "top-management",
     "name": "トップ・マネジメント",
     "description": "累計取引件数5万件超の実績。最短即日入金、2社間・3社間両対応で幅広いニーズに応える。",
@@ -530,48 +489,7 @@ const companiesData: Company[] = [
       "人材派遣"
     ],
     "overallRating": 4.2,
-    "rankPosition": 13
-  },
-  {
-    "slug": "goodplus",
-    "name": "GoodPlus（グッドプラス）",
-    "description": "土日祝も対応。最短90分で入金。手数料5%～15%。他社比較で1%以上安くする保証付き。",
-    "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=4AX5KD+A1ZKKY+5DD4+5ZU29",
-    "factoringType": "2社間",
-    "feeRange": {
-      "min": 5,
-      "max": 15
-    },
-    "minAmount": 100000,
-    "maxAmount": 50000000,
-    "speedDays": 1,
-    "onlineComplete": true,
-    "features": [
-      "土日祝も対応",
-      "最短90分入金",
-      "他社より1%安い保証",
-      "審査通過率90%",
-      "オンライン完結"
-    ],
-    "pros": [
-      "土日祝日も営業",
-      "最短90分のスピード",
-      "他社見積より安くする保証"
-    ],
-    "cons": [
-      "手数料下限が5%とやや高め",
-      "法人のみ対応の場合あり"
-    ],
-    "establishedYear": 2020,
-    "targetIndustries": [
-      "建設業",
-      "運送業",
-      "製造業",
-      "IT・Web",
-      "サービス業"
-    ],
-    "overallRating": 4.1,
-    "rankPosition": 14
+    "rankPosition": 12
   },
   {
     "slug": "ace-trust",
@@ -612,7 +530,7 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 4,
-    "rankPosition": 15
+    "rankPosition": 13
   },
   {
     "slug": "ad-planning",
@@ -653,47 +571,7 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 4,
-    "rankPosition": 16
-  },
-  {
-    "slug": "no1",
-    "name": "No.1ファクタリング",
-    "description": "建設業界に強いファクタリング会社。対面相談も可能で、手厚いサポートが魅力。全国出張対応。",
-    "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=4AX5KD+A5K67M+4EKW+5ZEMP",
-    "factoringType": "2社間・3社間",
-    "feeRange": {
-      "min": 1,
-      "max": 15
-    },
-    "minAmount": 500000,
-    "maxAmount": 50000000,
-    "speedDays": 1,
-    "onlineComplete": false,
-    "features": [
-      "建設業特化",
-      "対面相談可能",
-      "全国出張対応",
-      "3社間対応",
-      "診療報酬対応"
-    ],
-    "pros": [
-      "建設業の実績が豊富",
-      "対面で丁寧に相談できる",
-      "3社間ファクタリングにも対応"
-    ],
-    "cons": [
-      "オンライン完結ではない",
-      "手数料の幅が広い"
-    ],
-    "establishedYear": 2016,
-    "targetIndustries": [
-      "建設業",
-      "運送業",
-      "医療・介護",
-      "製造業"
-    ],
-    "overallRating": 4,
-    "rankPosition": 17
+    "rankPosition": 14
   },
   {
     "slug": "sankyo-service",
@@ -734,7 +612,7 @@ const companiesData: Company[] = [
       "人材派遣"
     ],
     "overallRating": 4,
-    "rankPosition": 18
+    "rankPosition": 15
   },
   {
     "slug": "act-will",
@@ -775,7 +653,7 @@ const companiesData: Company[] = [
       "卸売業"
     ],
     "overallRating": 3.9,
-    "rankPosition": 19
+    "rankPosition": 16
   },
   {
     "slug": "factoring-zero",
@@ -816,7 +694,7 @@ const companiesData: Company[] = [
       "小売業"
     ],
     "overallRating": 3.9,
-    "rankPosition": 20
+    "rankPosition": 17
   },
   {
     "slug": "nishi-nihon-factor",
@@ -857,7 +735,7 @@ const companiesData: Company[] = [
       "小売業"
     ],
     "overallRating": 3.9,
-    "rankPosition": 21
+    "rankPosition": 18
   },
   {
     "slug": "factorplan",
@@ -898,7 +776,7 @@ const companiesData: Company[] = [
       "製造業"
     ],
     "overallRating": 3.8,
-    "rankPosition": 22
+    "rankPosition": 19
   },
   {
     "slug": "japan-management",
@@ -939,7 +817,7 @@ const companiesData: Company[] = [
       "飲食業"
     ],
     "overallRating": 3.8,
-    "rankPosition": 23
+    "rankPosition": 20
   },
   {
     "slug": "next-one",
@@ -980,7 +858,7 @@ const companiesData: Company[] = [
       "土木業"
     ],
     "overallRating": 3.8,
-    "rankPosition": 24
+    "rankPosition": 21
   },
   {
     "slug": "trust-gateway",
@@ -1021,7 +899,7 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.8,
-    "rankPosition": 25
+    "rankPosition": 22
   },
   {
     "slug": "urikakedo",
@@ -1062,7 +940,7 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.8,
-    "rankPosition": 26
+    "rankPosition": 23
   },
   {
     "slug": "ennavi",
@@ -1103,7 +981,7 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.7,
-    "rankPosition": 27
+    "rankPosition": 24
   },
   {
     "slug": "factoring-try",
@@ -1144,7 +1022,7 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.7,
-    "rankPosition": 28
+    "rankPosition": 25
   },
   {
     "slug": "kyoei-support",
@@ -1184,7 +1062,7 @@ const companiesData: Company[] = [
       "IT・Web"
     ],
     "overallRating": 3.7,
-    "rankPosition": 29
+    "rankPosition": 26
   },
   {
     "slug": "jps-factoring",
@@ -1224,7 +1102,7 @@ const companiesData: Company[] = [
       "卸売業"
     ],
     "overallRating": 3.6,
-    "rankPosition": 30
+    "rankPosition": 27
   },
   {
     "slug": "axia-plus",
@@ -1265,7 +1143,7 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.4,
-    "rankPosition": 31
+    "rankPosition": 28
   },
   {
     "slug": "3s-factoring",
@@ -1306,7 +1184,7 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.3,
-    "rankPosition": 32
+    "rankPosition": 29
   },
   {
     "slug": "active-support",
@@ -1347,7 +1225,7 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.3,
-    "rankPosition": 33
+    "rankPosition": 30
   },
   {
     "slug": "paybridge",
@@ -1388,7 +1266,7 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.3,
-    "rankPosition": 34
+    "rankPosition": 31
   },
   {
     "slug": "urikakekin-pay",
@@ -1429,7 +1307,7 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 3.3,
-    "rankPosition": 35
+    "rankPosition": 32
   },
   {
     "slug": "bitresy",
@@ -1470,7 +1348,7 @@ const companiesData: Company[] = [
       "人材派遣業"
     ],
     "overallRating": 4.6,
-    "rankPosition": 36
+    "rankPosition": 33
   },
   {
     "slug": "ag-business",
@@ -1511,7 +1389,7 @@ const companiesData: Company[] = [
       "サービス業"
     ],
     "overallRating": 4.4,
-    "rankPosition": 37
+    "rankPosition": 34
   },
   {
     "slug": "japan-maison",
@@ -1552,7 +1430,48 @@ const companiesData: Company[] = [
       "小売業"
     ],
     "overallRating": 4.4,
-    "rankPosition": 38
+    "rankPosition": 35
+  },
+  {
+    "slug": "accel-factor",
+    "name": "アクセルファクター",
+    "description": "業界トップクラスのスピード対応が強み。最短2時間での入金実績があり、急ぎの資金調達に最適なファクタリング会社です。少額から利用可能で、中小企業・個人事業主に幅広く対応。",
+    "affiliateUrl": "https://accelfacter.co.jp/",
+    "factoringType": "2社間・3社間",
+    "feeRange": {
+      "min": 2,
+      "max": 20
+    },
+    "minAmount": 300000,
+    "maxAmount": 100000000,
+    "speedDays": 1,
+    "onlineComplete": true,
+    "features": [
+      "最短2時間入金",
+      "審査通過率93%以上",
+      "少額30万円から対応",
+      "オンライン完結",
+      "全国対応"
+    ],
+    "pros": [
+      "業界最速クラスの入金スピード",
+      "少額債権でも柔軟に対応",
+      "審査通過率が非常に高い"
+    ],
+    "cons": [
+      "手数料が他社よりやや高めになる場合がある",
+      "電話対応が混み合うことがある"
+    ],
+    "establishedYear": 2018,
+    "targetIndustries": [
+      "建設業",
+      "運送業",
+      "製造業",
+      "小売業",
+      "サービス業"
+    ],
+    "overallRating": 4.3,
+    "rankPosition": 36
   },
   {
     "slug": "mizuho-factor",
@@ -1592,7 +1511,7 @@ const companiesData: Company[] = [
       "大企業"
     ],
     "overallRating": 4.3,
-    "rankPosition": 39
+    "rankPosition": 37
   },
   {
     "slug": "mufg-factor",
@@ -1632,7 +1551,47 @@ const companiesData: Company[] = [
       "大企業"
     ],
     "overallRating": 4.3,
-    "rankPosition": 40
+    "rankPosition": 38
+  },
+  {
+    "slug": "pay-today",
+    "name": "PayToday（ペイトゥデイ）",
+    "description": "AI審査で最短30分入金。手数料1%〜と業界最安水準を実現するオンラインファクタリングサービス。",
+    "affiliateUrl": "https://paytoday.jp/",
+    "factoringType": "2社間",
+    "feeRange": {
+      "min": 1,
+      "max": 9.5
+    },
+    "minAmount": 300000,
+    "maxAmount": 50000000,
+    "speedDays": 1,
+    "onlineComplete": true,
+    "features": [
+      "最短30分入金",
+      "手数料1%〜",
+      "AI審査",
+      "完全オンライン",
+      "少額OK"
+    ],
+    "pros": [
+      "手数料が1%〜と非常に安い",
+      "最短30分での入金実績",
+      "少額から利用可能"
+    ],
+    "cons": [
+      "新しいサービスで実績が少ない",
+      "電話サポートが限定的"
+    ],
+    "establishedYear": 2021,
+    "targetIndustries": [
+      "IT・Web",
+      "小売業",
+      "飲食業",
+      "広告・メディア"
+    ],
+    "overallRating": 4.3,
+    "rankPosition": 39
   },
   {
     "slug": "anew",
@@ -1673,7 +1632,7 @@ const companiesData: Company[] = [
       "広告業"
     ],
     "overallRating": 4.2,
-    "rankPosition": 41
+    "rankPosition": 40
   },
   {
     "slug": "gmo-btob",
@@ -1714,7 +1673,7 @@ const companiesData: Company[] = [
       "運送業"
     ],
     "overallRating": 4.2,
-    "rankPosition": 42
+    "rankPosition": 41
   },
   {
     "slug": "mf-early-payment",
@@ -1755,6 +1714,47 @@ const companiesData: Company[] = [
       "広告業"
     ],
     "overallRating": 4.2,
+    "rankPosition": 42
+  },
+  {
+    "slug": "chusho-support",
+    "name": "日本中小企業金融サポート機構",
+    "description": "一般社団法人運営の安心感。手数料1.5%～10%で非営利ならではの低コスト。",
+    "affiliateUrl": "https://chushokigyo-support.or.jp/",
+    "factoringType": "2社間・3社間",
+    "feeRange": {
+      "min": 1.5,
+      "max": 10
+    },
+    "minAmount": 10000,
+    "maxAmount": 50000000,
+    "speedDays": 1,
+    "onlineComplete": true,
+    "features": [
+      "一般社団法人運営",
+      "手数料1.5%〜",
+      "金額制限なし",
+      "オンライン完結",
+      "経営サポート付き"
+    ],
+    "pros": [
+      "非営利法人で信頼性が高い",
+      "低手数料",
+      "経営改善のアドバイスも受けられる"
+    ],
+    "cons": [
+      "知名度がやや低い",
+      "土日祝は対応不可"
+    ],
+    "establishedYear": 2017,
+    "targetIndustries": [
+      "建設業",
+      "運送業",
+      "製造業",
+      "医療・介護",
+      "小売業"
+    ],
+    "overallRating": 4.1,
     "rankPosition": 43
   },
   {
