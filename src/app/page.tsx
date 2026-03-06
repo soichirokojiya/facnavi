@@ -385,7 +385,7 @@ export default async function HomePage() {
                   href="/mitsumori"
                   className="inline-block px-7 py-3 bg-gradient-to-br from-emerald-500 to-emerald-600 text-white font-bold text-sm rounded-full shadow-lg shadow-emerald-500/30 hover:shadow-xl hover:-translate-y-0.5 transition-all duration-300"
                 >
-                  詳細を見る →
+                  無料で一括見積もりする →
                 </Link>
               </div>
             </div>
