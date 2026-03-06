@@ -263,28 +263,12 @@ const icons = {
 /* ─── おすすめ業者データ（後ほど実データに差し替え） ─── */
 const RECOMMENDED_COMPANIES = [
   {
-    id: "betrading",
-    name: "ビートレーディング",
-    rating: 4.8,
-    features: ["手数料2%〜", "最短2時間", "オンライン完結"],
+    id: "cashnow",
+    name: "CASH NOW",
+    rating: 4.5,
+    features: ["最短即日", "オンライン完結", "柔軟対応"],
     color: "from-blue-500 to-blue-600",
-    href: "/go/betrading",
-  },
-  {
-    id: "jsfc",
-    name: "日本中小企業金融サポート機構",
-    rating: 4.7,
-    features: ["手数料1.5%〜", "最短即日", "個人事業主OK"],
-    color: "from-emerald-500 to-emerald-600",
-    href: "/go/jsfc",
-  },
-  {
-    id: "accelfactor",
-    name: "アクセルファクター",
-    rating: 4.6,
-    features: ["手数料2%〜", "最短即日", "少額対応"],
-    color: "from-purple-500 to-purple-600",
-    href: "/go/accelfactor",
+    href: "/go/cashnow",
   },
 ];
 
@@ -666,7 +650,8 @@ export function MitsumoriLP() {
       <section id="form" className="py-10 md:py-14 bg-white scroll-mt-20">
         <SectionHeading sub="FORM">無料一括見積もりフォーム</SectionHeading>
 
-        {/* ━━━ 2026年4月サービス開始まで準備中表示 ━━━ */}
+        {process.env.NEXT_PUBLIC_MITSUMORI_ENABLED !== "true" ? (
+        /* ━━━ 2026年4月サービス開始まで準備中表示 ━━━ */
         <div className="max-w-xl mx-auto">
           <div className="bg-white rounded-2xl shadow-xl border border-gray-200 overflow-hidden">
             <div className="bg-gradient-to-r from-blue-600 to-blue-700 text-white text-center py-5 px-4">
@@ -689,9 +674,7 @@ export function MitsumoriLP() {
             </div>
           </div>
         </div>
-
-        {/* ━━━ フォーム本体（2026年4月に有効化） ━━━ */}
-        {false && formStep <= 2 ? (
+        ) : formStep <= 2 ? (
         <form onSubmit={(e) => e.preventDefault()} className="max-w-xl mx-auto">
           <div className="bg-white rounded-2xl shadow-xl border border-gray-200 overflow-hidden">
             {/* フォームヘッダー */}
