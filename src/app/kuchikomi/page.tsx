@@ -36,9 +36,21 @@ export default function ReviewsPage() {
       <h1 className="text-3xl font-bold text-gray-900 mb-2">
         口コミ・評判一覧
       </h1>
-      <p className="text-gray-600 mb-8">
+      <p className="text-gray-600 mb-6">
         実際にファクタリングを利用した方の口コミ・評判をまとめています。
       </p>
+
+      <div className="mb-8">
+        <Link
+          href="/kuchikomi/post"
+          className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-white font-bold rounded-lg hover:bg-primary/90 transition-colors"
+        >
+          <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
+          </svg>
+          口コミを投稿する
+        </Link>
+      </div>
 
       <section className="mb-10">
         <h2 className="text-lg font-bold mb-4">業者別の口コミ</h2>

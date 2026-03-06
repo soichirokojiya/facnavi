@@ -15,6 +15,7 @@ import { SITE_NAME } from "@/lib/constants";
 import { formatFeeRange, formatAmount } from "@/lib/format";
 import { KeywordSearch, SearchableCompany } from "@/components/search/KeywordSearch";
 import { FAQ_DATA } from "@/lib/faq";
+import { CurrentDate } from "@/components/ui/CurrentDate";
 
 export default function HomePage() {
   const companies = getAllCompanies();
@@ -23,8 +24,6 @@ export default function HomePage() {
   const companyMap = Object.fromEntries(companies.map((c) => [c.slug, c.name]));
   const topFaq = FAQ_DATA.slice(0, 5);
   const faqCount = FAQ_DATA.length;
-  const now = new Date();
-  const currentDate = `${now.getFullYear()}年${now.getMonth() + 1}月${now.getDate()}日`;
   const searchData: SearchableCompany[] = companies.map((c) => ({
     slug: c.slug,
     name: c.name,
@@ -45,20 +44,20 @@ export default function HomePage() {
           priority
           className="object-cover brightness-110"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-white/85 via-green-50/60 to-emerald-50/50" />
+        <div className="absolute inset-0 bg-gradient-to-b from-white/85 via-blue-50/50 to-slate-50/40" />
 
         <div className="relative max-w-4xl mx-auto px-4 pt-16 pb-20 md:pt-20 md:pb-24 text-center">
           <div className="flex justify-center mb-5">
             <Logo size="lg" />
           </div>
-          <p className="inline-block bg-[#2e7d32] text-white font-bold px-5 py-2 rounded-full mb-4">
+          <p className="inline-block bg-primary text-white font-bold px-5 py-2 rounded-full mb-4">
             <span className="text-lg md:text-2xl">日本最大級</span>
             <span className="text-xs md:text-sm ml-2">— ファクタリング会社{companies.length}社掲載</span>
           </p>
           <h1 className="text-2xl md:text-4xl font-bold mb-3 leading-tight text-gray-900">
             口コミと比較で選ぶ
             <br />
-            <span className="text-[#2e7d32]">本当に良いファクタリング会社</span>に出会える
+            <span className="text-primary">本当に良いファクタリング会社</span>に出会える
           </h1>
           <p className="text-gray-500 mb-6">
             ファクタリング会社の口コミ・評判を徹底比較
@@ -67,24 +66,24 @@ export default function HomePage() {
           {/* Stats */}
           <div className="flex justify-center gap-10 md:gap-16 mb-8">
             <div className="text-center">
-              <div className="text-5xl md:text-7xl font-black text-[#2e7d32]">{companies.length}</div>
+              <div className="text-5xl md:text-7xl font-black text-primary">{companies.length}</div>
               <div className="text-sm font-bold text-gray-600 mt-1">掲載社数</div>
             </div>
             <div className="text-center">
-              <div className="text-5xl md:text-7xl font-black text-[#43a047]">{reviews.length.toLocaleString()}</div>
+              <div className="text-5xl md:text-7xl font-black text-amber-500">{reviews.length.toLocaleString()}</div>
               <div className="text-sm font-bold text-gray-600 mt-1">口コミ件数</div>
             </div>
           </div>
-          <p className="text-sm text-gray-600 font-medium mb-6">※ {currentDate} 現在</p>
+          <p className="text-sm text-gray-600 font-medium mb-6">※ <CurrentDate /> 現在</p>
 
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <Link href="/shindan">
-              <Button variant="accent" className="text-base px-8 py-3.5 w-full sm:w-auto shadow-lg shadow-green-200/40 !bg-[#43a047] hover:!bg-[#2e7d32] !text-white">
+              <Button variant="accent" className="text-base px-8 py-3.5 w-full sm:w-auto shadow-lg shadow-orange-200/40 !bg-orange-500 hover:!bg-orange-600 !text-white">
                 無料で診断する
               </Button>
             </Link>
             <Link href="/ranking">
-              <Button variant="primary" className="text-base px-8 py-3.5 w-full sm:w-auto shadow-lg shadow-green-200/40 !bg-[#2e7d32] hover:!bg-[#1b5e20] !text-white">
+              <Button variant="primary" className="text-base px-8 py-3.5 w-full sm:w-auto shadow-lg shadow-blue-200/40">
                 ランキングを見る
               </Button>
             </Link>
@@ -132,7 +131,7 @@ export default function HomePage() {
                   href={company.affiliateUrl}
                   target="_blank"
                   rel="nofollow sponsored noopener"
-                  className="block text-center py-2.5 bg-[#43a047] text-white font-bold text-sm rounded-lg hover:bg-[#2e7d32] transition-colors"
+                  className="block text-center py-2.5 bg-orange-500 text-white font-bold text-sm rounded-lg hover:bg-orange-600 transition-colors"
                 >
                   公式サイトを見る
                 </a>
@@ -251,7 +250,7 @@ export default function HomePage() {
                       href={company.affiliateUrl}
                       target="_blank"
                       rel="nofollow sponsored noopener"
-                      className="block text-center py-2.5 bg-[#43a047] text-white font-bold text-sm rounded-lg hover:bg-[#2e7d32] transition-colors"
+                      className="block text-center py-2.5 bg-orange-500 text-white font-bold text-sm rounded-lg hover:bg-orange-600 transition-colors"
                     >
                       公式サイトを見る
                     </a>
@@ -286,7 +285,7 @@ export default function HomePage() {
             5つの質問に答えるだけで、あなたに最適な業者がわかります
           </p>
           <Link href="/shindan">
-            <Button className="text-lg px-8 py-4 bg-white text-primary font-bold hover:bg-gray-100 shadow-lg">
+            <Button className="text-lg px-8 py-4 !bg-orange-500 !text-white font-bold hover:!bg-orange-600 shadow-lg">
               無料診断スタート →
             </Button>
           </Link>
@@ -340,7 +339,7 @@ export default function HomePage() {
             {topFaq.map((item, i) => (
               <Card key={i} className="p-5">
                 <div className="flex items-start gap-3 mb-2">
-                  <span className="flex-shrink-0 w-7 h-7 rounded-full bg-[#43a047] text-white flex items-center justify-center text-sm font-bold">
+                  <span className="flex-shrink-0 w-7 h-7 rounded-full bg-amber-500 text-white flex items-center justify-center text-sm font-bold">
                     Q
                   </span>
                   <span className="font-bold text-gray-900 pt-0.5">{item.question}</span>
