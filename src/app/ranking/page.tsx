@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { getAllCompanies } from "@/lib/companies";
+import { getAllCompanies, displayName } from "@/lib/companies";
 import { Breadcrumb } from "@/components/layout/Breadcrumb";
 import { BreadcrumbJsonLd, JsonLd } from "@/components/seo/JsonLd";
 import { SITE_URL } from "@/lib/constants";
@@ -36,7 +36,7 @@ export default function RankingPage() {
           itemListElement: topCompanies.map((c, i) => ({
             "@type": "ListItem",
             position: i + 1,
-            name: c.name,
+            name: displayName(c),
             url: `${SITE_URL}/ranking/${c.slug}`,
           })),
         }}

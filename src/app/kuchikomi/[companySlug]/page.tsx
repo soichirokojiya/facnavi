@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import { getCompanyBySlug } from "@/lib/companies";
+import { getCompanyBySlug, displayName } from "@/lib/companies";
 import {
   getReviewsByCompanyAsync,
   getReviewSummary,
@@ -29,8 +29,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!company) return {};
   const summary = getReviewSummary(companySlug);
   return {
-    title: `${company.name}の口コミ・評判`,
-    description: `${company.name}の口コミ${summary?.totalCount ?? 0}件。平均評価${summary?.averageRating ?? "-"}点。利用者のリアルな声を掲載。`,
+    title: `${displayName(company)}の口コミ・評判`,
+    description: `${displayName(company)}の口コミ${summary?.totalCount ?? 0}件。平均評価${summary?.averageRating ?? "-"}点。利用者のリアルな声を掲載。`,
     alternates: { canonical: `${SITE_URL}/kuchikomi/${companySlug}` },
   };
 }
@@ -50,14 +50,14 @@ export default async function CompanyReviewsPage({ params }: Props) {
           { name: "ホーム", url: SITE_URL },
           { name: "口コミ", url: `${SITE_URL}/kuchikomi` },
           {
-            name: `${company.name}の口コミ`,
+            name: `${displayName(company)}の口コミ`,
             url: `${SITE_URL}/kuchikomi/${companySlug}`,
           },
         ]}
       />
       {summary && (
         <ProductJsonLd
-          name={company.name}
+          name={displayName(company)}
           description={company.description}
           rating={summary.averageRating}
           reviewCount={summary.totalCount}
@@ -68,12 +68,12 @@ export default async function CompanyReviewsPage({ params }: Props) {
       <Breadcrumb
         items={[
           { label: "口コミ", href: "/kuchikomi" },
-          { label: `${company.name}の口コミ` },
+          { label: `${displayName(company)}の口コミ` },
         ]}
       />
 
       <h1 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
-        {company.name}の口コミ・評判
+        {displayName(company)}の口コミ・評判
       </h1>
 
       {summary && (
@@ -124,7 +124,7 @@ export default async function CompanyReviewsPage({ params }: Props) {
           <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
           </svg>
-          {company.name}の口コミを投稿する
+          {displayName(company)}の口コミを投稿する
         </Link>
       </div>
 
@@ -141,7 +141,7 @@ export default async function CompanyReviewsPage({ params }: Props) {
           rel="nofollow sponsored noopener"
           className="affiliate-link"
         >
-          {company.name}の公式サイトへ →
+          {displayName(company)}の公式サイトへ →
         </a>
       </div>
 
@@ -150,7 +150,7 @@ export default async function CompanyReviewsPage({ params }: Props) {
           href={`/ranking/${company.slug}`}
           className="text-primary font-medium hover:underline"
         >
-          ← {company.name}の詳細ページに戻る
+          ← {displayName(company)}の詳細ページに戻る
         </Link>
       </div>
     </div>

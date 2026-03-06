@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Suspense } from "react";
-import { getAllCompanies } from "@/lib/companies";
+import { getAllCompanies, displayName } from "@/lib/companies";
 import { Breadcrumb } from "@/components/layout/Breadcrumb";
 import { BreadcrumbJsonLd } from "@/components/seo/JsonLd";
 import { SITE_URL } from "@/lib/constants";
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
 export default function ReviewPostPage() {
   const companies = getAllCompanies().map((c) => ({
     slug: c.slug,
-    name: c.name,
+    name: displayName(c),
   }));
 
   return (

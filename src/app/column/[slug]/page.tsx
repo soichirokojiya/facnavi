@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { getArticleBySlug, getArticleSlugs, extractHeadings, getAllArticles } from "@/lib/articles";
-import { getCompanyBySlug } from "@/lib/companies";
+import { getCompanyBySlug, displayName } from "@/lib/companies";
 import { Breadcrumb } from "@/components/layout/Breadcrumb";
 import { TableOfContents } from "@/components/articles/TableOfContents";
 import { Card } from "@/components/ui/Card";
@@ -169,7 +169,7 @@ export default async function ArticleDetailPage({ params }: Props) {
               c ? (
                 <Card key={c.slug} hover className="p-4">
                   <Link href={`/ranking/${c.slug}`}>
-                    <p className="font-bold">{c.name}</p>
+                    <p className="font-bold">{displayName(c)}</p>
                     <StarRating rating={c.overallRating} size="sm" />
                     <p className="text-xs text-gray-500 mt-1">
                       手数料 {formatFeeRange(c.feeRange.min, c.feeRange.max)}

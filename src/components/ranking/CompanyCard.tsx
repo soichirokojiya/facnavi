@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Company } from "@/types/company";
+import { displayName } from "@/lib/display";
 import { Card } from "@/components/ui/Card";
 import { Badge } from "@/components/ui/Badge";
 import { StarRating } from "@/components/ui/StarRating";
@@ -21,7 +22,7 @@ export function CompanyCard({ company, rank }: CompanyCardProps) {
           <div className="flex items-center gap-2 mb-2 flex-wrap">
             <Link href={`/ranking/${company.slug}`}>
               <h3 className="text-lg font-bold text-gray-900 hover:text-primary transition-colors">
-                {company.name}
+                {displayName(company)}
               </h3>
             </Link>
             <Badge variant={company.onlineComplete ? "success" : "gray"}>

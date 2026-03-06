@@ -30,3 +30,5 @@ export function getCompanySlugs(): string[] {
 export function getCompanyCount(): number {
   return fs.readdirSync(companiesDir).filter((f) => f.endsWith(".json")).length;
 }
+
+export { displayName } from "./display";

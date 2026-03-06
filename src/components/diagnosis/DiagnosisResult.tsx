@@ -40,7 +40,7 @@ export function DiagnosisResultView({ results, onReset }: DiagnosisResultProps) 
                 {i + 1}
               </div>
               <div className="flex-1">
-                <h3 className="text-lg font-bold mb-1">{result.company.name}</h3>
+                <h3 className="text-lg font-bold mb-1">{result.company.brandName || result.company.name}</h3>
                 <StarRating rating={result.company.overallRating} size="sm" />
 
                 <div className="flex flex-wrap gap-2 mt-2">

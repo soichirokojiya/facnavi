@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import { getAllCompanies } from "@/lib/companies";
+import { getAllCompanies, displayName } from "@/lib/companies";
 import { CompanyCard } from "@/components/ranking/CompanyCard";
 import { Breadcrumb } from "@/components/layout/Breadcrumb";
 import { BreadcrumbJsonLd, JsonLd } from "@/components/seo/JsonLd";
@@ -61,7 +61,7 @@ export default async function RankingPaginatedPage({ params }: Props) {
           itemListElement: pageCompanies.map((c, i) => ({
             "@type": "ListItem",
             position: startIdx + i + 1,
-            name: c.name,
+            name: displayName(c),
             url: `${SITE_URL}/ranking/${c.slug}`,
           })),
         }}

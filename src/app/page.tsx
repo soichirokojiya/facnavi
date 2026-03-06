@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { getAllCompanies } from "@/lib/companies";
+import { getAllCompanies, displayName } from "@/lib/companies";
 import { getAllReviewsAsync } from "@/lib/reviews";
 import { getAllArticles } from "@/lib/articles";
 import { ReviewCard } from "@/components/reviews/ReviewCard";
@@ -44,12 +44,12 @@ export default async function HomePage() {
   const companies = getAllCompanies();
   const reviews = await getAllReviewsAsync();
   const articles = getAllArticles().slice(0, 6);
-  const companyMap = Object.fromEntries(companies.map((c) => [c.slug, c.name]));
+  const companyMap = Object.fromEntries(companies.map((c) => [c.slug, displayName(c)]));
   const topFaq = FAQ_DATA.slice(0, 5);
   const faqCount = FAQ_DATA.length;
   const searchData: SearchableCompany[] = companies.map((c) => ({
     slug: c.slug,
-    name: c.name,
+    name: displayName(c),
     overallRating: c.overallRating,
     features: c.features,
   }));
@@ -157,7 +157,7 @@ export default async function HomePage() {
                   </span>
                   <div>
                     <Link href={`/ranking/${company.slug}`}>
-                      <h3 className="font-bold text-gray-900 text-sm hover:text-blue-600 transition-colors">{company.name}</h3>
+                      <h3 className="font-bold text-gray-900 text-sm hover:text-blue-600 transition-colors">{displayName(company)}</h3>
                     </Link>
                     <StarRating rating={company.overallRating} size="sm" />
                   </div>
@@ -215,7 +215,7 @@ export default async function HomePage() {
                           {i + 1}
                         </span>
                         <Link href={`/ranking/${c.slug}`} className="text-xs font-bold hover:text-blue-600 transition-colors truncate text-gray-800">
-                          {c.name}
+                          {displayName(c)}
                         </Link>
                       </div>
                     ))}
@@ -292,7 +292,7 @@ export default async function HomePage() {
                     </span>
                     <div>
                       <Link href={`/ranking/${company.slug}`}>
-                        <h3 className="font-bold text-gray-900 text-sm hover:text-blue-600 transition-colors">{company.name}</h3>
+                        <h3 className="font-bold text-gray-900 text-sm hover:text-blue-600 transition-colors">{displayName(company)}</h3>
                       </Link>
                       <StarRating rating={company.overallRating} size="sm" />
                     </div>

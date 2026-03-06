@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Company } from "@/types/company";
+import { displayName } from "@/lib/display";
 import { StarRating } from "@/components/ui/StarRating";
 import { formatFeeRange } from "@/lib/format";
 
@@ -39,7 +40,7 @@ export function ComparisonTable({ companies }: ComparisonTableProps) {
                   href={`/ranking/${company.slug}`}
                   className="hover:text-primary transition-colors"
                 >
-                  {company.name}
+                  {displayName(company)}
                 </Link>
               </td>
               <td className="px-4 py-3">

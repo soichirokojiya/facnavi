@@ -5,6 +5,7 @@ import {
   getAllCompanies,
   getCompanyBySlug,
   getCompanySlugs,
+  displayName,
 } from "@/lib/companies";
 import { formatFeeRange, formatAmount } from "@/lib/format";
 import { getReviewsByCompanyAsync, getReviewSummaryAsync } from "@/lib/reviews";
@@ -29,8 +30,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const company = getCompanyBySlug(slug);
   if (!company) return {};
   return {
-    title: `${company.name}の口コミ・評判・手数料`,
-    description: `${company.name}の手数料${formatFeeRange(company.feeRange.min, company.feeRange.max)}、口コミ評価${company.overallRating}点。${company.description}`,
+    title: `${displayName(company)}の口コミ・評判・手数料`,
+    description: `${displayName(company)}の手数料${formatFeeRange(company.feeRange.min, company.feeRange.max)}、口コミ評価${company.overallRating}点。${company.description}`,
     alternates: { canonical: `${SITE_URL}/ranking/${slug}` },
   };
 }
@@ -53,11 +54,11 @@ export default async function CompanyDetailPage({ params }: Props) {
         items={[
           { name: "ホーム", url: SITE_URL },
           { name: "ランキング", url: `${SITE_URL}/ranking` },
-          { name: company.name, url: `${SITE_URL}/ranking/${slug}` },
+          { name: displayName(company), url: `${SITE_URL}/ranking/${slug}` },
         ]}
       />
       <ProductJsonLd
-        name={company.name}
+        name={displayName(company)}
         description={company.description}
         rating={company.overallRating}
         reviewCount={summary?.totalCount ?? 0}
@@ -67,7 +68,7 @@ export default async function CompanyDetailPage({ params }: Props) {
       <Breadcrumb
         items={[
           { label: "ランキング", href: "/ranking" },
-          { label: company.name },
+          { label: displayName(company) },
         ]}
       />
 
@@ -77,7 +78,7 @@ export default async function CompanyDetailPage({ params }: Props) {
             第{company.rankPosition}位
           </span>
           <h1 className="text-2xl md:text-3xl font-bold text-gray-900">
-            {company.name}
+            {displayName(company)}
           </h1>
         </div>
         <StarRating rating={company.overallRating} size="lg" />
@@ -91,7 +92,7 @@ export default async function CompanyDetailPage({ params }: Props) {
           rel="nofollow sponsored noopener"
           className="affiliate-link text-lg"
         >
-          {company.name}の公式サイトへ →
+          {displayName(company)}の公式サイトへ →
         </a>
       </div>
 
@@ -159,7 +160,7 @@ export default async function CompanyDetailPage({ params }: Props) {
           <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
           </svg>
-          {company.name}の口コミを投稿する
+          {displayName(company)}の口コミを投稿する
         </Link>
       </div>
 
@@ -183,7 +184,7 @@ export default async function CompanyDetailPage({ params }: Props) {
           rel="nofollow sponsored noopener"
           className="affiliate-link text-lg"
         >
-          {company.name}に無料相談する →
+          {displayName(company)}に無料相談する →
         </a>
       </div>
 
@@ -194,7 +195,7 @@ export default async function CompanyDetailPage({ params }: Props) {
             {otherCompanies.map((c) => (
               <Card key={c.slug} hover className="p-4">
                 <a href={`/ranking/${c.slug}`}>
-                  <p className="font-bold text-sm">{c.name}</p>
+                  <p className="font-bold text-sm">{displayName(c)}</p>
                   <StarRating rating={c.overallRating} size="sm" />
                   <p className="text-xs text-gray-500 mt-1">
                     手数料 {formatFeeRange(c.feeRange.min, c.feeRange.max)}

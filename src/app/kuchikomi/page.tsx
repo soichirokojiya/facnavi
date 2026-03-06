@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { getAllReviewsAsync, getReviewedCompanySlugsAsync, getReviewSummary } from "@/lib/reviews";
-import { getCompanyBySlug } from "@/lib/companies";
+import { getCompanyBySlug, displayName } from "@/lib/companies";
 import { ReviewCard } from "@/components/reviews/ReviewCard";
 import { Breadcrumb } from "@/components/layout/Breadcrumb";
 import { Card } from "@/components/ui/Card";
@@ -20,7 +20,7 @@ export default async function ReviewsPage() {
   const reviews = await getAllReviewsAsync();
   const companySlugs = await getReviewedCompanySlugsAsync();
   const companyMap = Object.fromEntries(
-    companySlugs.map((slug) => [slug, getCompanyBySlug(slug)?.name ?? slug])
+    companySlugs.map((slug) => { const c = getCompanyBySlug(slug); return [slug, c ? displayName(c) : slug]; })
   );
 
   return (
@@ -62,7 +62,7 @@ export default async function ReviewsPage() {
             return (
               <Link key={slug} href={`/kuchikomi/${slug}`}>
                 <Card hover className="p-4">
-                  <p className="font-bold text-sm">{company.name}</p>
+                  <p className="font-bold text-sm">{displayName(company)}</p>
                   <StarRating rating={summary.averageRating} size="sm" />
                   <p className="text-xs text-gray-500 mt-1">
                     {summary.totalCount}件の口コミ
