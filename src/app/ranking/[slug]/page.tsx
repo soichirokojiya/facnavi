@@ -86,7 +86,7 @@ export default async function CompanyDetailPage({ params }: Props) {
 
       <div className="text-center mb-8">
         <a
-          href={company.affiliateUrl}
+          href={`/go/${company.slug}`}
           target="_blank"
           rel="nofollow sponsored noopener"
           className="affiliate-link text-lg"
@@ -178,7 +178,7 @@ export default async function CompanyDetailPage({ params }: Props) {
 
       <div className="text-center mb-12">
         <a
-          href={company.affiliateUrl}
+          href={`/go/${company.slug}`}
           target="_blank"
           rel="nofollow sponsored noopener"
           className="affiliate-link text-lg"

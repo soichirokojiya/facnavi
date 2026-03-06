@@ -78,7 +78,7 @@ export function CompanyCard({ company, rank }: CompanyCardProps) {
               詳細を見る →
             </Link>
             <a
-              href={company.affiliateUrl}
+              href={`/go/${company.slug}`}
               target="_blank"
               rel="nofollow sponsored noopener"
               className="affiliate-link text-sm"

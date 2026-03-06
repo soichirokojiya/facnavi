@@ -136,7 +136,7 @@ export default async function CompanyReviewsPage({ params }: Props) {
 
       <div className="text-center">
         <a
-          href={company.affiliateUrl}
+          href={`/go/${company.slug}`}
           target="_blank"
           rel="nofollow sponsored noopener"
           className="affiliate-link"

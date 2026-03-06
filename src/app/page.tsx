@@ -128,7 +128,7 @@ export default async function HomePage() {
                   ))}
                 </div>
                 <a
-                  href={company.affiliateUrl}
+                  href={`/go/${company.slug}`}
                   target="_blank"
                   rel="nofollow sponsored noopener"
                   className="block text-center py-2.5 bg-emerald-600 text-white font-bold text-sm rounded-lg hover:bg-emerald-700 transition-colors"
@@ -247,7 +247,7 @@ export default async function HomePage() {
                   </div>
                   <div className="flex flex-col gap-2 md:w-36 flex-shrink-0">
                     <a
-                      href={company.affiliateUrl}
+                      href={`/go/${company.slug}`}
                       target="_blank"
                       rel="nofollow sponsored noopener"
                       className="block text-center py-2.5 bg-emerald-600 text-white font-bold text-sm rounded-lg hover:bg-emerald-700 transition-colors"

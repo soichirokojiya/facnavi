@@ -71,7 +71,7 @@ export function ComparisonTable({ companies }: ComparisonTableProps) {
               </td>
               <td className="px-4 py-3 text-center">
                 <a
-                  href={company.affiliateUrl}
+                  href={`/go/${company.slug}`}
                   target="_blank"
                   rel="nofollow sponsored noopener"
                   className="inline-block px-3 py-1 bg-[#43a047] text-white text-xs font-bold rounded hover:bg-[#2e7d32] transition-colors"

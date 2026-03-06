@@ -79,7 +79,7 @@ export function DiagnosisResultView({ results, onReset }: DiagnosisResultProps) 
 
                 <div className="mt-4">
                   <a
-                    href={result.company.affiliateUrl}
+                    href={`/go/${result.company.slug}`}
                     target="_blank"
                     rel="nofollow sponsored noopener"
                     className="affiliate-link text-sm"
