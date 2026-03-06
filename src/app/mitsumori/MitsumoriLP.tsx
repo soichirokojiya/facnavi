@@ -666,7 +666,32 @@ export function MitsumoriLP() {
       <section id="form" className="py-10 md:py-14 bg-white scroll-mt-20">
         <SectionHeading sub="FORM">無料一括見積もりフォーム</SectionHeading>
 
-        {formStep <= 2 ? (
+        {/* ━━━ 2026年4月サービス開始まで準備中表示 ━━━ */}
+        <div className="max-w-xl mx-auto">
+          <div className="bg-white rounded-2xl shadow-xl border border-gray-200 overflow-hidden">
+            <div className="bg-gradient-to-r from-blue-600 to-blue-700 text-white text-center py-5 px-4">
+              <p className="font-bold text-lg">無料一括見積もりサービス</p>
+              <p className="text-blue-200 text-sm mt-0.5">まもなく開始</p>
+            </div>
+            <div className="p-8 md:p-10 text-center">
+              <div className="w-16 h-16 bg-gradient-to-br from-blue-100 to-blue-200 rounded-full flex items-center justify-center mx-auto mb-5">
+                {icons.clock("w-8 h-8 text-blue-600")}
+              </div>
+              <h3 className="text-xl font-bold text-gray-900 mb-2">2026年4月 サービス開始予定</h3>
+              <p className="text-sm text-gray-500 leading-relaxed mb-6">
+                現在、一括見積もりサービスの準備を進めております。<br />
+                サービス開始までもうしばらくお待ちください。
+              </p>
+              <div className="inline-flex items-center gap-2 bg-blue-50 text-blue-700 text-sm font-bold rounded-full px-5 py-2.5 border border-blue-100">
+                {icons.check("w-4 h-4 text-blue-500")}
+                完全無料で利用可能
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* ━━━ フォーム本体（2026年4月に有効化） ━━━ */}
+        {false && formStep <= 2 ? (
         <form onSubmit={(e) => e.preventDefault()} className="max-w-xl mx-auto">
           <div className="bg-white rounded-2xl shadow-xl border border-gray-200 overflow-hidden">
             {/* フォームヘッダー */}
