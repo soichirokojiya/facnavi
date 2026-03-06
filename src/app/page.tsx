@@ -60,7 +60,7 @@ export default async function HomePage() {
             <span className="text-primary">本当に良いファクタリング会社</span>に出会える
           </h1>
           <p className="text-gray-500 mb-6">
-            ファクタリング会社の口コミ・評判を徹底比較
+            ファクタリング会社{companies.length}社の口コミ・評判を徹底比較。手数料・スピード・口コミで選ぶおすすめランキング。
           </p>
 
           {/* Stats */}
