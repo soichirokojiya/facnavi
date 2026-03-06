@@ -7,11 +7,18 @@ import { INDUSTRIES, PREFECTURES } from "@/lib/constants";
 /* ─── 定数 ─── */
 
 const AMOUNT_OPTIONS = [
-  "100万円以下",
-  "100万円〜500万円",
-  "500万円〜1,000万円",
-  "1,000万円〜3,000万円",
-  "3,000万円以上",
+  "10万円未満",
+  "10〜30万円",
+  "31〜50万円",
+  "51〜100万円",
+  "101〜300万円",
+  "301〜500万円",
+  "501〜1,000万円",
+  "1,001〜3,000万円",
+  "3,001〜5,000万円",
+  "5,001万〜1億円",
+  "1〜3億円",
+  "3億円以上",
 ] as const;
 
 const TIMING_OPTIONS = [
@@ -512,11 +519,11 @@ export function MitsumoriLP() {
               {formStep === 1 ? (
                 <>
                   <SelectField
-                    label="請求書の金額帯"
+                    label="請求書金額（買取希望金額）"
                     options={AMOUNT_OPTIONS}
                     value={form.amount_range}
                     onChange={(v) => updateField("amount_range", v)}
-                    placeholder="金額帯を選択してください"
+                    placeholder="金額を選択してください"
                     required
                   />
                   <SelectField
