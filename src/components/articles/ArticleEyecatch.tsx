@@ -26,7 +26,7 @@ const categoryStyles: Record<string, { gradient: string; icon: string; label: st
 const defaultStyle = {
   gradient: "from-gray-900/80 via-gray-800/70 to-gray-700/60",
   icon: "📄",
-  label: "コラム",
+  label: "実践経営ノート",
 };
 
 interface ArticleEyecatchProps {

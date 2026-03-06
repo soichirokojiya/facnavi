@@ -85,7 +85,7 @@ export function Footer() {
               </li>
               <li>
                 <Link href="/column" className="text-sm hover:text-white transition-colors">
-                  コラム・お役立ち記事
+                  実践経営ノート
                 </Link>
               </li>
               <li>

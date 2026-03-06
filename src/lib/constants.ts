@@ -7,7 +7,7 @@ export const SITE_URL = "https://facnavi.info";
 export const NAV_ITEMS = [
   { label: "ランキング", href: "/ranking" },
   { label: "口コミ", href: "/kuchikomi" },
-  { label: "コラム", href: "/column" },
+  { label: "実践経営ノート", href: "/column" },
   { label: "診断ツール", href: "/shindan" },
   { label: "一括見積もり", href: "/mitsumori" },
 ] as const;

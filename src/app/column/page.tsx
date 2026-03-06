@@ -6,7 +6,7 @@ import { BreadcrumbJsonLd } from "@/components/seo/JsonLd";
 import { SITE_URL } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: "ファクタリングコラム・お役立ち記事",
+  title: "ファクナビ｜実践経営ノート",
   description:
     "ファクタリングの基礎知識、業者の選び方、業種別活用法など、役立つ情報をお届けします。",
   alternates: { canonical: `${SITE_URL}/column` },
@@ -20,13 +20,13 @@ export default function ColumnPage() {
       <BreadcrumbJsonLd
         items={[
           { name: "ホーム", url: SITE_URL },
-          { name: "コラム", url: `${SITE_URL}/column` },
+          { name: "実践経営ノート", url: `${SITE_URL}/column` },
         ]}
       />
-      <Breadcrumb items={[{ label: "コラム" }]} />
+      <Breadcrumb items={[{ label: "実践経営ノート" }]} />
 
       <h1 className="text-3xl font-bold text-gray-900 mb-2">
-        コラム・お役立ち記事
+        ファクナビ｜実践経営ノート
       </h1>
       <p className="text-gray-600 mb-8">
         ファクタリングに関する基礎知識や選び方のポイントを解説します。

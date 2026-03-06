@@ -121,7 +121,7 @@ export default async function ArticleDetailPage({ params }: Props) {
       <BreadcrumbJsonLd
         items={[
           { name: "ホーム", url: SITE_URL },
-          { name: "コラム", url: `${SITE_URL}/column` },
+          { name: "実践経営ノート", url: `${SITE_URL}/column` },
           { name: article.title, url: `${SITE_URL}/column/${slug}` },
         ]}
       />
@@ -135,7 +135,7 @@ export default async function ArticleDetailPage({ params }: Props) {
 
       <Breadcrumb
         items={[
-          { label: "コラム", href: "/column" },
+          { label: "実践経営ノート", href: "/column" },
           { label: article.title },
         ]}
       />

@@ -414,18 +414,18 @@ export default async function HomePage() {
         </div>
       </section>
 
-      {/* ━━━ コラム ━━━ */}
+      {/* ━━━ 実践経営ノート ━━━ */}
       <section className="py-10 md:py-14 bg-white">
         <div className="max-w-4xl mx-auto px-4">
           <SectionHeading
-            sub="COLUMN"
+            sub="NOTE"
             right={
               <Link href="/column" className="text-blue-600 text-sm font-bold hover:underline">
                 すべて見る →
               </Link>
             }
           >
-            お役立ち記事
+            ファクナビ｜実践経営ノート
           </SectionHeading>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
             {articles.map((article) => (
