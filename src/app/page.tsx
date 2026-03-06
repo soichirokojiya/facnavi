@@ -100,6 +100,7 @@ export default async function HomePage() {
                   <div className="text-[10px] font-bold text-gray-500 mt-0.5">最短入金</div>
                 </div>
               </div>
+              <p className="text-[10px] text-gray-400 -mt-5 mb-5 text-center md:text-left">※ <CurrentDate /> 現在</p>
 
               <div className="flex flex-col sm:flex-row gap-3 justify-center md:justify-start">
                 <Link
