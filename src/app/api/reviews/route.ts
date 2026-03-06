@@ -137,11 +137,20 @@ export async function POST(request: NextRequest) {
       const moderateSecret = process.env.MODERATE_SECRET;
       const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://facnavi.info";
 
+      console.log("Admin email debug:", {
+        adminEmail: adminEmail ? `${adminEmail.substring(0, 5)}...` : "NOT SET",
+        moderateSecret: moderateSecret ? "SET" : "NOT SET",
+        reviewId: reviewId || "NOT SET",
+        resendApiKey: process.env.RESEND_API_KEY ? "SET" : "NOT SET",
+        fromEmail,
+      });
+
       if (adminEmail && moderateSecret && reviewId) {
         const approveUrl = `${siteUrl}/api/reviews/moderate?id=${reviewId}&action=approved&secret=${moderateSecret}`;
         const rejectUrl = `${siteUrl}/api/reviews/moderate?id=${reviewId}&action=rejected&secret=${moderateSecret}`;
 
-        await resend.emails.send({
+        console.log("Sending admin email to:", adminEmail);
+        const adminResult = await resend.emails.send({
           from: `ファクナビ <${fromEmail}>`,
           to: adminEmail,
           subject: `【ファクナビ】新しい口コミが投稿されました（${company_slug}）`,
@@ -201,6 +210,13 @@ export async function POST(request: NextRequest) {
               </p>
             </div>
           `,
+        });
+        console.log("Admin email sent result:", JSON.stringify(adminResult));
+      } else {
+        console.log("Admin email SKIPPED - missing:", {
+          adminEmail: !adminEmail,
+          moderateSecret: !moderateSecret,
+          reviewId: !reviewId,
         });
       }
     } catch (adminEmailError) {
