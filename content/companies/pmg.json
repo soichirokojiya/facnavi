@@ -13,7 +13,7 @@
   "maxAmount": 200000000,
   "speedDays": 1,
   "onlineComplete": true,
-  "soleProprietorOk": false,
+  "soleProprietorOk": true,
   "weekendPayment": false,
   "features": [
     "月間500件以上の取扱",

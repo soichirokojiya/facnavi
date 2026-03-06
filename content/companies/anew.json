@@ -13,7 +13,7 @@
   "maxAmount": 50000000,
   "speedDays": 2,
   "onlineComplete": true,
-  "soleProprietorOk": false,
+  "soleProprietorOk": true,
   "weekendPayment": false,
   "features": [
     "OLTA×新生銀行共同出資",

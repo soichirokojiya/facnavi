@@ -13,7 +13,7 @@
   "maxAmount": 50000000,
   "speedDays": 3,
   "onlineComplete": false,
-  "soleProprietorOk": false,
+  "soleProprietorOk": true,
   "weekendPayment": false,
   "features": [
     "リース対応",

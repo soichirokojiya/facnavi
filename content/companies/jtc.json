@@ -13,7 +13,7 @@
   "maxAmount": 100000000,
   "speedDays": 1,
   "onlineComplete": false,
-  "soleProprietorOk": false,
+  "soleProprietorOk": true,
   "weekendPayment": false,
   "features": [
     "入金前払いシステム",

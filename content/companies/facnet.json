@@ -13,7 +13,7 @@
   "maxAmount": 50000000,
   "speedDays": 1,
   "onlineComplete": true,
-  "soleProprietorOk": false,
+  "soleProprietorOk": true,
   "weekendPayment": false,
   "features": [
     "即日入金可能",

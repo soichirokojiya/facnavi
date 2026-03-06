@@ -12,7 +12,7 @@
   "maxAmount": 300000000,
   "speedDays": 3,
   "onlineComplete": true,
-  "soleProprietorOk": false,
+  "soleProprietorOk": true,
   "weekendPayment": false,
   "features": [
     "一般社団法人運営",

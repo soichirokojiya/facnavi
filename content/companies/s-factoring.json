@@ -12,7 +12,7 @@
   "maxAmount": 30000000,
   "speedDays": 1,
   "onlineComplete": true,
-  "soleProprietorOk": false,
+  "soleProprietorOk": true,
   "weekendPayment": false,
   "features": [
     "柔軟な審査",
