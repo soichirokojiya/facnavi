@@ -105,7 +105,7 @@ export function DiagnosisResultView({ results, onReset }: DiagnosisResultProps) 
           <p className="text-blue-200 text-sm mb-4">複数社にまとめて見積もり依頼できる一括見積もりサービス</p>
           <Link
             href="/mitsumori"
-            className="inline-block px-6 py-3 bg-gradient-to-br from-emerald-500 to-emerald-700 text-white font-bold rounded-full shadow-lg shadow-emerald-500/40 hover:shadow-xl hover:-translate-y-0.5 transition-all duration-300 text-sm"
+            className="shimmer inline-block px-6 py-3 bg-gradient-to-br from-emerald-500 to-emerald-700 text-white font-bold rounded-full shadow-lg shadow-emerald-500/40 hover:shadow-xl hover:-translate-y-0.5 transition-all duration-300 text-sm"
           >
             一括見積もりの詳細を見る
           </Link>

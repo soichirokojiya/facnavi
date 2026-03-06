@@ -99,7 +99,7 @@ export default async function HomePage() {
               <div className="flex flex-col sm:flex-row gap-3 justify-center md:justify-start">
                 <Link
                   href="/shindan"
-                  className="inline-flex items-center justify-center gap-2 px-7 py-3.5 bg-gradient-to-br from-emerald-500 to-emerald-600 text-white font-bold text-sm rounded-full shadow-lg shadow-emerald-500/25 hover:shadow-xl hover:-translate-y-0.5 transition-all duration-300"
+                  className="shimmer inline-flex items-center justify-center gap-2 px-7 py-3.5 bg-gradient-to-br from-emerald-500 to-emerald-600 text-white font-bold text-sm rounded-full shadow-lg shadow-emerald-500/25 hover:shadow-xl hover:-translate-y-0.5 transition-all duration-300"
                 >
                   無料で診断する →
                 </Link>
