@@ -297,8 +297,8 @@ export function MitsumoriLP() {
           {/* 数値バー */}
           <div className="grid grid-cols-3 bg-white/10 backdrop-blur rounded-xl border border-white/20 divide-x divide-white/20 mb-12">
             <div className="py-5">
-              <p className="text-3xl md:text-4xl font-extrabold text-orange-400">257<span className="text-lg">社</span></p>
-              <p className="text-sm text-blue-200 mt-1">登録業者数</p>
+              <p className="text-3xl md:text-4xl font-extrabold text-orange-400">255<span className="text-lg">社</span></p>
+              <p className="text-sm text-blue-200 mt-1">掲載社数</p>
             </div>
             <div className="py-5">
               <p className="text-3xl md:text-4xl font-extrabold text-orange-400">95<span className="text-lg">%</span></p>
