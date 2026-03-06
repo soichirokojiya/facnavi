@@ -329,7 +329,7 @@ export default async function HomePage() {
                   <div className="flex-1 flex flex-wrap gap-x-4 gap-y-1 text-xs">
                     <span><span className="text-gray-400">手数料</span> <span className="font-bold text-blue-600">{formatFeeRange(company.feeRange.min, company.feeRange.max)}</span></span>
                     <span><span className="text-gray-400">上限</span> <span className="font-bold">{formatAmount(company.maxAmount)}</span></span>
-                    <span><span className="text-gray-400">個人</span> <span className={`font-bold ${company.soleProprietorOk ? "text-green-600" : "text-gray-300"}`}>{company.soleProprietorOk ? "OK" : "−"}</span></span>
+                    <span><span className="text-gray-400">法人・個人事業主</span> <span className={`font-bold ${company.soleProprietorOk ? "text-green-600" : "text-gray-300"}`}>{company.soleProprietorOk ? "OK" : ""}</span></span>
                   </div>
                   <div className="flex gap-2 md:w-auto flex-shrink-0">
                     <a
