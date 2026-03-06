@@ -85,38 +85,34 @@ export function Header() {
         </div>
 
         <div
-          className={`flex flex-col items-center justify-center min-h-screen px-6 py-20 transition-all duration-500 ease-out ${
+          className={`flex flex-col items-center justify-center min-h-screen px-6 py-16 transition-all duration-500 ease-out ${
             isMenuOpen ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-4"
           }`}
         >
           {/* ロゴ（トップへ戻る） */}
           <Link
             href="/"
-            className="mb-10 hover:opacity-80 transition-opacity"
+            className="mb-6 hover:opacity-80 transition-opacity"
             onClick={() => setIsMenuOpen(false)}
           >
             <Logo size="lg" />
           </Link>
 
           {/* 実績数字 */}
-          <div className="flex items-center gap-8 mb-12 text-center">
-            <div>
-              <p className="text-gray-800 font-bold text-base">
-                掲載社数<span className="text-3xl font-extrabold text-red-600 mx-1">254</span>社
-              </p>
-            </div>
-            <div>
-              <p className="text-gray-800 font-bold text-base">
-                口コミ数<span className="text-3xl font-extrabold text-red-600 mx-1">500</span>件
-              </p>
-            </div>
+          <div className="flex items-center gap-6 mb-8 text-center">
+            <p className="text-gray-800 font-bold text-sm">
+              掲載社数<span className="text-2xl font-extrabold text-red-600 mx-1">254</span>社
+            </p>
+            <p className="text-gray-800 font-bold text-sm">
+              口コミ数<span className="text-2xl font-extrabold text-red-600 mx-1">500</span>件
+            </p>
           </div>
 
           {/* ナビゲーションリンク */}
-          <nav className="flex flex-col items-center gap-8 mb-14">
+          <nav className="flex flex-col items-center gap-5 mb-8">
             <Link
               href="/"
-              className="text-xl font-bold text-gray-800 hover:text-primary transition-colors"
+              className="text-lg font-bold text-gray-800 hover:text-primary transition-colors"
               onClick={() => setIsMenuOpen(false)}
             >
               トップページ
@@ -125,7 +121,7 @@ export function Header() {
               <Link
                 key={item.href}
                 href={item.href}
-                className="text-xl font-bold text-gray-800 hover:text-primary transition-colors"
+                className="text-lg font-bold text-gray-800 hover:text-primary transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >
                 {item.label}
@@ -136,10 +132,10 @@ export function Header() {
           {/* 一括見積もりCTA */}
           <Link
             href="/mitsumori"
-            className="flex items-center gap-3 bg-amber-500 hover:bg-amber-600 text-white font-bold text-lg rounded-xl px-8 py-4 shadow-lg transition-all duration-200 w-full max-w-xs justify-center"
+            className="flex items-center gap-3 bg-amber-500 hover:bg-amber-600 text-white font-bold text-base rounded-xl px-7 py-3.5 shadow-lg transition-all duration-200 w-full max-w-xs justify-center"
             onClick={() => setIsMenuOpen(false)}
           >
-            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
             </svg>
             <span>
