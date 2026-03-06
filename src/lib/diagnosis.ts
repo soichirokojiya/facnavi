@@ -88,7 +88,13 @@ export function diagnose(
     }
 
     // Base rating bonus
-    score += company.overallRating * 3;
+    score += company.overallRating * 5;
+
+    // Rank position bonus (top-ranked companies get higher scores)
+    if (company.rankPosition <= 5) score += 20;
+    else if (company.rankPosition <= 15) score += 15;
+    else if (company.rankPosition <= 30) score += 10;
+    else if (company.rankPosition <= 50) score += 5;
 
     return { company, score, reasons };
   });

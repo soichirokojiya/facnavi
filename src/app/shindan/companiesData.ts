@@ -17,7 +17,7 @@ const companiesData: Company[] = [
     "maxAmount": 100000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "最短2時間入金",
@@ -60,7 +60,7 @@ const companiesData: Company[] = [
     "maxAmount": 700000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "最短2時間入金",
@@ -103,7 +103,7 @@ const companiesData: Company[] = [
     "maxAmount": 10000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "IT・クリエイター特化",
@@ -146,7 +146,7 @@ const companiesData: Company[] = [
     "maxAmount": 1000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "最短10分入金",
@@ -189,7 +189,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "最速2時間入金",
@@ -232,7 +232,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 1,
     "onlineComplete": false,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "東京・福岡2拠点",
@@ -275,7 +275,7 @@ const companiesData: Company[] = [
     "maxAmount": 100000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "即日入金可能",
@@ -318,7 +318,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "Chatwork連携",
@@ -361,7 +361,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "一般社団法人運営",
@@ -404,7 +404,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 1,
     "onlineComplete": false,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "建設業特化",
@@ -447,7 +447,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "AI審査",
@@ -490,7 +490,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "最短30分入金",
@@ -533,7 +533,7 @@ const companiesData: Company[] = [
     "maxAmount": 200000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "月間500件以上の取扱",
@@ -576,7 +576,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 2,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "セゾングループ",
@@ -619,7 +619,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 5,
     "onlineComplete": false,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "三井住友グループ",
@@ -662,7 +662,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "即日入金可能",
@@ -687,7 +687,7 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 5,
+    "overallRating": 3.5,
     "rankPosition": 16
   },
   {
@@ -705,7 +705,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "電子請求書対応",
@@ -730,7 +730,7 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 5,
+    "overallRating": 3.5,
     "rankPosition": 17
   },
   {
@@ -747,7 +747,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "即日入金可能",
@@ -772,7 +772,7 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 5,
+    "overallRating": 3.5,
     "rankPosition": 18
   },
   {
@@ -790,7 +790,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 3,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "介護事業者特化",
@@ -815,7 +815,7 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 5,
+    "overallRating": 3.5,
     "rankPosition": 19
   },
   {
@@ -833,7 +833,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 5,
     "onlineComplete": false,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "NECグループ",
@@ -858,7 +858,7 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 5,
+    "overallRating": 3.5,
     "rankPosition": 20
   },
   {
@@ -876,7 +876,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "即日入金可能",
@@ -901,7 +901,7 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 5,
+    "overallRating": 3.5,
     "rankPosition": 21
   },
   {
@@ -919,7 +919,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 5,
     "onlineComplete": false,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "SBIグループ",
@@ -944,7 +944,7 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 5,
+    "overallRating": 3.5,
     "rankPosition": 22
   },
   {
@@ -962,7 +962,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 5,
     "onlineComplete": false,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "伊藤忠・みずほグループ",
@@ -987,7 +987,7 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 5,
+    "overallRating": 3.5,
     "rankPosition": 23
   },
   {
@@ -1005,7 +1005,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 2,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "OLTA×新生銀行共同出資",
@@ -1048,7 +1048,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "マネーフォワードグループ",
@@ -1091,7 +1091,7 @@ const companiesData: Company[] = [
     "maxAmount": 100000000,
     "speedDays": 1,
     "onlineComplete": false,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "最高1億円対応",
@@ -1116,7 +1116,7 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 4.3,
+    "overallRating": 3.5,
     "rankPosition": 26
   },
   {
@@ -1134,7 +1134,7 @@ const companiesData: Company[] = [
     "maxAmount": 100000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "手数料2%〜10%",
@@ -1159,7 +1159,7 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 4.3,
+    "overallRating": 3.5,
     "rankPosition": 27
   },
   {
@@ -1177,7 +1177,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "最短4時間で資金化",
@@ -1202,7 +1202,7 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 4.3,
+    "overallRating": 3.5,
     "rankPosition": 28
   },
   {
@@ -1220,7 +1220,7 @@ const companiesData: Company[] = [
     "maxAmount": 1000000000,
     "speedDays": 2,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "東証プライム上場企業運営",
@@ -1263,7 +1263,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "土日祝も対応",
@@ -1306,7 +1306,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 7,
     "onlineComplete": false,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "三菱UFJグループ",
@@ -1349,7 +1349,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 1,
     "onlineComplete": false,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "建設・医療業界特化",
@@ -1374,7 +1374,7 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 4.3,
+    "overallRating": 3.5,
     "rankPosition": 32
   },
   {
@@ -1392,7 +1392,7 @@ const companiesData: Company[] = [
     "maxAmount": 30000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "審査通過率95%以上",
@@ -1435,7 +1435,7 @@ const companiesData: Company[] = [
     "maxAmount": 10000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "GMOグループ運営",
@@ -1478,7 +1478,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "審査通過率96%",
@@ -1503,7 +1503,7 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 4,
+    "overallRating": 3.5,
     "rankPosition": 35
   },
   {
@@ -1521,7 +1521,7 @@ const companiesData: Company[] = [
     "maxAmount": 100000000,
     "speedDays": 1,
     "onlineComplete": false,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "入金前払いシステム",
@@ -1564,7 +1564,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 7,
     "onlineComplete": false,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "みずほグループ",
@@ -1589,7 +1589,7 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 4,
+    "overallRating": 3.5,
     "rankPosition": 37
   },
   {
@@ -1607,7 +1607,7 @@ const companiesData: Company[] = [
     "maxAmount": 30000000,
     "speedDays": 1,
     "onlineComplete": false,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "中国・九州エリア特化",
@@ -1632,7 +1632,7 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 4,
+    "overallRating": 3.5,
     "rankPosition": 38
   },
   {
@@ -1650,7 +1650,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 5,
     "onlineComplete": false,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "東証プライム上場",
@@ -1675,7 +1675,7 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 4,
+    "overallRating": 3.5,
     "rankPosition": 40
   },
   {
@@ -1693,7 +1693,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "即日入金可能",
@@ -1718,7 +1718,7 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 4,
+    "overallRating": 3.5,
     "rankPosition": 41
   },
   {
@@ -1736,7 +1736,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "アイフルグループ",
@@ -1779,7 +1779,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "西日本特化",
@@ -1804,7 +1804,7 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 4,
+    "overallRating": 3.5,
     "rankPosition": 43
   },
   {
@@ -1822,7 +1822,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "即日入金可能",
@@ -1847,7 +1847,7 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 4,
+    "overallRating": 3.5,
     "rankPosition": 44
   },
   {
@@ -1865,7 +1865,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "売掛金買取",
@@ -1890,7 +1890,7 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 4,
+    "overallRating": 3.5,
     "rankPosition": 45
   },
   {
@@ -1908,7 +1908,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "即日入金可能",
@@ -1933,7 +1933,7 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 4,
+    "overallRating": 3.5,
     "rankPosition": 46
   },
   {
@@ -1951,7 +1951,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "即日入金可能",
@@ -1976,7 +1976,7 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 4,
+    "overallRating": 3.5,
     "rankPosition": 47
   },
   {
@@ -1994,7 +1994,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "即日入金可能",
@@ -2019,7 +2019,7 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 4,
+    "overallRating": 3.5,
     "rankPosition": 48
   },
   {
@@ -2037,7 +2037,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "建設業特化",
@@ -2080,7 +2080,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "簡単手続き",
@@ -2105,7 +2105,7 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 4,
+    "overallRating": 3.5,
     "rankPosition": 50
   },
   {
@@ -2123,7 +2123,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "即日入金可能",
@@ -2148,7 +2148,7 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 4,
+    "overallRating": 3.5,
     "rankPosition": 51
   },
   {
@@ -2165,7 +2165,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "東京拠点",
@@ -2190,7 +2190,7 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 4,
+    "overallRating": 3.5,
     "rankPosition": 52
   },
   {
@@ -2208,7 +2208,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "ノンリコース契約",
@@ -2251,7 +2251,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "AI審査",
@@ -2276,7 +2276,7 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 4,
+    "overallRating": 3.5,
     "rankPosition": 54
   },
   {
@@ -2294,7 +2294,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 3,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "福岡銀行グループ",
@@ -2319,7 +2319,7 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 4,
+    "overallRating": 3.5,
     "rankPosition": 55
   },
   {
@@ -2337,7 +2337,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "即日入金可能",
@@ -2362,7 +2362,7 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 4,
+    "overallRating": 3.5,
     "rankPosition": 56
   },
   {
@@ -2380,7 +2380,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "即日入金可能",
@@ -2405,7 +2405,7 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 4,
+    "overallRating": 3.5,
     "rankPosition": 57
   },
   {
@@ -2423,7 +2423,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 5,
     "onlineComplete": false,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "大手リース会社運営",
@@ -2448,7 +2448,7 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 4,
+    "overallRating": 3.5,
     "rankPosition": 58
   },
   {
@@ -2466,7 +2466,7 @@ const companiesData: Company[] = [
     "maxAmount": 200000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "最短2時間入金",
@@ -2491,7 +2491,7 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 4,
+    "overallRating": 3.5,
     "rankPosition": 59
   },
   {
@@ -2509,7 +2509,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 2,
     "onlineComplete": false,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "法人向け",
@@ -2552,7 +2552,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "即日入金可能",
@@ -2577,7 +2577,7 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 4,
+    "overallRating": 3.5,
     "rankPosition": 61
   },
   {
@@ -2595,7 +2595,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "即日入金可能",
@@ -2620,7 +2620,7 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 4,
+    "overallRating": 3.5,
     "rankPosition": 62
   },
   {
@@ -2638,7 +2638,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "即日入金可能",
@@ -2663,7 +2663,7 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 4,
+    "overallRating": 3.5,
     "rankPosition": 63
   },
   {
@@ -2681,7 +2681,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "即日入金可能",
@@ -2706,7 +2706,7 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 4,
+    "overallRating": 3.5,
     "rankPosition": 64
   },
   {
@@ -2724,7 +2724,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "即日入金可能",
@@ -2749,7 +2749,7 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 4,
+    "overallRating": 3.5,
     "rankPosition": 65
   },
   {
@@ -2767,7 +2767,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 3,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "医療業界特化",
@@ -2792,7 +2792,7 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 4,
+    "overallRating": 3.5,
     "rankPosition": 66
   },
   {
@@ -2810,7 +2810,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "即日入金",
@@ -2835,7 +2835,7 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 4,
+    "overallRating": 3.5,
     "rankPosition": 67
   },
   {
@@ -2853,7 +2853,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "乗り換え専門",
@@ -2878,7 +2878,7 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 4,
+    "overallRating": 3.5,
     "rankPosition": 68
   },
   {
@@ -2896,7 +2896,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "オンライン完結",
@@ -2921,7 +2921,7 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 4,
+    "overallRating": 3.5,
     "rankPosition": 69
   },
   {
@@ -2939,7 +2939,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "即日入金可能",
@@ -2964,7 +2964,7 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 4,
+    "overallRating": 3.5,
     "rankPosition": 70
   },
   {
@@ -2982,7 +2982,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "即日入金可能",
@@ -3007,7 +3007,7 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 4,
+    "overallRating": 3.5,
     "rankPosition": 71
   },
   {
@@ -3025,7 +3025,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "即日入金可能",
@@ -3050,7 +3050,7 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 4,
+    "overallRating": 3.5,
     "rankPosition": 72
   },
   {
@@ -3068,7 +3068,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "即日入金可能",
@@ -3093,7 +3093,7 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 4,
+    "overallRating": 3.5,
     "rankPosition": 73
   },
   {
@@ -3110,7 +3110,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "即日入金可能",
@@ -3135,7 +3135,7 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 4,
+    "overallRating": 3.5,
     "rankPosition": 74
   },
   {
@@ -3153,7 +3153,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 2,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "手数料0.5%〜",
@@ -3178,7 +3178,7 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 4,
+    "overallRating": 3.5,
     "rankPosition": 75
   },
   {
@@ -3195,7 +3195,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "請求書買取",
@@ -3220,7 +3220,7 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 4,
+    "overallRating": 3.5,
     "rankPosition": 76
   },
   {
@@ -3237,7 +3237,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "即日入金",
@@ -3262,7 +3262,7 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 4,
+    "overallRating": 3.5,
     "rankPosition": 77
   },
   {
@@ -3279,7 +3279,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "手数料1%〜",
@@ -3304,7 +3304,7 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 4,
+    "overallRating": 3.5,
     "rankPosition": 78
   },
   {
@@ -3322,7 +3322,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "最短30分審査",
@@ -3347,7 +3347,7 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 4,
+    "overallRating": 3.5,
     "rankPosition": 79
   },
   {
@@ -3365,7 +3365,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "即日入金可能",
@@ -3390,7 +3390,7 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 4,
+    "overallRating": 3.5,
     "rankPosition": 80
   },
   {
@@ -3408,7 +3408,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "即日入金可能",
@@ -3433,7 +3433,7 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 4,
+    "overallRating": 3.5,
     "rankPosition": 81
   },
   {
@@ -3451,7 +3451,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 3,
     "onlineComplete": false,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "証券化の専門家",
@@ -3476,7 +3476,7 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 4,
+    "overallRating": 3.5,
     "rankPosition": 82
   },
   {
@@ -3494,7 +3494,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "最短2時間入金",
@@ -3537,7 +3537,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "即日入金可能",
@@ -3562,7 +3562,7 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 4,
+    "overallRating": 3.5,
     "rankPosition": 84
   },
   {
@@ -3579,7 +3579,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "西日本中心",
@@ -3604,7 +3604,7 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 4,
+    "overallRating": 3.5,
     "rankPosition": 85
   },
   {
@@ -3622,7 +3622,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 3,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "ヤマトグループ",
@@ -3647,7 +3647,7 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 4,
+    "overallRating": 3.5,
     "rankPosition": 86
   },
   {
@@ -3665,7 +3665,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "即日入金可能",
@@ -3690,7 +3690,7 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 4,
+    "overallRating": 3.5,
     "rankPosition": 87
   },
   {
@@ -3708,7 +3708,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "即日入金可能",
@@ -3733,7 +3733,7 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 4,
+    "overallRating": 3.5,
     "rankPosition": 88
   },
   {
@@ -3751,7 +3751,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "即日入金可能",
@@ -3776,7 +3776,7 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 4,
+    "overallRating": 3.5,
     "rankPosition": 89
   },
   {
@@ -3793,7 +3793,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "即日入金可能",
@@ -3818,7 +3818,7 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 4,
+    "overallRating": 3.5,
     "rankPosition": 90
   },
   {
@@ -3835,7 +3835,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "即日入金可能",
@@ -3877,7 +3877,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "即日入金可能",
@@ -3902,7 +3902,7 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 4,
+    "overallRating": 3.5,
     "rankPosition": 92
   },
   {
@@ -3920,7 +3920,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "即日入金可能",
@@ -3945,7 +3945,7 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 4,
+    "overallRating": 3.5,
     "rankPosition": 93
   },
   {
@@ -3963,7 +3963,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "即日入金可能",
@@ -3988,7 +3988,7 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 4,
+    "overallRating": 3.5,
     "rankPosition": 94
   },
   {
@@ -4006,7 +4006,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "即日入金可能",
@@ -4031,7 +4031,7 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 4,
+    "overallRating": 3.5,
     "rankPosition": 95
   },
   {
@@ -4049,7 +4049,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "即日入金可能",
@@ -4074,7 +4074,7 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 4,
+    "overallRating": 3.5,
     "rankPosition": 96
   },
   {
@@ -4092,7 +4092,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "即日入金可能",
@@ -4117,7 +4117,7 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 4,
+    "overallRating": 3.5,
     "rankPosition": 97
   },
   {
@@ -4135,7 +4135,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "即日入金可能",
@@ -4160,7 +4160,7 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 4,
+    "overallRating": 3.5,
     "rankPosition": 98
   },
   {
@@ -4178,7 +4178,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "即日入金可能",
@@ -4203,7 +4203,7 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 4,
+    "overallRating": 3.5,
     "rankPosition": 99
   },
   {
@@ -4221,7 +4221,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "即日入金可能",
@@ -4246,7 +4246,7 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 4,
+    "overallRating": 3.5,
     "rankPosition": 100
   },
   {
@@ -4264,7 +4264,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "即日入金可能",
@@ -4289,7 +4289,7 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 4,
+    "overallRating": 3.5,
     "rankPosition": 101
   },
   {
@@ -4306,7 +4306,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "手形割引対応",
@@ -4331,7 +4331,7 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 4,
+    "overallRating": 3.5,
     "rankPosition": 102
   },
   {
@@ -4349,7 +4349,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "即日入金可能",
@@ -4374,7 +4374,7 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 4,
+    "overallRating": 3.5,
     "rankPosition": 103
   },
   {
@@ -4392,7 +4392,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "即日入金可能",
@@ -4417,7 +4417,7 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 4,
+    "overallRating": 3.5,
     "rankPosition": 104
   },
   {
@@ -4435,7 +4435,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "電子対応",
@@ -4460,7 +4460,7 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 4,
+    "overallRating": 3.5,
     "rankPosition": 105
   },
   {
@@ -4478,7 +4478,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "即日入金",
@@ -4503,7 +4503,7 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 4,
+    "overallRating": 3.5,
     "rankPosition": 106
   },
   {
@@ -4520,7 +4520,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "即日入金可能",
@@ -4545,7 +4545,7 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 4,
+    "overallRating": 3.5,
     "rankPosition": 107
   },
   {
@@ -4563,7 +4563,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "即日入金可能",
@@ -4588,7 +4588,7 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 4,
+    "overallRating": 3.5,
     "rankPosition": 108
   },
   {
@@ -4606,7 +4606,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "即日入金可能",
@@ -4631,7 +4631,7 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 4,
+    "overallRating": 3.5,
     "rankPosition": 109
   },
   {
@@ -4649,7 +4649,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "即日入金可能",
@@ -4674,7 +4674,7 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 4,
+    "overallRating": 3.5,
     "rankPosition": 110
   },
   {
@@ -4692,7 +4692,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "即日入金可能",
@@ -4717,7 +4717,7 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 4,
+    "overallRating": 3.5,
     "rankPosition": 111
   },
   {
@@ -4734,7 +4734,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "北海道拠点",
@@ -4759,7 +4759,7 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 4,
+    "overallRating": 3.5,
     "rankPosition": 112
   },
   {
@@ -4777,7 +4777,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "即日入金可能",
@@ -4802,7 +4802,7 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 4,
+    "overallRating": 3.5,
     "rankPosition": 113
   },
   {
@@ -4820,7 +4820,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "即日入金可能",
@@ -4863,7 +4863,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "即日入金可能",
@@ -4888,7 +4888,7 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 4,
+    "overallRating": 3.5,
     "rankPosition": 115
   },
   {
@@ -4905,7 +4905,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "手軽に利用",
@@ -4930,7 +4930,7 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 4,
+    "overallRating": 3.5,
     "rankPosition": 116
   },
   {
@@ -4948,7 +4948,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "比較サービス",
@@ -4973,7 +4973,7 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 4,
+    "overallRating": 3.5,
     "rankPosition": 117
   },
   {
@@ -4991,7 +4991,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "個人事業主OK",
@@ -5016,7 +5016,7 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 4,
+    "overallRating": 3.5,
     "rankPosition": 118
   },
   {
@@ -5034,7 +5034,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "即日入金可能",
@@ -5059,7 +5059,7 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 4,
+    "overallRating": 3.5,
     "rankPosition": 119
   },
   {
@@ -5077,7 +5077,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 14,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "医療業界特化",
@@ -5102,7 +5102,7 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 4,
+    "overallRating": 3.5,
     "rankPosition": 120
   },
   {
@@ -5120,7 +5120,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 5,
     "onlineComplete": false,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "横浜銀行グループ",
@@ -5145,7 +5145,7 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 4,
+    "overallRating": 3.5,
     "rankPosition": 121
   },
   {
@@ -5162,7 +5162,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "親身な対応",
@@ -5187,7 +5187,7 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 4,
+    "overallRating": 3.5,
     "rankPosition": 122
   },
   {
@@ -5205,7 +5205,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "オンライン完結",
@@ -5230,7 +5230,7 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 4,
+    "overallRating": 3.5,
     "rankPosition": 123
   },
   {
@@ -5247,7 +5247,7 @@ const companiesData: Company[] = [
     "maxAmount": 100000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "柔軟な審査",
@@ -5272,7 +5272,7 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 4,
+    "overallRating": 3.5,
     "rankPosition": 124
   },
   {
@@ -5289,7 +5289,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "建設業特化",
@@ -5314,7 +5314,7 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 4,
+    "overallRating": 3.5,
     "rankPosition": 125
   },
   {
@@ -5332,7 +5332,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "建設業特化",
@@ -5357,7 +5357,7 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 4,
+    "overallRating": 3.5,
     "rankPosition": 126
   },
   {
@@ -5375,7 +5375,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "即日入金可能",
@@ -5400,7 +5400,7 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 4,
+    "overallRating": 3.5,
     "rankPosition": 127
   },
   {
@@ -5418,7 +5418,7 @@ const companiesData: Company[] = [
     "maxAmount": 100000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "手数料0.5%〜",
@@ -5443,7 +5443,7 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 4,
+    "overallRating": 3.5,
     "rankPosition": 128
   },
   {
@@ -5461,7 +5461,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "即日入金",
@@ -5486,7 +5486,7 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 4,
+    "overallRating": 3.5,
     "rankPosition": 129
   },
   {
@@ -5504,7 +5504,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "即日入金可能",
@@ -5529,7 +5529,7 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 4,
+    "overallRating": 3.5,
     "rankPosition": 130
   },
   {
@@ -5547,7 +5547,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "即日入金可能",
@@ -5572,7 +5572,7 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 4,
+    "overallRating": 3.5,
     "rankPosition": 131
   },
   {
@@ -5590,7 +5590,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "乗り換え特化",
@@ -5633,7 +5633,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "証券会社運営",
@@ -5658,7 +5658,7 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 4,
+    "overallRating": 3.5,
     "rankPosition": 133
   },
   {
@@ -5676,7 +5676,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "即日入金可能",
@@ -5701,7 +5701,7 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 4,
+    "overallRating": 3.5,
     "rankPosition": 134
   },
   {
@@ -5719,7 +5719,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "即日入金可能",
@@ -5744,7 +5744,7 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 4,
+    "overallRating": 3.5,
     "rankPosition": 135
   },
   {
@@ -5762,7 +5762,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "東京拠点",
@@ -5787,7 +5787,7 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 4,
+    "overallRating": 3.5,
     "rankPosition": 136
   },
   {
@@ -5805,7 +5805,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "即日入金可能",
@@ -5830,7 +5830,7 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 4,
+    "overallRating": 3.5,
     "rankPosition": 137
   },
   {
@@ -5848,7 +5848,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "大阪拠点",
@@ -5873,7 +5873,7 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 4,
+    "overallRating": 3.5,
     "rankPosition": 138
   },
   {
@@ -5891,7 +5891,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "即日入金可能",
@@ -5916,7 +5916,7 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 4,
+    "overallRating": 3.5,
     "rankPosition": 139
   },
   {
@@ -5933,7 +5933,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 3,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "PayPay銀行運営",
@@ -5958,7 +5958,7 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 4,
+    "overallRating": 3.5,
     "rankPosition": 140
   },
   {
@@ -5976,7 +5976,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "即日入金",
@@ -6019,7 +6019,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "即日入金可能",
@@ -6044,7 +6044,7 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 4,
+    "overallRating": 3.5,
     "rankPosition": 142
   },
   {
@@ -6062,7 +6062,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "乗り換え対応",
@@ -6087,7 +6087,7 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 4,
+    "overallRating": 3.5,
     "rankPosition": 143
   },
   {
@@ -6105,7 +6105,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 3,
     "onlineComplete": false,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "りそなグループ",
@@ -6130,7 +6130,7 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 4,
+    "overallRating": 3.5,
     "rankPosition": 144
   },
   {
@@ -6148,7 +6148,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 5,
     "onlineComplete": false,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "リコーグループ",
@@ -6173,7 +6173,7 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 4,
+    "overallRating": 3.5,
     "rankPosition": 145
   },
   {
@@ -6191,7 +6191,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "即日入金可能",
@@ -6216,7 +6216,7 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 4,
+    "overallRating": 3.5,
     "rankPosition": 146
   },
   {
@@ -6234,7 +6234,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "即日入金可能",
@@ -6259,7 +6259,7 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 4,
+    "overallRating": 3.5,
     "rankPosition": 147
   },
   {
@@ -6277,7 +6277,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 5,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "セゾングループ",
@@ -6319,7 +6319,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "即日入金可能",
@@ -6344,7 +6344,7 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 4,
+    "overallRating": 3.5,
     "rankPosition": 149
   },
   {
@@ -6362,7 +6362,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 3,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "医療業界特化",
@@ -6387,7 +6387,7 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 4,
+    "overallRating": 3.5,
     "rankPosition": 150
   },
   {
@@ -6405,7 +6405,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 3,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "セイノーグループ",
@@ -6430,7 +6430,7 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 4,
+    "overallRating": 3.5,
     "rankPosition": 151
   },
   {
@@ -6447,7 +6447,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "即日入金可能",
@@ -6472,7 +6472,7 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 4,
+    "overallRating": 3.5,
     "rankPosition": 152
   },
   {
@@ -6489,7 +6489,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "直接取引",
@@ -6514,7 +6514,7 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 4,
+    "overallRating": 3.5,
     "rankPosition": 153
   },
   {
@@ -6532,7 +6532,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "即日入金可能",
@@ -6557,7 +6557,7 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 4,
+    "overallRating": 3.5,
     "rankPosition": 154
   },
   {
@@ -6574,7 +6574,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "即日入金可能",
@@ -6599,7 +6599,7 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 4,
+    "overallRating": 3.5,
     "rankPosition": 155
   },
   {
@@ -6617,7 +6617,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "即日入金可能",
@@ -6642,7 +6642,7 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 4,
+    "overallRating": 3.5,
     "rankPosition": 156
   },
   {
@@ -6660,7 +6660,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "即日入金可能",
@@ -6685,7 +6685,7 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 4,
+    "overallRating": 3.5,
     "rankPosition": 157
   },
   {
@@ -6703,7 +6703,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "即日入金可能",
@@ -6728,7 +6728,7 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 4,
+    "overallRating": 3.5,
     "rankPosition": 158
   },
   {
@@ -6746,7 +6746,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "即日入金可能",
@@ -6771,7 +6771,7 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 4,
+    "overallRating": 3.5,
     "rankPosition": 159
   },
   {
@@ -6788,7 +6788,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "即日入金可能",
@@ -6813,7 +6813,7 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 4,
+    "overallRating": 3.5,
     "rankPosition": 160
   },
   {
@@ -6831,7 +6831,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "即日入金可能",
@@ -6856,7 +6856,7 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 4,
+    "overallRating": 3.5,
     "rankPosition": 161
   },
   {
@@ -6873,7 +6873,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "即日入金可能",
@@ -6898,7 +6898,7 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 4,
+    "overallRating": 3.5,
     "rankPosition": 162
   },
   {
@@ -6915,7 +6915,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "即日入金可能",
@@ -6940,7 +6940,7 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 4,
+    "overallRating": 3.5,
     "rankPosition": 163
   },
   {
@@ -6957,7 +6957,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "テクノロジー活用",
@@ -6982,7 +6982,7 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 4,
+    "overallRating": 3.5,
     "rankPosition": 164
   },
   {
@@ -7000,7 +7000,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "即日入金可能",
@@ -7025,7 +7025,7 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 4,
+    "overallRating": 3.5,
     "rankPosition": 165
   },
   {
@@ -7043,7 +7043,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "即日入金可能",
@@ -7068,7 +7068,7 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 4,
+    "overallRating": 3.5,
     "rankPosition": 166
   },
   {
@@ -7086,7 +7086,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "即日入金可能",
@@ -7111,7 +7111,7 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 4,
+    "overallRating": 3.5,
     "rankPosition": 167
   },
   {
@@ -7129,7 +7129,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "即日入金可能",
@@ -7154,7 +7154,7 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 4,
+    "overallRating": 3.5,
     "rankPosition": 168
   },
   {
@@ -7171,7 +7171,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "売掛金買取",
@@ -7196,7 +7196,7 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 4,
+    "overallRating": 3.5,
     "rankPosition": 169
   },
   {
@@ -7214,7 +7214,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "即日入金可能",
@@ -7239,7 +7239,7 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 4,
+    "overallRating": 3.5,
     "rankPosition": 170
   },
   {
@@ -7256,7 +7256,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "即日入金可能",
@@ -7281,7 +7281,7 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 4,
+    "overallRating": 3.5,
     "rankPosition": 171
   },
   {
@@ -7298,7 +7298,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "財務再生支援",
@@ -7323,7 +7323,7 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 4,
+    "overallRating": 3.5,
     "rankPosition": 172
   },
   {
@@ -7341,7 +7341,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "財務コンサル",
@@ -7366,7 +7366,7 @@ const companiesData: Company[] = [
       "IT・Web",
       "サービス業"
     ],
-    "overallRating": 4,
+    "overallRating": 3.5,
     "rankPosition": 173
   },
   {
@@ -7384,7 +7384,7 @@ const companiesData: Company[] = [
     "maxAmount": 10000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "最短30分入金",
@@ -7426,7 +7426,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "最短2時間入金",
@@ -7470,7 +7470,7 @@ const companiesData: Company[] = [
     "maxAmount": 10000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "EC事業者特化",
@@ -7509,7 +7509,7 @@ const companiesData: Company[] = [
     "maxAmount": 100000000,
     "speedDays": 2,
     "onlineComplete": false,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "最大1億円対応",
@@ -7552,7 +7552,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 2,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "手数料1%〜",
@@ -7595,7 +7595,7 @@ const companiesData: Company[] = [
     "maxAmount": 300000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "累計5万件超の実績",
@@ -7638,7 +7638,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "即日入金可能",
@@ -7681,7 +7681,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "最短2時間送金",
@@ -7724,7 +7724,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "24時間365日対応",
@@ -7767,7 +7767,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "即日入金可能",
@@ -7810,7 +7810,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "最短30分入金",
@@ -7853,7 +7853,7 @@ const companiesData: Company[] = [
     "maxAmount": 30000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "中小企業向け",
@@ -7896,7 +7896,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "即日入金可能",
@@ -7939,7 +7939,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "即日入金可能",
@@ -7982,7 +7982,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 5,
     "onlineComplete": false,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "日本通運グループ",
@@ -8025,7 +8025,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 5,
     "onlineComplete": false,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "大手金融グループ",
@@ -8068,7 +8068,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "最短即日入金",
@@ -8111,7 +8111,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "コンサルティング付き",
@@ -8154,7 +8154,7 @@ const companiesData: Company[] = [
     "maxAmount": 100000000,
     "speedDays": 2,
     "onlineComplete": false,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "創業20年以上",
@@ -8197,7 +8197,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "即日入金可能",
@@ -8239,7 +8239,7 @@ const companiesData: Company[] = [
     "maxAmount": 30000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "個人事業主特化",
@@ -8282,7 +8282,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "北海道に強い",
@@ -8325,7 +8325,7 @@ const companiesData: Company[] = [
     "maxAmount": 300000000,
     "speedDays": 2,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "注文書ファクタリング専門",
@@ -8368,7 +8368,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "AI審査",
@@ -8411,7 +8411,7 @@ const companiesData: Company[] = [
     "maxAmount": 300000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "最大3億円対応",
@@ -8454,7 +8454,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 2,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "AI審査",
@@ -8497,7 +8497,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "創業20年の実績",
@@ -8540,7 +8540,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "最短即日入金",
@@ -8582,7 +8582,7 @@ const companiesData: Company[] = [
     "maxAmount": 300000000,
     "speedDays": 3,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "一般社団法人運営",
@@ -8625,7 +8625,7 @@ const companiesData: Company[] = [
     "maxAmount": 100000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "福岡・東京2拠点",
@@ -8668,7 +8668,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "建設業界専門",
@@ -8711,7 +8711,7 @@ const companiesData: Company[] = [
     "maxAmount": 5000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "個人事業主向け",
@@ -8754,7 +8754,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 5,
     "onlineComplete": false,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "NTTグループ運営",
@@ -8797,7 +8797,7 @@ const companiesData: Company[] = [
     "maxAmount": 10000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "最短60分入金",
@@ -8840,7 +8840,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "最短30分入金",
@@ -8882,7 +8882,7 @@ const companiesData: Company[] = [
     "maxAmount": 30000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "柔軟な審査",
@@ -8925,7 +8925,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "オンライン完結",
@@ -8968,7 +8968,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "最短10分入金",
@@ -9011,7 +9011,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "オンライン完結",
@@ -9054,7 +9054,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "即日入金対応",
@@ -9097,7 +9097,7 @@ const companiesData: Company[] = [
     "maxAmount": 5000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "小口専門500万円以下",
@@ -9140,7 +9140,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "即日入金可能",
@@ -9183,7 +9183,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 3,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "医療機関向け",
@@ -9226,7 +9226,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "AI審査",
@@ -9269,7 +9269,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "オンライン完結",
@@ -9312,7 +9312,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "即日入金可能",
@@ -9355,7 +9355,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "比較サービス",
@@ -9398,7 +9398,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "最短即日",
@@ -9441,7 +9441,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "即日入金可能",
@@ -9484,7 +9484,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 3,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "医療業界特化",
@@ -9527,7 +9527,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "オンライン対応",
@@ -9569,7 +9569,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "即日入金可能",
@@ -9612,7 +9612,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "即日入金可能",
@@ -9655,7 +9655,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "即日入金可能",
@@ -9698,7 +9698,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "即日入金可能",
@@ -9740,7 +9740,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "即日入金可能",
@@ -9783,7 +9783,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "九州拠点",
@@ -9826,7 +9826,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "地域密着",
@@ -9868,7 +9868,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "即日入金可能",
@@ -9911,7 +9911,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "即日入金可能",
@@ -9953,7 +9953,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "即日入金可能",
@@ -9996,7 +9996,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 5,
     "onlineComplete": false,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "NTTグループ",
@@ -10039,7 +10039,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "即日入金可能",
@@ -10082,7 +10082,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "即日入金可能",
@@ -10125,7 +10125,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "即日入金可能",
@@ -10168,7 +10168,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "即日入金可能",
@@ -10211,7 +10211,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 3,
     "onlineComplete": false,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "リース対応",
@@ -10254,7 +10254,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "即日入金",
@@ -10297,7 +10297,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "即日入金可能",
@@ -10340,7 +10340,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "即日入金可能",
@@ -10383,7 +10383,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "オンライン完結",
@@ -10426,7 +10426,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 5,
     "onlineComplete": false,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "三井住友グループ",
@@ -10469,7 +10469,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "即日入金特化",
@@ -10512,7 +10512,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "迅速な審査",
@@ -10555,7 +10555,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "経営コンサル",
@@ -10598,7 +10598,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 3,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "リース対応",
@@ -10641,7 +10641,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "東京拠点",
@@ -10684,7 +10684,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 3,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "電子記録債権",
@@ -10726,7 +10726,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "即日入金可能",
@@ -10769,7 +10769,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "即日入金可能",
@@ -10812,7 +10812,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "即日入金可能",
@@ -10855,7 +10855,7 @@ const companiesData: Company[] = [
     "maxAmount": 50000000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "低手数料",
@@ -10898,7 +10898,7 @@ const companiesData: Company[] = [
     "maxAmount": 1500000,
     "speedDays": 1,
     "onlineComplete": true,
-    "soleProprietorOk": false,
+    "soleProprietorOk": true,
     "weekendPayment": false,
     "features": [
       "低手数料",
