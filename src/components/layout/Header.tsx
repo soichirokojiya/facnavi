@@ -1,76 +1,154 @@
 "use client";
 
 import Link from "next/link";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { NAV_ITEMS } from "@/lib/constants";
 import { Logo } from "./Logo";
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+  // メニューオープン時にbodyスクロールを無効化
+  useEffect(() => {
+    if (isMenuOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [isMenuOpen]);
+
   return (
-    <header className="sticky top-0 z-50 bg-white border-b border-gray-200 shadow-sm">
-      <div className="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
-        <Link href="/" aria-label="ファクナビ トップページ">
-          <Logo size="md" />
-        </Link>
+    <>
+      <header className="sticky top-0 z-50 bg-white border-b border-gray-200 shadow-sm">
+        <div className="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
+          <Link href="/" aria-label="ファクナビ トップページ">
+            <Logo size="md" />
+          </Link>
 
-        <nav className="hidden md:flex items-center gap-6">
-          {NAV_ITEMS.map((item) => (
-            <Link
-              key={item.href}
-              href={item.href}
-              className="text-gray-700 hover:text-primary font-medium transition-colors"
-            >
-              {item.label}
-            </Link>
-          ))}
-        </nav>
+          {/* ハンバーガーボタン（常時表示） */}
+          <button
+            className="relative w-10 h-10 flex items-center justify-center z-[60]"
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+            aria-label={isMenuOpen ? "メニューを閉じる" : "メニューを開く"}
+          >
+            <div className="w-7 flex flex-col gap-[7px]">
+              <span
+                className={`block h-[3px] bg-gray-800 rounded-full transition-all duration-300 ${
+                  isMenuOpen ? "rotate-45 translate-y-[10px]" : ""
+                }`}
+              />
+              <span
+                className={`block h-[3px] bg-gray-800 rounded-full transition-all duration-300 ${
+                  isMenuOpen ? "opacity-0 scale-x-0" : ""
+                }`}
+              />
+              <span
+                className={`block h-[3px] bg-gray-800 rounded-full transition-all duration-300 ${
+                  isMenuOpen ? "-rotate-45 -translate-y-[10px]" : ""
+                }`}
+              />
+            </div>
+          </button>
+        </div>
+      </header>
 
+      {/* フルスクリーンメニュー */}
+      <div
+        className={`fixed inset-0 z-[55] bg-white transition-opacity duration-300 ${
+          isMenuOpen
+            ? "opacity-100 pointer-events-auto"
+            : "opacity-0 pointer-events-none"
+        }`}
+      >
+        {/* 右上バツボタン */}
+        <div className="absolute top-0 left-0 right-0 h-16 max-w-6xl mx-auto px-4 flex items-center justify-end">
         <button
-          className="md:hidden p-2"
-          onClick={() => setIsMenuOpen(!isMenuOpen)}
-          aria-label="メニューを開く"
+          className="w-10 h-10 flex items-center justify-center z-[65]"
+          onClick={() => setIsMenuOpen(false)}
+          aria-label="メニューを閉じる"
         >
           <svg
-            className="w-6 h-6"
+            className={`w-8 h-8 text-gray-800 transition-transform duration-500 ease-out ${
+              isMenuOpen ? "rotate-0 scale-100" : "rotate-90 scale-0"
+            }`}
             fill="none"
             stroke="currentColor"
             viewBox="0 0 24 24"
+            strokeWidth={1.5}
           >
-            {isMenuOpen ? (
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M6 18L18 6M6 6l12 12"
-              />
-            ) : (
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M4 6h16M4 12h16M4 18h16"
-              />
-            )}
+            <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
           </svg>
         </button>
-      </div>
+        </div>
 
-      {isMenuOpen && (
-        <nav className="md:hidden border-t border-gray-200 bg-white">
-          {NAV_ITEMS.map((item) => (
+        <div
+          className={`flex flex-col items-center justify-center min-h-screen px-6 py-20 transition-all duration-500 ease-out ${
+            isMenuOpen ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-4"
+          }`}
+        >
+          {/* ロゴ（トップへ戻る） */}
+          <Link
+            href="/"
+            className="mb-10 hover:opacity-80 transition-opacity"
+            onClick={() => setIsMenuOpen(false)}
+          >
+            <Logo size="lg" />
+          </Link>
+
+          {/* 実績数字 */}
+          <div className="flex items-center gap-8 mb-12 text-center">
+            <div>
+              <p className="text-gray-800 font-bold text-base">
+                掲載社数<span className="text-3xl font-extrabold text-red-600 mx-1">254</span>社
+              </p>
+            </div>
+            <div>
+              <p className="text-gray-800 font-bold text-base">
+                口コミ数<span className="text-3xl font-extrabold text-red-600 mx-1">500</span>件
+              </p>
+            </div>
+          </div>
+
+          {/* ナビゲーションリンク */}
+          <nav className="flex flex-col items-center gap-8 mb-14">
             <Link
-              key={item.href}
-              href={item.href}
-              className="block px-4 py-3 text-gray-700 hover:bg-gray-50 hover:text-primary font-medium"
+              href="/"
+              className="text-xl font-bold text-gray-800 hover:text-primary transition-colors"
               onClick={() => setIsMenuOpen(false)}
             >
-              {item.label}
+              トップページ
             </Link>
-          ))}
-        </nav>
-      )}
-    </header>
+            {NAV_ITEMS.map((item) => (
+              <Link
+                key={item.href}
+                href={item.href}
+                className="text-xl font-bold text-gray-800 hover:text-primary transition-colors"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                {item.label}
+              </Link>
+            ))}
+          </nav>
+
+          {/* 一括見積もりCTA */}
+          <Link
+            href="/mitsumori"
+            className="flex items-center gap-3 bg-amber-500 hover:bg-amber-600 text-white font-bold text-lg rounded-xl px-8 py-4 shadow-lg transition-all duration-200 w-full max-w-xs justify-center"
+            onClick={() => setIsMenuOpen(false)}
+          >
+            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+            </svg>
+            <span>
+              最短即日入金<br />
+              <span className="text-sm">一括見積もり</span>
+            </span>
+          </Link>
+        </div>
+      </div>
+    </>
   );
 }

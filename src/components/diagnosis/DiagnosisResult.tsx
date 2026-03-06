@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { DiagnosisResult as Result } from "@/types/diagnosis";
 import { Card } from "@/components/ui/Card";
 import { Badge } from "@/components/ui/Badge";
@@ -93,10 +94,22 @@ export function DiagnosisResultView({ results, onReset }: DiagnosisResultProps) 
         ))}
       </div>
 
-      <div className="text-center mt-8">
+      <div className="text-center mt-8 space-y-4">
         <Button variant="outline" onClick={onReset}>
           もう一度診断する
         </Button>
+
+        <div className="mt-6 p-6 bg-gradient-to-br from-[#0b3d91] to-[#1a365d] rounded-2xl text-center">
+          <p className="text-xs font-bold text-orange-400 mb-2">2026年4月サービス開始予定</p>
+          <p className="text-white font-bold text-lg mb-2">もっと比較したい方へ</p>
+          <p className="text-blue-200 text-sm mb-4">複数社にまとめて見積もり依頼できる一括見積もりサービス</p>
+          <Link
+            href="/mitsumori"
+            className="inline-block px-6 py-3 bg-gradient-to-br from-emerald-500 to-emerald-700 text-white font-bold rounded-full shadow-lg shadow-emerald-500/40 hover:shadow-xl hover:-translate-y-0.5 transition-all duration-300 text-sm"
+          >
+            一括見積もりの詳細を見る
+          </Link>
+        </div>
       </div>
     </div>
   );

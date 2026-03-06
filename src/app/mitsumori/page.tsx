@@ -2,12 +2,12 @@ import type { Metadata } from "next";
 import { Breadcrumb } from "@/components/layout/Breadcrumb";
 import { BreadcrumbJsonLd } from "@/components/seo/JsonLd";
 import { SITE_URL } from "@/lib/constants";
-import { MitsumoriClient } from "./MitsumoriClient";
+import { MitsumoriLP } from "./MitsumoriLP";
 
 export const metadata: Metadata = {
-  title: "一括見積もり - 複数のファクタリング会社にまとめて問い合わせ",
+  title: "ファクタリング一括見積もり - 最適な業者を無料で比較",
   description:
-    "フォームに情報を入力するだけで、条件に合うファクタリング会社にまとめて見積もり依頼ができます。",
+    "たった30秒で複数のファクタリング会社に一括見積もり依頼。厳選された優良業者のみ掲載、完全無料で手数料を最安に抑えられます。",
   alternates: { canonical: `${SITE_URL}/mitsumori` },
   robots: { index: false, follow: false },
 };
@@ -22,17 +22,7 @@ export default function MitsumoriPage() {
         ]}
       />
       <Breadcrumb items={[{ label: "一括見積もり" }]} />
-
-      <div className="text-center mb-8">
-        <h1 className="text-3xl font-bold text-gray-900 mb-2">
-          ファクタリング一括見積もり
-        </h1>
-        <p className="text-gray-600">
-          簡単3ステップで複数のファクタリング会社にまとめて問い合わせ
-        </p>
-      </div>
-
-      <MitsumoriClient />
+      <MitsumoriLP />
     </div>
   );
 }

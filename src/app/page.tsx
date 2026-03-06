@@ -292,6 +292,30 @@ export default async function HomePage() {
         </div>
       </section>
 
+      {/* 一括見積もりCTA */}
+      <section className="py-14 bg-white">
+        <div className="max-w-4xl mx-auto px-4">
+          <Card className="p-8 md:p-10 bg-gradient-to-br from-[#0b3d91] to-[#1a365d] border-none text-center">
+            <p className="inline-block text-xs font-bold text-orange-400 border border-orange-400/40 rounded-full px-3 py-1 mb-4">
+              2026年4月サービス開始予定
+            </p>
+            <h2 className="text-2xl md:text-3xl font-bold text-white mb-3">
+              一括見積もりで最適な1社を見つける
+            </h2>
+            <p className="text-blue-200 mb-6 leading-relaxed">
+              複数のファクタリング会社にまとめて見積もり依頼。<br className="hidden sm:block" />
+              完全無料で手数料を最安に抑えられます。
+            </p>
+            <Link
+              href="/mitsumori"
+              className="inline-block px-8 py-4 bg-gradient-to-br from-emerald-500 to-emerald-700 text-white font-bold text-lg rounded-full shadow-lg shadow-emerald-500/40 hover:shadow-xl hover:-translate-y-0.5 transition-all duration-300"
+            >
+              一括見積もりの詳細を見る
+            </Link>
+          </Card>
+        </div>
+      </section>
+
       {/* Latest Reviews */}
       <section className="py-14 bg-white">
         <div className="max-w-4xl mx-auto px-4">
