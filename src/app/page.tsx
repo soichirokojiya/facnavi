@@ -83,21 +83,21 @@ export default async function HomePage() {
               </p>
 
               {/* 1. 統計カード3つ（アイコン付き） */}
-              <div className="grid grid-cols-3 gap-3 mb-7 max-w-sm mx-auto md:mx-0">
-                <div className="bg-white/80 backdrop-blur rounded-xl shadow-sm p-3 text-center">
-                  <svg className="w-5 h-5 mx-auto mb-1 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" /></svg>
-                  <div className="text-2xl md:text-3xl font-black text-blue-600 leading-none tracking-tighter">{companies.length}<span className="text-base">社</span></div>
-                  <div className="text-[10px] font-bold text-gray-500 mt-0.5">掲載社数</div>
+              <div className="flex items-stretch gap-4 mb-7 justify-center md:justify-start">
+                <div className="bg-white/80 backdrop-blur rounded-xl shadow-sm px-6 py-4 text-center">
+                  <svg className="w-6 h-6 mx-auto mb-1.5 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" /></svg>
+                  <div className="text-4xl md:text-5xl font-black text-blue-600 leading-none tracking-tighter">{companies.length}<span className="text-lg">社</span></div>
+                  <div className="text-xs font-bold text-gray-500 mt-1">掲載社数</div>
                 </div>
-                <div className="bg-white/80 backdrop-blur rounded-xl shadow-sm p-3 text-center">
-                  <svg className="w-5 h-5 mx-auto mb-1 text-emerald-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
-                  <div className="text-2xl md:text-3xl font-black text-emerald-500 leading-none">無料</div>
-                  <div className="text-[10px] font-bold text-gray-500 mt-0.5">利用料金</div>
+                <div className="bg-white/80 backdrop-blur rounded-xl shadow-sm px-6 py-4 text-center">
+                  <svg className="w-6 h-6 mx-auto mb-1.5 text-emerald-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                  <div className="text-4xl md:text-5xl font-black text-emerald-500 leading-none">無料</div>
+                  <div className="text-xs font-bold text-gray-500 mt-1">利用料金</div>
                 </div>
-                <div className="bg-white/80 backdrop-blur rounded-xl shadow-sm p-3 text-center">
-                  <svg className="w-5 h-5 mx-auto mb-1 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
-                  <div className="text-2xl md:text-3xl font-black text-orange-500 leading-none">即日</div>
-                  <div className="text-[10px] font-bold text-gray-500 mt-0.5">最短入金</div>
+                <div className="bg-white/80 backdrop-blur rounded-xl shadow-sm px-6 py-4 text-center">
+                  <svg className="w-6 h-6 mx-auto mb-1.5 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                  <div className="text-4xl md:text-5xl font-black text-orange-500 leading-none">即日</div>
+                  <div className="text-xs font-bold text-gray-500 mt-1">最短入金</div>
                 </div>
               </div>
               <p className="text-[10px] text-gray-400 -mt-5 mb-5 text-center md:text-left">※ <CurrentDate /> 現在</p>
