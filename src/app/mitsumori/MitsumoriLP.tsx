@@ -38,6 +38,7 @@ const BUSINESS_TYPES = [
 
 interface FormData {
   amount_range: string;
+  purchase_amount: string;
   deposit_timing: string;
   business_type: string;
   industry: string;
@@ -52,6 +53,7 @@ interface FormData {
 
 const initialForm: FormData = {
   amount_range: "",
+  purchase_amount: "",
   deposit_timing: "",
   business_type: "",
   industry: "",
@@ -217,6 +219,7 @@ export function MitsumoriLP() {
 
   const isStep1Valid =
     form.amount_range &&
+    form.purchase_amount &&
     form.deposit_timing &&
     form.business_type &&
     form.industry &&
@@ -242,6 +245,7 @@ export function MitsumoriLP() {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           amount_range: form.amount_range,
+          purchase_amount: form.purchase_amount,
           deposit_timing: form.deposit_timing,
           business_type: form.business_type,
           industry: form.industry,
@@ -519,10 +523,18 @@ export function MitsumoriLP() {
               {formStep === 1 ? (
                 <>
                   <SelectField
-                    label="請求書金額（買取希望金額）"
+                    label="請求書金額"
                     options={AMOUNT_OPTIONS}
                     value={form.amount_range}
                     onChange={(v) => updateField("amount_range", v)}
+                    placeholder="金額を選択してください"
+                    required
+                  />
+                  <SelectField
+                    label="買取希望金額"
+                    options={AMOUNT_OPTIONS}
+                    value={form.purchase_amount}
+                    onChange={(v) => updateField("purchase_amount", v)}
                     placeholder="金額を選択してください"
                     required
                   />
@@ -575,7 +587,7 @@ export function MitsumoriLP() {
                 <>
                   <div className="bg-blue-50 rounded-xl p-4 text-sm text-blue-800">
                     <p className="font-bold mb-1">入力条件</p>
-                    <p>{form.amount_range} / {form.deposit_timing} / {form.business_type} / {form.industry} / {form.prefecture}</p>
+                    <p>請求書: {form.amount_range} / 買取: {form.purchase_amount} / {form.deposit_timing} / {form.business_type} / {form.industry} / {form.prefecture}</p>
                     <button type="button" onClick={() => setFormStep(1)} className="text-blue-600 hover:underline font-bold text-xs mt-1">条件を変更する</button>
                   </div>
 
