@@ -4,8 +4,6 @@ import { Resend } from "resend";
 
 const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL!;
 const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!;
-const resend = new Resend(process.env.RESEND_API_KEY);
-const fromEmail = process.env.RESEND_FROM_EMAIL || "noreply@facnavi.info";
 
 export async function POST(request: NextRequest) {
   try {
@@ -82,6 +80,8 @@ export async function POST(request: NextRequest) {
 
     // 受付確認メール送信
     try {
+      const resend = new Resend(process.env.RESEND_API_KEY);
+      const fromEmail = process.env.RESEND_FROM_EMAIL || "noreply@facnavi.info";
       await resend.emails.send({
         from: `ファクナビ <${fromEmail}>`,
         to: email,
