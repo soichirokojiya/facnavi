@@ -1,6 +1,7 @@
 {
   "slug": "msfj",
-  "name": "MSFJ",
+  "name": "MSFJ株式会社",
+  "brandName": "MSFJ",
   "description": "",
   "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=4AX1OL+BN56NM+42NG+5Z6WX",
   "factoringType": "2社間・3社間",
@@ -12,7 +13,7 @@
   "maxAmount": 50000000,
   "speedDays": 2,
   "onlineComplete": true,
-  "soleProprietorOk": true,
+  "soleProprietorOk": false,
   "weekendPayment": false,
   "features": [
     "手数料1%〜",

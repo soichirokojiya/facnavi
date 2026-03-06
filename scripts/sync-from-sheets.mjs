@@ -9,24 +9,30 @@
  *   4. node scripts/sync-from-sheets.mjs を実行
  *
  * スプレッドシートの列構成 (1行目はヘッダー):
- *   A: slug           - 英数字のID (例: best-factor)
- *   B: name           - 会社名 (例: ベストファクター)
- *   C: description    - 説明文
- *   D: affiliateUrl   - アフィリエイトURL
- *   E: factoringType  - 2社間 / 3社間 / 2社間・3社間
- *   F: feeMin         - 手数料下限 (数値、例: 2)
- *   G: feeMax         - 手数料上限 (数値、例: 20)
- *   H: minAmount      - 最低買取額 (数値)
- *   I: maxAmount      - 最大買取額 (数値、0=制限なし)
- *   J: speedDays      - 最短入金日数 (数値)
- *   K: onlineComplete - オンライン完結 (TRUE/FALSE)
- *   L: features       - 特長 (カンマ区切り)
- *   M: pros           - メリット (カンマ区切り)
- *   N: cons           - デメリット (カンマ区切り)
- *   O: overallRating  - 総合評価 (数値)
- *   P: rankPosition   - ランキング順位 (数値)
- *   Q: establishedYear - 設立年 (数値)
- *   R: targetIndustries - 対象業種 (カンマ区切り)
+ *   A: slug              - 英数字のID (例: best-factor)
+ *   B: name              - 会社名 (例: ベストファクター)
+ *   C: brandName         - ブランド名 (例: ベストファクター)
+ *   D: description       - 説明文
+ *   E: affiliateUrl      - アフィリエイトURL
+ *   F: factoringType     - 2社間 / 3社間 / 2社間・3社間
+ *   G: feeMin            - 手数料下限 (数値、例: 2)
+ *   H: feeMax            - 手数料上限 (数値、例: 20)
+ *   I: minAmount         - 最低買取額 (数値)
+ *   J: maxAmount         - 最大買取額 (数値、0=制限なし)
+ *   K: speedDays         - 最短入金日数 (数値)
+ *   L: onlineComplete    - オンライン完結 (TRUE/FALSE)
+ *   M: soleProprietorOk  - 個人事業主対応 (TRUE/FALSE)
+ *   N: weekendPayment    - 土日入金対応 (TRUE/FALSE)
+ *   O: requiredDocuments - 必要書類 (カンマ区切り)
+ *   P: address           - 住所
+ *   Q: approvalRate      - 審査通過率 (数値、例: 93)
+ *   R: features          - 特長 (カンマ区切り)
+ *   S: pros              - メリット (カンマ区切り)
+ *   T: cons              - デメリット (カンマ区切り)
+ *   U: overallRating     - 総合評価 (数値)
+ *   V: rankPosition      - ランキング順位 (数値)
+ *   W: establishedYear   - 設立年 (数値)
+ *   X: targetIndustries  - 対象業種 (カンマ区切り)
  */
 
 import fs from "fs";
@@ -108,6 +114,7 @@ async function main() {
     const company = {
       slug,
       name: obj.name || slug,
+      brandName: obj.brandName || undefined,
       description: obj.description || "",
       affiliateUrl: obj.affiliateUrl || `https://px.a8.net/svt/ejp?a8mat=${slug.toUpperCase().replace(/-/g, "")}`,
       factoringType: obj.factoringType || "2社間・3社間",
@@ -121,6 +128,9 @@ async function main() {
       onlineComplete: obj.onlineComplete?.toUpperCase() !== "FALSE",
       soleProprietorOk: obj.soleProprietorOk?.toUpperCase() === "TRUE",
       weekendPayment: obj.weekendPayment?.toUpperCase() === "TRUE",
+      requiredDocuments: splitCSVField(obj.requiredDocuments) || undefined,
+      address: obj.address || undefined,
+      approvalRate: parseFloat(obj.approvalRate) || undefined,
       features: splitCSVField(obj.features) || ["即日入金可能", "オンライン対応", "個人事業主OK", "全国対応", "柔軟な審査"],
       pros: splitCSVField(obj.pros) || ["対応が迅速", "審査が柔軟", "全国対応"],
       cons: splitCSVField(obj.cons) || ["知名度がやや低い", "手数料は個別査定"],
@@ -167,15 +177,17 @@ function exportCurrentData() {
   companies.sort((a, b) => a.rankPosition - b.rankPosition);
 
   const headers = [
-    "slug", "name", "description", "affiliateUrl", "factoringType",
+    "slug", "name", "brandName", "description", "affiliateUrl", "factoringType",
     "feeMin", "feeMax", "minAmount", "maxAmount", "speedDays",
-    "onlineComplete", "features", "pros", "cons",
+    "onlineComplete", "soleProprietorOk", "weekendPayment",
+    "requiredDocuments", "address", "approvalRate", "features", "pros", "cons",
     "establishedYear", "targetIndustries"
   ];
 
   const rows = companies.map(c => [
     c.slug,
     c.name,
+    c.brandName || "",
     c.description,
     c.affiliateUrl,
     c.factoringType,
@@ -185,6 +197,11 @@ function exportCurrentData() {
     c.maxAmount || "",
     c.speedDays || "",
     c.onlineComplete ? "TRUE" : "FALSE",
+    c.soleProprietorOk ? "TRUE" : "FALSE",
+    c.weekendPayment ? "TRUE" : "FALSE",
+    (c.requiredDocuments || []).join("、"),
+    c.address || "",
+    c.approvalRate || "",
     (c.features || []).join("、"),
     (c.pros || []).join("、"),
     (c.cons || []).join("、"),
@@ -253,4 +270,8 @@ function splitCSVField(val) {
   return val.split(/[、,]/).map(s => s.trim()).filter(Boolean);
 }
 
-main().catch(console.error);
+if (process.argv.includes("--export")) {
+  exportCurrentData();
+} else {
+  main().catch(console.error);
+}

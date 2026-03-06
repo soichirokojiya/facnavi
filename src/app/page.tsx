@@ -59,58 +59,60 @@ export default async function HomePage() {
       <OrganizationJsonLd />
 
       {/* ━━━ Hero ━━━ */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-white via-blue-50/50 to-emerald-50/30">
+      <section className="relative overflow-hidden bg-gradient-to-br from-blue-50 via-white to-emerald-50/40">
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
-          <div className="absolute -top-32 -right-32 w-80 h-80 bg-blue-100/40 rounded-full blur-3xl" />
-          <div className="absolute bottom-0 -left-20 w-60 h-60 bg-emerald-100/30 rounded-full blur-3xl" />
+          <div className="absolute -top-40 -right-40 w-[500px] h-[500px] bg-blue-100/50 rounded-full blur-3xl" />
+          <div className="absolute bottom-0 -left-32 w-80 h-80 bg-emerald-100/40 rounded-full blur-3xl" />
         </div>
 
-        <div className="relative max-w-4xl mx-auto px-4 py-10 md:py-12">
-          <div className="flex flex-col md:flex-row items-center gap-6 md:gap-6">
+        <div className="relative max-w-4xl mx-auto px-4 py-12 md:py-16">
+          <div className="flex flex-col md:flex-row items-center gap-8 md:gap-8">
             {/* 左：テキスト */}
             <div className="flex-1 text-center md:text-left">
-              <p className="inline-block bg-blue-600 text-white font-bold px-4 py-1.5 rounded-full mb-4 text-xs shadow-sm">
+              <p className="inline-flex items-center gap-2 bg-gradient-to-r from-blue-600 to-blue-700 text-white font-black px-6 py-2.5 rounded-full mb-5 text-lg md:text-xl shadow-lg shadow-blue-500/25">
+                <span className="text-yellow-300 text-xl md:text-2xl">★</span>
                 日本最大級 — {companies.length}社掲載
               </p>
 
-              <h1 className="text-3xl md:text-4xl font-extrabold mb-3 leading-tight text-gray-900 tracking-tight">
-                口コミと比較で選ぶ
-                <br />
-                <span className="text-blue-600">本当に良いファクタリング会社</span>
+              <h1 className="text-3xl md:text-[2.5rem] font-black mb-1.5 leading-[1.3] text-gray-900 tracking-tight">
+                口コミ・評判と比較で選ぶ
               </h1>
+              <p className="text-3xl md:text-[2.5rem] font-black mb-6 leading-[1.3] tracking-tight">
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-blue-500">おすすめファクタリング会社</span>
+              </p>
 
-              <div className="flex items-center gap-5 justify-center md:justify-start mb-5">
+              <div className="flex items-end gap-6 justify-center md:justify-start mb-7">
                 <div className="text-center">
-                  <div className="text-3xl font-extrabold text-blue-600">{companies.length}</div>
-                  <div className="text-[10px] text-gray-500">掲載社数</div>
+                  <div className="text-5xl md:text-6xl font-black text-blue-600 leading-none tracking-tighter">{companies.length}</div>
+                  <div className="text-xs font-bold text-gray-500 mt-1">掲載社数</div>
                 </div>
-                <div className="w-px h-8 bg-gray-200" />
+                <div className="w-px h-12 bg-gray-200" />
                 <div className="text-center">
-                  <div className="text-3xl font-extrabold text-blue-600">{reviews.length.toLocaleString()}</div>
-                  <div className="text-[10px] text-gray-500">口コミ件数</div>
+                  <div className="text-5xl md:text-6xl font-black text-blue-600 leading-none tracking-tighter">{reviews.length.toLocaleString()}</div>
+                  <div className="text-xs font-bold text-gray-500 mt-1">口コミ件数</div>
                 </div>
-                <div className="w-px h-8 bg-gray-200" />
+                <div className="w-px h-12 bg-gray-200" />
                 <div className="text-center">
-                  <div className="text-3xl font-extrabold text-emerald-600">無料</div>
-                  <div className="text-[10px] text-gray-500">利用料金</div>
+                  <div className="text-5xl md:text-6xl font-black text-emerald-500 leading-none">無料</div>
+                  <div className="text-xs font-bold text-gray-500 mt-1">利用料金</div>
                 </div>
               </div>
 
               <div className="flex flex-col sm:flex-row gap-3 justify-center md:justify-start">
                 <Link
                   href="/shindan"
-                  className="shimmer inline-flex items-center justify-center gap-2 px-7 py-3.5 bg-gradient-to-br from-emerald-500 to-emerald-600 text-white font-bold text-sm rounded-full shadow-lg shadow-emerald-500/25 hover:shadow-xl hover:-translate-y-0.5 transition-all duration-300"
+                  className="shimmer inline-flex items-center justify-center gap-2 px-8 py-4 bg-gradient-to-br from-emerald-500 to-emerald-600 text-white font-bold text-base rounded-full shadow-lg shadow-emerald-500/30 hover:shadow-xl hover:-translate-y-0.5 transition-all duration-300"
                 >
                   無料で診断する →
                 </Link>
                 <Link
                   href="/ranking"
-                  className="inline-flex items-center justify-center gap-2 px-7 py-3.5 bg-white text-gray-700 font-bold text-sm rounded-full border border-gray-200 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-300"
+                  className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white text-gray-700 font-bold text-base rounded-full border-2 border-gray-200 shadow-sm hover:shadow-md hover:border-gray-300 hover:-translate-y-0.5 transition-all duration-300"
                 >
                   ランキングを見る
                 </Link>
               </div>
-              <p className="text-[10px] text-gray-400 mt-2 text-center md:text-left">※ <CurrentDate /> 現在</p>
+              <p className="text-[10px] text-gray-400 mt-3 text-center md:text-left">※ <CurrentDate /> 現在</p>
             </div>
 
             {/* 右：広告バナー */}
@@ -121,7 +123,7 @@ export default async function HomePage() {
           </div>
 
           {/* 検索バー */}
-          <div className="mt-6">
+          <div className="mt-8">
             <KeywordSearch companies={searchData} />
           </div>
         </div>

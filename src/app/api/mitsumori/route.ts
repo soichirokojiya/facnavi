@@ -225,6 +225,75 @@ export async function POST(request: NextRequest) {
       console.error("Failed to send admin notification:", adminEmailError);
     }
 
+    // リード自動割り当て
+    try {
+      const { data: partners } = await supabase
+        .from("partner_companies")
+        .select("id, supported_prefectures, min_amount, max_amount, supported_industries, sole_proprietor_ok")
+        .eq("is_active", true);
+
+      if (partners && partners.length > 0) {
+        // 金額帯→数値変換
+        const amountRangeMap: Record<string, { min: number; max: number }> = {
+          "100万円以下": { min: 0, max: 1000000 },
+          "100万円〜500万円": { min: 1000000, max: 5000000 },
+          "500万円〜1,000万円": { min: 5000000, max: 10000000 },
+          "1,000万円〜3,000万円": { min: 10000000, max: 30000000 },
+          "3,000万円以上": { min: 30000000, max: 999999999 },
+        };
+
+        const requestAmount = amountRangeMap[amount_range];
+        const isSoleProprietor = business_type === "個人事業主・フリーランス";
+
+        const matchedPartners = partners.filter((p) => {
+          // 都道府県チェック
+          if (
+            p.supported_prefectures &&
+            p.supported_prefectures.length > 0 &&
+            !p.supported_prefectures.includes(prefecture)
+          ) {
+            return false;
+          }
+
+          // 金額チェック
+          if (requestAmount) {
+            if (requestAmount.max < p.min_amount || requestAmount.min > p.max_amount) {
+              return false;
+            }
+          }
+
+          // 業種チェック
+          if (
+            p.supported_industries &&
+            p.supported_industries.length > 0 &&
+            !p.supported_industries.includes(industry)
+          ) {
+            return false;
+          }
+
+          // 個人事業主チェック
+          if (isSoleProprietor && !p.sole_proprietor_ok) {
+            return false;
+          }
+
+          return true;
+        });
+
+        if (matchedPartners.length > 0) {
+          const assignments = matchedPartners.map((p) => ({
+            mitsumori_request_id: insertData.id,
+            partner_company_id: p.id,
+            status: "active",
+          }));
+
+          await supabase.from("lead_assignments").insert(assignments);
+        }
+      }
+    } catch (assignError) {
+      console.error("Lead assignment error:", assignError);
+      // 割り当てエラーは申し込み自体は成功とする
+    }
+
     return NextResponse.json({ success: true });
   } catch (e) {
     console.error("Mitsumori API error:", e);

@@ -1,25 +1,26 @@
 {
-  "slug": "quartett",
-  "name": "QuQuMo（ククモ）",
+  "slug": "cashnow",
+  "name": "Common Future & Co.株式会社",
+  "brandName": "CASH NOW",
   "description": "",
-  "affiliateUrl": "https://ququmo.net/",
+  "affiliateUrl": "https://cashnow.co.jp",
   "factoringType": "2社間",
   "feeRange": {
-    "min": 1,
-    "max": 14.8
+    "min": 9.5,
+    "max": 9.5
   },
   "minAmount": 300000,
-  "maxAmount": 50000000,
+  "maxAmount": 1500000,
   "speedDays": 1,
   "onlineComplete": true,
-  "soleProprietorOk": true,
+  "soleProprietorOk": false,
   "weekendPayment": false,
   "features": [
-    "最短2時間入金",
-    "オンライン完結",
-    "必要書類が少ない",
+    "低手数料",
+    "即日入金",
+    "オンライン対応",
     "個人事業主OK",
-    "法人専用プランあり"
+    "全国対応"
   ],
   "pros": [
     "対応が迅速",
@@ -37,6 +38,6 @@
     "IT・Web",
     "サービス業"
   ],
-  "overallRating": 4,
-  "rankPosition": 39
+  "overallRating": 3.5,
+  "rankPosition": 999
 }

@@ -12,6 +12,8 @@
   "maxAmount": 50000000,
   "speedDays": 1,
   "onlineComplete": true,
+  "soleProprietorOk": false,
+  "weekendPayment": false,
   "features": [
     "最短2時間入金",
     "10万円から対応",
@@ -26,12 +28,16 @@
   ],
   "cons": [
     "手数料の詳細は要見積もり",
-    "初回は5,000万円まで"
+    "初回は5",
+    "000万円まで"
   ],
-  "establishedYear": null,
-  "targetIndustries": [],
+  "targetIndustries": [
+    "建設業",
+    "運送業",
+    "製造業",
+    "IT・Web",
+    "サービス業"
+  ],
   "overallRating": 3.5,
-  "rankPosition": 175,
-  "soleProprietorOk": true,
-  "weekendPayment": false
+  "rankPosition": 175
 }

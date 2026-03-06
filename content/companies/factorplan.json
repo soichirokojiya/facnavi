@@ -1,6 +1,7 @@
 {
   "slug": "factorplan",
-  "name": "ファクタープラン",
+  "name": "株式会社ワイズコーポレーション",
+  "brandName": "ファクタープラン",
   "description": "",
   "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=4AX5KD+A079RM+5RC6+5YJRM",
   "factoringType": "2社間",
@@ -12,7 +13,7 @@
   "maxAmount": 50000000,
   "speedDays": 1,
   "onlineComplete": true,
-  "soleProprietorOk": true,
+  "soleProprietorOk": false,
   "weekendPayment": false,
   "features": [
     "最短4時間で資金化",

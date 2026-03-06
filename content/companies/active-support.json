@@ -1,6 +1,7 @@
 {
   "slug": "active-support",
-  "name": "アクティブサポート",
+  "name": "株式会社アクティブサポート",
+  "brandName": "アクティブサポート",
   "description": "",
   "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=4AX5KD+9R9ROY+4JGG+60OXD",
   "factoringType": "2社間・3社間",
@@ -12,7 +13,7 @@
   "maxAmount": 50000000,
   "speedDays": 1,
   "onlineComplete": true,
-  "soleProprietorOk": true,
+  "soleProprietorOk": false,
   "weekendPayment": false,
   "features": [
     "即日入金可能",

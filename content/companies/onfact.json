@@ -1,6 +1,7 @@
 {
   "slug": "onfact",
-  "name": "onfact",
+  "name": "株式会社onfact",
+  "brandName": "onfact",
   "description": "",
   "affiliateUrl": "https://onfact.jp/",
   "factoringType": "2社間・3社間",
@@ -12,7 +13,7 @@
   "maxAmount": 50000000,
   "speedDays": 1,
   "onlineComplete": true,
-  "soleProprietorOk": true,
+  "soleProprietorOk": false,
   "weekendPayment": false,
   "features": [
     "オンライン完結",

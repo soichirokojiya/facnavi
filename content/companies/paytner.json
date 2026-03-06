@@ -1,6 +1,7 @@
 {
   "slug": "paytner",
-  "name": "ペイトナー",
+  "name": "ペイトナー株式会社",
+  "brandName": "ペイトナーファクタリング",
   "description": "",
   "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=4AX0WK+EMWN5E+4PF6+644DT",
   "factoringType": "2社間",
@@ -12,8 +13,8 @@
   "maxAmount": 1000000,
   "speedDays": 1,
   "onlineComplete": true,
-  "soleProprietorOk": true,
-  "weekendPayment": true,
+  "soleProprietorOk": false,
+  "weekendPayment": false,
   "features": [
     "最短10分入金",
     "手数料一律10%",

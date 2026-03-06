@@ -1,6 +1,7 @@
 {
   "slug": "no1",
-  "name": "No.1ファクタリング",
+  "name": "株式会社No.1",
+  "brandName": "No.1ファクタリング",
   "description": "",
   "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=4AX5KD+A5K67M+4EKW+5ZEMP",
   "factoringType": "2社間・3社間",
@@ -12,7 +13,7 @@
   "maxAmount": 50000000,
   "speedDays": 1,
   "onlineComplete": false,
-  "soleProprietorOk": true,
+  "soleProprietorOk": false,
   "weekendPayment": false,
   "features": [
     "建設業特化",

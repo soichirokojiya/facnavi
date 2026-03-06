@@ -1,6 +1,7 @@
 {
   "slug": "urikakedo",
-  "name": "うりかけ堂",
+  "name": "株式会社hs1",
+  "brandName": "うりかけ堂",
   "description": "",
   "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=4AX1OL+BOXHGY+4S8A+5YJRM",
   "factoringType": "2社間・3社間",
@@ -12,7 +13,7 @@
   "maxAmount": 50000000,
   "speedDays": 1,
   "onlineComplete": true,
-  "soleProprietorOk": true,
+  "soleProprietorOk": false,
   "weekendPayment": false,
   "features": [
     "最短2時間入金",

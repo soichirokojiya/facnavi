@@ -1,6 +1,7 @@
 {
   "slug": "jigyou-agent",
-  "name": "事業資金エージェント",
+  "name": "ANNEX株式会社",
+  "brandName": "事業資金エージェント",
   "description": "",
   "affiliateUrl": "https://shikin-agent.com/",
   "factoringType": "2社間・3社間",
@@ -12,7 +13,7 @@
   "maxAmount": 200000000,
   "speedDays": 1,
   "onlineComplete": true,
-  "soleProprietorOk": true,
+  "soleProprietorOk": false,
   "weekendPayment": false,
   "features": [
     "最短2時間入金",

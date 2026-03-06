@@ -1,6 +1,7 @@
 {
   "slug": "fast-factoring",
-  "name": "ファストファクタリング",
+  "name": "株式会社ミラージュ",
+  "brandName": "ファストファクタリング",
   "description": "",
   "affiliateUrl": "https://fast-factoring.jp/",
   "factoringType": "2社間・3社間",
@@ -12,7 +13,7 @@
   "maxAmount": 50000000,
   "speedDays": 1,
   "onlineComplete": true,
-  "soleProprietorOk": true,
+  "soleProprietorOk": false,
   "weekendPayment": false,
   "features": [
     "最短即日",

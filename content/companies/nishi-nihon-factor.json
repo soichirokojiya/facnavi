@@ -1,6 +1,7 @@
 {
   "slug": "nishi-nihon-factor",
-  "name": "西日本ファクター",
+  "name": "株式会社西日本ファクター",
+  "brandName": "西日本ファクター",
   "description": "",
   "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=4AX1ON+BMJR1U+3XT0+5YJRM",
   "factoringType": "2社間・3社間",
@@ -12,7 +13,7 @@
   "maxAmount": 30000000,
   "speedDays": 1,
   "onlineComplete": false,
-  "soleProprietorOk": true,
+  "soleProprietorOk": false,
   "weekendPayment": false,
   "features": [
     "中国・九州エリア特化",

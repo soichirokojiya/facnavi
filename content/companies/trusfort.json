@@ -12,7 +12,7 @@
   "maxAmount": 30000000,
   "speedDays": 1,
   "onlineComplete": true,
-  "soleProprietorOk": true,
+  "soleProprietorOk": false,
   "weekendPayment": false,
   "features": [
     "個人事業主特化",

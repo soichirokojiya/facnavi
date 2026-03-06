@@ -1,6 +1,7 @@
 {
   "slug": "freenance",
-  "name": "フリーナンス",
+  "name": "GMOクリエイターズネットワーク株式会社",
+  "brandName": "フリーナンス",
   "description": "",
   "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=4AX0WK+FEW0KY+47L8+5ZU29",
   "factoringType": "2社間",
@@ -12,7 +13,7 @@
   "maxAmount": 10000000,
   "speedDays": 1,
   "onlineComplete": true,
-  "soleProprietorOk": true,
+  "soleProprietorOk": false,
   "weekendPayment": false,
   "features": [
     "GMOグループ運営",

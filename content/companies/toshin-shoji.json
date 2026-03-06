@@ -1,6 +1,7 @@
 {
   "slug": "toshin-shoji",
-  "name": "東信商事",
+  "name": "東信商事株式会社",
+  "brandName": "東信商事",
   "description": "",
   "affiliateUrl": "https://toshin-shoji.co.jp/",
   "factoringType": "2社間・3社間",
@@ -12,7 +13,7 @@
   "maxAmount": 50000000,
   "speedDays": 1,
   "onlineComplete": true,
-  "soleProprietorOk": true,
+  "soleProprietorOk": false,
   "weekendPayment": false,
   "features": [
     "即日入金可能",

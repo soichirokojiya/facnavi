@@ -1,6 +1,7 @@
 {
   "slug": "japan-management",
-  "name": "ジャパンマネジメント",
+  "name": "株式会社ラインオフィスサービス",
+  "brandName": "ジャパンマネジメント",
   "description": "",
   "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=4AX1ON+BN56NM+3V6A+5YJRM",
   "factoringType": "2社間・3社間",
@@ -13,7 +14,7 @@
   "speedDays": 1,
   "onlineComplete": false,
   "soleProprietorOk": false,
-  "weekendPayment": true,
+  "weekendPayment": false,
   "features": [
     "東京・福岡2拠点",
     "24時間相談対応",

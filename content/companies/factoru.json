@@ -1,6 +1,7 @@
 {
   "slug": "factoru",
-  "name": "FACTOR⁺U（ファクトル）",
+  "name": "一般社団法人日本中小企業金融サポート機構",
+  "brandName": "FACTOR⁺U",
   "description": "",
   "affiliateUrl": "https://chushokigyo-support.or.jp/factoru/",
   "factoringType": "2社間",
@@ -12,7 +13,7 @@
   "maxAmount": 50000000,
   "speedDays": 1,
   "onlineComplete": true,
-  "soleProprietorOk": true,
+  "soleProprietorOk": false,
   "weekendPayment": false,
   "features": [
     "AI審査",

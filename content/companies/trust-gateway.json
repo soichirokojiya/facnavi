@@ -1,6 +1,7 @@
 {
   "slug": "trust-gateway",
-  "name": "トラストゲートウェイ",
+  "name": "株式会社トラストゲートウェイ",
+  "brandName": "トラストゲートウェイ",
   "description": "",
   "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=4AX5KD+A0SPDE+3RD2+5YJRM",
   "factoringType": "2社間・3社間",
@@ -12,7 +13,7 @@
   "maxAmount": 30000000,
   "speedDays": 1,
   "onlineComplete": true,
-  "soleProprietorOk": true,
+  "soleProprietorOk": false,
   "weekendPayment": false,
   "features": [
     "審査通過率95%以上",

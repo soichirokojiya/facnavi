@@ -1,6 +1,7 @@
 {
   "slug": "jps-factoring",
-  "name": "JPS",
+  "name": "株式会社JPS",
+  "brandName": "JPS",
   "description": "",
   "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=4AX1ON+BKRG8I+5RPI+60H7L",
   "factoringType": "2社間・3社間",
@@ -12,7 +13,7 @@
   "maxAmount": 50000000,
   "speedDays": 2,
   "onlineComplete": false,
-  "soleProprietorOk": true,
+  "soleProprietorOk": false,
   "weekendPayment": false,
   "features": [
     "法人向け",

@@ -1,6 +1,7 @@
 {
   "slug": "jtc",
-  "name": "JTC",
+  "name": "株式会社JTC",
+  "brandName": "JTC",
   "description": "",
   "affiliateUrl": "https://j-t-c.info/",
   "factoringType": "2社間・3社間",
@@ -12,7 +13,7 @@
   "maxAmount": 100000000,
   "speedDays": 1,
   "onlineComplete": false,
-  "soleProprietorOk": true,
+  "soleProprietorOk": false,
   "weekendPayment": false,
   "features": [
     "入金前払いシステム",

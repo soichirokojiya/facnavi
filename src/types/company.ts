@@ -3,6 +3,7 @@ export type FactoringType = "2社間" | "3社間" | "2社間・3社間";
 export interface Company {
   slug: string;
   name: string;
+  brandName?: string;
   description: string;
   affiliateUrl: string;
   factoringType: FactoringType;
@@ -13,6 +14,9 @@ export interface Company {
   onlineComplete: boolean;
   soleProprietorOk: boolean;
   weekendPayment: boolean;
+  requiredDocuments?: string[];
+  address?: string;
+  approvalRate?: number;
   features: string[];
   pros: string[];
   cons: string[];

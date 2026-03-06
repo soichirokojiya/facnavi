@@ -1,6 +1,7 @@
 {
   "slug": "dokenkun",
-  "name": "土建くん",
+  "name": "株式会社ワイズコーポレーション",
+  "brandName": "土建くん",
   "description": "",
   "affiliateUrl": "https://dokenkun.jp/",
   "factoringType": "2社間・3社間",
@@ -12,7 +13,7 @@
   "maxAmount": 50000000,
   "speedDays": 1,
   "onlineComplete": true,
-  "soleProprietorOk": true,
+  "soleProprietorOk": false,
   "weekendPayment": false,
   "features": [
     "建設業特化",

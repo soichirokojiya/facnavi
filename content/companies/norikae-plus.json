@@ -1,6 +1,7 @@
 {
   "slug": "norikae-plus",
-  "name": "のりかえPLUS",
+  "name": "GoodPlus株式会社",
+  "brandName": "のりかえPLUS",
   "description": "",
   "affiliateUrl": "https://norikae-plus.jp/",
   "factoringType": "2社間",
@@ -12,8 +13,8 @@
   "maxAmount": 50000000,
   "speedDays": 1,
   "onlineComplete": true,
-  "soleProprietorOk": true,
-  "weekendPayment": true,
+  "soleProprietorOk": false,
+  "weekendPayment": false,
   "features": [
     "乗り換え専門",
     "手数料引き下げ保証",
