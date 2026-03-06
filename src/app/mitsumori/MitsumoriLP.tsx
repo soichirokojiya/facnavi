@@ -497,7 +497,7 @@ export function MitsumoriLP() {
             {/* フォームヘッダー */}
             <div className="bg-gradient-to-r from-[#0b3d91] to-[#1a365d] text-white text-center py-4 px-4">
               <p className="font-bold text-lg">最短30秒で入力完了</p>
-              <p className="text-blue-200 text-sm">完全無料・営業電話なし</p>
+              <p className="text-blue-200 text-sm">完全無料</p>
             </div>
 
             <div className="p-6 md:p-8 space-y-5">
@@ -623,8 +623,7 @@ export function MitsumoriLP() {
               </button>
 
               <p className="text-xs text-gray-400 text-center leading-relaxed">
-                ※ ご入力いただいた情報は見積もり目的にのみ使用いたします<br />
-                ※ 営業電話が複数かかってくることはありません
+                ※ ご入力いただいた情報は見積もり目的にのみ使用いたします
               </p>
             </div>
           </div>
