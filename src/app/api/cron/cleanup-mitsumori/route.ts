@@ -59,21 +59,9 @@ export async function GET(request: NextRequest) {
     }
   }
 
-  // Delete DB records
-  const ids = oldRequests.map((r) => r.id);
-  const { error: deleteError } = await supabase
-    .from("mitsumori_requests")
-    .delete()
-    .in("id", ids);
-
-  if (deleteError) {
-    console.error("Failed to delete old requests:", deleteError);
-    return NextResponse.json({ error: "Delete failed" }, { status: 500 });
-  }
-
-  console.log(`Cleanup: deleted ${ids.length} requests, ${storageDeletedCount} files`);
+  console.log(`Cleanup: ${oldRequests.length} requests processed, ${storageDeletedCount} files deleted`);
   return NextResponse.json({
-    deleted: ids.length,
+    requestsProcessed: oldRequests.length,
     filesDeleted: storageDeletedCount,
   });
 }
