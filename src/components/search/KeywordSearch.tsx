@@ -43,7 +43,7 @@ export function KeywordSearch({ companies }: KeywordSearchProps) {
   }, []);
 
   return (
-    <div ref={ref} className="relative w-full max-w-lg mx-auto">
+    <div ref={ref} className="relative w-full max-w-lg">
       <div className="relative">
         <svg
           className="absolute left-3.5 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400"

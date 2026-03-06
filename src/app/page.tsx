@@ -15,6 +15,7 @@ import { FAQ_DATA } from "@/lib/faq";
 import { CurrentDate } from "@/components/ui/CurrentDate";
 import { FixedCTA } from "@/components/layout/FixedCTA";
 import { RotationBanner } from "@/components/ads/RotationBanner";
+import { MitsumoriHeroBanner } from "@/components/banners/MitsumoriHeroBanner";
 
 /* セクション見出し */
 function SectionHeading({
@@ -65,43 +66,27 @@ export default async function HomePage() {
           <div className="absolute bottom-0 -left-32 w-80 h-80 bg-emerald-100/40 rounded-full blur-3xl" />
         </div>
 
-        <div className="relative max-w-4xl mx-auto px-4 py-12 md:py-16">
-          <div className="flex flex-col md:flex-row items-center gap-8 md:gap-8">
-            {/* 左：テキスト */}
-            <div className="flex-1 text-center md:text-left">
-              {/* 4. shimmerエフェクト付き「日本最大級」バッジ */}
-              <p className="shimmer inline-flex items-center gap-2 bg-gradient-to-r from-blue-600 to-blue-700 text-white font-black px-6 py-2.5 rounded-full mb-5 text-lg md:text-xl shadow-lg shadow-blue-500/25">
-                <span className="text-yellow-300 text-xl md:text-2xl">★</span>
+        <div className="relative max-w-5xl mx-auto px-4 py-10 md:py-16">
+          {/* メイン：見出し + バナー */}
+          <div className="flex flex-col md:flex-row md:items-center gap-8 md:gap-12">
+            <div className="flex-1 min-w-0 text-center md:text-left">
+              {/* バッジ */}
+              <p className="shimmer inline-flex items-center gap-1.5 bg-gradient-to-r from-blue-600 to-blue-700 text-white font-bold px-4 py-1.5 rounded-full mb-5 text-sm shadow-lg shadow-blue-500/20">
+                <span className="text-yellow-300">★</span>
                 日本最大級 — {companies.length}社掲載
               </p>
 
-              <h1 className="text-3xl md:text-[2.5rem] font-black mb-1.5 leading-[1.3] text-gray-900 tracking-tight">
-                口コミ・評判と比較で選ぶ
-              </h1>
-              <p className="text-3xl md:text-[2.5rem] font-black mb-6 leading-[1.3] tracking-tight">
+              <h1 className="text-3xl md:text-[2.75rem] font-black leading-[1.25] text-gray-900 tracking-tight">
+                口コミ・評判と比較で選ぶ<br />
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-blue-500">おすすめファクタリング会社</span>
+              </h1>
+
+              <p className="text-sm text-gray-500 mt-3 mb-6 leading-relaxed max-w-md mx-auto md:mx-0">
+                {companies.length}社の中から口コミ・手数料・入金スピードを比較。<br className="hidden sm:block" />
+                あなたに最適なファクタリング会社が見つかります。
               </p>
 
-              {/* 1. 統計カード3つ（アイコン付き） */}
-              <div className="flex items-stretch gap-4 mb-7 justify-center md:justify-start">
-                <div className="bg-white/80 backdrop-blur rounded-xl shadow-sm px-6 py-4 text-center">
-                  <svg className="w-6 h-6 mx-auto mb-1.5 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" /></svg>
-                  <div className="text-4xl md:text-5xl font-black text-blue-600 leading-none tracking-tighter">{companies.length}<span className="text-lg">社</span></div>
-                  <div className="text-xs font-bold text-gray-500 mt-1">掲載社数</div>
-                </div>
-                <div className="bg-white/80 backdrop-blur rounded-xl shadow-sm px-6 py-4 text-center">
-                  <svg className="w-6 h-6 mx-auto mb-1.5 text-emerald-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
-                  <div className="text-4xl md:text-5xl font-black text-emerald-500 leading-none">無料</div>
-                  <div className="text-xs font-bold text-gray-500 mt-1">利用料金</div>
-                </div>
-                <div className="bg-white/80 backdrop-blur rounded-xl shadow-sm px-6 py-4 text-center">
-                  <svg className="w-6 h-6 mx-auto mb-1.5 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
-                  <div className="text-4xl md:text-5xl font-black text-orange-500 leading-none">即日</div>
-                  <div className="text-xs font-bold text-gray-500 mt-1">最短入金</div>
-                </div>
-              </div>
-              <p className="text-[10px] text-gray-400 -mt-5 mb-5 text-center md:text-left">※ <CurrentDate /> 現在</p>
-
+              {/* CTA */}
               <div className="flex flex-col sm:flex-row gap-3 justify-center md:justify-start">
                 <Link
                   href="/shindan"
@@ -117,44 +102,62 @@ export default async function HomePage() {
                 </Link>
               </div>
 
-              {/* 2. 信頼バッジ行 */}
-              <div className="flex flex-wrap items-center gap-x-4 gap-y-1 mt-3 text-[11px] text-gray-500 justify-center md:justify-start">
+              {/* 信頼バッジ */}
+              <div className="flex flex-wrap items-center gap-x-4 gap-y-1 mt-3 text-xs text-gray-400 justify-center md:justify-start">
                 <span className="inline-flex items-center gap-1"><svg className="w-3.5 h-3.5 text-emerald-500" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" /></svg>完全無料</span>
                 <span className="inline-flex items-center gap-1"><svg className="w-3.5 h-3.5 text-emerald-500" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" /></svg>30秒で診断</span>
                 <span className="inline-flex items-center gap-1"><svg className="w-3.5 h-3.5 text-emerald-500" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" /></svg>登録不要</span>
-                <span className="inline-flex items-center gap-1"><svg className="w-3.5 h-3.5 text-emerald-500" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" /></svg>全国対応</span>
               </div>
             </div>
 
-            {/* 右：広告バナー */}
-            <div className="flex-shrink-0 w-full md:w-[300px]">
-              <RotationBanner />
-              <p className="text-[9px] text-gray-400 text-center mt-1">PR</p>
+            {/* 右：一括見積もりバナー */}
+            <div className="flex-shrink-0 w-full md:w-[320px] relative">
+              <div className="absolute -inset-4 bg-gradient-to-br from-blue-400/15 via-emerald-400/10 to-transparent rounded-3xl blur-2xl pointer-events-none hidden md:block" />
+              <Link href="/mitsumori" className="relative block rounded-2xl overflow-hidden shadow-xl ring-1 ring-black/5 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 max-w-xs mx-auto md:max-w-none">
+                <Image src="/images/mitsumori-banner-v2.png" width={600} height={600} alt="ファクナビ 無料一括見積もり" className="w-full h-auto" />
+              </Link>
             </div>
           </div>
 
-          {/* 検索バー */}
-          <div className="mt-8">
-            <KeywordSearch companies={searchData} />
+          {/* 統計バー — ヒーロー下部に横並び */}
+          <div className="mt-8 flex items-center justify-center md:justify-start gap-6 md:gap-8">
+            <div className="text-center">
+              <div className="text-2xl md:text-3xl font-black text-blue-600 leading-none tracking-tighter">{companies.length}<span className="text-xs font-bold ml-0.5">社</span></div>
+              <div className="text-[10px] font-bold text-gray-400 mt-0.5">掲載社数</div>
+            </div>
+            <div className="w-px h-7 bg-gray-200" />
+            <div className="text-center">
+              <div className="text-2xl md:text-3xl font-black text-emerald-500 leading-none">無料</div>
+              <div className="text-[10px] font-bold text-gray-400 mt-0.5">利用料金</div>
+            </div>
+            <div className="w-px h-7 bg-gray-200" />
+            <div className="text-center">
+              <div className="text-2xl md:text-3xl font-black text-orange-500 leading-none">即日</div>
+              <div className="text-[10px] font-bold text-gray-400 mt-0.5">最短入金</div>
+            </div>
+            <span className="text-[10px] text-gray-300 ml-1">※ <CurrentDate /> 現在</span>
           </div>
 
-          {/* 3. 人気キーワードタグ */}
-          <div className="mt-4 flex flex-wrap items-center gap-2 justify-center md:justify-start">
-            <span className="text-xs text-gray-400 font-bold">人気の検索:</span>
-            {[
-              { label: "即日入金", href: "/ranking?category=speed" },
-              { label: "個人事業主OK", href: "/ranking?category=sole-proprietor" },
-              { label: "手数料が安い", href: "/ranking?category=fee" },
-              { label: "オンライン完結", href: "/ranking?category=online" },
-            ].map((tag) => (
-              <Link
-                key={tag.label}
-                href={tag.href}
-                className="text-xs font-bold text-blue-600 bg-blue-50 hover:bg-blue-100 px-3 py-1 rounded-full transition-colors"
-              >
-                {tag.label}
-              </Link>
-            ))}
+          {/* 検索バー + タグ */}
+          <div className="mt-6 max-w-lg">
+            <KeywordSearch companies={searchData} />
+            <div className="mt-2 flex flex-wrap items-center gap-1.5">
+              <span className="text-[10px] text-gray-400 font-bold">人気の検索:</span>
+              {[
+                { label: "即日入金", href: "/ranking?category=speed" },
+                { label: "個人事業主OK", href: "/ranking?category=sole-proprietor" },
+                { label: "手数料が安い", href: "/ranking?category=fee" },
+                { label: "オンライン完結", href: "/ranking?category=online" },
+              ].map((tag) => (
+                <Link
+                  key={tag.label}
+                  href={tag.href}
+                  className="text-[10px] font-bold text-blue-600 bg-blue-50 hover:bg-blue-100 px-2.5 py-0.5 rounded-full transition-colors"
+                >
+                  {tag.label}
+                </Link>
+              ))}
+            </div>
           </div>
         </div>
       </section>

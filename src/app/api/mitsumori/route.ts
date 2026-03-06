@@ -18,11 +18,10 @@ export async function POST(request: NextRequest) {
     const body = await request.json();
 
     const {
-      amount_range,
+      purchase_amount,
       deposit_timing,
       business_type,
       industry,
-      prefecture,
       company_name,
       contact_name,
       phone,
@@ -32,11 +31,10 @@ export async function POST(request: NextRequest) {
 
     // バリデーション
     if (
-      !amount_range ||
+      !purchase_amount ||
       !deposit_timing ||
       !business_type ||
       !industry ||
-      !prefecture ||
       !company_name ||
       !contact_name ||
       !phone ||
@@ -70,11 +68,10 @@ export async function POST(request: NextRequest) {
     const { data: insertData, error } = await supabase
       .from("mitsumori_requests")
       .insert({
-        amount_range,
+        purchase_amount,
         deposit_timing,
         business_type,
         industry,
-        prefecture,
         company_name,
         contact_name,
         phone,
@@ -115,8 +112,8 @@ export async function POST(request: NextRequest) {
             <p>以下の内容でお申し込みを受け付けました。</p>
             <table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
               <tr style="border-bottom: 1px solid #e5e7eb;">
-                <td style="padding: 8px; color: #6b7280; width: 140px;">請求書金額帯</td>
-                <td style="padding: 8px;">${amount_range}</td>
+                <td style="padding: 8px; color: #6b7280; width: 140px;">買取希望金額</td>
+                <td style="padding: 8px;">${purchase_amount}</td>
               </tr>
               <tr style="border-bottom: 1px solid #e5e7eb;">
                 <td style="padding: 8px; color: #6b7280;">入金希望時期</td>
@@ -188,8 +185,8 @@ export async function POST(request: NextRequest) {
                   <td style="padding: 8px;">${email}</td>
                 </tr>
                 <tr style="border-bottom: 1px solid #e5e7eb;">
-                  <td style="padding: 8px; color: #6b7280;">請求書金額帯</td>
-                  <td style="padding: 8px;">${amount_range}</td>
+                  <td style="padding: 8px; color: #6b7280;">買取希望金額</td>
+                  <td style="padding: 8px;">${purchase_amount}</td>
                 </tr>
                 <tr style="border-bottom: 1px solid #e5e7eb;">
                   <td style="padding: 8px; color: #6b7280;">入金希望時期</td>
@@ -202,10 +199,6 @@ export async function POST(request: NextRequest) {
                 <tr style="border-bottom: 1px solid #e5e7eb;">
                   <td style="padding: 8px; color: #6b7280;">業種</td>
                   <td style="padding: 8px;">${industry}</td>
-                </tr>
-                <tr style="border-bottom: 1px solid #e5e7eb;">
-                  <td style="padding: 8px; color: #6b7280;">都道府県</td>
-                  <td style="padding: 8px;">${prefecture}</td>
                 </tr>
                 ${message ? `
                 <tr style="border-bottom: 1px solid #e5e7eb;">
@@ -235,26 +228,24 @@ export async function POST(request: NextRequest) {
       if (partners && partners.length > 0) {
         // 金額帯→数値変換
         const amountRangeMap: Record<string, { min: number; max: number }> = {
-          "100万円以下": { min: 0, max: 1000000 },
-          "100万円〜500万円": { min: 1000000, max: 5000000 },
-          "500万円〜1,000万円": { min: 5000000, max: 10000000 },
-          "1,000万円〜3,000万円": { min: 10000000, max: 30000000 },
-          "3,000万円以上": { min: 30000000, max: 999999999 },
+          "10万円未満": { min: 0, max: 100000 },
+          "10〜30万円未満": { min: 100000, max: 300000 },
+          "30〜50万円未満": { min: 300000, max: 500000 },
+          "50〜100万円未満": { min: 500000, max: 1000000 },
+          "100〜300万円未満": { min: 1000000, max: 3000000 },
+          "300〜500万円未満": { min: 3000000, max: 5000000 },
+          "500〜1,000万円未満": { min: 5000000, max: 10000000 },
+          "1,000〜3,000万円未満": { min: 10000000, max: 30000000 },
+          "3,000〜5,000万円未満": { min: 30000000, max: 50000000 },
+          "5,000万〜1億円未満": { min: 50000000, max: 100000000 },
+          "1〜3億円未満": { min: 100000000, max: 300000000 },
+          "3億円以上": { min: 300000000, max: 999999999 },
         };
 
-        const requestAmount = amountRangeMap[amount_range];
+        const requestAmount = amountRangeMap[purchase_amount];
         const isSoleProprietor = business_type === "個人事業主・フリーランス";
 
         const matchedPartners = partners.filter((p) => {
-          // 都道府県チェック
-          if (
-            p.supported_prefectures &&
-            p.supported_prefectures.length > 0 &&
-            !p.supported_prefectures.includes(prefecture)
-          ) {
-            return false;
-          }
-
           // 金額チェック
           if (requestAmount) {
             if (requestAmount.max < p.min_amount || requestAmount.min > p.max_amount) {

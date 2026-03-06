@@ -22,6 +22,7 @@ export const INDUSTRIES = [
   "飲食業",
   "広告・メディア",
   "人材派遣",
+  "サービス業",
   "その他",
 ] as const;
 
