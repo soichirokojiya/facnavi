@@ -73,7 +73,7 @@ export default async function HomePage() {
                 日本最大級 — {companies.length}社掲載
               </p>
 
-              <h1 className="text-2xl md:text-3xl font-extrabold mb-3 leading-tight text-gray-900 tracking-tight">
+              <h1 className="text-3xl md:text-4xl font-extrabold mb-3 leading-tight text-gray-900 tracking-tight">
                 口コミと比較で選ぶ
                 <br />
                 <span className="text-blue-600">本当に良いファクタリング会社</span>
