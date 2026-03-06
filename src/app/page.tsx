@@ -69,7 +69,8 @@ export default async function HomePage() {
           <div className="flex flex-col md:flex-row items-center gap-8 md:gap-8">
             {/* 左：テキスト */}
             <div className="flex-1 text-center md:text-left">
-              <p className="inline-flex items-center gap-2 bg-gradient-to-r from-blue-600 to-blue-700 text-white font-black px-6 py-2.5 rounded-full mb-5 text-lg md:text-xl shadow-lg shadow-blue-500/25">
+              {/* 4. shimmerエフェクト付き「日本最大級」バッジ */}
+              <p className="shimmer inline-flex items-center gap-2 bg-gradient-to-r from-blue-600 to-blue-700 text-white font-black px-6 py-2.5 rounded-full mb-5 text-lg md:text-xl shadow-lg shadow-blue-500/25">
                 <span className="text-yellow-300 text-xl md:text-2xl">★</span>
                 日本最大級 — {companies.length}社掲載
               </p>
@@ -81,20 +82,22 @@ export default async function HomePage() {
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-blue-500">おすすめファクタリング会社</span>
               </p>
 
-              <div className="flex items-end gap-6 justify-center md:justify-start mb-7">
-                <div className="text-center">
-                  <div className="text-5xl md:text-6xl font-black text-blue-600 leading-none tracking-tighter">{companies.length}</div>
-                  <div className="text-xs font-bold text-gray-500 mt-1">掲載社数</div>
+              {/* 1. 統計カード3つ（アイコン付き） */}
+              <div className="grid grid-cols-3 gap-3 mb-7 max-w-sm mx-auto md:mx-0">
+                <div className="bg-white/80 backdrop-blur rounded-xl shadow-sm p-3 text-center">
+                  <svg className="w-5 h-5 mx-auto mb-1 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" /></svg>
+                  <div className="text-2xl md:text-3xl font-black text-blue-600 leading-none tracking-tighter">{companies.length}<span className="text-base">社</span></div>
+                  <div className="text-[10px] font-bold text-gray-500 mt-0.5">掲載社数</div>
                 </div>
-                <div className="w-px h-12 bg-gray-200" />
-                <div className="text-center">
-                  <div className="text-5xl md:text-6xl font-black text-blue-600 leading-none tracking-tighter">{reviews.length.toLocaleString()}</div>
-                  <div className="text-xs font-bold text-gray-500 mt-1">口コミ件数</div>
+                <div className="bg-white/80 backdrop-blur rounded-xl shadow-sm p-3 text-center">
+                  <svg className="w-5 h-5 mx-auto mb-1 text-emerald-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                  <div className="text-2xl md:text-3xl font-black text-emerald-500 leading-none">無料</div>
+                  <div className="text-[10px] font-bold text-gray-500 mt-0.5">利用料金</div>
                 </div>
-                <div className="w-px h-12 bg-gray-200" />
-                <div className="text-center">
-                  <div className="text-5xl md:text-6xl font-black text-emerald-500 leading-none">無料</div>
-                  <div className="text-xs font-bold text-gray-500 mt-1">利用料金</div>
+                <div className="bg-white/80 backdrop-blur rounded-xl shadow-sm p-3 text-center">
+                  <svg className="w-5 h-5 mx-auto mb-1 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                  <div className="text-2xl md:text-3xl font-black text-orange-500 leading-none">即日</div>
+                  <div className="text-[10px] font-bold text-gray-500 mt-0.5">最短入金</div>
                 </div>
               </div>
 
@@ -112,7 +115,14 @@ export default async function HomePage() {
                   ランキングを見る
                 </Link>
               </div>
-              <p className="text-[10px] text-gray-400 mt-3 text-center md:text-left">※ <CurrentDate /> 現在</p>
+
+              {/* 2. 信頼バッジ行 */}
+              <div className="flex flex-wrap items-center gap-x-4 gap-y-1 mt-3 text-[11px] text-gray-500 justify-center md:justify-start">
+                <span className="inline-flex items-center gap-1"><svg className="w-3.5 h-3.5 text-emerald-500" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" /></svg>完全無料</span>
+                <span className="inline-flex items-center gap-1"><svg className="w-3.5 h-3.5 text-emerald-500" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" /></svg>30秒で診断</span>
+                <span className="inline-flex items-center gap-1"><svg className="w-3.5 h-3.5 text-emerald-500" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" /></svg>登録不要</span>
+                <span className="inline-flex items-center gap-1"><svg className="w-3.5 h-3.5 text-emerald-500" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" /></svg>全国対応</span>
+              </div>
             </div>
 
             {/* 右：広告バナー */}
@@ -125,6 +135,25 @@ export default async function HomePage() {
           {/* 検索バー */}
           <div className="mt-8">
             <KeywordSearch companies={searchData} />
+          </div>
+
+          {/* 3. 人気キーワードタグ */}
+          <div className="mt-4 flex flex-wrap items-center gap-2 justify-center md:justify-start">
+            <span className="text-xs text-gray-400 font-bold">人気の検索:</span>
+            {[
+              { label: "即日入金", href: "/ranking?category=speed" },
+              { label: "個人事業主OK", href: "/ranking?category=sole-proprietor" },
+              { label: "手数料が安い", href: "/ranking?category=fee" },
+              { label: "オンライン完結", href: "/ranking?category=online" },
+            ].map((tag) => (
+              <Link
+                key={tag.label}
+                href={tag.href}
+                className="text-xs font-bold text-blue-600 bg-blue-50 hover:bg-blue-100 px-3 py-1 rounded-full transition-colors"
+              >
+                {tag.label}
+              </Link>
+            ))}
           </div>
         </div>
       </section>
@@ -338,15 +367,9 @@ export default async function HomePage() {
         <div className="max-w-4xl mx-auto px-4">
           <div className="bg-gradient-to-br from-blue-600 to-blue-700 rounded-2xl overflow-hidden">
             <div className="flex flex-col md:flex-row items-center">
-              <div className="md:w-2/5 relative">
-                <Image
-                  src="/images/estimate.jpg"
-                  alt="一括見積もり"
-                  width={400}
-                  height={300}
-                  className="object-cover w-full h-[180px] md:h-full"
-                />
-                <div className="absolute inset-0 bg-blue-700/20" />
+              <div className="md:w-2/5 flex items-center justify-center p-4">
+                <RotationBanner />
+                <p className="text-[9px] text-blue-300 text-center mt-1">PR</p>
               </div>
               <div className="md:w-3/5 p-6 md:p-8 text-center md:text-left">
                 <p className="inline-block text-[10px] font-bold text-amber-300 bg-amber-400/20 border border-amber-400/40 rounded-full px-3 py-0.5 mb-2">
