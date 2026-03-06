@@ -70,6 +70,11 @@ export function diagnose(
         score += 15;
         reasons.push("審査通過率が高い");
       }
+      // 個人事業主OK・少額対応・オンライン完結は審査ハードルが低い
+      if (company.soleProprietorOk && company.onlineComplete && company.minAmount <= 10000) {
+        score += 10;
+        reasons.push("少額から審査OK");
+      }
     }
     if (input.priority === "サポート") {
       if (!company.onlineComplete) {

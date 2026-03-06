@@ -230,14 +230,9 @@ export default async function HomePage() {
         <div className="max-w-4xl mx-auto px-4">
           <div className="bg-gradient-to-br from-blue-50 to-emerald-50 rounded-2xl overflow-hidden">
             <div className="flex flex-col md:flex-row items-center">
-              <div className="md:w-2/5 relative">
-                <Image
-                  src="/images/diagnosis.jpg"
-                  alt="ファクタリング診断"
-                  width={400}
-                  height={300}
-                  className="object-cover w-full h-[180px] md:h-full"
-                />
+              <div className="md:w-2/5 flex items-center justify-center p-4">
+                <RotationBanner />
+                <p className="text-[9px] text-gray-400 text-center mt-1">PR</p>
               </div>
               <div className="md:w-3/5 p-6 md:p-8 text-center md:text-left">
                 <p className="text-xs font-bold text-blue-600 mb-1">DIAGNOSIS</p>
