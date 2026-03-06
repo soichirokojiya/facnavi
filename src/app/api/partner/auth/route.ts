@@ -10,11 +10,11 @@ const supabaseKey =
 
 export async function POST(request: NextRequest) {
   try {
-    const { login_id, password } = await request.json();
+    const { email, password } = await request.json();
 
-    if (!login_id || !password) {
+    if (!email || !password) {
       return NextResponse.json(
-        { error: "ログインIDとパスワードを入力してください。" },
+        { error: "メールアドレスとパスワードを入力してください。" },
         { status: 400 }
       );
     }
@@ -23,13 +23,13 @@ export async function POST(request: NextRequest) {
 
     const { data: partner, error } = await supabase
       .from("partner_companies")
-      .select("id, password_hash, is_active, name")
-      .eq("login_id", login_id)
+      .select("id, password_hash, is_active, name, email_verified")
+      .eq("email", email)
       .single();
 
     if (error || !partner) {
       return NextResponse.json(
-        { error: "ログインIDまたはパスワードが正しくありません。" },
+        { error: "メールアドレスまたはパスワードが正しくありません。" },
         { status: 401 }
       );
     }
@@ -41,10 +41,17 @@ export async function POST(request: NextRequest) {
       );
     }
 
+    if (!partner.email_verified) {
+      return NextResponse.json(
+        { error: "メールアドレスが未認証です。登録時に届いたメールのリンクをクリックしてください。" },
+        { status: 403 }
+      );
+    }
+
     const valid = await bcrypt.compare(password, partner.password_hash);
     if (!valid) {
       return NextResponse.json(
-        { error: "ログインIDまたはパスワードが正しくありません。" },
+        { error: "メールアドレスまたはパスワードが正しくありません。" },
         { status: 401 }
       );
     }

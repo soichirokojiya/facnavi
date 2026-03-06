@@ -4,8 +4,7 @@ import { Noto_Sans_JP } from "next/font/google";
 import "./globals.css";
 import { SITE_NAME, SITE_DESCRIPTION_TEMPLATE, SITE_URL } from "@/lib/constants";
 import { getCompanyCount } from "@/lib/companies";
-import { Header } from "@/components/layout/Header";
-import { Footer } from "@/components/layout/Footer";
+import { LayoutShell } from "@/components/layout/LayoutShell";
 
 const GA_ID = "G-JYDBVBP448";
 
@@ -68,9 +67,7 @@ export default function RootLayout({
         </Script>
       </head>
       <body className={`${notoSansJP.className} antialiased`}>
-        <Header />
-        <main className="min-h-screen">{children}</main>
-        <Footer />
+        <LayoutShell>{children}</LayoutShell>
       </body>
     </html>
   );

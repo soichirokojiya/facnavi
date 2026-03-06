@@ -5,7 +5,7 @@ import { useRouter } from "next/navigation";
 import Link from "next/link";
 
 export default function PartnerLoginPage() {
-  const [loginId, setLoginId] = useState("");
+  const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
@@ -20,7 +20,7 @@ export default function PartnerLoginPage() {
       const res = await fetch("/api/partner/auth", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ login_id: loginId, password }),
+        body: JSON.stringify({ email, password }),
       });
 
       const data = await res.json();
@@ -43,21 +43,21 @@ export default function PartnerLoginPage() {
       <div className="w-full max-w-sm">
         <div className="bg-white rounded-xl shadow-md p-8">
           <h1 className="text-xl font-bold text-center text-gray-900 mb-6">
-            業者専用ログイン
+            ファクタリング業者様専用ログイン
           </h1>
           <form onSubmit={handleSubmit} className="space-y-4">
             <div>
               <label
-                htmlFor="login_id"
+                htmlFor="email"
                 className="block text-sm font-medium text-gray-700 mb-1"
               >
-                ログインID
+                メールアドレス
               </label>
               <input
-                id="login_id"
-                type="text"
-                value={loginId}
-                onChange={(e) => setLoginId(e.target.value)}
+                id="email"
+                type="email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
                 className="w-full px-3 py-2 border-2 border-gray-200 rounded-lg focus:ring-3 focus:ring-primary/10 focus:border-primary outline-none"
                 required
               />

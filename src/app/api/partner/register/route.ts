@@ -1,6 +1,8 @@
 import { NextRequest, NextResponse } from "next/server";
 import { createClient } from "@supabase/supabase-js";
 import bcrypt from "bcryptjs";
+import crypto from "crypto";
+import { Resend } from "resend";
 
 const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL!;
 const supabaseKey =
@@ -9,9 +11,9 @@ const supabaseKey =
 
 export async function POST(request: NextRequest) {
   try {
-    const { name, email, login_id, password, company_slug } = await request.json();
+    const { email, password, company_slug, company_name } = await request.json();
 
-    if (!name || !email || !login_id || !password) {
+    if (!email || !password || !company_slug) {
       return NextResponse.json(
         { error: "すべての項目を入力してください。" },
         { status: 400 }
@@ -26,20 +28,6 @@ export async function POST(request: NextRequest) {
     }
 
     const supabase = createClient(supabaseUrl, supabaseKey);
-
-    // login_id重複チェック
-    const { data: existingById } = await supabase
-      .from("partner_companies")
-      .select("id")
-      .eq("login_id", login_id)
-      .single();
-
-    if (existingById) {
-      return NextResponse.json(
-        { error: "このログインIDは既に使用されています。" },
-        { status: 409 }
-      );
-    }
 
     // email重複チェック
     const { data: existingByEmail } = await supabase
@@ -57,13 +45,17 @@ export async function POST(request: NextRequest) {
 
     const password_hash = await bcrypt.hash(password, 10);
 
+    const verificationToken = crypto.randomBytes(32).toString("hex");
+
     const { error } = await supabase.from("partner_companies").insert({
-      name,
+      name: company_name || email,
       email,
-      login_id,
+      login_id: email,
       password_hash,
-      company_slug: company_slug || null,
+      company_slug,
       is_active: true,
+      email_verified: false,
+      email_verification_token: verificationToken,
       supported_prefectures: [],
       supported_industries: [],
       min_amount: 0,
@@ -74,12 +66,51 @@ export async function POST(request: NextRequest) {
     if (error) {
       console.error("Registration error:", error);
       return NextResponse.json(
-        { error: "登録に失敗しました。" },
+        { error: `登録に失敗しました: ${error.message}` },
         { status: 500 }
       );
     }
 
-    return NextResponse.json({ success: true });
+    // 認証メール送信
+    const resendApiKey = process.env.RESEND_API_KEY;
+    const fromEmail = process.env.RESEND_FROM_EMAIL || "noreply@facnavi.info";
+    const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://facnavi.info";
+
+    if (resendApiKey) {
+      try {
+        const resend = new Resend(resendApiKey);
+        const verifyUrl = `${siteUrl}/partner/verify?token=${verificationToken}`;
+
+        await resend.emails.send({
+          from: `ファクナビ <${fromEmail}>`,
+          to: email,
+          subject: "【ファクナビ】メールアドレスの確認",
+          html: `
+            <div style="font-family: sans-serif; max-width: 600px; margin: 0 auto; padding: 20px;">
+              <h2 style="color: #1e40af; border-bottom: 2px solid #1e40af; padding-bottom: 10px;">
+                メールアドレスの確認
+              </h2>
+              <p>${company_name || email} 様</p>
+              <p>ファクナビへのご登録ありがとうございます。</p>
+              <p>以下のボタンをクリックして、メールアドレスの確認を完了してください。</p>
+              <div style="text-align: center; margin: 30px 0;">
+                <a href="${verifyUrl}" style="display: inline-block; background: #1e40af; color: #ffffff; padding: 14px 32px; border-radius: 8px; text-decoration: none; font-weight: bold; font-size: 16px;">
+                  メールアドレスを確認する
+                </a>
+              </div>
+              <p style="font-size: 12px; color: #9ca3af;">
+                このリンクは24時間有効です。<br>
+                心当たりのない場合は、このメールを破棄してください。
+              </p>
+            </div>
+          `,
+        });
+      } catch (emailError) {
+        console.error("Failed to send verification email:", emailError);
+      }
+    }
+
+    return NextResponse.json({ success: true, needsVerification: true });
   } catch {
     return NextResponse.json(
       { error: "リクエストの処理に失敗しました。" },
