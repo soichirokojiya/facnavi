@@ -56,7 +56,8 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    const supabase = createClient(supabaseUrl, supabaseAnonKey);
+    const serviceKey = process.env.SUPABASE_SERVICE_ROLE_KEY || supabaseAnonKey;
+    const supabase = createClient(supabaseUrl, serviceKey);
 
     const { data, error } = await supabase
       .from("reviews")
