@@ -259,6 +259,7 @@ export function ReviewForm({ companies }: { companies: CompanyOption[] }) {
         return;
       }
       setIsComplete(true);
+      window.scrollTo({ top: 0, behavior: "smooth" });
     } catch {
       setError("ネットワークエラーが発生しました。時間をおいて再度お試しください。");
     } finally {
