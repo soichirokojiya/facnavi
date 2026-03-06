@@ -191,6 +191,7 @@ export function MitsumoriLP() {
   const [status, setStatus] = useState<"idle" | "submitting" | "success" | "error">("idle");
   const [errorMsg, setErrorMsg] = useState("");
   const [showFixedCta, setShowFixedCta] = useState(false);
+  const [formStep, setFormStep] = useState<1 | 2>(1);
 
   const updateField = useCallback(
     <K extends keyof FormData>(key: K, value: FormData[K]) => {
@@ -207,12 +208,15 @@ export function MitsumoriLP() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  const isFormValid =
+  const isStep1Valid =
     form.amount_range &&
     form.deposit_timing &&
     form.business_type &&
     form.industry &&
-    form.prefecture &&
+    form.prefecture;
+
+  const isFormValid =
+    isStep1Valid &&
     form.company_name &&
     form.contact_name &&
     form.phone &&
@@ -290,8 +294,8 @@ export function MitsumoriLP() {
             ファクタリング会社が見つかる
           </h1>
           <p className="text-blue-200 text-lg mb-12 leading-relaxed">
-            複数社にまとめて見積もり依頼。<br className="sm:hidden" />
-            手数料を最安に抑えて、最短即日入金。
+            条件を入力するだけで、あなたに合ったおすすめ業者を自動提案。<br className="sm:hidden" />
+            気になる会社を選んでそのまま見積もり依頼できます。
           </p>
 
           {/* 数値バー */}
@@ -348,7 +352,7 @@ export function MitsumoriLP() {
         <div className="space-y-4 max-w-2xl mx-auto">
           {[
             { num: "01", title: "厳選された優良業者のみ掲載", desc: "独自の審査基準をクリアした信頼性の高い業者だけをご紹介。悪徳業者の心配がありません。" },
-            { num: "02", title: "最短30秒で複数社に一括依頼", desc: "フォームに一度入力するだけで、条件に合う複数のファクタリング会社に同時に見積もり依頼が可能です。" },
+            { num: "02", title: "おすすめ業者から選んで見積もり", desc: "条件を入力するとおすすめのファクタリング会社が提案され、気になる会社を選んでまとめて見積もり依頼できます。" },
             { num: "03", title: "完全無料・手数料なし", desc: "一括見積もりサービスのご利用は完全無料。利用者に手数料が発生することは一切ありません。" },
             { num: "04", title: "個人事業主・フリーランスもOK", desc: "法人だけでなく、個人事業主やフリーランスの方にも対応した業者を多数掲載しています。" },
             { num: "05", title: "全国対応・オンライン完結", desc: "来店不要で全国どこからでもご利用可能。申し込みから契約まですべてオンラインで完結します。" },
@@ -396,10 +400,10 @@ export function MitsumoriLP() {
         <SectionHeading sub="FLOW">ご利用の流れ</SectionHeading>
         <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-5 max-w-3xl mx-auto">
           {[
-            { step: "STEP 1", title: "フォーム入力", desc: "必要事項を入力して送信。最短30秒で完了。", icon: "📝" },
-            { step: "STEP 2", title: "複数社から連絡", desc: "条件に合う業者から見積もりが届きます。", icon: "📞" },
-            { step: "STEP 3", title: "条件を比較", desc: "手数料・スピードを比較し最適な1社を選択。", icon: "📊" },
-            { step: "STEP 4", title: "契約・入金", desc: "選んだ業者と契約。最短即日で入金。", icon: "✅" },
+            { step: "STEP 1", title: "条件を入力", desc: "希望金額や業種などを入力。最短30秒で完了。", icon: "📝" },
+            { step: "STEP 2", title: "おすすめを確認", desc: "あなたの条件に合ったおすすめ業者が自動で表示されます。", icon: "🔍" },
+            { step: "STEP 3", title: "選んで見積もり依頼", desc: "気になる会社を複数選んで、まとめて見積もり依頼。", icon: "📊" },
+            { step: "STEP 4", title: "比較して契約", desc: "届いた見積もりを比較し、最適な1社と契約。", icon: "✅" },
           ].map((item) => (
             <div key={item.step} className="bg-white rounded-2xl p-5 text-center shadow-sm border border-gray-100">
               <div className="w-14 h-14 bg-blue-50 rounded-full flex items-center justify-center mx-auto mb-3">
@@ -496,55 +500,78 @@ export function MitsumoriLP() {
           <div className="bg-white rounded-2xl shadow-xl border border-gray-200 overflow-hidden">
             {/* フォームヘッダー */}
             <div className="bg-gradient-to-r from-[#0b3d91] to-[#1a365d] text-white text-center py-4 px-4">
-              <p className="font-bold text-lg">最短30秒で入力完了</p>
+              <p className="font-bold text-lg">{formStep === 1 ? "STEP 1：条件を入力" : "STEP 2：お客様情報を入力"}</p>
               <p className="text-blue-200 text-sm">完全無料</p>
+              <div className="flex justify-center gap-2 mt-3">
+                <div className={`h-1 w-16 rounded-full ${formStep >= 1 ? "bg-orange-400" : "bg-white/20"}`} />
+                <div className={`h-1 w-16 rounded-full ${formStep >= 2 ? "bg-orange-400" : "bg-white/20"}`} />
+              </div>
             </div>
 
             <div className="p-6 md:p-8 space-y-5">
-              <SelectField
-                label="請求書の金額帯"
-                options={AMOUNT_OPTIONS}
-                value={form.amount_range}
-                onChange={(v) => updateField("amount_range", v)}
-                placeholder="金額帯を選択してください"
-                required
-              />
-              <SelectField
-                label="入金希望時期"
-                options={TIMING_OPTIONS}
-                value={form.deposit_timing}
-                onChange={(v) => updateField("deposit_timing", v)}
-                placeholder="時期を選択してください"
-                required
-              />
-              <SelectField
-                label="事業形態"
-                options={BUSINESS_TYPES}
-                value={form.business_type}
-                onChange={(v) => updateField("business_type", v)}
-                placeholder="事業形態を選択してください"
-                required
-              />
-              <SelectField
-                label="業種"
-                options={INDUSTRIES}
-                value={form.industry}
-                onChange={(v) => updateField("industry", v)}
-                placeholder="業種を選択してください"
-                required
-              />
-              <SelectField
-                label="都道府県"
-                options={PREFECTURES}
-                value={form.prefecture}
-                onChange={(v) => updateField("prefecture", v)}
-                placeholder="都道府県を選択してください"
-                required
-              />
+              {formStep === 1 ? (
+                <>
+                  <SelectField
+                    label="請求書の金額帯"
+                    options={AMOUNT_OPTIONS}
+                    value={form.amount_range}
+                    onChange={(v) => updateField("amount_range", v)}
+                    placeholder="金額帯を選択してください"
+                    required
+                  />
+                  <SelectField
+                    label="入金希望時期"
+                    options={TIMING_OPTIONS}
+                    value={form.deposit_timing}
+                    onChange={(v) => updateField("deposit_timing", v)}
+                    placeholder="時期を選択してください"
+                    required
+                  />
+                  <SelectField
+                    label="事業形態"
+                    options={BUSINESS_TYPES}
+                    value={form.business_type}
+                    onChange={(v) => updateField("business_type", v)}
+                    placeholder="事業形態を選択してください"
+                    required
+                  />
+                  <SelectField
+                    label="業種"
+                    options={INDUSTRIES}
+                    value={form.industry}
+                    onChange={(v) => updateField("industry", v)}
+                    placeholder="業種を選択してください"
+                    required
+                  />
+                  <SelectField
+                    label="都道府県"
+                    options={PREFECTURES}
+                    value={form.prefecture}
+                    onChange={(v) => updateField("prefecture", v)}
+                    placeholder="都道府県を選択してください"
+                    required
+                  />
 
-              <div className="border-t border-gray-200 pt-5">
-                <p className="text-sm font-bold text-gray-500 mb-4">お客様情報</p>
-                <div className="space-y-5">
+                  <button
+                    type="button"
+                    disabled={!isStep1Valid}
+                    onClick={() => setFormStep(2)}
+                    className="w-full py-4 bg-gradient-to-br from-emerald-500 to-emerald-700 text-white font-bold text-lg rounded-full shadow-lg shadow-emerald-500/40 hover:shadow-xl hover:shadow-emerald-500/50 hover:-translate-y-0.5 transition-all duration-300 disabled:opacity-40 disabled:cursor-not-allowed disabled:hover:translate-y-0 disabled:hover:shadow-lg"
+                  >
+                    おすすめ業者を見る →
+                  </button>
+                  <p className="text-xs text-gray-400 text-center leading-relaxed">
+                    ※ 条件に合うおすすめ業者が表示されます
+                  </p>
+                </>
+              ) : (
+                <>
+                  <div className="bg-blue-50 rounded-xl p-4 text-sm text-blue-800">
+                    <p className="font-bold mb-1">入力条件</p>
+                    <p>{form.amount_range} / {form.deposit_timing} / {form.business_type} / {form.industry} / {form.prefecture}</p>
+                    <button type="button" onClick={() => setFormStep(1)} className="text-blue-600 hover:underline font-bold text-xs mt-1">条件を変更する</button>
+                  </div>
+
                   <InputField
                     label="会社名（屋号）"
                     placeholder="例：株式会社ファクナビ"
@@ -575,56 +602,56 @@ export function MitsumoriLP() {
                     onChange={(v) => updateField("email", v)}
                     required
                   />
-                </div>
-              </div>
 
-              <div>
-                <label className="flex items-center gap-2 text-sm font-bold text-gray-800 mb-1.5">
-                  ご相談内容
-                  <span className="text-[10px] font-bold text-gray-400 border border-gray-300 rounded px-1.5 py-0.5">任意</span>
-                </label>
-                <textarea
-                  placeholder="ご要望やご質問があればご記入ください"
-                  value={form.message}
-                  onChange={(e) => updateField("message", e.target.value)}
-                  rows={3}
-                  className="w-full px-4 py-3 rounded-lg border-2 border-gray-200 focus:border-blue-600 focus:ring-3 focus:ring-blue-600/10 outline-none transition-colors resize-none bg-white text-gray-900"
-                />
-              </div>
+                  <div>
+                    <label className="flex items-center gap-2 text-sm font-bold text-gray-800 mb-1.5">
+                      ご相談内容
+                      <span className="text-[10px] font-bold text-gray-400 border border-gray-300 rounded px-1.5 py-0.5">任意</span>
+                    </label>
+                    <textarea
+                      placeholder="ご要望やご質問があればご記入ください"
+                      value={form.message}
+                      onChange={(e) => updateField("message", e.target.value)}
+                      rows={3}
+                      className="w-full px-4 py-3 rounded-lg border-2 border-gray-200 focus:border-blue-600 focus:ring-3 focus:ring-blue-600/10 outline-none transition-colors resize-none bg-white text-gray-900"
+                    />
+                  </div>
 
-              <div className="flex items-start gap-3 bg-gray-50 rounded-xl p-4">
-                <input
-                  type="checkbox"
-                  id="privacy-agree"
-                  checked={form.agreed}
-                  onChange={(e) => updateField("agreed", e.target.checked)}
-                  className="mt-0.5 w-5 h-5 rounded border-gray-300 text-blue-600 focus:ring-blue-600"
-                />
-                <label htmlFor="privacy-agree" className="text-sm text-gray-700">
-                  <Link href="/privacy" target="_blank" className="text-blue-600 hover:underline font-bold">
-                    プライバシーポリシー
-                  </Link>
-                  に同意する
-                </label>
-              </div>
+                  <div className="flex items-start gap-3 bg-gray-50 rounded-xl p-4">
+                    <input
+                      type="checkbox"
+                      id="privacy-agree"
+                      checked={form.agreed}
+                      onChange={(e) => updateField("agreed", e.target.checked)}
+                      className="mt-0.5 w-5 h-5 rounded border-gray-300 text-blue-600 focus:ring-blue-600"
+                    />
+                    <label htmlFor="privacy-agree" className="text-sm text-gray-700">
+                      <Link href="/privacy" target="_blank" className="text-blue-600 hover:underline font-bold">
+                        プライバシーポリシー
+                      </Link>
+                      に同意する
+                    </label>
+                  </div>
 
-              {status === "error" && (
-                <div className="text-sm text-red-700 bg-red-50 border border-red-200 rounded-xl p-4 font-medium">
-                  {errorMsg}
-                </div>
+                  {status === "error" && (
+                    <div className="text-sm text-red-700 bg-red-50 border border-red-200 rounded-xl p-4 font-medium">
+                      {errorMsg}
+                    </div>
+                  )}
+
+                  <button
+                    type="submit"
+                    disabled={!isFormValid || status === "submitting"}
+                    className="w-full py-4 bg-gradient-to-br from-emerald-500 to-emerald-700 text-white font-bold text-lg rounded-full shadow-lg shadow-emerald-500/40 hover:shadow-xl hover:shadow-emerald-500/50 hover:-translate-y-0.5 transition-all duration-300 disabled:opacity-40 disabled:cursor-not-allowed disabled:hover:translate-y-0 disabled:hover:shadow-lg"
+                  >
+                    {status === "submitting" ? "送信中..." : "無料で一括見積もりを依頼する"}
+                  </button>
+
+                  <p className="text-xs text-gray-400 text-center leading-relaxed">
+                    ※ ご入力いただいた情報は見積もり目的にのみ使用いたします
+                  </p>
+                </>
               )}
-
-              <button
-                type="submit"
-                disabled={!isFormValid || status === "submitting"}
-                className="w-full py-4 bg-gradient-to-br from-emerald-500 to-emerald-700 text-white font-bold text-lg rounded-full shadow-lg shadow-emerald-500/40 hover:shadow-xl hover:shadow-emerald-500/50 hover:-translate-y-0.5 transition-all duration-300 disabled:opacity-40 disabled:cursor-not-allowed disabled:hover:translate-y-0 disabled:hover:shadow-lg"
-              >
-                {status === "submitting" ? "送信中..." : "無料で一括見積もりを依頼する"}
-              </button>
-
-              <p className="text-xs text-gray-400 text-center leading-relaxed">
-                ※ ご入力いただいた情報は見積もり目的にのみ使用いたします
-              </p>
             </div>
           </div>
         </form>
