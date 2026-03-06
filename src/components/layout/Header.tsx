@@ -104,7 +104,7 @@ export function Header() {
               掲載社数<span className="text-2xl font-extrabold text-red-600 mx-1">254</span>社
             </p>
             <p className="text-gray-800 font-bold text-sm">
-              口コミ数<span className="text-2xl font-extrabold text-red-600 mx-1">100</span>件
+              口コミ数<span className="text-2xl font-extrabold text-red-600 mx-1">106</span>件
             </p>
           </div>
 
