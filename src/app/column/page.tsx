@@ -8,7 +8,7 @@ import { SITE_URL } from "@/lib/constants";
 export const metadata: Metadata = {
   title: "ファクナビ｜実践経営ノート",
   description:
-    "ファクタリングの基礎知識、業者の選び方、業種別活用法など、役立つ情報をお届けします。",
+    "中小企業の資金繰り・経営改善に役立つナレッジを発信。ファクタリング・補助金・助成金など幅広く解説。",
   alternates: { canonical: `${SITE_URL}/column` },
 };
 
@@ -29,7 +29,7 @@ export default function ColumnPage() {
         ファクナビ｜実践経営ノート
       </h1>
       <p className="text-gray-600 mb-8">
-        ファクタリングに関する基礎知識や選び方のポイントを解説します。
+        中小企業の資金繰り・経営改善に役立つナレッジを発信
       </p>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">

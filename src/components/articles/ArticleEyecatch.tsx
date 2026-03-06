@@ -21,6 +21,11 @@ const categoryStyles: Record<string, { gradient: string; icon: string; label: st
     icon: "⚖️",
     label: "徹底比較",
   },
+  経営: {
+    gradient: "from-orange-900/80 via-orange-800/70 to-orange-700/60",
+    icon: "💼",
+    label: "経営ノート",
+  },
 };
 
 const defaultStyle = {

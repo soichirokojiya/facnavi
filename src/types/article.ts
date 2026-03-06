@@ -1,4 +1,4 @@
-export type ArticleCategory = "基礎知識" | "選び方" | "業種別" | "比較";
+export type ArticleCategory = "基礎知識" | "選び方" | "業種別" | "比較" | "経営";
 
 export interface ArticleFrontmatter {
   title: string;
