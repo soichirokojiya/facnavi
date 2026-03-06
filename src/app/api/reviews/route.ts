@@ -7,6 +7,13 @@ const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!;
 
 export async function POST(request: NextRequest) {
   try {
+    if (!supabaseUrl || supabaseUrl.includes("xxxxx")) {
+      return NextResponse.json(
+        { error: "Supabaseの環境変数が設定されていません。管理者にお問い合わせください。" },
+        { status: 500 }
+      );
+    }
+
     const body = await request.json();
 
     const {
@@ -119,7 +126,8 @@ export async function POST(request: NextRequest) {
     }
 
     return NextResponse.json({ success: true });
-  } catch {
+  } catch (e) {
+    console.error("Review API error:", e);
     return NextResponse.json(
       { error: "リクエストの処理に失敗しました。" },
       { status: 500 }

@@ -78,7 +78,7 @@ export default function HomePage() {
 
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <Link href="/shindan">
-              <Button variant="accent" className="text-base px-8 py-3.5 w-full sm:w-auto shadow-lg shadow-orange-200/40 !bg-orange-500 hover:!bg-orange-600 !text-white">
+              <Button variant="accent" className="text-base px-8 py-3.5 w-full sm:w-auto shadow-lg shadow-emerald-200/40 !bg-emerald-600 hover:!bg-emerald-700 !text-white">
                 無料で診断する
               </Button>
             </Link>
@@ -131,7 +131,7 @@ export default function HomePage() {
                   href={company.affiliateUrl}
                   target="_blank"
                   rel="nofollow sponsored noopener"
-                  className="block text-center py-2.5 bg-orange-500 text-white font-bold text-sm rounded-lg hover:bg-orange-600 transition-colors"
+                  className="block text-center py-2.5 bg-emerald-600 text-white font-bold text-sm rounded-lg hover:bg-emerald-700 transition-colors"
                 >
                   公式サイトを見る
                 </a>
@@ -250,7 +250,7 @@ export default function HomePage() {
                       href={company.affiliateUrl}
                       target="_blank"
                       rel="nofollow sponsored noopener"
-                      className="block text-center py-2.5 bg-orange-500 text-white font-bold text-sm rounded-lg hover:bg-orange-600 transition-colors"
+                      className="block text-center py-2.5 bg-emerald-600 text-white font-bold text-sm rounded-lg hover:bg-emerald-700 transition-colors"
                     >
                       公式サイトを見る
                     </a>
@@ -285,7 +285,7 @@ export default function HomePage() {
             5つの質問に答えるだけで、あなたに最適な業者がわかります
           </p>
           <Link href="/shindan">
-            <Button className="text-lg px-8 py-4 !bg-orange-500 !text-white font-bold hover:!bg-orange-600 shadow-lg">
+            <Button className="text-lg px-8 py-4 !bg-emerald-600 !text-white font-bold hover:!bg-emerald-700 shadow-lg">
               無料診断スタート →
             </Button>
           </Link>
