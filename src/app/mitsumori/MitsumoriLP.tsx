@@ -282,15 +282,12 @@ export function MitsumoriLP() {
       {/* ━━━ 1. ファーストビュー ━━━ */}
       <section className="py-16 md:py-24 bg-gradient-to-br from-[#0b3d91] via-[#1a365d] to-[#0b3d91] -mx-4 px-6 rounded-2xl mb-0">
         <div className="max-w-2xl mx-auto text-center">
-          <p className="inline-block text-sm font-bold text-amber-300 bg-amber-400/20 border border-amber-400/40 rounded-full px-4 py-1.5 mb-4">
-            2026年4月サービス開始予定
-          </p>
-          <p className="inline-block text-sm font-bold text-orange-400 border border-orange-400/40 rounded-full px-4 py-1.5 mb-6 ml-2">
+          <p className="inline-block text-sm font-bold text-orange-400 border border-orange-400/40 rounded-full px-4 py-1.5 mb-6">
             完全無料・最短30秒で入力完了
           </p>
           <h1 className="text-3xl md:text-[2.75rem] font-extrabold text-white leading-tight tracking-tight mb-5">
-            最適なファクタリング会社を<br />
-            無料で一括比較
+            たった30秒で最適な<br />
+            ファクタリング会社が見つかる
           </h1>
           <p className="text-blue-200 text-lg mb-12 leading-relaxed">
             複数社にまとめて見積もり依頼。<br className="sm:hidden" />
@@ -298,7 +295,11 @@ export function MitsumoriLP() {
           </p>
 
           {/* 数値バー */}
-          <div className="grid grid-cols-2 bg-white/10 backdrop-blur rounded-xl border border-white/20 divide-x divide-white/20 mb-12">
+          <div className="grid grid-cols-3 bg-white/10 backdrop-blur rounded-xl border border-white/20 divide-x divide-white/20 mb-12">
+            <div className="py-5">
+              <p className="text-3xl md:text-4xl font-extrabold text-orange-400">257<span className="text-lg">社</span></p>
+              <p className="text-sm text-blue-200 mt-1">登録業者数</p>
+            </div>
             <div className="py-5">
               <p className="text-3xl md:text-4xl font-extrabold text-orange-400">95<span className="text-lg">%</span></p>
               <p className="text-sm text-blue-200 mt-1">利用者満足度</p>
@@ -489,20 +490,9 @@ export function MitsumoriLP() {
 
       {/* ━━━ 8. フォーム ━━━ */}
       <section id="form" className="py-16 md:py-20 -mx-4 px-4 scroll-mt-20">
-        <SectionHeading sub="COMING SOON">無料一括見積もりフォーム</SectionHeading>
+        <SectionHeading sub="FORM">無料一括見積もりフォーム</SectionHeading>
 
-        {/* サービス開始前の告知 */}
-        <div className="max-w-xl mx-auto mb-8">
-          <div className="bg-amber-50 border-2 border-amber-300 rounded-2xl p-6 text-center">
-            <p className="text-amber-600 font-bold text-lg mb-2">2026年4月サービス開始予定</p>
-            <p className="text-gray-700 text-sm leading-relaxed">
-              現在サービス開始に向けて準備中です。<br />
-              開始後はこちらのフォームから無料で一括見積もりをご利用いただけます。
-            </p>
-          </div>
-        </div>
-
-        <form onSubmit={handleSubmit} className="max-w-xl mx-auto pointer-events-none opacity-50 select-none" aria-disabled="true">
+        <form onSubmit={handleSubmit} className="max-w-xl mx-auto">
           <div className="bg-white rounded-2xl shadow-xl border border-gray-200 overflow-hidden">
             {/* フォームヘッダー */}
             <div className="bg-gradient-to-r from-[#0b3d91] to-[#1a365d] text-white text-center py-4 px-4">

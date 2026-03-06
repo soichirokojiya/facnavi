@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import { createClient } from "@supabase/supabase-js";
 import { Resend } from "resend";
+import crypto from "crypto";
 
 const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL!;
 const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!;
@@ -64,18 +65,25 @@ export async function POST(request: NextRequest) {
     const serviceKey = process.env.SUPABASE_SERVICE_ROLE_KEY;
     const supabase = createClient(supabaseUrl, serviceKey || supabaseAnonKey);
 
-    const { error } = await supabase.from("mitsumori_requests").insert({
-      amount_range,
-      deposit_timing,
-      business_type,
-      industry,
-      prefecture,
-      company_name,
-      contact_name,
-      phone,
-      email,
-      message: message || null,
-    });
+    const upload_token = crypto.randomBytes(32).toString("hex");
+
+    const { data: insertData, error } = await supabase
+      .from("mitsumori_requests")
+      .insert({
+        amount_range,
+        deposit_timing,
+        business_type,
+        industry,
+        prefecture,
+        company_name,
+        contact_name,
+        phone,
+        email,
+        message: message || null,
+        upload_token,
+      })
+      .select("id, upload_token")
+      .single();
 
     if (error) {
       console.error("Supabase insert error:", error);
@@ -84,6 +92,9 @@ export async function POST(request: NextRequest) {
         { status: 500 }
       );
     }
+
+    const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://facnavi.info";
+    const uploadUrl = `${siteUrl}/mitsumori/upload/${insertData.upload_token}`;
 
     const resend = new Resend(process.env.RESEND_API_KEY);
     const fromEmail = process.env.RESEND_FROM_EMAIL || "noreply@facnavi.info";
@@ -120,7 +131,20 @@ export async function POST(request: NextRequest) {
                 <td style="padding: 8px;">${industry}</td>
               </tr>
             </table>
-            <p>提携業者より順次ご連絡いたしますので、今しばらくお待ちください。</p>
+            <p>提携業者より順次お電話にてご連絡いたしますので、今しばらくお待ちください。</p>
+
+            <div style="background: #eff6ff; border: 1px solid #bfdbfe; border-radius: 8px; padding: 20px; margin: 20px 0;">
+              <h3 style="color: #1e40af; margin: 0 0 12px 0; font-size: 16px;">📄 審査書類のアップロードをお願いします</h3>
+              <p style="margin: 0 0 12px 0;">スムーズな審査のため、以下の書類をアップロードしてください。</p>
+              <ul style="margin: 0 0 16px 0; padding-left: 20px;">
+                <li>売却予定の請求書</li>
+                <li>本人確認書類（運転免許証・マイナンバーカード・保険証のいずれか）</li>
+                <li>通帳コピー・入出金明細（直近3ヶ月分）</li>
+              </ul>
+              <a href="${uploadUrl}" style="display: inline-block; background: #1e40af; color: #ffffff; padding: 12px 24px; border-radius: 6px; text-decoration: none; font-weight: bold;">
+                書類をアップロードする
+              </a>
+            </div>
             <hr style="border: none; border-top: 1px solid #e5e7eb; margin: 20px 0;" />
             <p style="font-size: 12px; color: #9ca3af;">
               このメールはファクナビ（https://facnavi.info）から自動送信されています。<br>

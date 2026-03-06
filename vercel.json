@@ -1,0 +1,8 @@
+{
+  "crons": [
+    {
+      "path": "/api/cron/cleanup-mitsumori",
+      "schedule": "0 3 * * *"
+    }
+  ]
+}

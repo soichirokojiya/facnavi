@@ -9,6 +9,7 @@ export const NAV_ITEMS = [
   { label: "口コミ", href: "/kuchikomi" },
   { label: "コラム", href: "/column" },
   { label: "診断ツール", href: "/shindan" },
+  { label: "一括見積もり", href: "/mitsumori" },
 ] as const;
 
 export const INDUSTRIES = [
