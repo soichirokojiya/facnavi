@@ -7,7 +7,7 @@ import {
   getCompanySlugs,
 } from "@/lib/companies";
 import { formatFeeRange, formatAmount } from "@/lib/format";
-import { getReviewsByCompany, getReviewSummary } from "@/lib/reviews";
+import { getReviewsByCompanyAsync, getReviewSummaryAsync } from "@/lib/reviews";
 import { Breadcrumb } from "@/components/layout/Breadcrumb";
 import { Badge } from "@/components/ui/Badge";
 import { StarRating } from "@/components/ui/StarRating";
@@ -40,8 +40,8 @@ export default async function CompanyDetailPage({ params }: Props) {
   const company = getCompanyBySlug(slug);
   if (!company) notFound();
 
-  const reviews = getReviewsByCompany(slug);
-  const summary = getReviewSummary(slug);
+  const reviews = await getReviewsByCompanyAsync(slug);
+  const summary = await getReviewSummaryAsync(slug);
   const allCompanies = getAllCompanies();
   const otherCompanies = allCompanies
     .filter((c) => c.slug !== slug)

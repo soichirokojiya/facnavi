@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { getAllReviews, getReviewedCompanySlugs, getReviewSummary } from "@/lib/reviews";
+import { getAllReviewsAsync, getReviewedCompanySlugsAsync, getReviewSummary } from "@/lib/reviews";
 import { getCompanyBySlug } from "@/lib/companies";
 import { ReviewCard } from "@/components/reviews/ReviewCard";
 import { Breadcrumb } from "@/components/layout/Breadcrumb";
@@ -16,9 +16,9 @@ export const metadata: Metadata = {
   alternates: { canonical: `${SITE_URL}/kuchikomi` },
 };
 
-export default function ReviewsPage() {
-  const reviews = getAllReviews();
-  const companySlugs = getReviewedCompanySlugs();
+export default async function ReviewsPage() {
+  const reviews = await getAllReviewsAsync();
+  const companySlugs = await getReviewedCompanySlugsAsync();
   const companyMap = Object.fromEntries(
     companySlugs.map((slug) => [slug, getCompanyBySlug(slug)?.name ?? slug])
   );

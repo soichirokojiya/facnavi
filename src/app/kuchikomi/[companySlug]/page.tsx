@@ -3,8 +3,9 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import { getCompanyBySlug } from "@/lib/companies";
 import {
-  getReviewsByCompany,
+  getReviewsByCompanyAsync,
   getReviewSummary,
+  getReviewSummaryAsync,
   getReviewedCompanySlugs,
 } from "@/lib/reviews";
 import { ReviewCard } from "@/components/reviews/ReviewCard";
@@ -39,8 +40,8 @@ export default async function CompanyReviewsPage({ params }: Props) {
   const company = getCompanyBySlug(companySlug);
   if (!company) notFound();
 
-  const reviews = getReviewsByCompany(companySlug);
-  const summary = getReviewSummary(companySlug);
+  const reviews = await getReviewsByCompanyAsync(companySlug);
+  const summary = await getReviewSummaryAsync(companySlug);
 
   return (
     <div className="max-w-4xl mx-auto px-4 py-8">

@@ -49,7 +49,6 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    // メールアドレスの簡易バリデーション
     if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
       return NextResponse.json(
         { error: "正しいメールアドレスを入力してください。" },
@@ -59,23 +58,27 @@ export async function POST(request: NextRequest) {
 
     const supabase = createClient(supabaseUrl, supabaseAnonKey);
 
-    const { error } = await supabase.from("reviews").insert({
-      company_slug,
-      author_name,
-      email,
-      industry,
-      prefecture,
-      rating,
-      funding_amount: funding_amount || null,
-      usage_status: usage_status || null,
-      fee_rate: fee_rate || null,
-      review_speed: review_speed || null,
-      deposit_speed: deposit_speed || null,
-      title,
-      body: reviewBody,
-      pros,
-      cons,
-    });
+    const { data, error } = await supabase
+      .from("reviews")
+      .insert({
+        company_slug,
+        author_name,
+        email,
+        industry,
+        prefecture,
+        rating,
+        funding_amount: funding_amount || null,
+        usage_status: usage_status || null,
+        fee_rate: fee_rate || null,
+        review_speed: review_speed || null,
+        deposit_speed: deposit_speed || null,
+        title,
+        body: reviewBody,
+        pros,
+        cons,
+      })
+      .select("id")
+      .single();
 
     if (error) {
       console.error("Supabase insert error:", error);
@@ -85,10 +88,12 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    // 受付確認メール送信
+    const reviewId = data?.id;
+    const resend = new Resend(process.env.RESEND_API_KEY);
+    const fromEmail = process.env.RESEND_FROM_EMAIL || "noreply@facnavi.info";
+
+    // 投稿者への受付確認メール
     try {
-      const resend = new Resend(process.env.RESEND_API_KEY);
-      const fromEmail = process.env.RESEND_FROM_EMAIL || "noreply@facnavi.info";
       await resend.emails.send({
         from: `ファクナビ <${fromEmail}>`,
         to: email,
@@ -121,8 +126,83 @@ export async function POST(request: NextRequest) {
         `,
       });
     } catch (emailError) {
-      // メール送信失敗は口コミ投稿自体の失敗にはしない
-      console.error("Failed to send confirmation email:", emailError);
+      console.error("Failed to send user confirmation email:", emailError);
+    }
+
+    // 管理者への通知メール（承認/不承認ボタン付き）
+    try {
+      const adminEmail = process.env.ADMIN_EMAIL;
+      const moderateSecret = process.env.MODERATE_SECRET;
+      const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://facnavi.info";
+
+      if (adminEmail && moderateSecret && reviewId) {
+        const approveUrl = `${siteUrl}/api/reviews/moderate?id=${reviewId}&action=approved&secret=${moderateSecret}`;
+        const rejectUrl = `${siteUrl}/api/reviews/moderate?id=${reviewId}&action=rejected&secret=${moderateSecret}`;
+
+        await resend.emails.send({
+          from: `ファクナビ <${fromEmail}>`,
+          to: adminEmail,
+          subject: `【ファクナビ】新しい口コミが投稿されました（${company_slug}）`,
+          html: `
+            <div style="font-family: sans-serif; max-width: 600px; margin: 0 auto; padding: 20px;">
+              <h2 style="color: #1e40af; border-bottom: 2px solid #1e40af; padding-bottom: 10px;">
+                新しい口コミが投稿されました
+              </h2>
+              <table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
+                <tr style="border-bottom: 1px solid #e5e7eb;">
+                  <td style="padding: 8px; color: #6b7280; width: 120px;">会社</td>
+                  <td style="padding: 8px; font-weight: bold;">${company_slug}</td>
+                </tr>
+                <tr style="border-bottom: 1px solid #e5e7eb;">
+                  <td style="padding: 8px; color: #6b7280;">投稿者</td>
+                  <td style="padding: 8px;">${author_name}</td>
+                </tr>
+                <tr style="border-bottom: 1px solid #e5e7eb;">
+                  <td style="padding: 8px; color: #6b7280;">メール</td>
+                  <td style="padding: 8px;">${email}</td>
+                </tr>
+                <tr style="border-bottom: 1px solid #e5e7eb;">
+                  <td style="padding: 8px; color: #6b7280;">評価</td>
+                  <td style="padding: 8px; font-weight: bold;">${"★".repeat(rating)}${"☆".repeat(5 - rating)}（${rating}.0）</td>
+                </tr>
+                <tr style="border-bottom: 1px solid #e5e7eb;">
+                  <td style="padding: 8px; color: #6b7280;">業種</td>
+                  <td style="padding: 8px;">${industry}（${prefecture}）</td>
+                </tr>
+                <tr style="border-bottom: 1px solid #e5e7eb;">
+                  <td style="padding: 8px; color: #6b7280;">タイトル</td>
+                  <td style="padding: 8px; font-weight: bold;">${title}</td>
+                </tr>
+                <tr style="border-bottom: 1px solid #e5e7eb;">
+                  <td style="padding: 8px; color: #6b7280;">良かった点</td>
+                  <td style="padding: 8px;">${pros}</td>
+                </tr>
+                <tr style="border-bottom: 1px solid #e5e7eb;">
+                  <td style="padding: 8px; color: #6b7280;">気になった点</td>
+                  <td style="padding: 8px;">${cons}</td>
+                </tr>
+                <tr style="border-bottom: 1px solid #e5e7eb;">
+                  <td style="padding: 8px; color: #6b7280;">感想</td>
+                  <td style="padding: 8px;">${reviewBody}</td>
+                </tr>
+              </table>
+              <div style="text-align: center; margin: 30px 0;">
+                <a href="${approveUrl}" style="display: inline-block; padding: 12px 32px; background: #10b981; color: white; font-weight: bold; text-decoration: none; border-radius: 8px; margin-right: 12px;">
+                  承認する
+                </a>
+                <a href="${rejectUrl}" style="display: inline-block; padding: 12px 32px; background: #ef4444; color: white; font-weight: bold; text-decoration: none; border-radius: 8px;">
+                  不承認にする
+                </a>
+              </div>
+              <p style="font-size: 12px; color: #9ca3af; text-align: center;">
+                このメールはファクナビの口コミ管理システムから自動送信されています。
+              </p>
+            </div>
+          `,
+        });
+      }
+    } catch (adminEmailError) {
+      console.error("Failed to send admin notification:", adminEmailError);
     }
 
     return NextResponse.json({ success: true });

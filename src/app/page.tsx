@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { getAllCompanies } from "@/lib/companies";
-import { getAllReviews } from "@/lib/reviews";
+import { getAllReviewsAsync } from "@/lib/reviews";
 import { getAllArticles } from "@/lib/articles";
 import { ReviewCard } from "@/components/reviews/ReviewCard";
 import { ArticleCard } from "@/components/articles/ArticleCard";
@@ -17,9 +17,9 @@ import { KeywordSearch, SearchableCompany } from "@/components/search/KeywordSea
 import { FAQ_DATA } from "@/lib/faq";
 import { CurrentDate } from "@/components/ui/CurrentDate";
 
-export default function HomePage() {
+export default async function HomePage() {
   const companies = getAllCompanies();
-  const reviews = getAllReviews();
+  const reviews = await getAllReviewsAsync();
   const articles = getAllArticles().slice(0, 6);
   const companyMap = Object.fromEntries(companies.map((c) => [c.slug, c.name]));
   const topFaq = FAQ_DATA.slice(0, 5);
