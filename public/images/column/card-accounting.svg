@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <rect width="800" height="400" fill="#f0f4ff" rx="12"/>
+  <!-- Card on left -->
+  <g transform="translate(60, 140)">
+    <rect x="0" y="0" width="160" height="100" rx="10" fill="#6366f1"/>
+    <rect x="12" y="25" width="30" height="22" rx="4" fill="#fbbf24" opacity="0.7"/>
+    <rect x="12" y="65" width="90" height="6" rx="3" fill="#fff" opacity="0.4"/>
+    <rect x="12" y="78" width="60" height="5" rx="2" fill="#fff" opacity="0.3"/>
+    <circle cx="135" cy="80" r="10" fill="#fff" opacity="0.25"/>
+    <circle cx="148" cy="80" r="10" fill="#fff" opacity="0.15"/>
+  </g>
+  <!-- Arrow 1 -->
+  <g transform="translate(240, 175)">
+    <line x1="0" y1="15" x2="60" y2="15" stroke="#3b82f6" stroke-width="3" stroke-dasharray="6,4"/>
+    <polygon points="60,8 75,15 60,22" fill="#3b82f6"/>
+    <text x="37" y="5" text-anchor="middle" fill="#6b7280" font-size="9" font-family="sans-serif">自動連携</text>
+  </g>
+  <!-- Cloud accounting software -->
+  <g transform="translate(330, 80)">
+    <rect x="0" y="0" width="180" height="240" rx="10" fill="#fff" stroke="#1e40af" stroke-width="2"/>
+    <rect x="0" y="0" width="180" height="40" rx="10" fill="#1e40af"/>
+    <rect x="0" y="30" width="180" height="10" fill="#1e40af"/>
+    <text x="90" y="28" text-anchor="middle" fill="#fff" font-size="12" font-weight="bold" font-family="sans-serif">会計ソフト</text>
+    <!-- Transaction rows -->
+    <rect x="12" y="55" width="156" height="28" rx="4" fill="#f1f5f9"/>
+    <rect x="18" y="61" width="50" height="6" rx="3" fill="#94a3b8"/>
+    <rect x="75" y="61" width="40" height="6" rx="3" fill="#cbd5e1"/>
+    <rect x="130" y="59" width="30" height="10" rx="3" fill="#10b981" opacity="0.2"/>
+    <text x="145" y="67" text-anchor="middle" fill="#10b981" font-size="7" font-family="sans-serif">✓</text>
+    <rect x="12" y="90" width="156" height="28" rx="4" fill="#f8fafc"/>
+    <rect x="18" y="96" width="45" height="6" rx="3" fill="#94a3b8"/>
+    <rect x="75" y="96" width="35" height="6" rx="3" fill="#cbd5e1"/>
+    <rect x="130" y="94" width="30" height="10" rx="3" fill="#10b981" opacity="0.2"/>
+    <text x="145" y="102" text-anchor="middle" fill="#10b981" font-size="7" font-family="sans-serif">✓</text>
+    <rect x="12" y="125" width="156" height="28" rx="4" fill="#f1f5f9"/>
+    <rect x="18" y="131" width="55" height="6" rx="3" fill="#94a3b8"/>
+    <rect x="75" y="131" width="42" height="6" rx="3" fill="#cbd5e1"/>
+    <rect x="130" y="129" width="30" height="10" rx="3" fill="#10b981" opacity="0.2"/>
+    <text x="145" y="137" text-anchor="middle" fill="#10b981" font-size="7" font-family="sans-serif">✓</text>
+    <rect x="12" y="160" width="156" height="28" rx="4" fill="#f8fafc"/>
+    <rect x="18" y="166" width="48" height="6" rx="3" fill="#94a3b8"/>
+    <rect x="75" y="166" width="38" height="6" rx="3" fill="#cbd5e1"/>
+    <rect x="130" y="164" width="30" height="10" rx="3" fill="#f59e0b" opacity="0.2"/>
+    <text x="145" y="172" text-anchor="middle" fill="#f59e0b" font-size="7" font-family="sans-serif">?</text>
+    <!-- Summary -->
+    <rect x="12" y="200" width="156" height="28" rx="4" fill="#1e40af" opacity="0.1"/>
+    <text x="90" y="218" text-anchor="middle" fill="#1e40af" font-size="10" font-weight="bold" font-family="sans-serif">自動仕訳 完了</text>
+  </g>
+  <!-- Arrow 2 -->
+  <g transform="translate(525, 175)">
+    <line x1="0" y1="15" x2="60" y2="15" stroke="#3b82f6" stroke-width="3" stroke-dasharray="6,4"/>
+    <polygon points="60,8 75,15 60,22" fill="#3b82f6"/>
+    <text x="37" y="5" text-anchor="middle" fill="#6b7280" font-size="9" font-family="sans-serif">自動作成</text>
+  </g>
+  <!-- Tax return document -->
+  <g transform="translate(615, 100)">
+    <rect x="0" y="0" width="130" height="180" rx="8" fill="#fff" stroke="#10b981" stroke-width="2"/>
+    <rect x="0" y="0" width="130" height="35" rx="8" fill="#10b981"/>
+    <rect x="0" y="25" width="130" height="10" fill="#10b981"/>
+    <text x="65" y="23" text-anchor="middle" fill="#fff" font-size="10" font-weight="bold" font-family="sans-serif">確定申告書</text>
+    <rect x="15" y="50" width="100" height="6" rx="3" fill="#cbd5e1"/>
+    <rect x="15" y="65" width="80" height="6" rx="3" fill="#cbd5e1"/>
+    <rect x="15" y="85" width="100" height="1" fill="#e2e8f0"/>
+    <rect x="15" y="95" width="50" height="5" rx="2" fill="#94a3b8"/>
+    <rect x="75" y="95" width="40" height="5" rx="2" fill="#94a3b8"/>
+    <rect x="15" y="110" width="50" height="5" rx="2" fill="#94a3b8"/>
+    <rect x="75" y="110" width="40" height="5" rx="2" fill="#94a3b8"/>
+    <rect x="15" y="125" width="50" height="5" rx="2" fill="#94a3b8"/>
+    <rect x="75" y="125" width="40" height="5" rx="2" fill="#94a3b8"/>
+    <!-- Stamp -->
+    <circle cx="95" cy="155" r="15" fill="none" stroke="#ef4444" stroke-width="1.5" opacity="0.5"/>
+  </g>
+</svg>

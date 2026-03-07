@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <rect width="800" height="400" fill="#f5f0ff" rx="12"/>
+  <!-- Credit card -->
+  <g transform="translate(80, 100)">
+    <rect x="0" y="0" width="260" height="160" rx="14" fill="linear-gradient(135deg, #6366f1, #8b5cf6)" stroke="#4f46e5" stroke-width="1"/>
+    <defs>
+      <linearGradient id="cardGrad" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0%" stop-color="#6366f1"/>
+        <stop offset="100%" stop-color="#8b5cf6"/>
+      </linearGradient>
+    </defs>
+    <rect x="0" y="0" width="260" height="160" rx="14" fill="url(#cardGrad)"/>
+    <!-- Chip -->
+    <rect x="30" y="45" width="40" height="30" rx="5" fill="#fbbf24" opacity="0.8"/>
+    <line x1="30" y1="55" x2="70" y2="55" stroke="#d97706" stroke-width="0.5"/>
+    <line x1="30" y1="65" x2="70" y2="65" stroke="#d97706" stroke-width="0.5"/>
+    <line x1="50" y1="45" x2="50" y2="75" stroke="#d97706" stroke-width="0.5"/>
+    <!-- Card number -->
+    <text x="30" y="105" fill="#fff" font-size="14" font-family="monospace" letter-spacing="2" opacity="0.9">•••• •••• •••• 1234</text>
+    <!-- Name -->
+    <text x="30" y="135" fill="#fff" font-size="11" font-family="sans-serif" opacity="0.8">BUSINESS OWNER</text>
+    <!-- Brand circle -->
+    <circle cx="220" cy="135" r="15" fill="#fff" opacity="0.3"/>
+    <circle cx="235" cy="135" r="15" fill="#fff" opacity="0.2"/>
+  </g>
+  <!-- Benefits -->
+  <g transform="translate(420, 40)">
+    <!-- Benefit 1 -->
+    <g transform="translate(0, 0)">
+      <rect x="0" y="0" width="300" height="65" rx="10" fill="#fff" stroke="#e2e8f0" stroke-width="1"/>
+      <circle cx="35" cy="32" r="20" fill="#dbeafe"/>
+      <text x="35" y="39" text-anchor="middle" font-size="20">💰</text>
+      <text x="65" y="24" fill="#334155" font-size="12" font-weight="bold" font-family="sans-serif">ポイント還元</text>
+      <text x="65" y="44" fill="#6b7280" font-size="10" font-family="sans-serif">年間300万利用で最大4.5万円還元</text>
+    </g>
+    <!-- Benefit 2 -->
+    <g transform="translate(0, 80)">
+      <rect x="0" y="0" width="300" height="65" rx="10" fill="#fff" stroke="#e2e8f0" stroke-width="1"/>
+      <circle cx="35" cy="32" r="20" fill="#dcfce7"/>
+      <text x="35" y="39" text-anchor="middle" font-size="20">📊</text>
+      <text x="65" y="24" fill="#334155" font-size="12" font-weight="bold" font-family="sans-serif">経費管理の自動化</text>
+      <text x="65" y="44" fill="#6b7280" font-size="10" font-family="sans-serif">会計ソフト連携で仕訳を自動化</text>
+    </g>
+    <!-- Benefit 3 -->
+    <g transform="translate(0, 160)">
+      <rect x="0" y="0" width="300" height="65" rx="10" fill="#fff" stroke="#e2e8f0" stroke-width="1"/>
+      <circle cx="35" cy="32" r="20" fill="#fef3c7"/>
+      <text x="35" y="39" text-anchor="middle" font-size="20">⏰</text>
+      <text x="65" y="24" fill="#334155" font-size="12" font-weight="bold" font-family="sans-serif">支払い猶予</text>
+      <text x="65" y="44" fill="#6b7280" font-size="10" font-family="sans-serif">最大約2ヶ月の無利息キャッシュフロー</text>
+    </g>
+    <!-- Benefit 4 -->
+    <g transform="translate(0, 240)">
+      <rect x="0" y="0" width="300" height="65" rx="10" fill="#fff" stroke="#e2e8f0" stroke-width="1"/>
+      <circle cx="35" cy="32" r="20" fill="#ede9fe"/>
+      <text x="35" y="39" text-anchor="middle" font-size="20">✈️</text>
+      <text x="65" y="24" fill="#334155" font-size="12" font-weight="bold" font-family="sans-serif">ビジネス特典</text>
+      <text x="65" y="44" fill="#6b7280" font-size="10" font-family="sans-serif">空港ラウンジ・旅行保険・ETC無料</text>
+    </g>
+  </g>
+</svg>
