@@ -1,4 +1,4 @@
-export type ArticleCategory = "基礎知識" | "選び方" | "業種別" | "比較" | "経営";
+export type ArticleCategory = "ファクタリング" | "資金調達" | "税金・節税" | "確定申告・経理" | "保険" | "クレジットカード" | "経営・資金繰り" | "用語集";
 
 export interface ArticleFrontmatter {
   title: string;

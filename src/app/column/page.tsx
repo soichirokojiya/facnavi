@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import { getAllArticles } from "@/lib/articles";
-import { ArticleCard } from "@/components/articles/ArticleCard";
 import { Breadcrumb } from "@/components/layout/Breadcrumb";
 import { BreadcrumbJsonLd } from "@/components/seo/JsonLd";
 import { SITE_URL } from "@/lib/constants";
+import { ColumnListClient } from "@/components/articles/ColumnListClient";
 
 export const metadata: Metadata = {
   title: "ファクナビ｜実践経営ノート",
@@ -14,6 +14,7 @@ export const metadata: Metadata = {
 
 export default function ColumnPage() {
   const articles = getAllArticles();
+  const frontmatters = articles.map(({ content, ...fm }) => fm);
 
   return (
     <div className="max-w-4xl mx-auto px-4 py-8">
@@ -32,11 +33,7 @@ export default function ColumnPage() {
         中小企業の資金繰り・経営改善に役立つナレッジを発信
       </p>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-        {articles.map((article) => (
-          <ArticleCard key={article.slug} article={article} />
-        ))}
-      </div>
+      <ColumnListClient articles={frontmatters} />
     </div>
   );
 }

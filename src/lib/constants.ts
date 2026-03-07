@@ -37,6 +37,17 @@ export const PREFECTURES = [
   "福岡県", "佐賀県", "長崎県", "熊本県", "大分県", "宮崎県", "鹿児島県", "沖縄県",
 ] as const;
 
+export const ARTICLE_CATEGORIES = [
+  { slug: "factoring", label: "ファクタリング", emoji: "💰", description: "ファクタリングの基礎知識・選び方・業種別ガイド" },
+  { slug: "funding", label: "資金調達", emoji: "🏦", description: "補助金・助成金・融資など資金調達の方法を解説" },
+  { slug: "tax", label: "税金・節税", emoji: "🧾", description: "税金対策・節税テクニックをわかりやすく解説" },
+  { slug: "accounting", label: "確定申告・経理", emoji: "📊", description: "確定申告・経理業務の実践ガイド" },
+  { slug: "insurance", label: "保険", emoji: "🛡️", description: "事業者向け保険の選び方・比較情報" },
+  { slug: "credit-card", label: "クレジットカード", emoji: "💳", description: "法人・個人事業主向けクレジットカード情報" },
+  { slug: "management", label: "経営・資金繰り", emoji: "💼", description: "経営改善・資金繰りのノウハウを発信" },
+  { slug: "glossary", label: "用語集", emoji: "📖", description: "ファクタリング・資金調達の用語解説" },
+] as const;
+
 export const COLORS = {
   primary: "#1e40af",
   primaryLight: "#3b82f6",

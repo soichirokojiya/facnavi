@@ -1,7 +1,8 @@
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
-import { Article, ArticleFrontmatter } from "@/types/article";
+import { Article, ArticleCategory, ArticleFrontmatter } from "@/types/article";
+import { ARTICLE_CATEGORIES } from "@/lib/constants";
 
 const articlesDir = path.join(process.cwd(), "content/articles");
 
@@ -38,6 +39,15 @@ export function getArticleSlugs(): string[] {
 
 export function getArticlesByCategory(category: string): Article[] {
   return getAllArticles().filter((a) => a.category === category);
+}
+
+export function getCategoryBySlug(slug: string) {
+  return ARTICLE_CATEGORIES.find((c) => c.slug === slug);
+}
+
+export function getCategorySlug(category: ArticleCategory): string {
+  const found = ARTICLE_CATEGORIES.find((c) => c.label === category);
+  return found?.slug ?? "factoring";
 }
 
 export function extractHeadings(content: string): { id: string; text: string; level: number }[] {

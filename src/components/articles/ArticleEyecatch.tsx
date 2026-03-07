@@ -1,30 +1,45 @@
 import Image from "next/image";
 
 const categoryStyles: Record<string, { gradient: string; icon: string; label: string }> = {
-  基礎知識: {
+  ファクタリング: {
     gradient: "from-blue-900/80 via-blue-800/70 to-blue-700/60",
-    icon: "📘",
-    label: "基礎知識",
+    icon: "💰",
+    label: "ファクタリング",
   },
-  選び方: {
+  資金調達: {
     gradient: "from-emerald-900/80 via-emerald-800/70 to-emerald-700/60",
-    icon: "🔍",
-    label: "選び方ガイド",
+    icon: "🏦",
+    label: "資金調達",
   },
-  業種別: {
+  "税金・節税": {
     gradient: "from-amber-900/80 via-amber-800/70 to-amber-700/60",
-    icon: "🏢",
-    label: "業種別ガイド",
+    icon: "🧾",
+    label: "税金・節税",
   },
-  比較: {
+  "確定申告・経理": {
+    gradient: "from-indigo-900/80 via-indigo-800/70 to-indigo-700/60",
+    icon: "📊",
+    label: "確定申告・経理",
+  },
+  保険: {
+    gradient: "from-teal-900/80 via-teal-800/70 to-teal-700/60",
+    icon: "🛡️",
+    label: "保険",
+  },
+  クレジットカード: {
     gradient: "from-purple-900/80 via-purple-800/70 to-purple-700/60",
-    icon: "⚖️",
-    label: "徹底比較",
+    icon: "💳",
+    label: "クレジットカード",
   },
-  経営: {
+  "経営・資金繰り": {
     gradient: "from-orange-900/80 via-orange-800/70 to-orange-700/60",
     icon: "💼",
-    label: "経営ノート",
+    label: "経営・資金繰り",
+  },
+  用語集: {
+    gradient: "from-gray-900/80 via-gray-800/70 to-gray-700/60",
+    icon: "📖",
+    label: "用語集",
   },
 };
 

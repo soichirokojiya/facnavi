@@ -9,10 +9,13 @@ interface ArticleCardProps {
 }
 
 const categoryVariant: Record<string, "primary" | "success" | "warning" | "danger"> = {
-  基礎知識: "primary",
-  選び方: "success",
-  業種別: "warning",
-  比較: "danger",
+  ファクタリング: "primary",
+  資金調達: "success",
+  "税金・節税": "warning",
+  "確定申告・経理": "primary",
+  保険: "success",
+  クレジットカード: "danger",
+  "経営・資金繰り": "warning",
 };
 
 export function ArticleCard({ article }: ArticleCardProps) {
