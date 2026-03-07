@@ -2,7 +2,7 @@
   "slug": "ebis-holdings",
   "name": "株式会社エビスホールディングス",
   "brandName": "エビスホールディングス",
-  "description": "",
+  "description": "東京大田区拠点のファクタリング会社。100万円〜1億円の買取に対応し、ノンリコース契約で安心。都市銀行・上場企業出身者や企業再生コンサルタントが対応。製造業をはじめ中小企業の資金繰り改善を対面で丁寧にサポート。",
   "affiliateUrl": "https://ebis-holdings.co.jp/",
   "factoringType": "2社間・3社間",
   "feeRange": {
@@ -39,5 +39,7 @@
     "サービス業"
   ],
   "overallRating": 3,
-  "rankPosition": 221
+  "rankPosition": 221,
+  "requiredDocuments": ["請求書", "通帳コピー", "本人確認書類", "決算書"],
+  "address": "東京都大田区大森南3-23-4"
 }

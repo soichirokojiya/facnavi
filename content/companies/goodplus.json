@@ -2,7 +2,7 @@
   "slug": "goodplus",
   "name": "GoodPlus株式会社",
   "brandName": "GoodPlus",
-  "description": "",
+  "description": "申し込みから最短90分で資金化できるスピード対応が特徴のファクタリング会社。手数料5%〜15%の2社間取引をクラウドサインによる電子契約で完全オンライン提供しており、個人事業主にも対応。土日祝日も営業しているため急な資金需要にも柔軟に応えられ、審査通過率は90%と高水準。",
   "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=4AX5KD+A1ZKKY+5DD4+5ZU29",
   "factoringType": "2社間",
   "feeRange": {
@@ -39,5 +39,12 @@
     "サービス業"
   ],
   "overallRating": 4.3,
-  "rankPosition": 30
+  "rankPosition": 30,
+  "requiredDocuments": [
+    "請求書",
+    "通帳コピー",
+    "本人確認書類"
+  ],
+  "address": "東京都渋谷区東3-25-3 11階",
+  "approvalRate": 90
 }

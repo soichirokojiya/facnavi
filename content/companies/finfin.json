@@ -2,7 +2,7 @@
   "slug": "finfin",
   "name": "会計バンク株式会社",
   "brandName": "FinFin",
-  "description": "",
+  "description": "会計バンクが運営する2社間・3社間ファクタリング。手数料3〜15%、最短即日入金に対応。オンライン完結で個人事業主もOK。柔軟な審査基準と大手町拠点の信頼性を兼ね備えた資金調達サービス。",
   "affiliateUrl": "https://finfin-factoring.jp/",
   "factoringType": "2社間・3社間",
   "feeRange": {
@@ -39,5 +39,7 @@
     "サービス業"
   ],
   "overallRating": 3.5,
-  "rankPosition": 118
+  "rankPosition": 118,
+  "requiredDocuments": ["請求書", "本人確認書類"],
+  "address": "東京都千代田区大手町1-6-1 大手町ビルFINOLAB"
 }

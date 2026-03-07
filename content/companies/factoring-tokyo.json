@@ -1,7 +1,7 @@
 {
   "slug": "factoring-tokyo",
   "name": "ファクタリング東京",
-  "description": "",
+  "description": "銀座に拠点を置く首都圏に強いファクタリング会社。2社間・3社間対応で手数料3〜15%、即日入金にも対応。対面相談が可能で、東京近郊の中小企業や個人事業主の資金繰り改善をきめ細かくサポート。全国からのオンライン申込にも対応。",
   "affiliateUrl": "https://factoring-tokyo.jp/",
   "factoringType": "2社間・3社間",
   "feeRange": {
@@ -38,5 +38,7 @@
     "サービス業"
   ],
   "overallRating": 3.5,
-  "rankPosition": 52
+  "rankPosition": 52,
+  "requiredDocuments": ["請求書", "通帳コピー", "本人確認書類"],
+  "address": "東京都中央区銀座7丁目13番6号サガミビル2階"
 }

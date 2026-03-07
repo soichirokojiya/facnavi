@@ -2,7 +2,7 @@
   "slug": "no1",
   "name": "株式会社No.1",
   "brandName": "No.1ファクタリング",
-  "description": "",
+  "description": "株式会社No.1が提供する法人向けファクタリングサービス。2社間手数料1%〜15%、3社間1%〜10%で、50万円〜5,000万円の売掛金に対応。審査通過率90%以上、最短即日での入金が可能。建設業や医療業界にも強く、診療報酬ファクタリングにも対応している。",
   "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=4AX5KD+A5K67M+4EKW+5ZEMP",
   "factoringType": "2社間・3社間",
   "feeRange": {
@@ -39,5 +39,12 @@
     "サービス業"
   ],
   "overallRating": 4.5,
-  "rankPosition": 10
+  "rankPosition": 10,
+  "requiredDocuments": [
+    "請求書",
+    "通帳コピー",
+    "決算書"
+  ],
+  "address": "東京都豊島区池袋4丁目2-11 CTビル3F",
+  "approvalRate": 90
 }

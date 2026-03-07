@@ -2,7 +2,7 @@
   "slug": "owl-keizai",
   "name": "株式会社アウル経済",
   "brandName": "アウル経済",
-  "description": "",
+  "description": "東京・日本橋の25年超の実績を持つファクタリング会社。手数料1%〜10%で最短2時間入金、10万円〜1億円の幅広い買取額に対応。注文書ファクタリングにも対応し、他社より安い手数料を保証。審査通過率97.5%の高水準。",
   "affiliateUrl": "https://owl-keizai.co.jp/",
   "factoringType": "2社間・3社間",
   "feeRange": {
@@ -39,5 +39,12 @@
     "サービス業"
   ],
   "overallRating": 3.5,
-  "rankPosition": 139
+  "rankPosition": 139,
+  "requiredDocuments": [
+    "請求書",
+    "通帳コピー",
+    "本人確認書類"
+  ],
+  "address": "〒103-0027 東京都中央区日本橋2-2-3 RISHEビル UCF4階",
+  "approvalRate": 97.5
 }

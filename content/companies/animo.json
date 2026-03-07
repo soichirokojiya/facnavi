@@ -1,7 +1,7 @@
 {
   "slug": "animo",
   "name": "ANIMO",
-  "description": "",
+  "description": "2社間・3社間対応のオンライン完結型ファクタリング。手数料3%〜15%、最短即日で売掛金を現金化。個人事業主も利用可能で、柔軟な審査基準により幅広い事業者の資金繰り改善をサポートする全国対応サービス。",
   "affiliateUrl": "https://animo-factoring.jp/",
   "factoringType": "2社間・3社間",
   "feeRange": {
@@ -38,5 +38,7 @@
     "サービス業"
   ],
   "overallRating": 3.5,
-  "rankPosition": 90
+  "rankPosition": 90,
+  "requiredDocuments": ["請求書", "通帳コピー", "本人確認書類"],
+  "address": "東京都千代田区東神田1-5-6 MK5thビル7F"
 }

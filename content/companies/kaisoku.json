@@ -2,7 +2,7 @@
   "slug": "kaisoku",
   "name": "株式会社アドプランニング",
   "brandName": "買速",
-  "description": "",
+  "description": "最短30分入金・審査通過率92%を誇る2社間ファクタリング。手数料1〜10%と業界相場を下回る低水準で、10万円の少額から対応。CloudSign電子契約でオンライン完結、赤字決算や税金滞納中でも利用可能な柔軟審査が魅力。",
   "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=4AX1OL+BRWNHU+5LZE+HVV0H",
   "factoringType": "2社間",
   "feeRange": {
@@ -39,5 +39,8 @@
     "サービス業"
   ],
   "overallRating": 3.7,
-  "rankPosition": 184
+  "rankPosition": 184,
+  "requiredDocuments": ["本人確認書類", "請求書", "通帳コピー"],
+  "address": "東京都豊島区南池袋2-19-4 南池袋ビル6F",
+  "approvalRate": 92
 }

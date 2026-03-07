@@ -2,7 +2,7 @@
   "slug": "shinki-corp",
   "name": "株式会社シンキコーポレーション",
   "brandName": "シンキコーポレーション",
-  "description": "",
+  "description": "池袋拠点の2社間・3社間ファクタリング会社。手数料3〜15%、即日入金対応。手形買取や在庫買取にも対応し、買取率80〜90%を実現。個人事業主も利用可能で、FAX・メールでの24時間相談受付が特徴。全国の中小企業の資金繰りを幅広く支援。",
   "affiliateUrl": "https://shinki-corp.jp/",
   "factoringType": "2社間・3社間",
   "feeRange": {
@@ -39,5 +39,11 @@
     "サービス業"
   ],
   "overallRating": 3.5,
-  "rankPosition": 154
+  "rankPosition": 154,
+  "requiredDocuments": [
+    "請求書",
+    "通帳コピー",
+    "本人確認書類"
+  ],
+  "address": "〒171-0014 東京都豊島区池袋"
 }

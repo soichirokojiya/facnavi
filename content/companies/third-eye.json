@@ -2,7 +2,7 @@
   "slug": "third-eye",
   "name": "株式会社THIRD-i",
   "brandName": "サードアイ",
-  "description": "",
+  "description": "千代田区の医療・介護分野に強いファクタリング会社。2社間・3社間対応で診療報酬や介護報酬、障害福祉の債権買取に実績あり。最短2〜3営業日で資金化、個別案件ごとの柔軟対応がモットー。手数料3〜15%、個人事業主も相談可能。",
   "affiliateUrl": "https://third-eye.co.jp/",
   "factoringType": "2社間・3社間",
   "feeRange": {
@@ -39,5 +39,11 @@
     "サービス業"
   ],
   "overallRating": 3.5,
-  "rankPosition": 165
+  "rankPosition": 165,
+  "requiredDocuments": [
+    "請求書",
+    "通帳コピー",
+    "本人確認書類"
+  ],
+  "address": "〒101-0065 東京都千代田区西神田3-5-3"
 }

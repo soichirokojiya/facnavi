@@ -2,7 +2,7 @@
   "slug": "protect-one",
   "name": "株式会社PROTECT.ONE",
   "brandName": "プロテクト・ワン",
-  "description": "",
+  "description": "横浜拠点の2社間ファクタリングで審査通過率96%。手数料1.5%〜の業界最安水準で、最短30分審査・即日振込に対応。10万円の少額から1億円の大口まで幅広く対応し、個人事業主・フリーランスにも特化したオンライン完結型。",
   "affiliateUrl": "https://protect-one.co.jp/",
   "factoringType": "2社間・3社間",
   "feeRange": {
@@ -39,5 +39,7 @@
     "サービス業"
   ],
   "overallRating": 3.5,
-  "rankPosition": 72
+  "rankPosition": 72,
+  "requiredDocuments": ["本人確認書類", "通帳コピー", "請求書", "見積書", "基本契約書"],
+  "address": "神奈川県横浜市中区羽衣町3-63 羽衣ビル8F"
 }

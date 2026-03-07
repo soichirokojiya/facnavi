@@ -2,7 +2,7 @@
   "slug": "accretive",
   "name": "アクリーティブ株式会社",
   "brandName": "アクリーティブ",
-  "description": "",
+  "description": "東証プライム上場・アイフルグループの医療・介護特化型3社間ファクタリング。月0.25%〜の業界最安水準手数料で年間取扱2000億円超の実績。全国47都道府県対応で、病院・介護施設・調剤薬局の診療報酬早期資金化を支援する。",
   "affiliateUrl": "https://www.accretive.jp/",
   "factoringType": "3社間",
   "feeRange": {
@@ -39,5 +39,10 @@
     "サービス業"
   ],
   "overallRating": 3.5,
-  "rankPosition": 40
+  "rankPosition": 40,
+  "requiredDocuments": [
+    "売掛債権に関する書類",
+    "決算書"
+  ],
+  "address": "東京都千代田区麹町5-1-1 住友不動産麹町ガーデンタワー"
 }

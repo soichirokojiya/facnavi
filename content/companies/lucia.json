@@ -2,7 +2,7 @@
   "slug": "lucia",
   "name": "株式会社LUCIA",
   "brandName": "LUCIA",
-  "description": "",
+  "description": "世田谷区池尻に拠点を構え、2社間・3社間ファクタリングに加え診療報酬債権にも対応。手数料3〜15%、最短即日入金で医療事業者の資金調達もサポート。マーケティングやIT支援などの経営コンサルティングも併せて提供する総合支援型。",
   "affiliateUrl": "https://lucia-factoring.jp/",
   "factoringType": "2社間・3社間",
   "feeRange": {
@@ -39,5 +39,7 @@
     "サービス業"
   ],
   "overallRating": 3.5,
-  "rankPosition": 63
+  "rankPosition": 63,
+  "requiredDocuments": ["請求書", "通帳コピー", "本人確認書類"],
+  "address": "東京都世田谷区池尻2-32-11 ラ・カーサ・セレナータ401"
 }

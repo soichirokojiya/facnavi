@@ -1,7 +1,7 @@
 {
   "slug": "heartful-life",
   "name": "ハートフルライフ",
-  "description": "",
+  "description": "中央区八丁堀拠点の2社間・3社間ファクタリング。手数料3〜15%で最短即日入金に対応。親身な対応と柔軟な審査が特徴で、個人事業主や中小企業の資金繰りの悩みに寄り添ったサービスを提供。",
   "affiliateUrl": "https://heartful-life.co.jp/",
   "factoringType": "2社間・3社間",
   "feeRange": {
@@ -38,5 +38,11 @@
     "サービス業"
   ],
   "overallRating": 3.5,
-  "rankPosition": 122
+  "rankPosition": 122,
+  "requiredDocuments": [
+    "請求書",
+    "通帳コピー",
+    "本人確認書類"
+  ],
+  "address": "〒104-0032 東京都中央区八丁堀3-24-1 1105"
 }

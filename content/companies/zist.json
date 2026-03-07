@@ -2,7 +2,7 @@
   "slug": "zist",
   "name": "株式会社ZIST",
   "brandName": "ZIST",
-  "description": "",
+  "description": "渋谷拠点の事業資金調達専門パートナー。2社間5〜15%、3社間3〜7%の手数料で最短即日入金に対応。経営コンサルやアフターフォローも充実し全国の法人・個人事業主を幅広く支援。",
   "affiliateUrl": "https://zist.co.jp/",
   "factoringType": "2社間・3社間",
   "feeRange": {
@@ -39,5 +39,7 @@
     "サービス業"
   ],
   "overallRating": 3.5,
-  "rankPosition": 88
+  "rankPosition": 88,
+  "requiredDocuments": ["請求書", "通帳コピー", "本人確認書類"],
+  "address": "東京都渋谷区円山町5-6 道玄坂イトウビル7F"
 }

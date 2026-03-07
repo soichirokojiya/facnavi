@@ -2,7 +2,7 @@
   "slug": "kyushu-factor",
   "name": "株式会社トータルサポート",
   "brandName": "九州ファクター",
-  "description": "",
+  "description": "福岡市中央区に拠点を置く九州地域密着型のファクタリング会社。2社間・3社間対応で最短即日現金化、担保・保証人不要。法人・個人事業主ともに利用でき、赤字企業でも対応可能。ノンリコース契約で未回収リスクを負担してくれる安心感。",
   "affiliateUrl": "https://kyushu-factor.jp/",
   "factoringType": "2社間・3社間",
   "feeRange": {
@@ -39,5 +39,7 @@
     "サービス業"
   ],
   "overallRating": 3,
-  "rankPosition": 232
+  "rankPosition": 232,
+  "requiredDocuments": ["請求書", "通帳コピー", "本人確認書類", "決算書"],
+  "address": "福岡県福岡市中央区赤坂1丁目14-22 センチュリー赤坂門ビル8F"
 }

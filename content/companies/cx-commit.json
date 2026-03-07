@@ -39,5 +39,7 @@
     "サービス業"
   ],
   "overallRating": 3.5,
-  "rankPosition": 174
+  "rankPosition": 174,
+  "requiredDocuments": ["請求書", "通帳コピー"],
+  "address": "東京都台東区東上野1-13-1"
 }

@@ -2,7 +2,7 @@
   "slug": "factorplan",
   "name": "株式会社ワイズコーポレーション",
   "brandName": "ファクタープラン",
-  "description": "",
+  "description": "株式会社ワイズコーポレーションが運営する「ファクタープラン」は、手数料1.8%〜8%という業界最安水準と最短4時間の入金スピードを強みとするファクタリングサービス。2社間・3社間の両方式に対応し、審査通過率は96%超。Zoomによるオンライン面談とクラウドサインによる電子契約で、完全非対面での手続きが可能。",
   "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=4AX5KD+A079RM+5RC6+5YJRM",
   "factoringType": "2社間",
   "feeRange": {
@@ -39,5 +39,12 @@
     "サービス業"
   ],
   "overallRating": 3.5,
-  "rankPosition": 28
+  "rankPosition": 28,
+  "requiredDocuments": [
+    "請求書",
+    "通帳コピー",
+    "決算書"
+  ],
+  "address": "東京都豊島区池袋2-53-12 ノーブル池袋3F",
+  "approvalRate": 93
 }

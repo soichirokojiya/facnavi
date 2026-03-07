@@ -2,7 +2,7 @@
   "slug": "orix-factoring",
   "name": "オリックス株式会社",
   "brandName": "オリックス",
-  "description": "",
+  "description": "日本を代表する総合金融グループ・オリックスの3社間ファクタリング。医療・介護・調剤報酬債権に強く、手数料1%〜5%の低水準。全国の支店網を活かした迅速で手厚い対応と、大手ならではの安定した資金力が魅力。",
   "affiliateUrl": "https://www.orix.co.jp/grp/",
   "factoringType": "3社間",
   "feeRange": {
@@ -39,5 +39,7 @@
     "サービス業"
   ],
   "overallRating": 3.7,
-  "rankPosition": 189
+  "rankPosition": 189,
+  "requiredDocuments": ["売掛金証明書類", "決算書", "登記簿謄本", "印鑑証明書"],
+  "address": "東京都港区浜松町2-4-1 世界貿易センタービル南館"
 }

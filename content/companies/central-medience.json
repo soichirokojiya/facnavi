@@ -2,7 +2,7 @@
   "slug": "central-medience",
   "name": "株式会社Central Medience",
   "brandName": "セントラルメディエンスペイメンツ",
-  "description": "",
+  "description": "病院・クリニック・歯科向けの診療報酬3社間ファクタリング。手数料1%〜5%の低コストで最短3営業日入金。保険請求額の最大半年分を掛け目約90%で資金化可能。オンライン完結で医療機関の経営資金繰りを専門的に支援する。",
   "affiliateUrl": "https://central-medience.co.jp/",
   "factoringType": "3社間",
   "feeRange": {
@@ -39,5 +39,7 @@
     "サービス業"
   ],
   "overallRating": 3,
-  "rankPosition": 218
+  "rankPosition": 218,
+  "requiredDocuments": ["診療報酬明細書", "請求書", "通帳コピー", "本人確認書類"],
+  "address": "東京都港区虎ノ門2-10-1 虎ノ門ツインビルディングEAST棟8階"
 }

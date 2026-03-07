@@ -2,7 +2,7 @@
   "slug": "japan-management",
   "name": "株式会社ラインオフィスサービス",
   "brandName": "ジャパンマネジメント",
-  "description": "",
+  "description": "福岡に拠点を置くファクタリング会社で、東京にも事務所を展開。2社間・3社間の両方に対応し、50万円〜5,000万円の資金調達が可能。赤字決算や税金滞納がある企業でも利用でき、最短即日での入金に対応。債権譲渡登記不要で、全国への出張契約にも応じている。",
   "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=4AX1ON+BN56NM+3V6A+5YJRM",
   "factoringType": "2社間・3社間",
   "feeRange": {
@@ -39,5 +39,12 @@
     "サービス業"
   ],
   "overallRating": 4.7,
-  "rankPosition": 6
+  "rankPosition": 6,
+  "requiredDocuments": [
+    "請求書",
+    "通帳コピー",
+    "決算書",
+    "登記簿謄本"
+  ],
+  "address": "福岡県福岡市中央区赤坂1丁目14-22 センチュリー赤坂門ビル8F"
 }

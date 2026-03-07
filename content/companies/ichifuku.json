@@ -1,7 +1,7 @@
 {
   "slug": "ichifuku",
   "name": "一福",
-  "description": "",
+  "description": "池袋に拠点を置く一福の2社間・3社間ファクタリング。手数料3〜15%で即日入金に対応。オンライン完結で全国の中小企業や個人事業主が利用でき、柔軟な審査基準で幅広い業種の資金需要に応える。",
   "affiliateUrl": "https://ichifuku.co.jp/",
   "factoringType": "2社間・3社間",
   "feeRange": {
@@ -38,5 +38,7 @@
     "サービス業"
   ],
   "overallRating": 3,
-  "rankPosition": 227
+  "rankPosition": 227,
+  "requiredDocuments": ["請求書", "通帳コピー", "本人確認書類"],
+  "address": "東京都豊島区東池袋2-50-1 加藤第七ビル7F"
 }

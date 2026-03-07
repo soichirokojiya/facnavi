@@ -2,7 +2,7 @@
   "slug": "prosper-consulting",
   "name": "株式会社プロスパーコンサルティング",
   "brandName": "プロスパーコンサルティング",
-  "description": "",
+  "description": "コンサルティング付きの2社間・3社間ファクタリング。ノンリコース方式で貸倒リスクを負担し、手数料3%〜15%で最短即日の現金化が可能。業歴や赤字決算を問わず法人・個人事業主に対応し、経営支援と資金調達を両立。",
   "affiliateUrl": "https://prosper-consulting.jp/",
   "factoringType": "2社間・3社間",
   "feeRange": {
@@ -39,5 +39,7 @@
     "サービス業"
   ],
   "overallRating": 3.7,
-  "rankPosition": 191
+  "rankPosition": 191,
+  "requiredDocuments": ["請求書", "通帳コピー", "本人確認書類"],
+  "address": "東京都中央区京橋2-5-1"
 }

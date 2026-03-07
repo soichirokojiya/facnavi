@@ -1,7 +1,7 @@
 {
   "slug": "kensetsu-keiei",
   "name": "建設経営サービス",
-  "description": "",
+  "description": "建設業に特化した2社間・3社間ファクタリングサービス。手数料3〜15%、最短即日入金で建設業界の資金繰り課題を解決。工事代金の早期現金化に強く、個人事業主の一人親方にも対応。建設業界に精通したスタッフが全国をサポート。",
   "affiliateUrl": "https://kensetsu-keiei.com/",
   "factoringType": "2社間・3社間",
   "feeRange": {
@@ -38,5 +38,11 @@
     "サービス業"
   ],
   "overallRating": 3.5,
-  "rankPosition": 125
+  "rankPosition": 125,
+  "requiredDocuments": [
+    "請求書",
+    "通帳コピー",
+    "本人確認書類"
+  ],
+  "address": "東京都千代田区"
 }

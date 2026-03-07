@@ -2,7 +2,7 @@
   "slug": "easy-factor",
   "name": "株式会社No.1",
   "brandName": "Easy factor",
-  "description": "",
+  "description": "株式会社No.1が提供するオンライン完結型の2社間ファクタリング。手数料2〜8%と低水準で、買取上限なし。Zoomでの面談とクラウドサインによる電子契約で最短60分の資金化を実現。大口の売掛債権を持つ法人企業におすすめ。",
   "affiliateUrl": "https://easy-factor.jp/",
   "factoringType": "2社間・3社間",
   "feeRange": {
@@ -39,5 +39,12 @@
     "サービス業"
   ],
   "overallRating": 3.5,
-  "rankPosition": 50
+  "rankPosition": 50,
+  "requiredDocuments": [
+    "請求書",
+    "通帳コピー",
+    "決算書",
+    "確定申告書"
+  ],
+  "address": "東京都豊島区池袋4-2-11 CTビル"
 }

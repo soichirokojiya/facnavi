@@ -2,7 +2,7 @@
   "slug": "ys-corporation",
   "name": "株式会社ワイズコーポレーション",
   "brandName": "Y's Corporation",
-  "description": "",
+  "description": "池袋拠点で建設・運送・製造・人材派遣など7業種に特化したファクタリング会社。2社間5%〜、3社間3%〜の手数料で最短即日入金。年間200社超の取引実績とリピート率9割の信頼。",
   "affiliateUrl": "https://ys-corporation.co.jp/",
   "factoringType": "2社間・3社間",
   "feeRange": {
@@ -39,5 +39,7 @@
     "サービス業"
   ],
   "overallRating": 3.5,
-  "rankPosition": 87
+  "rankPosition": 87,
+  "requiredDocuments": ["請求書", "通帳コピー（3ヶ月分）", "本人確認書類"],
+  "address": "東京都豊島区池袋2-53-12 ノーブル池袋3F"
 }

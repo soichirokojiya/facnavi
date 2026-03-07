@@ -2,7 +2,7 @@
   "slug": "next-funding",
   "name": "株式会社フィンカ",
   "brandName": "NEXTFUNDING",
-  "description": "",
+  "description": "フィンカ株式会社運営の2社間・3社間ファクタリング。手数料3%〜15%で最短即日入金に対応し、個人事業主や起業1年以内の方も利用可能。医療・介護報酬債権の買取やノンリコース契約にも対応し、経営コンサルも提供。",
   "affiliateUrl": "https://next-funding.jp/",
   "factoringType": "2社間・3社間",
   "feeRange": {
@@ -39,5 +39,7 @@
     "サービス業"
   ],
   "overallRating": 3.5,
-  "rankPosition": 67
+  "rankPosition": 67,
+  "requiredDocuments": ["請求書", "通帳コピー", "本人確認書類"],
+  "address": "東京都千代田区神田和泉町1-2-5 昭和ビル2F-B"
 }

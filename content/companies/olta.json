@@ -2,7 +2,7 @@
   "slug": "olta",
   "name": "OLTA株式会社",
   "brandName": "OLTA",
-  "description": "",
+  "description": "OLTA株式会社が提供するオンライン完結型のAIファクタリングサービス。累計申込金額1,000億円超・利用事業者数10,000社以上の実績を誇り、業界トップクラスの知名度を持つ。手数料は2〜9%と低水準で、必要書類が揃えば24時間以内に査定結果を提示。法人・個人事業主ともに対応し、買取金額に上限下限の制限がない。",
   "affiliateUrl": "https://www.olta.co.jp/",
   "factoringType": "2社間",
   "feeRange": {
@@ -39,5 +39,13 @@
     "サービス業"
   ],
   "overallRating": 4.5,
-  "rankPosition": 11
+  "rankPosition": 11,
+  "requiredDocuments": [
+    "請求書",
+    "通帳コピー",
+    "本人確認書類",
+    "決算書",
+    "確定申告書"
+  ],
+  "address": "東京都港区赤坂1丁目12-32 アーク森ビル4F"
 }

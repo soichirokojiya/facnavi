@@ -2,7 +2,7 @@
   "slug": "rise-factoring",
   "name": "株式会社Rise",
   "brandName": "Rise",
-  "description": "",
+  "description": "2社間・3社間に対応したファクタリングサービス。手数料3〜15%、最短即日で売掛金を現金化。オンライン完結で全国対応、個人事業主や中小企業の急な資金ニーズに柔軟な審査で応えます。",
   "affiliateUrl": "https://risefactoring.jp/",
   "factoringType": "2社間・3社間",
   "feeRange": {
@@ -39,5 +39,11 @@
     "サービス業"
   ],
   "overallRating": 3.5,
-  "rankPosition": 146
+  "rankPosition": 146,
+  "requiredDocuments": [
+    "請求書",
+    "通帳コピー",
+    "本人確認書類"
+  ],
+  "address": "〒170-0013 東京都豊島区東池袋3丁目7番8号"
 }

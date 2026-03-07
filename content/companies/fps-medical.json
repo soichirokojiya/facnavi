@@ -2,7 +2,7 @@
   "slug": "fps-medical",
   "name": "アクリーティブ株式会社",
   "brandName": "FPSメディカル",
-  "description": "",
+  "description": "医療・介護業界に特化した3社間ファクタリング。診療報酬・介護報酬の早期資金化に対応し、手数料0.25〜5%と業界最低水準。アクリーティブ運営で信頼性が高く、医療機関や介護施設の安定的な資金繰りを支援。",
   "affiliateUrl": "https://fps-medical.co.jp/",
   "factoringType": "3社間",
   "feeRange": {
@@ -39,5 +39,7 @@
     "サービス業"
   ],
   "overallRating": 3.5,
-  "rankPosition": 120
+  "rankPosition": 120,
+  "requiredDocuments": ["診療報酬明細書", "通帳コピー", "本人確認書類", "登記簿謄本"],
+  "address": "東京都千代田区麹町5丁目1番地1"
 }

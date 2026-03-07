@@ -2,7 +2,7 @@
   "slug": "sfi-leasing",
   "name": "SFIリーシング株式会社",
   "brandName": "SFIリーシング",
-  "description": "",
+  "description": "三井住友F&Lとソニーグループの合弁会社による3社間ファクタリング。手数料1〜8%で「Acro One」等の企業間取引向けサービスを展開。リース事業の知見を活かし、法人の売掛債権買取と資金化を支援します。",
   "affiliateUrl": "https://www.sfil.co.jp/",
   "factoringType": "3社間",
   "feeRange": {
@@ -39,5 +39,7 @@
     "サービス業"
   ],
   "overallRating": 3,
-  "rankPosition": 242
+  "rankPosition": 242,
+  "requiredDocuments": ["請求書", "売掛金明細", "決算書", "登記簿謄本", "本人確認書類"],
+  "address": "東京都千代田区一ツ橋2-1-1"
 }

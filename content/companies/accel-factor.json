@@ -2,7 +2,7 @@
   "slug": "accel-factor",
   "name": "株式会社アクセルファクター",
   "brandName": "アクセルファクター",
-  "description": "",
+  "description": "ネクステージグループ傘下のファクタリング会社。2社間・3社間の両方に対応し、30万円〜1億円の売掛金を買取対象とする。審査通過率93%以上と高く、赤字企業や書類不備のケースにも柔軟に対応。最短即日での入金が可能で、全国の中小企業・個人事業主を幅広くサポートしている。",
   "affiliateUrl": "https://accelfacter.co.jp/",
   "factoringType": "2社間・3社間",
   "feeRange": {
@@ -39,5 +39,12 @@
     "サービス業"
   ],
   "overallRating": 4.8,
-  "rankPosition": 1
+  "rankPosition": 1,
+  "requiredDocuments": [
+    "請求書",
+    "通帳コピー",
+    "本人確認書類"
+  ],
+  "address": "東京都新宿区高田馬場1-30-4 30山京ビル",
+  "approvalRate": 93
 }

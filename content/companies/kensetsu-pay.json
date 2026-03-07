@@ -2,7 +2,7 @@
   "slug": "kensetsu-pay",
   "name": "株式会社DMC",
   "brandName": "建設Pay",
-  "description": "",
+  "description": "建設業専門のファクタリングで手数料1%〜、最短1時間での送金を実現。注文書のみでの契約にも対応し、工事着手前の資金調達が可能。開業直後や赤字決算の事業者も利用でき、全国の建設業者にオンラインで対応する。",
   "affiliateUrl": "https://kensetsu-pay.jp/",
   "factoringType": "2社間・3社間",
   "feeRange": {
@@ -39,5 +39,11 @@
     "サービス業"
   ],
   "overallRating": 3.5,
-  "rankPosition": 126
+  "rankPosition": 126,
+  "requiredDocuments": [
+    "請求書",
+    "通帳コピー",
+    "本人確認書類"
+  ],
+  "address": "〒107-0062 東京都港区南青山2丁目2番15号 Win Aoyamaビル UCF635"
 }

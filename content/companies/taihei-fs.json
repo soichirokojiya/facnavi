@@ -2,7 +2,7 @@
   "slug": "taihei-fs",
   "name": "株式会社太平フィナンシャルサービス",
   "brandName": "太平フィナンシャルサービス",
-  "description": "",
+  "description": "診療・介護報酬ファクタリングに強い3社間専門のファクタリング会社。手数料0.5%〜と業界最低水準。医療機関・調剤薬局・介護事業者の報酬債権を最短3営業日で現金化。銀行融資のような厳しい審査なく、手続きも簡易でスピーディー。",
   "affiliateUrl": "https://www.taihei-fs.co.jp/",
   "factoringType": "3社間",
   "feeRange": {
@@ -39,5 +39,7 @@
     "サービス業"
   ],
   "overallRating": 3,
-  "rankPosition": 251
+  "rankPosition": 251,
+  "requiredDocuments": ["請求書", "売掛金明細", "決算書", "本人確認書類"],
+  "address": "東京都文京区本郷1-13-4 第三太平ビル"
 }

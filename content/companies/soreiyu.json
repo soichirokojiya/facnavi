@@ -2,7 +2,7 @@
   "slug": "soreiyu",
   "name": "株式会社ソレイユ",
   "brandName": "ソレイユ",
-  "description": "",
+  "description": "池袋の2社間・3社間ファクタリング。手数料1〜15%、最短30分審査完了で即日入金。審査通過率90%以上の柔軟審査で他社で断られた案件にも対応。オンライン契約で全国OK、個人事業主も利用可。平均手数料7.5%の実績あり。",
   "affiliateUrl": "https://solejapan.com/",
   "factoringType": "2社間・3社間",
   "feeRange": {
@@ -39,5 +39,8 @@
     "サービス業"
   ],
   "overallRating": 3.5,
-  "rankPosition": 79
+  "rankPosition": 79,
+  "requiredDocuments": ["請求書", "通帳コピー", "本人確認書類", "決算書"],
+  "address": "東京都豊島区東池袋3-11-9 三島ビル2階",
+  "approvalRate": 90
 }

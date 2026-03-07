@@ -2,7 +2,7 @@
   "slug": "dm-company",
   "name": "株式会社D&Mカンパニー",
   "brandName": "D&Mカンパニー",
-  "description": "",
+  "description": "医療・介護福祉事業に特化した大阪拠点のファクタリング会社。診療報酬・介護報酬の買取手数料は0.5%〜と業界最安級。将来債権の買取にも対応し、平均5ヶ月分の先取りが可能。経営コンサルや人材紹介も行う総合支援企業。",
   "affiliateUrl": "https://dm-company.co.jp/",
   "factoringType": "2社間・3社間",
   "feeRange": {
@@ -39,5 +39,11 @@
     "サービス業"
   ],
   "overallRating": 3.5,
-  "rankPosition": 47
+  "rankPosition": 47,
+  "requiredDocuments": [
+    "請求書",
+    "通帳コピー",
+    "本人確認書類"
+  ],
+  "address": "大阪府大阪市北区梅田2-5-25 ハービスOSAKA 11F"
 }

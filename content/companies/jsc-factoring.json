@@ -2,7 +2,7 @@
   "slug": "jsc-factoring",
   "name": "株式会社ジェイエスシー",
   "brandName": "JSC",
-  "description": "",
+  "description": "2社間・3社間対応のファクタリングサービス。手数料3〜15%、最短即日入金で全国の中小企業・個人事業主を支援。セキュリティコンサルやグループ事業を活かした柔軟な審査が特徴。30万円から利用可能でオンライン完結にも対応。",
   "affiliateUrl": "https://jsc-factoring.jp/",
   "factoringType": "2社間・3社間",
   "feeRange": {
@@ -39,5 +39,7 @@
     "サービス業"
   ],
   "overallRating": 3,
-  "rankPosition": 229
+  "rankPosition": 229,
+  "requiredDocuments": ["請求書", "通帳コピー", "本人確認書類"],
+  "address": "東京都目黒区青葉台1-28-11 ブルックスビル4F"
 }

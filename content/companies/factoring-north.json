@@ -1,7 +1,7 @@
 {
   "slug": "factoring-north",
   "name": "ファクタリングノース",
-  "description": "",
+  "description": "北海道札幌市拠点の地域密着型ファクタリング。最低10万円からの少額対応が可能で、個人に対する売掛金の買取にも積極的に応じる。他社からの乗り換えで最大5%の手数料優遇制度あり。道内の建設業・運送業・卸売業に強い。",
   "affiliateUrl": "https://factoring-north.jp/",
   "factoringType": "2社間・3社間",
   "feeRange": {
@@ -38,5 +38,7 @@
     "サービス業"
   ],
   "overallRating": 3.5,
-  "rankPosition": 112
+  "rankPosition": 112,
+  "requiredDocuments": ["請求書", "通帳コピー", "本人確認書類"],
+  "address": "北海道札幌市豊平区平岸五条九丁目2-33"
 }

@@ -2,7 +2,7 @@
   "slug": "efc-express",
   "name": "株式会社一福",
   "brandName": "資金調達特急便EFC",
-  "description": "",
+  "description": "スピード重視の2社間・3社間ファクタリングサービス。手数料3〜18%で最大5,000万円まで即日対応。債権譲渡登記なしでの契約が可能で、24時間受付に対応。資金調達コンサルティングも提供し、個人事業主や起業直後の法人も利用可。",
   "affiliateUrl": "https://efc-express.jp/",
   "factoringType": "2社間・3社間",
   "feeRange": {
@@ -39,5 +39,7 @@
     "サービス業"
   ],
   "overallRating": 3.5,
-  "rankPosition": 106
+  "rankPosition": 106,
+  "requiredDocuments": ["請求書", "通帳コピー", "本人確認書類"],
+  "address": "東京都豊島区東池袋1丁目"
 }

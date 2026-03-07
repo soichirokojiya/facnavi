@@ -2,7 +2,7 @@
   "slug": "ag-business",
   "name": "AGビジネスサポート株式会社",
   "brandName": "AGビジネスサポート",
-  "description": "",
+  "description": "アイフルグループ運営の信頼性の高いファクタリングサービス。手数料2%〜12%で最短即日の資金調達が可能。契約実績15万件超、請求書1枚からOKで赤字決算でも対応。5秒診断で簡単に利用可否を確認できる。",
   "affiliateUrl": "https://www.ag-b.jp/",
   "factoringType": "2社間・3社間",
   "feeRange": {
@@ -39,5 +39,11 @@
     "サービス業"
   ],
   "overallRating": 4,
-  "rankPosition": 42
+  "rankPosition": 42,
+  "requiredDocuments": [
+    "請求書",
+    "通帳コピー",
+    "本人確認書類"
+  ],
+  "address": "東京都港区芝2-31-19"
 }

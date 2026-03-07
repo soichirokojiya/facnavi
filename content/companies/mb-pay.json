@@ -2,7 +2,7 @@
   "slug": "mb-pay",
   "name": "株式会社マイナビブリッジ",
   "brandName": "MBpay",
-  "description": "",
+  "description": "マイナビグループ運営の個人事業主・フリーランス向け2社間ファクタリング。手数料2〜8%でオンライン完結、取引先への通知不要。リピーターは最短即日入金にも対応。大手企業グループならではの高い信頼性と安全性が魅力のサービス。",
   "affiliateUrl": "https://mb-pay.jp/",
   "factoringType": "2社間・3社間",
   "feeRange": {
@@ -39,5 +39,11 @@
     "サービス業"
   ],
   "overallRating": 3.5,
-  "rankPosition": 131
+  "rankPosition": 131,
+  "requiredDocuments": [
+    "請求書",
+    "通帳コピー",
+    "本人確認書類"
+  ],
+  "address": "東京都千代田区一ツ橋1丁目1番1号"
 }

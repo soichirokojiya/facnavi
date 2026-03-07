@@ -2,7 +2,7 @@
   "slug": "ennavi",
   "name": "株式会社インターテック",
   "brandName": "えんナビ",
-  "description": "",
+  "description": "24時間365日対応が最大の特徴のファクタリング会社。土日祝・深夜もスタッフ常駐で電話相談や審査が可能。手数料5%〜、50万〜5,000万円の2社間ファクタリングに対応し、最短即日で資金化。顧客満足度93%以上でリピート率も高い。",
   "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=4AX0WK+FOEY9E+44CA+61C2P",
   "factoringType": "2社間・3社間",
   "feeRange": {
@@ -39,5 +39,8 @@
     "サービス業"
   ],
   "overallRating": 3.7,
-  "rankPosition": 182
+  "rankPosition": 182,
+  "requiredDocuments": ["商業登記謄本", "印鑑証明書", "決算書", "売掛債権の証明書類（請求書・契約書等）"],
+  "address": "東京都台東区東上野3-5-9 本池田第二ビル4階",
+  "approvalRate": 97
 }

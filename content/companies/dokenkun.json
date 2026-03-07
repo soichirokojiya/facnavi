@@ -2,7 +2,7 @@
   "slug": "dokenkun",
   "name": "株式会社ワイズコーポレーション",
   "brandName": "土建くん",
-  "description": "",
+  "description": "建設業界専門のファクタリングサービス。請求書だけでなく注文書での資金調達にも対応し、最短60分での入金を実現。手数料3%〜、顧客満足度95%、継続率93%と高い支持を獲得。工事前の資金需要や長い支払いサイトに悩む建設事業者に最適。",
   "affiliateUrl": "https://dokenkun.jp/",
   "factoringType": "2社間・3社間",
   "feeRange": {
@@ -39,5 +39,14 @@
     "サービス業"
   ],
   "overallRating": 4,
-  "rankPosition": 49
+  "rankPosition": 49,
+  "requiredDocuments": [
+    "請求書",
+    "通帳コピー",
+    "本人確認書類",
+    "発注書",
+    "決算書",
+    "登記簿謄本"
+  ],
+  "address": "東京都豊島区池袋2-53-12 ノーブル池袋"
 }

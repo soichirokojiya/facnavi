@@ -2,7 +2,7 @@
   "slug": "kkt",
   "name": "KKT株式会社",
   "brandName": "KKT",
-  "description": "",
+  "description": "手数料0.5%〜の業界最安水準を誇る法人向けファクタリング。累計取扱100億円超、リピート率89.6%・顧客満足度92.3%の高い評価。2社間・3社間対応で最短即日入金、赤字決算や債務超過でも利用可能。最大1億円までの買取に対応。",
   "affiliateUrl": "https://kkt-factoring.jp/",
   "factoringType": "2社間・3社間",
   "feeRange": {
@@ -39,5 +39,11 @@
     "サービス業"
   ],
   "overallRating": 3.5,
-  "rankPosition": 128
+  "rankPosition": 128,
+  "requiredDocuments": [
+    "身分証明書",
+    "通帳コピー",
+    "請求書・発注書・契約書"
+  ],
+  "address": "〒160-0004 東京都新宿区四谷1-18-6 四谷プラザビル7F"
 }

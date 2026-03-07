@@ -2,7 +2,7 @@
   "slug": "factoring-try",
   "name": "株式会社SKO",
   "brandName": "ファクタリングのTRY",
-  "description": "",
+  "description": "10万円からの少額買取に対応する2社間ファクタリング専門会社。手数料3〜20%、24時間受付でLINE申込にも対応。税金滞納中でも契約可能で、他社乗り換え時の手数料優遇制度あり。ノンリコース契約で秘密厳守、経営相談などアフターサポートも充実。",
   "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=4AX1ON+BGLF02+50EQ+609HT",
   "factoringType": "2社間",
   "feeRange": {
@@ -39,5 +39,7 @@
     "サービス業"
   ],
   "overallRating": 4,
-  "rankPosition": 53
+  "rankPosition": 53,
+  "requiredDocuments": ["請求書", "通帳コピー", "本人確認書類", "基本契約書", "決算書", "印鑑証明書", "登記簿謄本", "納税通知書"],
+  "address": "東京都台東区東上野2-21-1ケーワイビル4F"
 }

@@ -2,7 +2,7 @@
   "slug": "best-factor",
   "name": "株式会社アレシア",
   "brandName": "ベストファクター",
-  "description": "",
+  "description": "株式会社アレシアが運営するファクタリングサービス。2社間手数料2%〜で、30万円〜1億円の売掛金を買取対象とする。審査通過率92%以上で、複数借入や税金滞納がある事業者でも利用できる柔軟性が強み。最短即日の入金に対応し、注文書買取のBESTPAYも提供している。",
   "affiliateUrl": "https://bestfactor.jp/",
   "factoringType": "2社間・3社間",
   "feeRange": {
@@ -39,5 +39,12 @@
     "サービス業"
   ],
   "overallRating": 4.5,
-  "rankPosition": 7
+  "rankPosition": 7,
+  "requiredDocuments": [
+    "請求書",
+    "通帳コピー",
+    "本人確認書類"
+  ],
+  "address": "東京都新宿区西新宿1丁目6-1 新宿エルタワー",
+  "approvalRate": 92
 }

@@ -2,7 +2,7 @@
   "slug": "factbank",
   "name": "株式会社Re8",
   "brandName": "ファクトバンク",
-  "description": "",
+  "description": "TVCM放送実績もある銀座拠点のファクタリング会社。手数料2.5〜10%で2社間の上限を原則10%に設定。24時間365日審査対応、WEB完結で即日買取可能。赤字決算や税金滞納中でも申込可能で、建設・運送・製造業など幅広い業種に対応。",
   "affiliateUrl": "https://factbank.jp/",
   "factoringType": "2社間・3社間",
   "feeRange": {
@@ -39,5 +39,7 @@
     "サービス業"
   ],
   "overallRating": 3,
-  "rankPosition": 222
+  "rankPosition": 222,
+  "requiredDocuments": ["請求書", "通帳コピー", "本人確認書類"],
+  "address": "東京都中央区銀座1丁目22番11号"
 }

@@ -2,7 +2,7 @@
   "slug": "atest-capital",
   "name": "株式会社エーテスキャピタル",
   "brandName": "エーテスキャピタル",
-  "description": "",
+  "description": "診療報酬・介護報酬・調剤報酬債権ファクタリングのリーディングカンパニー。銀座本社と九州本部の2拠点で全国対応。100万円〜10億円規模の医療機関向け資金調達に特化し、実質年率5%〜10%で早期資金化を実現する。",
   "affiliateUrl": "https://a-tc.jp/",
   "factoringType": "2社間・3社間",
   "feeRange": {
@@ -39,5 +39,7 @@
     "サービス業"
   ],
   "overallRating": 3.5,
-  "rankPosition": 93
+  "rankPosition": 93,
+  "requiredDocuments": ["診療報酬明細書", "通帳コピー", "本人確認書類"],
+  "address": "東京都中央区銀座八丁目10番8号 銀座八丁目10番ビル9階C1a"
 }

@@ -2,7 +2,7 @@
   "slug": "trapay",
   "name": "株式会社トラストゲートウェイ",
   "brandName": "トラペイ",
-  "description": "",
+  "description": "トラストゲートウェイ運営のオンライン完結型2社間ファクタリング。手数料2〜12%、10万円から対応可能で審査通過率95%。書類が少なく、全国どこからでもスマホで即日資金調達できる。",
   "affiliateUrl": "https://trapay.jp/",
   "factoringType": "2社間",
   "feeRange": {
@@ -39,5 +39,8 @@
     "サービス業"
   ],
   "overallRating": 3.5,
-  "rankPosition": 213
+  "rankPosition": 213,
+  "requiredDocuments": ["請求書", "通帳コピー", "本人確認書類"],
+  "address": "福岡県福岡市中央区大名2-2-42 ケイワン大名402号",
+  "approvalRate": 95
 }

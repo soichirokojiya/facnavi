@@ -2,7 +2,7 @@
   "slug": "paytner",
   "name": "ペイトナー株式会社",
   "brandName": "ペイトナーファクタリング",
-  "description": "",
+  "description": "フリーランス・個人事業主に特化したAI審査型ファクタリングサービス。手数料は一律10%で、最短10分という業界屈指のスピードで入金まで完了する。初回は1万〜25万円、2回目以降は最大100万円まで利用可能。請求書額面の100%を買い取る掛け目なしの仕組みが特徴。",
   "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=4AX0WK+EMWN5E+4PF6+644DT",
   "factoringType": "2社間",
   "feeRange": {
@@ -39,5 +39,11 @@
     "サービス業"
   ],
   "overallRating": 4.8,
-  "rankPosition": 4
+  "rankPosition": 4,
+  "requiredDocuments": [
+    "請求書",
+    "本人確認書類",
+    "通帳コピー"
+  ],
+  "address": "東京都港区虎ノ門五丁目9-1 麻布台ヒルズ ガーデンプラザB"
 }

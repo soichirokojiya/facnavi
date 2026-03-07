@@ -2,7 +2,7 @@
   "slug": "faith-factoring",
   "name": "株式会社フェイス",
   "brandName": "faith",
-  "description": "",
+  "description": "神奈川県藤沢市の2社間ファクタリング対応会社。手数料1.5%〜、50万〜1億円の買取に対応し、将来債権の買取も可能。手形割引や売掛債権担保融資も提供しており、短期から長期まで多様な資金調達ニーズに応える。法人・個人事業主対応。",
   "affiliateUrl": "https://faith-factoring.jp/",
   "factoringType": "2社間・3社間",
   "feeRange": {
@@ -39,5 +39,7 @@
     "サービス業"
   ],
   "overallRating": 3.5,
-  "rankPosition": 115
+  "rankPosition": 115,
+  "requiredDocuments": ["請求書", "通帳コピー", "本人確認書類"],
+  "address": "神奈川県藤沢市藤沢484-12"
 }

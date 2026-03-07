@@ -2,7 +2,7 @@
   "slug": "toshin-shoji",
   "name": "東信商事株式会社",
   "brandName": "東信商事",
-  "description": "",
+  "description": "1913年創業の老舗金融機関が手がける手形割引・でんさい割引サービス。100年超の実績と高い信頼性を誇り、担保・保証人不要で当日現金化が可能。京橋に本社を構え全国対応。",
   "affiliateUrl": "https://toshin-shoji.co.jp/",
   "factoringType": "2社間・3社間",
   "feeRange": {
@@ -39,5 +39,12 @@
     "サービス業"
   ],
   "overallRating": 3.5,
-  "rankPosition": 167
+  "rankPosition": 167,
+  "requiredDocuments": [
+    "請求書",
+    "通帳コピー",
+    "本人確認書類",
+    "商業登記簿謄本"
+  ],
+  "address": "〒104-0031 東京都中央区京橋2丁目12番6号 東信商事ビル1階"
 }

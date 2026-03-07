@@ -2,7 +2,7 @@
   "slug": "smbc-fs",
   "name": "SMBCファイナンスサービス株式会社",
   "brandName": "SMBCファイナンスサービス",
-  "description": "",
+  "description": "三井住友フィナンシャルグループ傘下のSMBCファイナンスサービスが提供する信頼性の高いファクタリング。赤字決算や税金滞納中の企業でも利用可能な柔軟さが特徴で、国際ファクタリングにも対応。請求書買取から介護・診療報酬債権、でんさい割引まで多様な債権種類をカバーし、大手グループならではの安心感がある。",
   "affiliateUrl": "https://www.smbc-fs.co.jp/",
   "factoringType": "3社間",
   "feeRange": {
@@ -39,5 +39,11 @@
     "サービス業"
   ],
   "overallRating": 4.5,
-  "rankPosition": 15
+  "rankPosition": 15,
+  "requiredDocuments": [
+    "売掛債権に関する書類",
+    "決算書",
+    "登記簿謄本"
+  ],
+  "address": "愛知県名古屋市中区丸の内3-23-20"
 }

@@ -2,7 +2,7 @@
   "slug": "denshi-hayabarai",
   "name": "インフォマート株式会社",
   "brandName": "電子請求書早払い",
-  "description": "",
+  "description": "株式会社インフォマートとGMOペイメントゲートウェイという東証プライム上場企業2社が共同運営する電子請求書早払い。手数料1〜6%は業界でもトップクラスの低さで、10万円から最大1億円まで幅広い金額帯に対応する。オンラインで契約が完結し、債権譲渡登記も不要。上場企業2社による運営で信頼性が高い。",
   "affiliateUrl": "https://hayabarai.jp/",
   "factoringType": "2社間・3社間",
   "feeRange": {
@@ -39,5 +39,13 @@
     "サービス業"
   ],
   "overallRating": 3.5,
-  "rankPosition": 17
+  "rankPosition": 17,
+  "requiredDocuments": [
+    "請求書",
+    "本人確認書類",
+    "発注書",
+    "決算書",
+    "印鑑証明"
+  ],
+  "address": "東京都渋谷区道玄坂1-2-3 渋谷フクラス"
 }

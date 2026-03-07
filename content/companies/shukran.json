@@ -2,7 +2,7 @@
   "slug": "shukran",
   "name": "株式会社シュクラン",
   "brandName": "シュクラン",
-  "description": "",
+  "description": "渋谷発の2社間・3社間ファクタリング。手数料2%〜で最短1時間入金が強み。必要書類は請求書・通帳・身分証の3点のみ、スマホ完結で全国どこからでも申込可能。買取額10万〜1億円と幅広く、個人事業主にも柔軟に対応。",
   "affiliateUrl": "https://shukran-factoring.jp/",
   "factoringType": "2社間・3社間",
   "feeRange": {
@@ -39,5 +39,11 @@
     "サービス業"
   ],
   "overallRating": 3.5,
-  "rankPosition": 156
+  "rankPosition": 156,
+  "requiredDocuments": [
+    "請求書",
+    "通帳コピー",
+    "本人確認書類"
+  ],
+  "address": "〒150-0002 東京都渋谷区渋谷3丁目1-9 YAZAWAビル3階"
 }

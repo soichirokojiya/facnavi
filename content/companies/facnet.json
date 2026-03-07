@@ -2,7 +2,7 @@
   "slug": "facnet",
   "name": "株式会社アンカーガーディアン",
   "brandName": "ファクネット",
-  "description": "",
+  "description": "福岡のアンカーガーディアンが運営するオンライン完結型ファクタリング。手数料2〜12%、スマホで書類提出から契約まで完結。西日本エリアに強く、掛目100%・債権譲渡登記不要で利用可能。最短即日で最大5,000万円まで対応。",
   "affiliateUrl": "https://facnet.co.jp/",
   "factoringType": "2社間・3社間",
   "feeRange": {
@@ -39,5 +39,7 @@
     "サービス業"
   ],
   "overallRating": 3.5,
-  "rankPosition": 109
+  "rankPosition": 109,
+  "requiredDocuments": ["請求書", "通帳コピー", "本人確認書類"],
+  "address": "福岡県福岡市中央区大名1丁目1番9号 ATLAS403号"
 }

@@ -1,7 +1,7 @@
 {
   "slug": "shikin-honpo",
   "name": "資金調達本舗",
-  "description": "",
+  "description": "2社間・3社間対応の資金調達専門ファクタリング。手数料3〜15%で最短即日入金が可能。オンライン完結型で全国対応、個人事業主から中小企業まで幅広い事業者の急な資金ニーズに柔軟に対応します。",
   "affiliateUrl": "https://shikin-honpo.jp/",
   "factoringType": "2社間・3社間",
   "feeRange": {
@@ -38,5 +38,11 @@
     "サービス業"
   ],
   "overallRating": 3.5,
-  "rankPosition": 152
+  "rankPosition": 152,
+  "requiredDocuments": [
+    "請求書",
+    "通帳コピー",
+    "本人確認書類"
+  ],
+  "address": "東京都新宿区"
 }

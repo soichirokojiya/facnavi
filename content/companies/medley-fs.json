@@ -2,7 +2,7 @@
   "slug": "medley-fs",
   "name": "株式会社メドレーフィナンシャルサービス",
   "brandName": "メドレーフィナンシャルサービス",
-  "description": "",
+  "description": "メドレーグループの医療・介護・福祉事業者向け3社間ファクタリング。診療報酬・介護報酬債権を早期資金化し、約2ヶ月の入金タイムラグを解消。手数料1〜5%の低水準で、グループサービス利用者は最安0.3%〜の優遇手数料を適用。",
   "affiliateUrl": "https://www.medley-fs.co.jp/",
   "factoringType": "3社間",
   "feeRange": {
@@ -39,5 +39,7 @@
     "サービス業"
   ],
   "overallRating": 3.5,
-  "rankPosition": 66
+  "rankPosition": 66,
+  "requiredDocuments": ["履歴事項全部証明書", "印鑑証明書", "決算報告書", "診療報酬債権実績資料", "本人確認書類"],
+  "address": "東京都港区六本木6-10-1 六本木ヒルズ森タワー13F"
 }

@@ -2,7 +2,7 @@
   "slug": "sig-solution",
   "name": "株式会社SIGソリューション",
   "brandName": "SIGソリューション",
-  "description": "",
+  "description": "1997年設立の渋谷区の老舗ファクタリング会社。2社間取引のスピードに定評があり、12時までの審査完了で即日入金対応。赤字決算や税金滞納でも相談可能な柔軟審査が特徴。手数料3〜15%、個人事業主も全国から利用できる。",
   "affiliateUrl": "https://sig-solution.co.jp/",
   "factoringType": "2社間・3社間",
   "feeRange": {
@@ -39,5 +39,11 @@
     "サービス業"
   ],
   "overallRating": 3.5,
-  "rankPosition": 157
+  "rankPosition": 157,
+  "requiredDocuments": [
+    "請求書",
+    "通帳コピー",
+    "本人確認書類"
+  ],
+  "address": "〒150-0002 東京都渋谷区渋谷2丁目2-4"
 }

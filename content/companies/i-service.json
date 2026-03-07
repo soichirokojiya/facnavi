@@ -2,7 +2,7 @@
   "slug": "i-service",
   "name": "株式会社iサービス",
   "brandName": "iサービス",
-  "description": "",
+  "description": "豊島区巣鴨に拠点を置くiサービスの2社間・3社間ファクタリング。手数料3〜15%、最短即日で資金化可能。オンライン対応で全国から申し込みでき、個人事業主にも柔軟な審査で対応する。",
   "affiliateUrl": "https://i-service.co.jp/",
   "factoringType": "2社間・3社間",
   "feeRange": {
@@ -39,5 +39,7 @@
     "サービス業"
   ],
   "overallRating": 3,
-  "rankPosition": 226
+  "rankPosition": 226,
+  "requiredDocuments": ["請求書", "通帳コピー", "本人確認書類"],
+  "address": "東京都豊島区巣鴨1丁目"
 }

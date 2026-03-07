@@ -2,7 +2,7 @@
   "slug": "anew",
   "name": "anew合同会社",
   "brandName": "anew",
-  "description": "",
+  "description": "OLTA株式会社とSBI新生銀行の共同出資により2020年に設立された法人専用のオンラインファクタリング事業者。手数料2%〜9%の低水準で完全非対面の2社間取引を提供し、大口案件にも対応していたが、2023年6月末をもってサービスを終了。現在は後継としてOLTAクラウドファクタリングの利用が案内されている。",
   "affiliateUrl": "https://anew-factoring.jp/",
   "factoringType": "2社間",
   "feeRange": {
@@ -39,5 +39,12 @@
     "サービス業"
   ],
   "overallRating": 4.3,
-  "rankPosition": 24
+  "rankPosition": 24,
+  "requiredDocuments": [
+    "本人確認書類",
+    "請求書",
+    "直近7か月分の入出金明細",
+    "昨年度の決算書"
+  ],
+  "address": "東京都千代田区外神田3-12-8 住友不動産秋葉原ビル10F"
 }

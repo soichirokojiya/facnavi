@@ -2,7 +2,7 @@
   "slug": "sankyo-service",
   "name": "株式会社三共サービス",
   "brandName": "三共サービス",
-  "description": "",
+  "description": "創業20年超の老舗ファクタリング会社。2社間5%〜、3社間1.5%〜と業界最安水準の手数料で最大1億円まで対応。元金融マンの専門スタッフが在籍し、最短翌日入金で法人の大口資金調達を得意とします。",
   "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=4AX5KD+A36FSI+57YY+5YRHE",
   "factoringType": "2社間・3社間",
   "feeRange": {
@@ -39,5 +39,7 @@
     "サービス業"
   ],
   "overallRating": 3.7,
-  "rankPosition": 192
+  "rankPosition": 192,
+  "requiredDocuments": ["本人確認書類", "登記簿謄本", "決算書（直前2期）", "成因資料（注文書・請求書等2点）", "入出金通帳", "納税証明書"],
+  "address": "東京都千代田区内神田2-16-11 内神田渋谷ビル402"
 }

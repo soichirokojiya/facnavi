@@ -2,7 +2,7 @@
   "slug": "cool-pay",
   "name": "株式会社MRISE",
   "brandName": "CoolPay",
-  "description": "",
+  "description": "独自AIスコアリングによる最短60分入金のオンラインファクタリング。手数料2%〜12%、スマホで請求書を撮影するだけで申込完了。最短20分で買取金額を提示。個人事業主やフリーランスの少額債権にも対応する。",
   "affiliateUrl": "https://neo7.net/link.php?id=N0000272&adwares=A0000115&tag=",
   "factoringType": "2社間・3社間",
   "feeRange": {
@@ -39,5 +39,7 @@
     "サービス業"
   ],
   "overallRating": 3,
-  "rankPosition": 219
+  "rankPosition": 219,
+  "requiredDocuments": ["請求書", "通帳コピー", "本人確認書類"],
+  "address": "東京都大田区山王2-1-8-1003"
 }

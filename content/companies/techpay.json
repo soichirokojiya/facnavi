@@ -1,7 +1,7 @@
 {
   "slug": "techpay",
   "name": "テックペイ",
-  "description": "",
+  "description": "福岡発のオンライン完結型ファクタリング。手数料2%〜、最短3時間で入金完了。スマホ撮影の請求書で申込可能な手軽さが魅力。審査通過率95%超、買取額最大5000万円。クラウド契約で全国どこからでも利用でき、個人事業主も歓迎。",
   "affiliateUrl": "https://techpay.jp/",
   "factoringType": "2社間・3社間",
   "feeRange": {
@@ -38,5 +38,11 @@
     "サービス業"
   ],
   "overallRating": 3.5,
-  "rankPosition": 164
+  "rankPosition": 164,
+  "requiredDocuments": [
+    "請求書",
+    "通帳コピー",
+    "本人確認書類"
+  ],
+  "address": "福岡県福岡市"
 }

@@ -1,7 +1,7 @@
 {
   "slug": "archier",
   "name": "アルシエ",
-  "description": "",
+  "description": "大阪拠点の関西密着型ファクタリング会社。手数料1.5%〜で50万円から最大1億円まで買取対応。大阪・京都・兵庫・奈良はスタッフが訪問対応し、対面での丁寧な説明と契約を重視。最短即日での資金化も可能。",
   "affiliateUrl": "https://archier.co.jp/",
   "factoringType": "2社間・3社間",
   "feeRange": {
@@ -38,5 +38,7 @@
     "サービス業"
   ],
   "overallRating": 4,
-  "rankPosition": 91
+  "rankPosition": 91,
+  "requiredDocuments": ["請求書", "通帳コピー", "本人確認書類"],
+  "address": "大阪府大阪市北区東天満2丁目9番2号 AXIS南森町ビル別館6階"
 }

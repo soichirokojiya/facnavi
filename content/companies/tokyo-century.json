@@ -2,7 +2,7 @@
   "slug": "tokyo-century",
   "name": "東京センチュリー株式会社",
   "brandName": "東京センチュリー",
-  "description": "",
+  "description": "伊藤忠商事やNTTグループ、みずほ銀行が出資する大手総合リース企業。ファクタリング分野では3社間取引や保証型に加え、診療報酬・介護報酬債権の早期資金化サービスを全国で提供。法人形態を問わず開業直後でも利用可能で、海外ファクタリングにも対応するなど幅広い事業展開が特徴。",
   "affiliateUrl": "https://www.tokyocentury.co.jp/",
   "factoringType": "3社間",
   "feeRange": {
@@ -39,5 +39,10 @@
     "サービス業"
   ],
   "overallRating": 3.5,
-  "rankPosition": 23
+  "rankPosition": 23,
+  "requiredDocuments": [
+    "売掛債権に関する書類",
+    "決算書"
+  ],
+  "address": "東京都千代田区神田練塀町3 富士ソフトビル"
 }

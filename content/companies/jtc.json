@@ -2,7 +2,7 @@
   "slug": "jtc",
   "name": "株式会社JTC",
   "brandName": "JTC",
-  "description": "",
+  "description": "名古屋・大阪・東京に拠点を持つ入金前払いシステム専門会社。手数料1.2〜10%で最短即日の資金調達が可能。取扱件数1万件超の実績を誇り、経営コンサルティングも提供。法人・個人事業主対応で1億円までの大口案件にも対応。",
   "affiliateUrl": "https://j-t-c.info/",
   "factoringType": "2社間・3社間",
   "feeRange": {
@@ -39,5 +39,12 @@
     "サービス業"
   ],
   "overallRating": 4,
-  "rankPosition": 36
+  "rankPosition": 36,
+  "requiredDocuments": [
+    "請求書",
+    "通帳コピー",
+    "本人確認書類",
+    "決算書"
+  ],
+  "address": "愛知県名古屋市中区錦2-17-28 CK15伏見ビル5階"
 }

@@ -2,7 +2,7 @@
   "slug": "next-one",
   "name": "株式会社ネクストワン",
   "brandName": "ネクストワン",
-  "description": "",
+  "description": "資金調達成功率96%を誇る建設・医療業界に強いファクタリング会社。2社間5%〜10%、3社間1.5%〜8%の手数料で最短即日入金。診療報酬・介護報酬ファクタリングにも対応し、業界専門スタッフが丁寧にサポート。",
   "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=4AX1OL+BRB7W2+4OCU+5ZMCH",
   "factoringType": "2社間・3社間",
   "feeRange": {
@@ -39,5 +39,14 @@
     "サービス業"
   ],
   "overallRating": 3.5,
-  "rankPosition": 32
+  "rankPosition": 32,
+  "requiredDocuments": [
+    "請求書",
+    "通帳コピー",
+    "本人確認書類",
+    "決算書",
+    "登記簿謄本"
+  ],
+  "address": "東京都千代田区内神田3-24-4 STAGEkanda 6F",
+  "approvalRate": 96
 }

@@ -1,7 +1,7 @@
 {
   "slug": "trust-pay",
   "name": "トラストペイ",
-  "description": "",
+  "description": "2社間・3社間対応のファクタリングサービス。手数料3〜15%で即日入金が可能。オンライン完結型で個人事業主も利用でき、全国の中小企業の急な資金需要に柔軟に対応する。",
   "affiliateUrl": "https://trust-pay.jp/",
   "factoringType": "2社間・3社間",
   "feeRange": {
@@ -38,5 +38,7 @@
     "サービス業"
   ],
   "overallRating": 3,
-  "rankPosition": 254
+  "rankPosition": 254,
+  "requiredDocuments": ["請求書", "通帳コピー", "本人確認書類"],
+  "address": "東京都新宿区"
 }

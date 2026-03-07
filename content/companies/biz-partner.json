@@ -2,7 +2,7 @@
   "slug": "biz-partner",
   "name": "BIZパートナー株式会社",
   "brandName": "BIZパートナー",
-  "description": "",
+  "description": "西池袋に拠点を構える2社間・3社間ファクタリングサービス。手数料3%〜15%、最短即日で売掛金を現金化。オンライン対応で全国から利用でき、個人事業主もOK。柔軟な審査で中小企業の急な資金調達をサポートする。",
   "affiliateUrl": "https://biz-partner.jp/",
   "factoringType": "2社間・3社間",
   "feeRange": {
@@ -39,5 +39,7 @@
     "サービス業"
   ],
   "overallRating": 3.5,
-  "rankPosition": 97
+  "rankPosition": 97,
+  "requiredDocuments": ["請求書", "通帳コピー", "本人確認書類"],
+  "address": "東京都豊島区西池袋5-17-12 創業新幹線ビル2F"
 }

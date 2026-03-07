@@ -2,7 +2,7 @@
   "slug": "betrading",
   "name": "株式会社ビートレーディング",
   "brandName": "ビートレーディング",
-  "description": "",
+  "description": "10年超の運営実績を持つ老舗ファクタリング会社で、全国5拠点を展開。取引実績は5.8万社超、累計取扱高1,300億円以上を誇る。2社間・3社間ともに対応し、1万円から最大7億円まで幅広い金額の売掛金を買い取る。最短2時間での入金が可能で、必要書類は請求書と本人確認書類の2点のみ。",
   "affiliateUrl": "https://betrading.jp/",
   "factoringType": "2社間・3社間",
   "feeRange": {
@@ -39,5 +39,11 @@
     "サービス業"
   ],
   "overallRating": 4.8,
-  "rankPosition": 2
+  "rankPosition": 2,
+  "requiredDocuments": [
+    "売掛債権に関する書類（請求書・契約書等）",
+    "通帳コピー（表紙付2か月分）",
+    "代表者の身分証明書"
+  ],
+  "address": "東京都港区芝大門一丁目2-18 野依ビル"
 }

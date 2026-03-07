@@ -2,7 +2,7 @@
   "slug": "japan-trust",
   "name": "株式会社日本トラスト",
   "brandName": "日本トラスト",
-  "description": "",
+  "description": "目黒駅前に拠点を構える日本トラストの2社間・3社間ファクタリング。手数料3〜15%で即日入金対応、審査通過率98%の高さが特徴。個人事業主も利用可能で、全国の幅広い業種に柔軟に対応する。",
   "affiliateUrl": "https://japan-trust.co.jp/",
   "factoringType": "2社間・3社間",
   "feeRange": {
@@ -39,5 +39,8 @@
     "サービス業"
   ],
   "overallRating": 3,
-  "rankPosition": 228
+  "rankPosition": 228,
+  "requiredDocuments": ["請求書", "通帳コピー", "本人確認書類"],
+  "address": "東京都品川区上大崎2-15-19 MG目黒駅前ビル526",
+  "approvalRate": 98
 }

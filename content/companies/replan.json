@@ -2,7 +2,7 @@
   "slug": "replan",
   "name": "株式会社リプラン",
   "brandName": "リプラン",
-  "description": "",
+  "description": "他社からの乗り換えに強い2社間・3社間ファクタリング。手数料2〜12%で、他社より1万円でも高い買取額を提示する条件交渉が可能。即日入金対応で個人事業主もOK、手数料改善を求める方に最適です。",
   "affiliateUrl": "https://replan-factoring.jp/",
   "factoringType": "2社間・3社間",
   "feeRange": {
@@ -39,5 +39,11 @@
     "サービス業"
   ],
   "overallRating": 3.5,
-  "rankPosition": 143
+  "rankPosition": 143,
+  "requiredDocuments": [
+    "請求書",
+    "通帳コピー",
+    "本人確認書類"
+  ],
+  "address": "〒105-0013 東京都港区浜松町1丁目18番11号 イマスオフィス浜松町"
 }

@@ -1,7 +1,7 @@
 {
   "slug": "sanko-factoring",
   "name": "三鉱",
-  "description": "",
+  "description": "三鉱が運営する2社間・3社間ファクタリング。手数料3〜15%、最短即日で売掛金を資金化。中野区を拠点に全国対応し、建設業・製造業を中心とした中小企業や個人事業主の迅速な資金調達を実現します。",
   "affiliateUrl": "https://sanko-factoring.jp/",
   "factoringType": "2社間・3社間",
   "feeRange": {
@@ -38,5 +38,7 @@
     "サービス業"
   ],
   "overallRating": 3.5,
-  "rankPosition": 74
+  "rankPosition": 74,
+  "requiredDocuments": ["請求書", "通帳コピー", "本人確認書類"],
+  "address": "東京都中野区中央1丁目35-6 レッチフィールド中野坂上4階"
 }

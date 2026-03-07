@@ -2,7 +2,7 @@
   "slug": "smfl",
   "name": "三井住友ファイナンス＆リース株式会社",
   "brandName": "SMFL",
-  "description": "",
+  "description": "三井住友フィナンシャルグループと住友商事が出資する大手総合リース会社の3社間ファクタリング。手数料0.5〜3%の低水準が魅力。でんさいを活用した債権流動化にも対応し、法人向けに大口取引を中心とした安定的な資金調達を提供。",
   "affiliateUrl": "https://www.smfl.co.jp/",
   "factoringType": "3社間",
   "feeRange": {
@@ -39,5 +39,7 @@
     "サービス業"
   ],
   "overallRating": 3,
-  "rankPosition": 247
+  "rankPosition": 247,
+  "requiredDocuments": ["請求書", "売掛金明細", "決算書", "登記簿謄本", "本人確認書類"],
+  "address": "東京都千代田区丸の内1-3-2 三井住友銀行東館"
 }

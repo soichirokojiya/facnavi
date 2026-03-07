@@ -2,7 +2,7 @@
   "slug": "mizuho-factor",
   "name": "みずほファクター株式会社",
   "brandName": "みずほファクター",
-  "description": "",
+  "description": "みずほ銀行100%出資の3社間専門ファクタリング会社。手数料1%〜5%の低水準で、国際ファクタリングや保証ファクタリングにも対応。メガバンク系の信頼性を活かし、大口取引から下請債権の小口まで幅広く対応する大企業向けサービス。",
   "affiliateUrl": "https://www.mizuho-factor.co.jp/",
   "factoringType": "3社間",
   "feeRange": {
@@ -39,5 +39,10 @@
     "サービス業"
   ],
   "overallRating": 3.5,
-  "rankPosition": 37
+  "rankPosition": 37,
+  "requiredDocuments": [
+    "売掛債権に関する書類",
+    "決算書"
+  ],
+  "address": "東京都千代田区丸の内1-6-1 丸の内センタービルディング"
 }

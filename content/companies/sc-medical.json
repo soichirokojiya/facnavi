@@ -2,7 +2,7 @@
   "slug": "sc-medical",
   "name": "株式会社SCメディカル",
   "brandName": "SCメディカル",
-  "description": "",
+  "description": "医療業界に特化した3社間ファクタリング。手数料1〜5%で診療報酬債権を通常より約40日早く資金化。専門スタッフが病院やクリニックのキャッシュフロー改善をサポートし、全国の医療機関に対応します。",
   "affiliateUrl": "https://sc-medical.co.jp/",
   "factoringType": "3社間",
   "feeRange": {
@@ -39,5 +39,12 @@
     "サービス業"
   ],
   "overallRating": 3.5,
-  "rankPosition": 150
+  "rankPosition": 150,
+  "requiredDocuments": [
+    "請求書",
+    "診療報酬明細書",
+    "本人確認書類",
+    "商業登記簿謄本"
+  ],
+  "address": "〒105-0013 東京都港区浜松町1丁目27番8号"
 }

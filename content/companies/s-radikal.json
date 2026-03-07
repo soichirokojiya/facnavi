@@ -2,7 +2,7 @@
   "slug": "s-radikal",
   "name": "株式会社S-radikal",
   "brandName": "S-radikal",
-  "description": "",
+  "description": "S-radikalが提供する2社間・3社間ファクタリング。手数料3〜15%で最短即日入金に対応。新宿を拠点に全国の中小企業・個人事業主をサポートし、オンラインで手軽に売掛金を現金化できます。",
   "affiliateUrl": "https://s-radikal.co.jp/",
   "factoringType": "2社間・3社間",
   "feeRange": {
@@ -39,5 +39,7 @@
     "サービス業"
   ],
   "overallRating": 3.5,
-  "rankPosition": 73
+  "rankPosition": 73,
+  "requiredDocuments": ["請求書", "通帳コピー", "本人確認書類"],
+  "address": "東京都新宿区四谷3丁目"
 }

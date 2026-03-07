@@ -2,7 +2,7 @@
   "slug": "jigyou-agent",
   "name": "ANNEX株式会社",
   "brandName": "事業資金エージェント",
-  "description": "",
+  "description": "最短2時間で入金可能な高速ファクタリング。2社間・3社間対応で手数料1.5〜15%、最大2億円まで買取可能。500万円以下は来店不要のオンライン完結型で、リピート率90%超の満足度を誇る。",
   "affiliateUrl": "https://shikin-agent.com/",
   "factoringType": "2社間・3社間",
   "feeRange": {
@@ -39,5 +39,7 @@
     "サービス業"
   ],
   "overallRating": 3.5,
-  "rankPosition": 59
+  "rankPosition": 59,
+  "requiredDocuments": ["本人確認書類", "通帳コピー", "請求書"],
+  "address": "東京都港区新橋4-9-1 新橋プラザビル5F"
 }

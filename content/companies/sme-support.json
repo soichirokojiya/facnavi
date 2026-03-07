@@ -2,7 +2,7 @@
   "slug": "sme-support",
   "name": "株式会社SMEサポート",
   "brandName": "SMEサポート",
-  "description": "",
+  "description": "渋谷区の2社間・3社間ファクタリング会社。売掛債権がなくても将来売上を活用した独自スキームで資金調達が可能。飲食店や小売など現金商売の事業者に強く、赤字決算でも売上があれば審査対応。手数料3〜15%、即日入金可能。",
   "affiliateUrl": "https://sme-support.co.jp/",
   "factoringType": "2社間・3社間",
   "feeRange": {
@@ -39,5 +39,11 @@
     "サービス業"
   ],
   "overallRating": 3.5,
-  "rankPosition": 158
+  "rankPosition": 158,
+  "requiredDocuments": [
+    "請求書",
+    "通帳コピー",
+    "本人確認書類"
+  ],
+  "address": "〒150-0045 東京都渋谷区神泉町20-16 エクセルシオール渋谷202"
 }

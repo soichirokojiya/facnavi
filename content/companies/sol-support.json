@@ -1,7 +1,7 @@
 {
   "slug": "sol-support",
   "name": "SOL support",
-  "description": "",
+  "description": "神奈川県茅ヶ崎拠点の2社間・3社間ファクタリング。手数料2%〜、審査通過率95%。最短15〜60分のスピード査定で即日入金対応。一つの債権の一部買取にも柔軟対応し、近隣なら現金手渡しも可能。個人事業主OK、全国から利用可。",
   "affiliateUrl": "https://sol-support.co.jp/",
   "factoringType": "2社間・3社間",
   "feeRange": {
@@ -38,5 +38,11 @@
     "サービス業"
   ],
   "overallRating": 3.5,
-  "rankPosition": 160
+  "rankPosition": 160,
+  "requiredDocuments": [
+    "請求書",
+    "通帳コピー",
+    "本人確認書類"
+  ],
+  "address": "神奈川県茅ヶ崎市"
 }

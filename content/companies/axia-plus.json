@@ -2,7 +2,7 @@
   "slug": "axia-plus",
   "name": "株式会社アクシアプラス",
   "brandName": "アクシアプラス",
-  "description": "",
+  "description": "業界最低水準の手数料4%〜9%が特徴の池袋拠点ファクタリング。スピード・ノーマル・リーズナブルの3プランから選択可能。審査通過率90%以上で、最短即日入金にも対応。個人事業主や中小企業の資金繰りを強力に支援する。",
   "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=4AX5KD+9VFSXE+4HV8+BXQOH",
   "factoringType": "2社間・3社間",
   "feeRange": {
@@ -39,5 +39,7 @@
     "サービス業"
   ],
   "overallRating": 3.5,
-  "rankPosition": 94
+  "rankPosition": 94,
+  "requiredDocuments": ["請求書", "通帳コピー", "本人確認書類"],
+  "address": "東京都豊島区池袋1-8-7 サン池袋I-501"
 }

@@ -2,7 +2,7 @@
   "slug": "onebank",
   "name": "株式会社スマートバンク",
   "brandName": "ワンバンク請求書買取",
-  "description": "",
+  "description": "フリーランス・個人事業主向けの請求書買取サービス。AI審査により最短60分で即日入金、決算書不要でオンライン完結。手数料6%〜、1万円の少額から対応し、IT・Web制作・デザインなど50業種以上の利用実績あり。",
   "affiliateUrl": "https://www.onebank.co.jp/",
   "factoringType": "2社間",
   "feeRange": {
@@ -39,5 +39,7 @@
     "サービス業"
   ],
   "overallRating": 3.5,
-  "rankPosition": 208
+  "rankPosition": 208,
+  "requiredDocuments": ["請求書", "通帳コピー", "本人確認書類"],
+  "address": "東京都品川区西五反田7-22-17 11F"
 }

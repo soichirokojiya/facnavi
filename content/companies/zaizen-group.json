@@ -2,7 +2,7 @@
   "slug": "zaizen-group",
   "name": "株式会社財全GROUP",
   "brandName": "財全グループ",
-  "description": "",
+  "description": "沖縄拠点で診療報酬・介護報酬・売掛債権のファクタリングを提供する総合グループ。手数料3〜15%、担保不要で最大2ヶ月分の報酬債権を前倒し現金化。不動産やクラファン事業も展開。",
   "affiliateUrl": "https://zaizen-group.co.jp/",
   "factoringType": "2社間・3社間",
   "feeRange": {
@@ -39,5 +39,7 @@
     "サービス業"
   ],
   "overallRating": 3.7,
-  "rankPosition": 195
+  "rankPosition": 195,
+  "requiredDocuments": ["請求書", "通帳コピー", "本人確認書類", "決算書"],
+  "address": "沖縄県浦添市仲西3-15-5 財全GROUP・BLD 6F"
 }

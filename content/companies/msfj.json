@@ -2,7 +2,7 @@
   "slug": "msfj",
   "name": "MSFJ株式会社",
   "brandName": "MSFJ",
-  "description": "",
+  "description": "業界最安水準の手数料1.8%〜を誇る2社間・3社間ファクタリング。クイック・プレミアム・個人事業主専門の3プランを用意し、最大5000万円まで対応。他社からの乗り換えで手数料最大50%OFFの独自プランも提供。",
   "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=4AX1OL+BN56NM+42NG+5Z6WX",
   "factoringType": "2社間・3社間",
   "feeRange": {
@@ -39,5 +39,7 @@
     "サービス業"
   ],
   "overallRating": 3.8,
-  "rankPosition": 178
+  "rankPosition": 178,
+  "requiredDocuments": ["履歴事項全部証明書", "印鑑証明書", "決算報告書", "売買契約書", "入金確認書類"],
+  "address": "東京都港区麻布十番2-8-16 七面坂ビル4階"
 }

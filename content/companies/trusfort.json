@@ -1,7 +1,7 @@
 {
   "slug": "trusfort",
   "name": "トラストフォート",
-  "description": "",
+  "description": "個人事業主やフリーランスに特化した2社間ファクタリング。10万円の少額から利用でき、手数料3〜18%で即日入金に対応。必要書類が少なくオンライン完結で初めての方も安心。",
   "affiliateUrl": "https://trusfort.jp/",
   "factoringType": "2社間",
   "feeRange": {
@@ -38,5 +38,7 @@
     "サービス業"
   ],
   "overallRating": 3.7,
-  "rankPosition": 194
+  "rankPosition": 194,
+  "requiredDocuments": ["請求書", "通帳コピー", "本人確認書類"],
+  "address": "東京都千代田区内神田2-15-4 司ビル"
 }

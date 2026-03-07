@@ -2,7 +2,7 @@
   "slug": "mainavy-factoring",
   "name": "株式会社マイナビブリッジ",
   "brandName": "マイナビブリッジ",
-  "description": "",
+  "description": "マイナビグループが運営する法人専用ファクタリング。手数料2〜7%、500万〜1億円の幅広い取引に対応。大手グループの信頼性と貸金業登録に基づく安心感が強み。ABL（売掛金担保融資）も取り扱い、企業の多様な資金ニーズに対応する。",
   "affiliateUrl": "https://mainavy.jp/",
   "factoringType": "2社間・3社間",
   "feeRange": {
@@ -39,5 +39,7 @@
     "サービス業"
   ],
   "overallRating": 3.5,
-  "rankPosition": 65
+  "rankPosition": 65,
+  "requiredDocuments": ["請求書", "通帳コピー", "契約書", "決算書", "月次試算表", "商業登記簿謄本"],
+  "address": "東京都港区南青山5丁目14番7号"
 }

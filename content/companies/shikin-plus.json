@@ -2,7 +2,7 @@
   "slug": "shikin-plus",
   "name": "株式会社Biz Forward",
   "brandName": "SHIKIN+",
-  "description": "",
+  "description": "Biz Forwardが提供する2社間・3社間ファクタリング「SHIKIN+」。手数料3〜15%で即日入金・少額から対応。オンライン完結で個人事業主もOK、田町拠点に全国の中小事業者の資金調達をサポートします。",
   "affiliateUrl": "https://shikin-plus.jp/",
   "factoringType": "2社間・3社間",
   "feeRange": {
@@ -39,5 +39,7 @@
     "サービス業"
   ],
   "overallRating": 3,
-  "rankPosition": 243
+  "rankPosition": 243,
+  "requiredDocuments": ["請求書", "通帳コピー", "本人確認書類"],
+  "address": "東京都港区芝浦3-1-21 msb Tamachi 田町ステーションタワーS 21F"
 }

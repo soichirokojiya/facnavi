@@ -1,7 +1,7 @@
 {
   "slug": "fakutarikun",
   "name": "ふぁくたりくん",
-  "description": "",
+  "description": "2社間・3社間対応のファクタリングサービス。手数料3〜18%、最短即日入金で個人事業主も利用可能。少額案件にも柔軟に対応し、オンライン完結で全国どこからでも申し込める。建設・運送・IT業界の中小企業に最適。",
   "affiliateUrl": "https://fakutarikun.jp/",
   "factoringType": "2社間・3社間",
   "feeRange": {
@@ -38,5 +38,7 @@
     "サービス業"
   ],
   "overallRating": 3.5,
-  "rankPosition": 116
+  "rankPosition": 116,
+  "requiredDocuments": ["請求書", "通帳コピー", "本人確認書類"],
+  "address": "東京都渋谷区恵比寿1丁目"
 }

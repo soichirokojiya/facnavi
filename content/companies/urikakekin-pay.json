@@ -1,7 +1,7 @@
 {
   "slug": "urikakekin-pay",
   "name": "売掛金PAY JBL",
-  "description": "",
+  "description": "JBL運営の建設業・製造業・運送業に特化したオンライン完結型ファクタリング。手数料3〜15%で即日現金化が可能。クラウドサイン契約で書類が少なく、業種別の専門対応が強み。",
   "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=4AX1OL+BK60MQ+4V1O+5ZEMQ",
   "factoringType": "2社間・3社間",
   "feeRange": {
@@ -38,5 +38,11 @@
     "サービス業"
   ],
   "overallRating": 3.5,
-  "rankPosition": 169
+  "rankPosition": 169,
+  "requiredDocuments": [
+    "請求書",
+    "通帳コピー",
+    "本人確認書類"
+  ],
+  "address": "〒170-0022 東京都豊島区南池袋2丁目33番6号 佐藤ビルディング7階"
 }

@@ -2,7 +2,7 @@
   "slug": "chatwork-sakibarai",
   "name": "株式会社kubell",
   "brandName": "Chatwork先払い",
-  "description": "",
+  "description": "ビジネスチャットで知られるkubell社グループが提供するファクタリングサービス。サービス利用料は一律10%のみで、初期費用・月額費用は不要。事業計画書などの煩雑な書類提出が不要で、最短即日に入金可能。シンプルな料金体系と手続きの簡便さが特徴。",
   "affiliateUrl": "https://go.chatwork.com/ja/early-payment/",
   "factoringType": "2社間・3社間",
   "feeRange": {
@@ -39,5 +39,11 @@
     "サービス業"
   ],
   "overallRating": 4.5,
-  "rankPosition": 8
+  "rankPosition": 8,
+  "requiredDocuments": [
+    "請求書",
+    "通帳コピー",
+    "本人確認書類"
+  ],
+  "address": "東京都港区西新橋1-1-1 WeWork 日比谷FORT TOWER"
 }

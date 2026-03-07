@@ -2,7 +2,7 @@
   "slug": "sokula",
   "name": "株式会社アクセルファクター",
   "brandName": "SOKULA",
-  "description": "",
+  "description": "大手アクセルファクターが運営する簡単・迅速なファクタリング。最短2時間で振込、審査通過率93%超。書類を極力少なくしたシンプルな手続きが特徴で、完全オンライン対応。手数料2〜15%、個人事業主OK。大手グループの安心感が強み。",
   "affiliateUrl": "https://sokula.jp/",
   "factoringType": "2社間・3社間",
   "feeRange": {
@@ -39,5 +39,7 @@
     "サービス業"
   ],
   "overallRating": 3,
-  "rankPosition": 249
+  "rankPosition": 249,
+  "requiredDocuments": ["請求書", "通帳コピー", "本人確認書類", "印鑑証明書"],
+  "address": "東京都新宿区高田馬場1-30-4 30山京ビル5階"
 }

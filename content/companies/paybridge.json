@@ -2,7 +2,7 @@
   "slug": "paybridge",
   "name": "株式会社トップ・マネジメント",
   "brandName": "PAYBRIDGE",
-  "description": "",
+  "description": "株式会社トップ・マネジメントが提供する「PAYBRIDGE」は、広告業界およびIT業界に特化したオンライン完結型ファクタリングサービス。対象業種を絞ることで審査を効率化し、最短2時間での入金を実現。2社間手数料は3.5%〜12.5%と競争力のある水準で、累計買取実績は150億円を超える老舗事業者。",
   "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=4AX1OL+BQPSAA+3JLM+BWVTE",
   "factoringType": "2社間・3社間",
   "feeRange": {
@@ -39,5 +39,10 @@
     "サービス業"
   ],
   "overallRating": 3.5,
-  "rankPosition": 21
+  "rankPosition": 21,
+  "requiredDocuments": [
+    "通帳コピー",
+    "請求書"
+  ],
+  "address": "東京都千代田区鍛冶町1-4-3 竹内ビル2F"
 }

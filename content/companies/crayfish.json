@@ -1,7 +1,7 @@
 {
   "slug": "crayfish",
   "name": "クレイリッシュ",
-  "description": "",
+  "description": "2001年設立の老舗金融会社が運営するファクタリング。手形割引や売掛金担保融資にも対応し、資本金9900万円の安定基盤を持つ。関東1都6県と福島県が対象エリアで、埼玉を拠点に地域密着型の資金調達支援を行う。",
   "affiliateUrl": "https://crayfish.co.jp/",
   "factoringType": "2社間・3社間",
   "feeRange": {
@@ -38,5 +38,7 @@
     "サービス業"
   ],
   "overallRating": 3.5,
-  "rankPosition": 102
+  "rankPosition": 102,
+  "requiredDocuments": ["請求書", "通帳コピー", "本人確認書類"],
+  "address": "埼玉県さいたま市見沼区東大宮5丁目33-12 柏洋ビル3階"
 }

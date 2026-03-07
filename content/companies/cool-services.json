@@ -2,7 +2,7 @@
   "slug": "cool-services",
   "name": "株式会社COOL SERVICES",
   "brandName": "COOL SERVICES",
-  "description": "",
+  "description": "世田谷区拠点の2社間・3社間ファクタリング。手数料2%〜12%で最短即日の資金化に対応。オンライン完結型で全国どこからでも申込可能。個人事業主も利用でき、柔軟な審査で中小企業の多様な資金調達ニーズに応える。",
   "affiliateUrl": "https://cool-services.co.jp/",
   "factoringType": "2社間・3社間",
   "feeRange": {
@@ -39,5 +39,7 @@
     "サービス業"
   ],
   "overallRating": 3.5,
-  "rankPosition": 101
+  "rankPosition": 101,
+  "requiredDocuments": ["請求書", "通帳コピー", "本人確認書類"],
+  "address": "東京都世田谷区太子堂2-8-7 太子堂ハイランドビル2階"
 }

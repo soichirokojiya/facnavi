@@ -2,7 +2,7 @@
   "slug": "factors",
   "name": "株式会社ワイズコーポレーション",
   "brandName": "ファクターズ",
-  "description": "",
+  "description": "池袋拠点のワイズコーポレーションが運営するファクタリングサービス。2社間手数料5%〜、3社間3%〜で即日入金対応。審査では売掛債権だけでなく人柄や誠実さも考慮し、通過率96%を実現。年間200社以上の取引実績で全国の中小企業を支援。",
   "affiliateUrl": "https://factors.co.jp/",
   "factoringType": "2社間・3社間",
   "feeRange": {
@@ -39,5 +39,7 @@
     "サービス業"
   ],
   "overallRating": 4,
-  "rankPosition": 114
+  "rankPosition": 114,
+  "requiredDocuments": ["請求書", "通帳コピー（3ヶ月分）", "本人確認書類"],
+  "address": "東京都豊島区池袋2-53-12 ノーブル池袋3F"
 }

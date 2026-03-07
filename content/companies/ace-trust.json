@@ -2,7 +2,7 @@
   "slug": "ace-trust",
   "name": "株式会社エーストラスト",
   "brandName": "エーストラスト",
-  "description": "",
+  "description": "最短2時間送金の2社間ファクタリング専門サービス。手数料1%〜15%で審査通過率90%以上を誇る。6ヶ月先の売掛債権にも対応し、オンライン完結で全国から利用可能。個人事業主や中小企業の急な資金需要に素早く応える。",
   "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=4AX5KD+9TNI42+5T7O+5Z6WX",
   "factoringType": "2社間",
   "feeRange": {
@@ -39,5 +39,7 @@
     "サービス業"
   ],
   "overallRating": 3.7,
-  "rankPosition": 181
+  "rankPosition": 181,
+  "requiredDocuments": ["決算書", "請求書", "通帳コピー", "登記簿謄本", "印鑑証明書", "本人確認書類"],
+  "address": "東京都港区西新橋2-6-1 第二菊家ビル4階"
 }

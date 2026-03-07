@@ -2,7 +2,7 @@
   "slug": "whatever",
   "name": "有限会社WHATEVER",
   "brandName": "ワットエバー",
-  "description": "",
+  "description": "2004年設立の老舗ファクタリング会社で2社間・3社間に対応。手数料3〜15%、300万〜1億円の幅広い買取額に対応。赤字決算や税金滞納中でも利用可能で、診療報酬債権の買取も実施。",
   "affiliateUrl": "https://wtte.jp/",
   "factoringType": "2社間・3社間",
   "feeRange": {
@@ -39,5 +39,11 @@
     "サービス業"
   ],
   "overallRating": 3.5,
-  "rankPosition": 170
+  "rankPosition": 170,
+  "requiredDocuments": [
+    "請求書",
+    "通帳コピー",
+    "本人確認書類"
+  ],
+  "address": "〒160-0004 東京都新宿区四谷2-2 第22相信ビル202"
 }

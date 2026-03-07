@@ -2,7 +2,7 @@
   "slug": "tranzax",
   "name": "Tranzax株式会社",
   "brandName": "Tranzax",
-  "description": "",
+  "description": "電子記録債権の記録機関を持つフィンテック企業による3社間ファクタリング。手数料1〜5%の低コストで集合債権やマルチファクタリングなど多彩なスキームを提供し、法人の資金調達を支援。",
   "affiliateUrl": "https://tranzax.co.jp/",
   "factoringType": "3社間",
   "feeRange": {
@@ -39,5 +39,7 @@
     "サービス業"
   ],
   "overallRating": 3,
-  "rankPosition": 253
+  "rankPosition": 253,
+  "requiredDocuments": ["請求書", "売掛金明細", "決算書", "登記簿謄本"],
+  "address": "東京都品川区上大崎2-15-19 MG目黒駅前ビル3F"
 }

@@ -2,7 +2,7 @@
   "slug": "invoice-pay",
   "name": "スマートヘッジ株式会社",
   "brandName": "インボイスPay",
-  "description": "",
+  "description": "スマートヘッジ運営の2社間ファクタリング。手数料2.5〜15%で最短即日入金、債権譲渡登記不要が大きな特徴。10万円から利用可能でオンライン完結。累計買取100億円超の実績を持つ信頼のサービス。",
   "affiliateUrl": "https://invoice-pay.jp/",
   "factoringType": "2社間",
   "feeRange": {
@@ -39,5 +39,7 @@
     "サービス業"
   ],
   "overallRating": 3.5,
-  "rankPosition": 202
+  "rankPosition": 202,
+  "requiredDocuments": ["請求書", "通帳コピー", "登記簿謄本", "印鑑証明書"],
+  "address": "東京都千代田区岩本町3-3-3 秋葉原サザンビル8F"
 }

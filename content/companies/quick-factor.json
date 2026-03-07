@@ -2,7 +2,7 @@
   "slug": "quick-factor",
   "name": "株式会社ユニバーサル・デベロップメント",
   "brandName": "クイックファクター",
-  "description": "",
+  "description": "2社間ファクタリング専門で最短即日入金に対応。手数料3〜15%、赤字決算や債務超過でも独自審査で買取可能。オンライン契約により全国の中小企業・個人事業主が迅速に資金調達できるサービスです。",
   "affiliateUrl": "https://quickfactor.jp/",
   "factoringType": "2社間・3社間",
   "feeRange": {
@@ -39,5 +39,11 @@
     "サービス業"
   ],
   "overallRating": 4,
-  "rankPosition": 141
+  "rankPosition": 141,
+  "requiredDocuments": [
+    "身分証明書",
+    "通帳コピー",
+    "請求書・発注書・契約書"
+  ],
+  "address": "〒105-0004 東京都港区新橋1丁目1番13号"
 }

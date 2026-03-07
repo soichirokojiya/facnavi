@@ -2,7 +2,7 @@
   "slug": "sinsia",
   "name": "株式会社シンシア",
   "brandName": "シンシア",
-  "description": "",
+  "description": "大田区拠点の2社間・3社間ファクタリング会社。ファクタリング事業に加え家事代行や人材紹介、事業コンサルティングも展開。手数料3〜15%で即日入金に対応し、個人事業主も利用可能。多角的なサービスで中小企業の経営を総合支援。",
   "affiliateUrl": "https://sinsia.co.jp/",
   "factoringType": "2社間・3社間",
   "feeRange": {
@@ -39,5 +39,7 @@
     "サービス業"
   ],
   "overallRating": 3,
-  "rankPosition": 244
+  "rankPosition": 244,
+  "requiredDocuments": ["請求書", "通帳コピー", "本人確認書類"],
+  "address": "東京都大田区久が原3-39-3 オーバルK"
 }

@@ -1,7 +1,7 @@
 {
   "slug": "sokumu",
   "name": "SoKuMo（ソクモ）",
-  "description": "",
+  "description": "大阪発の2社間特化オンラインファクタリング。手数料1%〜の業界最低水準、最短30分入金。債権譲渡登記不要で諸費用ゼロ。AI審査ではなくオンライン面談による対面式審査で精度の高い買取を実現。買取額10万〜1億円、全国対応。",
   "affiliateUrl": "https://sokumu.jp/",
   "factoringType": "2社間",
   "feeRange": {
@@ -38,5 +38,7 @@
     "サービス業"
   ],
   "overallRating": 3.5,
-  "rankPosition": 78
+  "rankPosition": 78,
+  "requiredDocuments": ["請求書", "通帳コピー", "本人確認書類"],
+  "address": "大阪府大阪市淀川区西中島7-1-3 チサンマンション第8新大阪6F"
 }

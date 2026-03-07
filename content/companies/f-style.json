@@ -2,7 +2,7 @@
   "slug": "f-style",
   "name": "株式会社F-style",
   "brandName": "F-style",
-  "description": "",
+  "description": "経営コンサルティングと一体のファクタリングを提供する世田谷区の会社。2社間・3社間対応で最短3時間の資金化が可能。初回から非対面契約に対応し、事業再生や経営改善までトータルにサポート。利用後の資金繰りフォローも充実。",
   "affiliateUrl": "https://f-style-factoring.jp/",
   "factoringType": "2社間・3社間",
   "feeRange": {
@@ -39,5 +39,7 @@
     "サービス業"
   ],
   "overallRating": 3.5,
-  "rankPosition": 108
+  "rankPosition": 108,
+  "requiredDocuments": ["請求書", "通帳コピー", "本人確認書類"],
+  "address": "東京都世田谷区南烏山5丁目18番15号 ANOATH南烏山4F"
 }

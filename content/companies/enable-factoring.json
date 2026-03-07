@@ -1,7 +1,7 @@
 {
   "slug": "enable-factoring",
   "name": "エネイブル",
-  "description": "",
+  "description": "WEB完結で最短30分の入金を実現するファクタリング会社。手数料1.5%〜で諸経費一切不要。10万円からの少額対応可能で、赤字決算・税金未納・開業1年未満でも買取検討OK。独自の審査基準により他社で断られた方にも対応。",
   "affiliateUrl": "https://enable-factoring.jp/",
   "factoringType": "2社間・3社間",
   "feeRange": {
@@ -38,5 +38,7 @@
     "サービス業"
   ],
   "overallRating": 3.5,
-  "rankPosition": 107
+  "rankPosition": 107,
+  "requiredDocuments": ["請求書", "通帳コピー", "本人確認書類"],
+  "address": "東京都豊島区南池袋1-16"
 }

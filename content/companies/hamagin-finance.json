@@ -2,7 +2,7 @@
   "slug": "hamagin-finance",
   "name": "浜銀ファイナンス株式会社",
   "brandName": "浜銀ファイナンス",
-  "description": "",
+  "description": "横浜銀行グループの浜銀ファイナンスが提供する3社間ファクタリング。手数料1〜5%と低コストで、神奈川・東京エリアに強い地域密着型。500万円以上の法人向けサービスで、大手銀行系の安心感が魅力。",
   "affiliateUrl": "https://www.hamagin-finance.co.jp/",
   "factoringType": "3社間",
   "feeRange": {
@@ -39,5 +39,13 @@
     "サービス業"
   ],
   "overallRating": 3.5,
-  "rankPosition": 121
+  "rankPosition": 121,
+  "requiredDocuments": [
+    "請求書",
+    "売掛金証明書類",
+    "商業登記簿謄本",
+    "本人確認書類",
+    "決算書"
+  ],
+  "address": "〒220-8613 神奈川県横浜市西区みなとみらい3丁目1番1号"
 }

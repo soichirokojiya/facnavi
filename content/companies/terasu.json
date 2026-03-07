@@ -2,7 +2,7 @@
   "slug": "terasu",
   "name": "Terasu株式会社",
   "brandName": "Terasu",
-  "description": "",
+  "description": "個人事業主に注力した2社間・3社間ファクタリング。手数料5%〜、最短90分入金のスピード対応。30秒簡単診断で事前に資金調達の可否を確認可能。ノンリコース契約で売掛先倒産リスクなし。LINE対応・オンライン完結で全国から利用可。",
   "affiliateUrl": "https://terasu-factoring.jp/",
   "factoringType": "2社間・3社間",
   "feeRange": {
@@ -39,5 +39,7 @@
     "サービス業"
   ],
   "overallRating": 3.5,
-  "rankPosition": 81
+  "rankPosition": 81,
+  "requiredDocuments": ["本人確認書類", "通帳コピー", "請求書"],
+  "address": "東京都新宿区高田馬場2-14-5 第2イサミビル3階"
 }

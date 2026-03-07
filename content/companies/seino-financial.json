@@ -2,7 +2,7 @@
   "slug": "seino-financial",
   "name": "セイノーフィナンシャル株式会社",
   "brandName": "セイノーフィナンシャル",
-  "description": "",
+  "description": "西濃運輸グループのセイノーHD完全子会社が提供する3社間ファクタリング。手数料1〜5%で物流業界に特化した資金調達を実現。商品出荷から資金化まで一括対応し、運送業者の資金繰りを強力に支援します。",
   "affiliateUrl": "https://www.seino-financial.co.jp/",
   "factoringType": "3社間",
   "feeRange": {
@@ -39,5 +39,13 @@
     "サービス業"
   ],
   "overallRating": 3.5,
-  "rankPosition": 151
+  "rankPosition": 151,
+  "requiredDocuments": [
+    "請求書",
+    "売掛金証明書類",
+    "商業登記簿謄本",
+    "本人確認書類",
+    "決算書"
+  ],
+  "address": "〒503-0853 岐阜県大垣市田口町1番地"
 }

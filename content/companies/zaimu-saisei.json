@@ -1,7 +1,7 @@
 {
   "slug": "zaimu-saisei",
   "name": "財務再生支援センター",
-  "description": "",
+  "description": "アクセルファクターと日本中小企業再生支援機構が共同運営。2社間1〜12%の手数料でファクタリングと財務コンサルを同時提供。コンサル費用は手数料込みで赤字企業や債務超過でも利用可能。",
   "affiliateUrl": "https://zaimu-saisei.com/",
   "factoringType": "2社間・3社間",
   "feeRange": {
@@ -38,5 +38,7 @@
     "サービス業"
   ],
   "overallRating": 3.5,
-  "rankPosition": 172
+  "rankPosition": 172,
+  "requiredDocuments": ["請求書", "通帳コピー", "本人確認書類", "決算書"],
+  "address": "東京都新宿区高田馬場1丁目30-14 コルティーレ高田馬場1F"
 }

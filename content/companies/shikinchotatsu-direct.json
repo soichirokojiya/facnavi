@@ -1,7 +1,7 @@
 {
   "slug": "shikinchotatsu-direct",
   "name": "資金調達ダイレクト",
-  "description": "",
+  "description": "中間マージンを排除した直接取引型の2社間・3社間ファクタリング。手数料2〜12%で最短即日入金に対応。仲介を介さないためコストを抑えられ、個人事業主から法人まで全国で資金調達が可能です。",
   "affiliateUrl": "https://shikinchotatsu-direct.jp/",
   "factoringType": "2社間・3社間",
   "feeRange": {
@@ -38,5 +38,11 @@
     "サービス業"
   ],
   "overallRating": 3.5,
-  "rankPosition": 153
+  "rankPosition": 153,
+  "requiredDocuments": [
+    "請求書",
+    "通帳コピー",
+    "本人確認書類"
+  ],
+  "address": "東京都"
 }

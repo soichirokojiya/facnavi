@@ -1,7 +1,7 @@
 {
   "slug": "s-factoring",
   "name": "Sファクタリング",
-  "description": "",
+  "description": "2社間専門のオンライン完結型ファクタリング。手数料3〜15%、10万円の少額から最大3000万円まで対応。最短即日入金で個人事業主も利用可能、柔軟な審査と手軽さが特徴のサービスです。",
   "affiliateUrl": "https://s-factoring.jp/",
   "factoringType": "2社間",
   "feeRange": {
@@ -38,5 +38,7 @@
     "サービス業"
   ],
   "overallRating": 3.5,
-  "rankPosition": 210
+  "rankPosition": 210,
+  "requiredDocuments": ["請求書", "通帳コピー", "本人確認書類"],
+  "address": "東京都豊島区池袋2丁目"
 }

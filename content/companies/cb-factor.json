@@ -2,7 +2,7 @@
   "slug": "cb-factor",
   "name": "合同会社シー・ビー・ファクター",
   "brandName": "シー・ビー・ファクター",
-  "description": "",
+  "description": "豊島区拠点の2社間・3社間ファクタリングサービス。手数料3%〜15%で最短即日の売掛金買取に対応。オンライン完結で全国から利用でき、個人事業主もOK。柔軟な審査基準で幅広い業種の中小企業の資金需要に応える。",
   "affiliateUrl": "https://cb-factor.com/",
   "factoringType": "2社間・3社間",
   "feeRange": {
@@ -39,5 +39,7 @@
     "サービス業"
   ],
   "overallRating": 3.5,
-  "rankPosition": 100
+  "rankPosition": 100,
+  "requiredDocuments": ["請求書", "通帳コピー", "本人確認書類"],
+  "address": "東京都豊島区要町三丁目29番6号3階"
 }

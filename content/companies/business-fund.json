@@ -2,7 +2,7 @@
   "slug": "business-fund",
   "name": "株式会社ビジネスファンド",
   "brandName": "ビジネスファンド",
-  "description": "",
+  "description": "巣鴨拠点の2社間・3社間ファクタリングサービス。手数料3%〜15%で最短即日の資金調達に対応。オンライン完結型で全国どこからでも申込可能。法人・個人事業主を問わず、建設業や運送業など多業種の資金繰りを支援する。",
   "affiliateUrl": "https://business-fund.co.jp/",
   "factoringType": "2社間・3社間",
   "feeRange": {
@@ -39,5 +39,7 @@
     "サービス業"
   ],
   "overallRating": 3.5,
-  "rankPosition": 99
+  "rankPosition": 99,
+  "requiredDocuments": ["請求書", "通帳コピー", "本人確認書類"],
+  "address": "東京都豊島区巣鴨1-11-2"
 }

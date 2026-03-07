@@ -2,7 +2,7 @@
   "slug": "line-profect",
   "name": "株式会社ラインプロフェクト",
   "brandName": "ラインプロフェクト",
-  "description": "",
+  "description": "2007年設立の板橋区拠点のファクタリング会社。請求書を送るだけでWEB完結・最短即日の資金調達が可能。ファクタリング事業に加え経営改善コンサルや営業代行も手がけ、事業者の経営課題を多面的にサポートする。手数料3〜15%。",
   "affiliateUrl": "https://line-profect.co.jp/",
   "factoringType": "2社間・3社間",
   "feeRange": {
@@ -39,5 +39,7 @@
     "サービス業"
   ],
   "overallRating": 3.5,
-  "rankPosition": 62
+  "rankPosition": 62,
+  "requiredDocuments": ["本人確認書類", "請求書", "通帳コピー", "基本契約書"],
+  "address": "東京都板橋区中板橋22-8 3F"
 }

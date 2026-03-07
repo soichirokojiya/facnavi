@@ -1,7 +1,7 @@
 {
   "slug": "suga-finance",
   "name": "すがファイナンス",
-  "description": "",
+  "description": "江東区富岡の2社間・3社間ファクタリング会社。企業の売掛金や医療機関の債権買取を行い、即日入金に対応。手数料3〜18%。日本と東南アジアで複数事業を展開する企業グループのファイナンス部門として、幅広い業種の資金調達を支援。",
   "affiliateUrl": "https://suga-finance.co.jp/",
   "factoringType": "2社間・3社間",
   "feeRange": {
@@ -38,5 +38,11 @@
     "サービス業"
   ],
   "overallRating": 3.5,
-  "rankPosition": 162
+  "rankPosition": 162,
+  "requiredDocuments": [
+    "請求書",
+    "通帳コピー",
+    "本人確認書類"
+  ],
+  "address": "〒135-0047 東京都江東区富岡1-26-20"
 }

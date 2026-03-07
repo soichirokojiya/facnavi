@@ -2,7 +2,7 @@
   "slug": "meisei-enterprise",
   "name": "明成エンタープライズ株式会社",
   "brandName": "明成エンタープライズ",
-  "description": "",
+  "description": "港区に本社を置く2019年設立の総合経営コンサルティング会社。2社間・3社間ファクタリングに加え診療報酬・介護報酬にも対応。少額買取・即日入金が可能で、起業直後や税金滞納中でも利用可能。売掛先1社あたり最大5000万円まで買取。",
   "affiliateUrl": "https://meisei-enterprise.co.jp/",
   "factoringType": "2社間・3社間",
   "feeRange": {
@@ -39,5 +39,7 @@
     "サービス業"
   ],
   "overallRating": 3,
-  "rankPosition": 235
+  "rankPosition": 235,
+  "requiredDocuments": ["請求書", "通帳コピー", "本人確認書類"],
+  "address": "東京都港区"
 }

@@ -2,7 +2,7 @@
   "slug": "anchor-guardian",
   "name": "株式会社アンカーガーディアン",
   "brandName": "アンカーガーディアン",
-  "description": "",
+  "description": "福岡・関西を中心とした西日本特化型ファクタリング。3社間3%〜、2社間5%〜の手数料設定で約80%の企業が即日〜翌日に資金化に成功。対面相談も可能で、診療報酬ファクタリングにも対応する地域密着型サービス。",
   "affiliateUrl": "https://anchorguardian.com/",
   "factoringType": "2社間・3社間",
   "feeRange": {
@@ -39,5 +39,11 @@
     "サービス業"
   ],
   "overallRating": 3.5,
-  "rankPosition": 43
+  "rankPosition": 43,
+  "requiredDocuments": [
+    "請求書",
+    "通帳コピー",
+    "本人確認書類"
+  ],
+  "address": "福岡県福岡市中央区天神3-10-32"
 }

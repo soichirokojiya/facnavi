@@ -2,7 +2,7 @@
   "slug": "gmo-btob",
   "name": "GMOペイメントゲートウェイ株式会社",
   "brandName": "GMO BtoB早払い",
-  "description": "",
+  "description": "GMOペイメントゲートウェイ株式会社が提供する法人間取引の売掛債権を早期資金化するファクタリングサービス。請求書買取（手数料1%〜10%）に加え、注文書の段階でも買取に応じる点が特徴的。2回目以降は最短2営業日で入金され、東証プライム上場企業が運営する高い信頼性も魅力。",
   "affiliateUrl": "https://www.gmo-pg.com/lpc/hayabarai/",
   "factoringType": "2社間",
   "feeRange": {
@@ -39,5 +39,12 @@
     "サービス業"
   ],
   "overallRating": 4.3,
-  "rankPosition": 29
+  "rankPosition": 29,
+  "requiredDocuments": [
+    "請求書",
+    "基本契約書",
+    "発注書",
+    "決算書"
+  ],
+  "address": "東京都渋谷区道玄坂1-2-3 渋谷フクラス"
 }

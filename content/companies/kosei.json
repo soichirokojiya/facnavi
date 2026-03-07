@@ -1,7 +1,7 @@
 {
   "slug": "kosei",
   "name": "コーセイ",
-  "description": "",
+  "description": "介護事業者向けに特化したファクタリングサービス。介護保険法の指定事業者を対象に、審査手数料や更新手数料が無料で利用可能。保証人・担保不要で新設・増設予定の事業所も対応。振込手数料もコーセイが負担する明朗な料金体系が特徴。",
   "affiliateUrl": "https://kosei-factoring.jp/",
   "factoringType": "2社間・3社間",
   "feeRange": {
@@ -38,5 +38,7 @@
     "サービス業"
   ],
   "overallRating": 3,
-  "rankPosition": 231
+  "rankPosition": 231,
+  "requiredDocuments": ["請求書", "通帳コピー", "本人確認書類"],
+  "address": "東京都千代田区"
 }

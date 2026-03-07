@@ -2,7 +2,7 @@
   "slug": "urikakedo",
   "name": "株式会社hs1",
   "brandName": "うりかけ堂",
-  "description": "",
+  "description": "AI審査による次世代型ファクタリングで最短2時間の即日入金を実現。手数料2〜12%、個人事業主の利用者が約半数を占める柔軟な審査が特徴。担保・保証人不要で全国対応。",
   "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=4AX1OL+BOXHGY+4S8A+5YJRM",
   "factoringType": "2社間・3社間",
   "feeRange": {
@@ -39,5 +39,7 @@
     "サービス業"
   ],
   "overallRating": 4,
-  "rankPosition": 83
+  "rankPosition": 83,
+  "requiredDocuments": ["印鑑証明書", "会社謄本", "本人確認書類（運転免許証・パスポート等）", "通帳コピー（2〜3ヶ月分）", "請求書"],
+  "address": "東京都千代田区神田須田町2-2-7 トーハン須田町ビル10階"
 }

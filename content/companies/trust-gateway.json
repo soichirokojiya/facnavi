@@ -2,7 +2,7 @@
   "slug": "trust-gateway",
   "name": "株式会社トラストゲートウェイ",
   "brandName": "トラストゲートウェイ",
-  "description": "",
+  "description": "福岡拠点で九州・西日本エリアに強いファクタリング会社。手数料1.5〜9.5%の低水準で審査通過率94%、リピート率98%を誇る。医療系債権にも対応しクラウド契約で即日資金化が可能。",
   "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=4AX5KD+A0SPDE+3RD2+5YJRM",
   "factoringType": "2社間・3社間",
   "feeRange": {
@@ -39,5 +39,12 @@
     "サービス業"
   ],
   "overallRating": 4.3,
-  "rankPosition": 33
+  "rankPosition": 33,
+  "requiredDocuments": [
+    "請求書",
+    "通帳コピー",
+    "本人確認書類"
+  ],
+  "address": "福岡県福岡市中央区大名2-2-42 ケイワン大名",
+  "approvalRate": 94
 }

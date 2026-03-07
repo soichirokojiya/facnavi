@@ -2,7 +2,7 @@
   "slug": "active-support",
   "name": "株式会社アクティブサポート",
   "brandName": "アクティブサポート",
-  "description": "",
+  "description": "池袋拠点の2社間・3社間ファクタリング会社。手数料2%〜14.8%、ノンリコース契約で安心。請求書と通帳3ヶ月分で即日審査が可能。電話・メール・LINE・FAXから申込でき、個人事業主にも柔軟に対応する。",
   "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=4AX5KD+9R9ROY+4JGG+60OXD",
   "factoringType": "2社間・3社間",
   "feeRange": {
@@ -39,5 +39,7 @@
     "サービス業"
   ],
   "overallRating": 3.5,
-  "rankPosition": 89
+  "rankPosition": 89,
+  "requiredDocuments": ["通帳コピー（3ヶ月分）", "請求書"],
+  "address": "東京都豊島区南池袋二丁目13番10号 南池袋山本ビル3階"
 }

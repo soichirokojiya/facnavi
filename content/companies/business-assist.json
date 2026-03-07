@@ -2,7 +2,7 @@
   "slug": "business-assist",
   "name": "株式会社ビジネスアシスト",
   "brandName": "ビジネスアシスト",
-  "description": "",
+  "description": "沖縄拠点で診療報酬ファクタリングにも対応する2社間・3社間サービス。手数料3%〜15%、最短即日入金。医療・介護事業者の資金繰り改善に強みを持ち、個人事業主も利用可能。オンライン対応で全国の事業者を支援する。",
   "affiliateUrl": "https://business-assist.co.jp/",
   "factoringType": "2社間・3社間",
   "feeRange": {
@@ -39,5 +39,7 @@
     "サービス業"
   ],
   "overallRating": 3.5,
-  "rankPosition": 98
+  "rankPosition": 98,
+  "requiredDocuments": ["診療報酬明細書", "通帳コピー", "本人確認書類"],
+  "address": "沖縄県浦添市仲西3-15-2 フェニックス21 2F"
 }

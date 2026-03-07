@@ -2,7 +2,7 @@
   "slug": "kyoei-support",
   "name": "株式会社共栄サポート",
   "brandName": "共栄サポート",
-  "description": "",
+  "description": "東京赤羽に拠点を置く中小企業向け2社間ファクタリング。手数料2〜15%、最短1時間で資金調達可能。24時間Web受付のオンライン完結型で、赤字決算や税金滞納でも売掛先の信用があれば利用可能。ノンリコース契約で担保・保証人不要。",
   "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=4AX5KD+9Q2WHE+5U8W+5YJRM",
   "factoringType": "2社間",
   "feeRange": {
@@ -39,5 +39,7 @@
     "サービス業"
   ],
   "overallRating": 3.7,
-  "rankPosition": 185
+  "rankPosition": 185,
+  "requiredDocuments": ["請求書", "預金通帳（1年分）", "決算書または残高試算表", "代表者身分証明書"],
+  "address": "東京都北区赤羽1-64-10 ブルーノ赤羽2F"
 }

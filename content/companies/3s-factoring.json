@@ -2,7 +2,7 @@
   "slug": "3s-factoring",
   "name": "株式会社スリーエス",
   "brandName": "3S",
-  "description": "",
+  "description": "2社間・3社間対応のオンライン完結型ファクタリング。手数料2%〜19%、最短2時間で入金可能。請求書と通帳の2点のみで審査でき、個人事業主も利用OK。建設業・運送業など幅広い業種の中小企業の資金繰りを迅速にサポートする。",
   "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=4AX1OL+BPIX2Q+5QRM+5YJRM",
   "factoringType": "2社間・3社間",
   "feeRange": {
@@ -39,5 +39,7 @@
     "サービス業"
   ],
   "overallRating": 3.7,
-  "rankPosition": 180
+  "rankPosition": 180,
+  "requiredDocuments": ["通帳コピー", "請求書"],
+  "address": "埼玉県さいたま市浦和区北浦和3-2-10 近藤ビル3階"
 }

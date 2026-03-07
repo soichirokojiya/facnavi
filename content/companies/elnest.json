@@ -2,7 +2,7 @@
   "slug": "elnest",
   "name": "株式会社エルネスト",
   "brandName": "エルネスト",
-  "description": "",
+  "description": "千代田区拠点で経営コンサルティングとファクタリングを一体提供。手数料3%〜、最高3億円まで買取対応。1,000名以上の税理士・公認会計士と提携し、資金繰り改善率90%以上の実績。10秒で資金調達可能額がわかる診断機能も搭載。",
   "affiliateUrl": "https://elnest.co.jp/",
   "factoringType": "2社間・3社間",
   "feeRange": {
@@ -39,5 +39,13 @@
     "サービス業"
   ],
   "overallRating": 3.5,
-  "rankPosition": 51
+  "rankPosition": 51,
+  "requiredDocuments": [
+    "請求書",
+    "通帳コピー",
+    "本人確認書類",
+    "決算書",
+    "登記簿謄本"
+  ],
+  "address": "東京都千代田区麹町5-3 麹町秋山ビルディング9階"
 }

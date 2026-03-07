@@ -2,7 +2,7 @@
   "slug": "freenance",
   "name": "GMOクリエイターズネットワーク株式会社",
   "brandName": "フリーナンス",
-  "description": "",
+  "description": "GMOグループ運営のフリーランス向け2社間ファクタリング。手数料3〜10%で1万円から即日払い可能。損害賠償保険が無料付帯し、アプリで簡単操作。利用実績に応じて手数料が下がる仕組みも魅力。",
   "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=4AX0WK+FEW0KY+47L8+5ZU29",
   "factoringType": "2社間",
   "feeRange": {
@@ -39,5 +39,11 @@
     "サービス業"
   ],
   "overallRating": 4,
-  "rankPosition": 34
+  "rankPosition": 34,
+  "requiredDocuments": [
+    "請求書",
+    "本人確認書類",
+    "取引先のエビデンス資料"
+  ],
+  "address": "東京都品川区大崎1-2-2 アートヴィレッジ大崎セントラルタワー21F"
 }

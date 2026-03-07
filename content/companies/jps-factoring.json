@@ -2,7 +2,7 @@
   "slug": "jps-factoring",
   "name": "株式会社JPS",
   "brandName": "JPS",
-  "description": "",
+  "description": "文京区拠点の株式会社JPSが提供する2社間・3社間ファクタリング。手数料2〜10%と低水準で、対面相談や経営コンサルにも対応。ノンリコース契約で売掛先の倒産リスクを回避でき、法人の資金繰り改善を支援。",
   "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=4AX1ON+BKRG8I+5RPI+60H7L",
   "factoringType": "2社間・3社間",
   "feeRange": {
@@ -39,5 +39,7 @@
     "サービス業"
   ],
   "overallRating": 4,
-  "rankPosition": 60
+  "rankPosition": 60,
+  "requiredDocuments": ["請求書", "過去の請求書", "通帳コピー", "決算書", "本人確認書類"],
+  "address": "東京都文京区小日向4-6-21 ベルメゾン茗荷谷3F"
 }

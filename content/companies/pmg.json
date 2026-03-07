@@ -2,7 +2,7 @@
   "slug": "pmg",
   "name": "ピーエムジー株式会社",
   "brandName": "PMG",
-  "description": "",
+  "description": "ピーエムジー株式会社は全国9拠点を展開し、月間1,500件以上の請求書買取実績を持つ大手ファクタリング会社。最短20分で見積もり・最短2時間で入金が可能で、土日祝日も年中無休で対応する。乗り換え率98%・リピート率96%と高い顧客満足度を誇り、財務コンサルティングや助成金紹介なども提供している。",
   "affiliateUrl": "https://p-m-g.tokyo/",
   "factoringType": "2社間・3社間",
   "feeRange": {
@@ -39,5 +39,12 @@
     "サービス業"
   ],
   "overallRating": 4.5,
-  "rankPosition": 13
+  "rankPosition": 13,
+  "requiredDocuments": [
+    "請求書",
+    "通帳コピー",
+    "決算書"
+  ],
+  "address": "東京都新宿区西新宿2丁目4-1 新宿NSビル25階",
+  "approvalRate": 98
 }

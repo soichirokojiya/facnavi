@@ -2,7 +2,7 @@
   "slug": "ad-planning",
   "name": "株式会社アドプランニング",
   "brandName": "アドプランニング",
-  "description": "",
+  "description": "2019年設立の東京都中央区に拠点を置くファクタリング専門会社。2社間・3社間の両方に対応し、手数料2%〜10%、買取金額は10万円〜1億円と幅広くカバー。申し込みから最短30分での入金や審査通過率88%を掲げ、完全オンライン対応で法人・個人事業主を問わず利用できる。",
   "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=4AX1OL+BSI33M+5LZE+BXB8X",
   "factoringType": "2社間・3社間",
   "feeRange": {
@@ -39,5 +39,13 @@
     "サービス業"
   ],
   "overallRating": 3.5,
-  "rankPosition": 27
+  "rankPosition": 27,
+  "requiredDocuments": [
+    "請求書",
+    "通帳コピー",
+    "本人確認書類",
+    "決算書",
+    "登記簿謄本"
+  ],
+  "address": "東京都中央区八重洲2丁目11-7 一新ビル8階"
 }

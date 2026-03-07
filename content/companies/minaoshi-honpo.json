@@ -2,7 +2,7 @@
   "slug": "minaoshi-honpo",
   "name": "KKT株式会社",
   "brandName": "ファクタリング見直し本舗",
-  "description": "",
+  "description": "他社からの乗り換えに特化したファクタリングサービス。KKT株式会社が運営し、3000社超の乗り換え実績とリピート率90%以上を誇る。手数料2〜12%で現在の手数料より安くなる提案を保証。オンライン完結で最短即日、全国対応可能。",
   "affiliateUrl": "https://minaoshi-honpo.jp/",
   "factoringType": "2社間・3社間",
   "feeRange": {
@@ -39,5 +39,11 @@
     "サービス業"
   ],
   "overallRating": 4,
-  "rankPosition": 132
+  "rankPosition": 132,
+  "requiredDocuments": [
+    "身分証明書",
+    "通帳コピー",
+    "請求書・発注書・契約書"
+  ],
+  "address": "〒160-0004 東京都新宿区四谷1-18-6 四谷プラザビル7F"
 }

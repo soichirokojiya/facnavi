@@ -2,7 +2,7 @@
   "slug": "factor-associates",
   "name": "株式会社ファクターアソシエイツ",
   "brandName": "ファクターアソシエイツ",
-  "description": "",
+  "description": "福岡県の中小企業に特化した地域密着型ファクタリング。全国対応サービス「ロコプラス・アソシエイツ」の実績を基に開発され、地域の事業特性を考慮した柔軟な審査で最短即日対応。無料相談も可能で、手数料3〜15%。",
   "affiliateUrl": "https://factor-associates.co.jp/",
   "factoringType": "2社間・3社間",
   "feeRange": {
@@ -39,5 +39,7 @@
     "サービス業"
   ],
   "overallRating": 3.5,
-  "rankPosition": 110
+  "rankPosition": 110,
+  "requiredDocuments": ["請求書", "通帳コピー", "本人確認書類"],
+  "address": "福岡県福岡市博多区博多駅南1-7-14 BOIS博多"
 }

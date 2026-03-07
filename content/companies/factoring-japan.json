@@ -2,7 +2,7 @@
   "slug": "factoring-japan",
   "name": "株式会社Frontierfort",
   "brandName": "ファクタリングジャパン",
-  "description": "",
+  "description": "最大3億円までの大口買取に対応するファクタリング会社。1社あたり最高1億円、複数債権合計で3億円まで対応可能。2社間・3社間に加え医療介護報酬にも対応。経営コンサルティングも行い、最適な資金調達方法を総合的に提案。",
   "affiliateUrl": "https://factoring-japan.jp/",
   "factoringType": "2社間・3社間",
   "feeRange": {
@@ -39,5 +39,7 @@
     "サービス業"
   ],
   "overallRating": 3.5,
-  "rankPosition": 199
+  "rankPosition": 199,
+  "requiredDocuments": ["請求書", "通帳コピー", "本人確認書類"],
+  "address": "東京都豊島区池袋2-36-1 INFINITY IKEBUKURO 6F"
 }

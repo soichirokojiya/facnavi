@@ -2,7 +2,7 @@
   "slug": "oj-factoring",
   "name": "株式会社オージェイ",
   "brandName": "オージェイ",
-  "description": "",
+  "description": "日本貸金業協会加盟の安心できるファクタリング会社。2社間・3社間に対応し、売掛債権担保融資や診療報酬担保融資など幅広い金融サービスを提供。手数料3%〜15%で最短即日入金、個人事業主も全国から利用可能。",
   "affiliateUrl": "https://oj-factoring.jp/",
   "factoringType": "2社間・3社間",
   "feeRange": {
@@ -39,5 +39,12 @@
     "サービス業"
   ],
   "overallRating": 3.5,
-  "rankPosition": 138
+  "rankPosition": 138,
+  "requiredDocuments": [
+    "請求書",
+    "通帳コピー",
+    "本人確認書類",
+    "商業登記簿謄本"
+  ],
+  "address": "〒164-0011 東京都中野区中央1-32-5 青光堂ビル3F"
 }

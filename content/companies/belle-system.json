@@ -2,7 +2,7 @@
   "slug": "belle-system",
   "name": "株式会社ベルシステム",
   "brandName": "ベルシステム",
-  "description": "",
+  "description": "創業1970年のベルグループが運営する日本橋拠点のファクタリング。手数料1%〜5%と上限が明確で安心。独自の2.5社間方式で売掛先に知られにくい資金調達を実現。対面重視の丁寧なサポートが特徴の老舗サービス。",
   "affiliateUrl": "https://belle-system.co.jp/",
   "factoringType": "2社間・3社間",
   "feeRange": {
@@ -39,5 +39,7 @@
     "サービス業"
   ],
   "overallRating": 3.5,
-  "rankPosition": 95
+  "rankPosition": 95,
+  "requiredDocuments": ["請求書", "通帳コピー", "本人確認書類", "登記簿謄本"],
+  "address": "東京都中央区日本橋室町一丁目10番11号 belle日本橋5F"
 }

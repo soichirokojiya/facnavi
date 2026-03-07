@@ -2,7 +2,7 @@
   "slug": "ntt-tc-lease",
   "name": "NTT・TCリース株式会社",
   "brandName": "NTT・TCリース",
-  "description": "",
+  "description": "NTTグループのリース・金融会社が提供する3社間ファクタリング。手数料0.5%〜5%で売掛債権の早期資金化とオフバランス効果を実現。診療報酬債権にも対応し、大手グループの信頼性と低コストで法人の財務改善を支援。",
   "affiliateUrl": "https://www.ntt-tc-lease.com/",
   "factoringType": "3社間",
   "feeRange": {
@@ -39,5 +39,7 @@
     "サービス業"
   ],
   "overallRating": 3,
-  "rankPosition": 237
+  "rankPosition": 237,
+  "requiredDocuments": ["請求書", "売掛金明細", "決算書", "登記簿謄本", "本人確認書類"],
+  "address": "東京都港区港南1-2-70 品川シーズンテラス13階"
 }

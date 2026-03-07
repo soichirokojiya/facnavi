@@ -2,7 +2,7 @@
   "slug": "kensetsukun",
   "name": "株式会社ウィット",
   "brandName": "けんせつくん",
-  "description": "",
+  "description": "建設業界専門の2社間ファクタリング。最短2時間で入金可能、手数料5〜20%。注文書ファクタリングにも対応し、工事受注時点での資金化が可能。電話・メール・LINEで非対面契約でき、スマホ一台で完結。年中無休で土日祝日も営業。",
   "affiliateUrl": "https://kensetsukun.com/",
   "factoringType": "2社間",
   "feeRange": {
@@ -39,5 +39,7 @@
     "サービス業"
   ],
   "overallRating": 3.5,
-  "rankPosition": 205
+  "rankPosition": 205,
+  "requiredDocuments": ["代表者身分証明書", "商業登記簿謄本", "通帳", "請求書・注文書", "基本契約書", "印鑑証明書", "決算書"],
+  "address": "東京都品川区東五反田1-6-3 いちご東五反田ビル3F"
 }

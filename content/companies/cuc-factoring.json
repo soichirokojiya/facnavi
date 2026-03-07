@@ -2,7 +2,7 @@
   "slug": "cuc-factoring",
   "name": "株式会社CUC",
   "brandName": "CUC",
-  "description": "",
+  "description": "診療報酬ファクタリング専門の会社で、医療機関向けに特化。手数料は最大2%程度と業界最安水準で、最高10億円の大口案件にも対応。全国出張対応が可能で、長期的な資金繰り改善を目的とした支援を行う。",
   "affiliateUrl": "https://cuc-factoring.jp/",
   "factoringType": "2社間・3社間",
   "feeRange": {
@@ -39,5 +39,7 @@
     "サービス業"
   ],
   "overallRating": 3.5,
-  "rankPosition": 104
+  "rankPosition": 104,
+  "requiredDocuments": ["診療報酬明細書", "通帳コピー", "本人確認書類", "登記簿謄本"],
+  "address": "東京都中央区東日本橋一丁目1番7号 野村不動産東日本橋ビル2階"
 }

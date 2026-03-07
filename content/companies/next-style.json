@@ -2,7 +2,7 @@
   "slug": "next-style",
   "name": "株式会社ネクストスタイル",
   "brandName": "ネクストスタイル",
-  "description": "",
+  "description": "東京・代々木拠点の2社間・3社間ファクタリング。20万円の少額から最大5000万円まで対応し、手数料2%〜。最短30分で審査回答、注文書ファクタリングや介護報酬債権にも対応。経営コンサルや事業承継支援も手がける。",
   "affiliateUrl": "https://next-style.net/",
   "factoringType": "2社間・3社間",
   "feeRange": {
@@ -39,5 +39,7 @@
     "サービス業"
   ],
   "overallRating": 3.7,
-  "rankPosition": 187
+  "rankPosition": 187,
+  "requiredDocuments": ["請求書", "通帳コピー", "本人確認書類"],
+  "address": "東京都渋谷区代々木1-32-2 宮﨑ビル303号室"
 }

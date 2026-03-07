@@ -2,7 +2,7 @@
   "slug": "ja-mitsui-lease",
   "name": "JA三井リース株式会社",
   "brandName": "JA三井リース",
-  "description": "",
+  "description": "三井住友とJAグループが出資する大手リース会社の3社間ファクタリング。売掛金・手形の両方に対応し手数料1〜5%。債権管理代行や経営アドバイスも受けられ、農業分野を含む法人の資金繰り改善に強い。",
   "affiliateUrl": "https://www.jamitsuilease.co.jp/",
   "factoringType": "3社間",
   "feeRange": {
@@ -39,5 +39,7 @@
     "サービス業"
   ],
   "overallRating": 3.5,
-  "rankPosition": 58
+  "rankPosition": 58,
+  "requiredDocuments": ["請求書", "通帳コピー", "本人確認書類", "決算書", "登記簿謄本"],
+  "address": "東京都中央区銀座8-13-1 銀座三井ビルディング"
 }

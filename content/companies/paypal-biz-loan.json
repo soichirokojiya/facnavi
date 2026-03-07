@@ -1,7 +1,7 @@
 {
   "slug": "paypal-biz-loan",
   "name": "PayPay銀行ビジネスローン",
-  "description": "",
+  "description": "PayPay銀行が提供する法人・個人事業主向けビジネスローン。金利年1.8%〜13.8%で担保・保証人不要、書類提出も原則不要。24時間365日WEBから借入可能で即時入金。利用限度額内で繰り返し借入でき、柔軟な資金調達に対応。",
   "affiliateUrl": "https://www.paypay-bank.co.jp/business/",
   "factoringType": "2社間",
   "feeRange": {
@@ -38,5 +38,11 @@
     "サービス業"
   ],
   "overallRating": 3.5,
-  "rankPosition": 140
+  "rankPosition": 140,
+  "requiredDocuments": [
+    "本人確認書類",
+    "事業計画書",
+    "決算書"
+  ],
+  "address": "〒160-0004 東京都新宿区四谷1-6-1 四谷タワー"
 }

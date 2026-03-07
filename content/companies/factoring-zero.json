@@ -2,7 +2,7 @@
   "slug": "factoring-zero",
   "name": "株式会社スリートラスト",
   "brandName": "ファクタリングZERO",
-  "description": "",
+  "description": "福岡発の西日本特化型ファクタリング。審査通過率96%、手数料は診療・介護報酬で1.5%〜と業界最安水準。20万円から即日対応可能で、来店不要のオンライン完結。2011年設立の実績ある会社が運営し、西日本の中小企業や医療機関に強い。",
   "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=4AX5KD+A2L06Q+4DJO+5YJRM",
   "factoringType": "2社間・3社間",
   "feeRange": {
@@ -39,5 +39,12 @@
     "サービス業"
   ],
   "overallRating": 3.5,
-  "rankPosition": 35
+  "rankPosition": 35,
+  "requiredDocuments": [
+    "請求書",
+    "通帳コピー",
+    "本人確認書類"
+  ],
+  "address": "福岡市博多区博多駅東1-1-16 第2高田ビル402",
+  "approvalRate": 96
 }

@@ -2,7 +2,7 @@
   "slug": "tomin-shinpan",
   "name": "株式会社トミンシンパン",
   "brandName": "トミンシンパン",
-  "description": "",
+  "description": "1965年創業の老舗金融会社が提供する2社間・3社間ファクタリング。手数料3〜15%、即日入金対応で首都圏の中小企業や個人事業主の資金調達を支援。対面相談も可能で審査は柔軟。",
   "affiliateUrl": "https://www.tomin.co.jp/",
   "factoringType": "2社間・3社間",
   "feeRange": {
@@ -39,5 +39,7 @@
     "サービス業"
   ],
   "overallRating": 3,
-  "rankPosition": 252
+  "rankPosition": 252,
+  "requiredDocuments": ["請求書", "通帳コピー", "本人確認書類", "決算書"],
+  "address": "東京都豊島区南大塚3-43-1"
 }

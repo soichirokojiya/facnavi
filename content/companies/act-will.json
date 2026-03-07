@@ -2,7 +2,7 @@
   "slug": "act-will",
   "name": "アクト・ウィル株式会社",
   "brandName": "アクト・ウィル",
-  "description": "",
+  "description": "東京都豊島区に本社を置く登録貸金業者で、2013年の設立以来、事業資金融資を中心に多彩な金融サービスを提供。ファクタリングのほか売掛債権担保融資や手形担保融資など計7種類のビジネスローンを取り扱い、最大2億円までの高額融資に対応。最短即日での資金調達が可能。",
   "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=4AX1OL+BIDPTE+5KPA+BWVTE",
   "factoringType": "2社間・3社間",
   "feeRange": {
@@ -39,5 +39,12 @@
     "サービス業"
   ],
   "overallRating": 3.5,
-  "rankPosition": 26
+  "rankPosition": 26,
+  "requiredDocuments": [
+    "請求書",
+    "通帳コピー",
+    "本人確認書類",
+    "決算書"
+  ],
+  "address": "東京都豊島区東池袋1-36-7"
 }

@@ -2,7 +2,7 @@
   "slug": "sokuderu",
   "name": "株式会社フラップコミュニケーション",
   "brandName": "ソクデル",
-  "description": "",
+  "description": "最短60分で即日入金の2社間・3社間ファクタリング。手数料5%〜、審査通過率92.5%。専任担当制でお客様一人ひとりに寄り添い、赤字決算や税金滞納でも柔軟対応。介護・診療報酬にも対応し、オンライン完結で全国から利用可能。",
   "affiliateUrl": "https://sokuderu.jp/",
   "factoringType": "2社間・3社間",
   "feeRange": {
@@ -39,5 +39,7 @@
     "サービス業"
   ],
   "overallRating": 3,
-  "rankPosition": 248
+  "rankPosition": 248,
+  "requiredDocuments": ["請求書", "通帳コピー", "本人確認書類"],
+  "address": "東京都千代田区神田鍛冶町3-7-3 花瀧ビル2F"
 }

@@ -2,7 +2,7 @@
   "slug": "onfact",
   "name": "株式会社onfact",
   "brandName": "onfact",
-  "description": "",
+  "description": "年中無休対応の2社間ファクタリング専門会社。手数料2%〜20%で最短60分の即日入金が可能、買取金額に上限なし。ノンリコース契約で万一の貸倒リスクも安心。個人事業主・フリーランスも利用でき全国オンライン完結。",
   "affiliateUrl": "https://onfact.jp/",
   "factoringType": "2社間・3社間",
   "feeRange": {
@@ -39,5 +39,7 @@
     "サービス業"
   ],
   "overallRating": 3.5,
-  "rankPosition": 69
+  "rankPosition": 69,
+  "requiredDocuments": ["請求書", "通帳コピー", "本人確認書類", "印鑑証明書"],
+  "address": "東京都新宿区新宿1-36-2 新宿第七葉山ビル3F"
 }

@@ -2,7 +2,7 @@
   "slug": "e-bank",
   "name": "株式会社アクシアプラス",
   "brandName": "いーばんく",
-  "description": "",
+  "description": "3種類のプランから選べるファクタリングサービス。土日祝日の振込にも対応し、審査通過率90%以上。50万円以下の少額案件も可能で、書類作成はいーばんく側が代行。郵送契約で全国対応、設立間もない企業でも利用しやすい。",
   "affiliateUrl": "https://e-bank-factoring.jp/",
   "factoringType": "2社間・3社間",
   "feeRange": {
@@ -39,5 +39,7 @@
     "サービス業"
   ],
   "overallRating": 3,
-  "rankPosition": 220
+  "rankPosition": 220,
+  "requiredDocuments": ["請求書", "通帳コピー", "本人確認書類"],
+  "address": "東京都千代田区神田小川町2-3-7"
 }

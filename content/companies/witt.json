@@ -2,7 +2,7 @@
   "slug": "witt",
   "name": "株式会社ウィット",
   "brandName": "ウィット",
-  "description": "",
+  "description": "500万円以下の小口買取を専門とする2社間ファクタリング。電話やLINEで非対面契約が可能で最短2時間入金。手数料5〜20%、個人事業主も利用しやすく少額債権の審査通過率が高い。",
   "affiliateUrl": "https://witt-factoring.jp/",
   "factoringType": "2社間",
   "feeRange": {
@@ -39,5 +39,7 @@
     "サービス業"
   ],
   "overallRating": 3.5,
-  "rankPosition": 215
+  "rankPosition": 215,
+  "requiredDocuments": ["請求書", "通帳コピー", "本人確認書類"],
+  "address": "東京都品川区東五反田1-6-3 いちご東五反田ビル3F"
 }

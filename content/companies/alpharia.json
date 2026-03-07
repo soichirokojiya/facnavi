@@ -2,7 +2,7 @@
   "slug": "alpharia",
   "name": "アルファリア株式会社",
   "brandName": "アルファリア",
-  "description": "",
+  "description": "東邦薬品グループのアルファリア株式会社は、医療機関・薬局に特化したファクタリングサービスを展開。診療報酬・調剤報酬・介護報酬の売掛債権を買い取り、早期の資金化を支援する。キャッシュレス決済やリース紹介も手がけ、医療・薬局業界のファイナンスニーズに多角的に応える専門性の高いプロバイダー。",
   "affiliateUrl": "https://alpharia.co.jp/",
   "factoringType": "2社間・3社間",
   "feeRange": {
@@ -39,5 +39,11 @@
     "サービス業"
   ],
   "overallRating": 3.5,
-  "rankPosition": 16
+  "rankPosition": 16,
+  "requiredDocuments": [
+    "請求書",
+    "通帳コピー",
+    "本人確認書類"
+  ],
+  "address": "東京都渋谷区渋谷3-1-9"
 }

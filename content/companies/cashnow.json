@@ -2,7 +2,7 @@
   "slug": "cashnow",
   "name": "Common Future & Co.株式会社",
   "brandName": "CASH NOW",
-  "description": "",
+  "description": "手数料一律9.5%の明瞭な料金体系が特徴の2社間ファクタリング。最短即日入金でオンライン完結。30万〜150万円の少額取引に特化し、フリーランスや個人事業主の小口資金調達に最適。全国から利用可能。",
   "affiliateUrl": "https://cashnow.co.jp",
   "factoringType": "2社間",
   "feeRange": {
@@ -39,5 +39,7 @@
     "サービス業"
   ],
   "overallRating": 3.5,
-  "rankPosition": 999
+  "rankPosition": 999,
+  "requiredDocuments": ["請求書", "通帳コピー", "本人確認書類"],
+  "address": "東京都渋谷区"
 }

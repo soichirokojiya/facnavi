@@ -2,7 +2,7 @@
   "slug": "ntt-finance",
   "name": "NTTファイナンス株式会社",
   "brandName": "NTTファイナンス",
-  "description": "",
+  "description": "NTTグループの金融会社による3社間ファクタリング。手数料0.5%〜3%の低水準で、売掛債権・診療報酬債権の買取に対応。大手ならではの信頼性と丁寧な対応が特徴で、明確なルールに基づく安心の早期資金化を実現。",
   "affiliateUrl": "https://www.ntt-finance.co.jp/",
   "factoringType": "3社間",
   "feeRange": {
@@ -39,5 +39,7 @@
     "サービス業"
   ],
   "overallRating": 3.5,
-  "rankPosition": 207
+  "rankPosition": 207,
+  "requiredDocuments": ["売掛金証明書類", "決算書", "登記簿謄本", "印鑑証明書"],
+  "address": "東京都港区港南1-2-70 品川シーズンテラス"
 }

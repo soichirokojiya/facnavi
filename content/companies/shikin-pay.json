@@ -2,7 +2,7 @@
   "slug": "shikin-pay",
   "name": "ピーエムジー株式会社",
   "brandName": "資金調達ペイ",
-  "description": "",
+  "description": "ピーエムジーが運営する2社間オンラインファクタリング。手数料3〜15%、必要書類が少なく最短即日で資金化。個人事業主も10万円から利用でき、書類の手軽さとスピード対応が評価されています。",
   "affiliateUrl": "https://shikin-pay.com/",
   "factoringType": "2社間",
   "feeRange": {
@@ -39,5 +39,7 @@
     "サービス業"
   ],
   "overallRating": 3.5,
-  "rankPosition": 211
+  "rankPosition": 211,
+  "requiredDocuments": ["請求書", "通帳コピー", "本人確認書類"],
+  "address": "東京都新宿区西新宿2-4-1 新宿NSビル25F"
 }

@@ -2,7 +2,7 @@
   "slug": "cs-planning",
   "name": "株式会社シーエスプランニング",
   "brandName": "シーエスプランニング",
-  "description": "",
+  "description": "医療・介護報酬債権専門のファクタリング会社。手数料1〜3.24%の低水準で、診療報酬や介護給付費を最短3日で資金化。創業40年超の実績を持ち、「終われるファクタリング」として出口戦略まで支援する点が特徴。全国の医療・福祉事業者に対応。",
   "affiliateUrl": "https://cs-planning.co.jp/",
   "factoringType": "2社間・3社間",
   "feeRange": {
@@ -39,5 +39,7 @@
     "サービス業"
   ],
   "overallRating": 3.5,
-  "rankPosition": 103
+  "rankPosition": 103,
+  "requiredDocuments": ["診療報酬明細書", "通帳コピー", "本人確認書類"],
+  "address": "東京都豊島区南大塚3丁目43番1号"
 }

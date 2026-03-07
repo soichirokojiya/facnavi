@@ -2,7 +2,7 @@
   "slug": "mk-trust",
   "name": "株式会社MKトラスト・マネジメント",
   "brandName": "mkトラストマネジメント",
-  "description": "",
+  "description": "2社間・3社間対応のオンライン完結型ファクタリング。手数料3%〜15%で最短即日の資金化が可能。請求書買取に加え介護報酬ファクタリングにも対応し、個人事業主も利用OK。必要書類が少なく手軽に申し込める点が特徴。",
   "affiliateUrl": "https://mk-trust.co.jp/",
   "factoringType": "2社間・3社間",
   "feeRange": {
@@ -39,5 +39,11 @@
     "サービス業"
   ],
   "overallRating": 3.5,
-  "rankPosition": 134
+  "rankPosition": 134,
+  "requiredDocuments": [
+    "請求書",
+    "通帳コピー",
+    "本人確認書類"
+  ],
+  "address": "〒101-0044 東京都千代田区鍛冶町1丁目9-11 石川COビル6階"
 }

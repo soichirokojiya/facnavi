@@ -2,7 +2,7 @@
   "slug": "yamato-credit",
   "name": "ヤマトクレジットファイナンス株式会社",
   "brandName": "ヤマトクレジットファイナンス",
-  "description": "",
+  "description": "ヤマトグループ傘下の信頼性が高い3社間ファクタリング。手数料1〜5%の低水準で輸出債権の回収保証サービスも提供。大手企業の安心感と少額取引にも対応する柔軟さが魅力。",
   "affiliateUrl": "https://www.yamatocf.com/",
   "factoringType": "3社間",
   "feeRange": {
@@ -39,5 +39,7 @@
     "サービス業"
   ],
   "overallRating": 3.5,
-  "rankPosition": 86
+  "rankPosition": 86,
+  "requiredDocuments": ["請求書", "通帳コピー", "本人確認書類", "登記簿謄本"],
+  "address": "東京都豊島区高田3-15-10"
 }

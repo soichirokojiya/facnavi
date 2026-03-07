@@ -2,7 +2,7 @@
   "slug": "ququmo",
   "name": "株式会社アクティブサポート",
   "brandName": "QuQuMo",
-  "description": "",
+  "description": "株式会社アクティブサポートが運営するオンライン完結型ファクタリング。2社間専門で手数料1.0%〜14.8%、買取金額の上限・下限設定がなく柔軟に対応。審査通過率98%と非常に高く、請求書と通帳の2点だけで申込可能。最短2時間での入金に対応している。",
   "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=4AX5KD+9QOC36+4JGG+BXIYP",
   "factoringType": "2社間",
   "feeRange": {
@@ -39,5 +39,11 @@
     "サービス業"
   ],
   "overallRating": 4.8,
-  "rankPosition": 5
+  "rankPosition": 5,
+  "requiredDocuments": [
+    "請求書",
+    "通帳コピー"
+  ],
+  "address": "東京都豊島区南池袋二丁目13-10 南池袋山本ビル",
+  "approvalRate": 98
 }

@@ -2,7 +2,7 @@
   "slug": "bion",
   "name": "株式会社バイオン",
   "brandName": "バイオン",
-  "description": "",
+  "description": "AI審査による完全オンライン型2社間ファクタリング。手数料は一律10%で明瞭な料金体系が魅力。最短60分で入金、5万円の少額から利用可能。面談・来店・郵送不要で、フリーランスや個人事業主にも広く対応する。",
   "affiliateUrl": "https://bfrec.co.jp/",
   "factoringType": "2社間",
   "feeRange": {
@@ -39,5 +39,7 @@
     "サービス業"
   ],
   "overallRating": 3.5,
-  "rankPosition": 197
+  "rankPosition": 197,
+  "requiredDocuments": ["本人確認書類", "請求書", "全銀行口座の入出金明細（3ヶ月分）", "直近の決算書"],
+  "address": "東京都千代田区神田錦町2-5-2"
 }

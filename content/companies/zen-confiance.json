@@ -2,7 +2,7 @@
   "slug": "zen-confiance",
   "name": "株式会社善コンフィアンス",
   "brandName": "善コンフィアンス",
-  "description": "",
+  "description": "事業再生コンサルティングとファクタリングを併せて提供する新宿の会社。2社間・3社間対応で手数料3〜15%、即日入金可能。経営改善を見据えた総合的な資金繰り支援が特徴。",
   "affiliateUrl": "https://zen-confiance.co.jp/",
   "factoringType": "2社間・3社間",
   "feeRange": {
@@ -39,5 +39,7 @@
     "サービス業"
   ],
   "overallRating": 3,
-  "rankPosition": 256
+  "rankPosition": 256,
+  "requiredDocuments": ["請求書", "通帳コピー", "本人確認書類"],
+  "address": "東京都新宿区高田馬場1-31-8 高田馬場ダイカンプラザ612号"
 }

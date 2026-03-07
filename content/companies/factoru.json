@@ -2,7 +2,7 @@
   "slug": "factoru",
   "name": "一般社団法人日本中小企業金融サポート機構",
   "brandName": "FACTOR⁺U",
-  "description": "",
+  "description": "非営利法人の日本中小企業金融サポート機構が運営するAIファクタリング。手数料1.5%〜、必要書類わずか2点で最短40分入金を実現。1万円からの少額対応可能で、申込から契約まで完全オンライン完結。中立的な立場で公平なサービスを提供。",
   "affiliateUrl": "https://chushokigyo-support.or.jp/factoru/",
   "factoringType": "2社間",
   "feeRange": {
@@ -39,5 +39,7 @@
     "サービス業"
   ],
   "overallRating": 3.5,
-  "rankPosition": 54
+  "rankPosition": 54,
+  "requiredDocuments": ["請求書", "通帳コピー"],
+  "address": "東京都港区芝公園一丁目3-5 ACN芝公園ビル"
 }

@@ -2,7 +2,7 @@
   "slug": "rising",
   "name": "株式会社ライジング・インベストメントマネジメント",
   "brandName": "ライジング",
-  "description": "",
+  "description": "ライジング・インベストメントマネジメントが運営する2社間・3社間ファクタリング。手数料3〜15%で即日入金可能。オンライン対応により全国の法人・個人事業主が利用でき、柔軟な審査が特徴です。",
   "affiliateUrl": "https://rising-factoring.jp/",
   "factoringType": "2社間・3社間",
   "feeRange": {
@@ -39,5 +39,7 @@
     "サービス業"
   ],
   "overallRating": 3,
-  "rankPosition": 239
+  "rankPosition": 239,
+  "requiredDocuments": ["請求書", "通帳コピー", "本人確認書類"],
+  "address": "東京都中野区中野3-28-23 東建ビル2F"
 }

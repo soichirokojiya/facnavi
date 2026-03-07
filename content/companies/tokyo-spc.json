@@ -2,7 +2,7 @@
   "slug": "tokyo-spc",
   "name": "東京SPCマネジメント株式会社",
   "brandName": "東京SPCマネジメント",
-  "description": "",
+  "description": "1999年創業の診療・介護報酬ファクタリングと一般ファクタリング両対応の老舗企業。赤坂に拠点を置き、自社出資100%で安定運営。医療経営アウトソーシングやコンサルティングも展開し、豊富な経験と知見で法人の資金調達を幅広く支援。",
   "affiliateUrl": "https://tokyo-spc.com/",
   "factoringType": "2社間・3社間",
   "feeRange": {
@@ -39,5 +39,7 @@
     "サービス業"
   ],
   "overallRating": 3.5,
-  "rankPosition": 82
+  "rankPosition": 82,
+  "requiredDocuments": ["請求書", "通帳コピー", "本人確認書類", "登記簿謄本"],
+  "address": "東京都港区赤坂五丁目2番20号 赤坂パークビル19階"
 }

@@ -1,7 +1,7 @@
 {
   "slug": "japan-maison",
   "name": "日本中小企業金融サポート機構",
-  "description": "",
+  "description": "一般社団法人が運営する非営利型ファクタリング。2社間・3社間対応で手数料1.5〜10%と低水準。経営革新等支援機関の認定を受け、資金調達に加えて経営相談やコンサルティングも提供する独自のサービス。",
   "affiliateUrl": "https://chushokigyo-support.or.jp/",
   "factoringType": "2社間・3社間",
   "feeRange": {
@@ -38,5 +38,7 @@
     "サービス業"
   ],
   "overallRating": 3.5,
-  "rankPosition": 203
+  "rankPosition": 203,
+  "requiredDocuments": ["請求書", "通帳コピー"],
+  "address": "東京都港区芝公園1-3-5 ACN芝公園ビル2階"
 }

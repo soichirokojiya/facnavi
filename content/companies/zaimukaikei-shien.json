@@ -2,7 +2,7 @@
   "slug": "zaimukaikei-shien",
   "name": "一般社団法人財務会計支援機構",
   "brandName": "財務会計支援機構",
-  "description": "",
+  "description": "一般社団法人が運営する2社間専門ファクタリング。手数料7〜11%の明朗会計で債権譲渡登記不要。100万〜1億円の買取に対応し1000件超の成約実績を持つ。最短3日で資金化。",
   "affiliateUrl": "https://zaimukaikei-shien.or.jp/",
   "factoringType": "2社間・3社間",
   "feeRange": {
@@ -39,5 +39,7 @@
     "サービス業"
   ],
   "overallRating": 3.5,
-  "rankPosition": 173
+  "rankPosition": 173,
+  "requiredDocuments": ["請求書", "通帳コピー", "本人確認書類", "決算書"],
+  "address": "東京都千代田区神田多町2-2-22 千代田ビル4F"
 }

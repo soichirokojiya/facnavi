@@ -2,7 +2,7 @@
   "slug": "bestpay",
   "name": "株式会社アレシア",
   "brandName": "ベストペイ",
-  "description": "",
+  "description": "注文書・発注書の段階で資金化できる2社間ファクタリング専門サービス。手数料5%〜、最大3億円まで対応。請求書発行前の受注段階で現金化が可能なため、外注費や仕入れ費の確保に最適。ノンリコースで利用者のリスクも軽減。",
   "affiliateUrl": "https://best-pay.jp/",
   "factoringType": "2社間",
   "feeRange": {
@@ -39,5 +39,7 @@
     "サービス業"
   ],
   "overallRating": 3.5,
-  "rankPosition": 196
+  "rankPosition": 196,
+  "requiredDocuments": ["注文書・発注書", "通帳コピー（3ヶ月分）", "申込書"],
+  "address": "東京都新宿区高田馬場3-2-14"
 }

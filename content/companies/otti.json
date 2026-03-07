@@ -2,7 +2,7 @@
   "slug": "otti",
   "name": "株式会社オッティ",
   "brandName": "OTTI",
-  "description": "",
+  "description": "最短3時間で入金可能な2社間ファクタリング専門会社。手数料5%〜20%で最大5000万円まで対応し、来店不要・オンライン完結。365日メール受付で急ぎの資金調達にも対応。個人事業主も利用でき全国から申込可能。",
   "affiliateUrl": "https://otti.jp/",
   "factoringType": "2社間・3社間",
   "feeRange": {
@@ -39,5 +39,7 @@
     "サービス業"
   ],
   "overallRating": 3.7,
-  "rankPosition": 190
+  "rankPosition": 190,
+  "requiredDocuments": ["請求書", "通帳コピー", "本人確認書類", "決算書"],
+  "address": "東京都台東区東上野3-10-5 山口ビル3F"
 }

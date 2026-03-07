@@ -2,7 +2,7 @@
   "slug": "factoring-gold",
   "name": "中洲貴金属株式会社",
   "brandName": "ファクタリングゴールド",
-  "description": "",
+  "description": "福岡・九州エリアに特化した地域密着型ファクタリング。運営元は10年以上の実績を持つ中洲貴金属で、質屋・古物商の目利きを活かした迅速な査定が強み。土曜日も営業しており、小額から上限なしで買取対応。2社間・3社間対応。",
   "affiliateUrl": "https://factoring-gold.com/",
   "factoringType": "2社間・3社間",
   "feeRange": {
@@ -39,5 +39,7 @@
     "サービス業"
   ],
   "overallRating": 3.5,
-  "rankPosition": 111
+  "rankPosition": 111,
+  "requiredDocuments": ["請求書", "通帳コピー", "本人確認書類"],
+  "address": "福岡県福岡市博多区中洲一丁目3番14号"
 }

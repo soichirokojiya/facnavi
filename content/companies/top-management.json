@@ -2,7 +2,7 @@
   "slug": "top-management",
   "name": "株式会社トップ・マネジメント",
   "brandName": "トップ・マネジメント",
-  "description": "",
+  "description": "累計5万件超の買取実績を誇る大手ファクタリング会社。2社間0.5〜12.5%の低手数料で最大3億円まで対応。最短30分審査・即日入金が可能で、公的助成金と併用できるゼロファクプランも提供。",
   "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=4AX5KD+9UUDBM+3JLM+5YJRM",
   "factoringType": "2社間・3社間",
   "feeRange": {
@@ -39,5 +39,7 @@
     "サービス業"
   ],
   "overallRating": 3.8,
-  "rankPosition": 179
+  "rankPosition": 179,
+  "requiredDocuments": ["請求書", "通帳コピー（7ヶ月分）", "決算書", "本人確認書類", "商業登記簿謄本"],
+  "address": "東京都千代田区鍛冶町1-4-3 竹内ビル2F"
 }

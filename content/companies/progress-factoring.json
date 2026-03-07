@@ -2,7 +2,7 @@
   "slug": "progress-factoring",
   "name": "株式会社Progress",
   "brandName": "Progress",
-  "description": "",
+  "description": "大手町に拠点を構える2社間・3社間ファクタリング会社。手数料3%〜で最短即日の資金調達に対応し、請求書・注文書・支払通知書の買取が可能。医療・介護事業者向けサービスやコンサルティング支援も提供する総合型。",
   "affiliateUrl": "https://progress-factoring.jp/",
   "factoringType": "2社間・3社間",
   "feeRange": {
@@ -39,5 +39,7 @@
     "サービス業"
   ],
   "overallRating": 3.5,
-  "rankPosition": 71
+  "rankPosition": 71,
+  "requiredDocuments": ["請求書", "通帳コピー", "本人確認書類", "基本契約書"],
+  "address": "東京都千代田区大手町一丁目6番1号 大手町ビル1F SPACES大手町"
 }

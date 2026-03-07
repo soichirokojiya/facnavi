@@ -2,7 +2,7 @@
   "slug": "avantia",
   "name": "株式会社アバンティア",
   "brandName": "アバンティア",
-  "description": "",
+  "description": "審査通過率95%を誇る2社間・3社間ファクタリング。最短30分で入金可能な圧倒的スピードが魅力。必要書類は請求書と身分証明書の2点のみ。他社で断られた方の利用も約70%と、柔軟な審査で幅広く対応する。",
   "affiliateUrl": "https://avantia.co.jp/",
   "factoringType": "2社間・3社間",
   "feeRange": {
@@ -39,5 +39,11 @@
     "サービス業"
   ],
   "overallRating": 3.5,
-  "rankPosition": 44
+  "rankPosition": 44,
+  "requiredDocuments": [
+    "請求書",
+    "通帳コピー"
+  ],
+  "address": "東京都豊島区北大塚2-16-4 J・T大塚ビル501",
+  "approvalRate": 95
 }

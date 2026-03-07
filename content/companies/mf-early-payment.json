@@ -2,7 +2,7 @@
   "slug": "mf-early-payment",
   "name": "マネーフォワードケッサイ株式会社",
   "brandName": "マネーフォワード アーリーペイメント",
-  "description": "",
+  "description": "東証プライム上場のマネーフォワードグループが運営する2社間ファクタリングサービス。手数料1%〜10%で数万円から数億円規模の売掛債権に対応し、発注書段階での買取にも応じる点が大きな強み。2回目以降は最短2営業日で入金される。",
   "affiliateUrl": "https://mfkessai.co.jp/ep/top",
   "factoringType": "2社間",
   "feeRange": {
@@ -39,5 +39,11 @@
     "サービス業"
   ],
   "overallRating": 4.3,
-  "rankPosition": 25
+  "rankPosition": 25,
+  "requiredDocuments": [
+    "請求書",
+    "通帳コピー",
+    "決算書"
+  ],
+  "address": "東京都港区芝浦3-1-21 msb Tamachi 田町ステーションタワーS"
 }

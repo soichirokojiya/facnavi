@@ -2,7 +2,7 @@
   "slug": "kis-management",
   "name": "株式会社KISマネジメント",
   "brandName": "KISマネジメント",
-  "description": "",
+  "description": "福岡博多に本社を構える2003年創業の老舗ファクタリング会社。クラウド契約によるオンライン完結型で全国対応、手数料2%〜。スマホ一台で申込から契約まで完了し、最短即日入金が可能。70万円から利用でき個人事業主にも対応。",
   "affiliateUrl": "https://kis-management.co.jp/",
   "factoringType": "2社間・3社間",
   "feeRange": {
@@ -39,5 +39,11 @@
     "サービス業"
   ],
   "overallRating": 3.5,
-  "rankPosition": 127
+  "rankPosition": 127,
+  "requiredDocuments": [
+    "請求書",
+    "通帳コピー",
+    "本人確認書類"
+  ],
+  "address": "福岡県福岡市博多区博多駅前4-3-22 産恵ビル5階"
 }

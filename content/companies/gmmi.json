@@ -2,7 +2,7 @@
   "slug": "gmmi",
   "name": "株式会社喜望大地",
   "brandName": "喜望大地",
-  "description": "",
+  "description": "大阪・梅田エリアに拠点を構える喜望大地の2社間・3社間ファクタリング。手数料3〜15%、最短即日で資金化が可能。関西圏の中小企業や個人事業主を中心に、柔軟な審査とオンライン対応で資金繰りを支援。",
   "affiliateUrl": "https://gmmi.co.jp/",
   "factoringType": "2社間・3社間",
   "feeRange": {
@@ -39,5 +39,7 @@
     "サービス業"
   ],
   "overallRating": 3.5,
-  "rankPosition": 57
+  "rankPosition": 57,
+  "requiredDocuments": ["請求書", "通帳コピー", "本人確認書類"],
+  "address": "大阪府大阪市北区芝田2丁目8番7号八木ビル"
 }

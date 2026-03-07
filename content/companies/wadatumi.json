@@ -2,7 +2,7 @@
   "slug": "wadatumi",
   "name": "ワダツミ株式会社",
   "brandName": "ワダツミ",
-  "description": "",
+  "description": "2004年開業の実績ある3社間ファクタリング専門会社。手数料1%〜で最大5億円まで買取対応。財務コンサルティングと連携した資金繰り改善が特徴で、売掛先への説明も全面サポート。",
   "affiliateUrl": "https://wadatumi.co.jp/",
   "factoringType": "2社間・3社間",
   "feeRange": {
@@ -39,5 +39,7 @@
     "サービス業"
   ],
   "overallRating": 3.5,
-  "rankPosition": 84
+  "rankPosition": 84,
+  "requiredDocuments": ["請求書", "通帳コピー", "本人確認書類", "登記簿謄本"],
+  "address": "東京都千代田区九段南2-4-12 アビスタ九段ビル8階"
 }

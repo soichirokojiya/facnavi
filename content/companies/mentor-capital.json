@@ -2,7 +2,7 @@
   "slug": "mentor-capital",
   "name": "株式会社Mentor Capital",
   "brandName": "メンターキャピタル",
-  "description": "",
+  "description": "2009年設立の老舗ファクタリング会社で最大1億円の大口買取に対応。2社間・3社間対応、手数料2〜15%で審査通過率92%。専任担当者制で最短30分入金を実現し、赤字・債務超過・税金滞納でも利用可能。経営コンサルも併せて提供。",
   "affiliateUrl": "https://neo7.net/link.php?id=N0000272&adwares=A0000212&tag=",
   "factoringType": "2社間・3社間",
   "feeRange": {
@@ -39,5 +39,7 @@
     "サービス業"
   ],
   "overallRating": 3.8,
-  "rankPosition": 177
+  "rankPosition": 177,
+  "requiredDocuments": ["本審査申込書", "通帳コピー（売掛先からの入金確認用）"],
+  "address": "東京都新宿区四谷4-30-13 クロスシー新宿御苑前ビル4F"
 }

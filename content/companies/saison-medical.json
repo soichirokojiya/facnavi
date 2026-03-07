@@ -2,7 +2,7 @@
   "slug": "saison-medical",
   "name": "株式会社クレディセゾン",
   "brandName": "セゾン診療報酬ファクタリング",
-  "description": "",
+  "description": "クレディセゾンが提供する医療機関向け3社間ファクタリング。手数料0.5〜3%で診療・介護・調剤報酬を最短2営業日で資金化。大手セゾングループの信頼性と低手数料が、病院・介護施設の資金繰りを支えます。",
   "affiliateUrl": "https://www.saisoncard.co.jp/business/factoring/",
   "factoringType": "3社間",
   "feeRange": {
@@ -39,5 +39,14 @@
     "サービス業"
   ],
   "overallRating": 4,
-  "rankPosition": 148
+  "rankPosition": 148,
+  "requiredDocuments": [
+    "履歴事項全部証明書の写し",
+    "法人印鑑証明書の写し",
+    "診療報酬等の請求書写し（過去1年分）",
+    "診療報酬額等の決定通知書写し（過去1年分）",
+    "通帳の写し",
+    "法人税・消費税の納税通知書"
+  ],
+  "address": "〒170-6073 東京都豊島区東池袋3丁目1番1号 サンシャイン60 52階"
 }

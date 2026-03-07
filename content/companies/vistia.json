@@ -2,7 +2,7 @@
   "slug": "vistia",
   "name": "株式会社VISTIA",
   "brandName": "VISTIA",
-  "description": "",
+  "description": "「ファクタリングの窓口」を運営し請求書1枚で申込可能な手軽さが魅力。平均20分のスピード審査で午前申込なら午後に資金化。診療報酬や介護報酬の債権買取にも対応し10万円から利用可。",
   "affiliateUrl": "https://vistia-factoring.jp/",
   "factoringType": "2社間・3社間",
   "feeRange": {
@@ -39,5 +39,7 @@
     "サービス業"
   ],
   "overallRating": 3.5,
-  "rankPosition": 214
+  "rankPosition": 214,
+  "requiredDocuments": ["請求書", "通帳コピー", "本人確認書類"],
+  "address": "東京都台東区上野3-16-2"
 }

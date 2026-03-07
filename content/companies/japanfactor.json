@@ -2,7 +2,7 @@
   "slug": "japanfactor",
   "name": "株式会社ジャパンファクター",
   "brandName": "ジャパンファクター",
-  "description": "",
+  "description": "福岡・東京の2拠点で展開するジャパンファクター。2社間・3社間対応で手数料5〜20%、10万円から最大1億円まで買取可能。診療報酬ファクタリングにも対応し、最短即日で個人事業主も利用できる。",
   "affiliateUrl": "https://japanfactor.jp/",
   "factoringType": "2社間・3社間",
   "feeRange": {
@@ -39,5 +39,7 @@
     "サービス業"
   ],
   "overallRating": 3.5,
-  "rankPosition": 204
+  "rankPosition": 204,
+  "requiredDocuments": ["取引関係書類（請求書・納品書・契約書等3ヶ月分）", "通帳コピー（直近1年分）"],
+  "address": "福岡県福岡市中央区警固2-18-13 オークビル7F"
 }

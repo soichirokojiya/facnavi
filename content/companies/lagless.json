@@ -2,7 +2,7 @@
   "slug": "lagless",
   "name": "インベストデザイン株式会社",
   "brandName": "ラグレス",
-  "description": "",
+  "description": "インベストデザインが運営する独自の3社間ファクタリング。発注企業が導入し受注企業への早期支払いを代行する仕組みで、累計46億円超の実績。手数料3.5〜5%、AIによる与信審査を活用し未回収リスクを100%保証する安心のサービス。",
   "affiliateUrl": "https://lagless.co.jp/",
   "factoringType": "2社間・3社間",
   "feeRange": {
@@ -39,5 +39,11 @@
     "サービス業"
   ],
   "overallRating": 3.5,
-  "rankPosition": 129
+  "rankPosition": 129,
+  "requiredDocuments": [
+    "請求書",
+    "通帳コピー",
+    "本人確認書類"
+  ],
+  "address": "〒102-0082 東京都千代田区一番町15番地1 一番町ファーストビル6階"
 }

@@ -2,7 +2,7 @@
   "slug": "denfac",
   "name": "株式会社トップ・マネジメント",
   "brandName": "電ふぁく",
-  "description": "",
+  "description": "トップ・マネジメントが提供する「2.5社間ファクタリング」。専用口座を活用し取引先に知られず資金調達可能。手数料1.8〜8%で、リピート利用により与信スコアが上がり手数料が低下。最短1時間の入金に対応し、継続利用する事業者に最適。",
   "affiliateUrl": "https://denfac.jp/",
   "factoringType": "2社間・3社間",
   "feeRange": {
@@ -39,5 +39,7 @@
     "サービス業"
   ],
   "overallRating": 3.5,
-  "rankPosition": 105
+  "rankPosition": 105,
+  "requiredDocuments": ["請求書", "通帳コピー", "本人確認書類"],
+  "address": "東京都千代田区岩本町3丁目4番11号"
 }

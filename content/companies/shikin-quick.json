@@ -2,7 +2,7 @@
   "slug": "shikin-quick",
   "name": "株式会社MIRIZE",
   "brandName": "資金調達QUICK",
-  "description": "",
+  "description": "MIRIZEが運営する2社間ファクタリング「資金調達QUICK」。手数料1〜15%、最短10分で振込の圧倒的スピード。累計申込10万件超・満足度98%の実績を持ち、土日祝も営業で急な資金需要に即対応します。",
   "affiliateUrl": "https://shikin-quick.com/",
   "factoringType": "2社間",
   "feeRange": {
@@ -39,5 +39,7 @@
     "サービス業"
   ],
   "overallRating": 3.5,
-  "rankPosition": 212
+  "rankPosition": 212,
+  "requiredDocuments": ["身分証明書", "口座入出金履歴", "請求書"],
+  "address": "東京都港区三田3-4-3 RIPL9"
 }

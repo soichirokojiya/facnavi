@@ -2,7 +2,7 @@
   "slug": "finto",
   "name": "トラボックス株式会社",
   "brandName": "Finto",
-  "description": "",
+  "description": "東証プライム上場Visionalグループのトラボックスが運営するAI審査型2社間ファクタリング。手数料2〜9.5%と低水準で、1万円から買取可能。オンライン完結で法人・個人事業主ともに利用できる。",
   "affiliateUrl": "https://finto.jp/",
   "factoringType": "2社間",
   "feeRange": {
@@ -39,5 +39,7 @@
     "サービス業"
   ],
   "overallRating": 3.5,
-  "rankPosition": 200
+  "rankPosition": 200,
+  "requiredDocuments": ["請求書", "通帳コピー", "本人確認書類"],
+  "address": "東京都渋谷区渋谷2-15-1 渋谷クロスタワー12F"
 }

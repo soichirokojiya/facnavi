@@ -2,7 +2,7 @@
   "slug": "fk-management",
   "name": "株式会社FK商事",
   "brandName": "FKマネージメント",
-  "description": "",
+  "description": "池袋拠点のファクタリング会社。2社間・3社間に対応し、手数料3〜15%で最短即日入金が可能。オンライン完結型で個人事業主にも柔軟に対応。建設業や製造業など幅広い業種の資金繰りを支援する。",
   "affiliateUrl": "https://fk-management.jp/",
   "factoringType": "2社間・3社間",
   "feeRange": {
@@ -39,5 +39,7 @@
     "サービス業"
   ],
   "overallRating": 3.5,
-  "rankPosition": 119
+  "rankPosition": 119,
+  "requiredDocuments": ["請求書", "通帳コピー", "本人確認書類"],
+  "address": "東京都豊島区西池袋三丁目25番15号 IB第1ビル8階B"
 }

@@ -2,7 +2,7 @@
   "slug": "besus",
   "name": "besus株式会社",
   "brandName": "besus",
-  "description": "",
+  "description": "2社間・3社間に対応するオンライン完結ファクタリング。手数料2%〜15%で最短即日の資金化が可能。個人事業主から法人まで幅広く対応し、柔軟な審査基準で全国の中小企業やフリーランスの資金調達ニーズに応える。",
   "affiliateUrl": "https://besus.jp/",
   "factoringType": "2社間・3社間",
   "feeRange": {
@@ -39,5 +39,7 @@
     "サービス業"
   ],
   "overallRating": 3.5,
-  "rankPosition": 96
+  "rankPosition": 96,
+  "requiredDocuments": ["請求書", "通帳コピー", "本人確認書類"],
+  "address": "東京都新宿区四谷2-11"
 }

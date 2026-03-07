@@ -2,7 +2,7 @@
   "slug": "nec-capital",
   "name": "NECキャピタルソリューション株式会社",
   "brandName": "NECキャピタルソリューション",
-  "description": "",
+  "description": "NECグループの金融サービス会社であるNECキャピタルソリューションは、3社間ファクタリングを中心に法人向けサービスを提供。個別ファクタリングと一括ファクタリングの2種類を展開し、NECグループ企業の債権には電子記録債権ファクタリングも対応する。売掛債権の早期回収による資金効率化と、債権回収業務の省力化を同時に実現できる。",
   "affiliateUrl": "https://www.necap.co.jp/",
   "factoringType": "3社間",
   "feeRange": {
@@ -39,5 +39,10 @@
     "サービス業"
   ],
   "overallRating": 3.5,
-  "rankPosition": 20
+  "rankPosition": 20,
+  "requiredDocuments": [
+    "売掛債権に関する書類",
+    "決算書"
+  ],
+  "address": "東京都港区港南2-15-3 品川インターシティC棟"
 }

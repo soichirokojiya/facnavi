@@ -2,7 +2,7 @@
   "slug": "mita-securities",
   "name": "三田証券株式会社",
   "brandName": "三田証券",
-  "description": "",
+  "description": "1949年創業の老舗証券会社が運営する2社間・3社間ファクタリング。医療・介護報酬債権の買取に強みがあり、手数料2%〜10%で最短即日入金。金融のプロによる柔軟なコンサルティングも魅力で、法人・個人事業主に全国対応。",
   "affiliateUrl": "https://www.mita-sec.co.jp/",
   "factoringType": "2社間・3社間",
   "feeRange": {
@@ -39,5 +39,12 @@
     "サービス業"
   ],
   "overallRating": 3.5,
-  "rankPosition": 133
+  "rankPosition": 133,
+  "requiredDocuments": [
+    "請求書",
+    "通帳コピー",
+    "本人確認書類",
+    "商業登記簿謄本"
+  ],
+  "address": "〒103-0026 東京都中央区日本橋兜町3番11号"
 }

@@ -1,7 +1,7 @@
 {
   "slug": "west-factoring",
   "name": "WEST",
-  "description": "",
+  "description": "西日本ファクター運営のクラウド契約型2社間ファクタリング。福岡拠点で九州・西日本に強く、手数料3〜15%で最短3時間の資金化が可能。スマホだけで完結し全国対応。",
   "affiliateUrl": "https://west-factoring.jp/",
   "factoringType": "2社間・3社間",
   "feeRange": {
@@ -38,5 +38,7 @@
     "サービス業"
   ],
   "overallRating": 3.5,
-  "rankPosition": 85
+  "rankPosition": 85,
+  "requiredDocuments": ["請求書", "通帳コピー", "本人確認書類"],
+  "address": "福岡県福岡市中央区天神3丁目10-32"
 }

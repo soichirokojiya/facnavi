@@ -2,7 +2,7 @@
   "slug": "rico-lease",
   "name": "リコーリース株式会社",
   "brandName": "リコーリース",
-  "description": "",
+  "description": "東証プライム上場のリコーグループが運営する3社間ファクタリング。手数料1〜5%で医療・介護・障がい福祉業界に特化。保険請求日から最短5営業日で資金化でき、業界トップクラスの導入実績を誇ります。",
   "affiliateUrl": "https://www.r-lease.co.jp/",
   "factoringType": "3社間",
   "feeRange": {
@@ -39,5 +39,13 @@
     "サービス業"
   ],
   "overallRating": 3.5,
-  "rankPosition": 145
+  "rankPosition": 145,
+  "requiredDocuments": [
+    "請求書",
+    "売掛金証明書類",
+    "商業登記簿謄本",
+    "本人確認書類",
+    "決算書"
+  ],
+  "address": "〒105-0021 東京都港区東新橋1-9-2 汐留住友ビル"
 }

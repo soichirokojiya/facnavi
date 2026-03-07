@@ -2,7 +2,7 @@
   "slug": "danbury",
   "name": "株式会社ダンバリコンサルティング",
   "brandName": "ダンバリコンサルティング",
-  "description": "",
+  "description": "東京日本橋拠点の2社間・3社間ファクタリング対応会社。手数料3〜15%で最大1億円まで買取可能。コンサルティング事業も展開し、財務分析や経営支援と組み合わせた資金調達を提案。法人・個人事業主問わず全国対応。",
   "affiliateUrl": "https://danbury.co.jp/",
   "factoringType": "2社間・3社間",
   "feeRange": {
@@ -39,5 +39,11 @@
     "サービス業"
   ],
   "overallRating": 3.5,
-  "rankPosition": 46
+  "rankPosition": 46,
+  "requiredDocuments": [
+    "請求書",
+    "通帳コピー",
+    "本人確認書類"
+  ],
+  "address": "東京都中央区日本橋2-2-3"
 }

@@ -2,7 +2,7 @@
   "slug": "nx-capital",
   "name": "NXキャピタル株式会社",
   "brandName": "NXキャピタル",
-  "description": "",
+  "description": "NXグループ(旧日本通運)の金融子会社が提供する3社間ファクタリング。手数料1%〜5%で電子記録債権による期日前資金化を実施。物流業界に精通し、グループファイナンスの知見を活かした法人向け売掛債権の効率的な資金化を支援。",
   "affiliateUrl": "https://www.nx-capital.co.jp/",
   "factoringType": "3社間",
   "feeRange": {
@@ -39,5 +39,7 @@
     "サービス業"
   ],
   "overallRating": 3.7,
-  "rankPosition": 188
+  "rankPosition": 188,
+  "requiredDocuments": ["請求書", "売掛金証明書類", "決算書", "登記簿謄本"],
+  "address": "東京都千代田区神田和泉町2番地 NXグループ統合拠点"
 }

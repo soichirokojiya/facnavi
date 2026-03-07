@@ -2,7 +2,7 @@
   "slug": "mufg-factor",
   "name": "三菱UFJファクター株式会社",
   "brandName": "三菱UFJファクター",
-  "description": "",
+  "description": "三菱UFJ銀行100%出資の3社間ファクタリング専門会社。手数料0.8%〜5%の業界最低水準で、国際ファクタリング・一括ファクタリング・でんさい対応と幅広いサービスを展開。大企業の売掛債権管理に最適な信頼性の高い選択肢。",
   "affiliateUrl": "https://www.mufg-factor.jp/",
   "factoringType": "3社間",
   "feeRange": {
@@ -39,5 +39,10 @@
     "サービス業"
   ],
   "overallRating": 4.3,
-  "rankPosition": 31
+  "rankPosition": 31,
+  "requiredDocuments": [
+    "売掛債権に関する書類",
+    "決算書"
+  ],
+  "address": "東京都千代田区神田淡路町2-101 ワテラスタワー"
 }

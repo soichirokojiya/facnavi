@@ -2,7 +2,7 @@
   "slug": "sk-service",
   "name": "株式会社SKサービス",
   "brandName": "SKサービス",
-  "description": "",
+  "description": "千代田区の2社間・3社間ファクタリング。手数料1%〜、審査通過率98%の高水準が特徴。買取額10万〜5000万円、最短即日入金で24時間対応。売掛先の信用力を重視した審査で、個人事業主や経営不振の企業にも柔軟に対応。",
   "affiliateUrl": "https://sk-service.co.jp/",
   "factoringType": "2社間・3社間",
   "feeRange": {
@@ -39,5 +39,8 @@
     "サービス業"
   ],
   "overallRating": 3,
-  "rankPosition": 245
+  "rankPosition": 245,
+  "requiredDocuments": ["請求書", "印鑑証明書", "登記簿謄本"],
+  "address": "東京都千代田区内神田3-22-3 IM内神田ビル9階",
+  "approvalRate": 98
 }

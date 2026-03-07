@@ -1,7 +1,8 @@
 {
   "slug": "sokuji-online",
-  "name": "即日オンラインファクタリング",
-  "description": "",
+  "name": "即日オンラインファクタリング株式会社",
+  "brandName": "即日オンラインファクタリング",
+  "description": "完全オンライン完結型の2社間・3社間ファクタリング。手数料3〜18%で即日審査・即日入金に対応。来店不要でスマホやPCから簡単申込、個人事業主もOK。スピード審査と手軽さを両立した次世代型サービスで全国の中小企業を支援。",
   "affiliateUrl": "https://sokuji-online.jp/",
   "factoringType": "2社間・3社間",
   "feeRange": {
@@ -38,5 +39,7 @@
     "サービス業"
   ],
   "overallRating": 3.5,
-  "rankPosition": 77
+  "rankPosition": 77,
+  "requiredDocuments": ["請求書", "通帳コピー", "本人確認書類"],
+  "address": "東京都港区南青山2-2-6 ラセーナ南青山7F"
 }

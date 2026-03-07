@@ -2,7 +2,7 @@
   "slug": "life-factoring",
   "name": "株式会社ライフ",
   "brandName": "ライフ",
-  "description": "",
+  "description": "渋谷区に拠点を構え、2社間・3社間・医療・介護報酬ファクタリングを提供。1件30万〜2000万円、複数債権で最大1億円まで対応。手数料1%〜で経営コンサルや事業承継支援も展開する総合型サービス。法人・医療法人が主な対象。",
   "affiliateUrl": "https://life-factoring.jp/",
   "factoringType": "2社間・3社間",
   "feeRange": {
@@ -39,5 +39,7 @@
     "サービス業"
   ],
   "overallRating": 3.5,
-  "rankPosition": 61
+  "rankPosition": 61,
+  "requiredDocuments": ["請求書", "通帳コピー", "本人確認書類"],
+  "address": "東京都渋谷区千駄ヶ谷5-15-13"
 }

@@ -2,7 +2,7 @@
   "slug": "resona-ks",
   "name": "りそな決済サービス株式会社",
   "brandName": "りそな決済サービス",
-  "description": "",
+  "description": "りそなグループ運営の3社間ファクタリング。手数料1〜5%と低水準で、でんさい活用型の決済システムを提供。審査に約2週間を要するものの、大手銀行系の信頼性と安定感で法人の資金調達を支えます。",
   "affiliateUrl": "https://www.resona-ks.co.jp/",
   "factoringType": "3社間",
   "feeRange": {
@@ -39,5 +39,13 @@
     "サービス業"
   ],
   "overallRating": 3.5,
-  "rankPosition": 144
+  "rankPosition": 144,
+  "requiredDocuments": [
+    "請求書",
+    "売掛金証明書類",
+    "商業登記簿謄本",
+    "本人確認書類",
+    "決算書"
+  ],
+  "address": "〒153-8506 東京都目黒区目黒2丁目13番18号"
 }

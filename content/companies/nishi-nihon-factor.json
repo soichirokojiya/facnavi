@@ -2,7 +2,7 @@
   "slug": "nishi-nihon-factor",
   "name": "株式会社西日本ファクター",
   "brandName": "西日本ファクター",
-  "description": "",
+  "description": "福岡本社で九州・中国地方に特化した地域密着型ファクタリング。手数料2.8%〜15%で最短即日入金、大阪・熊本にも支店を展開。エリア限定の効率運営により格安手数料とスピード契約を実現し、個人事業主にも対応。",
   "affiliateUrl": "https://px.a8.net/svt/ejp?a8mat=4AX1ON+BMJR1U+3XT0+5YJRM",
   "factoringType": "2社間・3社間",
   "feeRange": {
@@ -39,5 +39,11 @@
     "サービス業"
   ],
   "overallRating": 3.5,
-  "rankPosition": 38
+  "rankPosition": 38,
+  "requiredDocuments": [
+    "請求書",
+    "本人確認書類",
+    "決算書"
+  ],
+  "address": "福岡県福岡市中央区薬院2-2-18 大地ビル"
 }

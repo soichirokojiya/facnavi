@@ -2,7 +2,7 @@
   "slug": "sbi-factoring",
   "name": "SBIビジネス・ソリューションズ株式会社",
   "brandName": "入金QUICK",
-  "description": "",
+  "description": "SBIグループ運営の2社間オンラインファクタリング「入金QUICK」。手数料0.5〜3.8%の業界最安水準で、請求書発行から3クリックで買取申請が完了。2営業日後に入金、取引先への通知不要で安心です。",
   "affiliateUrl": "https://www.sbi-efinance.co.jp/",
   "factoringType": "2社間",
   "feeRange": {
@@ -39,5 +39,7 @@
     "サービス業"
   ],
   "overallRating": 3.5,
-  "rankPosition": 75
+  "rankPosition": 75,
+  "requiredDocuments": ["決算書（2期分）", "入出金明細（6ヶ月分）", "登記簿謄本", "本人確認書類"],
+  "address": "東京都港区六本木一丁目6番1号 泉ガーデンタワー"
 }

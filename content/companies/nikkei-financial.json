@@ -2,7 +2,7 @@
   "slug": "nikkei-financial",
   "name": "株式会社日経フィナンシャルトライ",
   "brandName": "日経フィナンシャルトライ東京",
-  "description": "",
+  "description": "東京・大阪・札幌・仙台の全国4拠点を持つファクタリング会社。手数料3%〜8%の低水準で、12時までの申込で最短即日入金。全国無料出張対応や赤字決算・税金滞納中でも柔軟に審査。元銀行員の専門スタッフが担当。",
   "affiliateUrl": "https://nikkei-financial.co.jp/",
   "factoringType": "2社間・3社間",
   "feeRange": {
@@ -39,5 +39,12 @@
     "サービス業"
   ],
   "overallRating": 3.5,
-  "rankPosition": 136
+  "rankPosition": 136,
+  "requiredDocuments": [
+    "請求書",
+    "通帳コピー",
+    "本人確認書類",
+    "決算書"
+  ],
+  "address": "〒101-0047 東京都千代田区内神田1丁目18番11号 東京ロイヤルプラザ509"
 }

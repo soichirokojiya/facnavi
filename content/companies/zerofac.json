@@ -2,7 +2,7 @@
   "slug": "zerofac",
   "name": "株式会社トップ・マネジメント",
   "brandName": "ZEROファク",
-  "description": "",
+  "description": "トップ・マネジメントが提供する業界初のファクタリング×公的助成金併用サービス。手数料1〜10%で助成金によりファクタリング費用を実質ゼロに。即日入金対応で中小企業の資金繰りを支援。",
   "affiliateUrl": "https://zerofac.jp/",
   "factoringType": "2社間・3社間",
   "feeRange": {
@@ -39,5 +39,7 @@
     "サービス業"
   ],
   "overallRating": 3,
-  "rankPosition": 257
+  "rankPosition": 257,
+  "requiredDocuments": ["請求書", "通帳コピー", "本人確認書類", "決算書"],
+  "address": "東京都千代田区鍛冶町1-4-3 竹内ビル2F"
 }

@@ -2,7 +2,7 @@
   "slug": "fukuoka-bank-ep",
   "name": "マネーフォワードケッサイ株式会社",
   "brandName": "福岡銀行アーリーペイメント",
-  "description": "",
+  "description": "福岡銀行グループによる3社間ファクタリング。マネーフォワードケッサイが運営し、手数料1〜5%の低コストで資金調達が可能。九州エリアに強く、大手金融機関の信頼性を活かした安心のサービスを提供。",
   "affiliateUrl": "https://www.fukuokabank.co.jp/",
   "factoringType": "3社間",
   "feeRange": {
@@ -39,5 +39,7 @@
     "サービス業"
   ],
   "overallRating": 3.5,
-  "rankPosition": 55
+  "rankPosition": 55,
+  "requiredDocuments": ["決算書", "原契約書", "売掛金に関する資料"],
+  "address": "東京都港区芝5-33-7 三田ゲートウェイビル"
 }
