@@ -26,6 +26,7 @@ export default function PartnerSettingsPage() {
   const [loading, setLoading] = useState(true);
   const [editing, setEditing] = useState(false);
   const [saving, setSaving] = useState(false);
+  const [toggling, setToggling] = useState(false);
   const [message, setMessage] = useState("");
   const [formError, setFormError] = useState("");
 
@@ -56,8 +57,8 @@ export default function PartnerSettingsPage() {
           setProfile(d);
           setName(d.name);
           setEmail(d.email || "");
-          setMinAmount(String(d.min_amount));
-          setMaxAmount(String(d.max_amount));
+          setMinAmount(String(d.min_amount || 10000));
+          setMaxAmount(String(d.max_amount || 999999999));
           setSelectedPrefectures(d.supported_prefectures?.length ? d.supported_prefectures : [...PREFECTURES]);
           setSupportedIndustries(d.supported_industries?.length ? d.supported_industries : [...INDUSTRIES] as string[]);
           setSupportedDepositTiming(d.supported_deposit_timing?.length ? d.supported_deposit_timing : [...DEPOSIT_TIMING_OPTIONS]);
@@ -170,13 +171,13 @@ export default function PartnerSettingsPage() {
 
       {/* プロフィール設定 */}
       <div className="bg-white rounded-xl border border-gray-200 p-6 mb-6">
-        <div className="flex items-center justify-between mb-4">
+        <div className="flex items-center gap-3 mb-4">
           <h2 className="text-lg font-bold text-gray-900">基本設定</h2>
           {!editing && (
             <button
               type="button"
               onClick={() => setEditing(true)}
-              className="px-5 py-2 rounded-lg text-sm font-bold bg-primary text-white hover:bg-primary-dark shadow-sm transition-colors"
+              className="px-4 py-1.5 rounded-lg text-xs font-bold bg-primary text-white hover:bg-primary-dark shadow-sm transition-colors"
             >
               編集する
             </button>
@@ -477,22 +478,6 @@ export default function PartnerSettingsPage() {
             </label>
           </div>
 
-          {/* 見積もり対象ステータス */}
-          <div className="border-t border-gray-200 pt-4">
-            <h3 className="text-sm font-bold text-gray-900 mb-2">一括見積もり対象</h3>
-            <p className="text-xs text-gray-500 mb-2">有効にすると、一括見積もりの送客対象業者になります。</p>
-            <label className="flex items-center gap-2 text-sm">
-              <input
-                type="checkbox"
-                checked={isActive}
-                onChange={(e) => editing && setIsActive(e.target.checked)}
-                disabled={!editing}
-                className={`rounded ${!editing ? "opacity-70 cursor-not-allowed" : ""}`}
-              />
-              見積もり送客対象にする
-            </label>
-          </div>
-
           {message && (
             <p className="text-sm text-green-600 font-medium">{message}</p>
           )}
@@ -517,8 +502,8 @@ export default function PartnerSettingsPage() {
                   if (profile) {
                     setName(profile.name);
                     setEmail(profile.email || "");
-                    setMinAmount(String(profile.min_amount));
-                    setMaxAmount(String(profile.max_amount));
+                    setMinAmount(String(profile.min_amount || 10000));
+                    setMaxAmount(String(profile.max_amount || 999999999));
                     setSelectedPrefectures(profile.supported_prefectures?.length ? profile.supported_prefectures : [...PREFECTURES]);
                     setSupportedIndustries(profile.supported_industries?.length ? profile.supported_industries : [...INDUSTRIES] as string[]);
                     setSupportedDepositTiming(profile.supported_deposit_timing?.length ? profile.supported_deposit_timing : [...DEPOSIT_TIMING_OPTIONS]);
@@ -535,6 +520,62 @@ export default function PartnerSettingsPage() {
             </div>
           )}
         </form>
+      </div>
+
+      {/* 掲載ステータス */}
+      <div className={`rounded-xl border p-6 mb-6 ${isActive ? "bg-white border-gray-200" : "bg-red-50 border-red-200"}`}>
+        <div className="flex items-center justify-between">
+          <div>
+            <h2 className="text-lg font-bold text-gray-900 mb-1">掲載ステータス</h2>
+            <p className="text-sm text-gray-600">
+              {isActive
+                ? "現在、一括見積もりの送客対象です。新しいリードが届きます。"
+                : "現在、掲載を停止中です。リードは届きません。"}
+            </p>
+          </div>
+          <div className="flex items-center gap-3 shrink-0">
+            <span className={`inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold ${isActive ? "bg-green-100 text-green-700" : "bg-red-100 text-red-700"}`}>
+              <span className={`w-2 h-2 rounded-full ${isActive ? "bg-green-500" : "bg-red-500"}`} />
+              {isActive ? "掲載中" : "停止中"}
+            </span>
+            <button
+              type="button"
+              disabled={toggling}
+              onClick={async () => {
+                const next = !isActive;
+                const msg = next
+                  ? "掲載を再開しますか？リードの受信が開始されます。"
+                  : "掲載を停止しますか？リードが届かなくなります。";
+                if (!confirm(msg)) return;
+                setToggling(true);
+                try {
+                  const res = await fetch("/api/partner/profile", {
+                    method: "PATCH",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify({ is_active: next }),
+                  });
+                  if (res.ok) {
+                    setIsActive(next);
+                    if (profile) {
+                      setProfile({ ...profile, is_active: next });
+                    }
+                  }
+                } catch {
+                  // ignore
+                } finally {
+                  setToggling(false);
+                }
+              }}
+              className={`px-4 py-2 rounded-lg text-sm font-bold transition-colors disabled:opacity-50 ${
+                isActive
+                  ? "bg-red-500 text-white hover:bg-red-600"
+                  : "bg-emerald-500 text-white hover:bg-emerald-600"
+              }`}
+            >
+              {toggling ? "処理中..." : isActive ? "掲載を停止する" : "掲載を再開する"}
+            </button>
+          </div>
+        </div>
       </div>
 
     </div>
