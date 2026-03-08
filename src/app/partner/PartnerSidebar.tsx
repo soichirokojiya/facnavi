@@ -9,6 +9,7 @@ export function PartnerSidebar() {
   const router = useRouter();
   const [mobileOpen, setMobileOpen] = useState(false);
   const [unreadCount, setUnreadCount] = useState(0);
+  const [unreadReplies, setUnreadReplies] = useState(0);
 
   const publicPages = ["/partner/login", "/partner/register", "/partner/forgot-password", "/partner/reset-password"];
   const isPublic = publicPages.includes(pathname);
@@ -17,11 +18,17 @@ export function PartnerSidebar() {
     if (isPublic) return;
     async function fetchUnread() {
       try {
-        const res = await fetch("/api/partner/leads", { cache: "no-store" });
-        const json = await res.json();
-        const leads = json.data || [];
-        const count = leads.filter((l: { viewed_at: string | null; status: string }) => !l.viewed_at && l.status === "active").length;
-        setUnreadCount(count);
+        const [leadsRes, inquiriesRes] = await Promise.all([
+          fetch("/api/partner/leads", { cache: "no-store" }),
+          fetch("/api/partner/inquiries", { cache: "no-store" }),
+        ]);
+        const leadsJson = await leadsRes.json();
+        const leads = leadsJson.data || [];
+        setUnreadCount(leads.filter((l: { viewed_at: string | null; status: string }) => !l.viewed_at && l.status === "active").length);
+
+        const inqJson = await inquiriesRes.json();
+        const inquiries = inqJson.data || [];
+        setUnreadReplies(inquiries.filter((i: { status: string }) => i.status === "replied").length);
       } catch {
         // ignore
       }
@@ -44,7 +51,7 @@ export function PartnerSidebar() {
   const navItems = [
     { href: "/partner", label: "ダッシュボード", icon: "📊", badge: 0 },
     { href: "/partner/leads", label: "リード一覧", icon: "📋", badge: unreadCount },
-    { href: "/partner/inquiries", label: "お問い合わせ", icon: "✉️", badge: 0 },
+    { href: "/partner/inquiries", label: "お問い合わせ", icon: "✉️", badge: unreadReplies },
     { href: "/partner/settings", label: "設定", icon: "⚙️", badge: 0 },
   ];
 

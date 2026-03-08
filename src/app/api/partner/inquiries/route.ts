@@ -35,9 +35,19 @@ export async function GET(request: NextRequest) {
     return NextResponse.json({ error: "取得に失敗しました。" }, { status: 500 });
   }
 
+  // replied の問い合わせを閲覧済み(closed)にする
+  const repliedIds = (data || []).filter((i) => i.status === "replied").map((i) => i.id);
+  if (repliedIds.length > 0) {
+    await supabase
+      .from("partner_inquiries")
+      .update({ status: "closed" })
+      .in("id", repliedIds);
+  }
+
   // 添付画像のpublic URLを生成
   const dataWithUrls = (data || []).map((item) => ({
     ...item,
+    status: item.status === "replied" ? "closed" : item.status,
     attachment_urls: (item.attachments || []).map((path: string) => {
       const { data: urlData } = supabase.storage
         .from("partner-inquiries")
@@ -184,6 +194,9 @@ export async function POST(request: NextRequest) {
                 </tr>
                 ` : ""}
               </table>
+              <div style="text-align: center; margin: 20px 0;">
+                <a href="https://facnavi.info/admin/inquiries" style="display: inline-block; background: #1e40af; color: #fff; padding: 12px 24px; border-radius: 8px; text-decoration: none; font-weight: bold;">管理画面で確認する</a>
+              </div>
             </div>
           `,
         });

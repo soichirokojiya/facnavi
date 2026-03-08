@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import { INDUSTRIES } from "@/lib/constants";
 
 interface Partner {
   id: string;
@@ -43,7 +44,7 @@ interface FormState {
   minAmount: string;
   maxAmount: string;
   selectedPrefectures: string[];
-  supportedIndustries: string;
+  supportedIndustries: string[];
   feePerLead: string;
   soleProprietorOk: boolean;
   isActive: boolean;
@@ -58,8 +59,8 @@ const emptyForm: FormState = {
   email: "",
   minAmount: "0",
   maxAmount: "999999999",
-  selectedPrefectures: [],
-  supportedIndustries: "",
+  selectedPrefectures: [...PREFECTURES],
+  supportedIndustries: [...INDUSTRIES] as string[],
   feePerLead: "0",
   soleProprietorOk: true,
   isActive: true,
@@ -136,7 +137,7 @@ export default function AdminPartnersPage() {
       minAmount: String(p.min_amount),
       maxAmount: String(p.max_amount),
       selectedPrefectures: p.supported_prefectures || [],
-      supportedIndustries: (p.supported_industries || []).join(", "),
+      supportedIndustries: p.supported_industries || [...INDUSTRIES] as string[],
       feePerLead: String(p.fee_per_lead || 0),
       soleProprietorOk: p.sole_proprietor_ok,
       isActive: p.is_active,
@@ -159,9 +160,7 @@ export default function AdminPartnersPage() {
         supported_prefectures: form.selectedPrefectures,
         min_amount: parseInt(form.minAmount) || 0,
         max_amount: parseInt(form.maxAmount) || 999999999,
-        supported_industries: form.supportedIndustries
-          ? form.supportedIndustries.split(",").map((s) => s.trim())
-          : [],
+        supported_industries: form.supportedIndustries,
         fee_per_lead: parseInt(form.feePerLead) || 0,
         sole_proprietor_ok: form.soleProprietorOk,
         is_active: form.isActive,
@@ -361,20 +360,21 @@ export default function AdminPartnersPage() {
                   required
                 />
               </div>
+              {!editingId && (
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-1">
-                  パスワード {!editingId && <span className="text-red-500">*</span>}
+                  パスワード <span className="text-red-500">*</span>
                 </label>
                 <input
                   type="password"
                   value={form.password}
                   onChange={(e) => setForm({ ...form, password: e.target.value })}
                   className="w-full px-3 py-2 border-2 border-gray-200 rounded-lg focus:ring-3 focus:ring-primary/10 focus:border-primary outline-none"
-                  required={!editingId}
+                  required
                   minLength={8}
-                  placeholder={editingId ? "変更する場合のみ入力" : ""}
                 />
               </div>
+              )}
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-1">
                   メールアドレス
@@ -389,14 +389,15 @@ export default function AdminPartnersPage() {
               </div>
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-1">
-                  リード単価（円/件）
+                  リード単価（税抜・円/件）
                 </label>
                 <input
-                  type="number"
-                  value={form.feePerLead}
-                  onChange={(e) => setForm({ ...form, feePerLead: e.target.value })}
+                  type="text"
+                  inputMode="numeric"
+                  value={form.feePerLead ? Number(form.feePerLead).toLocaleString() : ""}
+                  onChange={(e) => setForm({ ...form, feePerLead: e.target.value.replace(/[^0-9]/g, "") })}
                   className="w-full px-3 py-2 border-2 border-gray-200 rounded-lg focus:ring-3 focus:ring-primary/10 focus:border-primary outline-none"
-                  placeholder="例: 5000"
+                  placeholder="例: 5,000"
                 />
               </div>
               <div>
@@ -404,9 +405,10 @@ export default function AdminPartnersPage() {
                   対応最小金額（円）
                 </label>
                 <input
-                  type="number"
-                  value={form.minAmount}
-                  onChange={(e) => setForm({ ...form, minAmount: e.target.value })}
+                  type="text"
+                  inputMode="numeric"
+                  value={form.minAmount ? Number(form.minAmount).toLocaleString() : ""}
+                  onChange={(e) => setForm({ ...form, minAmount: e.target.value.replace(/[^0-9]/g, "") })}
                   className="w-full px-3 py-2 border-2 border-gray-200 rounded-lg focus:ring-3 focus:ring-primary/10 focus:border-primary outline-none"
                 />
               </div>
@@ -415,9 +417,10 @@ export default function AdminPartnersPage() {
                   対応最大金額（円）
                 </label>
                 <input
-                  type="number"
-                  value={form.maxAmount}
-                  onChange={(e) => setForm({ ...form, maxAmount: e.target.value })}
+                  type="text"
+                  inputMode="numeric"
+                  value={form.maxAmount ? Number(form.maxAmount).toLocaleString() : ""}
+                  onChange={(e) => setForm({ ...form, maxAmount: e.target.value.replace(/[^0-9]/g, "") })}
                   className="w-full px-3 py-2 border-2 border-gray-200 rounded-lg focus:ring-3 focus:ring-primary/10 focus:border-primary outline-none"
                 />
               </div>
@@ -425,7 +428,7 @@ export default function AdminPartnersPage() {
 
             <div>
               <label className="block text-sm font-medium text-gray-700 mb-1">
-                対応都道府県（空＝全国対応）
+                対応都道府県（全選択＝全国対応）
               </label>
               <div className="flex flex-wrap gap-1.5 max-h-32 overflow-y-auto border border-gray-200 rounded-lg p-2">
                 {PREFECTURES.map((pref) => (
@@ -443,31 +446,81 @@ export default function AdminPartnersPage() {
                   </button>
                 ))}
               </div>
-              {form.selectedPrefectures.length > 0 && (
-                <p className="text-xs text-gray-500 mt-1">
-                  選択中: {form.selectedPrefectures.join(", ")}
-                  <button
-                    type="button"
-                    onClick={() => setForm({ ...form, selectedPrefectures: [] })}
-                    className="ml-2 text-primary hover:underline"
-                  >
-                    クリア
-                  </button>
-                </p>
-              )}
+              <div className="flex items-center gap-3 mt-1">
+                <button
+                  type="button"
+                  onClick={() => setForm({ ...form, selectedPrefectures: [...PREFECTURES] })}
+                  className="text-xs text-primary hover:underline"
+                >
+                  全選択
+                </button>
+                <button
+                  type="button"
+                  onClick={() => setForm({ ...form, selectedPrefectures: [] })}
+                  className="text-xs text-gray-500 hover:underline"
+                >
+                  クリア
+                </button>
+                {form.selectedPrefectures.length > 0 && (
+                  <span className="text-xs text-gray-500">
+                    {form.selectedPrefectures.length === PREFECTURES.length
+                      ? "全国対応"
+                      : `${form.selectedPrefectures.length}件選択中`}
+                  </span>
+                )}
+              </div>
             </div>
 
             <div>
               <label className="block text-sm font-medium text-gray-700 mb-1">
-                対応業種（カンマ区切り、空＝全業種）
+                対応業種（全選択＝全業種対応）
               </label>
-              <input
-                type="text"
-                value={form.supportedIndustries}
-                onChange={(e) => setForm({ ...form, supportedIndustries: e.target.value })}
-                className="w-full px-3 py-2 border-2 border-gray-200 rounded-lg focus:ring-3 focus:ring-primary/10 focus:border-primary outline-none"
-                placeholder="例: 建設業, 製造業, IT・通信"
-              />
+              <div className="flex flex-wrap gap-1.5 border border-gray-200 rounded-lg p-2">
+                {INDUSTRIES.map((ind) => (
+                  <button
+                    key={ind}
+                    type="button"
+                    onClick={() =>
+                      setForm((prev) => ({
+                        ...prev,
+                        supportedIndustries: prev.supportedIndustries.includes(ind)
+                          ? prev.supportedIndustries.filter((i) => i !== ind)
+                          : [...prev.supportedIndustries, ind],
+                      }))
+                    }
+                    className={`px-2 py-0.5 rounded text-xs transition-colors ${
+                      form.supportedIndustries.includes(ind)
+                        ? "bg-primary text-white"
+                        : "bg-gray-100 text-gray-600 hover:bg-gray-200"
+                    }`}
+                  >
+                    {ind}
+                  </button>
+                ))}
+              </div>
+              <div className="flex items-center gap-3 mt-1">
+                <button
+                  type="button"
+                  onClick={() => setForm({ ...form, supportedIndustries: [...INDUSTRIES] as string[] })}
+                  className="text-xs text-primary hover:underline"
+                >
+                  全選択
+                </button>
+                <button
+                  type="button"
+                  onClick={() => setForm({ ...form, supportedIndustries: [] })}
+                  className="text-xs text-gray-500 hover:underline"
+                >
+                  クリア
+                </button>
+                {form.supportedIndustries.length > 0 && (
+                  <span className="text-xs text-gray-500">
+                    {form.supportedIndustries.length === INDUSTRIES.length
+                      ? "全業種対応"
+                      : `${form.supportedIndustries.length}件選択中`}
+                  </span>
+                )}
+              </div>
             </div>
 
             <div className="flex items-center gap-6">
@@ -480,6 +533,11 @@ export default function AdminPartnersPage() {
                 />
                 個人事業主対応
               </label>
+            </div>
+
+            <div className="border-t border-gray-200 pt-4">
+              <h3 className="text-sm font-bold text-gray-900 mb-2">一括見積もり対象</h3>
+              <p className="text-xs text-gray-500 mb-2">有効にすると、一括見積もりの送客対象業者になります。</p>
               <label className="flex items-center gap-2 text-sm">
                 <input
                   type="checkbox"
@@ -487,7 +545,7 @@ export default function AdminPartnersPage() {
                   onChange={(e) => setForm({ ...form, isActive: e.target.checked })}
                   className="rounded"
                 />
-                有効
+                見積もり送客対象にする
               </label>
             </div>
 
@@ -537,7 +595,7 @@ export default function AdminPartnersPage() {
                   <th className="text-left px-4 py-3 font-medium text-gray-600">リード単価</th>
                   <th className="text-left px-4 py-3 font-medium text-gray-600">対応地域</th>
                   <th className="text-left px-4 py-3 font-medium text-gray-600">個人事業主</th>
-                  <th className="text-left px-4 py-3 font-medium text-gray-600">ステータス</th>
+                  <th className="text-left px-4 py-3 font-medium text-gray-600">見積もり対象</th>
                   <th className="px-4 py-3"></th>
                 </tr>
               </thead>
@@ -554,7 +612,7 @@ export default function AdminPartnersPage() {
                       {p.fee_per_lead ? `${p.fee_per_lead.toLocaleString()}円` : "-"}
                     </td>
                     <td className="px-4 py-3 text-gray-600">
-                      {p.supported_prefectures.length === 0
+                      {p.supported_prefectures.length === 0 || p.supported_prefectures.length === PREFECTURES.length
                         ? "全国"
                         : p.supported_prefectures.length > 3
                         ? `${p.supported_prefectures.slice(0, 3).join(", ")}他`
@@ -571,7 +629,7 @@ export default function AdminPartnersPage() {
                             : "bg-gray-100 text-gray-600"
                         }`}
                       >
-                        {p.is_active ? "有効" : "無効"}
+                        {p.is_active ? "送客対象" : "停止中"}
                       </span>
                     </td>
                     <td className="px-4 py-3">

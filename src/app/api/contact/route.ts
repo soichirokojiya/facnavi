@@ -75,6 +75,9 @@ export async function POST(request: NextRequest) {
                   <td style="padding: 8px; white-space: pre-wrap;">${message}</td>
                 </tr>
               </table>
+              <div style="text-align: center; margin: 20px 0;">
+                <a href="https://facnavi.info/admin" style="display: inline-block; background: #1e40af; color: #fff; padding: 12px 24px; border-radius: 8px; text-decoration: none; font-weight: bold;">管理画面を開く</a>
+              </div>
             </div>
           `,
         });

@@ -15,15 +15,17 @@ interface Inquiry {
 }
 
 const statusLabels: Record<string, string> = {
-  unread: "未読",
-  read: "確認済み",
-  replied: "返信済み",
+  unread: "確認中",
+  read: "確認中",
+  replied: "回答あり",
+  closed: "回答済み",
 };
 
 const statusColors: Record<string, string> = {
-  unread: "bg-blue-100 text-blue-800",
-  read: "bg-gray-100 text-gray-800",
-  replied: "bg-green-100 text-green-800",
+  unread: "bg-amber-100 text-amber-800",
+  read: "bg-amber-100 text-amber-800",
+  replied: "bg-blue-100 text-blue-800",
+  closed: "bg-green-100 text-green-800",
 };
 
 export default function PartnerInquiriesPage() {

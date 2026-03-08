@@ -126,6 +126,9 @@ export async function POST(request: NextRequest) {
                 </tr>
               </table>
               <p>Supabase Storage の <code>mitsumori-documents/${requestId}/</code> を確認してください。</p>
+              <div style="text-align: center; margin: 20px 0;">
+                <a href="https://facnavi.info/admin/mitsumori" style="display: inline-block; background: #1e40af; color: #fff; padding: 12px 24px; border-radius: 8px; text-decoration: none; font-weight: bold;">管理画面で確認する</a>
+              </div>
               <p style="font-size: 12px; color: #9ca3af; text-align: center;">
                 このメールはファクナビの一括見積もりシステムから自動送信されています。
               </p>

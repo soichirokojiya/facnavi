@@ -153,8 +153,8 @@ export async function PATCH(request: NextRequest) {
           { status: 409 }
         );
       }
-      console.error("Partner update error:", error);
-      return NextResponse.json({ error: "更新に失敗しました。" }, { status: 500 });
+      console.error("Partner update error:", JSON.stringify(error));
+      return NextResponse.json({ error: `更新に失敗しました: ${error.message}` }, { status: 500 });
     }
 
     return NextResponse.json({ success: true });

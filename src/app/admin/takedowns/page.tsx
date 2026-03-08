@@ -158,7 +158,7 @@ export default function AdminTakedownsPage() {
                 </div>
                 <div>
                   <span className="text-gray-500">買取希望金額: </span>
-                  {req.lead_assignments?.mitsumori_requests?.purchase_amount || "-"}
+                  {req.lead_assignments?.mitsumori_requests?.purchase_amount ? Number(req.lead_assignments.mitsumori_requests.purchase_amount).toLocaleString() + "円" : "-"}
                 </div>
                 <div>
                   <span className="text-gray-500">都道府県: </span>

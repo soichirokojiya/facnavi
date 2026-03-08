@@ -979,7 +979,7 @@ export function MitsumoriLP() {
                       {icons.check("w-4 h-4 text-blue-500")}
                       <p className="font-bold">入力条件</p>
                     </div>
-                    <p className="text-blue-600 text-xs ml-6">買取: {form.purchase_amount} / {form.deposit_timing} / {form.business_type} / {form.industry}</p>
+                    <p className="text-blue-600 text-xs ml-6">買取: {form.purchase_amount ? Number(form.purchase_amount).toLocaleString() + "円" : ""} / {form.deposit_timing} / {form.business_type} / {form.industry}</p>
                     <button type="button" onClick={() => setFormStep(1)} className="text-blue-500 hover:text-blue-700 hover:underline font-bold text-xs mt-1.5 ml-6 transition-colors">条件を変更する</button>
                   </div>
 

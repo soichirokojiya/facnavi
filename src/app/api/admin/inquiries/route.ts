@@ -134,6 +134,10 @@ export async function PATCH(request: NextRequest) {
                   <p style="margin: 0; font-size: 14px; white-space: pre-wrap;">${reply_message}</p>
                 </div>
 
+                <div style="text-align: center; margin: 20px 0;">
+                  <a href="https://facnavi.info/partner/inquiries" style="display: inline-block; background: #1e40af; color: #fff; padding: 12px 24px; border-radius: 8px; text-decoration: none; font-weight: bold;">管理画面で確認する</a>
+                </div>
+
                 <hr style="border: none; border-top: 1px solid #e5e7eb; margin: 20px 0;" />
                 <p style="font-size: 12px; color: #9ca3af;">
                   このメールはファクナビ（https://facnavi.info）から自動送信されています。<br>
