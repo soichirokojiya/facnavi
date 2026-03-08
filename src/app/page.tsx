@@ -126,13 +126,13 @@ export default async function HomePage() {
               { icon: <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={1.5}><path strokeLinecap="round" strokeLinejoin="round" d="M9 7.5l3 4.5m0 0l3-4.5M12 12v5.25M15 12H9m6 3H9m12-3a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>, value: <>0<span className="text-sm font-bold">円</span></>, label: "利用料金", accent: "text-emerald-500", iconBg: "bg-emerald-100 text-emerald-500" },
               { icon: <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={1.5}><path strokeLinecap="round" strokeLinejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>, value: <>即日</>, label: "最短入金", accent: "text-orange-500", iconBg: "bg-orange-100 text-orange-500" },
             ].map((stat, i) => (
-              <div key={i} className="flex items-center gap-3 bg-white/80 backdrop-blur-sm border border-gray-100 rounded-2xl px-5 py-3 shadow-sm hover:shadow-md transition-shadow">
-                <div className={`w-10 h-10 ${stat.iconBg} rounded-xl flex items-center justify-center shrink-0`}>
+              <div key={i} className="flex items-center gap-4 bg-white/80 backdrop-blur-sm border border-gray-100 rounded-2xl px-6 md:px-8 py-5 shadow-sm hover:shadow-md transition-shadow">
+                <div className={`w-12 h-12 ${stat.iconBg} rounded-xl flex items-center justify-center shrink-0`}>
                   {stat.icon}
                 </div>
                 <div>
-                  <div className={`text-2xl md:text-3xl font-black leading-none tracking-tighter ${stat.accent}`}>{stat.value}</div>
-                  <div className="text-[10px] font-bold text-gray-400 mt-0.5">{stat.label}</div>
+                  <div className={`text-3xl md:text-4xl font-black leading-none tracking-tighter ${stat.accent}`}>{stat.value}</div>
+                  <div className="text-xs font-bold text-gray-400 mt-1">{stat.label}</div>
                 </div>
               </div>
             ))}
