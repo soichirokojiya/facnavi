@@ -68,8 +68,8 @@ export default async function HomePage() {
 
         <div className="relative max-w-5xl mx-auto px-4 py-10 md:py-16">
           {/* メイン：見出し + バナー */}
-          <div className="flex flex-col md:flex-row md:items-center md:justify-center gap-8 md:gap-12">
-            <div className="flex-1 min-w-0 text-center">
+          <div className="flex flex-col md:flex-row md:items-center gap-8 md:gap-12 max-w-4xl mx-auto">
+            <div className="flex-1 min-w-0 text-center md:text-left">
               {/* バッジ */}
               <p className="shimmer inline-flex items-center gap-1.5 bg-gradient-to-r from-blue-600 to-blue-700 text-white font-bold px-4 py-1.5 rounded-full mb-5 text-sm shadow-lg shadow-blue-500/20">
                 <span className="text-yellow-300">★</span>
@@ -81,13 +81,13 @@ export default async function HomePage() {
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-blue-500">おすすめファクタリング会社</span>
               </h1>
 
-              <p className="text-sm text-gray-500 mt-3 mb-6 leading-relaxed max-w-md mx-auto">
+              <p className="text-sm text-gray-500 mt-3 mb-6 leading-relaxed max-w-md mx-auto md:mx-0">
                 {companies.length}社の中から口コミ・手数料・入金スピードを比較。<br className="hidden sm:block" />
                 あなたに最適なファクタリング会社が見つかります。
               </p>
 
               {/* CTA */}
-              <div className="flex flex-col sm:flex-row gap-3 justify-center">
+              <div className="flex flex-col sm:flex-row gap-3 justify-center md:justify-start">
                 <Link
                   href="/shindan"
                   className="shimmer inline-flex items-center justify-center gap-2 px-8 py-4 bg-gradient-to-br from-emerald-500 to-emerald-600 text-white font-bold text-base rounded-full shadow-lg shadow-emerald-500/30 hover:shadow-xl hover:-translate-y-0.5 transition-all duration-300"
@@ -103,7 +103,7 @@ export default async function HomePage() {
               </div>
 
               {/* 信頼バッジ */}
-              <div className="flex flex-wrap items-center gap-x-4 gap-y-1 mt-3 text-xs text-gray-400 justify-center">
+              <div className="flex flex-wrap items-center gap-x-4 gap-y-1 mt-3 text-xs text-gray-400 justify-center md:justify-start">
                 <span className="inline-flex items-center gap-1"><svg className="w-3.5 h-3.5 text-emerald-500" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" /></svg>完全無料</span>
                 <span className="inline-flex items-center gap-1"><svg className="w-3.5 h-3.5 text-emerald-500" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" /></svg>30秒で診断</span>
                 <span className="inline-flex items-center gap-1"><svg className="w-3.5 h-3.5 text-emerald-500" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" /></svg>登録不要</span>
