@@ -39,7 +39,10 @@
     "サービス業"
   ],
   "overallRating": 3.5,
-  "rankPosition": 89,
-  "requiredDocuments": ["通帳コピー（3ヶ月分）", "請求書"],
+  "rankPosition": 88,
+  "requiredDocuments": [
+    "通帳コピー（3ヶ月分）",
+    "請求書"
+  ],
   "address": "東京都豊島区南池袋二丁目13番10号 南池袋山本ビル3階"
 }

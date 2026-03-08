@@ -39,7 +39,11 @@
     "サービス業"
   ],
   "overallRating": 3.5,
-  "rankPosition": 101,
-  "requiredDocuments": ["請求書", "通帳コピー", "本人確認書類"],
+  "rankPosition": 100,
+  "requiredDocuments": [
+    "請求書",
+    "通帳コピー",
+    "本人確認書類"
+  ],
   "address": "東京都世田谷区太子堂2-8-7 太子堂ハイランドビル2階"
 }

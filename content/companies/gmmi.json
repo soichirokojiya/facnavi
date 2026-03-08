@@ -39,7 +39,11 @@
     "サービス業"
   ],
   "overallRating": 3.5,
-  "rankPosition": 57,
-  "requiredDocuments": ["請求書", "通帳コピー", "本人確認書類"],
+  "rankPosition": 56,
+  "requiredDocuments": [
+    "請求書",
+    "通帳コピー",
+    "本人確認書類"
+  ],
   "address": "大阪府大阪市北区芝田2丁目8番7号八木ビル"
 }

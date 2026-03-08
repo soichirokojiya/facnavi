@@ -39,7 +39,12 @@
     "サービス業"
   ],
   "overallRating": 3.7,
-  "rankPosition": 195,
-  "requiredDocuments": ["請求書", "通帳コピー", "本人確認書類", "決算書"],
+  "rankPosition": 194,
+  "requiredDocuments": [
+    "請求書",
+    "通帳コピー",
+    "本人確認書類",
+    "決算書"
+  ],
   "address": "沖縄県浦添市仲西3-15-5 財全GROUP・BLD 6F"
 }

@@ -39,7 +39,12 @@
     "サービス業"
   ],
   "overallRating": 3,
-  "rankPosition": 241,
-  "requiredDocuments": ["請求書", "通帳コピー", "本人確認書類", "決算書"],
+  "rankPosition": 238,
+  "requiredDocuments": [
+    "請求書",
+    "通帳コピー",
+    "本人確認書類",
+    "決算書"
+  ],
   "address": "大阪府大阪市淀川区西中島3-10-12 サムティ西中島ビル601"
 }

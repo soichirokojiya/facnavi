@@ -39,7 +39,11 @@
     "サービス業"
   ],
   "overallRating": 3.5,
-  "rankPosition": 73,
-  "requiredDocuments": ["請求書", "通帳コピー", "本人確認書類"],
+  "rankPosition": 72,
+  "requiredDocuments": [
+    "請求書",
+    "通帳コピー",
+    "本人確認書類"
+  ],
   "address": "東京都新宿区四谷3丁目"
 }

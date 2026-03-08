@@ -39,7 +39,12 @@
     "サービス業"
   ],
   "overallRating": 3.5,
-  "rankPosition": 62,
-  "requiredDocuments": ["本人確認書類", "請求書", "通帳コピー", "基本契約書"],
+  "rankPosition": 61,
+  "requiredDocuments": [
+    "本人確認書類",
+    "請求書",
+    "通帳コピー",
+    "基本契約書"
+  ],
   "address": "東京都板橋区中板橋22-8 3F"
 }

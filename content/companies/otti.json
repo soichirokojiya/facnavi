@@ -39,7 +39,12 @@
     "サービス業"
   ],
   "overallRating": 3.7,
-  "rankPosition": 190,
-  "requiredDocuments": ["請求書", "通帳コピー", "本人確認書類", "決算書"],
+  "rankPosition": 189,
+  "requiredDocuments": [
+    "請求書",
+    "通帳コピー",
+    "本人確認書類",
+    "決算書"
+  ],
   "address": "東京都台東区東上野3-10-5 山口ビル3F"
 }

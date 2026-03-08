@@ -39,7 +39,12 @@
     "サービス業"
   ],
   "overallRating": 3.5,
-  "rankPosition": 197,
-  "requiredDocuments": ["本人確認書類", "請求書", "全銀行口座の入出金明細（3ヶ月分）", "直近の決算書"],
+  "rankPosition": 196,
+  "requiredDocuments": [
+    "本人確認書類",
+    "請求書",
+    "全銀行口座の入出金明細（3ヶ月分）",
+    "直近の決算書"
+  ],
   "address": "東京都千代田区神田錦町2-5-2"
 }

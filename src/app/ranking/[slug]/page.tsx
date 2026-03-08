@@ -29,9 +29,14 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const company = getCompanyBySlug(slug);
   if (!company) return {};
+  const name = displayName(company);
+  const fee = formatFeeRange(company.feeRange.min, company.feeRange.max);
+  const speed = company.speedDays === 1 ? "即日" : `${company.speedDays}日`;
+  const online = company.onlineComplete ? "オンライン完結対応" : "来店型";
+  const year = new Date().getFullYear();
   return {
-    title: `${displayName(company)}の口コミ・評判・手数料`,
-    description: `${displayName(company)}の手数料${formatFeeRange(company.feeRange.min, company.feeRange.max)}、口コミ評価${company.overallRating}点。${company.description}`,
+    title: `${name}の口コミ・評判｜手数料・審査・必要書類を徹底解説【${year}年最新】`,
+    description: `${name}の口コミ・評判を徹底調査。手数料${fee}、最短${speed}入金、${online}。利用者のリアルな口コミと審査情報をまとめました。`,
     alternates: { canonical: `${SITE_URL}/ranking/${slug}` },
   };
 }
@@ -44,6 +49,7 @@ export default async function CompanyDetailPage({ params }: Props) {
   const reviews = await getReviewsByCompanyAsync(slug);
   const summary = await getReviewSummaryAsync(slug);
   const allCompanies = getAllCompanies();
+  const displayRank = allCompanies.findIndex((c) => c.slug === slug) + 1;
   const otherCompanies = allCompanies
     .filter((c) => c.slug !== slug)
     .slice(0, 3);
@@ -75,10 +81,10 @@ export default async function CompanyDetailPage({ params }: Props) {
       <div className="mb-8">
         <div className="flex items-center gap-3 mb-2 flex-wrap">
           <span className="bg-primary text-white px-3 py-1 rounded-full text-sm font-bold">
-            第{company.rankPosition}位
+            第{displayRank}位
           </span>
           <h1 className="text-2xl md:text-3xl font-bold text-gray-900">
-            {displayName(company)}
+            {displayName(company)}の口コミ・評判
           </h1>
         </div>
         <StarRating rating={company.overallRating} size="lg" />
@@ -106,8 +112,16 @@ export default async function CompanyDetailPage({ params }: Props) {
             ["買取下限", formatAmount(company.minAmount)],
             ["買取上限", formatAmount(company.maxAmount)],
             ["オンライン完結", company.onlineComplete ? "対応" : "非対応"],
+            ["個人事業主", company.soleProprietorOk ? "対応" : "非対応"],
+            ["審査通過率", company.approvalRate ? `${company.approvalRate}%` : "非公開"],
+            ...(company.requiredDocuments?.length
+              ? [["必要書類", company.requiredDocuments.join("・")]]
+              : []),
             ...(company.establishedYear
               ? [["設立年", `${company.establishedYear}年`]]
+              : []),
+            ...(company.address
+              ? [["所在地", company.address]]
               : []),
           ].map(([label, value]) => (
             <div key={label} className="flex justify-between border-b border-gray-100 pb-2">
@@ -126,31 +140,6 @@ export default async function CompanyDetailPage({ params }: Props) {
           ))}
         </div>
       </Card>
-
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
-        <Card className="p-6 border-l-4 border-l-success">
-          <h3 className="font-bold text-success mb-3">メリット</h3>
-          <ul className="space-y-2">
-            {company.pros.map((p) => (
-              <li key={p} className="flex items-start gap-2 text-sm">
-                <span className="text-success mt-0.5">✓</span>
-                {p}
-              </li>
-            ))}
-          </ul>
-        </Card>
-        <Card className="p-6 border-l-4 border-l-danger">
-          <h3 className="font-bold text-danger mb-3">デメリット</h3>
-          <ul className="space-y-2">
-            {company.cons.map((c) => (
-              <li key={c} className="flex items-start gap-2 text-sm">
-                <span className="text-danger mt-0.5">△</span>
-                {c}
-              </li>
-            ))}
-          </ul>
-        </Card>
-      </div>
 
       <div className="mb-8 text-center">
         <Link

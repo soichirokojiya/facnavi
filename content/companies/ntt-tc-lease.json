@@ -39,7 +39,13 @@
     "サービス業"
   ],
   "overallRating": 3,
-  "rankPosition": 237,
-  "requiredDocuments": ["請求書", "売掛金明細", "決算書", "登記簿謄本", "本人確認書類"],
+  "rankPosition": 234,
+  "requiredDocuments": [
+    "請求書",
+    "売掛金明細",
+    "決算書",
+    "登記簿謄本",
+    "本人確認書類"
+  ],
   "address": "東京都港区港南1-2-70 品川シーズンテラス13階"
 }

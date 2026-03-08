@@ -39,7 +39,11 @@
     "サービス業"
   ],
   "overallRating": 3.5,
-  "rankPosition": 208,
-  "requiredDocuments": ["請求書", "通帳コピー", "本人確認書類"],
+  "rankPosition": 206,
+  "requiredDocuments": [
+    "請求書",
+    "通帳コピー",
+    "本人確認書類"
+  ],
   "address": "東京都品川区西五反田7-22-17 11F"
 }

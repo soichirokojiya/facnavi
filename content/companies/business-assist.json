@@ -39,7 +39,11 @@
     "サービス業"
   ],
   "overallRating": 3.5,
-  "rankPosition": 98,
-  "requiredDocuments": ["診療報酬明細書", "通帳コピー", "本人確認書類"],
+  "rankPosition": 97,
+  "requiredDocuments": [
+    "診療報酬明細書",
+    "通帳コピー",
+    "本人確認書類"
+  ],
   "address": "沖縄県浦添市仲西3-15-2 フェニックス21 2F"
 }

@@ -38,7 +38,11 @@
     "サービス業"
   ],
   "overallRating": 3.5,
-  "rankPosition": 171,
-  "requiredDocuments": ["請求書", "通帳コピー", "本人確認書類"],
+  "rankPosition": 170,
+  "requiredDocuments": [
+    "請求書",
+    "通帳コピー",
+    "本人確認書類"
+  ],
   "address": "東京都文京区湯島1-2-13 御茶ノ水明神ビル5階"
 }

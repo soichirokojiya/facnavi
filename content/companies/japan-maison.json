@@ -38,7 +38,10 @@
     "サービス業"
   ],
   "overallRating": 3.5,
-  "rankPosition": 203,
-  "requiredDocuments": ["請求書", "通帳コピー"],
+  "rankPosition": 201,
+  "requiredDocuments": [
+    "請求書",
+    "通帳コピー"
+  ],
   "address": "東京都港区芝公園1-3-5 ACN芝公園ビル2階"
 }

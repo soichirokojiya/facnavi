@@ -81,19 +81,19 @@ function SectionHeading({ sub, children, size = "default" }: { sub?: string; chi
   );
 }
 
-function CtaButton({ className = "" }: { className?: string }) {
+function CtaButton({ className = "", label = "30秒で無料診断する →" }: { className?: string; label?: string }) {
   return (
     <div className={`text-center ${className}`}>
       <a
         href="#form"
-        className="shimmer inline-flex items-center justify-center gap-2 px-8 py-4 bg-gradient-to-br from-emerald-500 to-emerald-600 text-white font-bold text-base rounded-full shadow-lg shadow-emerald-500/30 hover:shadow-xl hover:-translate-y-0.5 transition-all duration-300"
+        className="shimmer inline-flex items-center justify-center gap-2 px-8 py-4 bg-gradient-to-br from-orange-500 to-red-500 text-white font-bold text-base md:text-lg rounded-full shadow-lg shadow-orange-500/30 hover:shadow-xl hover:-translate-y-0.5 transition-all duration-300 animate-pulse-subtle"
       >
-        無料で一括見積もりする →
+        {label}
       </a>
       <div className="flex flex-wrap items-center gap-x-4 gap-y-1 mt-3 text-[11px] text-gray-500 justify-center">
         <span className="inline-flex items-center gap-1"><svg className="w-3.5 h-3.5 text-emerald-500" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" /></svg>完全無料</span>
         <span className="inline-flex items-center gap-1"><svg className="w-3.5 h-3.5 text-emerald-500" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" /></svg>最短30秒</span>
-        <span className="inline-flex items-center gap-1"><svg className="w-3.5 h-3.5 text-emerald-500" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" /></svg>個人事業主OK</span>
+        <span className="inline-flex items-center gap-1"><svg className="w-3.5 h-3.5 text-emerald-500" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" /></svg>しつこい営業なし</span>
       </div>
     </div>
   );
@@ -256,6 +256,21 @@ const icons = {
       <path d="M4.583 17.321C3.553 16.227 3 15 3 13.011c0-3.5 2.457-6.637 6.03-8.188l.893 1.378c-3.335 1.804-3.987 4.145-4.247 5.621.537-.278 1.24-.375 1.929-.311 1.804.167 3.226 1.648 3.226 3.489a3.5 3.5 0 01-3.5 3.5c-1.073 0-2.099-.49-2.748-1.179zm10 0C13.553 16.227 13 15 13 13.011c0-3.5 2.457-6.637 6.03-8.188l.893 1.378c-3.335 1.804-3.987 4.145-4.247 5.621.537-.278 1.24-.375 1.929-.311 1.804.167 3.226 1.648 3.226 3.489a3.5 3.5 0 01-3.5 3.5c-1.073 0-2.099-.49-2.748-1.179z" />
     </svg>
   ),
+  trophy: (cls: string) => (
+    <svg className={cls} fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={1.5}>
+      <path strokeLinecap="round" strokeLinejoin="round" d="M16.5 18.75h-9m9 0a3 3 0 013 3h-15a3 3 0 013-3m9 0v-3.375c0-.621-.503-1.125-1.125-1.125h-.871M7.5 18.75v-3.375c0-.621.504-1.125 1.125-1.125h.872m5.007 0H9.497m5.007 0a7.454 7.454 0 01-.982-3.172M9.497 14.25a7.454 7.454 0 00.981-3.172M5.25 4.236c-.982.143-1.954.317-2.916.52A6.003 6.003 0 007.73 9.728M5.25 4.236V4.5c0 2.108.966 3.99 2.48 5.228M5.25 4.236V2.721C7.456 2.41 9.71 2.25 12 2.25c2.291 0 4.545.16 6.75.47v1.516M18.75 4.236c.982.143 1.954.317 2.916.52A6.003 6.003 0 0116.27 9.728M18.75 4.236V4.5c0 2.108-.966 3.99-2.48 5.228m0 0a6.023 6.023 0 01-2.77.853m0 0l-.5.5m.5-.5v.143" />
+    </svg>
+  ),
+  lightning: (cls: string) => (
+    <svg className={cls} fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={1.5}>
+      <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z" />
+    </svg>
+  ),
+  arrowDown: (cls: string) => (
+    <svg className={cls} fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2.5}>
+      <path strokeLinecap="round" strokeLinejoin="round" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+    </svg>
+  ),
 };
 
 /* ─── LP本体 ─── */
@@ -280,14 +295,14 @@ export function MitsumoriLP() {
   const [formStep, _setFormStep] = useState<1 | 2 | 3>(1);
   const setFormStep = (step: 1 | 2 | 3) => {
     _setFormStep(step);
-    // フォーム上部にスクロール
     setTimeout(() => {
       document.getElementById("form")?.scrollIntoView({ behavior: "smooth", block: "start" });
     }, 50);
   };
   const [selectedCompanies, setSelectedCompanies] = useState<string[]>(
-    RECOMMENDED_COMPANIES.map((c) => c.id) // デフォルト全選択
+    RECOMMENDED_COMPANIES.map((c) => c.id)
   );
+  const [openFaq, setOpenFaq] = useState<number | null>(null);
 
   const updateField = useCallback(
     <K extends keyof FormData>(key: K, value: FormData[K]) => {
@@ -353,88 +368,148 @@ export function MitsumoriLP() {
     }
   };
 
-  /* ━━━ 送信完了（STEP 3表示中のみヒーロー以降を出す） ━━━ */
-
   return (
     <>
       {/* ━━━ 1. ファーストビュー ━━━ */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-blue-50 via-white to-emerald-50/40">
+      <section className="relative overflow-hidden bg-gradient-to-br from-slate-900 via-blue-900 to-slate-900">
         {/* 装飾 */}
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
-          <div className="absolute -top-40 -right-40 w-[500px] h-[500px] bg-blue-100/50 rounded-full blur-3xl" />
-          <div className="absolute bottom-0 -left-32 w-80 h-80 bg-emerald-100/40 rounded-full blur-3xl" />
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-gradient-to-br from-blue-50/30 to-emerald-50/30 rounded-full blur-3xl" />
+          <div className="absolute -top-40 -right-40 w-[500px] h-[500px] bg-blue-500/10 rounded-full blur-3xl" />
+          <div className="absolute bottom-0 -left-32 w-80 h-80 bg-emerald-500/10 rounded-full blur-3xl" />
+          <div className="absolute top-20 left-10 w-2 h-2 bg-blue-400 rounded-full animate-pulse" />
+          <div className="absolute top-40 right-20 w-1.5 h-1.5 bg-emerald-400 rounded-full animate-pulse" style={{ animationDelay: "1s" }} />
+          <div className="absolute bottom-32 left-1/4 w-1 h-1 bg-orange-400 rounded-full animate-pulse" style={{ animationDelay: "0.5s" }} />
         </div>
 
-        <div className="relative max-w-3xl mx-auto px-4 py-14 md:py-20 text-center">
-          <p className="shimmer inline-flex items-center gap-2 bg-gradient-to-r from-blue-600 to-blue-700 text-white font-black px-6 py-2.5 rounded-full mb-6 text-base md:text-lg shadow-lg shadow-blue-500/25">
-            {icons.sparkles("w-5 h-5 text-yellow-300")}
-            完全無料・最短30秒で入力完了
-          </p>
-
-          <h1 className="text-3xl md:text-[2.75rem] font-black mb-2 leading-[1.3] text-gray-900 tracking-tight">
-            たった30秒で最適な
-          </h1>
-          <p className="text-3xl md:text-[2.75rem] font-black mb-4 leading-[1.3] tracking-tight">
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-emerald-500">ファクタリング会社が見つかる</span>
-          </p>
-
-          <p className="text-gray-500 text-sm md:text-base mb-10 leading-relaxed max-w-lg mx-auto">
-            条件を入力するだけで、あなたに合ったおすすめ業者を自動提案。<br className="hidden sm:block" />
-            気になる会社を選んでそのまま見積もり依頼できます。
-          </p>
-
-          {/* 統計カード */}
-          <div className="flex items-stretch gap-4 md:gap-6 mb-8 justify-center">
-            <div className="bg-white/90 backdrop-blur-sm rounded-2xl shadow-md shadow-blue-500/5 border border-white px-5 md:px-8 py-5 text-center group hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300">
-              <div className="w-10 h-10 bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl flex items-center justify-center mx-auto mb-2 shadow-md shadow-blue-500/25 group-hover:scale-110 transition-transform">
-                {icons.building("w-5 h-5 text-white")}
-              </div>
-              <div className="text-4xl md:text-5xl font-black text-blue-600 leading-none tracking-tighter">255<span className="text-lg font-bold">社</span></div>
-              <div className="text-[11px] font-bold text-gray-400 mt-1.5 tracking-wide">掲載社数</div>
-            </div>
-            <div className="bg-white/90 backdrop-blur-sm rounded-2xl shadow-md shadow-emerald-500/5 border border-white px-5 md:px-8 py-5 text-center group hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300">
-              <div className="w-10 h-10 bg-gradient-to-br from-emerald-500 to-emerald-600 rounded-xl flex items-center justify-center mx-auto mb-2 shadow-md shadow-emerald-500/25 group-hover:scale-110 transition-transform">
-                {icons.yen("w-5 h-5 text-white")}
-              </div>
-              <div className="text-4xl md:text-5xl font-black text-emerald-500 leading-none">無料</div>
-              <div className="text-[11px] font-bold text-gray-400 mt-1.5 tracking-wide">利用料金</div>
-            </div>
-            <div className="bg-white/90 backdrop-blur-sm rounded-2xl shadow-md shadow-orange-500/5 border border-white px-5 md:px-8 py-5 text-center group hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300">
-              <div className="w-10 h-10 bg-gradient-to-br from-orange-400 to-orange-500 rounded-xl flex items-center justify-center mx-auto mb-2 shadow-md shadow-orange-500/25 group-hover:scale-110 transition-transform">
-                {icons.clock("w-5 h-5 text-white")}
-              </div>
-              <div className="text-4xl md:text-5xl font-black text-orange-500 leading-none">即日</div>
-              <div className="text-[11px] font-bold text-gray-400 mt-1.5 tracking-wide">最短入金</div>
-            </div>
+        <div className="relative max-w-4xl mx-auto px-4 py-16 md:py-24">
+          {/* 信頼バッジ */}
+          <div className="flex flex-wrap justify-center gap-3 mb-8">
+            <span className="inline-flex items-center gap-1.5 bg-white/10 backdrop-blur-sm text-white/90 text-xs font-bold px-4 py-2 rounded-full border border-white/10">
+              {icons.trophy("w-4 h-4 text-amber-400")}
+              口コミ掲載数 業界最大級
+            </span>
+            <span className="inline-flex items-center gap-1.5 bg-white/10 backdrop-blur-sm text-white/90 text-xs font-bold px-4 py-2 rounded-full border border-white/10">
+              {icons.shield("w-4 h-4 text-emerald-400")}
+              審査済み優良業者のみ
+            </span>
           </div>
 
-          <CtaButton />
+          <div className="text-center">
+            <h1 className="text-3xl md:text-5xl font-black mb-3 leading-[1.3] text-white tracking-tight">
+              手数料を<span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-amber-300">最大60%削減</span>
+            </h1>
+            <p className="text-2xl md:text-4xl font-black mb-3 leading-[1.3] tracking-tight text-white/90">
+              ファクタリング<span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-emerald-400">無料一括診断</span>
+            </p>
+            <p className="text-sm md:text-base text-blue-200/80 mb-4 max-w-lg mx-auto leading-relaxed">
+              たった30秒の入力で、255社からあなたに最適な業者を自動マッチング。<br className="hidden sm:block" />
+              複数社の見積もりを比較して最安の手数料を実現。
+            </p>
+
+            {/* 数字で訴求 */}
+            <div className="flex items-stretch gap-3 md:gap-5 mb-8 justify-center">
+              {[
+                { value: "255", unit: "社+", label: "掲載業者数", color: "text-blue-400", icon: icons.building },
+                { value: "98", unit: "%", label: "利用者満足度", color: "text-emerald-400", icon: icons.star },
+                { value: "0", unit: "円", label: "利用料金", color: "text-amber-400", icon: icons.yen },
+                { value: "30", unit: "秒", label: "カンタン入力", color: "text-orange-400", icon: icons.lightning },
+              ].map((stat) => (
+                <div key={stat.label} className="bg-white/5 backdrop-blur-sm rounded-2xl border border-white/10 px-4 md:px-6 py-4 text-center flex-1 max-w-[140px]">
+                  <div className={`text-3xl md:text-4xl font-black ${stat.color} leading-none tracking-tighter`}>
+                    {stat.value}<span className="text-lg font-bold">{stat.unit}</span>
+                  </div>
+                  <div className="text-[10px] font-bold text-white/50 mt-1.5 tracking-wide">{stat.label}</div>
+                </div>
+              ))}
+            </div>
+
+            {/* メインCTA */}
+            <a
+              href="#form"
+              className="shimmer inline-flex items-center justify-center gap-3 px-10 py-5 bg-gradient-to-r from-orange-500 via-red-500 to-orange-500 text-white font-black text-lg md:text-xl rounded-full shadow-2xl shadow-orange-500/40 hover:shadow-orange-500/60 hover:-translate-y-1 transition-all duration-300 border border-orange-400/30"
+            >
+              <span className="bg-white/20 text-sm rounded-full px-3 py-1 font-bold">無料</span>
+              30秒でカンタン診断する
+              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2.5}><path strokeLinecap="round" strokeLinejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" /></svg>
+            </a>
+            <div className="flex flex-wrap items-center gap-x-5 gap-y-1 mt-4 text-xs text-white/50 justify-center font-bold">
+              <span className="inline-flex items-center gap-1">{icons.check("w-3.5 h-3.5 text-emerald-400")}完全無料</span>
+              <span className="inline-flex items-center gap-1">{icons.check("w-3.5 h-3.5 text-emerald-400")}しつこい営業なし</span>
+              <span className="inline-flex items-center gap-1">{icons.check("w-3.5 h-3.5 text-emerald-400")}個人事業主OK</span>
+              <span className="inline-flex items-center gap-1">{icons.check("w-3.5 h-3.5 text-emerald-400")}見積もりだけでもOK</span>
+            </div>
+          </div>
+        </div>
+
+        {/* 波型ボーダー */}
+        <div className="absolute bottom-0 left-0 right-0">
+          <svg viewBox="0 0 1440 60" fill="none" className="w-full h-8 md:h-12">
+            <path d="M0 60V20C240 0 480 0 720 20C960 40 1200 40 1440 20V60H0Z" fill="white" />
+          </svg>
+        </div>
+      </section>
+
+      {/* ━━━ 実績バー ━━━ */}
+      <section className="py-4 bg-white border-b border-gray-100">
+        <div className="max-w-4xl mx-auto px-4">
+          <div className="flex items-center justify-center gap-6 md:gap-10 text-center">
+            <div className="flex items-center gap-2">
+              <div className="w-8 h-8 bg-blue-50 rounded-lg flex items-center justify-center">
+                {icons.shield("w-4 h-4 text-blue-600")}
+              </div>
+              <div className="text-left">
+                <p className="text-[10px] text-gray-400 font-bold">業界専門家</p>
+                <p className="text-xs font-black text-gray-800">FP・税理士監修</p>
+              </div>
+            </div>
+            <div className="w-px h-8 bg-gray-200" />
+            <div className="flex items-center gap-2">
+              <div className="w-8 h-8 bg-emerald-50 rounded-lg flex items-center justify-center">
+                {icons.document("w-4 h-4 text-emerald-600")}
+              </div>
+              <div className="text-left">
+                <p className="text-[10px] text-gray-400 font-bold">口コミ掲載</p>
+                <p className="text-xs font-black text-gray-800">業界最大級</p>
+              </div>
+            </div>
+            <div className="w-px h-8 bg-gray-200 hidden sm:block" />
+            <div className="hidden sm:flex items-center gap-2">
+              <div className="w-8 h-8 bg-orange-50 rounded-lg flex items-center justify-center">
+                {icons.globe("w-4 h-4 text-orange-600")}
+              </div>
+              <div className="text-left">
+                <p className="text-[10px] text-gray-400 font-bold">対応エリア</p>
+                <p className="text-xs font-black text-gray-800">全国対応</p>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
       {/* ━━━ 2. こんなお悩みありませんか？ ━━━ */}
-      <section className="py-10 md:py-14 bg-white">
+      <section className="py-12 md:py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4">
           <SectionHeading>こんなお悩みありませんか？</SectionHeading>
           <div className="flex flex-col md:flex-row items-center gap-8">
-            {/* 左：イラスト */}
             <div className="md:w-2/5 flex justify-center">
               <Image src="/images/column/small-business.svg" width={280} height={280} alt="お悩みイメージ" className="w-48 md:w-64" />
             </div>
-            {/* 右：悩みリスト */}
             <div className="md:w-3/5 space-y-3">
               {[
-                { text: "どの業者を選べばいいかわからない", icon: icons.search },
-                { text: "手数料を比較する時間がない", icon: icons.clock },
-                { text: "悪徳業者に騙されないか不安", icon: icons.shield },
-                { text: "急いで資金を調達したい", icon: icons.clock },
+                { text: "どの業者を選べばいいかわからない…", sub: "ネットで調べても情報が多すぎて判断できない", icon: icons.search },
+                { text: "1社ずつ問い合わせる時間がない…", sub: "忙しくて何社も電話・メールする余裕がない", icon: icons.clock },
+                { text: "手数料を払いすぎていないか不安…", sub: "相場がわからず、提示された条件を鵜呑みにしている", icon: icons.yen },
+                { text: "悪徳業者に騙されないか心配…", sub: "初めてのファクタリングで信頼できる業者がわからない", icon: icons.shield },
+                { text: "急いで資金が必要なのに間に合うか…", sub: "支払い期日が迫っているのに現金が足りない", icon: icons.lightning },
               ].map((item) => (
-                <div key={item.text} className="flex items-center gap-3 bg-gradient-to-r from-red-50 to-orange-50/50 border border-red-100 rounded-xl px-4 py-3.5 group">
-                  <div className="w-9 h-9 bg-white rounded-lg flex items-center justify-center shrink-0 shadow-sm border border-red-100">
+                <div key={item.text} className="flex items-start gap-3 bg-gradient-to-r from-red-50 to-orange-50/50 border border-red-100 rounded-xl px-4 py-3.5">
+                  <div className="w-9 h-9 bg-white rounded-lg flex items-center justify-center shrink-0 shadow-sm border border-red-100 mt-0.5">
                     {item.icon("w-4 h-4 text-red-400")}
                   </div>
-                  <p className="text-gray-800 font-bold text-sm">{item.text}</p>
+                  <div>
+                    <p className="text-gray-800 font-bold text-sm">{item.text}</p>
+                    <p className="text-gray-400 text-xs mt-0.5">{item.sub}</p>
+                  </div>
                 </div>
               ))}
             </div>
@@ -442,30 +517,79 @@ export function MitsumoriLP() {
           <div className="text-center mt-10">
             <div className="inline-flex flex-col items-center">
               <div className="w-10 h-10 bg-gradient-to-br from-blue-500 to-emerald-500 rounded-full flex items-center justify-center shadow-lg shadow-blue-500/25 mb-4 animate-bounce">
-                <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2.5}>
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
-                </svg>
+                {icons.arrowDown("w-5 h-5 text-white")}
               </div>
               <p className="text-2xl md:text-3xl font-black text-gray-900 leading-snug">
-                そのお悩み、<br className="sm:hidden" /><span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-emerald-500">ファクナビの一括見積もり</span>で<br className="sm:hidden" />解決できます
+                そのお悩み、<br className="sm:hidden" /><span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-emerald-500">30秒の無料診断</span>で<br className="sm:hidden" />すべて解決
               </p>
             </div>
           </div>
         </div>
       </section>
 
+      {/* ━━━ 2.5 自力 vs 一括 比較表 ━━━ */}
+      <section className="py-10 md:py-14 bg-gradient-to-b from-white to-slate-50">
+        <div className="max-w-3xl mx-auto px-4">
+          <SectionHeading sub="COMPARISON">自力で探す vs 一括診断</SectionHeading>
+          <div className="overflow-x-auto">
+            <table className="w-full text-sm">
+              <thead>
+                <tr>
+                  <th className="text-left py-3 px-4 text-gray-500 font-bold text-xs w-1/3"></th>
+                  <th className="py-3 px-4 text-center w-1/3">
+                    <div className="bg-gray-100 rounded-xl py-3 px-2">
+                      <p className="font-bold text-gray-500 text-xs">自力で探す</p>
+                    </div>
+                  </th>
+                  <th className="py-3 px-4 text-center w-1/3">
+                    <div className="bg-gradient-to-r from-blue-600 to-emerald-500 rounded-xl py-3 px-2 shadow-lg shadow-blue-500/20">
+                      <p className="font-bold text-white text-xs">ファクナビ一括診断</p>
+                    </div>
+                  </th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-gray-100">
+                {[
+                  { label: "かかる時間", self: "数時間〜数日", navi: "たった30秒", selfBad: true },
+                  { label: "比較社数", self: "1〜2社が限界", navi: "最大5社を同時比較", selfBad: true },
+                  { label: "手数料", self: "相場がわからない", navi: "最安値を自動選定", selfBad: true },
+                  { label: "業者の信頼性", self: "自分で判断", navi: "審査済み優良業者のみ", selfBad: true },
+                  { label: "費用", self: "無料", navi: "完全無料", selfBad: false },
+                  { label: "営業電話", self: "多数の電話", navi: "選んだ業者だけ", selfBad: true },
+                ].map((row) => (
+                  <tr key={row.label}>
+                    <td className="py-3 px-4 font-bold text-gray-700 text-xs">{row.label}</td>
+                    <td className="py-3 px-4 text-center">
+                      <span className={`text-xs font-bold ${row.selfBad ? "text-red-400" : "text-gray-600"}`}>
+                        {row.selfBad && "△ "}{row.self}
+                      </span>
+                    </td>
+                    <td className="py-3 px-4 text-center">
+                      <span className="text-xs font-bold text-blue-600 bg-blue-50 px-3 py-1 rounded-full">
+                        {row.navi}
+                      </span>
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
       {/* ━━━ 3. 選ばれる5つの理由 ━━━ */}
-      <section className="py-14 md:py-20 bg-gradient-to-b from-slate-50 to-white">
+      <section className="py-14 md:py-20 bg-slate-50">
         <div className="max-w-4xl mx-auto px-4">
-        <SectionHeading sub="WHY FACNAVI?" size="large">ファクナビが選ばれる<span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-emerald-500">4つの理由</span></SectionHeading>
+        <SectionHeading sub="WHY FACNAVI?" size="large">ファクナビが選ばれる<span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-emerald-500">5つの理由</span></SectionHeading>
         <div className="grid md:grid-cols-2 gap-5 max-w-3xl mx-auto">
           {[
-            { icon: icons.shield, color: "from-blue-500 to-blue-600", bg: "bg-blue-50", accent: "text-blue-600", num: "01", title: "厳選された優良業者のみ掲載", desc: "独自の審査基準をクリアした信頼性の高い業者だけをご紹介。悪徳業者の心配がありません。" },
-            { icon: icons.sparkles, color: "from-purple-500 to-purple-600", bg: "bg-purple-50", accent: "text-purple-600", num: "02", title: "おすすめ業者から選んで見積もり", desc: "条件を入力するとおすすめのファクタリング会社が提案され、気になる会社を選んでまとめて見積もり依頼できます。" },
-            { icon: icons.yen, color: "from-emerald-500 to-emerald-600", bg: "bg-emerald-50", accent: "text-emerald-600", num: "03", title: "完全無料・手数料なし", desc: "一括見積もりサービスのご利用は完全無料。利用者に手数料が発生することは一切ありません。" },
-            { icon: icons.users, color: "from-orange-400 to-orange-500", bg: "bg-orange-50", accent: "text-orange-600", num: "04", title: "個人事業主・フリーランスもOK", desc: "法人だけでなく、個人事業主やフリーランスの方にも対応した業者を多数掲載しています。" },
+            { icon: icons.shield, color: "from-blue-500 to-blue-600", bg: "bg-blue-50", accent: "text-blue-600", num: "01", title: "厳選された優良業者のみ掲載", desc: "独自の審査基準をクリアした信頼性の高い業者だけをご紹介。悪徳業者の心配は一切ありません。" },
+            { icon: icons.sparkles, color: "from-purple-500 to-purple-600", bg: "bg-purple-50", accent: "text-purple-600", num: "02", title: "AIが最適な業者を自動提案", desc: "あなたの条件をもとに、最適なファクタリング会社をAIが自動マッチング。選んでまとめて見積もり依頼できます。" },
+            { icon: icons.yen, color: "from-emerald-500 to-emerald-600", bg: "bg-emerald-50", accent: "text-emerald-600", num: "03", title: "手数料を最大60%削減", desc: "複数社の見積もりを比較することで、1社だけに依頼するより平均して手数料を大幅に削減できます。" },
+            { icon: icons.lightning, color: "from-orange-400 to-orange-500", bg: "bg-orange-50", accent: "text-orange-600", num: "04", title: "最短即日で資金調達可能", desc: "急ぎの資金需要にも対応。最短即日入金の業者も多数掲載しているので、スピーディーに資金調達できます。" },
+            { icon: icons.users, color: "from-teal-500 to-teal-600", bg: "bg-teal-50", accent: "text-teal-600", num: "05", title: "個人事業主・フリーランスもOK", desc: "法人だけでなく、個人事業主やフリーランスの方にも対応した業者を多数掲載。少額からでもOKです。" },
           ].map((item, i) => (
-            <div key={i} className={`relative p-6 ${item.bg} rounded-2xl hover:shadow-md transition-all duration-300 group`}>
+            <div key={i} className={`relative p-6 ${item.bg} rounded-2xl hover:shadow-md transition-all duration-300 group ${i === 4 ? "md:col-span-2 md:max-w-md md:mx-auto" : ""}`}>
               <span className={`absolute top-4 right-4 text-3xl font-black ${item.accent} opacity-15`}>{item.num}</span>
               <div className={`w-12 h-12 bg-gradient-to-br ${item.color} rounded-xl flex items-center justify-center mb-4 shadow-md group-hover:scale-110 transition-transform`}>
                 {item.icon("w-6 h-6 text-white")}
@@ -478,36 +602,58 @@ export function MitsumoriLP() {
         </div>
       </section>
 
-      {/* ━━━ 4. 3つのメリット ━━━ */}
-      <section className="py-10 md:py-14 bg-white">
-        <div className="max-w-4xl mx-auto px-4">
-          <SectionHeading sub="MERIT">一括見積もりの3つのメリット</SectionHeading>
-          <div className="space-y-6 max-w-3xl mx-auto">
+      {/* ━━━ 中間CTA ━━━ */}
+      <section className="py-10 bg-gradient-to-r from-blue-600 to-emerald-500">
+        <div className="max-w-3xl mx-auto px-4 text-center">
+          <p className="text-white/80 text-sm font-bold mb-2">比較するだけで手数料が下がる</p>
+          <p className="text-white text-2xl md:text-3xl font-black mb-6">まずは30秒の無料診断から</p>
+          <a
+            href="#form"
+            className="shimmer inline-flex items-center justify-center gap-2 px-10 py-4 bg-white text-blue-600 font-black text-lg rounded-full shadow-xl hover:shadow-2xl hover:-translate-y-0.5 transition-all duration-300"
+          >
+            無料で一括診断する →
+          </a>
+          <p className="text-white/60 text-xs mt-3 font-bold">※ 利用料・手数料は一切かかりません</p>
+        </div>
+      </section>
+
+      {/* ━━━ 4. 手数料シミュレーション ━━━ */}
+      <section className="py-12 md:py-16 bg-white">
+        <div className="max-w-3xl mx-auto px-4">
+          <SectionHeading sub="SIMULATION">一括比較で手数料がこれだけ変わる</SectionHeading>
+          <div className="space-y-4">
             {[
-              { img: "/images/column/fees-comparison.svg", title: "手数料を最安に抑えられる", desc: "複数社の見積もりを比較することで、最も有利な条件を見つけることができます。無駄な手数料を払う必要はありません。" },
-              { img: "/images/column/comparison-table.svg", title: "手間なく最適な1社が見つかる", desc: "1社ずつ問い合わせる手間を省き、条件に合った業者を効率的に見つけられます。忙しい経営者でも安心。" },
-              { img: "/images/column/contract-signing.svg", title: "安心・安全に利用できる", desc: "審査済みの優良業者のみをご紹介。個人情報の取り扱いも万全で、悪徳業者に騙される心配がありません。" },
-            ].map((item, i) => (
-              <div key={i} className={`flex flex-col ${i % 2 === 1 ? "md:flex-row-reverse" : "md:flex-row"} items-center gap-6 bg-white rounded-2xl p-6 shadow-sm border border-gray-100`}>
-                <div className="md:w-2/5 flex justify-center">
-                  <Image src={item.img} width={200} height={200} alt={item.title} className="w-36 md:w-44" />
+              { industry: "建設業 A社", amount: "売掛金 500万円", before: "75万円（15%）", after: "25万円（5%）", saving: "50万円の削減", percent: "66" },
+              { industry: "運送業 B社", amount: "売掛金 300万円", before: "36万円（12%）", after: "18万円（6%）", saving: "18万円の削減", percent: "50" },
+              { industry: "IT企業 C社", amount: "売掛金 1,000万円", before: "100万円（10%）", after: "30万円（3%）", saving: "70万円の削減", percent: "70" },
+            ].map((example) => (
+              <div key={example.industry} className="bg-gradient-to-r from-gray-50 to-blue-50/30 rounded-2xl p-5 md:p-6 border border-gray-100">
+                <div className="flex items-center gap-2 mb-3">
+                  <span className="bg-blue-600 text-white text-xs font-bold px-3 py-1 rounded-full">{example.industry}</span>
+                  <span className="text-xs text-gray-500 font-bold">{example.amount}</span>
                 </div>
-                <div className="md:w-3/5">
-                  <div className="inline-flex items-center gap-1.5 bg-blue-50 text-blue-600 text-xs font-bold rounded-full px-3 py-1 mb-2">
-                    MERIT {i + 1}
+                <div className="flex items-center gap-3 md:gap-6">
+                  <div className="flex-1 text-center">
+                    <p className="text-[10px] text-gray-400 font-bold mb-1">1社のみ</p>
+                    <p className="text-lg md:text-xl font-black text-red-400 line-through decoration-2">{example.before}</p>
                   </div>
-                  <h3 className="font-bold text-gray-900 text-lg mb-2">{item.title}</h3>
-                  <p className="text-gray-500 text-sm leading-relaxed">{item.desc}</p>
+                  <div className="shrink-0">
+                    <svg className="w-6 h-6 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" /></svg>
+                  </div>
+                  <div className="flex-1 text-center">
+                    <p className="text-[10px] text-gray-400 font-bold mb-1">一括比較後</p>
+                    <p className="text-lg md:text-xl font-black text-blue-600">{example.after}</p>
+                  </div>
+                  <div className="shrink-0 bg-gradient-to-r from-emerald-500 to-emerald-600 text-white text-xs md:text-sm font-black px-3 py-2 rounded-xl shadow-md">
+                    {example.saving}
+                    <span className="block text-[10px] font-bold text-emerald-200">({example.percent}%削減)</span>
+                  </div>
                 </div>
               </div>
             ))}
           </div>
+          <p className="text-xs text-gray-400 text-center mt-3">※ 実際の手数料は審査内容により異なります。上記は一例です。</p>
         </div>
-      </section>
-
-      {/* ━━━ 中間CTA ━━━ */}
-      <section className="py-8 bg-gradient-to-br from-blue-50 via-white to-emerald-50/40">
-        <CtaButton />
       </section>
 
       {/* ━━━ 5. ご利用の流れ ━━━ */}
@@ -515,22 +661,18 @@ export function MitsumoriLP() {
         <div className="max-w-4xl mx-auto px-4">
           <SectionHeading sub="FLOW">ご利用の流れ</SectionHeading>
           <div className="flex flex-col md:flex-row items-start gap-6">
-            {/* 左：イラスト */}
             <div className="hidden md:flex md:w-1/3 justify-center pt-8">
               <Image src="/images/column/factoring-flow.svg" width={240} height={240} alt="ご利用の流れ" className="w-52" />
             </div>
-            {/* 右：ステップ */}
             <div className="md:w-2/3 space-y-4">
               {[
-                { step: "STEP 1", title: "条件を入力", desc: "希望金額や業種などを入力。最短30秒で完了します。", color: "from-blue-500 to-blue-600" },
-                { step: "STEP 2", title: "おすすめを確認", desc: "あなたの条件に合ったおすすめ業者が自動で表示されます。", color: "from-purple-500 to-purple-600" },
-                { step: "STEP 3", title: "選んで見積もり依頼", desc: "気になる会社を複数選んで、まとめて見積もり依頼。", color: "from-emerald-500 to-emerald-600" },
-                { step: "STEP 4", title: "比較して契約", desc: "届いた見積もりを比較し、最適な1社と契約。", color: "from-orange-400 to-orange-500" },
+                { step: "STEP 1", title: "30秒カンタン入力", desc: "希望金額や業種などを選択するだけ。面倒な入力は不要です。", color: "from-blue-500 to-blue-600" },
+                { step: "STEP 2", title: "AIがおすすめを自動提案", desc: "あなたの条件に最適な優良業者がAIで自動マッチングされます。", color: "from-purple-500 to-purple-600" },
+                { step: "STEP 3", title: "選んでまとめて見積もり依頼", desc: "気になる会社を複数選んで、ワンクリックで一括依頼。営業電話は選んだ会社だけ。", color: "from-emerald-500 to-emerald-600" },
+                { step: "STEP 4", title: "比較して最安値で契約", desc: "届いた見積もりを比較し、最も条件の良い1社と契約。これだけで手数料が大幅に下がります。", color: "from-orange-400 to-orange-500" },
               ].map((item, i) => (
                 <div key={item.step} className="flex items-start gap-4 relative">
-                  {/* 縦線 */}
                   {i < 3 && <div className="absolute left-[18px] top-10 bottom-0 w-0.5 bg-gray-200 -mb-4" style={{ height: "calc(100% + 16px)" }} />}
-                  {/* ステップ番号 */}
                   <div className={`relative z-10 w-9 h-9 bg-gradient-to-br ${item.color} rounded-full flex items-center justify-center shrink-0 shadow-md text-white text-xs font-black`}>
                     {i + 1}
                   </div>
@@ -555,41 +697,48 @@ export function MitsumoriLP() {
             {
               industry: "建設業",
               name: "A社 代表取締役",
-              text: "元請けからの入金が遅れて資金繰りに困っていたところ、一括見積もりで3社から連絡をもらい、最も手数料が低い業者を選べました。翌日には入金されて助かりました。",
+              detail: "年商2億円・従業員15名",
+              text: "元請けからの入金が90日後で資金繰りに困っていました。一括見積もりで3社から提案をもらい、最も手数料が低い業者を選べました。1社だけに聞いていたら15%だったところが5%に。",
               result: "手数料5%・翌日入金",
+              saving: "年間約120万円の削減",
               stars: 5,
             },
             {
               industry: "運送業",
               name: "B社 経理担当",
-              text: "燃料費の高騰で急な資金が必要に。1社ずつ問い合わせる時間がなかったので一括見積もりを利用。比較できたおかげで納得のいく条件で契約できました。",
-              result: "手数料8%・即日入金",
+              detail: "年商5,000万円・従業員8名",
+              text: "燃料費の高騰で急な資金が必要に。1社ずつ問い合わせる時間がなかったので一括見積もりを利用。比較できたおかげで納得のいく条件で即日契約できました。",
+              result: "手数料6%・即日入金",
+              saving: "1日で300万円を調達",
               stars: 5,
             },
             {
-              industry: "IT企業",
+              industry: "IT・Web",
               name: "C社 フリーランス",
-              text: "個人事業主でも対応してもらえるか不安でしたが、しっかり対応してくれる業者が見つかりました。オンラインで完結できたのも大きなメリットでした。",
-              result: "手数料10%・2日で入金",
-              stars: 4,
+              detail: "年商800万円",
+              text: "個人事業主でも対応してもらえるか不安でしたが、しっかり対応してくれる業者が3社見つかりました。オンラインで完結できたのも大きなメリットでした。",
+              result: "手数料8%・2日で入金",
+              saving: "初めてでも安心して利用",
+              stars: 5,
             },
           ].map((voice) => (
             <div key={voice.name} className="relative bg-white rounded-2xl p-6 shadow-sm border border-gray-100 hover:shadow-lg transition-all duration-300 group">
-              {/* 引用マーク */}
               <div className="absolute -top-3 -left-1">
                 {icons.quote("w-10 h-10 text-blue-100")}
               </div>
 
               <div className="relative">
-                <div className="flex items-center gap-2 mb-3">
+                <div className="flex items-center gap-2 mb-1">
                   <span className="inline-flex items-center gap-1.5 px-3 py-1 bg-gradient-to-r from-blue-600 to-blue-700 text-white text-xs font-bold rounded-full shadow-sm">
                     {icons.building("w-3 h-3 text-blue-200")}
                     {voice.industry}
                   </span>
-                  <span className="text-xs text-gray-400 font-medium">{voice.name}</span>
+                </div>
+                <div className="mb-3">
+                  <span className="text-xs text-gray-500 font-bold">{voice.name}</span>
+                  <span className="text-[10px] text-gray-400 ml-2">{voice.detail}</span>
                 </div>
 
-                {/* 星評価 */}
                 <div className="flex gap-0.5 mb-3">
                   {Array.from({ length: 5 }).map((_, i) => (
                     <span key={i}>
@@ -600,9 +749,15 @@ export function MitsumoriLP() {
 
                 <p className="text-gray-600 text-sm leading-relaxed mb-4">{voice.text}</p>
 
-                <div className="flex items-center gap-2 bg-gradient-to-r from-emerald-50 to-emerald-100/50 rounded-xl px-4 py-2.5 border border-emerald-100">
-                  {icons.check("w-4 h-4 text-emerald-500 shrink-0")}
-                  <p className="text-sm font-bold text-emerald-700">{voice.result}</p>
+                <div className="space-y-2">
+                  <div className="flex items-center gap-2 bg-gradient-to-r from-emerald-50 to-emerald-100/50 rounded-xl px-4 py-2.5 border border-emerald-100">
+                    {icons.check("w-4 h-4 text-emerald-500 shrink-0")}
+                    <p className="text-sm font-bold text-emerald-700">{voice.result}</p>
+                  </div>
+                  <div className="flex items-center gap-2 bg-gradient-to-r from-blue-50 to-blue-100/30 rounded-xl px-4 py-2 border border-blue-100">
+                    {icons.sparkles("w-3.5 h-3.5 text-blue-500 shrink-0")}
+                    <p className="text-xs font-bold text-blue-700">{voice.saving}</p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -611,51 +766,86 @@ export function MitsumoriLP() {
         </div>
       </section>
 
+      {/* ━━━ 安心保証バー ━━━ */}
+      <section className="py-8 bg-gradient-to-r from-slate-800 to-slate-900">
+        <div className="max-w-4xl mx-auto px-4">
+          <div className="flex flex-col md:flex-row items-center justify-center gap-6 md:gap-10">
+            {[
+              { icon: icons.shield, text: "審査済み優良業者のみ", sub: "悪徳業者は一切掲載しません" },
+              { icon: icons.users, text: "しつこい営業電話なし", sub: "選んだ業者からのみ連絡" },
+              { icon: icons.document, text: "個人情報は厳重管理", sub: "SSL暗号化で安全に保護" },
+            ].map((item) => (
+              <div key={item.text} className="flex items-center gap-3">
+                <div className="w-10 h-10 bg-white/10 rounded-xl flex items-center justify-center shrink-0">
+                  {item.icon("w-5 h-5 text-emerald-400")}
+                </div>
+                <div>
+                  <p className="text-white font-bold text-sm">{item.text}</p>
+                  <p className="text-white/40 text-xs">{item.sub}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* ━━━ 7. よくある質問 ━━━ */}
       <section className="py-10 md:py-14 bg-slate-50">
         <SectionHeading sub="FAQ">よくある質問</SectionHeading>
-        <div className="space-y-2 max-w-2xl mx-auto">
+        <div className="space-y-2 max-w-2xl mx-auto px-4">
           {[
-            { q: "一括見積もりに費用はかかりますか？", a: "いいえ、完全無料でご利用いただけます。利用者に手数料やサービス利用料が発生することは一切ありません。" },
-            { q: "個人事業主でも申し込めますか？", a: "はい、個人事業主・フリーランスの方でもお申し込みいただけます。対応可能な業者をご紹介します。" },
-            { q: "見積もり後、必ず契約しなければなりませんか？", a: "いいえ、見積もりだけの利用でも問題ありません。条件が合わなければお断りいただいて構いません。" },
-            { q: "どのくらいで連絡がもらえますか？", a: "通常、お申し込みから1営業日以内に提携業者からご連絡差し上げます。お急ぎの場合は即日対応も可能です。" },
-            { q: "個人情報は安全に管理されますか？", a: "はい、お預かりした個人情報は厳重に管理し、見積もり目的以外には使用いたしません。詳しくはプライバシーポリシーをご確認ください。" },
-          ].map((item) => (
-            <details key={item.q} className="group bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-md transition-shadow">
-              <summary className="flex items-center justify-between cursor-pointer p-4 font-bold text-sm text-gray-900 hover:bg-blue-50/50 transition-colors">
+            { q: "一括見積もりに費用はかかりますか？", a: "いいえ、完全無料でご利用いただけます。利用者に手数料やサービス利用料が発生することは一切ありません。ファクタリング会社から紹介料を頂いているため、利用者様は無料でご利用いただけます。" },
+            { q: "しつこい営業電話がかかってきませんか？", a: "いいえ、ご安心ください。連絡が来るのは、お客様がSTEP3で選択した業者からのみです。選ばなかった業者から連絡が来ることはありません。" },
+            { q: "個人事業主でも申し込めますか？", a: "はい、個人事業主・フリーランスの方でもお申し込みいただけます。少額（10万円〜）から対応可能な業者もご紹介しています。" },
+            { q: "見積もり後、必ず契約しなければなりませんか？", a: "いいえ、見積もりだけの利用でも全く問題ありません。条件が合わなければお断りいただいて構いません。比較検討のためだけのご利用も大歓迎です。" },
+            { q: "どのくらいで連絡がもらえますか？", a: "通常、お申し込みから1営業日以内に選択された業者からご連絡差し上げます。お急ぎの場合は即日対応も可能です。" },
+            { q: "個人情報は安全に管理されますか？", a: "はい、お預かりした個人情報はSSL暗号化通信で保護し、厳重に管理しています。見積もり目的以外には一切使用いたしません。" },
+          ].map((item, i) => (
+            <div key={item.q} className="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-md transition-shadow">
+              <button
+                className="flex items-center justify-between w-full cursor-pointer p-4 font-bold text-sm text-gray-900 hover:bg-blue-50/50 transition-colors text-left"
+                onClick={() => setOpenFaq(openFaq === i ? null : i)}
+              >
                 <span className="flex items-center gap-3">
                   <span className="w-7 h-7 flex items-center justify-center bg-gradient-to-br from-blue-600 to-blue-700 text-white text-[10px] font-bold rounded-lg shrink-0 shadow-sm">Q</span>
-                  <span className="text-left">{item.q}</span>
+                  <span>{item.q}</span>
                 </span>
                 <svg
-                  className="w-4 h-4 text-gray-400 transition-transform group-open:rotate-180 shrink-0 ml-3"
+                  className={`w-4 h-4 text-gray-400 transition-transform shrink-0 ml-3 ${openFaq === i ? "rotate-180" : ""}`}
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
                 >
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                 </svg>
-              </summary>
-              <div className="px-4 pb-4 text-gray-600 text-sm leading-relaxed border-t border-gray-100 pt-3">
-                <span className="inline-flex items-center justify-center w-7 h-7 bg-gradient-to-br from-orange-400 to-orange-500 text-white text-[10px] font-bold rounded-lg mr-2 align-middle shadow-sm">A</span>
-                {item.a}
-              </div>
-            </details>
+              </button>
+              {openFaq === i && (
+                <div className="px-4 pb-4 text-gray-600 text-sm leading-relaxed border-t border-gray-100 pt-3">
+                  <span className="inline-flex items-center justify-center w-7 h-7 bg-gradient-to-br from-orange-400 to-orange-500 text-white text-[10px] font-bold rounded-lg mr-2 align-middle shadow-sm">A</span>
+                  {item.a}
+                </div>
+              )}
+            </div>
           ))}
         </div>
       </section>
 
       {/* ━━━ 8. フォーム ━━━ */}
       <section id="form" className="py-10 md:py-14 bg-white scroll-mt-20">
-        <SectionHeading sub="FORM">無料一括見積もりフォーム</SectionHeading>
+        <div className="text-center mb-6">
+          <p className="text-[11px] font-bold tracking-[0.2em] text-blue-500/70 mb-2 uppercase">FREE DIAGNOSIS</p>
+          <h2 className="text-xl md:text-2xl font-black text-gray-900 tracking-tight">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-red-500">30秒</span>で無料診断
+          </h2>
+          <div className="w-12 h-1 mx-auto mt-3 rounded-full bg-gradient-to-r from-orange-500 to-red-500" />
+          <p className="text-xs text-gray-500 mt-3">入力はカンタン4項目だけ。あなたに最適な業者を自動でご提案します。</p>
+        </div>
 
         {process.env.NEXT_PUBLIC_MITSUMORI_ENABLED !== "true" ? (
-        /* ━━━ 2026年4月サービス開始まで準備中表示 ━━━ */
-        <div className="max-w-xl mx-auto">
+        <div className="max-w-xl mx-auto px-4">
           <div className="bg-white rounded-2xl shadow-xl border border-gray-200 overflow-hidden">
             <div className="bg-gradient-to-r from-blue-600 to-blue-700 text-white text-center py-5 px-4">
-              <p className="font-bold text-lg">無料一括見積もりサービス</p>
+              <p className="font-bold text-lg">無料一括診断サービス</p>
               <p className="text-blue-200 text-sm mt-0.5">まもなく開始</p>
             </div>
             <div className="p-8 md:p-10 text-center">
@@ -664,7 +854,7 @@ export function MitsumoriLP() {
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-2">2026年4月 サービス開始予定</h3>
               <p className="text-sm text-gray-500 leading-relaxed mb-6">
-                現在、一括見積もりサービスの準備を進めております。<br />
+                現在、一括診断サービスの準備を進めております。<br />
                 サービス開始までもうしばらくお待ちください。
               </p>
               <div className="inline-flex items-center gap-2 bg-blue-50 text-blue-700 text-sm font-bold rounded-full px-5 py-2.5 border border-blue-100">
@@ -675,14 +865,13 @@ export function MitsumoriLP() {
           </div>
         </div>
         ) : formStep <= 2 ? (
-        <form onSubmit={(e) => e.preventDefault()} className="max-w-xl mx-auto">
+        <form onSubmit={(e) => e.preventDefault()} className="max-w-xl mx-auto px-4">
           <div className="bg-white rounded-2xl shadow-xl border border-gray-200 overflow-hidden">
-            {/* フォームヘッダー */}
             <div className="bg-gradient-to-r from-blue-600 to-blue-700 text-white text-center py-5 px-4">
               <p className="font-bold text-lg">
-                {formStep === 1 ? "STEP 1：条件を入力" : "STEP 2：お客様情報を入力"}
+                {formStep === 1 ? "STEP 1：カンタン条件入力" : "STEP 2：お客様情報を入力"}
               </p>
-              <p className="text-blue-200 text-sm mt-0.5">完全無料</p>
+              <p className="text-blue-200 text-sm mt-0.5">完全無料・しつこい営業なし</p>
               <div className="flex justify-center gap-2 mt-3">
                 <div className={`h-1.5 w-16 rounded-full transition-colors ${formStep >= 1 ? "bg-orange-400" : "bg-white/20"}`} />
                 <div className={`h-1.5 w-16 rounded-full transition-colors ${formStep >= 2 ? "bg-orange-400" : "bg-white/20"}`} />
@@ -693,6 +882,20 @@ export function MitsumoriLP() {
             <div className="p-6 md:p-8 space-y-5">
               {formStep === 1 ? (
                 <>
+                  {/* 入力人数 */}
+                  <div className="flex items-center gap-2 bg-orange-50 rounded-lg px-3 py-2 border border-orange-100">
+                    <div className="flex -space-x-1.5">
+                      {["bg-blue-400", "bg-emerald-400", "bg-orange-400"].map((c, i) => (
+                        <div key={i} className={`w-6 h-6 ${c} rounded-full border-2 border-white flex items-center justify-center`}>
+                          <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clipRule="evenodd" /></svg>
+                        </div>
+                      ))}
+                    </div>
+                    <p className="text-xs font-bold text-orange-700">
+                      本日 <span className="text-orange-500 text-sm font-black">12名</span> が診断を利用しました
+                    </p>
+                  </div>
+
                   <SelectField
                     label="買取希望金額"
                     options={AMOUNT_OPTIONS}
@@ -734,14 +937,14 @@ export function MitsumoriLP() {
                     type="button"
                     disabled={!isStep1Valid}
                     onClick={() => setFormStep(2)}
-                    className="w-full py-4 bg-gradient-to-br from-emerald-500 to-emerald-600 text-white font-bold text-lg rounded-full shadow-lg shadow-emerald-500/30 hover:shadow-xl hover:-translate-y-0.5 transition-all duration-300 disabled:opacity-40 disabled:cursor-not-allowed disabled:hover:translate-y-0 disabled:hover:shadow-lg flex items-center justify-center gap-2"
+                    className="w-full py-4 bg-gradient-to-r from-orange-500 to-red-500 text-white font-bold text-lg rounded-full shadow-lg shadow-orange-500/30 hover:shadow-xl hover:-translate-y-0.5 transition-all duration-300 disabled:opacity-40 disabled:cursor-not-allowed disabled:hover:translate-y-0 disabled:hover:shadow-lg flex items-center justify-center gap-2"
                   >
                     <span className="bg-white/20 text-sm rounded-full px-2.5 py-0.5 font-bold">1/3</span>
-                    次へ進む
+                    診断結果を見る
                     <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2.5}><path strokeLinecap="round" strokeLinejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" /></svg>
                   </button>
                   <p className="text-xs text-gray-400 text-center leading-relaxed">
-                    ※ 入力後、お客様情報の入力へ進みます
+                    ※ 完全無料・営業電話なし・見積もりだけでもOK
                   </p>
                 </>
               ) : (
@@ -827,7 +1030,7 @@ export function MitsumoriLP() {
                     type="button"
                     disabled={!isFormValid}
                     onClick={() => setFormStep(3)}
-                    className="w-full py-4 bg-gradient-to-br from-emerald-500 to-emerald-600 text-white font-bold text-lg rounded-full shadow-lg shadow-emerald-500/30 hover:shadow-xl hover:-translate-y-0.5 transition-all duration-300 disabled:opacity-40 disabled:cursor-not-allowed disabled:hover:translate-y-0 disabled:hover:shadow-lg flex items-center justify-center gap-2"
+                    className="w-full py-4 bg-gradient-to-r from-orange-500 to-red-500 text-white font-bold text-lg rounded-full shadow-lg shadow-orange-500/30 hover:shadow-xl hover:-translate-y-0.5 transition-all duration-300 disabled:opacity-40 disabled:cursor-not-allowed disabled:hover:translate-y-0 disabled:hover:shadow-lg flex items-center justify-center gap-2"
                   >
                     <span className="bg-white/20 text-sm rounded-full px-2.5 py-0.5 font-bold">2/3</span>
                     おすすめ業者を見る
@@ -835,7 +1038,7 @@ export function MitsumoriLP() {
                   </button>
 
                   <p className="text-xs text-gray-400 text-center leading-relaxed">
-                    ※ 次のステップで見積もり依頼先を選べます
+                    ※ 選んだ業者からのみ連絡が届きます
                   </p>
                 </>
               )}
@@ -844,9 +1047,8 @@ export function MitsumoriLP() {
         </form>
         ) : (
         /* ━━━ STEP 3：業者を選んで送信（3/3） ━━━ */
-        <div className="max-w-xl mx-auto">
+        <div className="max-w-xl mx-auto px-4">
           <div className="bg-white rounded-2xl shadow-xl border border-gray-200 overflow-hidden">
-            {/* フォームヘッダー */}
             <div className="bg-gradient-to-r from-blue-600 to-blue-700 text-white text-center py-5 px-4">
               <p className="font-bold text-lg">
                 {status === "success" ? "送信完了" : "STEP 3：見積もり依頼先を選択"}
@@ -861,7 +1063,6 @@ export function MitsumoriLP() {
 
             <div className="p-6 md:p-8">
               {status === "success" ? (
-                /* ── 送信完了画面 ── */
                 <div className="text-center py-4">
                   <div className="w-16 h-16 bg-gradient-to-br from-emerald-100 to-emerald-200 rounded-full flex items-center justify-center mx-auto mb-5 shadow-lg shadow-emerald-500/20">
                     {icons.check("w-8 h-8 text-emerald-600")}
@@ -891,7 +1092,6 @@ export function MitsumoriLP() {
                   </Link>
                 </div>
               ) : (
-                /* ── 業者選択画面 ── */
                 <>
                   <p className="text-sm font-bold text-gray-800 mb-1">
                     <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-emerald-500 font-black">あなたにおすすめ</span>のファクタリング会社
@@ -954,7 +1154,7 @@ export function MitsumoriLP() {
                     type="button"
                     disabled={selectedCompanies.length === 0 || status === "submitting"}
                     onClick={handleSubmit}
-                    className="w-full mt-5 py-4 bg-gradient-to-br from-emerald-500 to-emerald-600 text-white font-bold text-lg rounded-full shadow-lg shadow-emerald-500/30 hover:shadow-xl hover:-translate-y-0.5 transition-all duration-300 disabled:opacity-40 disabled:cursor-not-allowed disabled:hover:translate-y-0 disabled:hover:shadow-lg flex items-center justify-center gap-2"
+                    className="w-full mt-5 py-4 bg-gradient-to-r from-orange-500 to-red-500 text-white font-bold text-lg rounded-full shadow-lg shadow-orange-500/30 hover:shadow-xl hover:-translate-y-0.5 transition-all duration-300 disabled:opacity-40 disabled:cursor-not-allowed disabled:hover:translate-y-0 disabled:hover:shadow-lg flex items-center justify-center gap-2"
                   >
                     {status === "submitting" ? (
                       <>
@@ -993,14 +1193,15 @@ export function MitsumoriLP() {
       >
         <div className="bg-white/95 backdrop-blur-sm border-t border-gray-200 shadow-[0_-4px_20px_rgba(0,0,0,0.08)] px-4 py-3">
           <div className="max-w-4xl mx-auto flex items-center justify-between gap-4">
-            <p className="text-sm font-bold text-gray-800 hidden sm:block">
-              完全無料で最適なファクタリング会社が見つかる
-            </p>
+            <div className="hidden sm:block">
+              <p className="text-sm font-black text-gray-800">手数料を最大60%削減</p>
+              <p className="text-[10px] text-gray-400 font-bold">完全無料・しつこい営業なし</p>
+            </div>
             <a
               href="#form"
-              className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-gradient-to-br from-emerald-500 to-emerald-600 text-white font-bold rounded-full shadow-lg shadow-emerald-500/30 transition-all duration-200 text-sm sm:text-base w-full sm:w-auto text-center"
+              className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-gradient-to-r from-orange-500 to-red-500 text-white font-bold rounded-full shadow-lg shadow-orange-500/30 transition-all duration-200 text-sm sm:text-base w-full sm:w-auto text-center"
             >
-              無料で一括見積もりする
+              30秒で無料診断する
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2.5}><path strokeLinecap="round" strokeLinejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" /></svg>
             </a>
           </div>

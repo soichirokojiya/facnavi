@@ -38,7 +38,11 @@
     "サービス業"
   ],
   "overallRating": 3.5,
-  "rankPosition": 112,
-  "requiredDocuments": ["請求書", "通帳コピー", "本人確認書類"],
+  "rankPosition": 111,
+  "requiredDocuments": [
+    "請求書",
+    "通帳コピー",
+    "本人確認書類"
+  ],
   "address": "北海道札幌市豊平区平岸五条九丁目2-33"
 }

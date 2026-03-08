@@ -39,7 +39,12 @@
     "サービス業"
   ],
   "overallRating": 3,
-  "rankPosition": 232,
-  "requiredDocuments": ["請求書", "通帳コピー", "本人確認書類", "決算書"],
+  "rankPosition": 229,
+  "requiredDocuments": [
+    "請求書",
+    "通帳コピー",
+    "本人確認書類",
+    "決算書"
+  ],
   "address": "福岡県福岡市中央区赤坂1丁目14-22 センチュリー赤坂門ビル8F"
 }

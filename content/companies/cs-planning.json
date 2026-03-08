@@ -39,7 +39,11 @@
     "サービス業"
   ],
   "overallRating": 3.5,
-  "rankPosition": 103,
-  "requiredDocuments": ["診療報酬明細書", "通帳コピー", "本人確認書類"],
+  "rankPosition": 102,
+  "requiredDocuments": [
+    "診療報酬明細書",
+    "通帳コピー",
+    "本人確認書類"
+  ],
   "address": "東京都豊島区南大塚3丁目43番1号"
 }

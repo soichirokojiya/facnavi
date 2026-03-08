@@ -39,7 +39,12 @@
     "サービス業"
   ],
   "overallRating": 3,
-  "rankPosition": 225,
-  "requiredDocuments": ["診療報酬明細書", "請求書", "通帳コピー", "本人確認書類"],
+  "rankPosition": 222,
+  "requiredDocuments": [
+    "診療報酬明細書",
+    "請求書",
+    "通帳コピー",
+    "本人確認書類"
+  ],
   "address": "東京都港区麻布台3-1-5 麻布台ヒノキビル402"
 }

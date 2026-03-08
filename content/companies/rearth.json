@@ -39,7 +39,11 @@
     "サービス業"
   ],
   "overallRating": 3,
-  "rankPosition": 238,
-  "requiredDocuments": ["請求書", "通帳コピー", "本人確認書類"],
+  "rankPosition": 235,
+  "requiredDocuments": [
+    "請求書",
+    "通帳コピー",
+    "本人確認書類"
+  ],
   "address": "東京都杉並区下井草2-18-16"
 }

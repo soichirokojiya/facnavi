@@ -76,7 +76,7 @@ export default async function HomePage() {
                 日本最大級 — {companies.length}社掲載
               </p>
 
-              <h1 className="text-3xl md:text-[2.75rem] font-black leading-[1.25] text-gray-900 tracking-tight">
+              <h1 className="text-[1.6rem] md:text-[2.75rem] font-black leading-[1.25] text-gray-900 tracking-tight">
                 口コミ・評判と比較で選ぶ<br />
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-blue-500">おすすめファクタリング会社</span>
               </h1>
@@ -135,7 +135,7 @@ export default async function HomePage() {
               <div className="text-2xl md:text-3xl font-black text-orange-500 leading-none">即日</div>
               <div className="text-[10px] font-bold text-gray-400 mt-0.5">最短入金</div>
             </div>
-            <span className="text-[10px] text-gray-300 ml-1">※ <CurrentDate /> 現在</span>
+            <span className="text-[10px] text-gray-300 ml-1 whitespace-nowrap">※ <CurrentDate /> 現在</span>
           </div>
 
           {/* 検索バー + タグ */}
@@ -169,34 +169,29 @@ export default async function HomePage() {
             おすすめファクタリング会社
           </SectionHeading>
           <p className="text-xs text-gray-400 text-center -mt-6 mb-6">本ページにはプロモーションが含まれています</p>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-            {companies.slice(0, 3).map((company, i) => (
-              <div
-                key={company.slug}
-                className={`relative bg-white rounded-2xl shadow-sm hover:shadow-lg transition-shadow duration-300 p-5 flex flex-col border ${
-                  i === 0 ? "border-2 border-orange-400" : "border-gray-100"
-                }`}
-              >
-                {i === 0 && (
-                  <span className="absolute -top-3 left-4 bg-orange-500 text-white text-xs font-bold px-3 py-1 rounded-full">
-                    No.1
-                  </span>
-                )}
-                <div className="flex items-center gap-3 mb-3">
-                  <span className={`w-9 h-9 rounded-full flex items-center justify-center text-base font-extrabold ${
-                    i === 0 ? "bg-orange-500 text-white" : i === 1 ? "bg-gray-300 text-white" : "bg-amber-700 text-white"
-                  }`}>
-                    {company.rankPosition}
+          {/* --- 1位: 横幅フルの大型カード --- */}
+          {companies.slice(0, 1).map((company) => (
+            <div
+              key={company.slug}
+              className="relative bg-gradient-to-br from-amber-50 via-orange-50 to-yellow-50 rounded-2xl border-2 border-orange-400 shadow-lg p-6 md:p-8 mb-6"
+            >
+              <span className="absolute -top-3.5 left-5 bg-gradient-to-r from-orange-500 to-amber-500 text-white text-sm font-bold px-4 py-1.5 rounded-full shadow-md">
+                👑 No.1
+              </span>
+              <div className="flex flex-col md:flex-row md:items-center gap-4 mt-2">
+                <div className="flex items-center gap-4 md:flex-1">
+                  <span className="w-14 h-14 rounded-full flex items-center justify-center text-xl font-extrabold bg-gradient-to-br from-orange-500 to-amber-500 text-white shadow-md shrink-0">
+                    1
                   </span>
                   <div>
                     <Link href={`/ranking/${company.slug}`}>
-                      <h3 className="font-bold text-gray-900 text-sm hover:text-blue-600 transition-colors">{displayName(company)}</h3>
+                      <h3 className="font-bold text-gray-900 text-lg md:text-xl hover:text-blue-600 transition-colors">{displayName(company)}</h3>
                     </Link>
                     <StarRating rating={company.overallRating} size="sm" />
                   </div>
                 </div>
-                <div className="flex flex-wrap gap-1 mb-3">
-                  {company.features.slice(0, 3).map((f) => (
+                <div className="flex flex-wrap gap-1.5 md:flex-1">
+                  {company.features.slice(0, 4).map((f) => (
                     <Badge key={f} variant="primary">{f}</Badge>
                   ))}
                 </div>
@@ -204,12 +199,58 @@ export default async function HomePage() {
                   href={`/go/${company.slug}`}
                   target="_blank"
                   rel="nofollow sponsored noopener"
-                  className="block text-center py-2.5 bg-gradient-to-br from-emerald-500 to-emerald-700 text-white font-bold text-sm rounded-full hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300 mt-auto"
+                  className="block text-center py-3 px-8 bg-gradient-to-br from-emerald-500 to-emerald-700 text-white font-bold text-sm rounded-full hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300 md:w-auto shrink-0"
                 >
                   公式サイトを見る
                 </a>
               </div>
-            ))}
+            </div>
+          ))}
+
+          {/* --- 2位・3位: 2カラム --- */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
+            {companies.slice(1, 3).map((company, idx) => {
+              const i = idx + 1;
+              return (
+                <div
+                  key={company.slug}
+                  className={`relative bg-white rounded-2xl shadow-sm hover:shadow-md transition-all duration-300 p-5 flex flex-col border ${
+                    i === 1
+                      ? "border-gray-200 border-l-4 border-l-gray-400"
+                      : "border-gray-200 border-l-4 border-l-amber-700"
+                  }`}
+                >
+                  <div className="flex items-center gap-3 mb-3">
+                    <span className={`rounded-full flex items-center justify-center font-extrabold ${
+                      i === 1
+                        ? "w-10 h-10 text-base bg-gray-400 text-white"
+                        : "w-10 h-10 text-base bg-amber-700 text-white"
+                    }`}>
+                      {i + 1}
+                    </span>
+                    <div>
+                      <Link href={`/ranking/${company.slug}`}>
+                        <h3 className="font-bold text-gray-900 text-sm hover:text-blue-600 transition-colors">{displayName(company)}</h3>
+                      </Link>
+                      <StarRating rating={company.overallRating} size="sm" />
+                    </div>
+                  </div>
+                  <div className="flex flex-wrap gap-1 mb-3">
+                    {company.features.slice(0, 3).map((f) => (
+                      <Badge key={f} variant="primary">{f}</Badge>
+                    ))}
+                  </div>
+                  <a
+                    href={`/go/${company.slug}`}
+                    target="_blank"
+                    rel="nofollow sponsored noopener"
+                    className="block text-center py-2.5 bg-gradient-to-br from-emerald-500 to-emerald-700 text-white font-bold text-sm rounded-full hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300 mt-auto"
+                  >
+                    公式サイトを見る
+                  </a>
+                </div>
+              );
+            })}
           </div>
         </div>
       </section>
@@ -239,15 +280,31 @@ export default async function HomePage() {
                     <span className="text-lg">{cat.emoji}</span>
                     <h3 className="font-bold text-gray-900 text-sm">{cat.title}</h3>
                   </div>
-                  <div className="space-y-2">
+                  <div className="space-y-1.5">
                     {top3.map((c, i) => (
-                      <div key={c.slug} className="flex items-center gap-2">
-                        <span className={`w-5 h-5 rounded-full flex items-center justify-center text-[10px] font-bold ${
-                          i === 0 ? "bg-orange-500 text-white" : "bg-gray-200 text-gray-600"
+                      <div
+                        key={c.slug}
+                        className={`flex items-center gap-2 rounded-lg px-2 py-1.5 ${
+                          i === 0 ? "bg-amber-50" : ""
+                        }`}
+                      >
+                        <span className={`shrink-0 rounded-full flex items-center justify-center font-bold ${
+                          i === 0
+                            ? "w-6 h-6 text-[11px] bg-gradient-to-br from-orange-500 to-amber-500 text-white shadow-sm"
+                            : i === 1
+                            ? "w-5 h-5 text-[10px] bg-gray-400 text-white"
+                            : "w-5 h-5 text-[10px] bg-amber-700 text-white"
                         }`}>
                           {i + 1}
                         </span>
-                        <Link href={`/ranking/${c.slug}`} className="text-xs font-bold hover:text-blue-600 transition-colors truncate text-gray-800">
+                        <Link
+                          href={`/ranking/${c.slug}`}
+                          className={`hover:text-blue-600 transition-colors truncate ${
+                            i === 0
+                              ? "text-sm font-bold text-gray-900"
+                              : "text-xs font-bold text-gray-600"
+                          }`}
+                        >
                           {displayName(c)}
                         </Link>
                       </div>
@@ -312,25 +369,39 @@ export default async function HomePage() {
             {companies.slice(0, 10).map((company, i) => (
               <div
                 key={company.slug}
-                className={`bg-white rounded-xl p-4 md:p-5 shadow-sm hover:shadow-md transition-shadow duration-300 border ${
-                  i === 0 ? "border-2 border-orange-400" : "border-gray-100"
+                className={`rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300 border ${
+                  i === 0
+                    ? "border-2 border-orange-400 bg-gradient-to-r from-amber-50 via-orange-50 to-yellow-50 border-l-4 border-l-orange-400 p-5 md:p-6"
+                    : i === 1
+                    ? "bg-white border-gray-100 border-l-4 border-l-gray-400 p-4 md:p-5"
+                    : i === 2
+                    ? "bg-white border-gray-100 border-l-4 border-l-amber-700 p-4 md:p-5"
+                    : "bg-white border-gray-100 p-4 md:p-5"
                 }`}
               >
                 <div className="flex flex-col md:flex-row md:items-center gap-3">
-                  <div className="flex items-center gap-3 md:w-48 flex-shrink-0">
-                    <span className={`w-8 h-8 rounded-full flex items-center justify-center font-extrabold text-sm ${
-                      i === 0 ? "bg-orange-500 text-white" : i === 1 ? "bg-gray-400 text-white" : i === 2 ? "bg-amber-700 text-white" : "bg-[#0b3d91] text-white"
+                  <div className={`flex items-center gap-3 flex-shrink-0 ${i === 0 ? "md:w-56" : "md:w-48"}`}>
+                    <span className={`shrink-0 rounded-full flex items-center justify-center font-extrabold ${
+                      i === 0
+                        ? "w-12 h-12 text-lg bg-gradient-to-br from-orange-500 to-amber-500 text-white shadow-md"
+                        : i === 1
+                        ? "w-9 h-9 text-sm bg-gray-400 text-white"
+                        : i === 2
+                        ? "w-9 h-9 text-sm bg-amber-700 text-white"
+                        : "w-8 h-8 text-sm bg-[#0b3d91] text-white"
                     }`}>
-                      {company.rankPosition}
+                      {i + 1}
                     </span>
                     <div>
                       <Link href={`/ranking/${company.slug}`}>
-                        <h3 className="font-bold text-gray-900 text-sm hover:text-blue-600 transition-colors">{displayName(company)}</h3>
+                        <h3 className={`font-bold text-gray-900 hover:text-blue-600 transition-colors ${
+                          i === 0 ? "text-base md:text-lg" : "text-sm"
+                        }`}>{displayName(company)}</h3>
                       </Link>
                       <StarRating rating={company.overallRating} size="sm" />
                     </div>
                   </div>
-                  <div className="flex-1 flex flex-wrap gap-x-4 gap-y-1 text-xs">
+                  <div className={`flex-1 flex flex-wrap gap-x-4 gap-y-1 ${i === 0 ? "text-sm" : "text-xs"}`}>
                     <span><span className="text-gray-400">手数料</span> <span className="font-bold text-blue-600">{formatFeeRange(company.feeRange.min, company.feeRange.max)}</span></span>
                     <span><span className="text-gray-400">上限</span> <span className="font-bold">{formatAmount(company.maxAmount)}</span></span>
                     <span><span className="text-gray-400">法人・個人事業主</span> <span className={`font-bold ${company.soleProprietorOk ? "text-green-600" : "text-gray-300"}`}>{company.soleProprietorOk ? "OK" : ""}</span></span>
@@ -340,13 +411,17 @@ export default async function HomePage() {
                       href={`/go/${company.slug}`}
                       target="_blank"
                       rel="nofollow sponsored noopener"
-                      className="px-4 py-2 bg-gradient-to-br from-emerald-500 to-emerald-700 text-white font-bold text-xs rounded-full hover:shadow-lg transition-all"
+                      className={`bg-gradient-to-br from-emerald-500 to-emerald-700 text-white font-bold rounded-full hover:shadow-lg transition-all ${
+                        i === 0 ? "px-5 py-2.5 text-sm" : "px-4 py-2 text-xs"
+                      }`}
                     >
                       公式サイト
                     </a>
                     <Link
                       href={`/ranking/${company.slug}`}
-                      className="px-4 py-2 border border-gray-200 text-gray-700 font-bold text-xs rounded-full hover:bg-gray-50 transition-colors"
+                      className={`border border-gray-200 text-gray-700 font-bold rounded-full hover:bg-gray-50 transition-colors ${
+                        i === 0 ? "px-5 py-2.5 text-sm" : "px-4 py-2 text-xs"
+                      }`}
                     >
                       口コミ
                     </Link>

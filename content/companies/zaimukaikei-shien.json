@@ -39,7 +39,12 @@
     "サービス業"
   ],
   "overallRating": 3.5,
-  "rankPosition": 173,
-  "requiredDocuments": ["請求書", "通帳コピー", "本人確認書類", "決算書"],
+  "rankPosition": 172,
+  "requiredDocuments": [
+    "請求書",
+    "通帳コピー",
+    "本人確認書類",
+    "決算書"
+  ],
   "address": "東京都千代田区神田多町2-2-22 千代田ビル4F"
 }

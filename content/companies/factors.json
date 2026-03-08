@@ -39,7 +39,11 @@
     "サービス業"
   ],
   "overallRating": 4,
-  "rankPosition": 114,
-  "requiredDocuments": ["請求書", "通帳コピー（3ヶ月分）", "本人確認書類"],
+  "rankPosition": 113,
+  "requiredDocuments": [
+    "請求書",
+    "通帳コピー（3ヶ月分）",
+    "本人確認書類"
+  ],
   "address": "東京都豊島区池袋2-53-12 ノーブル池袋3F"
 }

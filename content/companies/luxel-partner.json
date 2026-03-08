@@ -39,7 +39,13 @@
     "サービス業"
   ],
   "overallRating": 3.5,
-  "rankPosition": 64,
-  "requiredDocuments": ["本人確認書類", "登記簿謄本", "法人印鑑証明書", "請求書", "納品書"],
+  "rankPosition": 63,
+  "requiredDocuments": [
+    "本人確認書類",
+    "登記簿謄本",
+    "法人印鑑証明書",
+    "請求書",
+    "納品書"
+  ],
   "address": "東京都新宿区新宿5-8-14 新宿オービル3F"
 }

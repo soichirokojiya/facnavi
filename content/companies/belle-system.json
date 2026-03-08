@@ -39,7 +39,12 @@
     "サービス業"
   ],
   "overallRating": 3.5,
-  "rankPosition": 95,
-  "requiredDocuments": ["請求書", "通帳コピー", "本人確認書類", "登記簿謄本"],
+  "rankPosition": 94,
+  "requiredDocuments": [
+    "請求書",
+    "通帳コピー",
+    "本人確認書類",
+    "登記簿謄本"
+  ],
   "address": "東京都中央区日本橋室町一丁目10番11号 belle日本橋5F"
 }

@@ -39,7 +39,10 @@
     "サービス業"
   ],
   "overallRating": 3.8,
-  "rankPosition": 177,
-  "requiredDocuments": ["本審査申込書", "通帳コピー（売掛先からの入金確認用）"],
+  "rankPosition": 176,
+  "requiredDocuments": [
+    "本審査申込書",
+    "通帳コピー（売掛先からの入金確認用）"
+  ],
   "address": "東京都新宿区四谷4-30-13 クロスシー新宿御苑前ビル4F"
 }

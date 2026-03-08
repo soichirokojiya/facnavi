@@ -38,7 +38,11 @@
     "サービス業"
   ],
   "overallRating": 3.5,
-  "rankPosition": 74,
-  "requiredDocuments": ["請求書", "通帳コピー", "本人確認書類"],
+  "rankPosition": 73,
+  "requiredDocuments": [
+    "請求書",
+    "通帳コピー",
+    "本人確認書類"
+  ],
   "address": "東京都中野区中央1丁目35-6 レッチフィールド中野坂上4階"
 }

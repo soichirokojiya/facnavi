@@ -39,7 +39,13 @@
     "サービス業"
   ],
   "overallRating": 3,
-  "rankPosition": 247,
-  "requiredDocuments": ["請求書", "売掛金明細", "決算書", "登記簿謄本", "本人確認書類"],
+  "rankPosition": 244,
+  "requiredDocuments": [
+    "請求書",
+    "売掛金明細",
+    "決算書",
+    "登記簿謄本",
+    "本人確認書類"
+  ],
   "address": "東京都千代田区丸の内1-3-2 三井住友銀行東館"
 }

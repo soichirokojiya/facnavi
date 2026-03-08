@@ -39,7 +39,12 @@
     "サービス業"
   ],
   "overallRating": 3,
-  "rankPosition": 253,
-  "requiredDocuments": ["請求書", "売掛金明細", "決算書", "登記簿謄本"],
+  "rankPosition": 250,
+  "requiredDocuments": [
+    "請求書",
+    "売掛金明細",
+    "決算書",
+    "登記簿謄本"
+  ],
   "address": "東京都品川区上大崎2-15-19 MG目黒駅前ビル3F"
 }

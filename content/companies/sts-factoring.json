@@ -39,7 +39,12 @@
     "サービス業"
   ],
   "overallRating": 3.7,
-  "rankPosition": 193,
-  "requiredDocuments": ["請求書", "通帳コピー", "本人確認書類", "決算書"],
+  "rankPosition": 192,
+  "requiredDocuments": [
+    "請求書",
+    "通帳コピー",
+    "本人確認書類",
+    "決算書"
+  ],
   "address": "東京都豊島区南大塚3-39-6 美幸ビル1F"
 }

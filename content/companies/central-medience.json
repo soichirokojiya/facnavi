@@ -39,7 +39,12 @@
     "サービス業"
   ],
   "overallRating": 3,
-  "rankPosition": 218,
-  "requiredDocuments": ["診療報酬明細書", "請求書", "通帳コピー", "本人確認書類"],
+  "rankPosition": 215,
+  "requiredDocuments": [
+    "診療報酬明細書",
+    "請求書",
+    "通帳コピー",
+    "本人確認書類"
+  ],
   "address": "東京都港区虎ノ門2-10-1 虎ノ門ツインビルディングEAST棟8階"
 }

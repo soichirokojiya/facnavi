@@ -38,7 +38,11 @@
     "サービス業"
   ],
   "overallRating": 4,
-  "rankPosition": 91,
-  "requiredDocuments": ["請求書", "通帳コピー", "本人確認書類"],
+  "rankPosition": 90,
+  "requiredDocuments": [
+    "請求書",
+    "通帳コピー",
+    "本人確認書類"
+  ],
   "address": "大阪府大阪市北区東天満2丁目9番2号 AXIS南森町ビル別館6階"
 }

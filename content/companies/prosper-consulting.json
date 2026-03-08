@@ -39,7 +39,11 @@
     "サービス業"
   ],
   "overallRating": 3.7,
-  "rankPosition": 191,
-  "requiredDocuments": ["請求書", "通帳コピー", "本人確認書類"],
+  "rankPosition": 190,
+  "requiredDocuments": [
+    "請求書",
+    "通帳コピー",
+    "本人確認書類"
+  ],
   "address": "東京都中央区京橋2-5-1"
 }

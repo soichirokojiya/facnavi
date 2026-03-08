@@ -39,7 +39,11 @@
     "サービス業"
   ],
   "overallRating": 3.5,
-  "rankPosition": 55,
-  "requiredDocuments": ["決算書", "原契約書", "売掛金に関する資料"],
+  "rankPosition": 54,
+  "requiredDocuments": [
+    "決算書",
+    "原契約書",
+    "売掛金に関する資料"
+  ],
   "address": "東京都港区芝5-33-7 三田ゲートウェイビル"
 }

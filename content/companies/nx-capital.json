@@ -39,7 +39,12 @@
     "サービス業"
   ],
   "overallRating": 3.7,
-  "rankPosition": 188,
-  "requiredDocuments": ["請求書", "売掛金証明書類", "決算書", "登記簿謄本"],
+  "rankPosition": 187,
+  "requiredDocuments": [
+    "請求書",
+    "売掛金証明書類",
+    "決算書",
+    "登記簿謄本"
+  ],
   "address": "東京都千代田区神田和泉町2番地 NXグループ統合拠点"
 }

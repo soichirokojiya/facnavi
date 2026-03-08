@@ -39,7 +39,11 @@
     "サービス業"
   ],
   "overallRating": 3,
-  "rankPosition": 246,
-  "requiredDocuments": ["請求書・納品書等の成因資料", "通帳の写し（3ヶ月分）", "決算書（勘定科目明細付）"],
+  "rankPosition": 243,
+  "requiredDocuments": [
+    "請求書・納品書等の成因資料",
+    "通帳の写し（3ヶ月分）",
+    "決算書（勘定科目明細付）"
+  ],
   "address": "東京都新宿区西新宿5-10-10 青木ビル2階"
 }

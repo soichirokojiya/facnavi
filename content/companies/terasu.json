@@ -39,7 +39,11 @@
     "サービス業"
   ],
   "overallRating": 3.5,
-  "rankPosition": 81,
-  "requiredDocuments": ["本人確認書類", "通帳コピー", "請求書"],
+  "rankPosition": 80,
+  "requiredDocuments": [
+    "本人確認書類",
+    "通帳コピー",
+    "請求書"
+  ],
   "address": "東京都新宿区高田馬場2-14-5 第2イサミビル3階"
 }

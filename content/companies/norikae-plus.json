@@ -39,7 +39,10 @@
     "サービス業"
   ],
   "overallRating": 3.5,
-  "rankPosition": 68,
-  "requiredDocuments": ["請求書", "通帳コピー"],
+  "rankPosition": 67,
+  "requiredDocuments": [
+    "請求書",
+    "通帳コピー"
+  ],
   "address": "東京都渋谷区東三丁目25番3号 11階"
 }

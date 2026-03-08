@@ -39,7 +39,12 @@
     "サービス業"
   ],
   "overallRating": 3.7,
-  "rankPosition": 189,
-  "requiredDocuments": ["売掛金証明書類", "決算書", "登記簿謄本", "印鑑証明書"],
+  "rankPosition": 188,
+  "requiredDocuments": [
+    "売掛金証明書類",
+    "決算書",
+    "登記簿謄本",
+    "印鑑証明書"
+  ],
   "address": "東京都港区浜松町2-4-1 世界貿易センタービル南館"
 }

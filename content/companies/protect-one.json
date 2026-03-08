@@ -39,7 +39,13 @@
     "サービス業"
   ],
   "overallRating": 3.5,
-  "rankPosition": 72,
-  "requiredDocuments": ["本人確認書類", "通帳コピー", "請求書", "見積書", "基本契約書"],
+  "rankPosition": 71,
+  "requiredDocuments": [
+    "本人確認書類",
+    "通帳コピー",
+    "請求書",
+    "見積書",
+    "基本契約書"
+  ],
   "address": "神奈川県横浜市中区羽衣町3-63 羽衣ビル8F"
 }

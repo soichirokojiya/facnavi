@@ -39,7 +39,12 @@
     "サービス業"
   ],
   "overallRating": 3.5,
-  "rankPosition": 120,
-  "requiredDocuments": ["診療報酬明細書", "通帳コピー", "本人確認書類", "登記簿謄本"],
+  "rankPosition": 119,
+  "requiredDocuments": [
+    "診療報酬明細書",
+    "通帳コピー",
+    "本人確認書類",
+    "登記簿謄本"
+  ],
   "address": "東京都千代田区麹町5丁目1番地1"
 }

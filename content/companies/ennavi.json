@@ -39,8 +39,13 @@
     "サービス業"
   ],
   "overallRating": 3.7,
-  "rankPosition": 182,
-  "requiredDocuments": ["商業登記謄本", "印鑑証明書", "決算書", "売掛債権の証明書類（請求書・契約書等）"],
+  "rankPosition": 181,
+  "requiredDocuments": [
+    "商業登記謄本",
+    "印鑑証明書",
+    "決算書",
+    "売掛債権の証明書類（請求書・契約書等）"
+  ],
   "address": "東京都台東区東上野3-5-9 本池田第二ビル4階",
   "approvalRate": 97
 }

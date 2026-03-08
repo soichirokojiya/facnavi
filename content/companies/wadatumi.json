@@ -39,7 +39,12 @@
     "サービス業"
   ],
   "overallRating": 3.5,
-  "rankPosition": 84,
-  "requiredDocuments": ["請求書", "通帳コピー", "本人確認書類", "登記簿謄本"],
+  "rankPosition": 83,
+  "requiredDocuments": [
+    "請求書",
+    "通帳コピー",
+    "本人確認書類",
+    "登記簿謄本"
+  ],
   "address": "東京都千代田区九段南2-4-12 アビスタ九段ビル8階"
 }

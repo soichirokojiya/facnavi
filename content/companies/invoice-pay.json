@@ -39,7 +39,12 @@
     "サービス業"
   ],
   "overallRating": 3.5,
-  "rankPosition": 202,
-  "requiredDocuments": ["請求書", "通帳コピー", "登記簿謄本", "印鑑証明書"],
+  "rankPosition": 200,
+  "requiredDocuments": [
+    "請求書",
+    "通帳コピー",
+    "登記簿謄本",
+    "印鑑証明書"
+  ],
   "address": "東京都千代田区岩本町3-3-3 秋葉原サザンビル8F"
 }

@@ -39,7 +39,11 @@
     "サービス業"
   ],
   "overallRating": 3,
-  "rankPosition": 244,
-  "requiredDocuments": ["請求書", "通帳コピー", "本人確認書類"],
+  "rankPosition": 241,
+  "requiredDocuments": [
+    "請求書",
+    "通帳コピー",
+    "本人確認書類"
+  ],
   "address": "東京都大田区久が原3-39-3 オーバルK"
 }

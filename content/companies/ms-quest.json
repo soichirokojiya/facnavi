@@ -38,7 +38,11 @@
     "サービス業"
   ],
   "overallRating": 3,
-  "rankPosition": 236,
-  "requiredDocuments": ["請求書", "通帳コピー", "本人確認書類"],
+  "rankPosition": 233,
+  "requiredDocuments": [
+    "請求書",
+    "通帳コピー",
+    "本人確認書類"
+  ],
   "address": "東京都千代田区内神田"
 }

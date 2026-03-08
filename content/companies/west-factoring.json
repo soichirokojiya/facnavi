@@ -38,7 +38,11 @@
     "サービス業"
   ],
   "overallRating": 3.5,
-  "rankPosition": 85,
-  "requiredDocuments": ["請求書", "通帳コピー", "本人確認書類"],
+  "rankPosition": 84,
+  "requiredDocuments": [
+    "請求書",
+    "通帳コピー",
+    "本人確認書類"
+  ],
   "address": "福岡県福岡市中央区天神3丁目10-32"
 }

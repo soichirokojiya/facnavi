@@ -39,7 +39,11 @@
     "サービス業"
   ],
   "overallRating": 3,
-  "rankPosition": 219,
-  "requiredDocuments": ["請求書", "通帳コピー", "本人確認書類"],
+  "rankPosition": 216,
+  "requiredDocuments": [
+    "請求書",
+    "通帳コピー",
+    "本人確認書類"
+  ],
   "address": "東京都大田区山王2-1-8-1003"
 }

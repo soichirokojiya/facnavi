@@ -39,7 +39,13 @@
     "サービス業"
   ],
   "overallRating": 4,
-  "rankPosition": 60,
-  "requiredDocuments": ["請求書", "過去の請求書", "通帳コピー", "決算書", "本人確認書類"],
+  "rankPosition": 59,
+  "requiredDocuments": [
+    "請求書",
+    "過去の請求書",
+    "通帳コピー",
+    "決算書",
+    "本人確認書類"
+  ],
   "address": "東京都文京区小日向4-6-21 ベルメゾン茗荷谷3F"
 }

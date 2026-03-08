@@ -39,7 +39,10 @@
     "サービス業"
   ],
   "overallRating": 3.5,
-  "rankPosition": 118,
-  "requiredDocuments": ["請求書", "本人確認書類"],
+  "rankPosition": 117,
+  "requiredDocuments": [
+    "請求書",
+    "本人確認書類"
+  ],
   "address": "東京都千代田区大手町1-6-1 大手町ビルFINOLAB"
 }

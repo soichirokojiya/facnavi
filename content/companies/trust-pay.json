@@ -38,7 +38,11 @@
     "サービス業"
   ],
   "overallRating": 3,
-  "rankPosition": 254,
-  "requiredDocuments": ["請求書", "通帳コピー", "本人確認書類"],
+  "rankPosition": 251,
+  "requiredDocuments": [
+    "請求書",
+    "通帳コピー",
+    "本人確認書類"
+  ],
   "address": "東京都新宿区"
 }

@@ -39,7 +39,12 @@
     "サービス業"
   ],
   "overallRating": 3.7,
-  "rankPosition": 185,
-  "requiredDocuments": ["請求書", "預金通帳（1年分）", "決算書または残高試算表", "代表者身分証明書"],
+  "rankPosition": 184,
+  "requiredDocuments": [
+    "請求書",
+    "預金通帳（1年分）",
+    "決算書または残高試算表",
+    "代表者身分証明書"
+  ],
   "address": "東京都北区赤羽1-64-10 ブルーノ赤羽2F"
 }

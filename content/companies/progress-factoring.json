@@ -39,7 +39,12 @@
     "サービス業"
   ],
   "overallRating": 3.5,
-  "rankPosition": 71,
-  "requiredDocuments": ["請求書", "通帳コピー", "本人確認書類", "基本契約書"],
+  "rankPosition": 70,
+  "requiredDocuments": [
+    "請求書",
+    "通帳コピー",
+    "本人確認書類",
+    "基本契約書"
+  ],
   "address": "東京都千代田区大手町一丁目6番1号 大手町ビル1F SPACES大手町"
 }

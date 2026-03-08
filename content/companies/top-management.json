@@ -39,7 +39,13 @@
     "サービス業"
   ],
   "overallRating": 3.8,
-  "rankPosition": 179,
-  "requiredDocuments": ["請求書", "通帳コピー（7ヶ月分）", "決算書", "本人確認書類", "商業登記簿謄本"],
+  "rankPosition": 178,
+  "requiredDocuments": [
+    "請求書",
+    "通帳コピー（7ヶ月分）",
+    "決算書",
+    "本人確認書類",
+    "商業登記簿謄本"
+  ],
   "address": "東京都千代田区鍛冶町1-4-3 竹内ビル2F"
 }

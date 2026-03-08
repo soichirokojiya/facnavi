@@ -39,7 +39,11 @@
     "サービス業"
   ],
   "overallRating": 3.7,
-  "rankPosition": 187,
-  "requiredDocuments": ["請求書", "通帳コピー", "本人確認書類"],
+  "rankPosition": 186,
+  "requiredDocuments": [
+    "請求書",
+    "通帳コピー",
+    "本人確認書類"
+  ],
   "address": "東京都渋谷区代々木1-32-2 宮﨑ビル303号室"
 }

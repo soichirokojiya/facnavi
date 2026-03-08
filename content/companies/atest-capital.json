@@ -39,7 +39,11 @@
     "サービス業"
   ],
   "overallRating": 3.5,
-  "rankPosition": 93,
-  "requiredDocuments": ["診療報酬明細書", "通帳コピー", "本人確認書類"],
+  "rankPosition": 92,
+  "requiredDocuments": [
+    "診療報酬明細書",
+    "通帳コピー",
+    "本人確認書類"
+  ],
   "address": "東京都中央区銀座八丁目10番8号 銀座八丁目10番ビル9階C1a"
 }

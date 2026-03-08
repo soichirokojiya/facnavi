@@ -39,8 +39,12 @@
     "サービス業"
   ],
   "overallRating": 3,
-  "rankPosition": 245,
-  "requiredDocuments": ["請求書", "印鑑証明書", "登記簿謄本"],
+  "rankPosition": 242,
+  "requiredDocuments": [
+    "請求書",
+    "印鑑証明書",
+    "登記簿謄本"
+  ],
   "address": "東京都千代田区内神田3-22-3 IM内神田ビル9階",
   "approvalRate": 98
 }

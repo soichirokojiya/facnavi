@@ -83,11 +83,11 @@ export default async function RankingPaginatedPage({ params }: Props) {
 
       <section>
         <div className="space-y-6">
-          {pageCompanies.map((company) => (
+          {pageCompanies.map((company, index) => (
             <CompanyCard
               key={company.slug}
               company={company}
-              rank={company.rankPosition}
+              rank={startIdx + index + 1}
             />
           ))}
         </div>

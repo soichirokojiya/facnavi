@@ -39,7 +39,10 @@
     "サービス業"
   ],
   "overallRating": 3.5,
-  "rankPosition": 204,
-  "requiredDocuments": ["取引関係書類（請求書・納品書・契約書等3ヶ月分）", "通帳コピー（直近1年分）"],
+  "rankPosition": 202,
+  "requiredDocuments": [
+    "取引関係書類（請求書・納品書・契約書等3ヶ月分）",
+    "通帳コピー（直近1年分）"
+  ],
   "address": "福岡県福岡市中央区警固2-18-13 オークビル7F"
 }

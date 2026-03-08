@@ -33,7 +33,7 @@ export function ComparisonTable({ companies }: ComparisonTableProps) {
               } hover:bg-blue-50 transition-colors`}
             >
               <td className="px-4 py-3 font-bold text-primary text-lg">
-                {company.rankPosition}
+                {i + 1}
               </td>
               <td className="px-4 py-3 font-bold">
                 <Link

@@ -38,7 +38,11 @@
     "サービス業"
   ],
   "overallRating": 3.5,
-  "rankPosition": 52,
-  "requiredDocuments": ["請求書", "通帳コピー", "本人確認書類"],
+  "rankPosition": 51,
+  "requiredDocuments": [
+    "請求書",
+    "通帳コピー",
+    "本人確認書類"
+  ],
   "address": "東京都中央区銀座7丁目13番6号サガミビル2階"
 }

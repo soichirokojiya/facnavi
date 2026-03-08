@@ -39,7 +39,12 @@
     "サービス業"
   ],
   "overallRating": 3,
-  "rankPosition": 251,
-  "requiredDocuments": ["請求書", "売掛金明細", "決算書", "本人確認書類"],
+  "rankPosition": 248,
+  "requiredDocuments": [
+    "請求書",
+    "売掛金明細",
+    "決算書",
+    "本人確認書類"
+  ],
   "address": "東京都文京区本郷1-13-4 第三太平ビル"
 }

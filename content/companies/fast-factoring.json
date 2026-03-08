@@ -39,7 +39,11 @@
     "サービス業"
   ],
   "overallRating": 3,
-  "rankPosition": 223,
-  "requiredDocuments": ["請求書", "通帳コピー（入出金明細）", "身分証明書"],
+  "rankPosition": 220,
+  "requiredDocuments": [
+    "請求書",
+    "通帳コピー（入出金明細）",
+    "身分証明書"
+  ],
   "address": "大阪府大阪市中央区道修町1-7-10-401"
 }

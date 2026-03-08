@@ -39,8 +39,12 @@
     "サービス業"
   ],
   "overallRating": 3.7,
-  "rankPosition": 184,
-  "requiredDocuments": ["本人確認書類", "請求書", "通帳コピー"],
+  "rankPosition": 183,
+  "requiredDocuments": [
+    "本人確認書類",
+    "請求書",
+    "通帳コピー"
+  ],
   "address": "東京都豊島区南池袋2-19-4 南池袋ビル6F",
   "approvalRate": 92
 }

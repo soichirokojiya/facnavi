@@ -21,11 +21,11 @@ export function RankingFilter({ companies }: RankingFilterProps) {
       <section>
         <h2 className="text-xl font-bold text-gray-900 mb-6">各社の詳細</h2>
         <div className="space-y-6">
-          {companies.slice(0, 10).map((company) => (
+          {companies.slice(0, 10).map((company, index) => (
             <CompanyCard
               key={company.slug}
               company={company}
-              rank={company.rankPosition}
+              rank={index + 1}
             />
           ))}
         </div>

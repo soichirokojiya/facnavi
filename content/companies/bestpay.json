@@ -39,7 +39,11 @@
     "サービス業"
   ],
   "overallRating": 3.5,
-  "rankPosition": 196,
-  "requiredDocuments": ["注文書・発注書", "通帳コピー（3ヶ月分）", "申込書"],
+  "rankPosition": 195,
+  "requiredDocuments": [
+    "注文書・発注書",
+    "通帳コピー（3ヶ月分）",
+    "申込書"
+  ],
   "address": "東京都新宿区高田馬場3-2-14"
 }

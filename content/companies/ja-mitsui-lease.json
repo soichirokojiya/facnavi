@@ -39,7 +39,13 @@
     "サービス業"
   ],
   "overallRating": 3.5,
-  "rankPosition": 58,
-  "requiredDocuments": ["請求書", "通帳コピー", "本人確認書類", "決算書", "登記簿謄本"],
+  "rankPosition": 57,
+  "requiredDocuments": [
+    "請求書",
+    "通帳コピー",
+    "本人確認書類",
+    "決算書",
+    "登記簿謄本"
+  ],
   "address": "東京都中央区銀座8-13-1 銀座三井ビルディング"
 }

@@ -39,7 +39,10 @@
     "サービス業"
   ],
   "overallRating": 3.7,
-  "rankPosition": 180,
-  "requiredDocuments": ["通帳コピー", "請求書"],
+  "rankPosition": 179,
+  "requiredDocuments": [
+    "通帳コピー",
+    "請求書"
+  ],
   "address": "埼玉県さいたま市浦和区北浦和3-2-10 近藤ビル3階"
 }
