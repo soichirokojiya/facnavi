@@ -7,21 +7,6 @@ import { INDUSTRIES } from "@/lib/constants";
 
 /* ─── 定数 ─── */
 
-const AMOUNT_OPTIONS = [
-  "10万円未満",
-  "10〜30万円未満",
-  "30〜50万円未満",
-  "50〜100万円未満",
-  "100〜300万円未満",
-  "300〜500万円未満",
-  "500〜1,000万円未満",
-  "1,000〜3,000万円未満",
-  "3,000〜5,000万円未満",
-  "5,000万〜1億円未満",
-  "1〜3億円未満",
-  "3億円以上",
-] as const;
-
 const TIMING_OPTIONS = [
   "即日",
   "3日以内",
@@ -38,6 +23,7 @@ const BUSINESS_TYPES = [
 /* ─── フォーム型 ─── */
 
 interface FormData {
+  invoice_amount: string;
   purchase_amount: string;
   deposit_timing: string;
   business_type: string;
@@ -51,6 +37,7 @@ interface FormData {
 }
 
 const initialForm: FormData = {
+  invoice_amount: "",
   purchase_amount: "",
   deposit_timing: "",
   business_type: "",
@@ -69,11 +56,11 @@ function SectionHeading({ sub, children, size = "default" }: { sub?: string; chi
   return (
     <div className="text-center mb-10">
       {sub && (
-        <p className="text-[11px] font-bold tracking-[0.2em] text-blue-500/70 mb-2 uppercase">
+        <p className="text-xs font-bold tracking-[0.2em] text-blue-500/70 mb-2 uppercase">
           {sub}
         </p>
       )}
-      <h2 className={`font-black text-gray-900 tracking-tight ${size === "large" ? "text-2xl md:text-4xl" : "text-xl md:text-2xl"}`}>
+      <h2 className={`font-black text-gray-900 tracking-tight ${size === "large" ? "text-2xl md:text-4xl" : "text-2xl md:text-3xl"}`}>
         {children}
       </h2>
       <div className="w-12 h-1 mx-auto mt-3 rounded-full bg-gradient-to-r from-blue-500 to-emerald-500" />
@@ -90,10 +77,10 @@ function CtaButton({ className = "", label = "30秒で無料診断する →" }:
       >
         {label}
       </a>
-      <div className="flex flex-wrap items-center gap-x-4 gap-y-1 mt-3 text-[11px] text-gray-500 justify-center">
-        <span className="inline-flex items-center gap-1"><svg className="w-3.5 h-3.5 text-emerald-500" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" /></svg>完全無料</span>
-        <span className="inline-flex items-center gap-1"><svg className="w-3.5 h-3.5 text-emerald-500" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" /></svg>最短30秒</span>
-        <span className="inline-flex items-center gap-1"><svg className="w-3.5 h-3.5 text-emerald-500" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" /></svg>しつこい営業なし</span>
+      <div className="flex flex-wrap items-center gap-x-4 gap-y-1 mt-3 text-xs text-gray-500 justify-center">
+        <span className="inline-flex items-center gap-1"><svg className="w-4 h-4 text-emerald-500" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" /></svg>完全無料</span>
+        <span className="inline-flex items-center gap-1"><svg className="w-4 h-4 text-emerald-500" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" /></svg>最短30秒</span>
+        <span className="inline-flex items-center gap-1"><svg className="w-4 h-4 text-emerald-500" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" /></svg>しつこい営業なし</span>
       </div>
     </div>
   );
@@ -102,19 +89,23 @@ function CtaButton({ className = "", label = "30秒で無料診断する →" }:
 function InputField({
   label,
   type = "text",
+  inputMode,
   placeholder,
   value,
   onChange,
   required,
   icon,
+  suffix,
 }: {
   label: string;
   type?: string;
+  inputMode?: "numeric" | "tel" | "email" | "text";
   placeholder?: string;
   value: string;
   onChange: (v: string) => void;
   required?: boolean;
   icon?: React.ReactNode;
+  suffix?: string;
 }) {
   return (
     <div>
@@ -125,13 +116,19 @@ function InputField({
           <span className="text-[10px] font-bold text-white bg-red-500 rounded px-1.5 py-0.5">必須</span>
         )}
       </label>
-      <input
-        type={type}
-        placeholder={placeholder}
-        value={value}
-        onChange={(e) => onChange(e.target.value)}
-        className="w-full px-4 py-3 rounded-xl border-2 border-gray-200 focus:border-blue-500 focus:ring-4 focus:ring-blue-500/10 outline-none transition-all bg-white text-gray-900"
-      />
+      <div className={suffix ? "relative" : ""}>
+        <input
+          type={type}
+          inputMode={inputMode}
+          placeholder={placeholder}
+          value={suffix && value ? Number(value).toLocaleString() : value}
+          onChange={(e) => onChange(e.target.value)}
+          className={`w-full px-4 py-3 rounded-xl border-2 border-gray-200 focus:border-blue-500 focus:ring-4 focus:ring-blue-500/10 outline-none transition-all bg-white text-gray-900 ${suffix ? "pr-10" : ""}`}
+        />
+        {suffix && (
+          <span className="absolute right-4 top-1/2 -translate-y-1/2 text-gray-400 font-bold text-sm pointer-events-none">{suffix}</span>
+        )}
+      </div>
     </div>
   );
 }
@@ -320,6 +317,7 @@ export function MitsumoriLP() {
   }, []);
 
   const isStep1Valid =
+    form.invoice_amount &&
     form.purchase_amount &&
     form.deposit_timing &&
     form.business_type &&
@@ -344,6 +342,7 @@ export function MitsumoriLP() {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
+          invoice_amount: form.invoice_amount,
           purchase_amount: form.purchase_amount,
           deposit_timing: form.deposit_timing,
           business_type: form.business_type,
@@ -371,54 +370,52 @@ export function MitsumoriLP() {
   return (
     <>
       {/* ━━━ 1. ファーストビュー ━━━ */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-slate-900 via-blue-900 to-slate-900">
+      <section className="relative overflow-hidden bg-gradient-to-br from-sky-50 via-blue-50 to-indigo-50">
         {/* 装飾 */}
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
-          <div className="absolute -top-40 -right-40 w-[500px] h-[500px] bg-blue-500/10 rounded-full blur-3xl" />
-          <div className="absolute bottom-0 -left-32 w-80 h-80 bg-emerald-500/10 rounded-full blur-3xl" />
-          <div className="absolute top-20 left-10 w-2 h-2 bg-blue-400 rounded-full animate-pulse" />
-          <div className="absolute top-40 right-20 w-1.5 h-1.5 bg-emerald-400 rounded-full animate-pulse" style={{ animationDelay: "1s" }} />
-          <div className="absolute bottom-32 left-1/4 w-1 h-1 bg-orange-400 rounded-full animate-pulse" style={{ animationDelay: "0.5s" }} />
+          <div className="absolute -top-40 -right-40 w-[500px] h-[500px] bg-sky-200/40 rounded-full blur-3xl" />
+          <div className="absolute bottom-0 -left-32 w-80 h-80 bg-blue-200/40 rounded-full blur-3xl" />
+          <div className="absolute top-1/3 right-1/4 w-64 h-64 bg-emerald-100/30 rounded-full blur-3xl" />
         </div>
 
         <div className="relative max-w-4xl mx-auto px-4 py-16 md:py-24">
           {/* 信頼バッジ */}
           <div className="flex flex-wrap justify-center gap-3 mb-8">
-            <span className="inline-flex items-center gap-1.5 bg-white/10 backdrop-blur-sm text-white/90 text-xs font-bold px-4 py-2 rounded-full border border-white/10">
-              {icons.trophy("w-4 h-4 text-amber-400")}
+            <span className="inline-flex items-center gap-1.5 bg-white/80 backdrop-blur-sm text-gray-700 text-sm font-bold px-5 py-2.5 rounded-full border border-sky-200 shadow-sm">
+              {icons.trophy("w-4 h-4 text-amber-500")}
               口コミ掲載数 業界最大級
             </span>
-            <span className="inline-flex items-center gap-1.5 bg-white/10 backdrop-blur-sm text-white/90 text-xs font-bold px-4 py-2 rounded-full border border-white/10">
-              {icons.shield("w-4 h-4 text-emerald-400")}
+            <span className="inline-flex items-center gap-1.5 bg-white/80 backdrop-blur-sm text-gray-700 text-sm font-bold px-5 py-2.5 rounded-full border border-sky-200 shadow-sm">
+              {icons.shield("w-4 h-4 text-emerald-500")}
               審査済み優良業者のみ
             </span>
           </div>
 
           <div className="text-center">
-            <h1 className="text-3xl md:text-5xl font-black mb-3 leading-[1.3] text-white tracking-tight">
-              手数料を<span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-amber-300">最大60%削減</span>
+            <h1 className="text-3xl md:text-5xl font-black mb-3 leading-[1.3] text-gray-900 tracking-tight">
+              手数料を<span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-red-500">最大60%削減</span>
             </h1>
-            <p className="text-2xl md:text-4xl font-black mb-3 leading-[1.3] tracking-tight text-white/90">
-              ファクタリング<span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-emerald-400">無料一括診断</span>
+            <p className="text-2xl md:text-4xl font-black mb-3 leading-[1.3] tracking-tight text-gray-800">
+              ファクタリング<span className="text-transparent bg-clip-text bg-gradient-to-r from-sky-500 to-blue-600">無料一括診断</span>
             </p>
-            <p className="text-sm md:text-base text-blue-200/80 mb-4 max-w-lg mx-auto leading-relaxed">
-              たった30秒の入力で、255社からあなたに最適な業者を自動マッチング。<br className="hidden sm:block" />
-              複数社の見積もりを比較して最安の手数料を実現。
+            <p className="text-base md:text-lg text-gray-500 mb-6 max-w-lg mx-auto leading-relaxed">
+              30秒の入力で条件に合う業者を自動提案。<br className="hidden sm:block" />
+              気になる会社だけ選んで見積もり依頼。
             </p>
 
             {/* 数字で訴求 */}
             <div className="flex items-stretch gap-3 md:gap-5 mb-8 justify-center">
               {[
-                { value: "255", unit: "社+", label: "掲載業者数", color: "text-blue-400", icon: icons.building },
-                { value: "98", unit: "%", label: "利用者満足度", color: "text-emerald-400", icon: icons.star },
-                { value: "0", unit: "円", label: "利用料金", color: "text-amber-400", icon: icons.yen },
-                { value: "30", unit: "秒", label: "カンタン入力", color: "text-orange-400", icon: icons.lightning },
+                { value: "255", unit: "社+", label: "掲載業者数", color: "text-sky-600", icon: icons.building },
+                { value: "98", unit: "%", label: "利用者満足度", color: "text-emerald-600", icon: icons.star },
+                { value: "0", unit: "円", label: "利用料金", color: "text-amber-600", icon: icons.yen },
+                { value: "30", unit: "秒", label: "カンタン入力", color: "text-orange-600", icon: icons.lightning },
               ].map((stat) => (
-                <div key={stat.label} className="bg-white/5 backdrop-blur-sm rounded-2xl border border-white/10 px-4 md:px-6 py-4 text-center flex-1 max-w-[140px]">
+                <div key={stat.label} className="bg-white/70 backdrop-blur-sm rounded-2xl border border-sky-100 shadow-sm px-4 md:px-6 py-4 text-center flex-1 max-w-[140px]">
                   <div className={`text-3xl md:text-4xl font-black ${stat.color} leading-none tracking-tighter`}>
                     {stat.value}<span className="text-lg font-bold">{stat.unit}</span>
                   </div>
-                  <div className="text-[10px] font-bold text-white/50 mt-1.5 tracking-wide">{stat.label}</div>
+                  <div className="text-[11px] font-bold text-gray-400 mt-1.5 tracking-wide">{stat.label}</div>
                 </div>
               ))}
             </div>
@@ -426,17 +423,17 @@ export function MitsumoriLP() {
             {/* メインCTA */}
             <a
               href="#form"
-              className="shimmer inline-flex items-center justify-center gap-3 px-10 py-5 bg-gradient-to-r from-orange-500 via-red-500 to-orange-500 text-white font-black text-lg md:text-xl rounded-full shadow-2xl shadow-orange-500/40 hover:shadow-orange-500/60 hover:-translate-y-1 transition-all duration-300 border border-orange-400/30"
+              className="shimmer inline-flex items-center justify-center gap-3 px-10 py-5 bg-gradient-to-r from-orange-500 via-red-500 to-orange-500 text-white font-black text-lg md:text-xl rounded-full shadow-xl shadow-orange-500/30 hover:shadow-orange-500/50 hover:-translate-y-1 transition-all duration-300"
             >
               <span className="bg-white/20 text-sm rounded-full px-3 py-1 font-bold">無料</span>
               30秒でカンタン診断する
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2.5}><path strokeLinecap="round" strokeLinejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" /></svg>
             </a>
-            <div className="flex flex-wrap items-center gap-x-5 gap-y-1 mt-4 text-xs text-white/50 justify-center font-bold">
-              <span className="inline-flex items-center gap-1">{icons.check("w-3.5 h-3.5 text-emerald-400")}完全無料</span>
-              <span className="inline-flex items-center gap-1">{icons.check("w-3.5 h-3.5 text-emerald-400")}しつこい営業なし</span>
-              <span className="inline-flex items-center gap-1">{icons.check("w-3.5 h-3.5 text-emerald-400")}個人事業主OK</span>
-              <span className="inline-flex items-center gap-1">{icons.check("w-3.5 h-3.5 text-emerald-400")}見積もりだけでもOK</span>
+            <div className="flex flex-wrap items-center gap-x-5 gap-y-1 mt-4 text-sm text-gray-400 justify-center font-bold">
+              <span className="inline-flex items-center gap-1">{icons.check("w-4 h-4 text-emerald-500")}完全無料</span>
+              <span className="inline-flex items-center gap-1">{icons.check("w-4 h-4 text-emerald-500")}しつこい営業なし</span>
+              <span className="inline-flex items-center gap-1">{icons.check("w-4 h-4 text-emerald-500")}個人事業主OK</span>
+              <span className="inline-flex items-center gap-1">{icons.check("w-4 h-4 text-emerald-500")}見積もりだけでもOK</span>
             </div>
           </div>
         </div>
@@ -458,8 +455,8 @@ export function MitsumoriLP() {
                 {icons.shield("w-4 h-4 text-blue-600")}
               </div>
               <div className="text-left">
-                <p className="text-[10px] text-gray-400 font-bold">業界専門家</p>
-                <p className="text-xs font-black text-gray-800">FP・税理士監修</p>
+                <p className="text-xs text-gray-400 font-bold">業界専門家</p>
+                <p className="text-sm font-black text-gray-800">FP・税理士監修</p>
               </div>
             </div>
             <div className="w-px h-8 bg-gray-200" />
@@ -468,8 +465,8 @@ export function MitsumoriLP() {
                 {icons.document("w-4 h-4 text-emerald-600")}
               </div>
               <div className="text-left">
-                <p className="text-[10px] text-gray-400 font-bold">口コミ掲載</p>
-                <p className="text-xs font-black text-gray-800">業界最大級</p>
+                <p className="text-xs text-gray-400 font-bold">口コミ掲載</p>
+                <p className="text-sm font-black text-gray-800">業界最大級</p>
               </div>
             </div>
             <div className="w-px h-8 bg-gray-200 hidden sm:block" />
@@ -478,8 +475,8 @@ export function MitsumoriLP() {
                 {icons.globe("w-4 h-4 text-orange-600")}
               </div>
               <div className="text-left">
-                <p className="text-[10px] text-gray-400 font-bold">対応エリア</p>
-                <p className="text-xs font-black text-gray-800">全国対応</p>
+                <p className="text-xs text-gray-400 font-bold">対応エリア</p>
+                <p className="text-sm font-black text-gray-800">全国対応</p>
               </div>
             </div>
           </div>
@@ -507,8 +504,8 @@ export function MitsumoriLP() {
                     {item.icon("w-4 h-4 text-red-400")}
                   </div>
                   <div>
-                    <p className="text-gray-800 font-bold text-sm">{item.text}</p>
-                    <p className="text-gray-400 text-xs mt-0.5">{item.sub}</p>
+                    <p className="text-gray-800 font-bold text-base">{item.text}</p>
+                    <p className="text-gray-400 text-sm mt-0.5">{item.sub}</p>
                   </div>
                 </div>
               ))}
@@ -519,7 +516,7 @@ export function MitsumoriLP() {
               <div className="w-10 h-10 bg-gradient-to-br from-blue-500 to-emerald-500 rounded-full flex items-center justify-center shadow-lg shadow-blue-500/25 mb-4 animate-bounce">
                 {icons.arrowDown("w-5 h-5 text-white")}
               </div>
-              <p className="text-2xl md:text-3xl font-black text-gray-900 leading-snug">
+              <p className="text-2xl md:text-4xl font-black text-gray-900 leading-snug">
                 そのお悩み、<br className="sm:hidden" /><span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-emerald-500">30秒の無料診断</span>で<br className="sm:hidden" />すべて解決
               </p>
             </div>
@@ -535,15 +532,15 @@ export function MitsumoriLP() {
             <table className="w-full text-sm">
               <thead>
                 <tr>
-                  <th className="text-left py-3 px-4 text-gray-500 font-bold text-xs w-1/3"></th>
+                  <th className="text-left py-3 px-4 text-gray-500 font-bold text-sm w-1/3"></th>
                   <th className="py-3 px-4 text-center w-1/3">
                     <div className="bg-gray-100 rounded-xl py-3 px-2">
-                      <p className="font-bold text-gray-500 text-xs">自力で探す</p>
+                      <p className="font-bold text-gray-500 text-sm">自力で探す</p>
                     </div>
                   </th>
                   <th className="py-3 px-4 text-center w-1/3">
                     <div className="bg-gradient-to-r from-blue-600 to-emerald-500 rounded-xl py-3 px-2 shadow-lg shadow-blue-500/20">
-                      <p className="font-bold text-white text-xs">ファクナビ一括診断</p>
+                      <p className="font-bold text-white text-sm">ファクナビ一括診断</p>
                     </div>
                   </th>
                 </tr>
@@ -555,17 +552,17 @@ export function MitsumoriLP() {
                   { label: "手数料", self: "相場がわからない", navi: "最安値を自動選定", selfBad: true },
                   { label: "業者の信頼性", self: "自分で判断", navi: "審査済み優良業者のみ", selfBad: true },
                   { label: "費用", self: "無料", navi: "完全無料", selfBad: false },
-                  { label: "営業電話", self: "多数の電話", navi: "選んだ業者だけ", selfBad: true },
+                  { label: "営業電話", self: "多数の電話", navi: "自分で選んだ業者だけ", selfBad: true },
                 ].map((row) => (
                   <tr key={row.label}>
-                    <td className="py-3 px-4 font-bold text-gray-700 text-xs">{row.label}</td>
+                    <td className="py-3 px-4 font-bold text-gray-700 text-sm">{row.label}</td>
                     <td className="py-3 px-4 text-center">
-                      <span className={`text-xs font-bold ${row.selfBad ? "text-red-400" : "text-gray-600"}`}>
+                      <span className={`text-sm font-bold ${row.selfBad ? "text-red-400" : "text-gray-600"}`}>
                         {row.selfBad && "△ "}{row.self}
                       </span>
                     </td>
                     <td className="py-3 px-4 text-center">
-                      <span className="text-xs font-bold text-blue-600 bg-blue-50 px-3 py-1 rounded-full">
+                      <span className="text-sm font-bold text-blue-600 bg-blue-50 px-3 py-1 rounded-full">
                         {row.navi}
                       </span>
                     </td>
@@ -584,7 +581,7 @@ export function MitsumoriLP() {
         <div className="grid md:grid-cols-2 gap-5 max-w-3xl mx-auto">
           {[
             { icon: icons.shield, color: "from-blue-500 to-blue-600", bg: "bg-blue-50", accent: "text-blue-600", num: "01", title: "厳選された優良業者のみ掲載", desc: "独自の審査基準をクリアした信頼性の高い業者だけをご紹介。悪徳業者の心配は一切ありません。" },
-            { icon: icons.sparkles, color: "from-purple-500 to-purple-600", bg: "bg-purple-50", accent: "text-purple-600", num: "02", title: "AIが最適な業者を自動提案", desc: "あなたの条件をもとに、最適なファクタリング会社をAIが自動マッチング。選んでまとめて見積もり依頼できます。" },
+            { icon: icons.sparkles, color: "from-purple-500 to-purple-600", bg: "bg-purple-50", accent: "text-purple-600", num: "02", title: "提案から自分で選んで依頼", desc: "AIが条件に合う業者を自動提案。その中から気になる会社だけを自分で選んで見積もり依頼できるので、不要な営業連絡は一切ありません。" },
             { icon: icons.yen, color: "from-emerald-500 to-emerald-600", bg: "bg-emerald-50", accent: "text-emerald-600", num: "03", title: "手数料を最大60%削減", desc: "複数社の見積もりを比較することで、1社だけに依頼するより平均して手数料を大幅に削減できます。" },
             { icon: icons.lightning, color: "from-orange-400 to-orange-500", bg: "bg-orange-50", accent: "text-orange-600", num: "04", title: "最短即日で資金調達可能", desc: "急ぎの資金需要にも対応。最短即日入金の業者も多数掲載しているので、スピーディーに資金調達できます。" },
             { icon: icons.users, color: "from-teal-500 to-teal-600", bg: "bg-teal-50", accent: "text-teal-600", num: "05", title: "個人事業主・フリーランスもOK", desc: "法人だけでなく、個人事業主やフリーランスの方にも対応した業者を多数掲載。少額からでもOKです。" },
@@ -594,8 +591,8 @@ export function MitsumoriLP() {
               <div className={`w-12 h-12 bg-gradient-to-br ${item.color} rounded-xl flex items-center justify-center mb-4 shadow-md group-hover:scale-110 transition-transform`}>
                 {item.icon("w-6 h-6 text-white")}
               </div>
-              <h3 className="font-black text-gray-900 text-lg mb-2">{item.title}</h3>
-              <p className="text-gray-500 text-sm leading-relaxed">{item.desc}</p>
+              <h3 className="font-black text-gray-900 text-xl mb-2">{item.title}</h3>
+              <p className="text-gray-500 text-base leading-relaxed">{item.desc}</p>
             </div>
           ))}
         </div>
@@ -605,8 +602,8 @@ export function MitsumoriLP() {
       {/* ━━━ 中間CTA ━━━ */}
       <section className="py-10 bg-gradient-to-r from-blue-600 to-emerald-500">
         <div className="max-w-3xl mx-auto px-4 text-center">
-          <p className="text-white/80 text-sm font-bold mb-2">比較するだけで手数料が下がる</p>
-          <p className="text-white text-2xl md:text-3xl font-black mb-6">まずは30秒の無料診断から</p>
+          <p className="text-white/80 text-base font-bold mb-2">比較するだけで手数料が下がる</p>
+          <p className="text-white text-3xl md:text-4xl font-black mb-6">まずは30秒の無料診断から</p>
           <a
             href="#form"
             className="shimmer inline-flex items-center justify-center gap-2 px-10 py-4 bg-white text-blue-600 font-black text-lg rounded-full shadow-xl hover:shadow-2xl hover:-translate-y-0.5 transition-all duration-300"
@@ -629,20 +626,20 @@ export function MitsumoriLP() {
             ].map((example) => (
               <div key={example.industry} className="bg-gradient-to-r from-gray-50 to-blue-50/30 rounded-2xl p-5 md:p-6 border border-gray-100">
                 <div className="flex items-center gap-2 mb-3">
-                  <span className="bg-blue-600 text-white text-xs font-bold px-3 py-1 rounded-full">{example.industry}</span>
-                  <span className="text-xs text-gray-500 font-bold">{example.amount}</span>
+                  <span className="bg-blue-600 text-white text-sm font-bold px-3 py-1 rounded-full">{example.industry}</span>
+                  <span className="text-sm text-gray-500 font-bold">{example.amount}</span>
                 </div>
                 <div className="flex items-center gap-3 md:gap-6">
                   <div className="flex-1 text-center">
-                    <p className="text-[10px] text-gray-400 font-bold mb-1">1社のみ</p>
-                    <p className="text-lg md:text-xl font-black text-red-400 line-through decoration-2">{example.before}</p>
+                    <p className="text-xs text-gray-400 font-bold mb-1">1社のみ</p>
+                    <p className="text-xl md:text-2xl font-black text-red-400 line-through decoration-2">{example.before}</p>
                   </div>
                   <div className="shrink-0">
-                    <svg className="w-6 h-6 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" /></svg>
+                    <svg className="w-7 h-7 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" /></svg>
                   </div>
                   <div className="flex-1 text-center">
-                    <p className="text-[10px] text-gray-400 font-bold mb-1">一括比較後</p>
-                    <p className="text-lg md:text-xl font-black text-blue-600">{example.after}</p>
+                    <p className="text-xs text-gray-400 font-bold mb-1">一括比較後</p>
+                    <p className="text-xl md:text-2xl font-black text-blue-600">{example.after}</p>
                   </div>
                   <div className="shrink-0 bg-gradient-to-r from-emerald-500 to-emerald-600 text-white text-xs md:text-sm font-black px-3 py-2 rounded-xl shadow-md">
                     {example.saving}
@@ -667,8 +664,8 @@ export function MitsumoriLP() {
             <div className="md:w-2/3 space-y-4">
               {[
                 { step: "STEP 1", title: "30秒カンタン入力", desc: "希望金額や業種などを選択するだけ。面倒な入力は不要です。", color: "from-blue-500 to-blue-600" },
-                { step: "STEP 2", title: "AIがおすすめを自動提案", desc: "あなたの条件に最適な優良業者がAIで自動マッチングされます。", color: "from-purple-500 to-purple-600" },
-                { step: "STEP 3", title: "選んでまとめて見積もり依頼", desc: "気になる会社を複数選んで、ワンクリックで一括依頼。営業電話は選んだ会社だけ。", color: "from-emerald-500 to-emerald-600" },
+                { step: "STEP 2", title: "おすすめ業者が自動で表示", desc: "あなたの条件に合う優良業者がリストで表示されます。各社の特徴や手数料も確認できます。", color: "from-purple-500 to-purple-600" },
+                { step: "STEP 3", title: "自分で選んで見積もり依頼", desc: "提案された中から、依頼したい会社だけを自分でチェック。選ばなかった会社から連絡が来ることはありません。", color: "from-emerald-500 to-emerald-600" },
                 { step: "STEP 4", title: "比較して最安値で契約", desc: "届いた見積もりを比較し、最も条件の良い1社と契約。これだけで手数料が大幅に下がります。", color: "from-orange-400 to-orange-500" },
               ].map((item, i) => (
                 <div key={item.step} className="flex items-start gap-4 relative">
@@ -677,9 +674,9 @@ export function MitsumoriLP() {
                     {i + 1}
                   </div>
                   <div className="bg-white rounded-xl p-4 shadow-sm border border-gray-100 flex-1">
-                    <p className="text-[10px] font-bold text-blue-600 mb-0.5">{item.step}</p>
-                    <h3 className="font-bold text-gray-900 text-sm mb-1">{item.title}</h3>
-                    <p className="text-xs text-gray-500 leading-relaxed">{item.desc}</p>
+                    <p className="text-xs font-bold text-blue-600 mb-0.5">{item.step}</p>
+                    <h3 className="font-bold text-gray-900 text-base mb-1">{item.title}</h3>
+                    <p className="text-sm text-gray-500 leading-relaxed">{item.desc}</p>
                   </div>
                 </div>
               ))}
@@ -735,8 +732,8 @@ export function MitsumoriLP() {
                   </span>
                 </div>
                 <div className="mb-3">
-                  <span className="text-xs text-gray-500 font-bold">{voice.name}</span>
-                  <span className="text-[10px] text-gray-400 ml-2">{voice.detail}</span>
+                  <span className="text-sm text-gray-500 font-bold">{voice.name}</span>
+                  <span className="text-xs text-gray-400 ml-2">{voice.detail}</span>
                 </div>
 
                 <div className="flex gap-0.5 mb-3">
@@ -747,7 +744,7 @@ export function MitsumoriLP() {
                   ))}
                 </div>
 
-                <p className="text-gray-600 text-sm leading-relaxed mb-4">{voice.text}</p>
+                <p className="text-gray-600 text-base leading-relaxed mb-4">{voice.text}</p>
 
                 <div className="space-y-2">
                   <div className="flex items-center gap-2 bg-gradient-to-r from-emerald-50 to-emerald-100/50 rounded-xl px-4 py-2.5 border border-emerald-100">
@@ -767,21 +764,21 @@ export function MitsumoriLP() {
       </section>
 
       {/* ━━━ 安心保証バー ━━━ */}
-      <section className="py-8 bg-gradient-to-r from-slate-800 to-slate-900">
+      <section className="py-8 bg-gradient-to-r from-blue-50 via-emerald-50 to-blue-50 border-y border-blue-100">
         <div className="max-w-4xl mx-auto px-4">
           <div className="flex flex-col md:flex-row items-center justify-center gap-6 md:gap-10">
             {[
-              { icon: icons.shield, text: "審査済み優良業者のみ", sub: "悪徳業者は一切掲載しません" },
-              { icon: icons.users, text: "しつこい営業電話なし", sub: "選んだ業者からのみ連絡" },
-              { icon: icons.document, text: "個人情報は厳重管理", sub: "SSL暗号化で安全に保護" },
+              { icon: icons.shield, text: "審査済み優良業者のみ", sub: "悪徳業者は一切掲載しません", color: "text-blue-600", bg: "bg-blue-100" },
+              { icon: icons.users, text: "しつこい営業電話なし", sub: "選んだ業者からのみ連絡", color: "text-emerald-600", bg: "bg-emerald-100" },
+              { icon: icons.document, text: "個人情報は厳重管理", sub: "SSL暗号化で安全に保護", color: "text-indigo-600", bg: "bg-indigo-100" },
             ].map((item) => (
               <div key={item.text} className="flex items-center gap-3">
-                <div className="w-10 h-10 bg-white/10 rounded-xl flex items-center justify-center shrink-0">
-                  {item.icon("w-5 h-5 text-emerald-400")}
+                <div className={`w-10 h-10 ${item.bg} rounded-xl flex items-center justify-center shrink-0`}>
+                  {item.icon(`w-5 h-5 ${item.color}`)}
                 </div>
                 <div>
-                  <p className="text-white font-bold text-sm">{item.text}</p>
-                  <p className="text-white/40 text-xs">{item.sub}</p>
+                  <p className="text-gray-900 font-bold text-base">{item.text}</p>
+                  <p className="text-gray-500 text-sm">{item.sub}</p>
                 </div>
               </div>
             ))}
@@ -795,7 +792,7 @@ export function MitsumoriLP() {
         <div className="space-y-2 max-w-2xl mx-auto px-4">
           {[
             { q: "一括見積もりに費用はかかりますか？", a: "いいえ、完全無料でご利用いただけます。利用者に手数料やサービス利用料が発生することは一切ありません。ファクタリング会社から紹介料を頂いているため、利用者様は無料でご利用いただけます。" },
-            { q: "しつこい営業電話がかかってきませんか？", a: "いいえ、ご安心ください。連絡が来るのは、お客様がSTEP3で選択した業者からのみです。選ばなかった業者から連絡が来ることはありません。" },
+            { q: "しつこい営業電話がかかってきませんか？", a: "いいえ、ご安心ください。提案された業者の中から、お客様が自分で選んだ会社からのみ連絡が届きます。選ばなかった業者から連絡が来ることは一切ありません。どの業者に依頼するかは、すべてお客様自身で決められます。" },
             { q: "個人事業主でも申し込めますか？", a: "はい、個人事業主・フリーランスの方でもお申し込みいただけます。少額（10万円〜）から対応可能な業者もご紹介しています。" },
             { q: "見積もり後、必ず契約しなければなりませんか？", a: "いいえ、見積もりだけの利用でも全く問題ありません。条件が合わなければお断りいただいて構いません。比較検討のためだけのご利用も大歓迎です。" },
             { q: "どのくらいで連絡がもらえますか？", a: "通常、お申し込みから1営業日以内に選択された業者からご連絡差し上げます。お急ぎの場合は即日対応も可能です。" },
@@ -803,7 +800,7 @@ export function MitsumoriLP() {
           ].map((item, i) => (
             <div key={item.q} className="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-md transition-shadow">
               <button
-                className="flex items-center justify-between w-full cursor-pointer p-4 font-bold text-sm text-gray-900 hover:bg-blue-50/50 transition-colors text-left"
+                className="flex items-center justify-between w-full cursor-pointer p-4 font-bold text-base text-gray-900 hover:bg-blue-50/50 transition-colors text-left"
                 onClick={() => setOpenFaq(openFaq === i ? null : i)}
               >
                 <span className="flex items-center gap-3">
@@ -820,7 +817,7 @@ export function MitsumoriLP() {
                 </svg>
               </button>
               {openFaq === i && (
-                <div className="px-4 pb-4 text-gray-600 text-sm leading-relaxed border-t border-gray-100 pt-3">
+                <div className="px-4 pb-4 text-gray-600 text-base leading-relaxed border-t border-gray-100 pt-3">
                   <span className="inline-flex items-center justify-center w-7 h-7 bg-gradient-to-br from-orange-400 to-orange-500 text-white text-[10px] font-bold rounded-lg mr-2 align-middle shadow-sm">A</span>
                   {item.a}
                 </div>
@@ -832,13 +829,28 @@ export function MitsumoriLP() {
 
       {/* ━━━ 8. フォーム ━━━ */}
       <section id="form" className="py-10 md:py-14 bg-white scroll-mt-20">
-        <div className="text-center mb-6">
-          <p className="text-[11px] font-bold tracking-[0.2em] text-blue-500/70 mb-2 uppercase">FREE DIAGNOSIS</p>
-          <h2 className="text-xl md:text-2xl font-black text-gray-900 tracking-tight">
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-red-500">30秒</span>で無料診断
-          </h2>
-          <div className="w-12 h-1 mx-auto mt-3 rounded-full bg-gradient-to-r from-orange-500 to-red-500" />
-          <p className="text-xs text-gray-500 mt-3">入力はカンタン4項目だけ。あなたに最適な業者を自動でご提案します。</p>
+        <div className="max-w-2xl mx-auto px-4 mb-8">
+          <div className="relative bg-gradient-to-br from-sky-50 via-blue-50 to-indigo-50 rounded-2xl px-6 py-10 md:py-12 text-center overflow-hidden border border-sky-100">
+            {/* 装飾 */}
+            <div className="absolute inset-0 pointer-events-none">
+              <div className="absolute -top-20 -right-20 w-60 h-60 bg-sky-200/30 rounded-full blur-3xl" />
+              <div className="absolute -bottom-16 -left-16 w-48 h-48 bg-blue-200/30 rounded-full blur-3xl" />
+            </div>
+            <div className="relative">
+              <div className="inline-flex items-center gap-2 bg-white text-blue-600 text-sm font-bold px-5 py-2 rounded-full border border-sky-200 shadow-sm mb-5">
+                {icons.sparkles("w-4 h-4 text-sky-500")}
+                完全無料・最短30秒
+              </div>
+              <h2 className="text-3xl md:text-4xl font-black text-gray-900 tracking-tight mb-3">
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-sky-500 to-blue-600">30秒</span>で無料診断
+              </h2>
+              <div className="flex flex-wrap items-center gap-x-5 gap-y-1 mt-5 text-sm text-gray-500 justify-center font-bold">
+                <span className="inline-flex items-center gap-1">{icons.check("w-4 h-4 text-emerald-500")}しつこい営業なし</span>
+                <span className="inline-flex items-center gap-1">{icons.check("w-4 h-4 text-emerald-500")}見積もりだけでもOK</span>
+                <span className="inline-flex items-center gap-1">{icons.check("w-4 h-4 text-emerald-500")}個人事業主OK</span>
+              </div>
+            </div>
+          </div>
         </div>
 
         {process.env.NEXT_PUBLIC_MITSUMORI_ENABLED !== "true" ? (
@@ -896,14 +908,27 @@ export function MitsumoriLP() {
                     </p>
                   </div>
 
-                  <SelectField
+                  <InputField
+                    label="請求書の額面（およそでOK）"
+                    type="text"
+                    inputMode="numeric"
+                    placeholder="例：5,000,000"
+                    value={form.invoice_amount}
+                    onChange={(v) => updateField("invoice_amount", v.replace(/[^0-9]/g, ""))}
+                    required
+                    icon={icons.document("w-4 h-4")}
+                    suffix="円"
+                  />
+                  <InputField
                     label="買取希望金額"
-                    options={AMOUNT_OPTIONS}
+                    type="text"
+                    inputMode="numeric"
+                    placeholder="例：3,000,000"
                     value={form.purchase_amount}
-                    onChange={(v) => updateField("purchase_amount", v)}
-                    placeholder="金額を選択してください"
+                    onChange={(v) => updateField("purchase_amount", v.replace(/[^0-9]/g, ""))}
                     required
                     icon={icons.yen("w-4 h-4")}
+                    suffix="円"
                   />
                   <SelectField
                     label="入金希望時期"

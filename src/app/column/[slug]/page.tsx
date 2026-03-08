@@ -177,8 +177,8 @@ export default async function ArticleDetailPage({ params }: Props) {
         />
       </article>
 
-      {/* 寄稿者プロフィール（authorIconがある場合＝ゲスト寄稿者） */}
-      {article.authorIcon && (
+      {/* 執筆者プロフィール */}
+      {article.authorIcon ? (
         <section className="mt-10 bg-gradient-to-br from-blue-50 to-slate-50 rounded-2xl p-6 md:p-8 border border-blue-100">
           <p className="text-xs font-bold text-blue-600 mb-4">この記事の執筆者</p>
           <div className="flex items-start gap-4 md:gap-5">
@@ -202,6 +202,28 @@ export default async function ArticleDetailPage({ params }: Props) {
                   </a>
                 </>
               )}
+            </div>
+          </div>
+        </section>
+      ) : (
+        <section className="mt-10 bg-gradient-to-br from-gray-50 to-slate-50 rounded-2xl p-6 md:p-8 border border-gray-100">
+          <p className="text-xs font-bold text-blue-600 mb-4">この記事の執筆者</p>
+          <div className="flex items-start gap-4 md:gap-5">
+            <div className="w-16 h-16 md:w-20 md:h-20 rounded-full bg-gradient-to-br from-blue-500 to-blue-600 flex items-center justify-center shrink-0 shadow-md">
+              <span className="text-white text-2xl md:text-3xl font-black">F</span>
+            </div>
+            <div>
+              <p className="text-lg font-bold text-gray-900">ファクナビ編集部</p>
+              <p className="text-sm text-gray-600 mt-1 leading-relaxed">
+                ファクタリング比較サイト「ファクナビ」の編集部です。FP・税理士監修のもと、ファクタリングや資金調達に関する正確でわかりやすい情報をお届けしています。中小企業・個人事業主の経営者の方が最適な資金調達方法を見つけられるよう、実践的なコンテンツを発信中。
+              </p>
+              <Link
+                href="/column"
+                className="inline-flex items-center gap-1.5 mt-3 text-sm font-bold text-blue-600 hover:text-blue-800 transition-colors"
+              >
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" /></svg>
+                実践経営ノートの記事一覧を見る
+              </Link>
             </div>
           </div>
         </section>

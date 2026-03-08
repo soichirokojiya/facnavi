@@ -18,6 +18,7 @@ export async function POST(request: NextRequest) {
     const body = await request.json();
 
     const {
+      invoice_amount,
       purchase_amount,
       deposit_timing,
       business_type,
@@ -27,10 +28,12 @@ export async function POST(request: NextRequest) {
       phone,
       email,
       message,
+      selected_companies,
     } = body;
 
     // バリデーション
     if (
+      !invoice_amount ||
       !purchase_amount ||
       !deposit_timing ||
       !business_type ||
@@ -68,6 +71,7 @@ export async function POST(request: NextRequest) {
     const { data: insertData, error } = await supabase
       .from("mitsumori_requests")
       .insert({
+        invoice_amount,
         purchase_amount,
         deposit_timing,
         business_type,
@@ -112,8 +116,12 @@ export async function POST(request: NextRequest) {
             <p>以下の内容でお申し込みを受け付けました。</p>
             <table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
               <tr style="border-bottom: 1px solid #e5e7eb;">
-                <td style="padding: 8px; color: #6b7280; width: 140px;">買取希望金額</td>
-                <td style="padding: 8px;">${purchase_amount}</td>
+                <td style="padding: 8px; color: #6b7280; width: 140px;">請求書の額面</td>
+                <td style="padding: 8px;">${Number(invoice_amount).toLocaleString()}円</td>
+              </tr>
+              <tr style="border-bottom: 1px solid #e5e7eb;">
+                <td style="padding: 8px; color: #6b7280;">買取希望金額</td>
+                <td style="padding: 8px;">${Number(purchase_amount).toLocaleString()}円</td>
               </tr>
               <tr style="border-bottom: 1px solid #e5e7eb;">
                 <td style="padding: 8px; color: #6b7280;">入金希望時期</td>
@@ -129,19 +137,6 @@ export async function POST(request: NextRequest) {
               </tr>
             </table>
             <p>提携業者より順次お電話にてご連絡いたしますので、今しばらくお待ちください。</p>
-
-            <div style="background: #eff6ff; border: 1px solid #bfdbfe; border-radius: 8px; padding: 20px; margin: 20px 0;">
-              <h3 style="color: #1e40af; margin: 0 0 12px 0; font-size: 16px;">📄 審査書類のアップロードをお願いします</h3>
-              <p style="margin: 0 0 12px 0;">スムーズな審査のため、以下の書類をアップロードしてください。</p>
-              <ul style="margin: 0 0 16px 0; padding-left: 20px;">
-                <li>売却予定の請求書</li>
-                <li>本人確認書類（運転免許証・マイナンバーカード・保険証のいずれか）</li>
-                <li>通帳コピー・入出金明細（直近3ヶ月分）</li>
-              </ul>
-              <a href="${uploadUrl}" style="display: inline-block; background: #1e40af; color: #ffffff; padding: 12px 24px; border-radius: 6px; text-decoration: none; font-weight: bold;">
-                書類をアップロードする
-              </a>
-            </div>
             <hr style="border: none; border-top: 1px solid #e5e7eb; margin: 20px 0;" />
             <p style="font-size: 12px; color: #9ca3af;">
               このメールはファクナビ（https://facnavi.info）から自動送信されています。<br>
@@ -185,8 +180,12 @@ export async function POST(request: NextRequest) {
                   <td style="padding: 8px;">${email}</td>
                 </tr>
                 <tr style="border-bottom: 1px solid #e5e7eb;">
+                  <td style="padding: 8px; color: #6b7280;">請求書の額面</td>
+                  <td style="padding: 8px;">${Number(invoice_amount).toLocaleString()}円</td>
+                </tr>
+                <tr style="border-bottom: 1px solid #e5e7eb;">
                   <td style="padding: 8px; color: #6b7280;">買取希望金額</td>
-                  <td style="padding: 8px;">${purchase_amount}</td>
+                  <td style="padding: 8px;">${Number(purchase_amount).toLocaleString()}円</td>
                 </tr>
                 <tr style="border-bottom: 1px solid #e5e7eb;">
                   <td style="padding: 8px; color: #6b7280;">入金希望時期</td>
@@ -207,6 +206,9 @@ export async function POST(request: NextRequest) {
                 </tr>
                 ` : ""}
               </table>
+              <div style="text-align: center; margin: 24px 0;">
+                <a href="${siteUrl}/admin/mitsumori" style="display: inline-block; background-color: #1e40af; color: #ffffff; padding: 12px 24px; border-radius: 8px; text-decoration: none; font-weight: bold;">管理画面を開く</a>
+              </div>
               <p style="font-size: 12px; color: #9ca3af; text-align: center;">
                 このメールはファクナビの一括見積もりシステムから自動送信されています。
               </p>
@@ -218,59 +220,22 @@ export async function POST(request: NextRequest) {
       console.error("Failed to send admin notification:", adminEmailError);
     }
 
-    // リード自動割り当て
+    // リード割り当て & 業者へのメール送信
     try {
+      // selected_companiesに対応する業者をcompany_slugで取得
       const { data: partners } = await supabase
         .from("partner_companies")
-        .select("id, supported_prefectures, min_amount, max_amount, supported_industries, sole_proprietor_ok")
+        .select("id, name, email, company_slug")
         .eq("is_active", true);
 
-      if (partners && partners.length > 0) {
-        // 金額帯→数値変換
-        const amountRangeMap: Record<string, { min: number; max: number }> = {
-          "10万円未満": { min: 0, max: 100000 },
-          "10〜30万円未満": { min: 100000, max: 300000 },
-          "30〜50万円未満": { min: 300000, max: 500000 },
-          "50〜100万円未満": { min: 500000, max: 1000000 },
-          "100〜300万円未満": { min: 1000000, max: 3000000 },
-          "300〜500万円未満": { min: 3000000, max: 5000000 },
-          "500〜1,000万円未満": { min: 5000000, max: 10000000 },
-          "1,000〜3,000万円未満": { min: 10000000, max: 30000000 },
-          "3,000〜5,000万円未満": { min: 30000000, max: 50000000 },
-          "5,000万〜1億円未満": { min: 50000000, max: 100000000 },
-          "1〜3億円未満": { min: 100000000, max: 300000000 },
-          "3億円以上": { min: 300000000, max: 999999999 },
-        };
-
-        const requestAmount = amountRangeMap[purchase_amount];
-        const isSoleProprietor = business_type === "個人事業主・フリーランス";
-
-        const matchedPartners = partners.filter((p) => {
-          // 金額チェック
-          if (requestAmount) {
-            if (requestAmount.max < p.min_amount || requestAmount.min > p.max_amount) {
-              return false;
-            }
-          }
-
-          // 業種チェック
-          if (
-            p.supported_industries &&
-            p.supported_industries.length > 0 &&
-            !p.supported_industries.includes(industry)
-          ) {
-            return false;
-          }
-
-          // 個人事業主チェック
-          if (isSoleProprietor && !p.sole_proprietor_ok) {
-            return false;
-          }
-
-          return true;
-        });
+      if (partners && partners.length > 0 && selected_companies && selected_companies.length > 0) {
+        // 選択された業者のみをマッチ
+        const matchedPartners = partners.filter((p) =>
+          selected_companies.includes(p.company_slug)
+        );
 
         if (matchedPartners.length > 0) {
+          // リード割り当て
           const assignments = matchedPartners.map((p) => ({
             mitsumori_request_id: insertData.id,
             partner_company_id: p.id,
@@ -278,11 +243,84 @@ export async function POST(request: NextRequest) {
           }));
 
           await supabase.from("lead_assignments").insert(assignments);
+
+          // 各業者にメール送信
+          for (const partner of matchedPartners) {
+            if (!partner.email) continue;
+            try {
+              await resend.emails.send({
+                from: `ファクナビ <${fromEmail}>`,
+                to: partner.email,
+                subject: `【ファクナビ】新しい見積もり依頼が届きました`,
+                html: `
+                  <div style="font-family: sans-serif; max-width: 600px; margin: 0 auto; padding: 20px;">
+                    <h2 style="color: #1e40af; border-bottom: 2px solid #1e40af; padding-bottom: 10px;">
+                      新しい見積もり依頼
+                    </h2>
+                    <p>${partner.name} 様</p>
+                    <p>ファクナビ経由で新しい見積もり依頼が届きました。</p>
+                    <table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
+                      <tr style="border-bottom: 1px solid #e5e7eb;">
+                        <td style="padding: 8px; color: #6b7280; width: 140px;">会社名</td>
+                        <td style="padding: 8px; font-weight: bold;">${company_name}</td>
+                      </tr>
+                      <tr style="border-bottom: 1px solid #e5e7eb;">
+                        <td style="padding: 8px; color: #6b7280;">担当者名</td>
+                        <td style="padding: 8px;">${contact_name}</td>
+                      </tr>
+                      <tr style="border-bottom: 1px solid #e5e7eb;">
+                        <td style="padding: 8px; color: #6b7280;">電話番号</td>
+                        <td style="padding: 8px;">${phone}</td>
+                      </tr>
+                      <tr style="border-bottom: 1px solid #e5e7eb;">
+                        <td style="padding: 8px; color: #6b7280;">メール</td>
+                        <td style="padding: 8px;">${email}</td>
+                      </tr>
+                      <tr style="border-bottom: 1px solid #e5e7eb;">
+                        <td style="padding: 8px; color: #6b7280;">請求書の額面</td>
+                        <td style="padding: 8px;">${Number(invoice_amount).toLocaleString()}円</td>
+                      </tr>
+                      <tr style="border-bottom: 1px solid #e5e7eb;">
+                        <td style="padding: 8px; color: #6b7280;">買取希望金額</td>
+                        <td style="padding: 8px;">${Number(purchase_amount).toLocaleString()}円</td>
+                      </tr>
+                      <tr style="border-bottom: 1px solid #e5e7eb;">
+                        <td style="padding: 8px; color: #6b7280;">入金希望時期</td>
+                        <td style="padding: 8px;">${deposit_timing}</td>
+                      </tr>
+                      <tr style="border-bottom: 1px solid #e5e7eb;">
+                        <td style="padding: 8px; color: #6b7280;">事業形態</td>
+                        <td style="padding: 8px;">${business_type}</td>
+                      </tr>
+                      <tr style="border-bottom: 1px solid #e5e7eb;">
+                        <td style="padding: 8px; color: #6b7280;">業種</td>
+                        <td style="padding: 8px;">${industry}</td>
+                      </tr>
+                      ${message ? `
+                      <tr style="border-bottom: 1px solid #e5e7eb;">
+                        <td style="padding: 8px; color: #6b7280;">ご相談内容</td>
+                        <td style="padding: 8px;">${message}</td>
+                      </tr>
+                      ` : ""}
+                    </table>
+                    <div style="text-align: center; margin: 24px 0;">
+                      <a href="${siteUrl}/partner/leads" style="display: inline-block; background-color: #1e40af; color: #ffffff; padding: 12px 24px; border-radius: 8px; text-decoration: none; font-weight: bold;">リード一覧を確認する</a>
+                    </div>
+                    <hr style="border: none; border-top: 1px solid #e5e7eb; margin: 20px 0;" />
+                    <p style="font-size: 12px; color: #9ca3af;">
+                      このメールはファクナビの一括見積もりシステムから自動送信されています。
+                    </p>
+                  </div>
+                `,
+              });
+            } catch (partnerEmailError) {
+              console.error(`Failed to send email to partner ${partner.name}:`, partnerEmailError);
+            }
+          }
         }
       }
     } catch (assignError) {
       console.error("Lead assignment error:", assignError);
-      // 割り当てエラーは申し込み自体は成功とする
     }
 
     return NextResponse.json({ success: true });

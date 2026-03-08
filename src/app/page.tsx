@@ -68,7 +68,7 @@ export default async function HomePage() {
           <div className="absolute bottom-0 -left-32 w-80 h-80 bg-emerald-100/40 rounded-full blur-3xl" />
         </div>
 
-        <div className="relative max-w-5xl mx-auto px-4 py-10 md:py-16">
+        <div className="relative max-w-5xl mx-auto px-4 pt-10 md:pt-16 pb-6 md:pb-8">
           {/* メイン：見出し + バナー */}
           <div className="flex flex-col md:flex-row md:items-center gap-8 md:gap-12">
             <div className="flex-1 min-w-0 text-center md:text-left">
@@ -122,29 +122,31 @@ export default async function HomePage() {
           </div>
 
           {/* 統計バー — ヒーロー下部に横並び */}
-          <div className="mt-8 flex items-center justify-center gap-5 md:gap-8">
-            {[
-              { icon: <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={1.5}><path strokeLinecap="round" strokeLinejoin="round" d="M2.25 21h19.5m-18-18v18m10.5-18v18m6-13.5V21M6.75 6.75h.75m-.75 3h.75m-.75 3h.75m3-6h.75m-.75 3h.75m-.75 3h.75M6.75 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3h12m-.75 4.5H21m-3.75 3H21m-3.75 3H21" /></svg>, value: <>{companies.length}<span className="text-lg font-bold">社</span></>, label: "掲載社数", accent: "text-blue-600", iconBg: "bg-blue-50 text-blue-500" },
-              { icon: <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={1.5}><path strokeLinecap="round" strokeLinejoin="round" d="M9 7.5l3 4.5m0 0l3-4.5M12 12v5.25M15 12H9m6 3H9m12-3a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>, value: <>0<span className="text-lg font-bold">円</span></>, label: "利用料金", accent: "text-emerald-600", iconBg: "bg-emerald-50 text-emerald-500" },
-              { icon: <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={1.5}><path strokeLinecap="round" strokeLinejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>, value: <>即日</>, label: "最短入金", accent: "text-orange-600", iconBg: "bg-orange-50 text-orange-500" },
-            ].map((stat, i) => (
-              <div key={i} className="flex items-center gap-4 bg-white/90 backdrop-blur-sm border border-gray-100 rounded-2xl px-7 md:px-10 py-6 md:py-7 shadow-md hover:shadow-lg transition-shadow">
-                <div className={`w-14 h-14 md:w-16 md:h-16 ${stat.iconBg} rounded-2xl flex items-center justify-center shrink-0`}>
-                  {stat.icon}
+          <div className="mt-8 max-w-3xl mx-auto">
+            <div className="grid grid-cols-3 gap-3 md:gap-5">
+              {[
+                { icon: <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={1.5}><path strokeLinecap="round" strokeLinejoin="round" d="M2.25 21h19.5m-18-18v18m10.5-18v18m6-13.5V21M6.75 6.75h.75m-.75 3h.75m-.75 3h.75m3-6h.75m-.75 3h.75m-.75 3h.75M6.75 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3h12m-.75 4.5H21m-3.75 3H21m-3.75 3H21" /></svg>, value: <>{companies.length}<span className="text-lg font-bold">社</span></>, label: "掲載社数", accent: "text-blue-600", iconBg: "bg-blue-50 text-blue-500" },
+                { icon: <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={1.5}><path strokeLinecap="round" strokeLinejoin="round" d="M9 7.5l3 4.5m0 0l3-4.5M12 12v5.25M15 12H9m6 3H9m12-3a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>, value: <>0<span className="text-lg font-bold">円</span></>, label: "利用料金", accent: "text-emerald-600", iconBg: "bg-emerald-50 text-emerald-500" },
+                { icon: <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={1.5}><path strokeLinecap="round" strokeLinejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>, value: <>即日</>, label: "最短入金", accent: "text-orange-600", iconBg: "bg-orange-50 text-orange-500" },
+              ].map((stat, i) => (
+                <div key={i} className="flex items-center justify-center gap-3 md:gap-4 bg-white/90 backdrop-blur-sm border border-gray-100 rounded-2xl px-4 md:px-6 py-5 md:py-6 shadow-md hover:shadow-lg transition-shadow">
+                  <div className={`w-12 h-12 md:w-14 md:h-14 ${stat.iconBg} rounded-2xl flex items-center justify-center shrink-0`}>
+                    {stat.icon}
+                  </div>
+                  <div>
+                    <div className={`text-3xl md:text-4xl font-black leading-none tracking-tighter ${stat.accent}`}>{stat.value}</div>
+                    <div className="text-xs md:text-sm font-bold text-gray-400 mt-1">{stat.label}</div>
+                  </div>
                 </div>
-                <div>
-                  <div className={`text-4xl md:text-5xl font-black leading-none tracking-tighter ${stat.accent}`}>{stat.value}</div>
-                  <div className="text-sm font-bold text-gray-400 mt-1.5">{stat.label}</div>
-                </div>
-              </div>
-            ))}
+              ))}
+            </div>
+            <p className="text-[10px] text-gray-300 text-center mt-2">※ <CurrentDate /> 現在</p>
           </div>
-          <p className="text-[10px] text-gray-300 text-center mt-2">※ <CurrentDate /> 現在</p>
 
           {/* 検索バー + タグ */}
-          <div className="mt-6 max-w-2xl mx-auto">
+          <div className="mt-5 max-w-[480px] mx-auto">
             <KeywordSearch companies={searchData} />
-            <div className="mt-2 flex flex-wrap items-center gap-1.5">
+            <div className="mt-2 flex flex-wrap items-center justify-center gap-1.5">
               <span className="text-[10px] text-gray-400 font-bold">人気の検索:</span>
               {[
                 { label: "即日入金", href: "/ranking?category=speed" },
@@ -162,11 +164,22 @@ export default async function HomePage() {
               ))}
             </div>
           </div>
+
+          {/* 広告 */}
+          <div className="text-center mt-5">
+            <a href="https://px.a8.net/svt/ejp?a8mat=4AX5KD+9QOC36+4JGG+BXIYP" rel="nofollow">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img width="468" height="60" alt="" src="https://www26.a8.net/svt/bgt?aid=260207725589&wid=001&eno=01&mid=s00000021184002004000&mc=1" className="inline-block max-w-full h-auto" />
+            </a>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img width="1" height="1" src="https://www13.a8.net/0.gif?a8mat=4AX5KD+9QOC36+4JGG+BXIYP" alt="" />
+            <p className="text-[9px] text-gray-300 mt-1">PR</p>
+          </div>
         </div>
       </section>
 
       {/* ━━━ おすすめ TOP3 ━━━ */}
-      <section className="py-10 md:py-14 bg-white">
+      <section className="pt-6 md:pt-8 pb-10 md:pb-14 bg-white">
         <div className="max-w-5xl mx-auto px-4">
           <SectionHeading sub="RECOMMEND" center>
             おすすめファクタリング会社
@@ -263,21 +276,37 @@ export default async function HomePage() {
         <div className="max-w-5xl mx-auto px-4">
           <Link
             href="/column/factoring-nyumon"
-            className="block bg-gradient-to-r from-blue-600 to-blue-700 rounded-2xl p-6 md:p-8 shadow-lg hover:shadow-xl hover:-translate-y-0.5 transition-all duration-300"
+            className="group block relative overflow-hidden bg-gradient-to-r from-sky-400 via-blue-400 to-indigo-400 rounded-2xl p-6 md:p-8 shadow-lg hover:shadow-2xl hover:-translate-y-1 transition-all duration-300"
           >
-            <div className="flex items-center gap-4 md:gap-6">
-              <div className="shrink-0 w-14 h-14 md:w-16 md:h-16 rounded-full overflow-hidden bg-white/20">
-                <Image src="/images/roi-icon.webp" width={64} height={64} alt="ファクタリング専門家 ろい" className="w-full h-full object-cover" />
+            {/* 背景装飾 */}
+            <div className="absolute inset-0 pointer-events-none">
+              <div className="absolute -top-10 -right-10 w-40 h-40 bg-white/10 rounded-full blur-2xl" />
+              <div className="absolute -bottom-8 -left-8 w-32 h-32 bg-white/10 rounded-full blur-2xl" />
+            </div>
+
+            <div className="relative flex items-center gap-5 md:gap-7">
+              {/* ろいさんアイコン */}
+              <div className="shrink-0">
+                <div className="w-16 h-16 md:w-20 md:h-20 rounded-full overflow-hidden ring-3 ring-white/40 shadow-lg">
+                  <Image src="/images/roi-icon.webp" width={80} height={80} alt="ファクタリング専門家 ろい" className="w-full h-full object-cover" />
+                </div>
               </div>
+
+              {/* テキスト */}
               <div className="flex-1 min-w-0">
-                <p className="text-xs font-bold text-blue-200 mb-1">FACTORING GUIDE</p>
-                <h3 className="text-base md:text-lg font-bold text-white mb-1">ファクタリング入門</h3>
-                <p className="text-sm text-blue-200 leading-relaxed">ファクタリング専門家「ろい」氏が初心者向けに基礎知識をわかりやすく解説</p>
+                <div className="flex items-center gap-2 mb-1.5">
+                  <span className="text-[10px] font-bold text-white/80 bg-white/15 px-2.5 py-0.5 rounded-full">FACTORING GUIDE</span>
+                  <span className="text-[10px] font-bold text-amber-200 bg-amber-400/20 px-2.5 py-0.5 rounded-full">寄稿記事</span>
+                </div>
+                <h3 className="text-lg md:text-xl font-black text-white mb-1.5 tracking-tight">ファクタリング入門</h3>
+                <p className="text-sm text-white/80 leading-relaxed">30社以上の利用経験を持つ専門家「ろい」氏が、仕組み・手数料・選び方をわかりやすく解説</p>
               </div>
+
+              {/* CTA */}
               <div className="shrink-0 hidden sm:block">
-                <span className="inline-flex items-center gap-1 text-sm font-bold text-white bg-white/20 px-4 py-2 rounded-full">
+                <span className="inline-flex items-center gap-1.5 text-sm font-bold text-blue-600 bg-white px-5 py-2.5 rounded-full shadow-md group-hover:shadow-lg group-hover:scale-105 transition-all duration-300">
                   記事を読む
-                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2}>
+                  <svg className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2.5}>
                     <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
                   </svg>
                 </span>
@@ -476,25 +505,30 @@ export default async function HomePage() {
       {/* ━━━ 一括見積もりCTA: 画像付き ━━━ */}
       <section className="py-10 md:py-14 bg-white">
         <div className="max-w-4xl mx-auto px-4">
-          <div className="bg-gradient-to-br from-blue-600 to-blue-700 rounded-2xl overflow-hidden">
-            <div className="flex flex-col md:flex-row items-center">
-              <div className="md:w-2/5 flex items-center justify-center p-4">
+          <div className="relative overflow-hidden bg-gradient-to-r from-sky-400 via-blue-400 to-indigo-400 rounded-2xl">
+            {/* 背景装飾 */}
+            <div className="absolute inset-0 pointer-events-none">
+              <div className="absolute -top-16 -right-16 w-56 h-56 bg-white/10 rounded-full blur-3xl" />
+              <div className="absolute -bottom-12 -left-12 w-44 h-44 bg-white/10 rounded-full blur-3xl" />
+            </div>
+            <div className="relative flex flex-col md:flex-row items-center">
+              <div className="md:w-2/5 flex flex-col items-center justify-center p-4">
                 <RotationBanner />
-                <p className="text-[9px] text-blue-300 text-center mt-1">PR</p>
+                <p className="text-[9px] text-white/50 text-center mt-1">PR</p>
               </div>
               <div className="md:w-3/5 p-6 md:p-8 text-center md:text-left">
-                <p className="inline-block text-[10px] font-bold text-amber-300 bg-amber-400/20 border border-amber-400/40 rounded-full px-3 py-0.5 mb-2">
+                <p className="inline-block text-[10px] font-bold text-amber-200 bg-amber-400/20 border border-amber-300/30 rounded-full px-3 py-0.5 mb-3">
                   2026年4月サービス開始予定
                 </p>
-                <h2 className="text-lg md:text-xl font-bold text-white mb-2">
+                <h2 className="text-xl md:text-2xl font-black text-white mb-2 tracking-tight">
                   一括見積もりで最適な1社を
                 </h2>
-                <p className="text-sm text-blue-200 mb-4">
+                <p className="text-sm text-white/80 mb-5">
                   複数社にまとめて見積もり依頼。完全無料。
                 </p>
                 <Link
                   href="/mitsumori"
-                  className="inline-block px-7 py-3 bg-gradient-to-br from-emerald-500 to-emerald-600 text-white font-bold text-sm rounded-full shadow-lg shadow-emerald-500/30 hover:shadow-xl hover:-translate-y-0.5 transition-all duration-300"
+                  className="inline-block px-7 py-3 bg-white text-blue-600 font-bold text-sm rounded-full shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300"
                 >
                   無料で一括見積もりする →
                 </Link>
