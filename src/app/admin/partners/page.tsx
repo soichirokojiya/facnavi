@@ -126,10 +126,10 @@ export default function AdminPartnersPage() {
       email: p.email || "",
       minAmount: String(p.min_amount),
       maxAmount: String(p.max_amount),
-      selectedPrefectures: p.supported_prefectures || [],
-      supportedIndustries: p.supported_industries || [...INDUSTRIES] as string[],
-      feePerLead: String(p.fee_per_lead || 0),
-      soleProprietorOk: p.sole_proprietor_ok,
+      selectedPrefectures: p.supported_prefectures?.length ? p.supported_prefectures : [...PREFECTURES],
+      supportedIndustries: p.supported_industries?.length ? p.supported_industries : [...INDUSTRIES] as string[],
+      feePerLead: String(p.fee_per_lead || 15000),
+      soleProprietorOk: p.sole_proprietor_ok ?? true,
       isActive: p.is_active,
     });
     setFormError("");
