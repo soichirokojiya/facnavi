@@ -116,9 +116,10 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    if (!/^[0-9\-]+$/.test(phone)) {
+    const digitsOnly = phone.replace(/[-\s]/g, "");
+    if (!/^[0-9]+$/.test(digitsOnly) || digitsOnly.length < 10 || digitsOnly.length > 11) {
       return NextResponse.json(
-        { error: "正しい電話番号を入力してください。" },
+        { error: "正しい電話番号を入力してください（10〜11桁）。" },
         { status: 400 }
       );
     }
