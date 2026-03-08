@@ -25,12 +25,14 @@ export async function GET(
   const { id } = await params;
   const supabase = createClient(supabaseUrl, supabaseKey);
 
+  // まず基本情報を取得
   const { data, error } = await supabase
     .from("lead_assignments")
     .select(
       `
       id,
       status,
+      viewed_at,
       created_at,
       mitsumori_requests (
         id,
@@ -38,19 +40,12 @@ export async function GET(
         contact_name,
         phone,
         email,
-        amount_range,
+        invoice_amount,
+        purchase_amount,
         deposit_timing,
-        prefecture,
         industry,
         business_type,
         message,
-        created_at
-      ),
-      takedown_requests (
-        id,
-        reason,
-        detail,
-        status,
         created_at
       )
     `
@@ -60,11 +55,29 @@ export async function GET(
     .single();
 
   if (error || !data) {
+    console.error("Lead detail fetch error:", JSON.stringify(error), "id:", id, "partnerId:", partnerId);
     return NextResponse.json(
       { error: "リードが見つかりません。" },
       { status: 404 }
     );
   }
 
-  return NextResponse.json({ data });
+  // 取り下げ依頼を別途取得
+  const { data: takedowns } = await supabase
+    .from("takedown_requests")
+    .select("id, reason, detail, status, created_at")
+    .eq("lead_assignment_id", id)
+    .order("created_at", { ascending: false });
+
+  const result = { ...data, takedown_requests: takedowns || [] };
+
+  // 未読→既読にする
+  if (!data.viewed_at) {
+    await supabase
+      .from("lead_assignments")
+      .update({ viewed_at: new Date().toISOString() })
+      .eq("id", id);
+  }
+
+  return NextResponse.json({ data: result });
 }

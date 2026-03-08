@@ -3,14 +3,21 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
+function formatYen(v: string | null | undefined): string {
+  if (!v) return "-";
+  const n = Number(v);
+  return isNaN(n) ? v : `${n.toLocaleString()}円`;
+}
+
 interface MitsumoriRequest {
   id: string;
   company_name: string;
   contact_name: string;
   phone: string;
   email: string;
-  amount_range: string;
-  prefecture: string;
+  invoice_amount: string | null;
+  purchase_amount: string;
+  deposit_timing: string;
   industry: string;
   business_type: string;
   created_at: string;
@@ -19,6 +26,7 @@ interface MitsumoriRequest {
 interface LeadAssignment {
   id: string;
   status: string;
+  viewed_at: string | null;
   created_at: string;
   mitsumori_requests: MitsumoriRequest;
 }
@@ -68,7 +76,10 @@ export default function PartnerLeadsPage() {
 
   return (
     <div>
-      <h1 className="text-2xl font-bold text-gray-900 mb-6">リード一覧</h1>
+      <h1 className="text-2xl font-bold text-gray-900 mb-2">リード一覧</h1>
+      <p className="text-sm text-amber-700 bg-amber-50 border border-amber-200 rounded-lg px-4 py-2 mb-6">
+        リード送付から5営業日以内に取り下げ依頼がない場合、自動的に承認（課金確定）となります。
+      </p>
 
       <div className="flex gap-2 mb-4">
         {[
@@ -108,10 +119,10 @@ export default function PartnerLeadsPage() {
                     担当者
                   </th>
                   <th className="text-left px-4 py-3 font-medium text-gray-600">
-                    金額帯
+                    請求書額面
                   </th>
                   <th className="text-left px-4 py-3 font-medium text-gray-600">
-                    都道府県
+                    買取希望金額
                   </th>
                   <th className="text-left px-4 py-3 font-medium text-gray-600">
                     ステータス
@@ -124,18 +135,21 @@ export default function PartnerLeadsPage() {
               </thead>
               <tbody className="divide-y divide-gray-100">
                 {filtered.map((lead) => (
-                  <tr key={lead.id} className="hover:bg-gray-50">
+                  <tr key={lead.id} className={`hover:bg-gray-50 ${!lead.viewed_at ? "bg-blue-50/50" : ""}`}>
                     <td className="px-4 py-3 font-medium text-gray-900">
-                      {lead.mitsumori_requests.company_name}
+                      <span className="flex items-center gap-2">
+                        {!lead.viewed_at && <span className="w-2 h-2 bg-blue-500 rounded-full shrink-0" />}
+                        {lead.mitsumori_requests.company_name}
+                      </span>
                     </td>
                     <td className="px-4 py-3 text-gray-600">
                       {lead.mitsumori_requests.contact_name}
                     </td>
                     <td className="px-4 py-3 text-gray-600">
-                      {lead.mitsumori_requests.amount_range}
+                      {formatYen(lead.mitsumori_requests.invoice_amount)}
                     </td>
                     <td className="px-4 py-3 text-gray-600">
-                      {lead.mitsumori_requests.prefecture}
+                      {formatYen(lead.mitsumori_requests.purchase_amount)}
                     </td>
                     <td className="px-4 py-3">
                       <span

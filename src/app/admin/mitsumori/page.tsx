@@ -3,14 +3,22 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
+function formatYen(v: string | null | undefined): string {
+  if (!v) return "-";
+  const n = Number(v);
+  return isNaN(n) ? v : `${n.toLocaleString()}円`;
+}
+
 interface MitsumoriRequest {
   id: string;
   created_at: string;
   company_name: string;
   contact_name: string;
-  amount_range: string;
+  invoice_amount: string | null;
+  purchase_amount: string;
   deposit_timing: string;
-  prefecture: string;
+  business_type: string;
+  industry: string;
 }
 
 export default function AdminMitsumoriPage() {
@@ -50,9 +58,10 @@ export default function AdminMitsumoriPage() {
                   <th className="text-left px-4 py-3 font-medium text-gray-600">申込日</th>
                   <th className="text-left px-4 py-3 font-medium text-gray-600">会社名</th>
                   <th className="text-left px-4 py-3 font-medium text-gray-600 hidden sm:table-cell">担当者</th>
-                  <th className="text-left px-4 py-3 font-medium text-gray-600 hidden md:table-cell">金額帯</th>
+                  <th className="text-left px-4 py-3 font-medium text-gray-600 hidden md:table-cell">請求書額面</th>
+                  <th className="text-left px-4 py-3 font-medium text-gray-600 hidden md:table-cell">買取希望</th>
                   <th className="text-left px-4 py-3 font-medium text-gray-600 hidden md:table-cell">入金希望</th>
-                  <th className="text-left px-4 py-3 font-medium text-gray-600 hidden lg:table-cell">都道府県</th>
+                  <th className="text-left px-4 py-3 font-medium text-gray-600 hidden lg:table-cell">業種</th>
                 </tr>
               </thead>
               <tbody>
@@ -78,9 +87,10 @@ export default function AdminMitsumoriPage() {
                       </Link>
                     </td>
                     <td className="px-4 py-3 hidden sm:table-cell">{req.contact_name}</td>
-                    <td className="px-4 py-3 hidden md:table-cell">{req.amount_range}</td>
+                    <td className="px-4 py-3 hidden md:table-cell">{formatYen(req.invoice_amount)}</td>
+                    <td className="px-4 py-3 hidden md:table-cell">{formatYen(req.purchase_amount)}</td>
                     <td className="px-4 py-3 hidden md:table-cell">{req.deposit_timing}</td>
-                    <td className="px-4 py-3 hidden lg:table-cell">{req.prefecture}</td>
+                    <td className="px-4 py-3 hidden lg:table-cell">{req.industry}</td>
                   </tr>
                 ))}
               </tbody>

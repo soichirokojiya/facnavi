@@ -12,6 +12,7 @@ interface Partner {
   min_amount: number;
   max_amount: number;
   supported_industries: string[];
+  fee_per_lead: number;
   sole_proprietor_ok: boolean;
   is_active: boolean;
   created_at: string;
@@ -32,27 +33,51 @@ interface CompanyOption {
   name: string;
 }
 
+interface FormState {
+  name: string;
+  companySlug: string;
+  companySearch: string;
+  loginId: string;
+  password: string;
+  email: string;
+  minAmount: string;
+  maxAmount: string;
+  selectedPrefectures: string[];
+  supportedIndustries: string;
+  feePerLead: string;
+  soleProprietorOk: boolean;
+  isActive: boolean;
+}
+
+const emptyForm: FormState = {
+  name: "",
+  companySlug: "",
+  companySearch: "",
+  loginId: "",
+  password: "",
+  email: "",
+  minAmount: "0",
+  maxAmount: "999999999",
+  selectedPrefectures: [],
+  supportedIndustries: "",
+  feePerLead: "0",
+  soleProprietorOk: true,
+  isActive: true,
+};
+
 export default function AdminPartnersPage() {
   const [partners, setPartners] = useState<Partner[]>([]);
   const [companyOptions, setCompanyOptions] = useState<CompanyOption[]>([]);
   const [loading, setLoading] = useState(true);
   const [showForm, setShowForm] = useState(false);
-
-  // フォーム
-  const [name, setName] = useState("");
-  const [companySlug, setCompanySlug] = useState("");
-  const [companySearch, setCompanySearch] = useState("");
+  const [editingId, setEditingId] = useState<string | null>(null);
+  const [form, setForm] = useState<FormState>(emptyForm);
   const [showCompanyDropdown, setShowCompanyDropdown] = useState(false);
-  const [loginId, setLoginId] = useState("");
-  const [password, setPassword] = useState("");
-  const [minAmount, setMinAmount] = useState("0");
-  const [maxAmount, setMaxAmount] = useState("999999999");
-  const [selectedPrefectures, setSelectedPrefectures] = useState<string[]>([]);
-  const [supportedIndustries, setSupportedIndustries] = useState("");
-  const [soleProprietorOk, setSoleProprietorOk] = useState(true);
-  const [isActive, setIsActive] = useState(true);
   const [submitting, setSubmitting] = useState(false);
   const [formError, setFormError] = useState("");
+  const [deleting, setDeleting] = useState<string | null>(null);
+
+  const companyDropdownRef = useRef<HTMLDivElement>(null);
 
   const fetchPartners = async () => {
     try {
@@ -65,18 +90,6 @@ export default function AdminPartnersPage() {
       setLoading(false);
     }
   };
-
-  const companyDropdownRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    const handleClickOutside = (e: MouseEvent) => {
-      if (companyDropdownRef.current && !companyDropdownRef.current.contains(e.target as Node)) {
-        setShowCompanyDropdown(false);
-      }
-    };
-    document.addEventListener("mousedown", handleClickOutside);
-    return () => document.removeEventListener("mousedown", handleClickOutside);
-  }, []);
 
   const fetchCompanyOptions = async () => {
     try {
@@ -93,49 +106,99 @@ export default function AdminPartnersPage() {
     fetchCompanyOptions();
   }, []);
 
+  useEffect(() => {
+    const handleClickOutside = (e: MouseEvent) => {
+      if (companyDropdownRef.current && !companyDropdownRef.current.contains(e.target as Node)) {
+        setShowCompanyDropdown(false);
+      }
+    };
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, []);
+
+  const openNewForm = () => {
+    setEditingId(null);
+    setForm(emptyForm);
+    setFormError("");
+    setShowForm(true);
+  };
+
+  const openEditForm = (p: Partner) => {
+    const companyName = companyOptions.find((c) => c.slug === p.company_slug)?.name || "";
+    setEditingId(p.id);
+    setForm({
+      name: p.name,
+      companySlug: p.company_slug || "",
+      companySearch: companyName || p.company_slug || "",
+      loginId: p.login_id,
+      password: "",
+      email: p.email || "",
+      minAmount: String(p.min_amount),
+      maxAmount: String(p.max_amount),
+      selectedPrefectures: p.supported_prefectures || [],
+      supportedIndustries: (p.supported_industries || []).join(", "),
+      feePerLead: String(p.fee_per_lead || 0),
+      soleProprietorOk: p.sole_proprietor_ok,
+      isActive: p.is_active,
+    });
+    setFormError("");
+    setShowForm(true);
+  };
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setFormError("");
     setSubmitting(true);
 
     try {
-      const res = await fetch("/api/admin/partners", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          company_slug: companySlug || null,
-          name,
-          login_id: loginId,
-          password,
-          supported_prefectures: selectedPrefectures,
-          min_amount: parseInt(minAmount) || 0,
-          max_amount: parseInt(maxAmount) || 999999999,
-          supported_industries: supportedIndustries
-            ? supportedIndustries.split(",").map((s) => s.trim())
-            : [],
-          sole_proprietor_ok: soleProprietorOk,
-          is_active: isActive,
-        }),
-      });
+      const payload = {
+        company_slug: form.companySlug || null,
+        name: form.name,
+        login_id: form.loginId,
+        email: form.email || null,
+        supported_prefectures: form.selectedPrefectures,
+        min_amount: parseInt(form.minAmount) || 0,
+        max_amount: parseInt(form.maxAmount) || 999999999,
+        supported_industries: form.supportedIndustries
+          ? form.supportedIndustries.split(",").map((s) => s.trim())
+          : [],
+        fee_per_lead: parseInt(form.feePerLead) || 0,
+        sole_proprietor_ok: form.soleProprietorOk,
+        is_active: form.isActive,
+      };
+
+      let res: Response;
+      if (editingId) {
+        res = await fetch("/api/admin/partners", {
+          method: "PATCH",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            id: editingId,
+            ...payload,
+            ...(form.password ? { password: form.password } : {}),
+          }),
+        });
+      } else {
+        if (!form.password) {
+          setFormError("パスワードは必須です。");
+          setSubmitting(false);
+          return;
+        }
+        res = await fetch("/api/admin/partners", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ ...payload, password: form.password }),
+        });
+      }
 
       const data = await res.json();
       if (!res.ok) {
-        setFormError(data.error || "登録に失敗しました。");
+        setFormError(data.error || "保存に失敗しました。");
         return;
       }
 
-      // リセット
-      setName("");
-      setCompanySlug("");
-      setCompanySearch("");
-      setLoginId("");
-      setPassword("");
-      setMinAmount("0");
-      setMaxAmount("999999999");
-      setSelectedPrefectures([]);
-      setSupportedIndustries("");
-      setSoleProprietorOk(true);
-      setIsActive(true);
+      setForm(emptyForm);
+      setEditingId(null);
       setShowForm(false);
       fetchPartners();
     } catch {
@@ -145,10 +208,35 @@ export default function AdminPartnersPage() {
     }
   };
 
+  const handleDelete = async (p: Partner) => {
+    if (!confirm(`「${p.name}」を削除しますか？この操作は取り消せません。`)) return;
+    setDeleting(p.id);
+    try {
+      const res = await fetch("/api/admin/partners", {
+        method: "DELETE",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ id: p.id }),
+      });
+      if (res.ok) {
+        fetchPartners();
+      } else {
+        const data = await res.json();
+        alert(data.error || "削除に失敗しました。");
+      }
+    } catch {
+      alert("通信エラーが発生しました。");
+    } finally {
+      setDeleting(null);
+    }
+  };
+
   const togglePrefecture = (pref: string) => {
-    setSelectedPrefectures((prev) =>
-      prev.includes(pref) ? prev.filter((p) => p !== pref) : [...prev, pref]
-    );
+    setForm((prev) => ({
+      ...prev,
+      selectedPrefectures: prev.selectedPrefectures.includes(pref)
+        ? prev.selectedPrefectures.filter((p) => p !== pref)
+        : [...prev.selectedPrefectures, pref],
+    }));
   };
 
   const formatAmount = (amount: number) => {
@@ -169,7 +257,7 @@ export default function AdminPartnersPage() {
       <div className="flex items-center justify-between mb-6">
         <h1 className="text-2xl font-bold text-gray-900">提携業者管理</h1>
         <button
-          onClick={() => setShowForm(!showForm)}
+          onClick={() => (showForm ? setShowForm(false) : openNewForm())}
           className="bg-primary text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-primary-dark transition-colors"
         >
           {showForm ? "閉じる" : "新規登録"}
@@ -178,7 +266,9 @@ export default function AdminPartnersPage() {
 
       {showForm && (
         <div className="bg-white rounded-xl border border-gray-200 p-6 mb-6">
-          <h2 className="text-lg font-bold text-gray-900 mb-4">業者登録</h2>
+          <h2 className="text-lg font-bold text-gray-900 mb-4">
+            {editingId ? "業者編集" : "業者登録"}
+          </h2>
           <form onSubmit={handleSubmit} className="space-y-4">
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div>
@@ -187,8 +277,8 @@ export default function AdminPartnersPage() {
                 </label>
                 <input
                   type="text"
-                  value={name}
-                  onChange={(e) => setName(e.target.value)}
+                  value={form.name}
+                  onChange={(e) => setForm({ ...form, name: e.target.value })}
                   className="w-full px-3 py-2 border-2 border-gray-200 rounded-lg focus:ring-3 focus:ring-primary/10 focus:border-primary outline-none"
                   required
                 />
@@ -199,42 +289,30 @@ export default function AdminPartnersPage() {
                 </label>
                 <input
                   type="text"
-                  value={companySearch}
+                  value={form.companySearch}
                   onChange={(e) => {
-                    setCompanySearch(e.target.value);
+                    setForm({ ...form, companySearch: e.target.value, companySlug: e.target.value ? form.companySlug : "" });
                     setShowCompanyDropdown(true);
-                    if (!e.target.value) {
-                      setCompanySlug("");
-                    }
                   }}
                   onFocus={() => setShowCompanyDropdown(true)}
                   className="w-full px-3 py-2 border-2 border-gray-200 rounded-lg focus:ring-3 focus:ring-primary/10 focus:border-primary outline-none"
                   placeholder="会社名を入力して検索..."
                 />
-                {!companySlug && !companySearch && (
-                  <p className="text-xs text-gray-400 mt-1">
-                    該当する会社がない場合は、先に <code className="bg-gray-100 px-1 rounded">content/companies/</code> にJSONを追加してください。
-                  </p>
-                )}
-                {companySlug && (
+                {form.companySlug && (
                   <button
                     type="button"
-                    onClick={() => {
-                      setCompanySlug("");
-                      setCompanySearch("");
-                    }}
+                    onClick={() => setForm({ ...form, companySlug: "", companySearch: "" })}
                     className="absolute right-2 top-[34px] text-gray-400 hover:text-gray-600 text-sm"
                   >
                     ✕
                   </button>
                 )}
-                {showCompanyDropdown && companySearch && (
+                {showCompanyDropdown && form.companySearch && (
                   <div className="absolute z-10 w-full mt-1 bg-white border border-gray-200 rounded-lg shadow-lg max-h-48 overflow-y-auto">
                     <button
                       type="button"
                       onClick={() => {
-                        setCompanySlug("");
-                        setCompanySearch("");
+                        setForm({ ...form, companySlug: "", companySearch: "" });
                         setShowCompanyDropdown(false);
                       }}
                       className="w-full text-left px-3 py-2 text-sm text-gray-400 hover:bg-gray-50"
@@ -243,8 +321,8 @@ export default function AdminPartnersPage() {
                     </button>
                     {companyOptions
                       .filter((c) =>
-                        c.name.toLowerCase().includes(companySearch.toLowerCase()) ||
-                        c.slug.toLowerCase().includes(companySearch.toLowerCase())
+                        c.name.toLowerCase().includes(form.companySearch.toLowerCase()) ||
+                        c.slug.toLowerCase().includes(form.companySearch.toLowerCase())
                       )
                       .slice(0, 20)
                       .map((c) => (
@@ -252,13 +330,16 @@ export default function AdminPartnersPage() {
                           key={c.slug}
                           type="button"
                           onClick={() => {
-                            setCompanySlug(c.slug);
-                            setCompanySearch(c.name);
+                            setForm({
+                              ...form,
+                              companySlug: c.slug,
+                              companySearch: c.name,
+                              name: form.name || c.name,
+                            });
                             setShowCompanyDropdown(false);
-                            if (!name) setName(c.name);
                           }}
                           className={`w-full text-left px-3 py-2 text-sm hover:bg-blue-50 ${
-                            companySlug === c.slug ? "bg-blue-50 text-blue-700 font-medium" : "text-gray-700"
+                            form.companySlug === c.slug ? "bg-blue-50 text-blue-700 font-medium" : "text-gray-700"
                           }`}
                         >
                           {c.name}
@@ -274,23 +355,48 @@ export default function AdminPartnersPage() {
                 </label>
                 <input
                   type="text"
-                  value={loginId}
-                  onChange={(e) => setLoginId(e.target.value)}
+                  value={form.loginId}
+                  onChange={(e) => setForm({ ...form, loginId: e.target.value })}
                   className="w-full px-3 py-2 border-2 border-gray-200 rounded-lg focus:ring-3 focus:ring-primary/10 focus:border-primary outline-none"
                   required
                 />
               </div>
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-1">
-                  パスワード <span className="text-red-500">*</span>
+                  パスワード {!editingId && <span className="text-red-500">*</span>}
                 </label>
                 <input
                   type="password"
-                  value={password}
-                  onChange={(e) => setPassword(e.target.value)}
+                  value={form.password}
+                  onChange={(e) => setForm({ ...form, password: e.target.value })}
                   className="w-full px-3 py-2 border-2 border-gray-200 rounded-lg focus:ring-3 focus:ring-primary/10 focus:border-primary outline-none"
-                  required
+                  required={!editingId}
                   minLength={8}
+                  placeholder={editingId ? "変更する場合のみ入力" : ""}
+                />
+              </div>
+              <div>
+                <label className="block text-sm font-medium text-gray-700 mb-1">
+                  メールアドレス
+                </label>
+                <input
+                  type="email"
+                  value={form.email}
+                  onChange={(e) => setForm({ ...form, email: e.target.value })}
+                  className="w-full px-3 py-2 border-2 border-gray-200 rounded-lg focus:ring-3 focus:ring-primary/10 focus:border-primary outline-none"
+                  placeholder="example@company.com"
+                />
+              </div>
+              <div>
+                <label className="block text-sm font-medium text-gray-700 mb-1">
+                  リード単価（円/件）
+                </label>
+                <input
+                  type="number"
+                  value={form.feePerLead}
+                  onChange={(e) => setForm({ ...form, feePerLead: e.target.value })}
+                  className="w-full px-3 py-2 border-2 border-gray-200 rounded-lg focus:ring-3 focus:ring-primary/10 focus:border-primary outline-none"
+                  placeholder="例: 5000"
                 />
               </div>
               <div>
@@ -299,8 +405,8 @@ export default function AdminPartnersPage() {
                 </label>
                 <input
                   type="number"
-                  value={minAmount}
-                  onChange={(e) => setMinAmount(e.target.value)}
+                  value={form.minAmount}
+                  onChange={(e) => setForm({ ...form, minAmount: e.target.value })}
                   className="w-full px-3 py-2 border-2 border-gray-200 rounded-lg focus:ring-3 focus:ring-primary/10 focus:border-primary outline-none"
                 />
               </div>
@@ -310,8 +416,8 @@ export default function AdminPartnersPage() {
                 </label>
                 <input
                   type="number"
-                  value={maxAmount}
-                  onChange={(e) => setMaxAmount(e.target.value)}
+                  value={form.maxAmount}
+                  onChange={(e) => setForm({ ...form, maxAmount: e.target.value })}
                   className="w-full px-3 py-2 border-2 border-gray-200 rounded-lg focus:ring-3 focus:ring-primary/10 focus:border-primary outline-none"
                 />
               </div>
@@ -328,7 +434,7 @@ export default function AdminPartnersPage() {
                     type="button"
                     onClick={() => togglePrefecture(pref)}
                     className={`px-2 py-0.5 rounded text-xs transition-colors ${
-                      selectedPrefectures.includes(pref)
+                      form.selectedPrefectures.includes(pref)
                         ? "bg-primary text-white"
                         : "bg-gray-100 text-gray-600 hover:bg-gray-200"
                     }`}
@@ -337,12 +443,12 @@ export default function AdminPartnersPage() {
                   </button>
                 ))}
               </div>
-              {selectedPrefectures.length > 0 && (
+              {form.selectedPrefectures.length > 0 && (
                 <p className="text-xs text-gray-500 mt-1">
-                  選択中: {selectedPrefectures.join(", ")}
+                  選択中: {form.selectedPrefectures.join(", ")}
                   <button
                     type="button"
-                    onClick={() => setSelectedPrefectures([])}
+                    onClick={() => setForm({ ...form, selectedPrefectures: [] })}
                     className="ml-2 text-primary hover:underline"
                   >
                     クリア
@@ -357,8 +463,8 @@ export default function AdminPartnersPage() {
               </label>
               <input
                 type="text"
-                value={supportedIndustries}
-                onChange={(e) => setSupportedIndustries(e.target.value)}
+                value={form.supportedIndustries}
+                onChange={(e) => setForm({ ...form, supportedIndustries: e.target.value })}
                 className="w-full px-3 py-2 border-2 border-gray-200 rounded-lg focus:ring-3 focus:ring-primary/10 focus:border-primary outline-none"
                 placeholder="例: 建設業, 製造業, IT・通信"
               />
@@ -368,8 +474,8 @@ export default function AdminPartnersPage() {
               <label className="flex items-center gap-2 text-sm">
                 <input
                   type="checkbox"
-                  checked={soleProprietorOk}
-                  onChange={(e) => setSoleProprietorOk(e.target.checked)}
+                  checked={form.soleProprietorOk}
+                  onChange={(e) => setForm({ ...form, soleProprietorOk: e.target.checked })}
                   className="rounded"
                 />
                 個人事業主対応
@@ -377,8 +483,8 @@ export default function AdminPartnersPage() {
               <label className="flex items-center gap-2 text-sm">
                 <input
                   type="checkbox"
-                  checked={isActive}
-                  onChange={(e) => setIsActive(e.target.checked)}
+                  checked={form.isActive}
+                  onChange={(e) => setForm({ ...form, isActive: e.target.checked })}
                   className="rounded"
                 />
                 有効
@@ -388,13 +494,28 @@ export default function AdminPartnersPage() {
             {formError && (
               <p className="text-sm text-danger font-medium">{formError}</p>
             )}
-            <button
-              type="submit"
-              disabled={submitting}
-              className="bg-primary text-white px-6 py-2.5 rounded-lg font-medium hover:bg-primary-dark transition-colors disabled:opacity-50"
-            >
-              {submitting ? "登録中..." : "登録する"}
-            </button>
+            <div className="flex gap-3">
+              <button
+                type="submit"
+                disabled={submitting}
+                className="bg-primary text-white px-6 py-2.5 rounded-lg font-medium hover:bg-primary-dark transition-colors disabled:opacity-50"
+              >
+                {submitting ? "保存中..." : editingId ? "更新する" : "登録する"}
+              </button>
+              {editingId && (
+                <button
+                  type="button"
+                  onClick={() => {
+                    setShowForm(false);
+                    setEditingId(null);
+                    setForm(emptyForm);
+                  }}
+                  className="px-6 py-2.5 rounded-lg font-medium text-gray-600 hover:bg-gray-100 transition-colors"
+                >
+                  キャンセル
+                </button>
+              )}
+            </div>
           </form>
         </div>
       )}
@@ -413,9 +534,11 @@ export default function AdminPartnersPage() {
                   <th className="text-left px-4 py-3 font-medium text-gray-600">メール</th>
                   <th className="text-left px-4 py-3 font-medium text-gray-600">ログインID</th>
                   <th className="text-left px-4 py-3 font-medium text-gray-600">対応金額</th>
+                  <th className="text-left px-4 py-3 font-medium text-gray-600">リード単価</th>
                   <th className="text-left px-4 py-3 font-medium text-gray-600">対応地域</th>
                   <th className="text-left px-4 py-3 font-medium text-gray-600">個人事業主</th>
                   <th className="text-left px-4 py-3 font-medium text-gray-600">ステータス</th>
+                  <th className="px-4 py-3"></th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-gray-100">
@@ -426,6 +549,9 @@ export default function AdminPartnersPage() {
                     <td className="px-4 py-3 text-gray-600">{p.login_id}</td>
                     <td className="px-4 py-3 text-gray-600">
                       {formatAmount(p.min_amount)} 〜 {formatAmount(p.max_amount)}
+                    </td>
+                    <td className="px-4 py-3 text-gray-600 font-medium">
+                      {p.fee_per_lead ? `${p.fee_per_lead.toLocaleString()}円` : "-"}
                     </td>
                     <td className="px-4 py-3 text-gray-600">
                       {p.supported_prefectures.length === 0
@@ -447,6 +573,23 @@ export default function AdminPartnersPage() {
                       >
                         {p.is_active ? "有効" : "無効"}
                       </span>
+                    </td>
+                    <td className="px-4 py-3">
+                      <div className="flex gap-2">
+                        <button
+                          onClick={() => openEditForm(p)}
+                          className="text-primary hover:underline text-sm"
+                        >
+                          編集
+                        </button>
+                        <button
+                          onClick={() => handleDelete(p)}
+                          disabled={deleting === p.id}
+                          className="text-red-600 hover:underline text-sm disabled:opacity-50"
+                        >
+                          削除
+                        </button>
+                      </div>
                     </td>
                   </tr>
                 ))}

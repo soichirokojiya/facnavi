@@ -2,22 +2,33 @@
 
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
-import { useState } from "react";
-
-const navItems = [
-  { href: "/admin", label: "ダッシュボード", icon: "📊" },
-  { href: "/admin/mitsumori", label: "見積もり管理", icon: "📋" },
-  { href: "/admin/reviews", label: "口コミ管理", icon: "💬" },
-  { href: "/admin/partners", label: "提携業者管理", icon: "🏢" },
-  { href: "/admin/takedowns", label: "取り下げ依頼", icon: "🚫" },
-  { href: "/admin/news", label: "ニュース管理", icon: "📰" },
-  { href: "/admin/settings", label: "サイト設定", icon: "⚙️" },
-];
+import { useState, useEffect } from "react";
 
 export function AdminSidebar() {
   const pathname = usePathname();
   const router = useRouter();
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [unreadInquiries, setUnreadInquiries] = useState(0);
+
+  const isPublic = pathname === "/admin/login";
+
+  useEffect(() => {
+    if (isPublic) return;
+    async function fetchUnread() {
+      try {
+        const res = await fetch("/api/admin/inquiries", { cache: "no-store" });
+        const json = await res.json();
+        const items = json.data || [];
+        const count = items.filter((i: { status: string }) => i.status === "unread").length;
+        setUnreadInquiries(count);
+      } catch {
+        // ignore
+      }
+    }
+    fetchUnread();
+  }, [pathname, isPublic]);
+
+  if (isPublic) return null;
 
   const handleLogout = async () => {
     await fetch("/api/admin/auth", { method: "DELETE" });
@@ -28,6 +39,17 @@ export function AdminSidebar() {
     if (href === "/admin") return pathname === "/admin";
     return pathname.startsWith(href);
   };
+
+  const navItems = [
+    { href: "/admin", label: "ダッシュボード", icon: "📊", badge: 0 },
+    { href: "/admin/mitsumori", label: "見積もり管理", icon: "📋", badge: 0 },
+    { href: "/admin/reviews", label: "口コミ管理", icon: "💬", badge: 0 },
+    { href: "/admin/partners", label: "提携業者管理", icon: "🏢", badge: 0 },
+    { href: "/admin/takedowns", label: "取り下げ依頼", icon: "🚫", badge: 0 },
+    { href: "/admin/inquiries", label: "問い合わせ管理", icon: "✉️", badge: unreadInquiries },
+    { href: "/admin/news", label: "ニュース管理", icon: "📰", badge: 0 },
+    { href: "/admin/settings", label: "サイト設定", icon: "⚙️", badge: 0 },
+  ];
 
   const sidebar = (
     <div className="flex flex-col h-full bg-gray-900 text-white">
@@ -47,7 +69,12 @@ export function AdminSidebar() {
             }`}
           >
             <span>{item.icon}</span>
-            <span>{item.label}</span>
+            <span className="flex-1">{item.label}</span>
+            {item.badge > 0 && (
+              <span className="bg-red-500 text-white text-xs font-bold rounded-full min-w-[20px] h-5 flex items-center justify-center px-1.5">
+                {item.badge}
+              </span>
+            )}
           </Link>
         ))}
       </nav>

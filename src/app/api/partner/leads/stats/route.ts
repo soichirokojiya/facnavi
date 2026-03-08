@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { createClient } from "@supabase/supabase-js";
+import { aggregateByMonth } from "@/lib/billing";
 
 const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL!;
 const supabaseKey =
@@ -21,39 +22,33 @@ export async function GET(request: NextRequest) {
 
   const supabase = createClient(supabaseUrl, supabaseKey);
 
-  const { data, error } = await supabase
-    .from("lead_assignments")
-    .select(
-      `
-      id,
-      status,
-      viewed_at,
-      created_at,
-      mitsumori_requests (
-        id,
-        company_name,
-        contact_name,
-        phone,
-        email,
-        invoice_amount,
-        purchase_amount,
-        deposit_timing,
-        industry,
-        business_type,
-        created_at
-      )
-    `
-    )
-    .eq("partner_company_id", partnerId)
-    .order("created_at", { ascending: false });
+  const [leadsResult, partnerResult, taxResult] = await Promise.all([
+    supabase
+      .from("lead_assignments")
+      .select("id, status, created_at, updated_at")
+      .eq("partner_company_id", partnerId),
+    supabase
+      .from("partner_companies")
+      .select("fee_per_lead")
+      .eq("id", partnerId)
+      .single(),
+    supabase
+      .from("site_settings")
+      .select("value")
+      .eq("key", "tax_rate")
+      .single(),
+  ]);
 
-  if (error) {
-    console.error("Lead assignments fetch error:", error);
+  if (leadsResult.error) {
+    console.error("Lead stats fetch error:", leadsResult.error);
     return NextResponse.json(
       { error: "データの取得に失敗しました。" },
       { status: 500 }
     );
   }
 
-  return NextResponse.json({ data });
+  const feePerLead = partnerResult.data?.fee_per_lead || 0;
+  const taxRate = taxResult.data ? parseInt(taxResult.data.value, 10) : 10;
+  const stats = aggregateByMonth(leadsResult.data || []);
+  return NextResponse.json({ data: stats, feePerLead, taxRate });
 }

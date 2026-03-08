@@ -7,12 +7,12 @@ const supabaseKey =
   process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!;
 
 const VALID_REASONS = [
-  "スパム",
-  "対象外（地域）",
-  "対象外（金額帯）",
-  "対象外（業種）",
-  "連絡不通",
-  "その他",
+  "虚偽情報（氏名・電話番号・メールアドレス）",
+  "連絡不通（番号不存在・別会社・該当社員なし・FAX）",
+  "メール不達",
+  "競合企業からの依頼",
+  "重複（ファクナビ内での同一ユーザー）",
+  "対象外ユーザー（個人・給与ファクタリング等）",
 ];
 
 function getPartnerCompanyId(request: NextRequest): string | null {

@@ -23,18 +23,18 @@ export async function GET(request: NextRequest) {
       detail,
       status,
       created_at,
-      partner_companies (
+      partner_companies!fk_takedown_partner_company (
         id,
         name
       ),
-      lead_assignments (
+      lead_assignments!fk_takedown_lead_assignment (
         id,
         status,
         mitsumori_requests (
           id,
           company_name,
           contact_name,
-          amount_range,
+          purchase_amount,
           prefecture
         )
       )
@@ -43,7 +43,7 @@ export async function GET(request: NextRequest) {
     .order("created_at", { ascending: false });
 
   if (error) {
-    console.error("Takedown requests fetch error:", error);
+    console.error("Takedown requests fetch error:", JSON.stringify(error));
     return NextResponse.json(
       { error: "取得に失敗しました。" },
       { status: 500 }

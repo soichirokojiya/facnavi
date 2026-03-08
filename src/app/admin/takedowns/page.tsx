@@ -19,7 +19,8 @@ interface TakedownRequest {
       id: string;
       company_name: string;
       contact_name: string;
-      amount_range: string;
+      invoice_amount: string | null;
+      purchase_amount: string;
       prefecture: string;
     };
   };
@@ -156,8 +157,8 @@ export default function AdminTakedownsPage() {
                   {req.lead_assignments?.mitsumori_requests?.contact_name || "-"}
                 </div>
                 <div>
-                  <span className="text-gray-500">金額帯: </span>
-                  {req.lead_assignments?.mitsumori_requests?.amount_range || "-"}
+                  <span className="text-gray-500">買取希望金額: </span>
+                  {req.lead_assignments?.mitsumori_requests?.purchase_amount || "-"}
                 </div>
                 <div>
                   <span className="text-gray-500">都道府県: </span>

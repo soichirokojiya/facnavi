@@ -14,7 +14,7 @@ export async function GET(request: NextRequest) {
 
   const { data, error } = await supabase
     .from("mitsumori_requests")
-    .select("id, created_at, company_name, contact_name, amount_range, deposit_timing, prefecture")
+    .select("id, created_at, company_name, contact_name, invoice_amount, purchase_amount, deposit_timing, business_type, industry")
     .order("created_at", { ascending: false });
 
   if (error) {

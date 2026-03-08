@@ -4,15 +4,21 @@ import { useEffect, useState } from "react";
 import { useParams, useRouter } from "next/navigation";
 import Link from "next/link";
 
+function formatYen(v: string | null | undefined): string {
+  if (!v) return "-";
+  const n = Number(v);
+  return isNaN(n) ? v : `${n.toLocaleString()}円`;
+}
+
 interface MitsumoriRequest {
   id: string;
   company_name: string;
   contact_name: string;
   phone: string;
   email: string;
-  amount_range: string;
+  invoice_amount: string | null;
+  purchase_amount: string;
   deposit_timing: string;
-  prefecture: string;
   industry: string;
   business_type: string;
   message: string | null;
@@ -34,15 +40,6 @@ interface LeadDetail {
   mitsumori_requests: MitsumoriRequest;
   takedown_requests: TakedownRequest[];
 }
-
-const REASONS = [
-  "スパム",
-  "対象外（地域）",
-  "対象外（金額帯）",
-  "対象外（業種）",
-  "連絡不通",
-  "その他",
-];
 
 const statusLabels: Record<string, string> = {
   active: "有効",
@@ -174,9 +171,9 @@ export default function PartnerLeadDetailPage() {
           <InfoRow label="担当者名" value={req.contact_name} />
           <InfoRow label="電話番号" value={req.phone} />
           <InfoRow label="メール" value={req.email} />
-          <InfoRow label="請求書金額帯" value={req.amount_range} />
+          <InfoRow label="請求書の額面" value={formatYen(req.invoice_amount)} />
+          <InfoRow label="買取希望金額" value={formatYen(req.purchase_amount)} />
           <InfoRow label="入金希望時期" value={req.deposit_timing} />
-          <InfoRow label="都道府県" value={req.prefecture} />
           <InfoRow label="業種" value={req.industry} />
           <InfoRow label="事業形態" value={req.business_type} />
           <InfoRow
@@ -235,9 +232,12 @@ export default function PartnerLeadDetailPage() {
       {/* 取り下げ依頼フォーム */}
       {lead.status === "active" && (
         <div className="bg-white rounded-xl border border-gray-200 p-6">
-          <h2 className="text-lg font-bold text-gray-900 mb-4">
+          <h2 className="text-lg font-bold text-gray-900 mb-2">
             取り下げ依頼
           </h2>
+          <p className="text-sm text-amber-700 bg-amber-50 border border-amber-200 rounded-lg px-4 py-2 mb-4">
+            リード送付から5営業日以内に取り下げ依頼がない場合、自動的に承認（課金確定）となります。
+          </p>
 
           {submitSuccess ? (
             <div className="bg-green-50 border border-green-200 rounded-lg p-4 text-green-800 text-sm">
@@ -256,11 +256,20 @@ export default function PartnerLeadDetailPage() {
                   required
                 >
                   <option value="">選択してください</option>
-                  {REASONS.map((r) => (
-                    <option key={r} value={r}>
-                      {r}
-                    </option>
-                  ))}
+                  <option value="虚偽情報（氏名・電話番号・メールアドレス）">
+                    虚偽情報（氏名・電話番号・メールアドレス）
+                  </option>
+                  <option value="連絡不通（番号不存在・別会社・該当社員なし・FAX）">
+                    連絡不通（番号不存在・別会社・該当社員なし・FAX）
+                  </option>
+                  <option value="メール不達">メール不達</option>
+                  <option value="競合企業からの依頼">競合企業からの依頼</option>
+                  <option value="重複（ファクナビ内での同一ユーザー）">
+                    重複（ファクナビ内での同一ユーザー）
+                  </option>
+                  <option value="対象外ユーザー（個人・給与ファクタリング等）">
+                    対象外ユーザー（個人・給与ファクタリング等）
+                  </option>
                 </select>
               </div>
               <div>
@@ -270,9 +279,9 @@ export default function PartnerLeadDetailPage() {
                 <textarea
                   value={detail}
                   onChange={(e) => setDetail(e.target.value)}
-                  rows={3}
+                  rows={2}
                   className="w-full px-3 py-2 border-2 border-gray-200 rounded-lg focus:ring-3 focus:ring-primary/10 focus:border-primary outline-none resize-y"
-                  placeholder="詳しい理由があれば入力してください"
+                  placeholder="補足があれば入力してください"
                 />
               </div>
               {submitError && (

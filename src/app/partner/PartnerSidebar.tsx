@@ -2,22 +2,34 @@
 
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
-import { useState } from "react";
-
-const navItems = [
-  { href: "/partner", label: "ダッシュボード", icon: "📊" },
-  { href: "/partner/leads", label: "リード一覧", icon: "📋" },
-  { href: "/partner/settings", label: "設定", icon: "⚙️" },
-];
+import { useState, useEffect } from "react";
 
 export function PartnerSidebar() {
   const pathname = usePathname();
   const router = useRouter();
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [unreadCount, setUnreadCount] = useState(0);
 
-  // 公開ページではサイドバーを表示しない
   const publicPages = ["/partner/login", "/partner/register", "/partner/forgot-password", "/partner/reset-password"];
-  if (publicPages.includes(pathname)) return null;
+  const isPublic = publicPages.includes(pathname);
+
+  useEffect(() => {
+    if (isPublic) return;
+    async function fetchUnread() {
+      try {
+        const res = await fetch("/api/partner/leads", { cache: "no-store" });
+        const json = await res.json();
+        const leads = json.data || [];
+        const count = leads.filter((l: { viewed_at: string | null; status: string }) => !l.viewed_at && l.status === "active").length;
+        setUnreadCount(count);
+      } catch {
+        // ignore
+      }
+    }
+    fetchUnread();
+  }, [pathname, isPublic]);
+
+  if (isPublic) return null;
 
   const handleLogout = async () => {
     await fetch("/api/partner/auth", { method: "DELETE" });
@@ -29,10 +41,17 @@ export function PartnerSidebar() {
     return pathname.startsWith(href);
   };
 
+  const navItems = [
+    { href: "/partner", label: "ダッシュボード", icon: "📊", badge: 0 },
+    { href: "/partner/leads", label: "リード一覧", icon: "📋", badge: unreadCount },
+    { href: "/partner/inquiries", label: "お問い合わせ", icon: "✉️", badge: 0 },
+    { href: "/partner/settings", label: "設定", icon: "⚙️", badge: 0 },
+  ];
+
   const sidebar = (
     <div className="flex flex-col h-full bg-gray-900 text-white">
       <div className="p-4 border-b border-gray-700">
-        <h1 className="text-lg font-bold">ファクナビ 業者専用</h1>
+        <h1 className="text-lg font-bold">ファクタリング業者様専用</h1>
       </div>
       <nav className="flex-1 p-4 space-y-1">
         {navItems.map((item) => (
@@ -47,7 +66,12 @@ export function PartnerSidebar() {
             }`}
           >
             <span>{item.icon}</span>
-            <span>{item.label}</span>
+            <span className="flex-1">{item.label}</span>
+            {item.badge > 0 && (
+              <span className="bg-red-500 text-white text-xs font-bold rounded-full min-w-[20px] h-5 flex items-center justify-center px-1.5">
+                {item.badge}
+              </span>
+            )}
           </Link>
         ))}
       </nav>
