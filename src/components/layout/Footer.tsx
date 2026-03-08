@@ -137,6 +137,11 @@ export function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="/for-partners" className="text-sm hover:text-white transition-colors">
+                  一括見積もり業者登録
+                </Link>
+              </li>
+              <li>
                 <a
                   href="https://note.com/financing_tokyo"
                   target="_blank"
