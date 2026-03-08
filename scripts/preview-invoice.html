@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>請求書プレビュー</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif; background: #f0f0f0; padding: 40px; }
+  .page {
+    width: 210mm; min-height: 297mm; margin: 0 auto; padding: 20mm 20mm 15mm;
+    background: white; box-shadow: 0 2px 20px rgba(0,0,0,0.15);
+  }
+  .title { text-align: center; font-size: 28px; font-weight: bold; letter-spacing: 12px; margin-bottom: 30px; border-bottom: 3px double #333; padding-bottom: 12px; }
+  .meta { display: flex; justify-content: flex-end; gap: 24px; margin-bottom: 24px; font-size: 13px; color: #444; }
+  .meta-item span { font-weight: bold; }
+  .header { display: flex; justify-content: space-between; margin-bottom: 32px; }
+  .to { flex: 1; }
+  .to .name { font-size: 20px; font-weight: bold; border-bottom: 2px solid #333; padding-bottom: 4px; display: inline-block; margin-bottom: 4px; }
+  .to .honorific { font-size: 20px; margin-left: 8px; }
+  .from { text-align: right; font-size: 13px; line-height: 1.8; color: #333; }
+  .from .company { font-size: 15px; font-weight: bold; margin-bottom: 2px; }
+  .from .reg { color: #555; font-size: 12px; }
+  .total-box {
+    background: #f8f8f8; border: 2px solid #333; border-radius: 4px;
+    padding: 16px 24px; margin-bottom: 32px; display: flex;
+    justify-content: space-between; align-items: center;
+  }
+  .total-box .label { font-size: 16px; font-weight: bold; }
+  .total-box .amount { font-size: 28px; font-weight: bold; letter-spacing: 1px; }
+  .total-box .amount::before { content: "\A5"; margin-right: 4px; }
+  .section { margin-bottom: 24px; }
+  .section-title { font-size: 14px; font-weight: bold; margin-bottom: 8px; padding-left: 8px; border-left: 3px solid #333; }
+  table { width: 100%; border-collapse: collapse; font-size: 13px; }
+  table th { background: #f0f0f0; border: 1px solid #ccc; padding: 8px 12px; text-align: center; font-weight: bold; }
+  table td { border: 1px solid #ccc; padding: 8px 12px; }
+  table td.right { text-align: right; }
+  table td.center { text-align: center; }
+  .summary-table { width: 50%; margin-left: auto; margin-top: -1px; }
+  .summary-table td { border: 1px solid #ccc; padding: 8px 12px; }
+  .summary-table .label-cell { background: #f0f0f0; font-weight: bold; text-align: center; width: 50%; }
+  .summary-table .total-row td { border-top: 2px solid #333; font-weight: bold; font-size: 15px; }
+  .info-row { display: flex; gap: 40px; margin-bottom: 24px; }
+  .info-block { flex: 1; }
+  .info-block .info-title { font-size: 13px; font-weight: bold; margin-bottom: 6px; padding-left: 8px; border-left: 3px solid #333; }
+  .info-block .info-content { font-size: 13px; line-height: 1.8; color: #333; padding-left: 11px; }
+  .bank-info { white-space: pre-line; }
+  .notes { font-size: 12px; color: #555; line-height: 1.8; border-top: 1px solid #ddd; padding-top: 16px; margin-top: 24px; }
+  .notes a { color: #2563eb; }
+</style>
+</head>
+<body>
+
+<div class="page">
+
+  <h1 class="title">請 求 書</h1>
+
+  <div class="meta">
+    <div class="meta-item"><span>請求書番号:</span> 2026-015-001</div>
+    <div class="meta-item"><span>発行日:</span> 2026年4月11日</div>
+  </div>
+
+  <div class="header">
+    <div class="to">
+      <span class="name">サンプルファクタリング株式会社</span>
+      <span class="honorific">御中</span>
+    </div>
+    <div class="from">
+      <div class="company">Common Future & Co.株式会社</div>
+      <div>〒810-0001</div>
+      <div>福岡県福岡市中央区天神4-6-28 いちご天神ノースビル7階</div>
+      <div class="reg">適格請求書発行事業者登録番号: T9011001105902</div>
+    </div>
+  </div>
+
+  <div class="total-box">
+    <div class="label">ご請求金額（税込）</div>
+    <div class="amount">330,000</div>
+  </div>
+
+  <div class="section">
+    <table>
+      <thead>
+        <tr>
+          <th style="width: 45%;">品目</th>
+          <th style="width: 15%;">数量</th>
+          <th style="width: 20%;">単価（税抜）</th>
+          <th style="width: 20%;">金額（税抜）</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>リード送客フィー（2026年3月分）</td>
+          <td class="center">20件</td>
+          <td class="right">15,000円</td>
+          <td class="right">300,000円</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table class="summary-table">
+      <tbody>
+        <tr>
+          <td class="label-cell">小計（税抜）</td>
+          <td class="right">300,000円</td>
+        </tr>
+        <tr>
+          <td class="label-cell">消費税（10%対象）</td>
+          <td class="right">30,000円</td>
+        </tr>
+        <tr class="total-row">
+          <td class="label-cell">合計（税込）</td>
+          <td class="right">330,000円</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="info-row">
+    <div class="info-block">
+      <div class="info-title">対象期間</div>
+      <div class="info-content">2026年3月1日〜3月31日</div>
+    </div>
+    <div class="info-block">
+      <div class="info-title">お支払期限</div>
+      <div class="info-content">2026年4月30日</div>
+    </div>
+  </div>
+
+  <div class="info-row">
+    <div class="info-block">
+      <div class="info-title">お振込先</div>
+      <div class="info-content bank-info">楽天銀行 第二営業支店（252）
+普通 7671151
+Common Future & Co.株式会社</div>
+    </div>
+  </div>
+
+  <div class="notes">
+    ※ 振込手数料はお客様ご負担にてお願いいたします。<br>
+    ※ 詳細はパートナーダッシュボードよりご確認いただけます。<br>
+    　 <a href="https://facnavi.info/partner">https://facnavi.info/partner</a>
+  </div>
+
+</div>
+
+</body>
+</html>

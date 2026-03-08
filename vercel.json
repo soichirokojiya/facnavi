@@ -6,7 +6,7 @@
     },
     {
       "path": "/api/cron/billing",
-      "schedule": "0 0 10 * *"
+      "schedule": "0 0 11 * *"
     },
     {
       "path": "/api/cron/fetch-news",

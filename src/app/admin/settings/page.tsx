@@ -9,7 +9,7 @@ const DEFAULT_BILLING_BODY = `{会社名} 御中
 
 いつもファクナビをご利用いただき、誠にありがとうございます。
 
-{MM}月分のリード送客フィーが確定しましたのでご案内いたします。
+{YYYY}年{MM}月分のリード送客フィーが確定しましたのでご案内いたします。
 
 ━━━━━━━━━━━━━━━━━━━━━━━━
 ■ 請求内容
@@ -52,6 +52,18 @@ const PLACEHOLDERS = [
   { key: "{adminEmail}", desc: "管理者メール" },
 ];
 
+function getRecentMonths(count: number): { value: string; label: string }[] {
+  const months = [];
+  const now = new Date();
+  for (let i = 1; i <= count; i++) {
+    const d = new Date(now.getFullYear(), now.getMonth() - i, 1);
+    const value = `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}`;
+    const label = `${d.getFullYear()}年${d.getMonth() + 1}月`;
+    months.push({ value, label });
+  }
+  return months;
+}
+
 export default function AdminSettingsPage() {
   const [spamCheckEnabled, setSpamCheckEnabled] = useState(true);
   const [duplicateCheckEnabled, setDuplicateCheckEnabled] = useState(true);
@@ -62,6 +74,33 @@ export default function AdminSettingsPage() {
   const [loading, setLoading] = useState(true);
   const [saving, setSaving] = useState(false);
   const [message, setMessage] = useState("");
+  const [currentPassword, setCurrentPassword] = useState("");
+  const [newPassword, setNewPassword] = useState("");
+  const [pwChanging, setPwChanging] = useState(false);
+  const [pwMessage, setPwMessage] = useState("");
+  const [pwError, setPwError] = useState("");
+
+  // 請求元情報
+  const [billingCompanyName, setBillingCompanyName] = useState("Common Future & Co.株式会社");
+  const [billingCompanyAddress, setBillingCompanyAddress] = useState(
+    "〒810-0001 福岡県福岡市中央区天神4-6-28 いちご天神ノースビル7階"
+  );
+  const [billingInvoiceNumber, setBillingInvoiceNumber] = useState("T9011001105902");
+  const [billingBankInfo, setBillingBankInfo] = useState(
+    "楽天銀行 第二営業支店（252）\n普通 7671151\nCommon Future & Co.株式会社"
+  );
+  const [billingNotes, setBillingNotes] = useState(
+    "振込手数料はお客様ご負担にてお願いいたします"
+  );
+
+  // 手動再送
+  const [resendMonth, setResendMonth] = useState("");
+  const [testEmail, setTestEmail] = useState("admin@facnavi.info");
+  const [resending, setResending] = useState(false);
+  const [resendResult, setResendResult] = useState("");
+  const [resendError, setResendError] = useState("");
+
+  const recentMonths = getRecentMonths(12);
 
   useEffect(() => {
     async function fetchSettings() {
@@ -78,6 +117,21 @@ export default function AdminSettingsPage() {
           }
           if (json.data.billing_email_body) {
             setBillingBody(json.data.billing_email_body);
+          }
+          if (json.data.billing_company_name) {
+            setBillingCompanyName(json.data.billing_company_name);
+          }
+          if (json.data.billing_company_address) {
+            setBillingCompanyAddress(json.data.billing_company_address);
+          }
+          if (json.data.billing_invoice_number) {
+            setBillingInvoiceNumber(json.data.billing_invoice_number);
+          }
+          if (json.data.billing_bank_info) {
+            setBillingBankInfo(json.data.billing_bank_info);
+          }
+          if (json.data.billing_notes) {
+            setBillingNotes(json.data.billing_notes);
           }
         }
       } catch (err) {
@@ -105,6 +159,11 @@ export default function AdminSettingsPage() {
           tax_rate: taxRate,
           billing_email_subject: billingSubject,
           billing_email_body: billingBody,
+          billing_company_name: billingCompanyName,
+          billing_company_address: billingCompanyAddress,
+          billing_invoice_number: billingInvoiceNumber,
+          billing_bank_info: billingBankInfo,
+          billing_notes: billingNotes,
         }),
       });
 
@@ -123,6 +182,48 @@ export default function AdminSettingsPage() {
   const handleReset = () => {
     setBillingSubject(DEFAULT_BILLING_SUBJECT);
     setBillingBody(DEFAULT_BILLING_BODY);
+  };
+
+  const handleResend = async () => {
+    if (!resendMonth) return;
+
+    if (!testEmail || !testEmail.trim()) {
+      setResendError("送信先メールアドレスを入力してください。");
+      return;
+    }
+
+    if (!confirm(`${resendMonth} の請求書メールを ${testEmail} にテスト送信しますか？`)) {
+      return;
+    }
+
+    setResending(true);
+    setResendResult("");
+    setResendError("");
+
+    try {
+      const res = await fetch("/api/cron/billing", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          month: resendMonth,
+          testEmail: testEmail.trim(),
+        }),
+      });
+
+      const data = await res.json();
+      if (!res.ok) {
+        setResendError(data.error || "送信に失敗しました。");
+        return;
+      }
+
+      setResendResult(
+        `送信完了: ${data.sent}件成功、${data.failed}件失敗`
+      );
+    } catch {
+      setResendError("通信エラーが発生しました。");
+    } finally {
+      setResending(false);
+    }
   };
 
   if (loading) {
@@ -183,25 +284,87 @@ export default function AdminSettingsPage() {
           </div>
         </div>
 
-        {/* 消費税率 */}
+        {/* 請求設定 */}
         <div className="bg-white rounded-xl border border-gray-200 p-6">
           <h2 className="text-lg font-bold text-gray-900 mb-4">請求設定</h2>
-          <div className="max-w-xs">
-            <label className="block text-sm font-medium text-gray-700 mb-1">
-              消費税率（%）
-            </label>
-            <input
-              type="number"
-              value={taxRate}
-              onChange={(e) => setTaxRate(e.target.value)}
-              min="0"
-              max="100"
-              step="1"
-              className="w-full px-3 py-2 border-2 border-gray-200 rounded-lg focus:ring-3 focus:ring-primary/10 focus:border-primary outline-none"
-            />
-            <p className="text-xs text-gray-500 mt-1">
-              請求メールの消費税計算に使用されます。
-            </p>
+          <div className="space-y-4">
+            <div className="max-w-xs">
+              <label className="block text-sm font-medium text-gray-700 mb-1">
+                消費税率（%）
+              </label>
+              <input
+                type="number"
+                value={taxRate}
+                onChange={(e) => setTaxRate(e.target.value)}
+                min="0"
+                max="100"
+                step="1"
+                className="w-full px-3 py-2 border-2 border-gray-200 rounded-lg focus:ring-3 focus:ring-primary/10 focus:border-primary outline-none"
+              />
+              <p className="text-xs text-gray-500 mt-1">
+                請求メールの消費税計算に使用されます。
+              </p>
+            </div>
+
+            <div>
+              <label className="block text-sm font-medium text-gray-700 mb-1">
+                発行元 商号
+              </label>
+              <input
+                type="text"
+                value={billingCompanyName}
+                onChange={(e) => setBillingCompanyName(e.target.value)}
+                className="w-full max-w-lg px-3 py-2 border-2 border-gray-200 rounded-lg focus:ring-3 focus:ring-primary/10 focus:border-primary outline-none text-sm"
+              />
+            </div>
+
+            <div>
+              <label className="block text-sm font-medium text-gray-700 mb-1">
+                発行元 住所
+              </label>
+              <input
+                type="text"
+                value={billingCompanyAddress}
+                onChange={(e) => setBillingCompanyAddress(e.target.value)}
+                className="w-full max-w-lg px-3 py-2 border-2 border-gray-200 rounded-lg focus:ring-3 focus:ring-primary/10 focus:border-primary outline-none text-sm"
+              />
+            </div>
+
+            <div>
+              <label className="block text-sm font-medium text-gray-700 mb-1">
+                適格請求書発行事業者登録番号
+              </label>
+              <input
+                type="text"
+                value={billingInvoiceNumber}
+                onChange={(e) => setBillingInvoiceNumber(e.target.value)}
+                className="w-full max-w-sm px-3 py-2 border-2 border-gray-200 rounded-lg focus:ring-3 focus:ring-primary/10 focus:border-primary outline-none text-sm"
+              />
+            </div>
+
+            <div>
+              <label className="block text-sm font-medium text-gray-700 mb-1">
+                振込先情報
+              </label>
+              <textarea
+                value={billingBankInfo}
+                onChange={(e) => setBillingBankInfo(e.target.value)}
+                rows={3}
+                className="w-full max-w-lg px-3 py-2 border-2 border-gray-200 rounded-lg focus:ring-3 focus:ring-primary/10 focus:border-primary outline-none text-sm font-mono"
+              />
+            </div>
+
+            <div>
+              <label className="block text-sm font-medium text-gray-700 mb-1">
+                備考
+              </label>
+              <input
+                type="text"
+                value={billingNotes}
+                onChange={(e) => setBillingNotes(e.target.value)}
+                className="w-full max-w-lg px-3 py-2 border-2 border-gray-200 rounded-lg focus:ring-3 focus:ring-primary/10 focus:border-primary outline-none text-sm"
+              />
+            </div>
           </div>
         </div>
 
@@ -272,6 +435,134 @@ export default function AdminSettingsPage() {
           {saving ? "保存中..." : "保存する"}
         </button>
       </form>
+
+      {/* 請求書メール送信 */}
+      <div className="bg-white rounded-xl border border-gray-200 p-6 mt-6">
+        <h2 className="text-lg font-bold text-gray-900 mb-4">請求書メール送信</h2>
+        <div className="space-y-4">
+          <div className="max-w-xs">
+            <label className="block text-sm font-medium text-gray-700 mb-1">
+              対象月
+            </label>
+            <select
+              value={resendMonth}
+              onChange={(e) => setResendMonth(e.target.value)}
+              className="w-full px-3 py-2 border-2 border-gray-200 rounded-lg focus:ring-3 focus:ring-primary/10 focus:border-primary outline-none text-sm"
+            >
+              <option value="">選択してください</option>
+              {recentMonths.map((m) => (
+                <option key={m.value} value={m.value}>
+                  {m.label}
+                </option>
+              ))}
+            </select>
+          </div>
+
+          <div className="max-w-sm">
+            <label className="block text-sm font-medium text-gray-700 mb-1">
+              送信先メールアドレス
+            </label>
+            <input
+              type="email"
+              value={testEmail}
+              onChange={(e) => setTestEmail(e.target.value)}
+              placeholder="admin@facnavi.info"
+              required
+              className="w-full px-3 py-2 border-2 border-gray-200 rounded-lg focus:ring-3 focus:ring-primary/10 focus:border-primary outline-none text-sm"
+            />
+            <p className="text-xs text-gray-500 mt-1">
+              全パートナーの請求書をこのアドレスにテスト送信します（ログは記録されません、件名に【テスト】が付きます）。
+            </p>
+          </div>
+
+          {resendResult && (
+            <p className="text-sm text-green-600 font-medium">{resendResult}</p>
+          )}
+          {resendError && (
+            <p className="text-sm text-red-600 font-medium">{resendError}</p>
+          )}
+
+          <button
+            type="button"
+            disabled={resending || !resendMonth}
+            onClick={handleResend}
+            className="bg-primary text-white px-6 py-2.5 rounded-lg font-medium hover:bg-primary-dark transition-colors disabled:opacity-50"
+          >
+            {resending ? "送信中..." : "テスト送信"}
+          </button>
+        </div>
+      </div>
+
+      {/* パスワード変更 */}
+      <div className="bg-white rounded-xl border border-gray-200 p-6 mt-6">
+        <h2 className="text-lg font-bold text-gray-900 mb-4">パスワード変更</h2>
+        <div className="max-w-sm space-y-4">
+          <div>
+            <label className="block text-sm font-medium text-gray-700 mb-1">
+              現在のパスワード
+            </label>
+            <input
+              type="password"
+              value={currentPassword}
+              onChange={(e) => setCurrentPassword(e.target.value)}
+              className="w-full px-3 py-2 border-2 border-gray-200 rounded-lg focus:ring-3 focus:ring-primary/10 focus:border-primary outline-none"
+            />
+          </div>
+          <div>
+            <label className="block text-sm font-medium text-gray-700 mb-1">
+              新しいパスワード（8文字以上）
+            </label>
+            <input
+              type="password"
+              value={newPassword}
+              onChange={(e) => setNewPassword(e.target.value)}
+              minLength={8}
+              className="w-full px-3 py-2 border-2 border-gray-200 rounded-lg focus:ring-3 focus:ring-primary/10 focus:border-primary outline-none"
+            />
+          </div>
+          {pwMessage && <p className="text-sm text-green-600 font-medium">{pwMessage}</p>}
+          {pwError && <p className="text-sm text-red-600 font-medium">{pwError}</p>}
+          <button
+            type="button"
+            disabled={pwChanging || !currentPassword || !newPassword}
+            onClick={async () => {
+              setPwMessage("");
+              setPwError("");
+              if (newPassword.length < 8) {
+                setPwError("新しいパスワードは8文字以上で設定してください。");
+                return;
+              }
+              setPwChanging(true);
+              try {
+                const res = await fetch("/api/admin/settings", {
+                  method: "PATCH",
+                  headers: { "Content-Type": "application/json" },
+                  body: JSON.stringify({
+                    _change_password: true,
+                    current_password: currentPassword,
+                    new_password: newPassword,
+                  }),
+                });
+                const data = await res.json();
+                if (!res.ok) {
+                  setPwError(data.error || "パスワードの変更に失敗しました。");
+                  return;
+                }
+                setPwMessage("パスワードを変更しました。");
+                setCurrentPassword("");
+                setNewPassword("");
+              } catch {
+                setPwError("通信エラーが発生しました。");
+              } finally {
+                setPwChanging(false);
+              }
+            }}
+            className="bg-primary text-white px-6 py-2.5 rounded-lg font-medium hover:bg-primary-dark transition-colors disabled:opacity-50"
+          >
+            {pwChanging ? "変更中..." : "パスワードを変更"}
+          </button>
+        </div>
+      </div>
     </div>
   );
 }
