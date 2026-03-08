@@ -16,59 +16,72 @@ export default function Image() {
           flexDirection: "column",
           alignItems: "center",
           justifyContent: "center",
-          background: "linear-gradient(135deg, #1e3a8a 0%, #1e40af 50%, #2563eb 100%)",
+          background: "linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%)",
           position: "relative",
         }}
       >
-        {/* Background pattern */}
+        {/* Top accent bar */}
         <div
           style={{
             position: "absolute",
             top: 0,
             left: 0,
             right: 0,
-            bottom: 0,
-            opacity: 0.08,
-            display: "flex",
-            flexWrap: "wrap",
-            fontSize: 60,
-            lineHeight: 1,
-            gap: 40,
-            padding: 40,
+            height: 8,
+            background: "linear-gradient(90deg, #4caf50 0%, #1e40af 100%)",
           }}
-        >
-          {"💰📊✅💰📊✅💰📊✅💰📊✅💰📊✅💰📊✅💰📊✅💰📊✅"}
-        </div>
+        />
 
-        {/* White card */}
+        {/* Main card */}
         <div
           style={{
             display: "flex",
             flexDirection: "column",
             alignItems: "center",
             justifyContent: "center",
-            background: "white",
-            borderRadius: 24,
             padding: "48px 64px",
-            maxWidth: 1000,
-            boxShadow: "0 25px 50px rgba(0,0,0,0.25)",
           }}
         >
-          {/* Logo text */}
-          <div style={{ display: "flex", alignItems: "baseline", marginBottom: 24 }}>
-            <span style={{ fontSize: 72, fontWeight: 700, color: "#1f2937" }}>ファク</span>
-            <span style={{ fontSize: 72, fontWeight: 700, color: "#43a047" }}>ナビ</span>
+          {/* Logo icon + text */}
+          <div style={{ display: "flex", alignItems: "center", gap: 20, marginBottom: 32 }}>
+            {/* Logo icon SVG inline */}
+            <svg width="80" height="80" viewBox="0 0 100 100" fill="none">
+              <path
+                d="M70 15.4A42 42 0 1 0 70 84.6"
+                stroke="#333333"
+                strokeWidth="12"
+                strokeLinecap="round"
+              />
+              <path
+                d="M55 8.7A46 46 0 0 1 82 30"
+                stroke="#4caf50"
+                strokeWidth="11"
+                strokeLinecap="round"
+              />
+              <path
+                d="M82 70A46 46 0 0 1 55 91.3"
+                stroke="#4caf50"
+                strokeWidth="11"
+                strokeLinecap="round"
+              />
+              <line x1="28" y1="42" x2="72" y2="42" stroke="#4caf50" strokeWidth="8" strokeLinecap="round" />
+              <line x1="28" y1="58" x2="72" y2="58" stroke="#333333" strokeWidth="8" strokeLinecap="round" />
+            </svg>
+            <div style={{ display: "flex", alignItems: "baseline" }}>
+              <span style={{ fontSize: 80, fontWeight: 800, color: "#1f2937", letterSpacing: -2 }}>ファク</span>
+              <span style={{ fontSize: 80, fontWeight: 800, color: "#4caf50", letterSpacing: -2 }}>ナビ</span>
+            </div>
           </div>
 
           {/* Tagline */}
           <div
             style={{
-              fontSize: 32,
+              fontSize: 36,
               fontWeight: 700,
               color: "#1f2937",
               textAlign: "center",
               lineHeight: 1.4,
-              marginBottom: 20,
+              marginBottom: 16,
             }}
           >
             ファクタリング会社の口コミ・比較ランキング
@@ -77,24 +90,25 @@ export default function Image() {
           {/* Sub text */}
           <div
             style={{
-              fontSize: 20,
-              color: "#6b7280",
+              fontSize: 22,
+              color: "#64748b",
               textAlign: "center",
               lineHeight: 1.5,
+              marginBottom: 32,
             }}
           >
-            254社の手数料・スピード・口コミを徹底比較
+            255社の手数料・スピード・口コミを徹底比較
           </div>
 
           {/* Badge row */}
-          <div style={{ display: "flex", gap: 16, marginTop: 28 }}>
+          <div style={{ display: "flex", gap: 16 }}>
             <div
               style={{
-                background: "#43a047",
+                background: "#4caf50",
                 color: "white",
-                padding: "8px 24px",
+                padding: "10px 28px",
                 borderRadius: 50,
-                fontSize: 18,
+                fontSize: 20,
                 fontWeight: 700,
               }}
             >
@@ -102,11 +116,11 @@ export default function Image() {
             </div>
             <div
               style={{
-                background: "#1e40af",
-                color: "white",
-                padding: "8px 24px",
+                border: "2px solid #1e40af",
+                color: "#1e40af",
+                padding: "10px 28px",
                 borderRadius: 50,
-                fontSize: 18,
+                fontSize: 20,
                 fontWeight: 700,
               }}
             >
@@ -114,11 +128,11 @@ export default function Image() {
             </div>
             <div
               style={{
-                background: "#f59e0b",
-                color: "white",
-                padding: "8px 24px",
+                border: "2px solid #f59e0b",
+                color: "#f59e0b",
+                padding: "10px 28px",
                 borderRadius: 50,
-                fontSize: 18,
+                fontSize: 20,
                 fontWeight: 700,
               }}
             >
@@ -131,11 +145,11 @@ export default function Image() {
         <div
           style={{
             position: "absolute",
-            bottom: 28,
+            bottom: 24,
             right: 40,
-            color: "rgba(255,255,255,0.7)",
-            fontSize: 22,
-            fontWeight: 500,
+            color: "#94a3b8",
+            fontSize: 20,
+            fontWeight: 600,
           }}
         >
           facnavi.info
