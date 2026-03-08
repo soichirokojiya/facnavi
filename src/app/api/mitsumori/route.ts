@@ -17,7 +17,10 @@ async function checkSpam(data: {
   message?: string;
 }): Promise<{ isSpam: boolean; reason?: string }> {
   const apiKey = process.env.ANTHROPIC_API_KEY;
-  if (!apiKey) return { isSpam: false };
+  if (!apiKey) {
+    console.warn("ANTHROPIC_API_KEY is not set, skipping spam check");
+    return { isSpam: false };
+  }
 
   try {
     const anthropic = new Anthropic({ apiKey });
@@ -37,15 +40,16 @@ async function checkSpam(data: {
 事業形態: ${data.business_type}
 ${data.message ? `相談内容: ${data.message}` : ""}
 
-以下の基準でスパム判定してください:
-- 会社名や担当者名が明らかに意味不明な文字列（ランダム文字、"aaa"、"test"等）
-- 電話番号が明らかに偽（"000-0000-0000"、桁数不足等）
-- メールが明らかに偽（テスト用ドメイン等）
-- 相談内容に広告・宣伝・無関係な内容
+以下の基準で1つでも該当すればスパムと判定してください:
+- 会社名や担当者名が1〜2文字の数字・記号のみ、意味不明な文字列、"aaa"、"test"、"テスト"等
+- 会社名が実在しなさそうな明らかに適当な名前
+- 電話番号が全部同じ数字（000000000等）、桁数が9桁未満、または明らかに偽
+- 相談内容が1〜2文字だけ、数字だけ、または広告・宣伝・無関係な内容
+- 全体的に入力が適当・テスト送信と思われるパターン
 
-正当なビジネスの問い合わせは通してください。少しでも正当性がある場合はスパムではないと判断してください。
+実在する会社名・人名で、まともな電話番号・メールの場合のみ通してください。
 
-JSON形式で回答: {"isSpam": true/false, "reason": "理由"}`,
+JSON形式のみで回答（説明不要）: {"isSpam": true/false, "reason": "理由"}`,
         },
       ],
     });
@@ -57,7 +61,7 @@ JSON形式で回答: {"isSpam": true/false, "reason": "理由"}`,
     }
     return { isSpam: false };
   } catch (err) {
-    console.error("Spam check error:", err);
+    console.error("Spam check error (API key present but call failed):", err);
     return { isSpam: false }; // エラー時は通す
   }
 }
