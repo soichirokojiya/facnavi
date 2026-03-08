@@ -10,6 +10,8 @@ const navItems = [
   { href: "/admin/reviews", label: "口コミ管理", icon: "💬" },
   { href: "/admin/partners", label: "提携業者管理", icon: "🏢" },
   { href: "/admin/takedowns", label: "取り下げ依頼", icon: "🚫" },
+  { href: "/admin/news", label: "ニュース管理", icon: "📰" },
+  { href: "/admin/settings", label: "サイト設定", icon: "⚙️" },
 ];
 
 export function AdminSidebar() {

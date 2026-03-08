@@ -16,6 +16,7 @@ import { CurrentDate } from "@/components/ui/CurrentDate";
 import { FixedCTA } from "@/components/layout/FixedCTA";
 import { RotationBanner } from "@/components/ads/RotationBanner";
 import { MitsumoriHeroBanner } from "@/components/banners/MitsumoriHeroBanner";
+import { getLatestNews } from "@/lib/news";
 
 /* セクション見出し */
 function SectionHeading({
@@ -46,6 +47,7 @@ export default async function HomePage() {
   const reviews = await getAllReviewsAsync();
   const articles = getAllArticles().slice(0, 6);
   const companyMap = Object.fromEntries(companies.map((c) => [c.slug, displayName(c)]));
+  const latestNews = getLatestNews(3);
   const topFaq = FAQ_DATA.slice(0, 5);
   const faqCount = FAQ_DATA.length;
   const searchData: SearchableCompany[] = companies.map((c) => ({
@@ -120,19 +122,19 @@ export default async function HomePage() {
           </div>
 
           {/* 統計バー — ヒーロー下部に横並び */}
-          <div className="mt-8 flex items-center justify-center gap-4 md:gap-6">
+          <div className="mt-8 flex items-center justify-center gap-5 md:gap-8">
             {[
-              { icon: <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={1.5}><path strokeLinecap="round" strokeLinejoin="round" d="M2.25 21h19.5m-18-18v18m10.5-18v18m6-13.5V21M6.75 6.75h.75m-.75 3h.75m-.75 3h.75m3-6h.75m-.75 3h.75m-.75 3h.75M6.75 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3h12m-.75 4.5H21m-3.75 3H21m-3.75 3H21" /></svg>, value: <>{companies.length}<span className="text-sm font-bold">社</span></>, label: "掲載社数", accent: "text-blue-500", iconBg: "bg-blue-100 text-blue-500" },
-              { icon: <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={1.5}><path strokeLinecap="round" strokeLinejoin="round" d="M9 7.5l3 4.5m0 0l3-4.5M12 12v5.25M15 12H9m6 3H9m12-3a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>, value: <>0<span className="text-sm font-bold">円</span></>, label: "利用料金", accent: "text-emerald-500", iconBg: "bg-emerald-100 text-emerald-500" },
-              { icon: <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={1.5}><path strokeLinecap="round" strokeLinejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>, value: <>即日</>, label: "最短入金", accent: "text-orange-500", iconBg: "bg-orange-100 text-orange-500" },
+              { icon: <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={1.5}><path strokeLinecap="round" strokeLinejoin="round" d="M2.25 21h19.5m-18-18v18m10.5-18v18m6-13.5V21M6.75 6.75h.75m-.75 3h.75m-.75 3h.75m3-6h.75m-.75 3h.75m-.75 3h.75M6.75 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3h12m-.75 4.5H21m-3.75 3H21m-3.75 3H21" /></svg>, value: <>{companies.length}<span className="text-lg font-bold">社</span></>, label: "掲載社数", accent: "text-blue-600", iconBg: "bg-blue-50 text-blue-500" },
+              { icon: <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={1.5}><path strokeLinecap="round" strokeLinejoin="round" d="M9 7.5l3 4.5m0 0l3-4.5M12 12v5.25M15 12H9m6 3H9m12-3a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>, value: <>0<span className="text-lg font-bold">円</span></>, label: "利用料金", accent: "text-emerald-600", iconBg: "bg-emerald-50 text-emerald-500" },
+              { icon: <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={1.5}><path strokeLinecap="round" strokeLinejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>, value: <>即日</>, label: "最短入金", accent: "text-orange-600", iconBg: "bg-orange-50 text-orange-500" },
             ].map((stat, i) => (
-              <div key={i} className="flex items-center gap-4 bg-white/80 backdrop-blur-sm border border-gray-100 rounded-2xl px-6 md:px-8 py-5 shadow-sm hover:shadow-md transition-shadow">
-                <div className={`w-12 h-12 ${stat.iconBg} rounded-xl flex items-center justify-center shrink-0`}>
+              <div key={i} className="flex items-center gap-4 bg-white/90 backdrop-blur-sm border border-gray-100 rounded-2xl px-7 md:px-10 py-6 md:py-7 shadow-md hover:shadow-lg transition-shadow">
+                <div className={`w-14 h-14 md:w-16 md:h-16 ${stat.iconBg} rounded-2xl flex items-center justify-center shrink-0`}>
                   {stat.icon}
                 </div>
                 <div>
-                  <div className={`text-3xl md:text-4xl font-black leading-none tracking-tighter ${stat.accent}`}>{stat.value}</div>
-                  <div className="text-xs font-bold text-gray-400 mt-1">{stat.label}</div>
+                  <div className={`text-4xl md:text-5xl font-black leading-none tracking-tighter ${stat.accent}`}>{stat.value}</div>
+                  <div className="text-sm font-bold text-gray-400 mt-1.5">{stat.label}</div>
                 </div>
               </div>
             ))}
@@ -140,7 +142,7 @@ export default async function HomePage() {
           <p className="text-[10px] text-gray-300 text-center mt-2">※ <CurrentDate /> 現在</p>
 
           {/* 検索バー + タグ */}
-          <div className="mt-6 max-w-lg mx-auto">
+          <div className="mt-6 max-w-2xl mx-auto">
             <KeywordSearch companies={searchData} />
             <div className="mt-2 flex flex-wrap items-center gap-1.5">
               <span className="text-[10px] text-gray-400 font-bold">人気の検索:</span>
@@ -253,6 +255,35 @@ export default async function HomePage() {
               );
             })}
           </div>
+        </div>
+      </section>
+
+      {/* ━━━ 初心者向け記事リンク ━━━ */}
+      <section className="py-8 md:py-10 bg-white">
+        <div className="max-w-5xl mx-auto px-4">
+          <Link
+            href="/column/factoring-nyumon"
+            className="block bg-gradient-to-r from-blue-600 to-blue-700 rounded-2xl p-6 md:p-8 shadow-lg hover:shadow-xl hover:-translate-y-0.5 transition-all duration-300"
+          >
+            <div className="flex items-center gap-4 md:gap-6">
+              <div className="shrink-0 w-14 h-14 md:w-16 md:h-16 rounded-full overflow-hidden bg-white/20">
+                <Image src="/images/roi-icon.webp" width={64} height={64} alt="ファクタリング専門家 ろい" className="w-full h-full object-cover" />
+              </div>
+              <div className="flex-1 min-w-0">
+                <p className="text-xs font-bold text-blue-200 mb-1">FACTORING GUIDE</p>
+                <h3 className="text-base md:text-lg font-bold text-white mb-1">ファクタリング入門</h3>
+                <p className="text-sm text-blue-200 leading-relaxed">ファクタリング専門家「ろい」氏が初心者向けに基礎知識をわかりやすく解説</p>
+              </div>
+              <div className="shrink-0 hidden sm:block">
+                <span className="inline-flex items-center gap-1 text-sm font-bold text-white bg-white/20 px-4 py-2 rounded-full">
+                  記事を読む
+                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+                  </svg>
+                </span>
+              </div>
+            </div>
+          </Link>
         </div>
       </section>
 
@@ -472,6 +503,57 @@ export default async function HomePage() {
           </div>
         </div>
       </section>
+
+      {/* ━━━ 最新ニュース ━━━ */}
+      {latestNews.length > 0 && (
+        <section className="py-10 md:py-14 bg-white">
+          <div className="max-w-4xl mx-auto px-4">
+            <SectionHeading
+              sub="NEWS"
+              right={
+                <Link href="/news" className="text-blue-600 text-sm font-bold hover:underline">
+                  すべてのニュースを見る →
+                </Link>
+              }
+            >
+              最新ニュース
+            </SectionHeading>
+            <div className="space-y-3">
+              {latestNews.map((news) => (
+                <a
+                  key={news.slug}
+                  href={news.sourceUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block bg-white rounded-xl border border-gray-100 shadow-sm hover:shadow-md hover:border-blue-200 transition-all duration-300 p-4 md:p-5"
+                >
+                  <div className="flex items-start gap-3">
+                    <div className="flex-1 min-w-0">
+                      <div className="flex items-center gap-2 mb-1.5">
+                        <span className="text-xs text-gray-400">{news.publishedAt}</span>
+                        <span className={`text-[10px] font-bold px-2 py-0.5 rounded-full ${
+                          news.category === "業界動向" ? "bg-blue-50 text-blue-600" :
+                          news.category === "法改正" ? "bg-red-50 text-red-600" :
+                          news.category === "サービス" ? "bg-emerald-50 text-emerald-600" :
+                          "bg-amber-50 text-amber-600"
+                        }`}>
+                          {news.category}
+                        </span>
+                      </div>
+                      <h3 className="font-bold text-sm text-gray-900 mb-1 line-clamp-2">{news.title}</h3>
+                      <p className="text-xs text-gray-500 line-clamp-2">{news.summary}</p>
+                    </div>
+                    <svg className="w-4 h-4 text-gray-300 shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2}>
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
+                    </svg>
+                  </div>
+                  <p className="text-[10px] text-gray-300 mt-2">出典: {news.sourceName}</p>
+                </a>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* ━━━ 最新口コミ ━━━ */}
       <section className="py-10 md:py-14 bg-slate-50">

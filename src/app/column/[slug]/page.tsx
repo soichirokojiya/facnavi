@@ -12,6 +12,7 @@ import { ArticleEyecatch } from "@/components/articles/ArticleEyecatch";
 import { BreadcrumbJsonLd, ArticleJsonLd } from "@/components/seo/JsonLd";
 import { SITE_URL } from "@/lib/constants";
 import { formatFeeRange } from "@/lib/format";
+import Image from "next/image";
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -151,6 +152,21 @@ export default async function ArticleDetailPage({ params }: Props) {
             {article.title}
           </h1>
           <p className="text-gray-600 mt-3">{article.description}</p>
+
+          {/* 著者情報 */}
+          <div className="flex items-center gap-3 mt-4 p-3 bg-gray-50 rounded-xl">
+            {article.authorIcon ? (
+              <Image src={article.authorIcon} width={40} height={40} alt={article.author || "著者"} className="w-10 h-10 rounded-full object-cover" />
+            ) : (
+              <div className="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 text-sm font-bold shrink-0">
+                {(article.author || "編")[0]}
+              </div>
+            )}
+            <div>
+              <p className="text-sm font-bold text-gray-900">{article.author || "ファクナビ編集部"}</p>
+              {article.authorBio && <p className="text-xs text-gray-500">{article.authorBio}</p>}
+            </div>
+          </div>
         </div>
 
         <TableOfContents headings={headings} />
@@ -160,6 +176,36 @@ export default async function ArticleDetailPage({ params }: Props) {
           dangerouslySetInnerHTML={{ __html: htmlContent }}
         />
       </article>
+
+      {/* 寄稿者プロフィール（authorIconがある場合＝ゲスト寄稿者） */}
+      {article.authorIcon && (
+        <section className="mt-10 bg-gradient-to-br from-blue-50 to-slate-50 rounded-2xl p-6 md:p-8 border border-blue-100">
+          <p className="text-xs font-bold text-blue-600 mb-4">この記事の執筆者</p>
+          <div className="flex items-start gap-4 md:gap-5">
+            <Image src={article.authorIcon} width={80} height={80} alt={article.author || "著者"} className="w-16 h-16 md:w-20 md:h-20 rounded-full object-cover shrink-0 shadow-md" />
+            <div>
+              <p className="text-lg font-bold text-gray-900">{article.author}</p>
+              {article.authorBio && <p className="text-sm text-gray-600 mt-1 leading-relaxed">{article.authorBio}</p>}
+              {article.author === "ろい" && (
+                <>
+                  <p className="text-sm text-gray-500 mt-2 leading-relaxed">
+                    「ファクタリング比較ラボ」主宰。自身の経営経験とファクタリング利用経験をもとに、事業者目線でファクタリングの活用法や選び方を発信中。
+                  </p>
+                  <a
+                    href="https://note.com/financing_tokyo"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1.5 mt-3 text-sm font-bold text-blue-600 hover:text-blue-800 transition-colors"
+                  >
+                    <svg className="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M22.195 2.641c-.24-.24-.526-.36-.857-.36h-7.08c-.95 0-1.96.395-3.032 1.186l-1.674 1.29-.51.382-.51-.382L6.858 3.467C5.786 2.676 4.776 2.28 3.826 2.28H.741c-.331 0-.617.121-.857.36-.24.241-.36.527-.36.858v14.925c0 .331.12.617.36.857.24.24.526.36.857.36h3.085c.95 0 1.96-.395 3.032-1.186l1.674-1.29.51-.382.51.382 1.674 1.29c1.072.791 2.082 1.186 3.032 1.186h7.08c.331 0 .617-.12.857-.36.24-.24.36-.526.36-.857V3.499c0-.331-.12-.617-.36-.858z" /></svg>
+                    ろい氏のnoteを見る
+                  </a>
+                </>
+              )}
+            </div>
+          </div>
+        </section>
+      )}
 
       {relatedCompanies.length > 0 && (
         <section className="mt-12">

@@ -95,18 +95,16 @@ export function ArticleEyecatch({ category, title, image, size = "sm" }: Article
       <div className={`relative h-full flex flex-col justify-end ${
         isLarge ? "p-6 md:p-8" : "p-4"
       }`}>
-        <span className={`inline-block bg-white/20 backdrop-blur-sm text-white font-bold rounded-full mb-2 ${
-          isLarge ? "text-sm px-4 py-1" : "text-xs px-3 py-0.5 w-fit"
+        <span className={`inline-block bg-white/20 backdrop-blur-sm text-white font-bold rounded-full ${
+          isLarge ? "text-sm px-4 py-1" : "text-xs px-3 py-0.5 w-fit mb-2"
         }`}>
           {style.label}
         </span>
-        <p className={`font-bold text-white leading-snug drop-shadow-md ${
-          isLarge
-            ? "text-2xl md:text-3xl line-clamp-3"
-            : "text-lg line-clamp-2"
-        }`}>
-          {title}
-        </p>
+        {!isLarge && (
+          <p className="font-bold text-white leading-snug drop-shadow-md text-lg line-clamp-2">
+            {title}
+          </p>
+        )}
       </div>
     </div>
   );

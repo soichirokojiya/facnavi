@@ -9,6 +9,9 @@ export interface ArticleFrontmatter {
   publishedAt: string;
   updatedAt?: string;
   image?: string;
+  author?: string;
+  authorIcon?: string;
+  authorBio?: string;
   relatedCompanies?: string[];
   relatedArticles?: string[];
 }
