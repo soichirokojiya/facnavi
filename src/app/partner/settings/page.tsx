@@ -24,6 +24,7 @@ interface ProfileData {
 export default function PartnerSettingsPage() {
   const [profile, setProfile] = useState<ProfileData | null>(null);
   const [loading, setLoading] = useState(true);
+  const [editing, setEditing] = useState(false);
   const [saving, setSaving] = useState(false);
   const [message, setMessage] = useState("");
   const [formError, setFormError] = useState("");
@@ -43,6 +44,7 @@ export default function PartnerSettingsPage() {
   const [supportedIndustries, setSupportedIndustries] = useState<string[]>([]);
   const [supportedDepositTiming, setSupportedDepositTiming] = useState<string[]>([]);
   const [soleProprietorOk, setSoleProprietorOk] = useState(true);
+  const [isActive, setIsActive] = useState(true);
 
   useEffect(() => {
     async function fetchProfile() {
@@ -60,6 +62,7 @@ export default function PartnerSettingsPage() {
           setSupportedIndustries(d.supported_industries?.length ? d.supported_industries : [...INDUSTRIES] as string[]);
           setSupportedDepositTiming(d.supported_deposit_timing?.length ? d.supported_deposit_timing : [...DEPOSIT_TIMING_OPTIONS]);
           setSoleProprietorOk(d.sole_proprietor_ok ?? true);
+          setIsActive(d.is_active ?? true);
         }
       } catch {
         setFormError("プロフィールの取得に失敗しました。");
@@ -89,6 +92,7 @@ export default function PartnerSettingsPage() {
           supported_industries: supportedIndustries,
           supported_deposit_timing: supportedDepositTiming,
           sole_proprietor_ok: soleProprietorOk,
+          is_active: isActive,
         }),
       });
 
@@ -98,6 +102,7 @@ export default function PartnerSettingsPage() {
         return;
       }
       setMessage("設定を保存しました。");
+      setEditing(false);
     } catch {
       setFormError("通信エラーが発生しました。");
     } finally {
@@ -165,7 +170,18 @@ export default function PartnerSettingsPage() {
 
       {/* プロフィール設定 */}
       <div className="bg-white rounded-xl border border-gray-200 p-6 mb-6">
-        <h2 className="text-lg font-bold text-gray-900 mb-4">基本設定</h2>
+        <div className="flex items-center justify-between mb-4">
+          <h2 className="text-lg font-bold text-gray-900">基本設定</h2>
+          {!editing && (
+            <button
+              type="button"
+              onClick={() => setEditing(true)}
+              className="px-4 py-1.5 rounded-lg text-sm font-medium border border-primary text-primary hover:bg-primary/5 transition-colors"
+            >
+              編集する
+            </button>
+          )}
+        </div>
         <form onSubmit={handleSubmit} className="space-y-6">
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div>
@@ -176,7 +192,8 @@ export default function PartnerSettingsPage() {
                 type="text"
                 value={name}
                 onChange={(e) => setName(e.target.value)}
-                className="w-full px-3 py-2 border-2 border-gray-200 rounded-lg focus:ring-3 focus:ring-primary/10 focus:border-primary outline-none"
+                disabled={!editing}
+                className={`w-full px-3 py-2 border-2 rounded-lg outline-none ${editing ? "border-gray-200 focus:ring-3 focus:ring-primary/10 focus:border-primary" : "border-gray-100 bg-gray-50 text-gray-500 cursor-not-allowed"}`}
                 required
               />
             </div>
@@ -188,7 +205,8 @@ export default function PartnerSettingsPage() {
                 type="email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                className="w-full px-3 py-2 border-2 border-gray-200 rounded-lg focus:ring-3 focus:ring-primary/10 focus:border-primary outline-none"
+                disabled={!editing}
+                className={`w-full px-3 py-2 border-2 rounded-lg outline-none ${editing ? "border-gray-200 focus:ring-3 focus:ring-primary/10 focus:border-primary" : "border-gray-100 bg-gray-50 text-gray-500 cursor-not-allowed"}`}
                 placeholder="example@company.com"
               />
             </div>
@@ -273,7 +291,8 @@ export default function PartnerSettingsPage() {
                 inputMode="numeric"
                 value={minAmount ? Number(minAmount).toLocaleString() : ""}
                 onChange={(e) => setMinAmount(e.target.value.replace(/[^0-9]/g, ""))}
-                className="w-full px-3 py-2 border-2 border-gray-200 rounded-lg focus:ring-3 focus:ring-primary/10 focus:border-primary outline-none"
+                disabled={!editing}
+                className={`w-full px-3 py-2 border-2 rounded-lg outline-none ${editing ? "border-gray-200 focus:ring-3 focus:ring-primary/10 focus:border-primary" : "border-gray-100 bg-gray-50 text-gray-500 cursor-not-allowed"}`}
               />
             </div>
             <div>
@@ -285,7 +304,8 @@ export default function PartnerSettingsPage() {
                 inputMode="numeric"
                 value={maxAmount ? Number(maxAmount).toLocaleString() : ""}
                 onChange={(e) => setMaxAmount(e.target.value.replace(/[^0-9]/g, ""))}
-                className="w-full px-3 py-2 border-2 border-gray-200 rounded-lg focus:ring-3 focus:ring-primary/10 focus:border-primary outline-none"
+                disabled={!editing}
+                className={`w-full px-3 py-2 border-2 rounded-lg outline-none ${editing ? "border-gray-200 focus:ring-3 focus:ring-primary/10 focus:border-primary" : "border-gray-100 bg-gray-50 text-gray-500 cursor-not-allowed"}`}
               />
             </div>
           </div>
@@ -300,17 +320,19 @@ export default function PartnerSettingsPage() {
                 <button
                   key={pref}
                   type="button"
-                  onClick={() => togglePrefecture(pref)}
+                  onClick={() => editing && togglePrefecture(pref)}
+                  disabled={!editing}
                   className={`px-2 py-0.5 rounded text-xs transition-colors ${
                     selectedPrefectures.includes(pref)
                       ? "bg-primary text-white"
                       : "bg-gray-100 text-gray-600 hover:bg-gray-200"
-                  }`}
+                  } ${!editing ? "opacity-70 cursor-not-allowed" : ""}`}
                 >
                   {pref}
                 </button>
               ))}
             </div>
+            {editing && (
             <div className="flex items-center gap-3 mt-1">
               <button
                 type="button"
@@ -334,6 +356,7 @@ export default function PartnerSettingsPage() {
                 </span>
               )}
             </div>
+            )}
           </div>
 
           {/* 対応業種 */}
@@ -346,17 +369,19 @@ export default function PartnerSettingsPage() {
                 <button
                   key={ind}
                   type="button"
-                  onClick={() => toggleIndustry(ind)}
+                  onClick={() => editing && toggleIndustry(ind)}
+                  disabled={!editing}
                   className={`px-2 py-0.5 rounded text-xs transition-colors ${
                     supportedIndustries.includes(ind)
                       ? "bg-primary text-white"
                       : "bg-gray-100 text-gray-600 hover:bg-gray-200"
-                  }`}
+                  } ${!editing ? "opacity-70 cursor-not-allowed" : ""}`}
                 >
                   {ind}
                 </button>
               ))}
             </div>
+            {editing && (
             <div className="flex items-center gap-3 mt-1">
               <button
                 type="button"
@@ -380,6 +405,7 @@ export default function PartnerSettingsPage() {
                 </span>
               )}
             </div>
+            )}
           </div>
 
           {/* 対応入金時期 */}
@@ -393,22 +419,24 @@ export default function PartnerSettingsPage() {
                   key={timing}
                   type="button"
                   onClick={() =>
-                    setSupportedDepositTiming((prev) =>
+                    editing && setSupportedDepositTiming((prev) =>
                       prev.includes(timing)
                         ? prev.filter((t) => t !== timing)
                         : [...prev, timing]
                     )
                   }
+                  disabled={!editing}
                   className={`px-2 py-0.5 rounded text-xs transition-colors ${
                     supportedDepositTiming.includes(timing)
                       ? "bg-primary text-white"
                       : "bg-gray-100 text-gray-600 hover:bg-gray-200"
-                  }`}
+                  } ${!editing ? "opacity-70 cursor-not-allowed" : ""}`}
                 >
                   {timing}
                 </button>
               ))}
             </div>
+            {editing && (
             <div className="flex items-center gap-3 mt-1">
               <button
                 type="button"
@@ -432,6 +460,7 @@ export default function PartnerSettingsPage() {
                 </span>
               )}
             </div>
+            )}
           </div>
 
           {/* 個人事業主対応 */}
@@ -440,27 +469,28 @@ export default function PartnerSettingsPage() {
               <input
                 type="checkbox"
                 checked={soleProprietorOk}
-                onChange={(e) => setSoleProprietorOk(e.target.checked)}
-                className="rounded"
+                onChange={(e) => editing && setSoleProprietorOk(e.target.checked)}
+                disabled={!editing}
+                className={`rounded ${!editing ? "opacity-70 cursor-not-allowed" : ""}`}
               />
               個人事業主対応
             </label>
           </div>
 
-          {/* 見積もり対象ステータス（読み取り専用） */}
+          {/* 見積もり対象ステータス */}
           <div className="border-t border-gray-200 pt-4">
             <h3 className="text-sm font-bold text-gray-900 mb-2">一括見積もり対象</h3>
-            <p className="text-sm text-gray-600">
-              現在のステータス：
-              <span className={`inline-block ml-2 px-2 py-0.5 rounded text-xs font-medium ${
-                profile?.is_active
-                  ? "bg-green-100 text-green-800"
-                  : "bg-gray-100 text-gray-600"
-              }`}>
-                {profile?.is_active ? "送客対象" : "停止中"}
-              </span>
-            </p>
-            <p className="text-xs text-gray-400 mt-1">ステータスの変更は管理者にお問い合わせください。</p>
+            <p className="text-xs text-gray-500 mb-2">有効にすると、一括見積もりの送客対象業者になります。</p>
+            <label className="flex items-center gap-2 text-sm">
+              <input
+                type="checkbox"
+                checked={isActive}
+                onChange={(e) => editing && setIsActive(e.target.checked)}
+                disabled={!editing}
+                className={`rounded ${!editing ? "opacity-70 cursor-not-allowed" : ""}`}
+              />
+              見積もり送客対象にする
+            </label>
           </div>
 
           {message && (
@@ -470,15 +500,40 @@ export default function PartnerSettingsPage() {
             <p className="text-sm text-red-600 font-medium">{formError}</p>
           )}
 
-          <div className="flex gap-3">
-            <button
-              type="submit"
-              disabled={saving}
-              className="bg-primary text-white px-6 py-2.5 rounded-lg font-medium hover:bg-primary-dark transition-colors disabled:opacity-50"
-            >
-              {saving ? "保存中..." : "設定を保存"}
-            </button>
-          </div>
+          {editing && (
+            <div className="flex gap-3">
+              <button
+                type="submit"
+                disabled={saving}
+                className="bg-primary text-white px-6 py-2.5 rounded-lg font-medium hover:bg-primary-dark transition-colors disabled:opacity-50"
+              >
+                {saving ? "保存中..." : "設定を保存"}
+              </button>
+              <button
+                type="button"
+                onClick={() => {
+                  setEditing(false);
+                  // 元の値に戻す
+                  if (profile) {
+                    setName(profile.name);
+                    setEmail(profile.email || "");
+                    setMinAmount(String(profile.min_amount));
+                    setMaxAmount(String(profile.max_amount));
+                    setSelectedPrefectures(profile.supported_prefectures?.length ? profile.supported_prefectures : [...PREFECTURES]);
+                    setSupportedIndustries(profile.supported_industries?.length ? profile.supported_industries : [...INDUSTRIES] as string[]);
+                    setSupportedDepositTiming(profile.supported_deposit_timing?.length ? profile.supported_deposit_timing : [...DEPOSIT_TIMING_OPTIONS]);
+                    setSoleProprietorOk(profile.sole_proprietor_ok ?? true);
+                    setIsActive(profile.is_active ?? true);
+                  }
+                  setMessage("");
+                  setFormError("");
+                }}
+                className="px-6 py-2.5 rounded-lg font-medium text-gray-600 hover:bg-gray-100 transition-colors"
+              >
+                キャンセル
+              </button>
+            </div>
+          )}
         </form>
       </div>
 

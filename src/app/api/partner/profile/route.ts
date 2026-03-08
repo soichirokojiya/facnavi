@@ -54,6 +54,7 @@ export async function PATCH(request: NextRequest) {
   if (body.supported_industries !== undefined) updateData.supported_industries = body.supported_industries;
   if (body.supported_deposit_timing !== undefined) updateData.supported_deposit_timing = body.supported_deposit_timing;
   if (body.sole_proprietor_ok !== undefined) updateData.sole_proprietor_ok = body.sole_proprietor_ok;
+  if (body.is_active !== undefined) updateData.is_active = body.is_active;
 
   if (Object.keys(updateData).length === 0) {
     return NextResponse.json({ error: "更新するデータがありません。" }, { status: 400 });

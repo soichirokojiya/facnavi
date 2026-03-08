@@ -74,6 +74,7 @@ export default function AdminPartnersPage() {
   const [companyOptions, setCompanyOptions] = useState<CompanyOption[]>([]);
   const [loading, setLoading] = useState(true);
   const [showForm, setShowForm] = useState(false);
+  const [editingEnabled, setEditingEnabled] = useState(false);
   const [editingId, setEditingId] = useState<string | null>(null);
   const [form, setForm] = useState<FormState>(emptyForm);
   const [showCompanyDropdown, setShowCompanyDropdown] = useState(false);
@@ -139,6 +140,7 @@ export default function AdminPartnersPage() {
       isActive: p.is_active,
     });
     setFormError("");
+    setEditingEnabled(false);
     setShowForm(true);
   };
 
@@ -240,8 +242,20 @@ export default function AdminPartnersPage() {
 
       {showForm && (
         <div className="bg-white rounded-xl border border-gray-200 p-6 mb-6">
-          <h2 className="text-lg font-bold text-gray-900 mb-4">業者編集</h2>
+          <div className="flex items-center justify-between mb-4">
+            <h2 className="text-lg font-bold text-gray-900">業者編集</h2>
+            {!editingEnabled && (
+              <button
+                type="button"
+                onClick={() => setEditingEnabled(true)}
+                className="px-4 py-1.5 rounded-lg text-sm font-medium border border-primary text-primary hover:bg-primary/5 transition-colors"
+              >
+                編集する
+              </button>
+            )}
+          </div>
           <form onSubmit={handleSubmit} className="space-y-4">
+            <fieldset disabled={!editingEnabled} className={`space-y-4 ${!editingEnabled ? "opacity-80" : ""}`}>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-1">
@@ -559,29 +573,49 @@ export default function AdminPartnersPage() {
               </label>
             </div>
 
+            </fieldset>
+
             {formError && (
-              <p className="text-sm text-danger font-medium">{formError}</p>
+              <p className="text-sm text-danger font-medium mt-4">{formError}</p>
             )}
-            <div className="flex gap-3">
-              <button
-                type="submit"
-                disabled={submitting}
-                className="bg-primary text-white px-6 py-2.5 rounded-lg font-medium hover:bg-primary-dark transition-colors disabled:opacity-50"
-              >
-                {submitting ? "保存中..." : "更新する"}
-              </button>
-              <button
-                type="button"
-                onClick={() => {
-                  setShowForm(false);
-                  setEditingId(null);
-                  setForm(emptyForm);
-                }}
-                className="px-6 py-2.5 rounded-lg font-medium text-gray-600 hover:bg-gray-100 transition-colors"
-              >
-                キャンセル
-              </button>
-            </div>
+            {editingEnabled && (
+              <div className="flex gap-3 mt-4">
+                <button
+                  type="submit"
+                  disabled={submitting}
+                  className="bg-primary text-white px-6 py-2.5 rounded-lg font-medium hover:bg-primary-dark transition-colors disabled:opacity-50"
+                >
+                  {submitting ? "保存中..." : "更新する"}
+                </button>
+                <button
+                  type="button"
+                  onClick={() => {
+                    setShowForm(false);
+                    setEditingId(null);
+                    setEditingEnabled(false);
+                    setForm(emptyForm);
+                  }}
+                  className="px-6 py-2.5 rounded-lg font-medium text-gray-600 hover:bg-gray-100 transition-colors"
+                >
+                  キャンセル
+                </button>
+              </div>
+            )}
+            {!editingEnabled && (
+              <div className="flex gap-3 mt-4">
+                <button
+                  type="button"
+                  onClick={() => {
+                    setShowForm(false);
+                    setEditingId(null);
+                    setForm(emptyForm);
+                  }}
+                  className="px-6 py-2.5 rounded-lg font-medium text-gray-600 hover:bg-gray-100 transition-colors"
+                >
+                  閉じる
+                </button>
+              </div>
+            )}
           </form>
         </div>
       )}
