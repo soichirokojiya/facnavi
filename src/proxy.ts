@@ -23,7 +23,8 @@ export function proxy(request: NextRequest) {
     pathname === "/partner/login" ||
     pathname === "/partner/register" ||
     pathname === "/partner/forgot-password" ||
-    pathname === "/partner/reset-password"
+    pathname === "/partner/reset-password" ||
+    pathname === "/partner/verify"
   ) {
     return NextResponse.next();
   }
