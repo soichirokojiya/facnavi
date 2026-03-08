@@ -111,7 +111,7 @@ export default async function HomePage() {
             </div>
 
             {/* 右：一括見積もりバナー */}
-            <div className="flex-shrink-0 w-full md:w-[360px] relative">
+            <div className="flex-shrink-0 w-full md:w-[360px] relative md:mt-14">
               <div className="absolute -inset-4 bg-gradient-to-br from-blue-400/15 via-emerald-400/10 to-transparent rounded-3xl blur-2xl pointer-events-none hidden md:block" />
               <Link href="/mitsumori" className="relative block rounded-2xl overflow-hidden shadow-xl ring-1 ring-black/5 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 mx-auto md:max-w-none">
                 <Image src="/images/mitsumori-banner.png" width={360} height={280} alt="ファクナビ厳選 無料一括見積もり" className="w-full h-auto" />
