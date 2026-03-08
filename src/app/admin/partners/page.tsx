@@ -59,7 +59,7 @@ const emptyForm: FormState = {
   maxAmount: "999999999",
   selectedPrefectures: [...PREFECTURES],
   supportedIndustries: [...INDUSTRIES] as string[],
-  feePerLead: "0",
+  feePerLead: "15000",
   soleProprietorOk: true,
   isActive: true,
 };
@@ -348,19 +348,7 @@ export default function AdminPartnersPage() {
                   value={form.feePerLead ? Number(form.feePerLead).toLocaleString() : ""}
                   onChange={(e) => setForm({ ...form, feePerLead: e.target.value.replace(/[^0-9]/g, "") })}
                   className="w-full px-3 py-2 border-2 border-gray-200 rounded-lg focus:ring-3 focus:ring-primary/10 focus:border-primary outline-none"
-                  placeholder="例: 5,000"
-                />
-              </div>
-              <div>
-                <label className="block text-sm font-medium text-gray-700 mb-1">
-                  対応最小金額（円）
-                </label>
-                <input
-                  type="text"
-                  inputMode="numeric"
-                  value={form.minAmount ? Number(form.minAmount).toLocaleString() : ""}
-                  onChange={(e) => setForm({ ...form, minAmount: e.target.value.replace(/[^0-9]/g, "") })}
-                  className="w-full px-3 py-2 border-2 border-gray-200 rounded-lg focus:ring-3 focus:ring-primary/10 focus:border-primary outline-none"
+                  placeholder="例: 15,000"
                 />
               </div>
               <div>
@@ -372,6 +360,18 @@ export default function AdminPartnersPage() {
                   inputMode="numeric"
                   value={form.maxAmount ? Number(form.maxAmount).toLocaleString() : ""}
                   onChange={(e) => setForm({ ...form, maxAmount: e.target.value.replace(/[^0-9]/g, "") })}
+                  className="w-full px-3 py-2 border-2 border-gray-200 rounded-lg focus:ring-3 focus:ring-primary/10 focus:border-primary outline-none"
+                />
+              </div>
+              <div>
+                <label className="block text-sm font-medium text-gray-700 mb-1">
+                  対応最小金額（円）
+                </label>
+                <input
+                  type="text"
+                  inputMode="numeric"
+                  value={form.minAmount ? Number(form.minAmount).toLocaleString() : ""}
+                  onChange={(e) => setForm({ ...form, minAmount: e.target.value.replace(/[^0-9]/g, "") })}
                   className="w-full px-3 py-2 border-2 border-gray-200 rounded-lg focus:ring-3 focus:ring-primary/10 focus:border-primary outline-none"
                 />
               </div>
