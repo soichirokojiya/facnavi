@@ -3,15 +3,6 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
-interface LeadAssignment {
-  id: string;
-  status: string;
-  created_at: string;
-  mitsumori_requests: {
-    company_name: string;
-  };
-}
-
 interface MonthlyStats {
   month: string;
   total: number;
@@ -26,7 +17,6 @@ function formatYen(amount: number): string {
 }
 
 export default function PartnerDashboardPage() {
-  const [leads, setLeads] = useState<LeadAssignment[]>([]);
   const [monthlyStats, setMonthlyStats] = useState<MonthlyStats[]>([]);
   const [feePerLead, setFeePerLead] = useState(0);
   const [taxRate, setTaxRate] = useState(10);
@@ -39,13 +29,8 @@ export default function PartnerDashboardPage() {
   useEffect(() => {
     async function fetchData() {
       try {
-        const [leadsRes, statsRes] = await Promise.all([
-          fetch("/api/partner/leads"),
-          fetch("/api/partner/leads/stats"),
-        ]);
-        const leadsJson = await leadsRes.json();
+        const statsRes = await fetch("/api/partner/leads/stats");
         const statsJson = await statsRes.json();
-        setLeads(leadsJson.data || []);
         setMonthlyStats(statsJson.data || []);
         setFeePerLead(statsJson.feePerLead || 0);
         setTaxRate(statsJson.taxRate ?? 10);
@@ -68,12 +53,6 @@ export default function PartnerDashboardPage() {
     Number(s.month.split("-")[0]) === selectedYear
   );
 
-  const activeCount = leads.filter((l) => l.status === "active").length;
-  const takedownRequestedCount = leads.filter(
-    (l) => l.status === "takedown_requested"
-  ).length;
-  const removedCount = leads.filter((l) => l.status === "removed").length;
-
   if (loading) {
     return (
       <div className="flex items-center justify-center h-64">
@@ -85,33 +64,6 @@ export default function PartnerDashboardPage() {
   return (
     <div>
       <h1 className="text-2xl font-bold text-gray-900 mb-6">ダッシュボード</h1>
-
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
-        <StatCard
-          label="全リード数"
-          value={leads.length}
-          color="blue"
-          href="/partner/leads"
-        />
-        <StatCard
-          label="有効リード"
-          value={activeCount}
-          color="green"
-          href="/partner/leads"
-        />
-        <StatCard
-          label="取下依頼中"
-          value={takedownRequestedCount}
-          color="amber"
-          href="/partner/leads"
-        />
-        <StatCard
-          label="取下確定"
-          value={removedCount}
-          color="red"
-          href="/partner/leads"
-        />
-      </div>
 
       <div className="bg-white rounded-xl border border-gray-200 p-6 mb-8">
         <div className="flex items-center justify-between mb-4">
@@ -227,31 +179,3 @@ export default function PartnerDashboardPage() {
   );
 }
 
-function StatCard({
-  label,
-  value,
-  color,
-  href,
-}: {
-  label: string;
-  value: number;
-  color: "blue" | "amber" | "green" | "red";
-  href: string;
-}) {
-  const colorMap = {
-    blue: "bg-blue-50 text-blue-700 border-blue-200",
-    amber: "bg-amber-50 text-amber-700 border-amber-200",
-    green: "bg-green-50 text-green-700 border-green-200",
-    red: "bg-red-50 text-red-700 border-red-200",
-  };
-
-  return (
-    <Link
-      href={href}
-      className={`rounded-xl border p-4 hover:shadow-md transition-shadow ${colorMap[color]}`}
-    >
-      <p className="text-sm font-medium opacity-80">{label}</p>
-      <p className="text-3xl font-bold mt-1">{value}</p>
-    </Link>
-  );
-}
