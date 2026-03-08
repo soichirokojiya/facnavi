@@ -87,6 +87,9 @@ export default function ForPartnersPage() {
         <div className="absolute -top-40 -right-40 w-[500px] h-[500px] bg-blue-100/50 rounded-full blur-3xl" />
         <div className="absolute bottom-0 -left-32 w-80 h-80 bg-emerald-100/40 rounded-full blur-3xl" />
         <div className="relative max-w-4xl mx-auto px-4 text-center">
+          <p className="inline-flex items-center gap-1.5 bg-orange-50 backdrop-blur border border-orange-200 text-orange-700 text-xs font-bold px-3 py-1.5 rounded-full mb-3">
+            2026年3月中旬〜4月 サービスローンチ予定
+          </p>
           <p className="inline-flex items-center gap-1.5 bg-white/80 backdrop-blur border border-blue-200 text-blue-700 text-xs font-bold px-3 py-1.5 rounded-full mb-6">
             先着5社限定
           </p>
