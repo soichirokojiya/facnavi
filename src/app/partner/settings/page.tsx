@@ -232,7 +232,7 @@ export default function PartnerSettingsPage() {
               </label>
               <input
                 type="text"
-                value={profile?.fee_per_lead != null ? `${profile.fee_per_lead}` : "-"}
+                value={profile?.fee_per_lead != null ? profile.fee_per_lead.toLocaleString() : "-"}
                 className="w-full px-3 py-2 border-2 border-gray-100 rounded-lg bg-gray-50 text-gray-500 cursor-not-allowed"
                 disabled
               />
