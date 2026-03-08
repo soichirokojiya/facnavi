@@ -120,23 +120,24 @@ export default async function HomePage() {
           </div>
 
           {/* 統計バー — ヒーロー下部に横並び */}
-          <div className="mt-8 flex items-center justify-center gap-6 md:gap-8">
-            <div className="text-center">
-              <div className="text-2xl md:text-3xl font-black text-blue-600 leading-none tracking-tighter">{companies.length}<span className="text-xs font-bold ml-0.5">社</span></div>
-              <div className="text-[10px] font-bold text-gray-400 mt-0.5">掲載社数</div>
-            </div>
-            <div className="w-px h-7 bg-gray-200" />
-            <div className="text-center">
-              <div className="text-2xl md:text-3xl font-black text-emerald-500 leading-none">無料</div>
-              <div className="text-[10px] font-bold text-gray-400 mt-0.5">利用料金</div>
-            </div>
-            <div className="w-px h-7 bg-gray-200" />
-            <div className="text-center">
-              <div className="text-2xl md:text-3xl font-black text-orange-500 leading-none">即日</div>
-              <div className="text-[10px] font-bold text-gray-400 mt-0.5">最短入金</div>
-            </div>
-            <span className="text-[10px] text-gray-300 ml-1 whitespace-nowrap">※ <CurrentDate /> 現在</span>
+          <div className="mt-8 flex items-center justify-center gap-4 md:gap-6">
+            {[
+              { icon: <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={1.5}><path strokeLinecap="round" strokeLinejoin="round" d="M2.25 21h19.5m-18-18v18m10.5-18v18m6-13.5V21M6.75 6.75h.75m-.75 3h.75m-.75 3h.75m3-6h.75m-.75 3h.75m-.75 3h.75M6.75 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3h12m-.75 4.5H21m-3.75 3H21m-3.75 3H21" /></svg>, value: <>{companies.length}<span className="text-sm font-bold">社</span></>, label: "掲載社数", accent: "text-blue-500", iconBg: "bg-blue-100 text-blue-500" },
+              { icon: <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={1.5}><path strokeLinecap="round" strokeLinejoin="round" d="M9 7.5l3 4.5m0 0l3-4.5M12 12v5.25M15 12H9m6 3H9m12-3a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>, value: <>0<span className="text-sm font-bold">円</span></>, label: "利用料金", accent: "text-emerald-500", iconBg: "bg-emerald-100 text-emerald-500" },
+              { icon: <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={1.5}><path strokeLinecap="round" strokeLinejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>, value: <>即日</>, label: "最短入金", accent: "text-orange-500", iconBg: "bg-orange-100 text-orange-500" },
+            ].map((stat, i) => (
+              <div key={i} className="flex items-center gap-3 bg-white/80 backdrop-blur-sm border border-gray-100 rounded-2xl px-5 py-3 shadow-sm hover:shadow-md transition-shadow">
+                <div className={`w-10 h-10 ${stat.iconBg} rounded-xl flex items-center justify-center shrink-0`}>
+                  {stat.icon}
+                </div>
+                <div>
+                  <div className={`text-2xl md:text-3xl font-black leading-none tracking-tighter ${stat.accent}`}>{stat.value}</div>
+                  <div className="text-[10px] font-bold text-gray-400 mt-0.5">{stat.label}</div>
+                </div>
+              </div>
+            ))}
           </div>
+          <p className="text-[10px] text-gray-300 text-center mt-2">※ <CurrentDate /> 現在</p>
 
           {/* 検索バー + タグ */}
           <div className="mt-6 max-w-lg mx-auto">
