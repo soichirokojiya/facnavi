@@ -66,9 +66,9 @@ export default async function HomePage() {
           <div className="absolute bottom-0 -left-32 w-80 h-80 bg-emerald-100/40 rounded-full blur-3xl" />
         </div>
 
-        <div className="relative max-w-6xl mx-auto px-4 py-10 md:py-16">
+        <div className="relative max-w-5xl mx-auto px-4 py-10 md:py-16">
           {/* メイン：見出し + バナー */}
-          <div className="flex flex-col md:flex-row md:items-center gap-8 md:gap-10">
+          <div className="flex flex-col md:flex-row md:items-center md:justify-center gap-8 md:gap-12">
             <div className="flex-1 min-w-0 text-center md:text-left">
               {/* バッジ */}
               <p className="shimmer inline-flex items-center gap-1.5 bg-gradient-to-r from-blue-600 to-blue-700 text-white font-bold px-4 py-1.5 rounded-full mb-5 text-sm shadow-lg shadow-blue-500/20">
@@ -120,7 +120,7 @@ export default async function HomePage() {
           </div>
 
           {/* 統計バー — ヒーロー下部に横並び */}
-          <div className="mt-8 flex items-center justify-center md:justify-start gap-6 md:gap-8">
+          <div className="mt-8 flex items-center justify-center gap-6 md:gap-8">
             <div className="text-center">
               <div className="text-2xl md:text-3xl font-black text-blue-600 leading-none tracking-tighter">{companies.length}<span className="text-xs font-bold ml-0.5">社</span></div>
               <div className="text-[10px] font-bold text-gray-400 mt-0.5">掲載社数</div>
