@@ -2,9 +2,65 @@ import { NextRequest, NextResponse } from "next/server";
 import { createClient } from "@supabase/supabase-js";
 import { Resend } from "resend";
 import crypto from "crypto";
+import Anthropic from "@anthropic-ai/sdk";
 
 const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL!;
 const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!;
+
+async function checkSpam(data: {
+  company_name: string;
+  contact_name: string;
+  phone: string;
+  email: string;
+  industry: string;
+  business_type: string;
+  message?: string;
+}): Promise<{ isSpam: boolean; reason?: string }> {
+  const apiKey = process.env.ANTHROPIC_API_KEY;
+  if (!apiKey) return { isSpam: false };
+
+  try {
+    const anthropic = new Anthropic({ apiKey });
+    const msg = await anthropic.messages.create({
+      model: "claude-haiku-4-5-20251001",
+      max_tokens: 200,
+      messages: [
+        {
+          role: "user",
+          content: `以下はファクタリングの一括見積もりフォームへの送信内容です。スパム・いたずら・テスト送信かどうか判定してください。
+
+会社名: ${data.company_name}
+担当者名: ${data.contact_name}
+電話番号: ${data.phone}
+メール: ${data.email}
+業種: ${data.industry}
+事業形態: ${data.business_type}
+${data.message ? `相談内容: ${data.message}` : ""}
+
+以下の基準でスパム判定してください:
+- 会社名や担当者名が明らかに意味不明な文字列（ランダム文字、"aaa"、"test"等）
+- 電話番号が明らかに偽（"000-0000-0000"、桁数不足等）
+- メールが明らかに偽（テスト用ドメイン等）
+- 相談内容に広告・宣伝・無関係な内容
+
+正当なビジネスの問い合わせは通してください。少しでも正当性がある場合はスパムではないと判断してください。
+
+JSON形式で回答: {"isSpam": true/false, "reason": "理由"}`,
+        },
+      ],
+    });
+
+    const text = msg.content[0].type === "text" ? msg.content[0].text : "";
+    const jsonMatch = text.match(/\{[\s\S]*\}/);
+    if (jsonMatch) {
+      return JSON.parse(jsonMatch[0]);
+    }
+    return { isSpam: false };
+  } catch (err) {
+    console.error("Spam check error:", err);
+    return { isSpam: false }; // エラー時は通す
+  }
+}
 
 export async function POST(request: NextRequest) {
   try {
@@ -59,6 +115,18 @@ export async function POST(request: NextRequest) {
     if (!/^[0-9\-]+$/.test(phone)) {
       return NextResponse.json(
         { error: "正しい電話番号を入力してください。" },
+        { status: 400 }
+      );
+    }
+
+    // AIスパム判定
+    const spamResult = await checkSpam({
+      company_name, contact_name, phone, email, industry, business_type, message,
+    });
+    if (spamResult.isSpam) {
+      console.warn("Spam detected:", spamResult.reason, { company_name, contact_name, email });
+      return NextResponse.json(
+        { error: "送信内容を確認できませんでした。内容をご確認の上、再度お試しください。" },
         { status: 400 }
       );
     }

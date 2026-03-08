@@ -1,4 +1,4 @@
-import { getDeadline, isDeadlinePassed } from "@/lib/business-days";
+import { getDeadline, isDeadlinePassed, isLeadConfirmed } from "@/lib/business-days";
 
 export interface LeadRow {
   id: string;
@@ -12,8 +12,9 @@ export interface MonthlyStats {
   total: number;
   removed: number;
   takedownRequested: number;
-  billable: number;
-  confirmed: boolean; // 翌月10日経過で確定
+  confirmedCount: number;    // active + 5営業日経過
+  unconfirmedCount: number;  // active + 5営業日以内
+  confirmed: boolean; // 翌月10日経過で月次確定
 }
 
 /**
@@ -71,10 +72,10 @@ export function aggregateByMonth(leads: LeadRow[]): MonthlyStats[] {
 
   const monthMap = new Map<
     string,
-    { total: number; removed: number; takedownRequested: number }
+    { total: number; removed: number; takedownRequested: number; confirmedCount: number; unconfirmedCount: number }
   >();
   for (const m of months) {
-    monthMap.set(m, { total: 0, removed: 0, takedownRequested: 0 });
+    monthMap.set(m, { total: 0, removed: 0, takedownRequested: 0, confirmedCount: 0, unconfirmedCount: 0 });
   }
 
   for (const lead of leads) {
@@ -87,6 +88,10 @@ export function aggregateByMonth(leads: LeadRow[]): MonthlyStats[] {
       bucket.removed++;
     } else if (lead.status === "takedown_requested") {
       bucket.takedownRequested++;
+    } else if (isLeadConfirmed(lead.created_at)) {
+      bucket.confirmedCount++;
+    } else {
+      bucket.unconfirmedCount++;
     }
   }
 
@@ -99,7 +104,8 @@ export function aggregateByMonth(leads: LeadRow[]): MonthlyStats[] {
       total: bucket.total,
       removed: bucket.removed,
       takedownRequested: bucket.takedownRequested,
-      billable: bucket.total - bucket.removed - bucket.takedownRequested,
+      confirmedCount: bucket.confirmedCount,
+      unconfirmedCount: bucket.unconfirmedCount,
       confirmed: isDeadlinePassed(y, m),
     };
   });
@@ -111,10 +117,12 @@ export function aggregateByMonth(leads: LeadRow[]): MonthlyStats[] {
 export function aggregateForMonth(
   leads: LeadRow[],
   targetMonth: string
-): { total: number; removed: number; takedownRequested: number; billable: number } {
+): { total: number; removed: number; takedownRequested: number; confirmedCount: number; unconfirmedCount: number } {
   let total = 0;
   let removed = 0;
   let takedownRequested = 0;
+  let confirmedCount = 0;
+  let unconfirmedCount = 0;
 
   for (const lead of leads) {
     const billingMonth = getBillingMonth(lead);
@@ -125,6 +133,10 @@ export function aggregateForMonth(
       removed++;
     } else if (lead.status === "takedown_requested") {
       takedownRequested++;
+    } else if (isLeadConfirmed(lead.created_at)) {
+      confirmedCount++;
+    } else {
+      unconfirmedCount++;
     }
   }
 
@@ -132,6 +144,7 @@ export function aggregateForMonth(
     total,
     removed,
     takedownRequested,
-    billable: total - removed - takedownRequested,
+    confirmedCount,
+    unconfirmedCount,
   };
 }

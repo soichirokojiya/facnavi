@@ -8,7 +8,8 @@ interface MonthlyStats {
   total: number;
   removed: number;
   takedownRequested: number;
-  billable: number;
+  confirmedCount: number;
+  unconfirmedCount: number;
   confirmed: boolean;
 }
 
@@ -96,13 +97,16 @@ export default function PartnerDashboardPage() {
                     総リード数
                   </th>
                   <th className="pb-2 pr-4 font-semibold text-gray-700 text-right">
-                    取下確定
+                    未確定
+                  </th>
+                  <th className="pb-2 pr-4 font-semibold text-gray-700 text-right">
+                    確定
                   </th>
                   <th className="pb-2 pr-4 font-semibold text-gray-700 text-right">
                     取下依頼中
                   </th>
                   <th className="pb-2 pr-4 font-semibold text-gray-700 text-right">
-                    フィー対象
+                    取下確定
                   </th>
                   <th className="pb-2 pr-4 font-semibold text-gray-700 text-right">
                     単価
@@ -128,20 +132,23 @@ export default function PartnerDashboardPage() {
                     <td className="py-2 pr-4 text-right text-gray-700">
                       {row.total}
                     </td>
-                    <td className="py-2 pr-4 text-right text-red-600">
-                      {row.removed}
+                    <td className="py-2 pr-4 text-right text-sky-600">
+                      {row.unconfirmedCount}
+                    </td>
+                    <td className="py-2 pr-4 text-right font-bold text-blue-700">
+                      {row.confirmedCount}
                     </td>
                     <td className="py-2 pr-4 text-right text-amber-600">
                       {row.takedownRequested}
                     </td>
-                    <td className="py-2 pr-4 text-right font-bold text-blue-700">
-                      {row.billable}
+                    <td className="py-2 pr-4 text-right text-red-600">
+                      {row.removed}
                     </td>
                     <td className="py-2 pr-4 text-right text-gray-700">
                       {formatYen(feePerLead)}
                     </td>
                     <td className="py-2 pr-4 text-right font-bold text-gray-900">
-                      {formatYen(Math.floor(row.billable * feePerLead * (100 + taxRate) / 100))}
+                      {formatYen(Math.floor(row.confirmedCount * feePerLead * (100 + taxRate) / 100))}
                     </td>
                     <td className="py-2 text-center">
                       {row.confirmed ? (

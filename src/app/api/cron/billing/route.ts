@@ -87,7 +87,7 @@ export async function GET(request: NextRequest) {
 
     const stats = aggregateForMonth(leads || [], targetKey);
     const feePerLead = partner.fee_per_lead || 0;
-    const amountExclTax = stats.billable * feePerLead;
+    const amountExclTax = stats.confirmedCount * feePerLead;
     const taxAmount = Math.floor(amountExclTax * taxRate / 100);
     const amountInclTax = amountExclTax + taxAmount;
 
@@ -100,7 +100,7 @@ export async function GET(request: NextRequest) {
       会社名: partner.name,
       total: String(stats.total),
       removed: String(stats.removed),
-      billable: String(stats.billable),
+      billable: String(stats.confirmedCount),
       fee_per_lead: feePerLead.toLocaleString(),
       subtotal: amountExclTax.toLocaleString(),
       tax_rate: String(taxRate),

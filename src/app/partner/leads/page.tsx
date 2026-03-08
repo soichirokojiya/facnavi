@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import { isLeadConfirmed } from "@/lib/business-days";
 
 function formatYen(v: string | null | undefined): string {
   if (!v) return "-";
@@ -32,13 +33,15 @@ interface LeadAssignment {
 }
 
 const statusLabels: Record<string, string> = {
-  active: "有効",
+  active: "確定",
+  active_unconfirmed: "未確定",
   takedown_requested: "取下依頼中",
   removed: "取下確定",
 };
 
 const statusColors: Record<string, string> = {
   active: "bg-green-100 text-green-800",
+  active_unconfirmed: "bg-sky-100 text-sky-800",
   takedown_requested: "bg-amber-100 text-amber-800",
   removed: "bg-red-100 text-red-800",
 };
@@ -67,7 +70,13 @@ export default function PartnerLeadsPage() {
   }, []);
 
   const filtered =
-    filter === "all" ? leads : leads.filter((l) => l.status === filter);
+    filter === "all"
+      ? leads
+      : filter === "active"
+        ? leads.filter((l) => l.status === "active" && isLeadConfirmed(l.created_at))
+        : filter === "active_unconfirmed"
+          ? leads.filter((l) => l.status === "active" && !isLeadConfirmed(l.created_at))
+          : leads.filter((l) => l.status === filter);
 
   const totalPages = Math.max(1, Math.ceil(filtered.length / ITEMS_PER_PAGE));
   const safeCurrentPage = Math.min(currentPage, totalPages);
@@ -94,7 +103,8 @@ export default function PartnerLeadsPage() {
       <div className="flex gap-2 mb-4">
         {[
           { key: "all", label: "すべて" },
-          { key: "active", label: "有効" },
+          { key: "active_unconfirmed", label: "未確定" },
+          { key: "active", label: "確定" },
           { key: "takedown_requested", label: "取下依頼中" },
           { key: "removed", label: "取下確定" },
         ].map((f) => (
@@ -162,13 +172,20 @@ export default function PartnerLeadsPage() {
                       {formatYen(lead.mitsumori_requests.purchase_amount)}
                     </td>
                     <td className="px-4 py-3">
-                      <span
-                        className={`inline-block px-2 py-0.5 rounded text-xs font-medium ${
-                          statusColors[lead.status] || "bg-gray-100 text-gray-800"
-                        }`}
-                      >
-                        {statusLabels[lead.status] || lead.status}
-                      </span>
+                      {(() => {
+                        const displayStatus = lead.status === "active"
+                          ? (isLeadConfirmed(lead.created_at) ? "active" : "active_unconfirmed")
+                          : lead.status;
+                        return (
+                          <span
+                            className={`inline-block px-2 py-0.5 rounded text-xs font-medium ${
+                              statusColors[displayStatus] || "bg-gray-100 text-gray-800"
+                            }`}
+                          >
+                            {statusLabels[displayStatus] || lead.status}
+                          </span>
+                        );
+                      })()}
                     </td>
                     <td className="px-4 py-3 text-gray-600">
                       {new Date(

@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import { useParams, useRouter } from "next/navigation";
 import Link from "next/link";
+import { isLeadConfirmed } from "@/lib/business-days";
 
 function formatYen(v: string | null | undefined): string {
   if (!v) return "-";
@@ -42,13 +43,15 @@ interface LeadDetail {
 }
 
 const statusLabels: Record<string, string> = {
-  active: "有効",
+  active: "確定",
+  active_unconfirmed: "未確定",
   takedown_requested: "取下依頼中",
   removed: "取下確定",
 };
 
 const statusColors: Record<string, string> = {
   active: "bg-green-100 text-green-800",
+  active_unconfirmed: "bg-sky-100 text-sky-800",
   takedown_requested: "bg-amber-100 text-amber-800",
   removed: "bg-red-100 text-red-800",
 };
@@ -154,13 +157,20 @@ export default function PartnerLeadDetailPage() {
 
       <div className="flex items-center gap-3 mb-6">
         <h1 className="text-2xl font-bold text-gray-900">リード詳細</h1>
-        <span
-          className={`inline-block px-2.5 py-1 rounded text-xs font-medium ${
-            statusColors[lead.status] || "bg-gray-100 text-gray-800"
-          }`}
-        >
-          {statusLabels[lead.status] || lead.status}
-        </span>
+        {(() => {
+          const displayStatus = lead.status === "active"
+            ? (isLeadConfirmed(lead.created_at) ? "active" : "active_unconfirmed")
+            : lead.status;
+          return (
+            <span
+              className={`inline-block px-2.5 py-1 rounded text-xs font-medium ${
+                statusColors[displayStatus] || "bg-gray-100 text-gray-800"
+              }`}
+            >
+              {statusLabels[displayStatus] || lead.status}
+            </span>
+          );
+        })()}
       </div>
 
       {/* 申し込み詳細 */}

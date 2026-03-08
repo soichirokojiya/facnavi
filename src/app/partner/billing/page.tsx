@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { Suspense, useEffect, useState } from "react";
 import { useSearchParams, useRouter } from "next/navigation";
+import { isLeadConfirmed } from "@/lib/business-days";
 
 interface LeadItem {
   id: string;
@@ -19,13 +20,15 @@ interface LeadItem {
 }
 
 const statusLabels: Record<string, string> = {
-  active: "有効",
+  active: "確定",
+  active_unconfirmed: "未確定",
   takedown_requested: "取下依頼中",
   removed: "取下確定",
 };
 
 const statusColors: Record<string, string> = {
   active: "bg-green-100 text-green-800",
+  active_unconfirmed: "bg-sky-100 text-sky-800",
   takedown_requested: "bg-amber-100 text-amber-800",
   removed: "bg-red-100 text-red-800",
 };
@@ -103,11 +106,11 @@ function BillingDetailContent() {
     );
   }
 
-  const activeCount = leads.filter((l) => l.status === "active").length;
+  const confirmedCount = leads.filter((l) => l.status === "active" && isLeadConfirmed(l.created_at)).length;
+  const unconfirmedCount = leads.filter((l) => l.status === "active" && !isLeadConfirmed(l.created_at)).length;
   const takedownCount = leads.filter((l) => l.status === "takedown_requested").length;
   const removedCount = leads.filter((l) => l.status === "removed").length;
-  const billable = activeCount;
-  const subtotal = billable * feePerLead;
+  const subtotal = confirmedCount * feePerLead;
   const taxAmount = Math.floor(subtotal * taxRate / 100);
   const totalAmount = subtotal + taxAmount;
 
@@ -124,7 +127,7 @@ function BillingDetailContent() {
         <select
           value={month}
           onChange={(e) => router.push(`/partner/billing?month=${e.target.value}`)}
-          className="px-3 py-1.5 border-2 border-gray-200 rounded-lg text-sm font-medium focus:ring-3 focus:ring-primary/10 focus:border-primary outline-none"
+          className="px-4 py-2 border-2 border-primary/30 bg-primary/5 rounded-lg text-sm font-bold text-primary focus:ring-3 focus:ring-primary/20 focus:border-primary outline-none cursor-pointer"
         >
           {getMonthOptions().map((opt) => (
             <option key={opt.value} value={opt.value}>
@@ -135,14 +138,18 @@ function BillingDetailContent() {
       </div>
 
       {/* サマリー */}
-      <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-6">
-        <div className="bg-blue-50 border border-blue-200 rounded-xl p-4">
-          <p className="text-sm text-blue-600 font-medium">総リード数</p>
-          <p className="text-2xl font-bold text-blue-700">{leads.length}</p>
+      <div className="grid grid-cols-2 sm:grid-cols-5 gap-4 mb-6">
+        <div className="bg-gray-50 border border-gray-200 rounded-xl p-4">
+          <p className="text-sm text-gray-600 font-medium">総リード数</p>
+          <p className="text-2xl font-bold text-gray-700">{leads.length}</p>
+        </div>
+        <div className="bg-sky-50 border border-sky-200 rounded-xl p-4">
+          <p className="text-sm text-sky-600 font-medium">未確定</p>
+          <p className="text-2xl font-bold text-sky-700">{unconfirmedCount}</p>
         </div>
         <div className="bg-green-50 border border-green-200 rounded-xl p-4">
-          <p className="text-sm text-green-600 font-medium">フィー対象</p>
-          <p className="text-2xl font-bold text-green-700">{billable}</p>
+          <p className="text-sm text-green-600 font-medium">確定</p>
+          <p className="text-2xl font-bold text-green-700">{confirmedCount}</p>
         </div>
         <div className="bg-amber-50 border border-amber-200 rounded-xl p-4">
           <p className="text-sm text-amber-600 font-medium">取下依頼中</p>
@@ -159,8 +166,8 @@ function BillingDetailContent() {
         <h2 className="text-lg font-bold text-gray-900 mb-3">請求概要</h2>
         <div className="space-y-2 text-sm">
           <div className="flex justify-between">
-            <span className="text-gray-600">フィー対象リード数</span>
-            <span className="font-medium">{billable}件</span>
+            <span className="text-gray-600">確定リード数</span>
+            <span className="font-medium">{confirmedCount}件</span>
           </div>
           <div className="flex justify-between">
             <span className="text-gray-600">単価（税抜）</span>
@@ -196,12 +203,12 @@ function BillingDetailContent() {
               <thead className="bg-gray-50 border-b border-gray-200">
                 <tr>
                   <th className="text-left px-4 py-3 font-medium text-gray-600">No.</th>
+                  <th className="text-left px-4 py-3 font-medium text-gray-600">送付日</th>
                   <th className="text-left px-4 py-3 font-medium text-gray-600">会社名</th>
                   <th className="text-left px-4 py-3 font-medium text-gray-600">担当者</th>
                   <th className="text-left px-4 py-3 font-medium text-gray-600">買取希望金額</th>
                   <th className="text-left px-4 py-3 font-medium text-gray-600">業種</th>
                   <th className="text-left px-4 py-3 font-medium text-gray-600">ステータス</th>
-                  <th className="text-left px-4 py-3 font-medium text-gray-600">送付日</th>
                   <th className="px-4 py-3"></th>
                 </tr>
               </thead>
@@ -209,6 +216,9 @@ function BillingDetailContent() {
                 {leads.map((lead, i) => (
                   <tr key={lead.id} className="hover:bg-gray-50">
                     <td className="px-4 py-3 text-gray-500">{i + 1}</td>
+                    <td className="px-4 py-3 text-gray-600">
+                      {new Date(lead.created_at).toLocaleDateString("ja-JP")}
+                    </td>
                     <td className="px-4 py-3 font-medium text-gray-900">
                       {lead.mitsumori_requests.company_name}
                     </td>
@@ -222,16 +232,20 @@ function BillingDetailContent() {
                       {lead.mitsumori_requests.industry}
                     </td>
                     <td className="px-4 py-3">
-                      <span
-                        className={`inline-block px-2 py-0.5 rounded text-xs font-medium ${
-                          statusColors[lead.status] || "bg-gray-100 text-gray-800"
-                        }`}
-                      >
-                        {statusLabels[lead.status] || lead.status}
-                      </span>
-                    </td>
-                    <td className="px-4 py-3 text-gray-600">
-                      {new Date(lead.created_at).toLocaleDateString("ja-JP")}
+                      {(() => {
+                        const displayStatus = lead.status === "active"
+                          ? (isLeadConfirmed(lead.created_at) ? "active" : "active_unconfirmed")
+                          : lead.status;
+                        return (
+                          <span
+                            className={`inline-block px-2 py-0.5 rounded text-xs font-medium ${
+                              statusColors[displayStatus] || "bg-gray-100 text-gray-800"
+                            }`}
+                          >
+                            {statusLabels[displayStatus] || lead.status}
+                          </span>
+                        );
+                      })()}
                     </td>
                     <td className="px-4 py-3">
                       <Link
