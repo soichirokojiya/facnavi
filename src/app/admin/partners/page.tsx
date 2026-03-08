@@ -3,6 +3,8 @@
 import { useEffect, useRef, useState } from "react";
 import { INDUSTRIES } from "@/lib/constants";
 
+const DEPOSIT_TIMING_OPTIONS = ["即日", "3日以内", "1週間以内", "1ヶ月以内", "急ぎではない"];
+
 interface Partner {
   id: string;
   company_slug: string | null;
@@ -13,6 +15,7 @@ interface Partner {
   min_amount: number;
   max_amount: number;
   supported_industries: string[];
+  supported_deposit_timing: string[];
   fee_per_lead: number;
   sole_proprietor_ok: boolean;
   is_active: boolean;
@@ -44,6 +47,7 @@ interface FormState {
   maxAmount: string;
   selectedPrefectures: string[];
   supportedIndustries: string[];
+  supportedDepositTiming: string[];
   feePerLead: string;
   soleProprietorOk: boolean;
   isActive: boolean;
@@ -55,10 +59,11 @@ const emptyForm: FormState = {
   companySearch: "",
   loginId: "",
   email: "",
-  minAmount: "0",
+  minAmount: "10000",
   maxAmount: "999999999",
   selectedPrefectures: [...PREFECTURES],
   supportedIndustries: [...INDUSTRIES] as string[],
+  supportedDepositTiming: [...DEPOSIT_TIMING_OPTIONS],
   feePerLead: "15000",
   soleProprietorOk: true,
   isActive: true,
@@ -128,6 +133,7 @@ export default function AdminPartnersPage() {
       maxAmount: String(p.max_amount),
       selectedPrefectures: p.supported_prefectures?.length ? p.supported_prefectures : [...PREFECTURES],
       supportedIndustries: p.supported_industries?.length ? p.supported_industries : [...INDUSTRIES] as string[],
+      supportedDepositTiming: p.supported_deposit_timing?.length ? p.supported_deposit_timing : [...DEPOSIT_TIMING_OPTIONS],
       feePerLead: String(p.fee_per_lead || 15000),
       soleProprietorOk: p.sole_proprietor_ok ?? true,
       isActive: p.is_active,
@@ -151,6 +157,7 @@ export default function AdminPartnersPage() {
         min_amount: parseInt(form.minAmount) || 0,
         max_amount: parseInt(form.maxAmount) || 999999999,
         supported_industries: form.supportedIndustries,
+        supported_deposit_timing: form.supportedDepositTiming,
         fee_per_lead: parseInt(form.feePerLead) || 0,
         sole_proprietor_ok: form.soleProprietorOk,
         is_active: form.isActive,
@@ -469,6 +476,58 @@ export default function AdminPartnersPage() {
                     {form.supportedIndustries.length === INDUSTRIES.length
                       ? "全業種対応"
                       : `${form.supportedIndustries.length}件選択中`}
+                  </span>
+                )}
+              </div>
+            </div>
+
+            <div>
+              <label className="block text-sm font-medium text-gray-700 mb-1">
+                対応入金時期（全選択＝全対応）
+              </label>
+              <div className="flex flex-wrap gap-1.5 border border-gray-200 rounded-lg p-2">
+                {DEPOSIT_TIMING_OPTIONS.map((timing) => (
+                  <button
+                    key={timing}
+                    type="button"
+                    onClick={() =>
+                      setForm((prev) => ({
+                        ...prev,
+                        supportedDepositTiming: prev.supportedDepositTiming.includes(timing)
+                          ? prev.supportedDepositTiming.filter((t) => t !== timing)
+                          : [...prev.supportedDepositTiming, timing],
+                      }))
+                    }
+                    className={`px-2 py-0.5 rounded text-xs transition-colors ${
+                      form.supportedDepositTiming.includes(timing)
+                        ? "bg-primary text-white"
+                        : "bg-gray-100 text-gray-600 hover:bg-gray-200"
+                    }`}
+                  >
+                    {timing}
+                  </button>
+                ))}
+              </div>
+              <div className="flex items-center gap-3 mt-1">
+                <button
+                  type="button"
+                  onClick={() => setForm({ ...form, supportedDepositTiming: [...DEPOSIT_TIMING_OPTIONS] })}
+                  className="text-xs text-primary hover:underline"
+                >
+                  全選択
+                </button>
+                <button
+                  type="button"
+                  onClick={() => setForm({ ...form, supportedDepositTiming: [] })}
+                  className="text-xs text-gray-500 hover:underline"
+                >
+                  クリア
+                </button>
+                {form.supportedDepositTiming.length > 0 && (
+                  <span className="text-xs text-gray-500">
+                    {form.supportedDepositTiming.length === DEPOSIT_TIMING_OPTIONS.length
+                      ? "全対応"
+                      : `${form.supportedDepositTiming.length}件選択中`}
                   </span>
                 )}
               </div>

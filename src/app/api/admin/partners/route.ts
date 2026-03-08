@@ -17,7 +17,7 @@ export async function GET(request: NextRequest) {
 
   const { data, error } = await supabase
     .from("partner_companies")
-    .select("id, company_slug, name, login_id, email, supported_prefectures, min_amount, max_amount, supported_industries, fee_per_lead, sole_proprietor_ok, is_active, created_at")
+    .select("id, company_slug, name, login_id, email, supported_prefectures, min_amount, max_amount, supported_industries, supported_deposit_timing, fee_per_lead, sole_proprietor_ok, is_active, created_at")
     .order("created_at", { ascending: false });
 
   if (error) {
@@ -121,7 +121,7 @@ export async function PATCH(request: NextRequest) {
     const allowedFields = [
       "company_slug", "name", "login_id", "email",
       "supported_prefectures", "min_amount", "max_amount",
-      "supported_industries", "fee_per_lead",
+      "supported_industries", "supported_deposit_timing", "fee_per_lead",
       "sole_proprietor_ok", "is_active",
     ];
     for (const key of allowedFields) {

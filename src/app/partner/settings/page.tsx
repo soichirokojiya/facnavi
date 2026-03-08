@@ -3,6 +3,8 @@
 import { useEffect, useState } from "react";
 import { INDUSTRIES, PREFECTURES } from "@/lib/constants";
 
+const DEPOSIT_TIMING_OPTIONS = ["即日", "3日以内", "1週間以内", "1ヶ月以内", "急ぎではない"];
+
 interface ProfileData {
   id: string;
   name: string;
@@ -12,6 +14,7 @@ interface ProfileData {
   min_amount: number;
   max_amount: number;
   supported_industries: string[];
+  supported_deposit_timing: string[];
   fee_per_lead: number;
   sole_proprietor_ok: boolean;
   is_active: boolean;
@@ -28,10 +31,17 @@ export default function PartnerSettingsPage() {
   // Form state
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
-  const [minAmount, setMinAmount] = useState("0");
+  // Password change
+  const [currentPassword, setCurrentPassword] = useState("");
+  const [newPassword, setNewPassword] = useState("");
+  const [pwChanging, setPwChanging] = useState(false);
+  const [pwMessage, setPwMessage] = useState("");
+  const [pwError, setPwError] = useState("");
+  const [minAmount, setMinAmount] = useState("10000");
   const [maxAmount, setMaxAmount] = useState("999999999");
   const [selectedPrefectures, setSelectedPrefectures] = useState<string[]>([]);
   const [supportedIndustries, setSupportedIndustries] = useState<string[]>([]);
+  const [supportedDepositTiming, setSupportedDepositTiming] = useState<string[]>([]);
   const [soleProprietorOk, setSoleProprietorOk] = useState(true);
 
   useEffect(() => {
@@ -48,6 +58,7 @@ export default function PartnerSettingsPage() {
           setMaxAmount(String(d.max_amount));
           setSelectedPrefectures(d.supported_prefectures?.length ? d.supported_prefectures : [...PREFECTURES]);
           setSupportedIndustries(d.supported_industries?.length ? d.supported_industries : [...INDUSTRIES] as string[]);
+          setSupportedDepositTiming(d.supported_deposit_timing?.length ? d.supported_deposit_timing : [...DEPOSIT_TIMING_OPTIONS]);
           setSoleProprietorOk(d.sole_proprietor_ok ?? true);
         }
       } catch {
@@ -76,6 +87,7 @@ export default function PartnerSettingsPage() {
           max_amount: parseInt(maxAmount) || 999999999,
           supported_prefectures: selectedPrefectures,
           supported_industries: supportedIndustries,
+          supported_deposit_timing: supportedDepositTiming,
           sole_proprietor_ok: soleProprietorOk,
         }),
       });
@@ -90,6 +102,40 @@ export default function PartnerSettingsPage() {
       setFormError("通信エラーが発生しました。");
     } finally {
       setSaving(false);
+    }
+  };
+
+  const handleChangePassword = async () => {
+    setPwMessage("");
+    setPwError("");
+
+    if (newPassword.length < 8) {
+      setPwError("新しいパスワードは8文字以上で設定してください。");
+      return;
+    }
+
+    setPwChanging(true);
+    try {
+      const res = await fetch("/api/partner/change-password", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          current_password: currentPassword,
+          new_password: newPassword,
+        }),
+      });
+      const data = await res.json();
+      if (!res.ok) {
+        setPwError(data.error || "パスワードの変更に失敗しました。");
+        return;
+      }
+      setPwMessage("パスワードを変更しました。");
+      setCurrentPassword("");
+      setNewPassword("");
+    } catch {
+      setPwError("通信エラーが発生しました。");
+    } finally {
+      setPwChanging(false);
     }
   };
 
@@ -167,7 +213,7 @@ export default function PartnerSettingsPage() {
               </label>
               <input
                 type="text"
-                value={profile?.fee_per_lead ? `${profile.fee_per_lead.toLocaleString()}円` : "-"}
+                value={profile?.fee_per_lead != null ? `${profile.fee_per_lead.toLocaleString()}円` : "-"}
                 className="w-full px-3 py-2 border-2 border-gray-100 rounded-lg bg-gray-50 text-gray-500 cursor-not-allowed"
                 disabled
               />
@@ -175,7 +221,49 @@ export default function PartnerSettingsPage() {
             </div>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          {/* パスワード変更 */}
+          <div className="border-t border-gray-200 pt-4">
+            <h3 className="text-sm font-bold text-gray-900 mb-3">パスワード変更</h3>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label className="block text-sm font-medium text-gray-700 mb-1">
+                  現在のパスワード
+                </label>
+                <input
+                  type="password"
+                  value={currentPassword}
+                  onChange={(e) => setCurrentPassword(e.target.value)}
+                  className="w-full px-3 py-2 border-2 border-gray-200 rounded-lg focus:ring-3 focus:ring-primary/10 focus:border-primary outline-none"
+                />
+              </div>
+              <div>
+                <label className="block text-sm font-medium text-gray-700 mb-1">
+                  新しいパスワード（8文字以上）
+                </label>
+                <input
+                  type="password"
+                  value={newPassword}
+                  onChange={(e) => setNewPassword(e.target.value)}
+                  className="w-full px-3 py-2 border-2 border-gray-200 rounded-lg focus:ring-3 focus:ring-primary/10 focus:border-primary outline-none"
+                  minLength={8}
+                />
+              </div>
+            </div>
+            <div className="mt-2 flex items-center gap-3">
+              <button
+                type="button"
+                onClick={handleChangePassword}
+                disabled={pwChanging || !currentPassword || !newPassword}
+                className="text-sm text-primary hover:underline disabled:opacity-40 disabled:no-underline"
+              >
+                {pwChanging ? "変更中..." : "変更"}
+              </button>
+              {pwMessage && <span className="text-sm text-green-600">{pwMessage}</span>}
+              {pwError && <span className="text-sm text-red-600">{pwError}</span>}
+            </div>
+          </div>
+
+          <div className="grid grid-cols-2 gap-4">
             <div>
               <label className="block text-sm font-medium text-gray-700 mb-1">
                 対応最小金額（円）
@@ -294,6 +382,58 @@ export default function PartnerSettingsPage() {
             </div>
           </div>
 
+          {/* 対応入金時期 */}
+          <div>
+            <label className="block text-sm font-medium text-gray-700 mb-1">
+              対応入金時期（全選択＝全対応）
+            </label>
+            <div className="flex flex-wrap gap-1.5 border border-gray-200 rounded-lg p-2">
+              {DEPOSIT_TIMING_OPTIONS.map((timing) => (
+                <button
+                  key={timing}
+                  type="button"
+                  onClick={() =>
+                    setSupportedDepositTiming((prev) =>
+                      prev.includes(timing)
+                        ? prev.filter((t) => t !== timing)
+                        : [...prev, timing]
+                    )
+                  }
+                  className={`px-2 py-0.5 rounded text-xs transition-colors ${
+                    supportedDepositTiming.includes(timing)
+                      ? "bg-primary text-white"
+                      : "bg-gray-100 text-gray-600 hover:bg-gray-200"
+                  }`}
+                >
+                  {timing}
+                </button>
+              ))}
+            </div>
+            <div className="flex items-center gap-3 mt-1">
+              <button
+                type="button"
+                onClick={() => setSupportedDepositTiming([...DEPOSIT_TIMING_OPTIONS])}
+                className="text-xs text-primary hover:underline"
+              >
+                全選択
+              </button>
+              <button
+                type="button"
+                onClick={() => setSupportedDepositTiming([])}
+                className="text-xs text-gray-500 hover:underline"
+              >
+                クリア
+              </button>
+              {supportedDepositTiming.length > 0 && (
+                <span className="text-xs text-gray-500">
+                  {supportedDepositTiming.length === DEPOSIT_TIMING_OPTIONS.length
+                    ? "全対応"
+                    : `${supportedDepositTiming.length}件選択中`}
+                </span>
+              )}
+            </div>
+          </div>
+
           {/* 個人事業主対応 */}
           <div>
             <label className="flex items-center gap-2 text-sm">
@@ -342,98 +482,6 @@ export default function PartnerSettingsPage() {
         </form>
       </div>
 
-      {/* パスワード変更 */}
-      <ChangePasswordSection />
-    </div>
-  );
-}
-
-function ChangePasswordSection() {
-  const [currentPassword, setCurrentPassword] = useState("");
-  const [newPassword, setNewPassword] = useState("");
-  const [loading, setLoading] = useState(false);
-  const [error, setError] = useState("");
-  const [success, setSuccess] = useState("");
-
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setError("");
-    setSuccess("");
-
-    if (newPassword.length < 8) {
-      setError("新しいパスワードは8文字以上で設定してください。");
-      return;
-    }
-
-    setLoading(true);
-    try {
-      const res = await fetch("/api/partner/change-password", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          current_password: currentPassword,
-          new_password: newPassword,
-        }),
-      });
-
-      const data = await res.json();
-      if (!res.ok) {
-        setError(data.error || "パスワードの変更に失敗しました。");
-        return;
-      }
-      setSuccess("パスワードを変更しました。");
-      setCurrentPassword("");
-      setNewPassword("");
-    } catch {
-      setError("通信エラーが発生しました。");
-    } finally {
-      setLoading(false);
-    }
-  };
-
-  return (
-    <div className="bg-white rounded-xl border border-gray-200 p-6">
-      <h2 className="text-lg font-bold text-gray-900 mb-4">パスワード変更</h2>
-      <form onSubmit={handleSubmit} className="space-y-4 max-w-md">
-        <div>
-          <label className="block text-sm font-medium text-gray-700 mb-1">
-            現在のパスワード
-          </label>
-          <input
-            type="password"
-            value={currentPassword}
-            onChange={(e) => setCurrentPassword(e.target.value)}
-            className="w-full px-3 py-2 border-2 border-gray-200 rounded-lg focus:ring-3 focus:ring-primary/10 focus:border-primary outline-none"
-            required
-          />
-        </div>
-        <div>
-          <label className="block text-sm font-medium text-gray-700 mb-1">
-            新しいパスワード（8文字以上）
-          </label>
-          <input
-            type="password"
-            value={newPassword}
-            onChange={(e) => setNewPassword(e.target.value)}
-            className="w-full px-3 py-2 border-2 border-gray-200 rounded-lg focus:ring-3 focus:ring-primary/10 focus:border-primary outline-none"
-            required
-            minLength={8}
-          />
-        </div>
-        {error && (
-          <p className="text-sm text-red-600 font-medium">{error}</p>
-        )}
-        {success && (
-          <p className="text-sm text-green-600 font-medium">{success}</p>
-        )}
-        <button
-          type="submit"
-          disabled={loading}
-          className="bg-primary text-white px-6 py-2.5 rounded-lg font-medium hover:bg-primary-dark transition-colors disabled:opacity-50"
-        >
-          {loading ? "変更中..." : "パスワードを変更する"}
-        </button>
-      </form>
     </div>
   );
 }
