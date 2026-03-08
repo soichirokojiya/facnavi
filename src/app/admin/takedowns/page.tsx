@@ -19,9 +19,16 @@ interface TakedownRequest {
       id: string;
       company_name: string;
       contact_name: string;
-      invoice_amount: string | null;
       purchase_amount: string;
-      prefecture: string;
+      phone: string | null;
+      email: string | null;
+      invoice_amount: string | null;
+      deposit_timing: string | null;
+      industry: string | null;
+      business_type: string | null;
+      message: string | null;
+      prefecture: string | null;
+      address: string | null;
     };
   };
 }
@@ -157,13 +164,47 @@ export default function AdminTakedownsPage() {
                   {req.lead_assignments?.mitsumori_requests?.contact_name || "-"}
                 </div>
                 <div>
+                  <span className="text-gray-500">電話番号: </span>
+                  {req.lead_assignments?.mitsumori_requests?.phone || "-"}
+                </div>
+                <div>
+                  <span className="text-gray-500">メール: </span>
+                  {req.lead_assignments?.mitsumori_requests?.email || "-"}
+                </div>
+                <div>
+                  <span className="text-gray-500">請求書額面: </span>
+                  {req.lead_assignments?.mitsumori_requests?.invoice_amount ? Number(req.lead_assignments.mitsumori_requests.invoice_amount).toLocaleString() + "円" : "-"}
+                </div>
+                <div>
                   <span className="text-gray-500">買取希望金額: </span>
                   {req.lead_assignments?.mitsumori_requests?.purchase_amount ? Number(req.lead_assignments.mitsumori_requests.purchase_amount).toLocaleString() + "円" : "-"}
+                </div>
+                <div>
+                  <span className="text-gray-500">入金希望時期: </span>
+                  {req.lead_assignments?.mitsumori_requests?.deposit_timing || "-"}
+                </div>
+                <div>
+                  <span className="text-gray-500">業種: </span>
+                  {req.lead_assignments?.mitsumori_requests?.industry || "-"}
+                </div>
+                <div>
+                  <span className="text-gray-500">事業形態: </span>
+                  {req.lead_assignments?.mitsumori_requests?.business_type || "-"}
                 </div>
                 <div>
                   <span className="text-gray-500">都道府県: </span>
                   {req.lead_assignments?.mitsumori_requests?.prefecture || "-"}
                 </div>
+                <div>
+                  <span className="text-gray-500">住所: </span>
+                  {req.lead_assignments?.mitsumori_requests?.address || "-"}
+                </div>
+                {req.lead_assignments?.mitsumori_requests?.message && (
+                  <div className="sm:col-span-3">
+                    <span className="text-gray-500">メッセージ: </span>
+                    {req.lead_assignments.mitsumori_requests.message}
+                  </div>
+                )}
               </div>
 
               <div className="bg-gray-50 rounded-lg p-3 mb-3">

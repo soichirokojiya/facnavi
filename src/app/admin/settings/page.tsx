@@ -53,6 +53,9 @@ const PLACEHOLDERS = [
 ];
 
 export default function AdminSettingsPage() {
+  const [spamCheckEnabled, setSpamCheckEnabled] = useState(true);
+  const [duplicateCheckEnabled, setDuplicateCheckEnabled] = useState(true);
+  const [duplicateCheckMonths, setDuplicateCheckMonths] = useState("6");
   const [taxRate, setTaxRate] = useState("10");
   const [billingSubject, setBillingSubject] = useState(DEFAULT_BILLING_SUBJECT);
   const [billingBody, setBillingBody] = useState(DEFAULT_BILLING_BODY);
@@ -66,6 +69,9 @@ export default function AdminSettingsPage() {
         const res = await fetch("/api/admin/settings");
         const json = await res.json();
         if (json.data) {
+          setSpamCheckEnabled(json.data.spam_check_enabled !== "false");
+          setDuplicateCheckEnabled(json.data.duplicate_check_enabled !== "false");
+          setDuplicateCheckMonths(json.data.duplicate_check_months || "6");
           setTaxRate(json.data.tax_rate || "10");
           if (json.data.billing_email_subject) {
             setBillingSubject(json.data.billing_email_subject);
@@ -93,6 +99,9 @@ export default function AdminSettingsPage() {
         method: "PATCH",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
+          spam_check_enabled: String(spamCheckEnabled),
+          duplicate_check_enabled: String(duplicateCheckEnabled),
+          duplicate_check_months: duplicateCheckMonths,
           tax_rate: taxRate,
           billing_email_subject: billingSubject,
           billing_email_body: billingBody,
@@ -129,6 +138,51 @@ export default function AdminSettingsPage() {
       <h1 className="text-2xl font-bold text-gray-900 mb-6">サイト設定</h1>
 
       <form onSubmit={handleSave} className="space-y-6">
+        {/* 見積もり自動無効化 */}
+        <div className="bg-white rounded-xl border border-gray-200 p-6">
+          <h2 className="text-lg font-bold text-gray-900 mb-4">見積もり自動無効化</h2>
+          <div className="space-y-4">
+            <label className="flex items-center gap-2 cursor-pointer">
+              <input
+                type="checkbox"
+                checked={spamCheckEnabled}
+                onChange={(e) => setSpamCheckEnabled(e.target.checked)}
+                className="w-4 h-4 rounded border-gray-300 text-primary focus:ring-primary"
+              />
+              <span className="text-sm text-gray-700">AIスパム判定を有効にする</span>
+            </label>
+
+            <label className="flex items-center gap-2 cursor-pointer">
+              <input
+                type="checkbox"
+                checked={duplicateCheckEnabled}
+                onChange={(e) => setDuplicateCheckEnabled(e.target.checked)}
+                className="w-4 h-4 rounded border-gray-300 text-primary focus:ring-primary"
+              />
+              <span className="text-sm text-gray-700">重複チェックを有効にする</span>
+            </label>
+
+            <div className="ml-6">
+              <label className="block text-sm font-medium text-gray-700 mb-1">
+                対象期間（月）
+              </label>
+              <input
+                type="number"
+                value={duplicateCheckMonths}
+                onChange={(e) => setDuplicateCheckMonths(e.target.value)}
+                min="1"
+                max="120"
+                step="1"
+                disabled={!duplicateCheckEnabled}
+                className="w-24 px-3 py-2 border-2 border-gray-200 rounded-lg focus:ring-3 focus:ring-primary/10 focus:border-primary outline-none disabled:opacity-50 disabled:bg-gray-100"
+              />
+              <p className="text-xs text-gray-500 mt-1">
+                同じメールアドレスまたは電話番号で、同じ業者に対して指定期間内に送信されたリードを自動で無効にします
+              </p>
+            </div>
+          </div>
+        </div>
+
         {/* 消費税率 */}
         <div className="bg-white rounded-xl border border-gray-200 p-6">
           <h2 className="text-lg font-bold text-gray-900 mb-4">請求設定</h2>

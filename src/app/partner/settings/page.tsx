@@ -176,7 +176,7 @@ export default function PartnerSettingsPage() {
             <button
               type="button"
               onClick={() => setEditing(true)}
-              className="px-4 py-1.5 rounded-lg text-sm font-medium border border-primary text-primary hover:bg-primary/5 transition-colors"
+              className="px-5 py-2 rounded-lg text-sm font-bold bg-primary text-white hover:bg-primary-dark shadow-sm transition-colors"
             >
               編集する
             </button>

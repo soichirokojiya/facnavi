@@ -35,7 +35,15 @@ export async function GET(request: NextRequest) {
           company_name,
           contact_name,
           purchase_amount,
-          prefecture
+          phone,
+          email,
+          invoice_amount,
+          deposit_timing,
+          industry,
+          business_type,
+          message,
+          prefecture,
+          address
         )
       )
     `

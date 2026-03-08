@@ -85,6 +85,8 @@ export async function POST(request: NextRequest) {
       industry,
       company_name,
       contact_name,
+      prefecture,
+      address,
       phone,
       email,
       message,
@@ -100,6 +102,7 @@ export async function POST(request: NextRequest) {
       !industry ||
       !company_name ||
       !contact_name ||
+      !prefecture ||
       !phone ||
       !email
     ) {
@@ -124,20 +127,36 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    // AIスパム判定
-    const spamResult = await checkSpam({
-      company_name, contact_name, phone, email, industry, business_type, message,
-    });
-    if (spamResult.isSpam) {
-      console.warn("Spam detected:", spamResult.reason, { company_name, contact_name, email });
-      return NextResponse.json(
-        { error: "送信内容を確認できませんでした。内容をご確認の上、再度お試しください。" },
-        { status: 400 }
-      );
-    }
-
     const serviceKey = process.env.SUPABASE_SERVICE_ROLE_KEY;
     const supabase = createClient(supabaseUrl, serviceKey || supabaseAnonKey);
+
+    // 設定値を取得
+    const { data: settingsRows } = await supabase
+      .from("site_settings")
+      .select("key, value")
+      .in("key", ["spam_check_enabled", "duplicate_check_enabled", "duplicate_check_months"]);
+
+    const settings: Record<string, string> = {};
+    for (const row of settingsRows || []) {
+      settings[row.key] = row.value;
+    }
+    const spamCheckEnabled = settings.spam_check_enabled !== "false";
+    const duplicateCheckEnabled = settings.duplicate_check_enabled === "true";
+    const duplicateCheckMonths = parseInt(settings.duplicate_check_months || "6", 10) || 6;
+
+    // AIスパム判定
+    if (spamCheckEnabled) {
+      const spamResult = await checkSpam({
+        company_name, contact_name, phone, email, industry, business_type, message,
+      });
+      if (spamResult.isSpam) {
+        console.warn("Spam detected:", spamResult.reason, { company_name, contact_name, email });
+        return NextResponse.json(
+          { error: "送信内容を確認できませんでした。内容をご確認の上、再度お試しください。" },
+          { status: 400 }
+        );
+      }
+    }
 
     const upload_token = crypto.randomBytes(32).toString("hex");
 
@@ -151,6 +170,8 @@ export async function POST(request: NextRequest) {
         industry,
         company_name,
         contact_name,
+        prefecture,
+        address: address || null,
         phone,
         email,
         message: message || null,
@@ -208,6 +229,16 @@ export async function POST(request: NextRequest) {
                 <td style="padding: 8px; color: #6b7280;">業種</td>
                 <td style="padding: 8px;">${industry}</td>
               </tr>
+              <tr style="border-bottom: 1px solid #e5e7eb;">
+                <td style="padding: 8px; color: #6b7280;">都道府県</td>
+                <td style="padding: 8px;">${prefecture}</td>
+              </tr>
+              ${address ? `
+              <tr style="border-bottom: 1px solid #e5e7eb;">
+                <td style="padding: 8px; color: #6b7280;">住所</td>
+                <td style="padding: 8px;">${address}</td>
+              </tr>
+              ` : ""}
             </table>
             <p>提携業者より順次お電話にてご連絡いたしますので、今しばらくお待ちください。</p>
             <hr style="border: none; border-top: 1px solid #e5e7eb; margin: 20px 0;" />
@@ -272,6 +303,16 @@ export async function POST(request: NextRequest) {
                   <td style="padding: 8px; color: #6b7280;">業種</td>
                   <td style="padding: 8px;">${industry}</td>
                 </tr>
+                <tr style="border-bottom: 1px solid #e5e7eb;">
+                  <td style="padding: 8px; color: #6b7280;">都道府県</td>
+                  <td style="padding: 8px;">${prefecture}</td>
+                </tr>
+                ${address ? `
+                <tr style="border-bottom: 1px solid #e5e7eb;">
+                  <td style="padding: 8px; color: #6b7280;">住所</td>
+                  <td style="padding: 8px;">${address}</td>
+                </tr>
+                ` : ""}
                 ${message ? `
                 <tr style="border-bottom: 1px solid #e5e7eb;">
                   <td style="padding: 8px; color: #6b7280;">ご相談内容</td>
@@ -308,17 +349,51 @@ export async function POST(request: NextRequest) {
         );
 
         if (matchedPartners.length > 0) {
-          // リード割り当て
-          const assignments = matchedPartners.map((p) => ({
-            mitsumori_request_id: insertData.id,
-            partner_company_id: p.id,
-            status: "active",
-          }));
-
-          await supabase.from("lead_assignments").insert(assignments);
-
-          // 各業者にメール送信
+          // 業者ごとに重複チェックし、割り当て＆メール送信
           for (const partner of matchedPartners) {
+            // 重複チェック（業者ごと）
+            if (duplicateCheckEnabled) {
+              const cutoffDate = new Date();
+              cutoffDate.setMonth(cutoffDate.getMonth() - duplicateCheckMonths);
+
+              // 対象期間内の同一メール/電話のリクエストを検索
+              const { data: matchingRequests } = await supabase
+                .from("mitsumori_requests")
+                .select("id")
+                .gte("created_at", cutoffDate.toISOString())
+                .or(`email.eq.${email},phone.eq.${phone}`);
+
+              let isDuplicate = false;
+              if (matchingRequests && matchingRequests.length > 0) {
+                const requestIds = matchingRequests.map((r) => r.id);
+                const { data: existingAssignments } = await supabase
+                  .from("lead_assignments")
+                  .select("id")
+                  .eq("partner_company_id", partner.id)
+                  .neq("status", "removed")
+                  .in("mitsumori_request_id", requestIds)
+                  .limit(1);
+                isDuplicate = !!(existingAssignments && existingAssignments.length > 0);
+              }
+
+              if (isDuplicate) {
+                console.log(`Duplicate lead skipped for partner ${partner.name} (${partner.id})`);
+                await supabase.from("lead_assignments").insert({
+                  mitsumori_request_id: insertData.id,
+                  partner_company_id: partner.id,
+                  status: "duplicate",
+                });
+                continue;
+              }
+            }
+
+            // リード割り当て
+            await supabase.from("lead_assignments").insert({
+              mitsumori_request_id: insertData.id,
+              partner_company_id: partner.id,
+              status: "active",
+            });
+
             if (!partner.email) continue;
             try {
               await resend.emails.send({
@@ -369,6 +444,16 @@ export async function POST(request: NextRequest) {
                         <td style="padding: 8px; color: #6b7280;">業種</td>
                         <td style="padding: 8px;">${industry}</td>
                       </tr>
+                      <tr style="border-bottom: 1px solid #e5e7eb;">
+                        <td style="padding: 8px; color: #6b7280;">都道府県</td>
+                        <td style="padding: 8px;">${prefecture}</td>
+                      </tr>
+                      ${address ? `
+                      <tr style="border-bottom: 1px solid #e5e7eb;">
+                        <td style="padding: 8px; color: #6b7280;">住所</td>
+                        <td style="padding: 8px;">${address}</td>
+                      </tr>
+                      ` : ""}
                       ${message ? `
                       <tr style="border-bottom: 1px solid #e5e7eb;">
                         <td style="padding: 8px; color: #6b7280;">ご相談内容</td>
