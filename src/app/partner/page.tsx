@@ -32,6 +32,10 @@ export default function PartnerDashboardPage() {
   const [taxRate, setTaxRate] = useState(10);
   const [loading, setLoading] = useState(true);
 
+  // 年セレクター
+  const currentYear = new Date().getFullYear();
+  const [selectedYear, setSelectedYear] = useState(currentYear);
+
   useEffect(() => {
     async function fetchData() {
       try {
@@ -53,6 +57,16 @@ export default function PartnerDashboardPage() {
     }
     fetchData();
   }, []);
+
+  // 年リスト生成
+  const years = Array.from(
+    new Set(monthlyStats.map((s) => Number(s.month.split("-")[0])))
+  ).sort((a, b) => b - a);
+
+  // 選択年でフィルター
+  const filteredStats = monthlyStats.filter((s) =>
+    Number(s.month.split("-")[0]) === selectedYear
+  );
 
   const activeCount = leads.filter((l) => l.status === "active").length;
   const takedownRequestedCount = leads.filter(
@@ -100,10 +114,25 @@ export default function PartnerDashboardPage() {
       </div>
 
       <div className="bg-white rounded-xl border border-gray-200 p-6 mb-8">
-        <h2 className="text-lg font-bold text-gray-900 mb-4">
-          月別リード集計
-        </h2>
-        {monthlyStats.length === 0 ? (
+        <div className="flex items-center justify-between mb-4">
+          <h2 className="text-lg font-bold text-gray-900">
+            月別リード集計
+          </h2>
+          <div className="flex items-center gap-2">
+            <select
+              value={selectedYear}
+              onChange={(e) => setSelectedYear(Number(e.target.value))}
+              className="px-3 py-1.5 border border-gray-300 rounded-lg text-sm focus:ring-2 focus:ring-primary/20 focus:border-primary outline-none"
+            >
+              {(years.length > 0 ? years : [currentYear]).map((y) => (
+                <option key={y} value={y}>
+                  {y}年
+                </option>
+              ))}
+            </select>
+          </div>
+        </div>
+        {filteredStats.length === 0 ? (
           <p className="text-sm text-gray-500">データがありません</p>
         ) : (
           <div className="overflow-x-auto">
@@ -135,7 +164,7 @@ export default function PartnerDashboardPage() {
                 </tr>
               </thead>
               <tbody>
-                {monthlyStats.map((row) => (
+                {filteredStats.map((row) => (
                   <tr
                     key={row.month}
                     className="border-b border-gray-100 last:border-0 hover:bg-gray-50 cursor-pointer"
