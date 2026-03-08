@@ -68,7 +68,7 @@ export default async function HomePage() {
 
         <div className="relative max-w-6xl mx-auto px-4 py-10 md:py-16">
           {/* メイン：見出し + バナー */}
-          <div className="flex flex-col md:flex-row md:items-start gap-8 md:gap-10">
+          <div className="flex flex-col md:flex-row md:items-center gap-8 md:gap-10">
             <div className="flex-1 min-w-0 text-center md:text-left">
               {/* バッジ */}
               <p className="shimmer inline-flex items-center gap-1.5 bg-gradient-to-r from-blue-600 to-blue-700 text-white font-bold px-4 py-1.5 rounded-full mb-5 text-sm shadow-lg shadow-blue-500/20">
