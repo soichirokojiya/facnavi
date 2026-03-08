@@ -43,10 +43,13 @@ const statusColors: Record<string, string> = {
   removed: "bg-red-100 text-red-800",
 };
 
+const ITEMS_PER_PAGE = 20;
+
 export default function PartnerLeadsPage() {
   const [leads, setLeads] = useState<LeadAssignment[]>([]);
   const [loading, setLoading] = useState(true);
   const [filter, setFilter] = useState<string>("all");
+  const [currentPage, setCurrentPage] = useState(1);
 
   useEffect(() => {
     async function fetchLeads() {
@@ -65,6 +68,13 @@ export default function PartnerLeadsPage() {
 
   const filtered =
     filter === "all" ? leads : leads.filter((l) => l.status === filter);
+
+  const totalPages = Math.max(1, Math.ceil(filtered.length / ITEMS_PER_PAGE));
+  const safeCurrentPage = Math.min(currentPage, totalPages);
+  const paginatedLeads = filtered.slice(
+    (safeCurrentPage - 1) * ITEMS_PER_PAGE,
+    safeCurrentPage * ITEMS_PER_PAGE
+  );
 
   if (loading) {
     return (
@@ -90,7 +100,7 @@ export default function PartnerLeadsPage() {
         ].map((f) => (
           <button
             key={f.key}
-            onClick={() => setFilter(f.key)}
+            onClick={() => { setFilter(f.key); setCurrentPage(1); }}
             className={`px-3 py-1.5 rounded-lg text-sm font-medium transition-colors ${
               filter === f.key
                 ? "bg-primary text-white"
@@ -134,7 +144,7 @@ export default function PartnerLeadsPage() {
                 </tr>
               </thead>
               <tbody className="divide-y divide-gray-100">
-                {filtered.map((lead) => (
+                {paginatedLeads.map((lead) => (
                   <tr key={lead.id} className={`hover:bg-gray-50 ${!lead.viewed_at ? "bg-blue-50/50" : ""}`}>
                     <td className="px-4 py-3 font-medium text-gray-900">
                       <span className="flex items-center gap-2">
@@ -178,6 +188,53 @@ export default function PartnerLeadsPage() {
               </tbody>
             </table>
           </div>
+          {totalPages > 1 && (
+            <div className="flex items-center justify-between px-4 py-3 border-t border-gray-200">
+              <p className="text-sm text-gray-600">
+                全{filtered.length}件中 {(safeCurrentPage - 1) * ITEMS_PER_PAGE + 1}〜{Math.min(safeCurrentPage * ITEMS_PER_PAGE, filtered.length)}件
+              </p>
+              <div className="flex items-center gap-1">
+                <button
+                  onClick={() => setCurrentPage((p) => Math.max(1, p - 1))}
+                  disabled={safeCurrentPage === 1}
+                  className="px-3 py-1.5 rounded text-sm border border-gray-300 disabled:opacity-40 disabled:cursor-not-allowed hover:bg-gray-50"
+                >
+                  前へ
+                </button>
+                {Array.from({ length: totalPages }, (_, i) => i + 1)
+                  .filter((p) => p === 1 || p === totalPages || Math.abs(p - safeCurrentPage) <= 2)
+                  .reduce<(number | string)[]>((acc, p, idx, arr) => {
+                    if (idx > 0 && p - (arr[idx - 1] as number) > 1) acc.push("...");
+                    acc.push(p);
+                    return acc;
+                  }, [])
+                  .map((p, idx) =>
+                    typeof p === "string" ? (
+                      <span key={`dot-${idx}`} className="px-1 text-gray-400">…</span>
+                    ) : (
+                      <button
+                        key={p}
+                        onClick={() => setCurrentPage(p)}
+                        className={`px-3 py-1.5 rounded text-sm border ${
+                          safeCurrentPage === p
+                            ? "bg-primary text-white border-primary"
+                            : "border-gray-300 hover:bg-gray-50"
+                        }`}
+                      >
+                        {p}
+                      </button>
+                    )
+                  )}
+                <button
+                  onClick={() => setCurrentPage((p) => Math.min(totalPages, p + 1))}
+                  disabled={safeCurrentPage === totalPages}
+                  className="px-3 py-1.5 rounded text-sm border border-gray-300 disabled:opacity-40 disabled:cursor-not-allowed hover:bg-gray-50"
+                >
+                  次へ
+                </button>
+              </div>
+            </div>
+          )}
         </div>
       )}
     </div>

@@ -23,7 +23,7 @@ export async function GET(request: NextRequest) {
 
   const { data, error } = await supabase
     .from("partner_companies")
-    .select("id, name")
+    .select("id, name, login_id, email, supported_prefectures, min_amount, max_amount, supported_industries, fee_per_lead, sole_proprietor_ok, is_active, company_slug")
     .eq("id", partnerId)
     .single();
 
@@ -31,5 +31,42 @@ export async function GET(request: NextRequest) {
     return NextResponse.json({ error: "取得に失敗しました。" }, { status: 500 });
   }
 
-  return NextResponse.json({ name: data.name });
+  return NextResponse.json({ name: data.name, data });
+}
+
+export async function PATCH(request: NextRequest) {
+  const partnerId = getPartnerCompanyId(request);
+  if (!partnerId) {
+    return NextResponse.json({ error: "未認証" }, { status: 401 });
+  }
+
+  const supabase = createClient(supabaseUrl, supabaseKey);
+  const body = await request.json();
+
+  // パートナーが編集できるフィールドのみ（fee_per_lead, is_active, login_id は除外）
+  const updateData: Record<string, unknown> = {};
+
+  if (body.name !== undefined) updateData.name = body.name;
+  if (body.email !== undefined) updateData.email = body.email;
+  if (body.supported_prefectures !== undefined) updateData.supported_prefectures = body.supported_prefectures;
+  if (body.min_amount !== undefined) updateData.min_amount = body.min_amount;
+  if (body.max_amount !== undefined) updateData.max_amount = body.max_amount;
+  if (body.supported_industries !== undefined) updateData.supported_industries = body.supported_industries;
+  if (body.sole_proprietor_ok !== undefined) updateData.sole_proprietor_ok = body.sole_proprietor_ok;
+
+  if (Object.keys(updateData).length === 0) {
+    return NextResponse.json({ error: "更新するデータがありません。" }, { status: 400 });
+  }
+
+  const { error } = await supabase
+    .from("partner_companies")
+    .update(updateData)
+    .eq("id", partnerId);
+
+  if (error) {
+    console.error("Partner profile update error:", error);
+    return NextResponse.json({ error: "更新に失敗しました。" }, { status: 500 });
+  }
+
+  return NextResponse.json({ success: true });
 }
