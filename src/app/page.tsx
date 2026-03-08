@@ -139,7 +139,7 @@ export default async function HomePage() {
           </div>
 
           {/* 検索バー + タグ */}
-          <div className="mt-6 max-w-lg">
+          <div className="mt-6 max-w-lg mx-auto">
             <KeywordSearch companies={searchData} />
             <div className="mt-2 flex flex-wrap items-center gap-1.5">
               <span className="text-[10px] text-gray-400 font-bold">人気の検索:</span>
