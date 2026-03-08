@@ -55,9 +55,7 @@ export function PartnerSidebar() {
   };
 
   const navItems = [
-    { href: "/partner", label: "ダッシュボード", icon: "📊", badge: 0 },
-    { href: "/partner/leads", label: "リード一覧", icon: "📋", badge: unreadCount },
-    { href: `/partner/billing?month=${new Date().getFullYear()}-${String(new Date().getMonth() + 1).padStart(2, "0")}`, label: "集計明細", icon: "💰", badge: 0 },
+    { href: "/partner", label: "ダッシュボード", icon: "📊", badge: unreadCount },
     { href: "/partner/inquiries", label: "お問い合わせ", icon: "✉️", badge: unreadReplies },
     { href: "/partner/settings", label: "設定", icon: "⚙️", badge: 0 },
   ];

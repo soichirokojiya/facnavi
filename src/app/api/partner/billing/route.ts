@@ -34,6 +34,7 @@ export async function GET(request: NextRequest) {
         `
         id,
         status,
+        viewed_at,
         created_at,
         updated_at,
         mitsumori_requests (
@@ -42,7 +43,8 @@ export async function GET(request: NextRequest) {
           invoice_amount,
           purchase_amount,
           industry,
-          business_type
+          business_type,
+          created_at
         )
       `
       )
