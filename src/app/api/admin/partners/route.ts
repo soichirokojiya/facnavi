@@ -68,10 +68,10 @@ export async function POST(request: NextRequest) {
         login_id,
         password_hash,
         supported_prefectures: supported_prefectures || [],
-        min_amount: min_amount || 0,
+        min_amount: min_amount || 10000,
         max_amount: max_amount || 999999999,
         supported_industries: supported_industries || [],
-        fee_per_lead: fee_per_lead || 0,
+        fee_per_lead: fee_per_lead || 15000,
         sole_proprietor_ok: sole_proprietor_ok ?? true,
         is_active: is_active ?? true,
       })
@@ -181,6 +181,31 @@ export async function DELETE(request: NextRequest) {
 
     const supabase = createClient(supabaseUrl, supabaseKey);
 
+    // 関連する取下げリクエストを削除
+    await supabase
+      .from("takedown_requests")
+      .delete()
+      .in(
+        "lead_assignment_id",
+        (await supabase
+          .from("lead_assignments")
+          .select("id")
+          .eq("partner_company_id", id)
+        ).data?.map((r) => r.id) || []
+      );
+
+    // 関連するリード割り当てを削除
+    await supabase
+      .from("lead_assignments")
+      .delete()
+      .eq("partner_company_id", id);
+
+    // 関連する問い合わせを削除
+    await supabase
+      .from("partner_inquiries")
+      .delete()
+      .eq("partner_company_id", id);
+
     const { error } = await supabase
       .from("partner_companies")
       .delete()
@@ -188,7 +213,7 @@ export async function DELETE(request: NextRequest) {
 
     if (error) {
       console.error("Partner delete error:", error);
-      return NextResponse.json({ error: "削除に失敗しました。" }, { status: 500 });
+      return NextResponse.json({ error: `削除に失敗しました: ${error.message}` }, { status: 500 });
     }
 
     return NextResponse.json({ success: true });
