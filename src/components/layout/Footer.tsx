@@ -117,9 +117,9 @@ export function Footer() {
             <h3 className="text-white font-bold text-sm mb-4">ご案内</h3>
             <ul className="space-y-1.5">
               <li>
-                <Link href="/about" className="text-sm hover:text-white transition-colors">
+                <a href="https://www.cfac.co.jp/" target="_blank" rel="noopener noreferrer" className="text-sm hover:text-white transition-colors">
                   運営会社情報
-                </Link>
+                </a>
               </li>
               <li>
                 <Link href="/terms" className="text-sm hover:text-white transition-colors">
