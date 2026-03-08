@@ -45,7 +45,7 @@ export function AdminSidebar() {
     { href: "/admin/mitsumori", label: "見積もり管理", icon: "📋", badge: 0 },
     { href: "/admin/reviews", label: "口コミ管理", icon: "💬", badge: 0 },
     { href: "/admin/partners", label: "提携業者管理", icon: "🏢", badge: 0 },
-    { href: "/admin/takedowns", label: "取り下げ依頼", icon: "🚫", badge: 0 },
+    { href: "/admin/takedowns", label: "取下依頼", icon: "🚫", badge: 0 },
     { href: "/admin/inquiries", label: "問い合わせ管理", icon: "✉️", badge: unreadInquiries },
     { href: "/admin/news", label: "ニュース管理", icon: "📰", badge: 0 },
     { href: "/admin/settings", label: "サイト設定", icon: "⚙️", badge: 0 },

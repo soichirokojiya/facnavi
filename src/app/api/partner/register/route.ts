@@ -13,7 +13,7 @@ export async function POST(request: NextRequest) {
   try {
     const { email, password, company_slug, company_name } = await request.json();
 
-    if (!email || !password || !company_slug) {
+    if (!email || !password || (!company_slug && !company_name)) {
       return NextResponse.json(
         { error: "すべての項目を入力してください。" },
         { status: 400 }
@@ -52,7 +52,7 @@ export async function POST(request: NextRequest) {
       email,
       login_id: email,
       password_hash,
-      company_slug,
+      company_slug: company_slug || null,
       is_active: true,
       email_verified: false,
       email_verification_token: verificationToken,

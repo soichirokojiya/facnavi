@@ -33,8 +33,8 @@ interface LeadAssignment {
 
 const statusLabels: Record<string, string> = {
   active: "有効",
-  takedown_requested: "取り下げ依頼中",
-  removed: "取り下げ済み",
+  takedown_requested: "取下依頼中",
+  removed: "取下確定",
 };
 
 const statusColors: Record<string, string> = {
@@ -85,8 +85,8 @@ export default function PartnerLeadsPage() {
         {[
           { key: "all", label: "すべて" },
           { key: "active", label: "有効" },
-          { key: "takedown_requested", label: "取り下げ依頼中" },
-          { key: "removed", label: "取り下げ済み" },
+          { key: "takedown_requested", label: "取下依頼中" },
+          { key: "removed", label: "取下確定" },
         ].map((f) => (
           <button
             key={f.key}

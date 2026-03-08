@@ -10,17 +10,19 @@ export function PartnerSidebar() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [unreadCount, setUnreadCount] = useState(0);
   const [unreadReplies, setUnreadReplies] = useState(0);
+  const [companyName, setCompanyName] = useState("");
 
   const publicPages = ["/partner/login", "/partner/register", "/partner/forgot-password", "/partner/reset-password"];
   const isPublic = publicPages.includes(pathname);
 
   useEffect(() => {
     if (isPublic) return;
-    async function fetchUnread() {
+    async function fetchData() {
       try {
-        const [leadsRes, inquiriesRes] = await Promise.all([
+        const [leadsRes, inquiriesRes, profileRes] = await Promise.all([
           fetch("/api/partner/leads", { cache: "no-store" }),
           fetch("/api/partner/inquiries", { cache: "no-store" }),
+          fetch("/api/partner/profile", { cache: "no-store" }),
         ]);
         const leadsJson = await leadsRes.json();
         const leads = leadsJson.data || [];
@@ -29,11 +31,14 @@ export function PartnerSidebar() {
         const inqJson = await inquiriesRes.json();
         const inquiries = inqJson.data || [];
         setUnreadReplies(inquiries.filter((i: { status: string }) => i.status === "replied").length);
+
+        const profileJson = await profileRes.json();
+        if (profileJson.name) setCompanyName(profileJson.name);
       } catch {
         // ignore
       }
     }
-    fetchUnread();
+    fetchData();
   }, [pathname, isPublic]);
 
   if (isPublic) return null;
@@ -44,13 +49,15 @@ export function PartnerSidebar() {
   };
 
   const isActive = (href: string) => {
-    if (href === "/partner") return pathname === "/partner";
-    return pathname.startsWith(href);
+    const path = href.split("?")[0];
+    if (path === "/partner") return pathname === "/partner";
+    return pathname.startsWith(path);
   };
 
   const navItems = [
     { href: "/partner", label: "ダッシュボード", icon: "📊", badge: 0 },
     { href: "/partner/leads", label: "リード一覧", icon: "📋", badge: unreadCount },
+    { href: `/partner/billing?month=${new Date().getFullYear()}-${String(new Date().getMonth() + 1).padStart(2, "0")}`, label: "集計明細", icon: "💰", badge: 0 },
     { href: "/partner/inquiries", label: "お問い合わせ", icon: "✉️", badge: unreadReplies },
     { href: "/partner/settings", label: "設定", icon: "⚙️", badge: 0 },
   ];
@@ -58,7 +65,7 @@ export function PartnerSidebar() {
   const sidebar = (
     <div className="flex flex-col h-full bg-gray-900 text-white">
       <div className="p-4 border-b border-gray-700">
-        <h1 className="text-lg font-bold">ファクタリング業者様専用</h1>
+        <h1 className="text-lg font-bold">{companyName ? `${companyName} 様` : "ファクタリング業者様専用"}</h1>
       </div>
       <nav className="flex-1 p-4 space-y-1">
         {navItems.map((item) => (

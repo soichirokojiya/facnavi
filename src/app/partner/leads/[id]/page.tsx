@@ -43,8 +43,8 @@ interface LeadDetail {
 
 const statusLabels: Record<string, string> = {
   active: "有効",
-  takedown_requested: "取り下げ依頼中",
-  removed: "取り下げ済み",
+  takedown_requested: "取下依頼中",
+  removed: "取下確定",
 };
 
 const statusColors: Record<string, string> = {

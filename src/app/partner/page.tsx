@@ -86,13 +86,13 @@ export default function PartnerDashboardPage() {
           href="/partner/leads"
         />
         <StatCard
-          label="取り下げ依頼中"
+          label="取下依頼中"
           value={takedownRequestedCount}
           color="amber"
           href="/partner/leads"
         />
         <StatCard
-          label="取り下げ済み"
+          label="取下確定"
           value={removedCount}
           color="red"
           href="/partner/leads"
@@ -115,10 +115,10 @@ export default function PartnerDashboardPage() {
                     総リード数
                   </th>
                   <th className="pb-2 pr-4 font-semibold text-gray-700 text-right">
-                    取り下げ
+                    取下確定
                   </th>
                   <th className="pb-2 pr-4 font-semibold text-gray-700 text-right">
-                    取り下げ申請中
+                    取下依頼中
                   </th>
                   <th className="pb-2 pr-4 font-semibold text-gray-700 text-right">
                     フィー対象
@@ -138,9 +138,10 @@ export default function PartnerDashboardPage() {
                 {monthlyStats.map((row) => (
                   <tr
                     key={row.month}
-                    className="border-b border-gray-100 last:border-0"
+                    className="border-b border-gray-100 last:border-0 hover:bg-gray-50 cursor-pointer"
+                    onClick={() => window.location.href = `/partner/billing?month=${row.month}`}
                   >
-                    <td className="py-2 pr-4 text-gray-900 font-medium">
+                    <td className="py-2 pr-4 text-primary font-medium underline">
                       {row.month}
                     </td>
                     <td className="py-2 pr-4 text-right text-gray-700">
@@ -189,7 +190,7 @@ export default function PartnerDashboardPage() {
             📋 リード一覧
           </h2>
           <p className="text-sm text-gray-600">
-            割り当てられたリードの閲覧、取り下げ依頼の送信
+            割り当てられたリードの閲覧、取下依頼の送信
           </p>
         </Link>
       </div>

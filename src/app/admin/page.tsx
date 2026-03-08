@@ -85,7 +85,7 @@ export default function AdminDashboardPage() {
           href="/admin/reviews?status=rejected"
         />
         <StatCard
-          label="取り下げ依頼（審査中）"
+          label="取下依頼（審査中）"
           value={stats?.takedownsPending ?? 0}
           color="amber"
           href="/admin/takedowns"
@@ -124,9 +124,9 @@ export default function AdminDashboardPage() {
           href="/admin/takedowns"
           className="bg-white rounded-xl border border-gray-200 p-6 hover:shadow-md transition-shadow"
         >
-          <h2 className="text-lg font-bold text-gray-900 mb-2">🚫 取り下げ依頼</h2>
+          <h2 className="text-lg font-bold text-gray-900 mb-2">🚫 取下依頼</h2>
           <p className="text-sm text-gray-600">
-            業者からの取り下げ依頼の確認・承認・却下
+            業者からの取下依頼の確認・承認・却下
           </p>
         </Link>
       </div>

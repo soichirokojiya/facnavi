@@ -16,7 +16,7 @@ const DEFAULT_BILLING_BODY = `{会社名} 御中
 ━━━━━━━━━━━━━━━━━━━━━━━━
 対象期間: {YYYY}年{MM}月1日〜{MM}月{lastDay}日
 総リード数: {total}件
-取り下げ承認: {removed}件
+取下確定: {removed}件
 フィー対象リード数: {billable}件
 単価: {fee_per_lead}円（税抜）
 ━━━━━━━━━━━━━━━━━━━━━━━━
@@ -41,7 +41,7 @@ const PLACEHOLDERS = [
   { key: "{lastDay}", desc: "対象月の末日" },
   { key: "{会社名}", desc: "パートナー会社名" },
   { key: "{total}", desc: "総リード数" },
-  { key: "{removed}", desc: "取り下げ承認数" },
+  { key: "{removed}", desc: "取下確定数" },
   { key: "{billable}", desc: "フィー対象リード数" },
   { key: "{fee_per_lead}", desc: "単価（税抜）" },
   { key: "{subtotal}", desc: "小計（税抜）" },

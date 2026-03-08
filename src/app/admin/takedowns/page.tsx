@@ -94,7 +94,7 @@ export default function AdminTakedownsPage() {
 
   return (
     <div>
-      <h1 className="text-2xl font-bold text-gray-900 mb-6">取り下げ依頼</h1>
+      <h1 className="text-2xl font-bold text-gray-900 mb-6">取下依頼</h1>
 
       <div className="flex gap-2 mb-4">
         {[
@@ -119,7 +119,7 @@ export default function AdminTakedownsPage() {
 
       {filtered.length === 0 ? (
         <div className="bg-white rounded-xl border border-gray-200 p-8 text-center text-gray-500">
-          取り下げ依頼がありません。
+          取下依頼がありません。
         </div>
       ) : (
         <div className="space-y-4">

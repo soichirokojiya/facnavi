@@ -14,6 +14,8 @@ export default function PartnerRegisterPage() {
   const [password, setPassword] = useState("");
   const [companySlug, setCompanySlug] = useState("");
   const [companySearch, setCompanySearch] = useState("");
+  const [companyName, setCompanyName] = useState("");
+  const [manualInput, setManualInput] = useState(true);
   const [showDropdown, setShowDropdown] = useState(false);
   const [companyOptions, setCompanyOptions] = useState<CompanyOption[]>([]);
   const [error, setError] = useState("");
@@ -57,7 +59,7 @@ export default function PartnerRegisterPage() {
     e.preventDefault();
     setError("");
 
-    if (!companySlug || !email || !password) {
+    if ((!companySlug && !companyName) || !email || !password) {
       setError("すべての項目を入力してください。");
       return;
     }
@@ -71,8 +73,8 @@ export default function PartnerRegisterPage() {
         body: JSON.stringify({
           email,
           password,
-          company_slug: companySlug,
-          company_name: selectedCompany?.name || "",
+          company_slug: companySlug || null,
+          company_name: manualInput ? companyName : (selectedCompany?.name || ""),
         }),
       });
 
@@ -121,58 +123,87 @@ export default function PartnerRegisterPage() {
             ファクタリング業者様新規登録
           </h1>
           <form onSubmit={handleSubmit} className="space-y-4">
-            <div className="relative" ref={dropdownRef}>
+            <div>
               <label className="block text-sm font-medium text-gray-700 mb-1">
                 会社名
               </label>
-              {companySlug ? (
-                <div className="flex items-center justify-between w-full px-3 py-2 border-2 border-blue-500 bg-blue-50 rounded-lg">
-                  <span className="text-sm font-medium text-blue-700">{selectedCompany?.name}</span>
+              {manualInput ? (
+                <div>
+                  <input
+                    type="text"
+                    value={companyName}
+                    onChange={(e) => setCompanyName(e.target.value)}
+                    className="w-full px-3 py-2 border-2 border-gray-200 rounded-lg focus:ring-3 focus:ring-primary/10 focus:border-primary outline-none"
+                    placeholder="会社名を入力"
+                    required
+                  />
                   <button
                     type="button"
-                    onClick={() => {
-                      setCompanySlug("");
-                      setCompanySearch("");
-                    }}
-                    className="text-gray-400 hover:text-gray-600 text-sm ml-2"
+                    onClick={() => { setManualInput(false); setCompanyName(""); }}
+                    className="text-xs text-primary hover:underline mt-1"
                   >
-                    ✕
+                    掲載会社リストから選択する
                   </button>
                 </div>
               ) : (
-                <input
-                  type="text"
-                  value={companySearch}
-                  onChange={(e) => {
-                    setCompanySearch(e.target.value);
-                    setShowDropdown(true);
-                  }}
-                  onFocus={() => setShowDropdown(true)}
-                  className="w-full px-3 py-2 border-2 border-gray-200 rounded-lg focus:ring-3 focus:ring-primary/10 focus:border-primary outline-none"
-                  placeholder="会社名を入力して検索..."
-                  autoComplete="off"
-                />
-              )}
-              {showDropdown && !companySlug && (
-                <div className="absolute z-10 w-full mt-1 bg-white border border-gray-200 rounded-lg shadow-lg max-h-48 overflow-y-auto">
-                  {(companySearch ? filteredCompanies : companyOptions).length > 0 ? (
-                    (companySearch ? filteredCompanies : companyOptions).slice(0, 30).map((c) => (
+                <div className="relative" ref={dropdownRef}>
+                  {companySlug ? (
+                    <div className="flex items-center justify-between w-full px-3 py-2 border-2 border-blue-500 bg-blue-50 rounded-lg">
+                      <span className="text-sm font-medium text-blue-700">{selectedCompany?.name}</span>
                       <button
-                        key={c.slug}
                         type="button"
                         onClick={() => {
-                          setCompanySlug(c.slug);
-                          setCompanySearch(c.name);
-                          setShowDropdown(false);
+                          setCompanySlug("");
+                          setCompanySearch("");
                         }}
-                        className="w-full text-left px-3 py-2 text-sm hover:bg-blue-50 text-gray-700"
+                        className="text-gray-400 hover:text-gray-600 text-sm ml-2"
                       >
-                        {c.name}
+                        ✕
                       </button>
-                    ))
+                    </div>
                   ) : (
-                    <p className="px-3 py-2 text-sm text-gray-400">該当する会社が見つかりません</p>
+                    <input
+                      type="text"
+                      value={companySearch}
+                      onChange={(e) => {
+                        setCompanySearch(e.target.value);
+                        setShowDropdown(true);
+                      }}
+                      onFocus={() => setShowDropdown(true)}
+                      className="w-full px-3 py-2 border-2 border-gray-200 rounded-lg focus:ring-3 focus:ring-primary/10 focus:border-primary outline-none"
+                      placeholder="会社名を入力して検索..."
+                      autoComplete="off"
+                    />
                   )}
+                  {showDropdown && !companySlug && (
+                    <div className="absolute z-10 w-full mt-1 bg-white border border-gray-200 rounded-lg shadow-lg max-h-48 overflow-y-auto">
+                      {(companySearch ? filteredCompanies : companyOptions).length > 0 ? (
+                        (companySearch ? filteredCompanies : companyOptions).slice(0, 30).map((c) => (
+                          <button
+                            key={c.slug}
+                            type="button"
+                            onClick={() => {
+                              setCompanySlug(c.slug);
+                              setCompanySearch(c.name);
+                              setShowDropdown(false);
+                            }}
+                            className="w-full text-left px-3 py-2 text-sm hover:bg-blue-50 text-gray-700"
+                          >
+                            {c.name}
+                          </button>
+                        ))
+                      ) : (
+                        <p className="px-3 py-2 text-sm text-gray-400">該当する会社が見つかりません</p>
+                      )}
+                    </div>
+                  )}
+                  <button
+                    type="button"
+                    onClick={() => { setManualInput(true); setCompanySlug(""); setCompanySearch(""); }}
+                    className="text-xs text-primary hover:underline mt-1"
+                  >
+                    リストにない場合は直接入力
+                  </button>
                 </div>
               )}
             </div>
