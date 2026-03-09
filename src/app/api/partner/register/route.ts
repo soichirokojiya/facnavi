@@ -130,6 +130,46 @@ export async function POST(request: NextRequest) {
       }
     }
 
+    // 管理者への通知メール
+    if (resendApiKey) {
+      const adminEmail = process.env.ADMIN_EMAIL;
+      if (adminEmail) {
+        try {
+          const resend = new Resend(resendApiKey);
+          await resend.emails.send({
+            from: `ファクナビ <${fromEmail}>`,
+            to: adminEmail,
+            subject: "【ファクナビ】新しいパートナー業者が登録されました",
+            html: `
+              <div style="font-family: sans-serif; max-width: 600px; margin: 0 auto; padding: 20px;">
+                <h2 style="color: #1e40af; border-bottom: 2px solid #1e40af; padding-bottom: 10px;">
+                  新規パートナー登録通知
+                </h2>
+                <p>新しいファクタリング業者がパートナー登録しました。</p>
+                <table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
+                  <tr style="border-bottom: 1px solid #e5e7eb;">
+                    <td style="padding: 8px 12px; font-weight: bold; color: #374151;">会社名</td>
+                    <td style="padding: 8px 12px;">${company_name || "未設定"}</td>
+                  </tr>
+                  <tr style="border-bottom: 1px solid #e5e7eb;">
+                    <td style="padding: 8px 12px; font-weight: bold; color: #374151;">メールアドレス</td>
+                    <td style="padding: 8px 12px;">${email}</td>
+                  </tr>
+                </table>
+                <div style="text-align: center; margin: 30px 0;">
+                  <a href="${siteUrl}/admin/partners" style="display: inline-block; background: #1e40af; color: #ffffff; padding: 14px 32px; border-radius: 8px; text-decoration: none; font-weight: bold; font-size: 16px;">
+                    管理画面で確認する
+                  </a>
+                </div>
+              </div>
+            `,
+          });
+        } catch (adminEmailError) {
+          console.error("Failed to send admin notification:", adminEmailError);
+        }
+      }
+    }
+
     return NextResponse.json({ success: true, needsVerification: true });
   } catch {
     return NextResponse.json(
