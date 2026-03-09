@@ -55,7 +55,7 @@ export default async function CompanyReviewsPage({ params }: Props) {
           },
         ]}
       />
-      {summary && (
+      {summary && summary.totalCount > 0 && (
         <ProductJsonLd
           name={displayName(company)}
           description={company.description}

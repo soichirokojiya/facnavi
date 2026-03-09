@@ -63,13 +63,15 @@ export default async function CompanyDetailPage({ params }: Props) {
           { name: displayName(company), url: `${SITE_URL}/ranking/${slug}` },
         ]}
       />
-      <ProductJsonLd
-        name={displayName(company)}
-        description={company.description}
-        rating={company.overallRating}
-        reviewCount={summary?.totalCount ?? 0}
-        url={`${SITE_URL}/ranking/${slug}`}
-      />
+      {(summary?.totalCount ?? 0) > 0 && (
+        <ProductJsonLd
+          name={displayName(company)}
+          description={company.description}
+          rating={company.overallRating}
+          reviewCount={summary!.totalCount}
+          url={`${SITE_URL}/ranking/${slug}`}
+        />
+      )}
 
       <Breadcrumb
         items={[
