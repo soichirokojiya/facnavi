@@ -24,4 +24,10 @@ export interface Company {
   rankPosition: number;
   establishedYear?: number;
   targetIndustries?: string[];
+  detailSections?: {
+    merits?: { title: string; body: string }[];
+    demerits?: { title: string; body: string }[];
+    recommended?: string[];
+    flow?: { step: string; detail: string }[];
+  };
 }

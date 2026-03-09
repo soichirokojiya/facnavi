@@ -143,6 +143,83 @@ export default async function CompanyDetailPage({ params }: Props) {
         </div>
       </Card>
 
+      {company.detailSections?.merits && (
+        <section className="mb-8">
+          <h2 className="text-xl font-bold mb-4 text-gray-900">
+            {displayName(company)}を利用するメリット
+          </h2>
+          <div className="space-y-4">
+            {company.detailSections.merits.map((m, i) => (
+              <Card key={i} className="p-5">
+                <h3 className="font-bold text-gray-900 mb-2 flex items-start gap-2">
+                  <span className="shrink-0 bg-green-100 text-green-700 text-xs font-bold px-2 py-0.5 rounded">メリット{i + 1}</span>
+                  {m.title}
+                </h3>
+                <p className="text-sm text-gray-600 leading-relaxed">{m.body}</p>
+              </Card>
+            ))}
+          </div>
+        </section>
+      )}
+
+      {company.detailSections?.demerits && (
+        <section className="mb-8">
+          <h2 className="text-xl font-bold mb-4 text-gray-900">
+            {displayName(company)}の注意点・デメリット
+          </h2>
+          <div className="space-y-4">
+            {company.detailSections.demerits.map((d, i) => (
+              <Card key={i} className="p-5">
+                <h3 className="font-bold text-gray-900 mb-2 flex items-start gap-2">
+                  <span className="shrink-0 bg-red-100 text-red-700 text-xs font-bold px-2 py-0.5 rounded">注意点{i + 1}</span>
+                  {d.title}
+                </h3>
+                <p className="text-sm text-gray-600 leading-relaxed">{d.body}</p>
+              </Card>
+            ))}
+          </div>
+        </section>
+      )}
+
+      {company.detailSections?.recommended && (
+        <section className="mb-8">
+          <Card className="p-6 bg-blue-50 border-blue-200">
+            <h2 className="text-lg font-bold mb-3 text-blue-900">
+              {displayName(company)}はこんな方におすすめ
+            </h2>
+            <ul className="space-y-2">
+              {company.detailSections.recommended.map((r, i) => (
+                <li key={i} className="flex items-start gap-2 text-sm text-blue-800">
+                  <span className="shrink-0 mt-0.5 text-blue-500">&#10003;</span>
+                  {r}
+                </li>
+              ))}
+            </ul>
+          </Card>
+        </section>
+      )}
+
+      {company.detailSections?.flow && (
+        <section className="mb-8">
+          <h2 className="text-xl font-bold mb-4 text-gray-900">利用の流れ</h2>
+          <div className="space-y-3">
+            {company.detailSections.flow.map((f, i) => (
+              <Card key={i} className="p-5">
+                <div className="flex items-start gap-3">
+                  <span className="shrink-0 w-8 h-8 bg-primary text-white rounded-full flex items-center justify-center text-sm font-bold">
+                    {i + 1}
+                  </span>
+                  <div>
+                    <h3 className="font-bold text-gray-900 mb-1">{f.step}</h3>
+                    <p className="text-sm text-gray-600">{f.detail}</p>
+                  </div>
+                </div>
+              </Card>
+            ))}
+          </div>
+        </section>
+      )}
+
       <div className="mb-8 text-center">
         <Link
           href={`/kuchikomi/post?company=${slug}`}

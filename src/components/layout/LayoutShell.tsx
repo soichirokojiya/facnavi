@@ -3,6 +3,7 @@
 import { usePathname } from "next/navigation";
 import { Header } from "./Header";
 import { Footer } from "./Footer";
+import { MitsumoriPopup } from "@/components/popups/MitsumoriPopup";
 
 export function LayoutShell({ children }: { children: React.ReactNode }) {
   const pathname = usePathname();
@@ -12,11 +13,14 @@ export function LayoutShell({ children }: { children: React.ReactNode }) {
     return <>{children}</>;
   }
 
+  const hidePopup = pathname === "/mitsumori" || pathname.startsWith("/mitsumori/");
+
   return (
     <>
       <Header />
       <main className="min-h-screen">{children}</main>
       <Footer />
+      {!hidePopup && <MitsumoriPopup />}
     </>
   );
 }
