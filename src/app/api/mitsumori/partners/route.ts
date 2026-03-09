@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { createClient } from "@supabase/supabase-js";
+import companiesData from "@/app/shindan/companiesData";
 
 export async function GET(request: NextRequest) {
   try {
@@ -53,11 +54,14 @@ export async function GET(request: NextRequest) {
       return true;
     });
 
-    const partners = filtered.map((p) => ({
-      id: p.company_slug || p.name,
-      name: p.name,
-      slug: p.company_slug,
-    }));
+    const partners = filtered.map((p) => {
+      const companyInfo = companiesData.find((c) => c.slug === p.company_slug);
+      return {
+        id: p.company_slug || p.name,
+        name: companyInfo?.brandName || p.name,
+        slug: p.company_slug,
+      };
+    });
 
     return NextResponse.json({ partners });
   } catch {
