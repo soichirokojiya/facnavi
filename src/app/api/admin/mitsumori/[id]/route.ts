@@ -59,5 +59,16 @@ export async function GET(
     }
   }
 
-  return NextResponse.json({ data, documents });
+  // リード割り当て（選択された業者）を取得
+  const { data: assignments } = await supabase
+    .from("lead_assignments")
+    .select("partner_company_id, status, partner_companies(name)")
+    .eq("mitsumori_request_id", id);
+
+  const partners = (assignments || []).map((a) => ({
+    name: (a.partner_companies as unknown as { name: string })?.name || "不明",
+    status: a.status,
+  }));
+
+  return NextResponse.json({ data, documents, partners });
 }

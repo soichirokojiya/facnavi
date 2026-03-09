@@ -25,10 +25,16 @@ interface Document {
   url: string;
 }
 
+interface PartnerAssignment {
+  name: string;
+  status: string;
+}
+
 export default function AdminMitsumoriDetailPage() {
   const { id } = useParams<{ id: string }>();
   const [data, setData] = useState<MitsumoriDetail | null>(null);
   const [documents, setDocuments] = useState<Document[]>([]);
+  const [partners, setPartners] = useState<PartnerAssignment[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
 
@@ -41,6 +47,7 @@ export default function AdminMitsumoriDetailPage() {
       .then((result) => {
         setData(result.data);
         setDocuments(result.documents || []);
+        setPartners(result.partners || []);
       })
       .catch(() => setError("データの取得に失敗しました。"))
       .finally(() => setLoading(false));
@@ -108,6 +115,36 @@ export default function AdminMitsumoriDetailPage() {
           </tbody>
         </table>
       </div>
+
+      <h2 className="text-lg font-bold text-gray-900 mb-4">選択された業者</h2>
+      {partners.length === 0 ? (
+        <div className="bg-white rounded-xl border border-gray-200 p-6 text-center mb-6">
+          <p className="text-gray-500">業者が選択されていません。</p>
+        </div>
+      ) : (
+        <div className="bg-white rounded-xl border border-gray-200 overflow-hidden mb-6">
+          <div className="divide-y divide-gray-100">
+            {partners.map((p, idx) => (
+              <div key={idx} className="flex items-center justify-between px-4 py-3">
+                <span className="text-sm font-medium">{p.name}</span>
+                <span className={`text-xs font-bold px-2.5 py-0.5 rounded-full ${
+                  p.status === "active" ? "bg-green-100 text-green-700" :
+                  p.status === "removed" ? "bg-gray-100 text-gray-500" :
+                  p.status === "duplicate" ? "bg-amber-100 text-amber-700" :
+                  p.status === "takedown_requested" ? "bg-red-100 text-red-700" :
+                  "bg-blue-100 text-blue-700"
+                }`}>
+                  {p.status === "active" ? "有効" :
+                   p.status === "removed" ? "取下確定" :
+                   p.status === "duplicate" ? "重複" :
+                   p.status === "takedown_requested" ? "取下依頼中" :
+                   p.status}
+                </span>
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
 
       <h2 className="text-lg font-bold text-gray-900 mb-4">アップロード書類</h2>
       {documents.length === 0 ? (

@@ -29,6 +29,25 @@ export async function POST(request: NextRequest) {
 
     const supabase = createClient(supabaseUrl, supabaseKey);
 
+    // 登録数上限チェック
+    const { data: maxSetting } = await supabase
+      .from("site_settings")
+      .select("value")
+      .eq("key", "max_partners")
+      .single();
+    const maxPartners = parseInt(maxSetting?.value || "5", 10) || 5;
+
+    const { count } = await supabase
+      .from("partner_companies")
+      .select("id", { count: "exact", head: true });
+
+    if (count !== null && count >= maxPartners) {
+      return NextResponse.json(
+        { error: "現在、掲載パートナーの募集枠が上限に達しています。空きが出た際にご案内いたしますので、お問い合わせフォームよりご連絡ください。" },
+        { status: 403 }
+      );
+    }
+
     // email重複チェック
     const { data: existingByEmail } = await supabase
       .from("partner_companies")
@@ -58,8 +77,9 @@ export async function POST(request: NextRequest) {
       email_verification_token: verificationToken,
       supported_prefectures: [],
       supported_industries: [],
-      min_amount: 0,
+      min_amount: 10000,
       max_amount: 999999999,
+      fee_per_lead: 15000,
       sole_proprietor_ok: true,
     });
 

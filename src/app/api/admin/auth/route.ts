@@ -1,10 +1,31 @@
 import { NextRequest, NextResponse } from "next/server";
+import { createClient } from "@supabase/supabase-js";
 import crypto from "crypto";
 
 export async function POST(request: NextRequest) {
   try {
     const { password } = await request.json();
-    const adminPassword = process.env.ADMIN_PASSWORD;
+
+    // site_settings優先、なければ環境変数
+    let adminPassword = process.env.ADMIN_PASSWORD;
+    try {
+      const supabase = createClient(
+        process.env.NEXT_PUBLIC_SUPABASE_URL!,
+        process.env.SUPABASE_SERVICE_ROLE_KEY || process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!
+      );
+      const controller = new AbortController();
+      const timeout = setTimeout(() => controller.abort(), 3000);
+      const { data } = await supabase
+        .from("site_settings")
+        .select("value")
+        .eq("key", "admin_password")
+        .single()
+        .abortSignal(controller.signal);
+      clearTimeout(timeout);
+      if (data?.value) adminPassword = data.value;
+    } catch {
+      // DB取得失敗・タイムアウト時は環境変数のまま
+    }
 
     if (!adminPassword) {
       return NextResponse.json(

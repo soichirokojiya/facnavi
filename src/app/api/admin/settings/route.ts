@@ -41,6 +41,38 @@ export async function PATCH(request: NextRequest) {
     const body = await request.json();
     const supabase = createClient(supabaseUrl, supabaseKey);
 
+    // パスワード変更
+    if (body._change_password) {
+      const { current_password, new_password } = body;
+
+      // 現在のパスワードを検証（site_settings優先、なければ環境変数）
+      const { data: pwRow } = await supabase
+        .from("site_settings")
+        .select("value")
+        .eq("key", "admin_password")
+        .single();
+
+      const currentAdminPassword = pwRow?.value || process.env.ADMIN_PASSWORD;
+
+      if (current_password !== currentAdminPassword) {
+        return NextResponse.json({ error: "現在のパスワードが正しくありません。" }, { status: 400 });
+      }
+
+      if (!new_password || new_password.length < 8) {
+        return NextResponse.json({ error: "新しいパスワードは8文字以上で設定してください。" }, { status: 400 });
+      }
+
+      const { error } = await supabase
+        .from("site_settings")
+        .upsert({ key: "admin_password", value: new_password }, { onConflict: "key" });
+
+      if (error) {
+        return NextResponse.json({ error: "パスワードの保存に失敗しました。" }, { status: 500 });
+      }
+
+      return NextResponse.json({ success: true });
+    }
+
     for (const [key, value] of Object.entries(body)) {
       const { error } = await supabase
         .from("site_settings")
