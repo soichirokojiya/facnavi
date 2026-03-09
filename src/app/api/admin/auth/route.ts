@@ -13,15 +13,16 @@ export async function POST(request: NextRequest) {
         process.env.NEXT_PUBLIC_SUPABASE_URL!,
         process.env.SUPABASE_SERVICE_ROLE_KEY || process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!
       );
-      const controller = new AbortController();
-      const timeout = setTimeout(() => controller.abort(), 3000);
-      const { data } = await supabase
-        .from("site_settings")
-        .select("value")
-        .eq("key", "admin_password")
-        .single()
-        .abortSignal(controller.signal);
-      clearTimeout(timeout);
+      const { data } = await Promise.race([
+        supabase
+          .from("site_settings")
+          .select("value")
+          .eq("key", "admin_password")
+          .single(),
+        new Promise<never>((_, reject) =>
+          setTimeout(() => reject(new Error("timeout")), 3000)
+        ),
+      ]);
       if (data?.value) adminPassword = data.value;
     } catch {
       // DB取得失敗・タイムアウト時は環境変数のまま
