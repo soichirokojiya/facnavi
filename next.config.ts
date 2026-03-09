@@ -8,6 +8,14 @@ const nextConfig: NextConfig = {
       { protocol: "https", hostname: "images.unsplash.com" },
     ],
   },
+  headers: async () => [
+    {
+      source: "/sitemap.xml",
+      headers: [
+        { key: "Cache-Control", value: "public, max-age=3600, s-maxage=86400" },
+      ],
+    },
+  ],
 };
 
 const withMDX = createMDX({
