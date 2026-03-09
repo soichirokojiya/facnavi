@@ -282,16 +282,16 @@ const icons = {
 
 /* ─── LP本体 ─── */
 
-/* ─── おすすめ業者データ（後ほど実データに差し替え） ─── */
-const RECOMMENDED_COMPANIES = [
-  {
-    id: "cashnow",
-    name: "CASH NOW",
-    rating: 4.5,
-    features: ["最短即日", "オンライン完結", "柔軟対応"],
-    color: "from-blue-500 to-blue-600",
-    href: "/go/cashnow",
-  },
+/* ─── おすすめ業者の色パレット ─── */
+const PARTNER_COLORS = [
+  "from-blue-500 to-blue-600",
+  "from-emerald-500 to-emerald-600",
+  "from-purple-500 to-purple-600",
+  "from-orange-500 to-orange-600",
+  "from-pink-500 to-pink-600",
+  "from-teal-500 to-teal-600",
+  "from-indigo-500 to-indigo-600",
+  "from-rose-500 to-rose-600",
 ];
 
 export function MitsumoriLP() {
@@ -306,10 +306,31 @@ export function MitsumoriLP() {
       document.getElementById("form")?.scrollIntoView({ behavior: "smooth", block: "start" });
     }, 50);
   };
-  const [selectedCompanies, setSelectedCompanies] = useState<string[]>(
-    RECOMMENDED_COMPANIES.map((c) => c.id)
-  );
+  const [partners, setPartners] = useState<{ id: string; name: string; slug: string | null }[]>([]);
+  const [partnersLoading, setPartnersLoading] = useState(false);
+  const [selectedCompanies, setSelectedCompanies] = useState<string[]>([]);
   const [openFaq, setOpenFaq] = useState<number | null>(null);
+
+  const fetchPartners = async () => {
+    setPartnersLoading(true);
+    try {
+      const params = new URLSearchParams();
+      if (form.prefecture) params.set("prefecture", form.prefecture);
+      if (form.invoice_amount) params.set("amount", String(form.invoice_amount));
+      if (form.industry) params.set("industry", form.industry);
+      if (form.business_type) params.set("business_type", form.business_type);
+      if (form.deposit_timing) params.set("deposit_timing", form.deposit_timing);
+      const res = await fetch(`/api/mitsumori/partners?${params}`);
+      const data = await res.json();
+      setPartners(data.partners || []);
+      setSelectedCompanies((data.partners || []).map((p: { id: string }) => p.id));
+    } catch {
+      setPartners([]);
+      setSelectedCompanies([]);
+    } finally {
+      setPartnersLoading(false);
+    }
+  };
 
   const updateField = useCallback(
     <K extends keyof FormData>(key: K, value: FormData[K]) => {
@@ -1083,7 +1104,7 @@ export function MitsumoriLP() {
                   <button
                     type="button"
                     disabled={!isFormValid}
-                    onClick={() => setFormStep(3)}
+                    onClick={() => { fetchPartners(); setFormStep(3); }}
                     className="w-full py-4 bg-gradient-to-r from-orange-500 to-red-500 text-white font-bold text-lg rounded-full shadow-lg shadow-orange-500/30 hover:shadow-xl hover:-translate-y-0.5 transition-all duration-300 disabled:opacity-40 disabled:cursor-not-allowed disabled:hover:translate-y-0 disabled:hover:shadow-lg flex items-center justify-center gap-2"
                   >
                     <span className="bg-white/20 text-sm rounded-full px-2.5 py-0.5 font-bold">2/3</span>
@@ -1131,7 +1152,7 @@ export function MitsumoriLP() {
                   <div className="bg-gray-50 rounded-xl p-4 mb-6 text-left">
                     <p className="text-xs font-bold text-gray-500 mb-2">見積もり依頼先：</p>
                     <div className="space-y-1">
-                      {RECOMMENDED_COMPANIES.filter((c) => selectedCompanies.includes(c.id)).map((c) => (
+                      {partners.filter((c) => selectedCompanies.includes(c.id)).map((c) => (
                         <div key={c.id} className="flex items-center gap-2 text-sm text-gray-700">
                           {icons.check("w-3.5 h-3.5 text-emerald-500 shrink-0")}
                           <span className="font-bold">{c.name}</span>
@@ -1152,57 +1173,52 @@ export function MitsumoriLP() {
                   </p>
                   <p className="text-xs text-gray-500 mb-4">見積もりを依頼したい会社を選んでください（複数選択可）</p>
 
-                  <div className="space-y-3">
-                    {RECOMMENDED_COMPANIES.map((company, i) => {
-                      const isChecked = selectedCompanies.includes(company.id);
-                      return (
-                        <label
-                          key={company.id}
-                          className={`flex items-center gap-4 p-4 rounded-xl border-2 cursor-pointer transition-all ${
-                            isChecked
-                              ? "bg-blue-50 border-blue-400 shadow-sm"
-                              : "bg-gray-50 border-gray-100 hover:border-gray-200"
-                          }`}
-                        >
-                          <input
-                            type="checkbox"
-                            checked={isChecked}
-                            onChange={() => {
-                              setSelectedCompanies((prev) =>
-                                prev.includes(company.id)
-                                  ? prev.filter((id) => id !== company.id)
-                                  : [...prev, company.id]
-                              );
-                            }}
-                            className="w-5 h-5 rounded border-gray-300 text-blue-600 focus:ring-blue-600 shrink-0"
-                          />
-                          <div className={`w-9 h-9 bg-gradient-to-br ${company.color} rounded-lg flex items-center justify-center shrink-0 shadow-md text-white font-black text-xs`}>
-                            {i + 1}
-                          </div>
-                          <div className="flex-1 min-w-0">
-                            <p className="font-bold text-gray-900 text-sm">{company.name}</p>
-                            <div className="flex items-center gap-1.5 mt-0.5">
-                              <div className="flex gap-0.5">
-                                {Array.from({ length: 5 }).map((_, si) => (
-                                  <span key={si}>
-                                    {icons.star(`w-3.5 h-3.5 ${si < Math.round(company.rating) ? "text-amber-400" : "text-gray-200"}`)}
-                                  </span>
-                                ))}
-                              </div>
-                              <span className="text-xs font-bold text-amber-600">{company.rating}</span>
+                  {partnersLoading ? (
+                    <div className="flex items-center justify-center py-8">
+                      <svg className="w-6 h-6 animate-spin text-blue-500" fill="none" viewBox="0 0 24 24"><circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" /><path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z" /></svg>
+                      <span className="ml-2 text-sm text-gray-500">条件に合う業者を検索中...</span>
+                    </div>
+                  ) : partners.length === 0 ? (
+                    <div className="text-center py-8">
+                      <p className="text-gray-500 text-sm">現在、ご入力いただいた条件に合う業者が見つかりませんでした。</p>
+                      <button type="button" onClick={() => setFormStep(2)} className="mt-3 text-blue-600 text-sm font-bold underline">条件を変更する</button>
+                    </div>
+                  ) : (
+                    <div className="space-y-3">
+                      {partners.map((company, i) => {
+                        const isChecked = selectedCompanies.includes(company.id);
+                        return (
+                          <label
+                            key={company.id}
+                            className={`flex items-center gap-4 p-4 rounded-xl border-2 cursor-pointer transition-all ${
+                              isChecked
+                                ? "bg-blue-50 border-blue-400 shadow-sm"
+                                : "bg-gray-50 border-gray-100 hover:border-gray-200"
+                            }`}
+                          >
+                            <input
+                              type="checkbox"
+                              checked={isChecked}
+                              onChange={() => {
+                                setSelectedCompanies((prev) =>
+                                  prev.includes(company.id)
+                                    ? prev.filter((id) => id !== company.id)
+                                    : [...prev, company.id]
+                                );
+                              }}
+                              className="w-5 h-5 rounded border-gray-300 text-blue-600 focus:ring-blue-600 shrink-0"
+                            />
+                            <div className={`w-9 h-9 bg-gradient-to-br ${PARTNER_COLORS[i % PARTNER_COLORS.length]} rounded-lg flex items-center justify-center shrink-0 shadow-md text-white font-black text-xs`}>
+                              {i + 1}
                             </div>
-                            <div className="flex flex-wrap gap-1 mt-1">
-                              {company.features.map((f) => (
-                                <span key={f} className="text-[10px] font-bold text-blue-600 bg-blue-50 px-2 py-0.5 rounded-full">{f}</span>
-                              ))}
+                            <div className="flex-1 min-w-0">
+                              <p className="font-bold text-gray-900 text-sm">{company.name}</p>
                             </div>
-                          </div>
-                        </label>
-                      );
-                    })}
-                  </div>
-
-                  <p className="text-xs text-gray-400 mt-3 text-center">※ 上記はおすすめ業者の一部です。PR含む</p>
+                          </label>
+                        );
+                      })}
+                    </div>
+                  )}
 
                   <p className="text-xs text-gray-500 mt-3 text-center">※ 同じ業者への見積もり依頼は6ヶ月以内に1回のみ有効です。別の業者への依頼は何度でも可能です。</p>
 
