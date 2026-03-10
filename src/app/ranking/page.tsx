@@ -13,6 +13,11 @@ export const metadata: Metadata = {
   description:
     "手数料・入金スピード・口コミを徹底比較！おすすめファクタリング業者ランキング。あなたに最適な業者が見つかります。",
   alternates: { canonical: `${SITE_URL}/ranking` },
+  openGraph: {
+    title: "ファクタリング業者おすすめランキング",
+    description:
+      "手数料・入金スピード・口コミを徹底比較！おすすめファクタリング業者ランキング。あなたに最適な業者が見つかります。",
+  },
 };
 
 export default function RankingPage() {

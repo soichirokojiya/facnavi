@@ -38,6 +38,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: `${name}の口コミ・評判｜手数料・審査・必要書類を徹底解説【${year}年最新】`,
     description: `${name}の口コミ・評判を徹底調査。手数料${fee}、最短${speed}入金、${online}。利用者のリアルな口コミと審査情報をまとめました。`,
     alternates: { canonical: `${SITE_URL}/ranking/${slug}` },
+    openGraph: {
+      title: `${name}の口コミ・評判｜手数料・審査・必要書類を徹底解説【${year}年最新】`,
+      description: `${name}の口コミ・評判を徹底調査。手数料${fee}、最短${speed}入金、${online}。利用者のリアルな口コミと審査情報をまとめました。`,
+    },
   };
 }
 

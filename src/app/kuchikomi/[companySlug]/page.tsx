@@ -32,6 +32,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: `${displayName(company)}の口コミ・評判`,
     description: `${displayName(company)}の口コミ${summary?.totalCount ?? 0}件。平均評価${summary?.averageRating ?? "-"}点。利用者のリアルな声を掲載。`,
     alternates: { canonical: `${SITE_URL}/kuchikomi/${companySlug}` },
+    openGraph: {
+      title: `${displayName(company)}の口コミ・評判`,
+      description: `${displayName(company)}の口コミ${summary?.totalCount ?? 0}件。平均評価${summary?.averageRating ?? "-"}点。利用者のリアルな声を掲載。`,
+    },
   };
 }
 

@@ -11,6 +11,11 @@ export const metadata: Metadata = {
   description:
     "ファクタリングに関するよくある質問と回答をまとめました。手数料の相場、審査の流れ、個人事業主の利用可否など、初めての方にもわかりやすく解説します。",
   alternates: { canonical: `${SITE_URL}/faq` },
+  openGraph: {
+    title: "よくある質問（FAQ） - ファクタリングの疑問を解決",
+    description:
+      "ファクタリングに関するよくある質問と回答をまとめました。手数料の相場、審査の流れ、個人事業主の利用可否など、初めての方にもわかりやすく解説します。",
+  },
 };
 
 export default function FaqPage() {

@@ -9,6 +9,11 @@ export const metadata: Metadata = {
   description:
     "厳選されたファクタリング会社に一括で見積もり依頼。手数料・スピードを簡単比較して最適な1社が見つかる。完全無料・個人事業主OK・全国対応。",
   alternates: { canonical: `${SITE_URL}/mitsumori` },
+  openGraph: {
+    title: "ファクタリング一括見積もり｜最短30秒で複数社を無料比較",
+    description:
+      "厳選されたファクタリング会社に一括で見積もり依頼。手数料・スピードを簡単比較して最適な1社が見つかる。完全無料・個人事業主OK・全国対応。",
+  },
 };
 
 export default function MitsumoriPage() {

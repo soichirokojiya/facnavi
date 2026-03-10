@@ -30,6 +30,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: article.title,
     description: article.description,
     alternates: { canonical: `${SITE_URL}/column/${slug}` },
+    openGraph: {
+      title: article.title,
+      description: article.description,
+    },
   };
 }
 
@@ -147,6 +151,9 @@ export default async function ArticleDetailPage({ params }: Props) {
           <div className="flex items-center gap-2 mt-5 mb-3">
             <Badge>{article.category}</Badge>
             <time className="text-sm text-gray-500">{article.publishedAt}</time>
+            {article.updatedAt && (
+              <time className="text-sm text-gray-500">最終更新: {article.updatedAt}</time>
+            )}
           </div>
           <h1 className="text-2xl md:text-3xl font-bold text-gray-900 leading-tight">
             {article.title}

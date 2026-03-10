@@ -14,6 +14,11 @@ export const metadata: Metadata = {
   description:
     "実際にファクタリングを利用した方の口コミ・評判を掲載。業者選びの参考にしてください。",
   alternates: { canonical: `${SITE_URL}/kuchikomi` },
+  openGraph: {
+    title: "ファクタリング口コミ・評判一覧",
+    description:
+      "実際にファクタリングを利用した方の口コミ・評判を掲載。業者選びの参考にしてください。",
+  },
 };
 
 export default async function ReviewsPage() {

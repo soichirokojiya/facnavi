@@ -9,6 +9,11 @@ export const metadata: Metadata = {
   description:
     "簡単な質問に答えるだけで、あなたに最適なファクタリング業者が見つかる無料診断ツール。",
   alternates: { canonical: `${SITE_URL}/shindan` },
+  openGraph: {
+    title: "ファクタリング診断ツール - あなたに最適な業者を見つけよう",
+    description:
+      "簡単な質問に答えるだけで、あなたに最適なファクタリング業者が見つかる無料診断ツール。",
+  },
 };
 
 export default function ShindanPage() {

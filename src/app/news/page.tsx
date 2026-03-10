@@ -6,6 +6,12 @@ export const metadata: Metadata = {
   title: "ファクタリング最新ニュース | ファクナビ",
   description:
     "ファクタリング業界の最新ニュース・動向をお届け。法改正、新サービス、市場調査など、資金調達に役立つ情報を随時更新。",
+  alternates: { canonical: "https://facnavi.info/news" },
+  openGraph: {
+    title: "ファクタリング最新ニュース | ファクナビ",
+    description:
+      "ファクタリング業界の最新ニュース・動向をお届け。法改正、新サービス、市場調査など、資金調達に役立つ情報を随時更新。",
+  },
 };
 
 export default function NewsPage() {

@@ -20,9 +20,9 @@ const POPULAR_COMPANIES = [
 const COLUMN_LINKS = [
   { href: "/column/what-is-factoring", label: "ファクタリングとは？仕組みを解説" },
   { href: "/column/how-to-choose", label: "ファクタリング会社の選び方" },
-  { href: "/column/2sha-vs-3sha", label: "2社間・3社間の違い" },
-  { href: "/column/factoring-fee-guide", label: "手数料の相場と安くするコツ" },
-  { href: "/column/sole-proprietor-guide", label: "個人事業主のファクタリング" },
+  { href: "/column/two-vs-three-party", label: "2社間・3社間の違い" },
+  { href: "/column/factoring-fees", label: "手数料の相場と安くするコツ" },
+  { href: "/column/sole-proprietor-factoring", label: "個人事業主のファクタリング" },
 ];
 
 export function Footer() {
