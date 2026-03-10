@@ -19,7 +19,7 @@ export default function NewsPage() {
             NEWS
           </p>
           <h1 className="text-xl md:text-2xl font-bold text-gray-900 tracking-tight">
-            ファクタリング最新ニュース
+            ファクタリング最新ニュース<span className="ml-2 text-xs font-bold text-blue-600 bg-blue-50 px-2 py-0.5 rounded-full align-middle">毎日更新</span>
           </h1>
           <div className="w-10 h-1 bg-orange-500 rounded-full mt-2" />
           <p className="text-sm text-gray-500 mt-3">
