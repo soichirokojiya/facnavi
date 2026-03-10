@@ -93,11 +93,6 @@ export function Footer() {
                   よくある質問（FAQ）
                 </Link>
               </li>
-              <li>
-                <Link href="/freelance" className="text-sm hover:text-white transition-colors">
-                  THE FREELANCE
-                </Link>
-              </li>
             </ul>
 
             <h3 className="text-white font-bold text-sm mt-6 mb-4">人気の記事</h3>
