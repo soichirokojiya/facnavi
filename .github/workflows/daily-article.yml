@@ -1,0 +1,51 @@
+name: Daily Facnavi Article
+
+on:
+  schedule:
+    # 毎日 JST 9:00 = UTC 00:00
+    - cron: '0 0 * * *'
+  workflow_dispatch: # 手動実行も可能
+
+jobs:
+  generate-article:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install Claude Code
+        run: npm install -g @anthropic-ai/claude-code
+
+      - name: Generate article
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          claude -p "ファクナビ（このリポジトリ）の記事を1本作成してください。
+
+          手順：
+          1. content/articles/ の既存記事一覧を確認し、重複しないテーマを選ぶ
+          2. 個人事業主・フリーランス・中小企業の経営者が興味を持ちそうなテーマで、ファクタリングや資金繰りに関連する記事を1本作成する
+          3. 既存記事のフォーマット（frontmatter、文体、画像パス、表の使い方など）に合わせる
+          4. public/images/column/ にある既存SVGから適切な画像を選んで使う
+          5. slugは英語のケバブケース、publishedAtは今日の日付
+          6. ファイルを作成するだけ（gitの操作は不要）" --allowedTools "Read,Write,Edit,Glob,Grep"
+
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add content/articles/
+          # 新しい記事がある場合のみcommit
+          if git diff --cached --quiet; then
+            echo "No new articles to commit"
+          else
+            git commit -m "feat: 本日のファクナビ記事を自動生成"
+            git push
+          fi
