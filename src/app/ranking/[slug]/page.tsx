@@ -14,7 +14,7 @@ import { Badge } from "@/components/ui/Badge";
 import { StarRating } from "@/components/ui/StarRating";
 import { Card } from "@/components/ui/Card";
 import { ReviewCard } from "@/components/reviews/ReviewCard";
-import { BreadcrumbJsonLd, ProductJsonLd } from "@/components/seo/JsonLd";
+import { BreadcrumbJsonLd, ProductJsonLd, FAQJsonLd } from "@/components/seo/JsonLd";
 import { SITE_URL } from "@/lib/constants";
 import { getAllArticles } from "@/lib/articles";
 
@@ -92,6 +92,9 @@ export default async function CompanyDetailPage({ params }: Props) {
           reviewCount={summary!.totalCount}
           url={`${SITE_URL}/ranking/${slug}`}
         />
+      )}
+      {company.faq && company.faq.length > 0 && (
+        <FAQJsonLd faqs={company.faq} />
       )}
 
       <Breadcrumb
@@ -235,6 +238,90 @@ export default async function CompanyDetailPage({ params }: Props) {
                     <p className="text-sm text-gray-600">{f.detail}</p>
                   </div>
                 </div>
+              </Card>
+            ))}
+          </div>
+        </section>
+      )}
+
+      {company.feeSimulation && company.feeSimulation.length > 0 && (
+        <section className="mb-8">
+          <h2 className="text-xl font-bold mb-4 text-gray-900">
+            {displayName(company)}の手数料シミュレーション
+          </h2>
+          <Card className="p-6 overflow-x-auto">
+            <table className="w-full text-sm">
+              <thead>
+                <tr className="border-b border-gray-200">
+                  <th className="text-left py-2 text-gray-500 font-medium">売掛金額</th>
+                  <th className="text-right py-2 text-gray-500 font-medium">手数料目安</th>
+                  <th className="text-right py-2 text-gray-500 font-medium">受取額目安</th>
+                </tr>
+              </thead>
+              <tbody>
+                {company.feeSimulation.map((sim) => (
+                  <tr key={sim.amount} className="border-b border-gray-100">
+                    <td className="py-3 font-bold">{formatAmount(sim.amount)}</td>
+                    <td className="py-3 text-right text-gray-600">
+                      {formatAmount(sim.feeMin)}〜{formatAmount(sim.feeMax)}
+                    </td>
+                    <td className="py-3 text-right font-bold text-green-700">
+                      {formatAmount(sim.handMin)}〜{formatAmount(sim.handMax)}
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+            <p className="text-xs text-gray-400 mt-3">
+              ※ 上記は手数料率 {company.feeRange.min}〜{company.feeRange.max}% で計算した目安です。実際の手数料は審査により異なります。
+            </p>
+          </Card>
+        </section>
+      )}
+
+      {company.faq && company.faq.length > 0 && (
+        <section className="mb-8">
+          <h2 className="text-xl font-bold mb-4 text-gray-900">
+            {displayName(company)}のよくある質問
+          </h2>
+          <div className="space-y-3">
+            {company.faq.map((item, i) => (
+              <Card key={i} className="p-5">
+                <h3 className="font-bold text-gray-900 mb-2 flex items-start gap-2">
+                  <span className="shrink-0 bg-primary/10 text-primary text-xs font-bold px-2 py-0.5 rounded">Q</span>
+                  {item.question}
+                </h3>
+                <p className="text-sm text-gray-600 leading-relaxed pl-7">
+                  {item.answer}
+                </p>
+              </Card>
+            ))}
+          </div>
+        </section>
+      )}
+
+      {company.comparisons && company.comparisons.length > 0 && (
+        <section className="mb-8">
+          <h2 className="text-xl font-bold mb-4 text-gray-900">
+            {displayName(company)}と他社の比較
+          </h2>
+          <div className="space-y-4">
+            {company.comparisons.map((comp) => (
+              <Card key={comp.competitorSlug} className="p-5">
+                <h3 className="font-bold text-gray-900 mb-3">
+                  {displayName(company)} vs{" "}
+                  <Link href={`/ranking/${comp.competitorSlug}`} className="text-primary hover:underline">
+                    {comp.competitor}
+                  </Link>
+                </h3>
+                <ul className="space-y-2">
+                  {comp.points.map((point, i) => (
+                    <li key={i} className="flex items-start gap-2 text-sm text-gray-600">
+                      <span className="shrink-0 mt-0.5 text-gray-400">&#8226;</span>
+                      {point}
+                    </li>
+                  ))}
+                </ul>
               </Card>
             ))}
           </div>

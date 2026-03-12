@@ -30,4 +30,17 @@ export interface Company {
     recommended?: string[];
     flow?: { step: string; detail: string }[];
   };
+  faq?: { question: string; answer: string }[];
+  feeSimulation?: {
+    amount: number;
+    feeMin: number;
+    feeMax: number;
+    handMin: number;
+    handMax: number;
+  }[];
+  comparisons?: {
+    competitor: string;
+    competitorSlug: string;
+    points: string[];
+  }[];
 }
