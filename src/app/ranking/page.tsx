@@ -56,7 +56,7 @@ export default function RankingPage() {
         手数料・入金スピード・口コミ評価を総合的に比較し、おすすめのファクタリング業者をランキング形式でご紹介します。
       </p>
 
-      <RankingFilter companies={topCompanies} />
+      <RankingFilter companies={companies} />
 
       {/* Pagination */}
       {totalPages > 1 && (

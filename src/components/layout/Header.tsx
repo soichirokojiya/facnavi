@@ -1,12 +1,27 @@
 "use client";
 
 import Link from "next/link";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef, useCallback } from "react";
 import { NAV_ITEMS } from "@/lib/constants";
 import { Logo } from "./Logo";
+import { MegaMenu } from "./MegaMenu";
+import { MobileMenuCategories } from "./MobileMenuCategories";
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isMegaMenuOpen, setIsMegaMenuOpen] = useState(false);
+  const megaMenuTimeoutRef = useRef<NodeJS.Timeout | null>(null);
+
+  const openMegaMenu = useCallback(() => {
+    if (megaMenuTimeoutRef.current) clearTimeout(megaMenuTimeoutRef.current);
+    setIsMegaMenuOpen(true);
+  }, []);
+
+  const closeMegaMenu = useCallback(() => {
+    megaMenuTimeoutRef.current = setTimeout(() => {
+      setIsMegaMenuOpen(false);
+    }, 150);
+  }, []);
 
   // メニューオープン時にbodyスクロールを無効化
   useEffect(() => {
@@ -28,9 +43,64 @@ export function Header() {
             <Logo size="md" />
           </Link>
 
-          {/* ハンバーガーボタン（常時表示） */}
+          {/* デスクトップナビゲーション */}
+          <div className="hidden lg:flex items-center gap-1">
+            <div
+              className="relative"
+              onMouseEnter={openMegaMenu}
+              onMouseLeave={closeMegaMenu}
+            >
+              <Link
+                href="/ranking"
+                className="flex items-center gap-1 px-3 py-2 text-sm font-medium text-gray-700 hover:text-blue-700 rounded-md transition-colors"
+              >
+                ランキング
+                <svg
+                  className={`w-3.5 h-3.5 transition-transform duration-200 ${
+                    isMegaMenuOpen ? "rotate-180" : ""
+                  }`}
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M19 9l-7 7-7-7"
+                  />
+                </svg>
+              </Link>
+            </div>
+            <Link
+              href="/kuchikomi"
+              className="px-3 py-2 text-sm font-medium text-gray-700 hover:text-blue-700 rounded-md transition-colors"
+            >
+              口コミ
+            </Link>
+            <Link
+              href="/column"
+              className="px-3 py-2 text-sm font-medium text-gray-700 hover:text-blue-700 rounded-md transition-colors"
+            >
+              実践経営ノート
+            </Link>
+            <Link
+              href="/shindan"
+              className="px-3 py-2 text-sm font-medium text-gray-700 hover:text-blue-700 rounded-md transition-colors"
+            >
+              診断ツール
+            </Link>
+            <Link
+              href="/mitsumori"
+              className="ml-2 px-4 py-2 bg-amber-500 hover:bg-amber-600 text-white text-sm font-bold rounded-lg transition-colors"
+            >
+              一括見積もり
+            </Link>
+          </div>
+
+          {/* ハンバーガーボタン（モバイルのみ） */}
           <button
-            className="relative w-10 h-10 flex items-center justify-center z-[60]"
+            className="relative w-10 h-10 flex items-center justify-center z-[60] lg:hidden"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             aria-label={isMenuOpen ? "メニューを閉じる" : "メニューを開く"}
           >
@@ -53,11 +123,20 @@ export function Header() {
             </div>
           </button>
         </div>
+
+        {/* デスクトップ メガメニュー */}
+        <div
+          className="hidden lg:block"
+          onMouseEnter={openMegaMenu}
+          onMouseLeave={closeMegaMenu}
+        >
+          <MegaMenu isOpen={isMegaMenuOpen} onClose={() => setIsMegaMenuOpen(false)} />
+        </div>
       </header>
 
-      {/* フルスクリーンメニュー */}
+      {/* フルスクリーンメニュー（モバイル） */}
       <div
-        className={`fixed inset-0 z-[55] bg-white transition-opacity duration-300 ${
+        className={`fixed inset-0 z-[55] bg-white transition-opacity duration-300 lg:hidden ${
           isMenuOpen
             ? "opacity-100 pointer-events-auto"
             : "opacity-0 pointer-events-none"
@@ -85,14 +164,14 @@ export function Header() {
         </div>
 
         <div
-          className={`flex flex-col items-center justify-center min-h-screen px-6 py-16 transition-all duration-500 ease-out ${
+          className={`flex flex-col items-center min-h-screen px-6 py-16 overflow-y-auto transition-all duration-500 ease-out ${
             isMenuOpen ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-4"
           }`}
         >
           {/* ロゴ（トップへ戻る） */}
           <Link
             href="/"
-            className="mb-6 hover:opacity-80 transition-opacity"
+            className="mb-6 mt-4 hover:opacity-80 transition-opacity"
             onClick={() => setIsMenuOpen(false)}
           >
             <Logo size="lg" />
@@ -117,7 +196,7 @@ export function Header() {
             >
               トップページ
             </Link>
-            {NAV_ITEMS.map((item) => (
+            {NAV_ITEMS.filter((item) => item.href !== "/mitsumori").map((item) => (
               <Link
                 key={item.href}
                 href={item.href}
@@ -129,10 +208,13 @@ export function Header() {
             ))}
           </nav>
 
+          {/* カテゴリナビゲーション */}
+          <MobileMenuCategories onLinkClick={() => setIsMenuOpen(false)} />
+
           {/* 一括見積もりCTA */}
           <Link
             href="/mitsumori"
-            className="flex items-center gap-3 bg-amber-500 hover:bg-amber-600 text-white font-bold text-base rounded-xl px-7 py-3.5 shadow-lg transition-all duration-200 w-full max-w-xs justify-center"
+            className="flex items-center gap-3 bg-amber-500 hover:bg-amber-600 text-white font-bold text-base rounded-xl px-7 py-3.5 shadow-lg transition-all duration-200 w-full max-w-xs justify-center mt-8"
             onClick={() => setIsMenuOpen(false)}
           >
             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
