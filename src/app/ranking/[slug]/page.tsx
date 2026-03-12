@@ -16,6 +16,7 @@ import { Card } from "@/components/ui/Card";
 import { ReviewCard } from "@/components/reviews/ReviewCard";
 import { BreadcrumbJsonLd, ProductJsonLd } from "@/components/seo/JsonLd";
 import { SITE_URL } from "@/lib/constants";
+import { getAllArticles } from "@/lib/articles";
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -57,6 +58,22 @@ export default async function CompanyDetailPage({ params }: Props) {
   const otherCompanies = allCompanies
     .filter((c) => c.slug !== slug)
     .slice(0, 3);
+
+  // 関連記事を取得（業種や特徴に関連する記事を最大3件）
+  const allArticles = getAllArticles();
+  const companyKeywords = [
+    ...(company.targetIndustries || []),
+    company.factoringType,
+    ...(company.features || []),
+  ].map((k) => k?.toLowerCase() || "");
+  const relatedArticles = allArticles
+    .filter((a) => {
+      const text = `${a.title} ${a.description} ${(a.tags || []).join(" ")}`.toLowerCase();
+      return companyKeywords.some((kw) => kw && text.includes(kw));
+    })
+    .slice(0, 3);
+  // フォールバック：関連記事が見つからない場合は最新記事を表示
+  const displayArticles = relatedArticles.length > 0 ? relatedArticles : allArticles.slice(0, 3);
 
   return (
     <div className="max-w-4xl mx-auto px-4 py-8">
@@ -259,6 +276,21 @@ export default async function CompanyDetailPage({ params }: Props) {
           {displayName(company)}に無料相談する →
         </a>
       </div>
+
+      {/* 関連記事 */}
+      <section className="mb-8">
+        <h2 className="text-lg font-bold mb-4">関連する記事</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+          {displayArticles.map((article) => (
+            <Card key={article.slug} hover className="p-4">
+              <Link href={`/column/${article.slug}`}>
+                <p className="font-bold text-sm line-clamp-2">{article.title}</p>
+                <p className="text-xs text-gray-500 mt-2 line-clamp-2">{article.description}</p>
+              </Link>
+            </Card>
+          ))}
+        </div>
+      </section>
 
       {otherCompanies.length > 0 && (
         <section>
