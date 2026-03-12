@@ -170,5 +170,8 @@
         "ベストファクターは注文書買取のBESTPAYも提供"
       ]
     }
-  ]
+  ],
+  "operatingHours": "10:00〜19:00",
+  "cumulativeClients": 20000,
+  "maxBuyRate": 100
 }

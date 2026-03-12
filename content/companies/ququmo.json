@@ -169,5 +169,8 @@
         "QuQuMoは審査通過率98%を公表、OLTAは非公表"
       ]
     }
-  ]
+  ],
+  "operatingHours": "9:00〜19:00",
+  "maxBuyRate": 95,
+  "onlineContract": "電子署名ツール"
 }
