@@ -202,78 +202,54 @@ export function Footer() {
             {/* エリア別（47都道府県） */}
             <div className="lg:col-span-2">
               <h3 className="text-white font-bold text-sm mb-4">エリア別</h3>
-              <div className="grid grid-cols-2 sm:grid-cols-3 gap-x-4 gap-y-1 text-sm">
-                <div>
-                  <p className="text-gray-500 text-xs font-bold mt-1 mb-1">北海道・東北</p>
-                  <ul className="space-y-1">
-                    <li><Link href="/ranking/category/hokkaido" className="hover:text-white transition-colors">北海道</Link></li>
-                    <li><Link href="/ranking/category/aomori" className="hover:text-white transition-colors">青森</Link></li>
-                    <li><Link href="/ranking/category/iwate" className="hover:text-white transition-colors">岩手</Link></li>
-                    <li><Link href="/ranking/category/miyagi" className="hover:text-white transition-colors">宮城</Link></li>
-                    <li><Link href="/ranking/category/akita" className="hover:text-white transition-colors">秋田</Link></li>
-                    <li><Link href="/ranking/category/yamagata" className="hover:text-white transition-colors">山形</Link></li>
-                    <li><Link href="/ranking/category/fukushima" className="hover:text-white transition-colors">福島</Link></li>
-                  </ul>
-                  <p className="text-gray-500 text-xs font-bold mt-3 mb-1">関東</p>
-                  <ul className="space-y-1">
-                    <li><Link href="/ranking/category/tokyo" className="hover:text-white transition-colors">東京</Link></li>
-                    <li><Link href="/ranking/category/kanagawa" className="hover:text-white transition-colors">神奈川</Link></li>
-                    <li><Link href="/ranking/category/saitama" className="hover:text-white transition-colors">埼玉</Link></li>
-                    <li><Link href="/ranking/category/chiba" className="hover:text-white transition-colors">千葉</Link></li>
-                    <li><Link href="/ranking/category/ibaraki" className="hover:text-white transition-colors">茨城</Link></li>
-                    <li><Link href="/ranking/category/tochigi" className="hover:text-white transition-colors">栃木</Link></li>
-                    <li><Link href="/ranking/category/gunma" className="hover:text-white transition-colors">群馬</Link></li>
-                  </ul>
-                </div>
-                <div>
-                  <p className="text-gray-500 text-xs font-bold mt-1 mb-1">中部</p>
-                  <ul className="space-y-1">
-                    <li><Link href="/ranking/category/aichi" className="hover:text-white transition-colors">愛知</Link></li>
-                    <li><Link href="/ranking/category/niigata" className="hover:text-white transition-colors">新潟</Link></li>
-                    <li><Link href="/ranking/category/toyama" className="hover:text-white transition-colors">富山</Link></li>
-                    <li><Link href="/ranking/category/ishikawa" className="hover:text-white transition-colors">石川</Link></li>
-                    <li><Link href="/ranking/category/fukui" className="hover:text-white transition-colors">福井</Link></li>
-                    <li><Link href="/ranking/category/yamanashi" className="hover:text-white transition-colors">山梨</Link></li>
-                    <li><Link href="/ranking/category/nagano" className="hover:text-white transition-colors">長野</Link></li>
-                    <li><Link href="/ranking/category/gifu" className="hover:text-white transition-colors">岐阜</Link></li>
-                    <li><Link href="/ranking/category/shizuoka" className="hover:text-white transition-colors">静岡</Link></li>
-                    <li><Link href="/ranking/category/mie" className="hover:text-white transition-colors">三重</Link></li>
-                  </ul>
-                  <p className="text-gray-500 text-xs font-bold mt-3 mb-1">関西</p>
-                  <ul className="space-y-1">
-                    <li><Link href="/ranking/category/osaka" className="hover:text-white transition-colors">大阪</Link></li>
-                    <li><Link href="/ranking/category/kyoto" className="hover:text-white transition-colors">京都</Link></li>
-                    <li><Link href="/ranking/category/hyogo" className="hover:text-white transition-colors">兵庫</Link></li>
-                    <li><Link href="/ranking/category/shiga" className="hover:text-white transition-colors">滋賀</Link></li>
-                    <li><Link href="/ranking/category/nara" className="hover:text-white transition-colors">奈良</Link></li>
-                    <li><Link href="/ranking/category/wakayama" className="hover:text-white transition-colors">和歌山</Link></li>
-                  </ul>
-                </div>
-                <div>
-                  <p className="text-gray-500 text-xs font-bold mt-1 mb-1">中国・四国</p>
-                  <ul className="space-y-1">
-                    <li><Link href="/ranking/category/hiroshima" className="hover:text-white transition-colors">広島</Link></li>
-                    <li><Link href="/ranking/category/okayama" className="hover:text-white transition-colors">岡山</Link></li>
-                    <li><Link href="/ranking/category/tottori" className="hover:text-white transition-colors">鳥取</Link></li>
-                    <li><Link href="/ranking/category/shimane" className="hover:text-white transition-colors">島根</Link></li>
-                    <li><Link href="/ranking/category/yamaguchi" className="hover:text-white transition-colors">山口</Link></li>
-                    <li><Link href="/ranking/category/tokushima" className="hover:text-white transition-colors">徳島</Link></li>
-                    <li><Link href="/ranking/category/kagawa" className="hover:text-white transition-colors">香川</Link></li>
-                    <li><Link href="/ranking/category/ehime" className="hover:text-white transition-colors">愛媛</Link></li>
-                    <li><Link href="/ranking/category/kochi" className="hover:text-white transition-colors">高知</Link></li>
-                  </ul>
-                  <p className="text-gray-500 text-xs font-bold mt-3 mb-1">九州・沖縄</p>
-                  <ul className="space-y-1">
-                    <li><Link href="/ranking/category/fukuoka" className="hover:text-white transition-colors">福岡</Link></li>
-                    <li><Link href="/ranking/category/saga" className="hover:text-white transition-colors">佐賀</Link></li>
-                    <li><Link href="/ranking/category/nagasaki" className="hover:text-white transition-colors">長崎</Link></li>
-                    <li><Link href="/ranking/category/kumamoto" className="hover:text-white transition-colors">熊本</Link></li>
-                    <li><Link href="/ranking/category/oita" className="hover:text-white transition-colors">大分</Link></li>
-                    <li><Link href="/ranking/category/miyazaki" className="hover:text-white transition-colors">宮崎</Link></li>
-                    <li><Link href="/ranking/category/kagoshima" className="hover:text-white transition-colors">鹿児島</Link></li>
-                    <li><Link href="/ranking/category/okinawa" className="hover:text-white transition-colors">沖縄</Link></li>
-                  </ul>
-                </div>
+              <div className="flex flex-wrap gap-x-3 gap-y-1.5 text-sm">
+                <Link href="/ranking/category/hokkaido" className="hover:text-white transition-colors">北海道</Link>
+                <Link href="/ranking/category/aomori" className="hover:text-white transition-colors">青森</Link>
+                <Link href="/ranking/category/iwate" className="hover:text-white transition-colors">岩手</Link>
+                <Link href="/ranking/category/miyagi" className="hover:text-white transition-colors">宮城</Link>
+                <Link href="/ranking/category/akita" className="hover:text-white transition-colors">秋田</Link>
+                <Link href="/ranking/category/yamagata" className="hover:text-white transition-colors">山形</Link>
+                <Link href="/ranking/category/fukushima" className="hover:text-white transition-colors">福島</Link>
+                <Link href="/ranking/category/ibaraki" className="hover:text-white transition-colors">茨城</Link>
+                <Link href="/ranking/category/tochigi" className="hover:text-white transition-colors">栃木</Link>
+                <Link href="/ranking/category/gunma" className="hover:text-white transition-colors">群馬</Link>
+                <Link href="/ranking/category/saitama" className="hover:text-white transition-colors">埼玉</Link>
+                <Link href="/ranking/category/chiba" className="hover:text-white transition-colors">千葉</Link>
+                <Link href="/ranking/category/tokyo" className="hover:text-white transition-colors">東京</Link>
+                <Link href="/ranking/category/kanagawa" className="hover:text-white transition-colors">神奈川</Link>
+                <Link href="/ranking/category/niigata" className="hover:text-white transition-colors">新潟</Link>
+                <Link href="/ranking/category/toyama" className="hover:text-white transition-colors">富山</Link>
+                <Link href="/ranking/category/ishikawa" className="hover:text-white transition-colors">石川</Link>
+                <Link href="/ranking/category/fukui" className="hover:text-white transition-colors">福井</Link>
+                <Link href="/ranking/category/yamanashi" className="hover:text-white transition-colors">山梨</Link>
+                <Link href="/ranking/category/nagano" className="hover:text-white transition-colors">長野</Link>
+                <Link href="/ranking/category/gifu" className="hover:text-white transition-colors">岐阜</Link>
+                <Link href="/ranking/category/shizuoka" className="hover:text-white transition-colors">静岡</Link>
+                <Link href="/ranking/category/aichi" className="hover:text-white transition-colors">愛知</Link>
+                <Link href="/ranking/category/mie" className="hover:text-white transition-colors">三重</Link>
+                <Link href="/ranking/category/shiga" className="hover:text-white transition-colors">滋賀</Link>
+                <Link href="/ranking/category/kyoto" className="hover:text-white transition-colors">京都</Link>
+                <Link href="/ranking/category/osaka" className="hover:text-white transition-colors">大阪</Link>
+                <Link href="/ranking/category/hyogo" className="hover:text-white transition-colors">兵庫</Link>
+                <Link href="/ranking/category/nara" className="hover:text-white transition-colors">奈良</Link>
+                <Link href="/ranking/category/wakayama" className="hover:text-white transition-colors">和歌山</Link>
+                <Link href="/ranking/category/tottori" className="hover:text-white transition-colors">鳥取</Link>
+                <Link href="/ranking/category/shimane" className="hover:text-white transition-colors">島根</Link>
+                <Link href="/ranking/category/okayama" className="hover:text-white transition-colors">岡山</Link>
+                <Link href="/ranking/category/hiroshima" className="hover:text-white transition-colors">広島</Link>
+                <Link href="/ranking/category/yamaguchi" className="hover:text-white transition-colors">山口</Link>
+                <Link href="/ranking/category/tokushima" className="hover:text-white transition-colors">徳島</Link>
+                <Link href="/ranking/category/kagawa" className="hover:text-white transition-colors">香川</Link>
+                <Link href="/ranking/category/ehime" className="hover:text-white transition-colors">愛媛</Link>
+                <Link href="/ranking/category/kochi" className="hover:text-white transition-colors">高知</Link>
+                <Link href="/ranking/category/fukuoka" className="hover:text-white transition-colors">福岡</Link>
+                <Link href="/ranking/category/saga" className="hover:text-white transition-colors">佐賀</Link>
+                <Link href="/ranking/category/nagasaki" className="hover:text-white transition-colors">長崎</Link>
+                <Link href="/ranking/category/kumamoto" className="hover:text-white transition-colors">熊本</Link>
+                <Link href="/ranking/category/oita" className="hover:text-white transition-colors">大分</Link>
+                <Link href="/ranking/category/miyazaki" className="hover:text-white transition-colors">宮崎</Link>
+                <Link href="/ranking/category/kagoshima" className="hover:text-white transition-colors">鹿児島</Link>
+                <Link href="/ranking/category/okinawa" className="hover:text-white transition-colors">沖縄</Link>
               </div>
             </div>
           </div>
