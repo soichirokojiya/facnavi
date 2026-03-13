@@ -39,7 +39,7 @@
     "サービス業"
   ],
   "overallRating": 3,
-  "rankPosition": 219,
+  "rankPosition": 94,
   "requiredDocuments": [
     "請求書",
     "通帳コピー",
@@ -91,24 +91,7 @@
       "handMax": 9800000
     }
   ],
-  "comparisons": [
-    {
-      "competitor": "エビスホールディングス",
-      "competitorSlug": "ebis-holdings",
-      "points": [
-        "ファクトバンクの手数料は2〜15%で、エビスホールディングス（3〜15%）より低め",
-        "両社とも即日入金に対応"
-      ]
-    },
-    {
-      "competitor": "HealtheeOne",
-      "competitorSlug": "healthee-one",
-      "points": [
-        "HealtheeOneの手数料1〜5%に対し、ファクトバンクは2〜15%",
-        "ファクトバンクは即日入金対応、HealtheeOneは最短3日対応"
-      ]
-    }
-  ],
+  "comparisons": [],
   "detailSections": {
     "merits": [
       {

@@ -39,7 +39,7 @@
     "サービス業"
   ],
   "overallRating": 3,
-  "rankPosition": 234,
+  "rankPosition": 98,
   "requiredDocuments": [
     "請求書",
     "売掛金明細",
@@ -93,14 +93,6 @@
       "points": [
         "NTT・TCリースの手数料は0.5〜5%で、SFIリーシング（1〜8%）より低め",
         "NTT・TCリースは最短5日対応、SFIリーシングは最短3日対応"
-      ]
-    },
-    {
-      "competitor": "エムズクエスト",
-      "competitorSlug": "ms-quest",
-      "points": [
-        "NTT・TCリースの手数料は0.5〜5%で、エムズクエスト（3〜15%）より低め",
-        "NTT・TCリースは最短5日対応、エムズクエストは即日入金対応"
       ]
     }
   ],

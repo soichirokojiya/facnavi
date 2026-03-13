@@ -39,7 +39,7 @@
     "サービス業"
   ],
   "overallRating": 3.5,
-  "rankPosition": 174,
+  "rankPosition": 73,
   "requiredDocuments": [
     "請求書",
     "通帳コピー",
@@ -92,14 +92,6 @@
     }
   ],
   "comparisons": [
-    {
-      "competitor": "財務会計支援機構",
-      "competitorSlug": "zaimukaikei-shien",
-      "points": [
-        "両社とも手数料は3〜15%で同水準",
-        "両社とも即日入金に対応"
-      ]
-    },
     {
       "competitor": "CXコミット",
       "competitorSlug": "cx-commit",

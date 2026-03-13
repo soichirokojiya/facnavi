@@ -1,0 +1,13 @@
+const fs = require("fs");
+const dir = "content/companies";
+const companies = fs.readdirSync(dir).filter(f => f.endsWith(".json")).map(f => JSON.parse(fs.readFileSync(dir + "/" + f, "utf-8")));
+const noDetail = companies.filter(c => !c.detailSections || !c.detailSections.merits);
+const noFaq = companies.filter(c => !c.faq || c.faq.length === 0);
+const noSim = companies.filter(c => !c.feeSimulation || c.feeSimulation.length === 0);
+const noComp = companies.filter(c => !c.comparisons || c.comparisons.length === 0);
+console.log("Total:", companies.length);
+console.log("detailSectionsなし:", noDetail.length);
+console.log("FAQなし:", noFaq.length);
+console.log("シミュレーションなし:", noSim.length);
+console.log("比較なし:", noComp.length);
+if (noDetail.length > 0) console.log("未対応:", noDetail.map(c => c.slug).join(", "));

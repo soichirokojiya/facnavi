@@ -39,7 +39,7 @@
     "サービス業"
   ],
   "overallRating": 3.7,
-  "rankPosition": 194,
+  "rankPosition": 86,
   "requiredDocuments": [
     "請求書",
     "通帳コピー",
@@ -92,25 +92,7 @@
       "handMax": 9700000
     }
   ],
-  "comparisons": [
-    {
-      "competitor": "STS",
-      "competitorSlug": "sts-factoring",
-      "points": [
-        "両社とも手数料は3〜15%で同水準",
-        "両社とも即日入金に対応"
-      ]
-    },
-    {
-      "competitor": "トラストフォート",
-      "competitorSlug": "trusfort",
-      "points": [
-        "財全グループの手数料は3〜15%で、トラストフォート（3〜18%）より低め",
-        "両社とも即日入金に対応",
-        "財全グループの買取上限は5,000万円、トラストフォートは3,000万円"
-      ]
-    }
-  ],
+  "comparisons": [],
   "detailSections": {
     "merits": [
       {

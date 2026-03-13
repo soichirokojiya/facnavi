@@ -1,0 +1,1223 @@
+[
+  {
+    "rank": 8,
+    "slug": "chatwork-sakibarai",
+    "name": "Chatwork先払い",
+    "url": "https://go.chatwork.com/ja/early-payment/",
+    "status": 404
+  },
+  {
+    "rank": 14,
+    "slug": "saison-invoice",
+    "name": "SAISON INVOICE",
+    "url": "https://www.saisoninvoice.com/",
+    "status": 0,
+    "error": "ENOTFOUND"
+  },
+  {
+    "rank": 15,
+    "slug": "smbc-fs",
+    "name": "SMBCファイナンスサービス",
+    "url": "https://www.smbc-fs.co.jp/",
+    "status": 403
+  },
+  {
+    "rank": 18,
+    "slug": "factor-com",
+    "name": "ファクター.com",
+    "url": "https://factor-com.jp/",
+    "status": 0,
+    "error": "ENOTFOUND"
+  },
+  {
+    "rank": 22,
+    "slug": "showa-lease",
+    "name": "昭和リース",
+    "url": "https://www.s-lease.com/",
+    "status": 0,
+    "error": "ENOTFOUND"
+  },
+  {
+    "rank": 24,
+    "slug": "anew",
+    "name": "anew",
+    "url": "https://anew-factoring.jp/",
+    "status": 0,
+    "error": "ENOTFOUND"
+  },
+  {
+    "rank": 31,
+    "slug": "mufg-factor",
+    "name": "三菱UFJファクター",
+    "url": "https://www.mufg-factor.jp/",
+    "status": 0,
+    "error": "ENOTFOUND"
+  },
+  {
+    "rank": 40,
+    "slug": "actbiz",
+    "name": "アクトビズ",
+    "url": "https://actbiz.co.jp/",
+    "status": 0,
+    "error": "ENOTFOUND"
+  },
+  {
+    "rank": 41,
+    "slug": "ag-business",
+    "name": "AGビジネスサポート",
+    "url": "https://www.ag-b.jp/",
+    "status": 0,
+    "error": "ENOTFOUND"
+  },
+  {
+    "rank": 43,
+    "slug": "avantia",
+    "name": "アバンティア",
+    "url": "https://avantia.co.jp/",
+    "status": 0,
+    "error": "ERR_TLS_CERT_ALTNAME_INVALID"
+  },
+  {
+    "rank": 44,
+    "slug": "buy-factor",
+    "name": "BuyFactor",
+    "url": "https://buyfactor.jp/",
+    "status": 0,
+    "error": "ENOTFOUND"
+  },
+  {
+    "rank": 45,
+    "slug": "danbury",
+    "name": "ダンバリコンサルティング",
+    "url": "https://danbury.co.jp/",
+    "status": 0,
+    "error": "ENOTFOUND"
+  },
+  {
+    "rank": 46,
+    "slug": "dm-company",
+    "name": "D&Mカンパニー",
+    "url": "https://dm-company.co.jp/",
+    "status": 0,
+    "error": "ENOTFOUND"
+  },
+  {
+    "rank": 47,
+    "slug": "dmc-factoring",
+    "name": "DMC",
+    "url": "https://dmc-factoring.jp/",
+    "status": 0,
+    "error": "ENOTFOUND"
+  },
+  {
+    "rank": 48,
+    "slug": "dokenkun",
+    "name": "土建くん",
+    "url": "https://dokenkun.jp/",
+    "status": 0,
+    "error": "ENOTFOUND"
+  },
+  {
+    "rank": 49,
+    "slug": "easy-factor",
+    "name": "Easy factor",
+    "url": "https://easy-factor.jp/",
+    "status": 0,
+    "error": "ENOTFOUND"
+  },
+  {
+    "rank": 51,
+    "slug": "factoring-tokyo",
+    "name": "ファクタリング東京",
+    "url": "https://factoring-tokyo.jp/",
+    "status": 0,
+    "error": "ENOTFOUND"
+  },
+  {
+    "rank": 56,
+    "slug": "gmmi",
+    "name": "喜望大地",
+    "url": "https://gmmi.co.jp/",
+    "status": 0,
+    "error": "ENOTFOUND"
+  },
+  {
+    "rank": 58,
+    "slug": "jigyou-agent",
+    "name": "事業資金エージェント",
+    "url": "https://shikin-agent.com/",
+    "status": 0,
+    "error": "This operation was aborted"
+  },
+  {
+    "rank": 60,
+    "slug": "life-factoring",
+    "name": "ライフ",
+    "url": "https://life-factoring.jp/",
+    "status": 0,
+    "error": "ENOTFOUND"
+  },
+  {
+    "rank": 61,
+    "slug": "line-profect",
+    "name": "ラインプロフェクト",
+    "url": "https://line-profect.co.jp/",
+    "status": 0,
+    "error": "ENOTFOUND"
+  },
+  {
+    "rank": 62,
+    "slug": "lucia",
+    "name": "LUCIA",
+    "url": "https://lucia-factoring.jp/",
+    "status": 0,
+    "error": "ENOTFOUND"
+  },
+  {
+    "rank": 63,
+    "slug": "luxel-partner",
+    "name": "ラクセルパートナー",
+    "url": "https://luxel-partner.co.jp/",
+    "status": 0,
+    "error": "ENOTFOUND"
+  },
+  {
+    "rank": 64,
+    "slug": "mainavy-factoring",
+    "name": "マイナビブリッジ",
+    "url": "https://mainavy.jp/",
+    "status": 0,
+    "error": "ENOTFOUND"
+  },
+  {
+    "rank": 66,
+    "slug": "next-funding",
+    "name": "NEXTFUNDING",
+    "url": "https://next-funding.jp/",
+    "status": 0,
+    "error": "ENOTFOUND"
+  },
+  {
+    "rank": 67,
+    "slug": "norikae-plus",
+    "name": "のりかえPLUS",
+    "url": "https://norikae-plus.jp/",
+    "status": 0,
+    "error": "ENOTFOUND"
+  },
+  {
+    "rank": 69,
+    "slug": "plus-line",
+    "name": "プラスライン",
+    "url": "https://plus-line.co.jp/",
+    "status": 0,
+    "error": "ENOTFOUND"
+  },
+  {
+    "rank": 70,
+    "slug": "progress-factoring",
+    "name": "Progress",
+    "url": "https://progress-factoring.jp/",
+    "status": 0,
+    "error": "ENOTFOUND"
+  },
+  {
+    "rank": 71,
+    "slug": "protect-one",
+    "name": "プロテクト・ワン",
+    "url": "https://protect-one.co.jp/",
+    "status": 0,
+    "error": "ENOTFOUND"
+  },
+  {
+    "rank": 72,
+    "slug": "s-radikal",
+    "name": "S-radikal",
+    "url": "https://s-radikal.co.jp/",
+    "status": 0,
+    "error": "ENOTFOUND"
+  },
+  {
+    "rank": 73,
+    "slug": "sanko-factoring",
+    "name": "三鉱",
+    "url": "https://sanko-factoring.jp/",
+    "status": 0,
+    "error": "ENOTFOUND"
+  },
+  {
+    "rank": 75,
+    "slug": "seikyusho-pay",
+    "name": "請求書買取Pay",
+    "url": "https://seikyusho-pay.jp/",
+    "status": 0,
+    "error": "ENOTFOUND"
+  },
+  {
+    "rank": 76,
+    "slug": "sokuji-online",
+    "name": "即日オンラインファクタリング",
+    "url": "https://sokuji-online.jp/",
+    "status": 0,
+    "error": "ENOTFOUND"
+  },
+  {
+    "rank": 77,
+    "slug": "sokumu",
+    "name": "SoKuMo（ソクモ）",
+    "url": "https://sokumu.jp/",
+    "status": 0,
+    "error": "ENOTFOUND"
+  },
+  {
+    "rank": 79,
+    "slug": "supporter-bank",
+    "name": "サポートバンク",
+    "url": "https://supporter-bank.jp/",
+    "status": 0,
+    "error": "ENOTFOUND"
+  },
+  {
+    "rank": 80,
+    "slug": "terasu",
+    "name": "Terasu",
+    "url": "https://terasu-factoring.jp/",
+    "status": 0,
+    "error": "ENOTFOUND"
+  },
+  {
+    "rank": 81,
+    "slug": "tokyo-spc",
+    "name": "東京SPCマネジメント",
+    "url": "https://tokyo-spc.com/",
+    "status": 0,
+    "error": "ENOTFOUND"
+  },
+  {
+    "rank": 83,
+    "slug": "wadatumi",
+    "name": "ワダツミ",
+    "url": "https://wadatumi.co.jp/",
+    "status": 0,
+    "error": "ENOTFOUND"
+  },
+  {
+    "rank": 84,
+    "slug": "west-factoring",
+    "name": "WEST",
+    "url": "https://west-factoring.jp/",
+    "status": 0,
+    "error": "ENOTFOUND"
+  },
+  {
+    "rank": 89,
+    "slug": "animo",
+    "name": "ANIMO",
+    "url": "https://animo-factoring.jp/",
+    "status": 0,
+    "error": "ENOTFOUND"
+  },
+  {
+    "rank": 90,
+    "slug": "archier",
+    "name": "アルシエ",
+    "url": "https://archier.co.jp/",
+    "status": 0,
+    "error": "ENOTFOUND"
+  },
+  {
+    "rank": 91,
+    "slug": "aslead",
+    "name": "アスリード",
+    "url": "https://aslead.co.jp/",
+    "status": 0,
+    "error": "ERR_TLS_CERT_ALTNAME_INVALID"
+  },
+  {
+    "rank": 94,
+    "slug": "belle-system",
+    "name": "ベルシステム",
+    "url": "https://belle-system.co.jp/",
+    "status": 0,
+    "error": "ENOTFOUND"
+  },
+  {
+    "rank": 96,
+    "slug": "biz-partner",
+    "name": "BIZパートナー",
+    "url": "https://biz-partner.jp/",
+    "status": 0,
+    "error": "This operation was aborted"
+  },
+  {
+    "rank": 98,
+    "slug": "business-fund",
+    "name": "ビジネスファンド",
+    "url": "https://business-fund.co.jp/",
+    "status": 0,
+    "error": "ENOTFOUND"
+  },
+  {
+    "rank": 100,
+    "slug": "cool-services",
+    "name": "COOL SERVICES",
+    "url": "https://cool-services.co.jp/",
+    "status": 0,
+    "error": "ENOTFOUND"
+  },
+  {
+    "rank": 101,
+    "slug": "crayfish",
+    "name": "クレイリッシュ",
+    "url": "https://crayfish.co.jp/",
+    "status": 0,
+    "error": "This operation was aborted"
+  },
+  {
+    "rank": 102,
+    "slug": "cs-planning",
+    "name": "シーエスプランニング",
+    "url": "https://cs-planning.co.jp/",
+    "status": 0,
+    "error": "ENOTFOUND"
+  },
+  {
+    "rank": 103,
+    "slug": "cuc-factoring",
+    "name": "CUC",
+    "url": "https://cuc-factoring.jp/",
+    "status": 0,
+    "error": "ENOTFOUND"
+  },
+  {
+    "rank": 104,
+    "slug": "denfac",
+    "name": "電ふぁく",
+    "url": "https://denfac.jp/",
+    "status": 0,
+    "error": "ENOTFOUND"
+  },
+  {
+    "rank": 105,
+    "slug": "efc-express",
+    "name": "資金調達特急便EFC",
+    "url": "https://efc-express.jp/",
+    "status": 0,
+    "error": "ENOTFOUND"
+  },
+  {
+    "rank": 106,
+    "slug": "enable-factoring",
+    "name": "エネイブル",
+    "url": "https://enable-factoring.jp/",
+    "status": 0,
+    "error": "ENOTFOUND"
+  },
+  {
+    "rank": 107,
+    "slug": "f-style",
+    "name": "F-style",
+    "url": "https://f-style-factoring.jp/",
+    "status": 0,
+    "error": "ENOTFOUND"
+  },
+  {
+    "rank": 108,
+    "slug": "facnet",
+    "name": "ファクネット",
+    "url": "https://facnet.co.jp/",
+    "status": 0,
+    "error": "ENOTFOUND"
+  },
+  {
+    "rank": 109,
+    "slug": "factor-associates",
+    "name": "ファクターアソシエイツ",
+    "url": "https://factor-associates.co.jp/",
+    "status": 0,
+    "error": "ENOTFOUND"
+  },
+  {
+    "rank": 110,
+    "slug": "factoring-gold",
+    "name": "ファクタリングゴールド",
+    "url": "https://factoring-gold.com/",
+    "status": 0,
+    "error": "ENOTFOUND"
+  },
+  {
+    "rank": 111,
+    "slug": "factoring-north",
+    "name": "ファクタリングノース",
+    "url": "https://factoring-north.jp/",
+    "status": 0,
+    "error": "ENOTFOUND"
+  },
+  {
+    "rank": 113,
+    "slug": "factors",
+    "name": "ファクターズ",
+    "url": "https://factors.co.jp/",
+    "status": 0,
+    "error": "ENOTFOUND"
+  },
+  {
+    "rank": 114,
+    "slug": "faith-factoring",
+    "name": "faith",
+    "url": "https://faith-factoring.jp/",
+    "status": 0,
+    "error": "ENOTFOUND"
+  },
+  {
+    "rank": 115,
+    "slug": "fakutarikun",
+    "name": "ふぁくたりくん",
+    "url": "https://fakutarikun.jp/",
+    "status": 0,
+    "error": "ENOTFOUND"
+  },
+  {
+    "rank": 116,
+    "slug": "finding-labo",
+    "name": "ファインディングラボ",
+    "url": "https://finding-labo.jp/",
+    "status": 0,
+    "error": "ENOTFOUND"
+  },
+  {
+    "rank": 117,
+    "slug": "finfin",
+    "name": "FinFin",
+    "url": "https://finfin-factoring.jp/",
+    "status": 0,
+    "error": "ENOTFOUND"
+  },
+  {
+    "rank": 119,
+    "slug": "fps-medical",
+    "name": "FPSメディカル",
+    "url": "https://fps-medical.co.jp/",
+    "status": 0,
+    "error": "ENOTFOUND"
+  },
+  {
+    "rank": 120,
+    "slug": "hamagin-finance",
+    "name": "浜銀ファイナンス",
+    "url": "https://www.hamagin-finance.co.jp/",
+    "status": 0,
+    "error": "ENOTFOUND"
+  },
+  {
+    "rank": 121,
+    "slug": "heartful-life",
+    "name": "ハートフルライフ",
+    "url": "https://heartful-life.co.jp/",
+    "status": 0,
+    "error": "ENOTFOUND"
+  },
+  {
+    "rank": 123,
+    "slug": "jfs",
+    "name": "ジャパン・ファイナンシャル・ソリューションズ",
+    "url": "https://www.j-fs.co.jp/",
+    "status": 0,
+    "error": "ENOTFOUND"
+  },
+  {
+    "rank": 125,
+    "slug": "kensetsu-pay",
+    "name": "建設Pay",
+    "url": "https://kensetsu-pay.jp/",
+    "status": 0,
+    "error": "ENOTFOUND"
+  },
+  {
+    "rank": 127,
+    "slug": "kkt",
+    "name": "KKT",
+    "url": "https://kkt-factoring.jp/",
+    "status": 0,
+    "error": "ENOTFOUND"
+  },
+  {
+    "rank": 128,
+    "slug": "lagless",
+    "name": "ラグレス",
+    "url": "https://lagless.co.jp/",
+    "status": 0,
+    "error": "ENOTFOUND"
+  },
+  {
+    "rank": 129,
+    "slug": "link-japan",
+    "name": "リンクジャパン",
+    "url": "https://link-japan.co.jp/",
+    "status": 0,
+    "error": "DEPTH_ZERO_SELF_SIGNED_CERT"
+  },
+  {
+    "rank": 130,
+    "slug": "mb-pay",
+    "name": "MBpay",
+    "url": "https://mb-pay.jp/",
+    "status": 0,
+    "error": "ENOTFOUND"
+  },
+  {
+    "rank": 131,
+    "slug": "minaoshi-honpo",
+    "name": "ファクタリング見直し本舗",
+    "url": "https://minaoshi-honpo.jp/",
+    "status": 0,
+    "error": "ENOTFOUND"
+  },
+  {
+    "rank": 132,
+    "slug": "mita-securities",
+    "name": "三田証券",
+    "url": "https://www.mita-sec.co.jp/",
+    "status": 0,
+    "error": "ENOTFOUND"
+  },
+  {
+    "rank": 134,
+    "slug": "nihon-planner",
+    "name": "日本プランナー",
+    "url": "https://nihon-planner.co.jp/",
+    "status": 0,
+    "error": "ENOTFOUND"
+  },
+  {
+    "rank": 135,
+    "slug": "nikkei-financial",
+    "name": "日経フィナンシャルトライ東京",
+    "url": "https://nikkei-financial.co.jp/",
+    "status": 0,
+    "error": "ENOTFOUND"
+  },
+  {
+    "rank": 136,
+    "slug": "ns-partners",
+    "name": "エヌエスパートナーズ",
+    "url": "https://ns-partners.co.jp/",
+    "status": 0,
+    "error": "ENOTFOUND"
+  },
+  {
+    "rank": 137,
+    "slug": "oj-factoring",
+    "name": "オージェイ",
+    "url": "https://oj-factoring.jp/",
+    "status": 0,
+    "error": "ENOTFOUND"
+  },
+  {
+    "rank": 138,
+    "slug": "owl-keizai",
+    "name": "アウル経済",
+    "url": "https://owl-keizai.co.jp/",
+    "status": 0,
+    "error": "ENOTFOUND"
+  },
+  {
+    "rank": 141,
+    "slug": "regu-pay",
+    "name": "レグペイ",
+    "url": "https://regu-pay.jp/",
+    "status": 0,
+    "error": "ENOTFOUND"
+  },
+  {
+    "rank": 142,
+    "slug": "replan",
+    "name": "リプラン",
+    "url": "https://replan-factoring.jp/",
+    "status": 0,
+    "error": "ENOTFOUND"
+  },
+  {
+    "rank": 145,
+    "slug": "rise-factoring",
+    "name": "Rise",
+    "url": "https://risefactoring.jp/",
+    "status": 0,
+    "error": "ENOTFOUND"
+  },
+  {
+    "rank": 146,
+    "slug": "rising-investment",
+    "name": "ライジングインベストメント",
+    "url": "https://rising-investment.jp/",
+    "status": 0,
+    "error": "ENOTFOUND"
+  },
+  {
+    "rank": 147,
+    "slug": "saison-medical",
+    "name": "セゾン診療報酬ファクタリング",
+    "url": "https://www.saisoncard.co.jp/business/factoring/",
+    "status": 404
+  },
+  {
+    "rank": 148,
+    "slug": "sanctuary",
+    "name": "サンクチュアリ",
+    "url": "https://sanctuary-factoring.jp/",
+    "status": 0,
+    "error": "ENOTFOUND"
+  },
+  {
+    "rank": 149,
+    "slug": "sc-medical",
+    "name": "SCメディカル",
+    "url": "https://sc-medical.co.jp/",
+    "status": 0,
+    "error": "ENOTFOUND"
+  },
+  {
+    "rank": 151,
+    "slug": "shikin-honpo",
+    "name": "資金調達本舗",
+    "url": "https://shikin-honpo.jp/",
+    "status": 0,
+    "error": "ENOTFOUND"
+  },
+  {
+    "rank": 152,
+    "slug": "shikinchotatsu-direct",
+    "name": "資金調達ダイレクト",
+    "url": "https://shikinchotatsu-direct.jp/",
+    "status": 0,
+    "error": "ENOTFOUND"
+  },
+  {
+    "rank": 154,
+    "slug": "shoko-shoji",
+    "name": "晶光商事",
+    "url": "https://shoko-shoji.co.jp/",
+    "status": 0,
+    "error": "ENOTFOUND"
+  },
+  {
+    "rank": 155,
+    "slug": "shukran",
+    "name": "シュクラン",
+    "url": "https://shukran-factoring.jp/",
+    "status": 0,
+    "error": "ENOTFOUND"
+  },
+  {
+    "rank": 156,
+    "slug": "sig-solution",
+    "name": "SIGソリューション",
+    "url": "https://sig-solution.co.jp/",
+    "status": 0,
+    "error": "ENOTFOUND"
+  },
+  {
+    "rank": 158,
+    "slug": "sms-financial",
+    "name": "SMSフィナンシャル",
+    "url": "https://sms-financial.co.jp/",
+    "status": 0,
+    "error": "ENOTFOUND"
+  },
+  {
+    "rank": 159,
+    "slug": "sol-support",
+    "name": "SOL support",
+    "url": "https://sol-support.co.jp/",
+    "status": 0,
+    "error": "ENOTFOUND"
+  },
+  {
+    "rank": 160,
+    "slug": "ssk-factoring",
+    "name": "SSK",
+    "url": "https://ssk-holdings.co.jp/",
+    "status": 0,
+    "error": "ENOTFOUND"
+  },
+  {
+    "rank": 161,
+    "slug": "suga-finance",
+    "name": "すがファイナンス",
+    "url": "https://suga-finance.co.jp/",
+    "status": 0,
+    "error": "ENOTFOUND"
+  },
+  {
+    "rank": 162,
+    "slug": "t-and-s",
+    "name": "ティー・アンド・エス",
+    "url": "https://t-and-s.info/",
+    "status": 0,
+    "error": "ENOTFOUND"
+  },
+  {
+    "rank": 164,
+    "slug": "third-eye",
+    "name": "サードアイ",
+    "url": "https://third-eye.co.jp/",
+    "status": 0,
+    "error": "ENOTFOUND"
+  },
+  {
+    "rank": 165,
+    "slug": "tick",
+    "name": "ティック",
+    "url": "https://tick-factoring.jp/",
+    "status": 0,
+    "error": "ENOTFOUND"
+  },
+  {
+    "rank": 167,
+    "slug": "transaction-finance",
+    "name": "トランザクションファイナンス",
+    "url": "https://transaction-finance.jp/",
+    "status": 0,
+    "error": "ENOTFOUND"
+  },
+  {
+    "rank": 169,
+    "slug": "whatever",
+    "name": "ワットエバー",
+    "url": "https://wtte.jp/",
+    "status": 0,
+    "error": "ENOTFOUND"
+  },
+  {
+    "rank": 170,
+    "slug": "yamaki-shoji",
+    "name": "山輝商事",
+    "url": "https://yamaki-shoji.co.jp/",
+    "status": 0,
+    "error": "ENOTFOUND"
+  },
+  {
+    "rank": 171,
+    "slug": "zaimu-saisei",
+    "name": "財務再生支援センター",
+    "url": "https://zaimu-saisei.com/",
+    "status": 0,
+    "error": "ENOTFOUND"
+  },
+  {
+    "rank": 172,
+    "slug": "zaimukaikei-shien",
+    "name": "財務会計支援機構",
+    "url": "https://zaimukaikei-shien.or.jp/",
+    "status": 0,
+    "error": "ENOTFOUND"
+  },
+  {
+    "rank": 185,
+    "slug": "linx-japan",
+    "name": "Linx Japan",
+    "url": "https://linx-japan.co.jp/",
+    "status": 0,
+    "error": "ENOTFOUND"
+  },
+  {
+    "rank": 186,
+    "slug": "next-style",
+    "name": "ネクストスタイル",
+    "url": "https://next-style.net/",
+    "status": 0,
+    "error": "ERR_SSL_TLSV1_ALERT_INTERNAL_ERROR"
+  },
+  {
+    "rank": 187,
+    "slug": "nx-capital",
+    "name": "NXキャピタル",
+    "url": "https://www.nx-capital.co.jp/",
+    "status": 0,
+    "error": "ENOTFOUND"
+  },
+  {
+    "rank": 189,
+    "slug": "otti",
+    "name": "OTTI",
+    "url": "https://otti.jp/",
+    "status": 0,
+    "error": "ERR_TLS_CERT_ALTNAME_INVALID"
+  },
+  {
+    "rank": 190,
+    "slug": "prosper-consulting",
+    "name": "プロスパーコンサルティング",
+    "url": "https://prosper-consulting.jp/",
+    "status": 0,
+    "error": "ERR_SSL_TLSV1_ALERT_INTERNAL_ERROR"
+  },
+  {
+    "rank": 192,
+    "slug": "sts-factoring",
+    "name": "STS",
+    "url": "https://sts-factoring.jp/",
+    "status": 0,
+    "error": "ENOTFOUND"
+  },
+  {
+    "rank": 193,
+    "slug": "trusfort",
+    "name": "トラストフォート",
+    "url": "https://trusfort.jp/",
+    "status": 0,
+    "error": "ENOTFOUND"
+  },
+  {
+    "rank": 196,
+    "slug": "bion",
+    "name": "バイオン",
+    "url": "https://bfrec.co.jp/",
+    "status": 0,
+    "error": "ENOTFOUND"
+  },
+  {
+    "rank": 197,
+    "slug": "factoring-japan",
+    "name": "ファクタリングジャパン",
+    "url": "https://factoring-japan.jp/",
+    "status": 0,
+    "error": "ENOTFOUND"
+  },
+  {
+    "rank": 199,
+    "slug": "fukuoka-factoring",
+    "name": "ファクタリング福岡",
+    "url": "https://fukuoka-factoring.com/",
+    "status": 0,
+    "error": "ENOTFOUND"
+  },
+  {
+    "rank": 200,
+    "slug": "invoice-pay",
+    "name": "インボイスPay",
+    "url": "https://invoice-pay.jp/",
+    "status": 0,
+    "error": "CERT_HAS_EXPIRED"
+  },
+  {
+    "rank": 202,
+    "slug": "japanfactor",
+    "name": "ジャパンファクター",
+    "url": "https://japanfactor.jp/",
+    "status": 0,
+    "error": "ENOTFOUND"
+  },
+  {
+    "rank": 203,
+    "slug": "kensetsukun",
+    "name": "けんせつくん",
+    "url": "https://kensetsukun.com/",
+    "status": 0,
+    "error": "ENOTFOUND"
+  },
+  {
+    "rank": 204,
+    "slug": "minnano-factoring",
+    "name": "みんなのファクタリング",
+    "url": "https://minnano-factoring.com/",
+    "status": 0,
+    "error": "ENOTFOUND"
+  },
+  {
+    "rank": 206,
+    "slug": "onebank",
+    "name": "ワンバンク請求書買取",
+    "url": "https://www.onebank.co.jp/",
+    "status": 0,
+    "error": "ENOTFOUND"
+  },
+  {
+    "rank": 207,
+    "slug": "quick-management",
+    "name": "クイックマネジメント",
+    "url": "https://qm-factoring.com/",
+    "status": 0,
+    "error": "ENOTFOUND"
+  },
+  {
+    "rank": 208,
+    "slug": "s-factoring",
+    "name": "Sファクタリング",
+    "url": "https://s-factoring.jp/",
+    "status": 0,
+    "error": "ENOTFOUND"
+  },
+  {
+    "rank": 210,
+    "slug": "shikin-quick",
+    "name": "資金調達QUICK",
+    "url": "https://shikin-quick.com/",
+    "status": 0,
+    "error": "ENOTFOUND"
+  },
+  {
+    "rank": 212,
+    "slug": "vistia",
+    "name": "VISTIA",
+    "url": "https://vistia-factoring.jp/",
+    "status": 0,
+    "error": "ENOTFOUND"
+  },
+  {
+    "rank": 213,
+    "slug": "witt",
+    "name": "ウィット",
+    "url": "https://witt-factoring.jp/",
+    "status": 0,
+    "error": "ENOTFOUND"
+  },
+  {
+    "rank": 214,
+    "slug": "alps-finance",
+    "name": "アルプスファイナンスサービス",
+    "url": "https://alps-finance.co.jp/",
+    "status": 0,
+    "error": "ENOTFOUND"
+  },
+  {
+    "rank": 215,
+    "slug": "central-medience",
+    "name": "セントラルメディエンスペイメンツ",
+    "url": "https://central-medience.co.jp/",
+    "status": 0,
+    "error": "ENOTFOUND"
+  },
+  {
+    "rank": 217,
+    "slug": "e-bank",
+    "name": "いーばんく",
+    "url": "https://e-bank-factoring.jp/",
+    "status": 0,
+    "error": "ENOTFOUND"
+  },
+  {
+    "rank": 218,
+    "slug": "ebis-holdings",
+    "name": "エビスホールディングス",
+    "url": "https://ebis-holdings.co.jp/",
+    "status": 0,
+    "error": "ENOTFOUND"
+  },
+  {
+    "rank": 220,
+    "slug": "fast-factoring",
+    "name": "ファストファクタリング",
+    "url": "https://fast-factoring.jp/",
+    "status": 0,
+    "error": "ENOTFOUND"
+  },
+  {
+    "rank": 221,
+    "slug": "growrize",
+    "name": "グローライズ",
+    "url": "https://growrize.co.jp/",
+    "status": 0,
+    "error": "ENOTFOUND"
+  },
+  {
+    "rank": 222,
+    "slug": "healthee-one",
+    "name": "HealtheeOne",
+    "url": "https://healthee-one.co.jp/",
+    "status": 0,
+    "error": "ENOTFOUND"
+  },
+  {
+    "rank": 226,
+    "slug": "jsc-factoring",
+    "name": "JSC",
+    "url": "https://jsc-factoring.jp/",
+    "status": 0,
+    "error": "ENOTFOUND"
+  },
+  {
+    "rank": 227,
+    "slug": "k-support",
+    "name": "Kサポート",
+    "url": "https://k-support.co.jp/",
+    "status": 0,
+    "error": "ERR_TLS_CERT_ALTNAME_INVALID"
+  },
+  {
+    "rank": 228,
+    "slug": "kosei",
+    "name": "コーセイ",
+    "url": "https://kosei-factoring.jp/",
+    "status": 0,
+    "error": "ENOTFOUND"
+  },
+  {
+    "rank": 229,
+    "slug": "kyushu-factor",
+    "name": "九州ファクター",
+    "url": "https://kyushu-factor.jp/",
+    "status": 0,
+    "error": "ENOTFOUND"
+  },
+  {
+    "rank": 230,
+    "slug": "localworks-payment",
+    "name": "ローカルワークスペイメント",
+    "url": "https://localworks-payment.jp/",
+    "status": 0,
+    "error": "ENOTFOUND"
+  },
+  {
+    "rank": 231,
+    "slug": "make-move",
+    "name": "メイク・ムーヴ",
+    "url": "https://make-move.co.jp/",
+    "status": 0,
+    "error": "ENOTFOUND"
+  },
+  {
+    "rank": 232,
+    "slug": "meisei-enterprise",
+    "name": "明成エンタープライズ",
+    "url": "https://meisei-enterprise.co.jp/",
+    "status": 0,
+    "error": "ENOTFOUND"
+  },
+  {
+    "rank": 233,
+    "slug": "ms-quest",
+    "name": "エムズクエスト",
+    "url": "https://ms-quest.co.jp/",
+    "status": 0,
+    "error": "ENOTFOUND"
+  },
+  {
+    "rank": 235,
+    "slug": "rearth",
+    "name": "REARTH",
+    "url": "https://rearth.co.jp/",
+    "status": 0,
+    "error": "ERR_SSL_UNSUPPORTED_PROTOCOL"
+  },
+  {
+    "rank": 236,
+    "slug": "rising",
+    "name": "ライジング",
+    "url": "https://rising-factoring.jp/",
+    "status": 0,
+    "error": "ENOTFOUND"
+  },
+  {
+    "rank": 237,
+    "slug": "ryfety",
+    "name": "ライフティ",
+    "url": "https://ryfety.co.jp/",
+    "status": 0,
+    "error": "ENOTFOUND"
+  },
+  {
+    "rank": 238,
+    "slug": "s-com",
+    "name": "S-COM",
+    "url": "https://s-com.jp/",
+    "status": 0,
+    "error": "ERR_TLS_CERT_ALTNAME_INVALID"
+  },
+  {
+    "rank": 240,
+    "slug": "shikin-plus",
+    "name": "SHIKIN+",
+    "url": "https://shikin-plus.jp/",
+    "status": 0,
+    "error": "ENOTFOUND"
+  },
+  {
+    "rank": 241,
+    "slug": "sinsia",
+    "name": "シンシア",
+    "url": "https://sinsia.co.jp/",
+    "status": 0,
+    "error": "ENOTFOUND"
+  },
+  {
+    "rank": 243,
+    "slug": "smart-factor",
+    "name": "スマートファクター",
+    "url": "https://smartfactor.jp/",
+    "status": 0,
+    "error": "ENOTFOUND"
+  },
+  {
+    "rank": 245,
+    "slug": "sokuderu",
+    "name": "ソクデル",
+    "url": "https://sokuderu.jp/",
+    "status": 0,
+    "error": "ENOTFOUND"
+  },
+  {
+    "rank": 246,
+    "slug": "sokula",
+    "name": "SOKULA",
+    "url": "https://sokula.jp/",
+    "status": 0,
+    "error": "ENOTFOUND"
+  },
+  {
+    "rank": 247,
+    "slug": "sowa-enterprise",
+    "name": "創和エンタープライズ",
+    "url": "https://sowa-enterprise.co.jp/",
+    "status": 0,
+    "error": "ENOTFOUND"
+  },
+  {
+    "rank": 248,
+    "slug": "taihei-fs",
+    "name": "太平フィナンシャルサービス",
+    "url": "https://www.taihei-fs.co.jp/",
+    "status": 0,
+    "error": "ENOTFOUND"
+  },
+  {
+    "rank": 249,
+    "slug": "tomin-shinpan",
+    "name": "トミンシンパン",
+    "url": "https://www.tomin.co.jp/",
+    "status": 0,
+    "error": "ENOTFOUND"
+  },
+  {
+    "rank": 251,
+    "slug": "trust-pay",
+    "name": "トラストペイ",
+    "url": "https://trust-pay.jp/",
+    "status": 0,
+    "error": "This operation was aborted"
+  },
+  {
+    "rank": 252,
+    "slug": "unity-factoring",
+    "name": "UNITY",
+    "url": "https://unity-factoring.jp/",
+    "status": 0,
+    "error": "ENOTFOUND"
+  },
+  {
+    "rank": 253,
+    "slug": "zen-confiance",
+    "name": "善コンフィアンス",
+    "url": "https://zen-confiance.co.jp/",
+    "status": 0,
+    "error": "ENOTFOUND"
+  },
+  {
+    "rank": 254,
+    "slug": "zerofac",
+    "name": "ZEROファク",
+    "url": "https://zerofac.jp/",
+    "status": 0,
+    "error": "ENOTFOUND"
+  }
+]

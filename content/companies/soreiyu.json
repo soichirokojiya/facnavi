@@ -39,7 +39,7 @@
     "サービス業"
   ],
   "overallRating": 3.5,
-  "rankPosition": 78,
+  "rankPosition": 45,
   "requiredDocuments": [
     "請求書",
     "通帳コピー",
@@ -93,24 +93,7 @@
       "handMax": 9900000
     }
   ],
-  "comparisons": [
-    {
-      "competitor": "サポートバンク",
-      "competitorSlug": "supporter-bank",
-      "points": [
-        "ソレイユの手数料は1〜15%で、サポートバンク（3〜15%）より低め",
-        "両社とも即日入金に対応"
-      ]
-    },
-    {
-      "competitor": "SoKuMo（ソクモ）",
-      "competitorSlug": "sokumu",
-      "points": [
-        "両社とも手数料は1〜15%で同水準",
-        "両社とも即日入金に対応"
-      ]
-    }
-  ],
+  "comparisons": [],
   "detailSections": {
     "merits": [
       {

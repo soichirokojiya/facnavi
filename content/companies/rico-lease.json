@@ -39,7 +39,7 @@
     "サービス業"
   ],
   "overallRating": 3.5,
-  "rankPosition": 144,
+  "rankPosition": 65,
   "requiredDocuments": [
     "請求書",
     "売掛金証明書類",
@@ -93,14 +93,6 @@
       "points": [
         "両社とも手数料は1〜5%で同水準",
         "リコーリースは最短5日対応、りそな決済サービスは最短3日対応"
-      ]
-    },
-    {
-      "competitor": "Rise",
-      "competitorSlug": "rise-factoring",
-      "points": [
-        "リコーリースの手数料は1〜5%で、Rise（3〜15%）より低め",
-        "リコーリースは最短5日対応、Riseは即日入金対応"
       ]
     }
   ],

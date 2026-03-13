@@ -39,7 +39,7 @@
     "サービス業"
   ],
   "overallRating": 3.5,
-  "rankPosition": 205,
+  "rankPosition": 90,
   "requiredDocuments": [
     "売掛金証明書類",
     "決算書",
@@ -85,25 +85,7 @@
       "handMax": 9950000
     }
   ],
-  "comparisons": [
-    {
-      "competitor": "セントラルメディエンスペイメンツ",
-      "competitorSlug": "central-medience",
-      "points": [
-        "NTTファイナンスの手数料は0.5〜3%で、セントラルメディエンスペイメンツ（1〜5%）より低め",
-        "NTTファイナンスは最短5日対応、セントラルメディエンスペイメンツは最短3日対応"
-      ]
-    },
-    {
-      "competitor": "みんなのファクタリング",
-      "competitorSlug": "minnano-factoring",
-      "points": [
-        "NTTファイナンスの手数料は0.5〜3%で、みんなのファクタリング（5〜15%）より低め",
-        "NTTファイナンスは最短5日対応、みんなのファクタリングは即日入金対応",
-        "NTTファイナンスの買取上限は5,000万円、みんなのファクタリングは500万円"
-      ]
-    }
-  ],
+  "comparisons": [],
   "detailSections": {
     "merits": [
       {

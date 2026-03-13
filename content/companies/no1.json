@@ -39,7 +39,7 @@
     "サービス業"
   ],
   "overallRating": 4.5,
-  "rankPosition": 10,
+  "rankPosition": 9,
   "requiredDocuments": [
     "請求書",
     "通帳コピー",
@@ -173,5 +173,9 @@
   ],
   "operatingHours": "9:00〜19:00",
   "phone": "0120-700-339",
-  "branches": ["東京本社", "名古屋支社", "福岡支社"]
+  "branches": [
+    "東京本社",
+    "名古屋支社",
+    "福岡支社"
+  ]
 }

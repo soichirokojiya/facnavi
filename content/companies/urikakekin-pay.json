@@ -38,7 +38,7 @@
     "サービス業"
   ],
   "overallRating": 3.5,
-  "rankPosition": 168,
+  "rankPosition": 71,
   "requiredDocuments": [
     "請求書",
     "通帳コピー",
@@ -91,14 +91,6 @@
     }
   ],
   "comparisons": [
-    {
-      "competitor": "トランザクションファイナンス",
-      "competitorSlug": "transaction-finance",
-      "points": [
-        "トランザクションファイナンスの手数料2〜10%に対し、売掛金PAY JBLは3〜15%",
-        "両社とも即日入金に対応"
-      ]
-    },
     {
       "competitor": "CXコミット",
       "competitorSlug": "cx-commit",

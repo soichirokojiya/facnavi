@@ -39,7 +39,7 @@
     "サービス業"
   ],
   "overallRating": 3.5,
-  "rankPosition": 211,
+  "rankPosition": 92,
   "requiredDocuments": [
     "請求書",
     "通帳コピー",
@@ -92,24 +92,7 @@
       "handMax": 9800000
     }
   ],
-  "comparisons": [
-    {
-      "competitor": "資金調達QUICK",
-      "competitorSlug": "shikin-quick",
-      "points": [
-        "トラペイの手数料は2〜12%で、資金調達QUICK（1〜15%）より低め",
-        "両社とも即日入金に対応"
-      ]
-    },
-    {
-      "competitor": "VISTIA",
-      "competitorSlug": "vistia",
-      "points": [
-        "トラペイの手数料は2〜12%で、VISTIA（3〜15%）より低め",
-        "両社とも即日入金に対応"
-      ]
-    }
-  ],
+  "comparisons": [],
   "detailSections": {
     "merits": [
       {

@@ -39,7 +39,7 @@
     "サービス業"
   ],
   "overallRating": 4,
-  "rankPosition": 52,
+  "rankPosition": 36,
   "requiredDocuments": [
     "請求書",
     "通帳コピー",
@@ -102,14 +102,6 @@
       "competitorSlug": "factoru",
       "points": [
         "FACTOR⁺Uの手数料1.5〜10%に対し、ファクタリングのTRYは3〜20%",
-        "両社とも即日入金に対応"
-      ]
-    },
-    {
-      "competitor": "ファクタリング東京",
-      "competitorSlug": "factoring-tokyo",
-      "points": [
-        "ファクタリング東京の手数料3〜15%に対し、ファクタリングのTRYは3〜20%",
         "両社とも即日入金に対応"
       ]
     }

@@ -39,7 +39,7 @@
     "サービス業"
   ],
   "overallRating": 3,
-  "rankPosition": 216,
+  "rankPosition": 93,
   "requiredDocuments": [
     "請求書",
     "通帳コピー",
@@ -91,24 +91,7 @@
       "handMax": 9800000
     }
   ],
-  "comparisons": [
-    {
-      "competitor": "いーばんく",
-      "competitorSlug": "e-bank",
-      "points": [
-        "CoolPayの手数料は2〜12%で、いーばんく（3〜15%）より低め",
-        "両社とも即日入金に対応"
-      ]
-    },
-    {
-      "competitor": "セントラルメディエンスペイメンツ",
-      "competitorSlug": "central-medience",
-      "points": [
-        "セントラルメディエンスペイメンツの手数料1〜5%に対し、CoolPayは2〜12%",
-        "CoolPayは即日入金対応、セントラルメディエンスペイメンツは最短3日対応"
-      ]
-    }
-  ],
+  "comparisons": [],
   "detailSections": {
     "merits": [
       {

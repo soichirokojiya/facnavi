@@ -39,7 +39,7 @@
     "サービス業"
   ],
   "overallRating": 4,
-  "rankPosition": 59,
+  "rankPosition": 41,
   "requiredDocuments": [
     "請求書",
     "過去の請求書",
@@ -94,15 +94,6 @@
     }
   ],
   "comparisons": [
-    {
-      "competitor": "事業資金エージェント",
-      "competitorSlug": "jigyou-agent",
-      "points": [
-        "JPSの手数料は2〜10%で、事業資金エージェント（1.5〜15%）より低め",
-        "JPSは最短2日対応、事業資金エージェントは即日入金対応",
-        "JPSの買取上限は5,000万円、事業資金エージェントは2億円"
-      ]
-    },
     {
       "competitor": "JA三井リース",
       "competitorSlug": "ja-mitsui-lease",

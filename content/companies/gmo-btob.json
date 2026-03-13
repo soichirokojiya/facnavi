@@ -39,7 +39,7 @@
     "サービス業"
   ],
   "overallRating": 4.3,
-  "rankPosition": 29,
+  "rankPosition": 24,
   "requiredDocuments": [
     "請求書",
     "基本契約書",
@@ -100,15 +100,6 @@
         "GMO BtoB早払いは東証プライム上場企業が直接運営",
         "OLTAはAI審査で手数料2〜9%、GMOは1〜10%",
         "両社ともオンライン完結型"
-      ]
-    },
-    {
-      "competitor": "セゾンインボイス",
-      "competitorSlug": "saison-invoice",
-      "points": [
-        "GMOは決済大手、セゾンは信販大手のグループ",
-        "両社とも手数料1%〜の低コスト",
-        "GMOはIT企業ならではのテクノロジー活用"
       ]
     }
   ],

@@ -39,7 +39,7 @@
     "サービス業"
   ],
   "overallRating": 4,
-  "rankPosition": 82,
+  "rankPosition": 46,
   "requiredDocuments": [
     "印鑑証明書",
     "会社謄本",
@@ -94,14 +94,6 @@
     }
   ],
   "comparisons": [
-    {
-      "competitor": "東京SPCマネジメント",
-      "competitorSlug": "tokyo-spc",
-      "points": [
-        "うりかけ堂の手数料は2〜12%で、東京SPCマネジメント（3〜15%）より低め",
-        "うりかけ堂は即日入金対応、東京SPCマネジメントは最短3日対応"
-      ]
-    },
     {
       "competitor": "ヤマトクレジットファイナンス",
       "competitorSlug": "yamato-credit",

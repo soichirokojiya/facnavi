@@ -39,7 +39,7 @@
     "サービス業"
   ],
   "overallRating": 3.5,
-  "rankPosition": 99,
+  "rankPosition": 55,
   "requiredDocuments": [
     "請求書",
     "通帳コピー",
@@ -92,14 +92,6 @@
     }
   ],
   "comparisons": [
-    {
-      "competitor": "ビジネスファンド",
-      "competitorSlug": "business-fund",
-      "points": [
-        "両社とも手数料は3〜15%で同水準",
-        "両社とも即日入金に対応"
-      ]
-    },
     {
       "competitor": "ヤマトクレジットファイナンス",
       "competitorSlug": "yamato-credit",

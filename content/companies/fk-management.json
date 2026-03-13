@@ -39,7 +39,7 @@
     "サービス業"
   ],
   "overallRating": 3.5,
-  "rankPosition": 118,
+  "rankPosition": 57,
   "requiredDocuments": [
     "請求書",
     "通帳コピー",
@@ -91,24 +91,7 @@
       "handMax": 9700000
     }
   ],
-  "comparisons": [
-    {
-      "competitor": "FinFin",
-      "competitorSlug": "finfin",
-      "points": [
-        "両社とも手数料は3〜15%で同水準",
-        "両社とも即日入金に対応"
-      ]
-    },
-    {
-      "competitor": "FPSメディカル",
-      "competitorSlug": "fps-medical",
-      "points": [
-        "FPSメディカルの手数料0.25〜5%に対し、FKマネージメントは3〜15%",
-        "FKマネージメントは即日入金対応、FPSメディカルは最短14日対応"
-      ]
-    }
-  ],
+  "comparisons": [],
   "detailSections": {
     "merits": [
       {

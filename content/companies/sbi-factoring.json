@@ -39,7 +39,7 @@
     "サービス業"
   ],
   "overallRating": 3.5,
-  "rankPosition": 74,
+  "rankPosition": 44,
   "requiredDocuments": [
     "決算書（2期分）",
     "入出金明細（6ヶ月分）",
@@ -92,24 +92,7 @@
       "handMax": 9950000
     }
   ],
-  "comparisons": [
-    {
-      "competitor": "SoKuMo（ソクモ）",
-      "competitorSlug": "sokumu",
-      "points": [
-        "入金QUICKの手数料は0.5〜3.8%で、SoKuMo（ソクモ）（1〜15%）より低め",
-        "入金QUICKは最短2日対応、SoKuMo（ソクモ）は即日入金対応"
-      ]
-    },
-    {
-      "competitor": "三鉱",
-      "competitorSlug": "sanko-factoring",
-      "points": [
-        "入金QUICKの手数料は0.5〜3.8%で、三鉱（3〜15%）より低め",
-        "入金QUICKは最短2日対応、三鉱は即日入金対応"
-      ]
-    }
-  ],
+  "comparisons": [],
   "detailSections": {
     "merits": [
       {

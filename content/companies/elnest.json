@@ -39,7 +39,7 @@
     "サービス業"
   ],
   "overallRating": 3.5,
-  "rankPosition": 50,
+  "rankPosition": 35,
   "requiredDocuments": [
     "請求書",
     "通帳コピー",
@@ -94,14 +94,6 @@
     }
   ],
   "comparisons": [
-    {
-      "competitor": "Easy factor",
-      "competitorSlug": "easy-factor",
-      "points": [
-        "Easy factorの手数料2〜8%に対し、エルネストは3〜15%",
-        "両社とも即日入金に対応"
-      ]
-    },
     {
       "competitor": "ファクタリングのTRY",
       "competitorSlug": "factoring-try",

@@ -39,7 +39,7 @@
     "サービス業"
   ],
   "overallRating": 4,
-  "rankPosition": 140,
+  "rankPosition": 63,
   "requiredDocuments": [
     "身分証明書",
     "通帳コピー",
@@ -92,14 +92,6 @@
     }
   ],
   "comparisons": [
-    {
-      "competitor": "レグペイ",
-      "competitorSlug": "regu-pay",
-      "points": [
-        "両社とも手数料は3〜15%で同水準",
-        "両社とも即日入金に対応"
-      ]
-    },
     {
       "competitor": "PayPay銀行ビジネスローン",
       "competitorSlug": "paypal-biz-loan",

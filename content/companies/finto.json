@@ -39,7 +39,7 @@
     "サービス業"
   ],
   "overallRating": 3.5,
-  "rankPosition": 198,
+  "rankPosition": 88,
   "requiredDocuments": [
     "請求書",
     "通帳コピー",
@@ -91,25 +91,7 @@
       "handMax": 9800000
     }
   ],
-  "comparisons": [
-    {
-      "competitor": "バイオン",
-      "competitorSlug": "bion",
-      "points": [
-        "Fintoの手数料は2〜9.5%で、バイオン（10〜10%）より低め",
-        "Fintoは最短2日対応、バイオンは即日入金対応"
-      ]
-    },
-    {
-      "competitor": "ファクタリングジャパン",
-      "competitorSlug": "factoring-japan",
-      "points": [
-        "Fintoの手数料は2〜9.5%で、ファクタリングジャパン（3〜15%）より低め",
-        "Fintoは最短2日対応、ファクタリングジャパンは即日入金対応",
-        "Fintoの買取上限は5,000万円、ファクタリングジャパンは3億円"
-      ]
-    }
-  ],
+  "comparisons": [],
   "detailSections": {
     "merits": [
       {
