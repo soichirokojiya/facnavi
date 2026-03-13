@@ -3,7 +3,7 @@
   "name": "株式会社クレディセゾン",
   "brandName": "SAISON INVOICE",
   "description": "クレディセゾングループが提供するSAISON INVOICEは、ファクタリングに加え請求書作成代行も行う複合型サービス。手数料は1〜8%と低水準で、企業から個人事業主・フリーランスまで幅広く利用可能。オンライン完結に対応し、AI審査・即日入金・債権譲渡登記不要など利便性の高い仕組みが整っている。",
-  "affiliateUrl": "https://www.saisoninvoice.com/",
+  "affiliateUrl": "",
   "factoringType": "2社間・3社間",
   "feeRange": {
     "min": 1,

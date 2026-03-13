@@ -138,16 +138,18 @@ export default async function CompanyReviewsPage({ params }: Props) {
         ))}
       </div>
 
-      <div className="text-center">
-        <a
-          href={`/go/${company.slug}`}
-          target="_blank"
-          rel="nofollow sponsored noopener"
-          className="affiliate-link"
-        >
-          {displayName(company)}の公式サイトへ →
-        </a>
-      </div>
+      {company.affiliateUrl && (
+        <div className="text-center">
+          <a
+            href={`/go/${company.slug}`}
+            target="_blank"
+            rel="nofollow sponsored noopener"
+            className="affiliate-link"
+          >
+            {displayName(company)}の公式サイトへ →
+          </a>
+        </div>
+      )}
 
       <div className="mt-8 text-center">
         <Link

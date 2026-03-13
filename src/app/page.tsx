@@ -211,14 +211,16 @@ export default async function HomePage() {
                     <Badge key={f} variant="primary">{f}</Badge>
                   ))}
                 </div>
-                <a
-                  href={`/go/${company.slug}`}
-                  target="_blank"
-                  rel="nofollow sponsored noopener"
-                  className="block text-center py-3 px-8 bg-gradient-to-br from-emerald-500 to-emerald-700 text-white font-bold text-sm rounded-full hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300 md:w-auto shrink-0"
-                >
-                  公式サイトを見る
-                </a>
+                {company.affiliateUrl && (
+                  <a
+                    href={`/go/${company.slug}`}
+                    target="_blank"
+                    rel="nofollow sponsored noopener"
+                    className="block text-center py-3 px-8 bg-gradient-to-br from-emerald-500 to-emerald-700 text-white font-bold text-sm rounded-full hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300 md:w-auto shrink-0"
+                  >
+                    公式サイトを見る
+                  </a>
+                )}
               </div>
             </div>
           ))}
@@ -256,14 +258,16 @@ export default async function HomePage() {
                       <Badge key={f} variant="primary">{f}</Badge>
                     ))}
                   </div>
-                  <a
-                    href={`/go/${company.slug}`}
-                    target="_blank"
-                    rel="nofollow sponsored noopener"
-                    className="block text-center py-2.5 bg-gradient-to-br from-emerald-500 to-emerald-700 text-white font-bold text-sm rounded-full hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300 mt-auto"
-                  >
-                    公式サイトを見る
-                  </a>
+                  {company.affiliateUrl && (
+                    <a
+                      href={`/go/${company.slug}`}
+                      target="_blank"
+                      rel="nofollow sponsored noopener"
+                      className="block text-center py-2.5 bg-gradient-to-br from-emerald-500 to-emerald-700 text-white font-bold text-sm rounded-full hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300 mt-auto"
+                    >
+                      公式サイトを見る
+                    </a>
+                  )}
                 </div>
               );
             })}
@@ -276,7 +280,7 @@ export default async function HomePage() {
               className="inline-flex items-center gap-2 px-8 py-3.5 bg-gradient-to-r from-blue-600 to-blue-700 text-white font-bold text-sm rounded-full shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300"
             >
               4位以降のランキングを見る
-              <span className="text-xs opacity-80">（全255社）</span>
+              <span className="text-xs opacity-80">（全{companies.length}社）</span>
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg>
             </Link>
           </div>
@@ -480,16 +484,18 @@ export default async function HomePage() {
                     <span><span className="text-gray-400">法人・個人事業主</span> <span className={`font-bold ${company.soleProprietorOk ? "text-green-600" : "text-gray-300"}`}>{company.soleProprietorOk ? "OK" : ""}</span></span>
                   </div>
                   <div className="flex gap-2 md:w-auto flex-shrink-0">
-                    <a
-                      href={`/go/${company.slug}`}
-                      target="_blank"
-                      rel="nofollow sponsored noopener"
-                      className={`bg-gradient-to-br from-emerald-500 to-emerald-700 text-white font-bold rounded-full hover:shadow-lg transition-all ${
-                        i === 0 ? "px-5 py-2.5 text-sm" : "px-4 py-2 text-xs"
-                      }`}
-                    >
-                      公式サイト
-                    </a>
+                    {company.affiliateUrl && (
+                      <a
+                        href={`/go/${company.slug}`}
+                        target="_blank"
+                        rel="nofollow sponsored noopener"
+                        className={`bg-gradient-to-br from-emerald-500 to-emerald-700 text-white font-bold rounded-full hover:shadow-lg transition-all ${
+                          i === 0 ? "px-5 py-2.5 text-sm" : "px-4 py-2 text-xs"
+                        }`}
+                      >
+                        公式サイト
+                      </a>
+                    )}
                     <Link
                       href={`/ranking/${company.slug}`}
                       className={`border border-gray-200 text-gray-700 font-bold rounded-full hover:bg-gray-50 transition-colors ${

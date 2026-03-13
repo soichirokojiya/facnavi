@@ -2,7 +2,7 @@
   "slug": "trusfort",
   "name": "トラストフォート",
   "description": "個人事業主やフリーランスに特化した2社間ファクタリング。10万円の少額から利用でき、手数料3〜18%で即日入金に対応。必要書類が少なくオンライン完結で初めての方も安心。",
-  "affiliateUrl": "https://trusfort.jp/",
+  "affiliateUrl": "",
   "factoringType": "2社間",
   "feeRange": {
     "min": 3,

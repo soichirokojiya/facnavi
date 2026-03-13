@@ -117,16 +117,18 @@ export default async function CompanyDetailPage({ params }: Props) {
         <p className="text-gray-600 mt-3">{company.description}</p>
       </div>
 
-      <div className="text-center mb-8">
-        <a
-          href={`/go/${company.slug}`}
-          target="_blank"
-          rel="nofollow sponsored noopener"
-          className="affiliate-link text-lg"
-        >
-          {displayName(company)}の公式サイトへ →
-        </a>
-      </div>
+      {company.affiliateUrl && (
+        <div className="text-center mb-8">
+          <a
+            href={`/go/${company.slug}`}
+            target="_blank"
+            rel="nofollow sponsored noopener"
+            className="affiliate-link text-lg"
+          >
+            {displayName(company)}の公式サイトへ →
+          </a>
+        </div>
+      )}
 
       <Card className="p-6 mb-8">
         <h2 className="text-lg font-bold mb-4">基本情報</h2>
@@ -353,16 +355,18 @@ export default async function CompanyDetailPage({ params }: Props) {
         </section>
       )}
 
-      <div className="text-center mb-12">
-        <a
-          href={`/go/${company.slug}`}
-          target="_blank"
-          rel="nofollow sponsored noopener"
-          className="affiliate-link text-lg"
-        >
-          {displayName(company)}に無料相談する →
-        </a>
-      </div>
+      {company.affiliateUrl && (
+        <div className="text-center mb-12">
+          <a
+            href={`/go/${company.slug}`}
+            target="_blank"
+            rel="nofollow sponsored noopener"
+            className="affiliate-link text-lg"
+          >
+            {displayName(company)}に無料相談する →
+          </a>
+        </div>
+      )}
 
       {/* 関連記事 */}
       <section className="mb-8">

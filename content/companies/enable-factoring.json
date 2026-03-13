@@ -2,7 +2,7 @@
   "slug": "enable-factoring",
   "name": "エネイブル",
   "description": "WEB完結で最短30分の入金を実現するファクタリング会社。手数料1.5%〜で諸経費一切不要。10万円からの少額対応可能で、赤字決算・税金未納・開業1年未満でも買取検討OK。独自の審査基準により他社で断られた方にも対応。",
-  "affiliateUrl": "https://enable-factoring.jp/",
+  "affiliateUrl": "",
   "factoringType": "2社間・3社間",
   "feeRange": {
     "min": 3,

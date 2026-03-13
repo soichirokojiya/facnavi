@@ -3,7 +3,7 @@
   "name": "株式会社レグペイ",
   "brandName": "レグペイ",
   "description": "支払企業が導入する3社間ファクタリングを軸としたサービス。手数料3〜15%で即日入金に対応。ラクーンフィナンシャルと提携し債権保証も提供、中小企業やフリーランスの資金繰り改善を支援します。",
-  "affiliateUrl": "https://regu-pay.jp/",
+  "affiliateUrl": "",
   "factoringType": "2社間・3社間",
   "feeRange": {
     "min": 3,

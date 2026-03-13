@@ -3,7 +3,7 @@
   "name": "アクスモーション株式会社",
   "brandName": "ファインディングラボ",
   "description": "複数のファクタリング会社を比較・提案する無料マッチングサービス。手数料2〜15%の中から最適な条件を提示。個人事業主も利用でき、即日対応可能。一括比較で手間なく最安値のファクタリングを見つけられる。",
-  "affiliateUrl": "https://finding-labo.jp/",
+  "affiliateUrl": "",
   "factoringType": "2社間・3社間",
   "feeRange": {
     "min": 2,

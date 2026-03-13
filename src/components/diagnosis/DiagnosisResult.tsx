@@ -78,16 +78,18 @@ export function DiagnosisResultView({ results, onReset }: DiagnosisResultProps) 
                   </div>
                 </div>
 
-                <div className="mt-4">
-                  <a
-                    href={`/go/${result.company.slug}`}
-                    target="_blank"
-                    rel="nofollow sponsored noopener"
-                    className="affiliate-link text-sm"
-                  >
-                    公式サイトで詳しく見る →
-                  </a>
-                </div>
+                {result.company.affiliateUrl && (
+                  <div className="mt-4">
+                    <a
+                      href={`/go/${result.company.slug}`}
+                      target="_blank"
+                      rel="nofollow sponsored noopener"
+                      className="affiliate-link text-sm"
+                    >
+                      公式サイトで詳しく見る →
+                    </a>
+                  </div>
+                )}
               </div>
             </div>
           </Card>

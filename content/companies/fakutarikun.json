@@ -2,7 +2,7 @@
   "slug": "fakutarikun",
   "name": "ふぁくたりくん",
   "description": "2社間・3社間対応のファクタリングサービス。手数料3〜18%、最短即日入金で個人事業主も利用可能。少額案件にも柔軟に対応し、オンライン完結で全国どこからでも申し込める。建設・運送・IT業界の中小企業に最適。",
-  "affiliateUrl": "https://fakutarikun.jp/",
+  "affiliateUrl": "",
   "factoringType": "2社間・3社間",
   "feeRange": {
     "min": 3,

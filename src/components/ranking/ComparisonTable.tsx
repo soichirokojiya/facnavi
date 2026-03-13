@@ -71,14 +71,18 @@ export function ComparisonTable({ companies }: ComparisonTableProps) {
                 )}
               </td>
               <td className="px-4 py-3 text-center">
-                <a
-                  href={`/go/${company.slug}`}
-                  target="_blank"
-                  rel="nofollow sponsored noopener"
-                  className="inline-block px-3 py-1 bg-[#43a047] text-white text-xs font-bold rounded hover:bg-[#2e7d32] transition-colors"
-                >
-                  公式サイト
-                </a>
+                {company.affiliateUrl ? (
+                  <a
+                    href={`/go/${company.slug}`}
+                    target="_blank"
+                    rel="nofollow sponsored noopener"
+                    className="inline-block px-3 py-1 bg-[#43a047] text-white text-xs font-bold rounded hover:bg-[#2e7d32] transition-colors"
+                  >
+                    公式サイト
+                  </a>
+                ) : (
+                  <span className="text-xs text-gray-400">−</span>
+                )}
               </td>
             </tr>
           ))}
