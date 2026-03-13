@@ -13,7 +13,6 @@ import { formatFeeRange, formatAmount } from "@/lib/format";
 import { KeywordSearch, SearchableCompany } from "@/components/search/KeywordSearch";
 import { FAQ_DATA } from "@/lib/faq";
 import { CurrentDate } from "@/components/ui/CurrentDate";
-import { FixedCTA } from "@/components/layout/FixedCTA";
 import { RotationBanner } from "@/components/ads/RotationBanner";
 import { MitsumoriHeroBanner } from "@/components/banners/MitsumoriHeroBanner";
 import { getLatestNews } from "@/lib/news";
@@ -689,7 +688,6 @@ export default async function HomePage() {
         </div>
       </section>
 
-      <FixedCTA />
     </>
   );
 }

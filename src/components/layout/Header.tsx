@@ -94,7 +94,7 @@ export function Header() {
               href="/mitsumori"
               className="ml-2 px-4 py-2 bg-amber-500 hover:bg-amber-600 text-white text-sm font-bold rounded-lg transition-colors"
             >
-              一括見積もり
+              無料一括見積もり
             </Link>
           </div>
 
