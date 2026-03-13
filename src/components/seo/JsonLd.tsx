@@ -53,12 +53,16 @@ export function ArticleJsonLd({
   url,
   publishedAt,
   updatedAt,
+  authorName,
+  authorDescription,
 }: {
   title: string;
   description: string;
   url: string;
   publishedAt: string;
   updatedAt?: string;
+  authorName?: string;
+  authorDescription?: string;
 }) {
   return (
     <JsonLd
@@ -70,6 +74,11 @@ export function ArticleJsonLd({
         url,
         datePublished: publishedAt,
         ...(updatedAt && { dateModified: updatedAt }),
+        author: {
+          "@type": authorName === "ファクナビ編集部" ? "Organization" : "Person",
+          name: authorName ?? "ファクナビ編集部",
+          ...(authorDescription && { description: authorDescription }),
+        },
         publisher: {
           "@type": "Organization",
           name: "ファクナビ",

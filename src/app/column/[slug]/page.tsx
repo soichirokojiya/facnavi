@@ -3,13 +3,14 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import { getArticleBySlug, getArticleSlugs, extractHeadings, getAllArticles } from "@/lib/articles";
 import { getCompanyBySlug, displayName } from "@/lib/companies";
+import { getAuthorById } from "@/lib/authors";
 import { Breadcrumb } from "@/components/layout/Breadcrumb";
 import { TableOfContents } from "@/components/articles/TableOfContents";
 import { Card } from "@/components/ui/Card";
 import { Badge } from "@/components/ui/Badge";
 import { StarRating } from "@/components/ui/StarRating";
 import { ArticleEyecatch } from "@/components/articles/ArticleEyecatch";
-import { BreadcrumbJsonLd, ArticleJsonLd } from "@/components/seo/JsonLd";
+import { BreadcrumbJsonLd, ArticleJsonLd, FAQJsonLd } from "@/components/seo/JsonLd";
 import { SITE_URL } from "@/lib/constants";
 import { formatFeeRange } from "@/lib/format";
 import Image from "next/image";
@@ -116,6 +117,8 @@ export default async function ArticleDetailPage({ params }: Props) {
     .map((s) => getCompanyBySlug(s))
     .filter(Boolean);
 
+  const authorData = article.author ? getAuthorById(article.author) : undefined;
+
   const allArticles = getAllArticles();
   const relatedArticles = (article.relatedArticles ?? [])
     .map((s) => allArticles.find((a) => a.slug === s))
@@ -136,7 +139,12 @@ export default async function ArticleDetailPage({ params }: Props) {
         url={`${SITE_URL}/column/${slug}`}
         publishedAt={article.publishedAt}
         updatedAt={article.updatedAt}
+        authorName={authorData?.name ?? article.author}
+        authorDescription={authorData?.description ?? article.authorBio}
       />
+      {article.faq && article.faq.length > 0 && (
+        <FAQJsonLd faqs={article.faq} />
+      )}
 
       <Breadcrumb
         items={[
@@ -166,12 +174,23 @@ export default async function ArticleDetailPage({ params }: Props) {
               <Image src={article.authorIcon} width={40} height={40} alt={article.author || "著者"} className="w-10 h-10 rounded-full object-cover" />
             ) : (
               <div className="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 text-sm font-bold shrink-0">
-                {(article.author || "編")[0]}
+                {(authorData?.name ?? article.author ?? "編")[0]}
               </div>
             )}
             <div>
-              <p className="text-sm font-bold text-gray-900">{article.author || "ファクナビ編集部"}</p>
-              {article.authorBio && <p className="text-xs text-gray-500">{article.authorBio}</p>}
+              <p className="text-sm font-bold text-gray-900">{authorData?.name ?? article.author ?? "ファクナビ編集部"}</p>
+              {(authorData?.description || article.authorBio) && (
+                <p className="text-xs text-gray-500">{article.authorBio ?? authorData?.description}</p>
+              )}
+              {authorData?.expertise && (
+                <div className="flex flex-wrap gap-1 mt-1">
+                  {authorData.expertise.map((tag) => (
+                    <span key={tag} className="text-[10px] bg-blue-50 text-blue-600 px-1.5 py-0.5 rounded">
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+              )}
             </div>
           </div>
         </div>
@@ -220,10 +239,19 @@ export default async function ArticleDetailPage({ params }: Props) {
               <span className="text-white text-2xl md:text-3xl font-black">F</span>
             </div>
             <div>
-              <p className="text-lg font-bold text-gray-900">ファクナビ編集部</p>
+              <p className="text-lg font-bold text-gray-900">{authorData?.name ?? "ファクナビ編集部"}</p>
               <p className="text-sm text-gray-600 mt-1 leading-relaxed">
-                ファクタリング比較サイト「ファクナビ」の編集部です。FP・税理士監修のもと、ファクタリングや資金調達に関する正確でわかりやすい情報をお届けしています。中小企業・個人事業主の経営者の方が最適な資金調達方法を見つけられるよう、実践的なコンテンツを発信中。
+                {authorData?.description ?? "ファクタリング比較サイト「ファクナビ」の編集部です。FP・税理士監修のもと、ファクタリングや資金調達に関する正確でわかりやすい情報をお届けしています。中小企業・個人事業主の経営者の方が最適な資金調達方法を見つけられるよう、実践的なコンテンツを発信中。"}
               </p>
+              {authorData?.expertise && (
+                <div className="flex flex-wrap gap-1.5 mt-3">
+                  {authorData.expertise.map((tag) => (
+                    <span key={tag} className="text-xs bg-blue-50 text-blue-700 px-2 py-1 rounded-md font-medium">
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+              )}
               <Link
                 href="/column"
                 className="inline-flex items-center gap-1.5 mt-3 text-sm font-bold text-blue-600 hover:text-blue-800 transition-colors"

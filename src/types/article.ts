@@ -14,6 +14,7 @@ export interface ArticleFrontmatter {
   authorBio?: string;
   relatedCompanies?: string[];
   relatedArticles?: string[];
+  faq?: { question: string; answer: string }[];
 }
 
 export interface Article extends ArticleFrontmatter {
