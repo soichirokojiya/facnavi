@@ -15,6 +15,7 @@ export interface ArticleFrontmatter {
   relatedCompanies?: string[];
   relatedArticles?: string[];
   faq?: { question: string; answer: string }[];
+  noindex?: boolean;
 }
 
 export interface Article extends ArticleFrontmatter {
