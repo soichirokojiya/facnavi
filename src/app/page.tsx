@@ -17,6 +17,7 @@ import { FixedCTA } from "@/components/layout/FixedCTA";
 import { RotationBanner } from "@/components/ads/RotationBanner";
 import { MitsumoriHeroBanner } from "@/components/banners/MitsumoriHeroBanner";
 import { getLatestNews } from "@/lib/news";
+import { NewsTicker } from "@/components/ui/NewsTicker";
 
 /* セクション見出し */
 function SectionHeading({
@@ -177,6 +178,9 @@ export default async function HomePage() {
           </div>
         </div>
       </section>
+
+      {/* ━━━ ニュースティッカー ━━━ */}
+      <NewsTicker news={latestNews.map(n => ({ slug: n.slug, title: n.title, publishedAt: n.publishedAt, category: n.category }))} />
 
       {/* ━━━ おすすめ TOP3 ━━━ */}
       <section className="pt-6 md:pt-8 pb-10 md:pb-14 bg-white">
