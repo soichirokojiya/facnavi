@@ -38,7 +38,7 @@
     "サービス業"
   ],
   "overallRating": 3.5,
-  "rankPosition": 69,
+  "rankPosition": 163,
   "requiredDocuments": [
     "請求書",
     "通帳コピー",
@@ -91,6 +91,14 @@
     }
   ],
   "comparisons": [
+    {
+      "competitor": "ティー・アンド・エス",
+      "competitorSlug": "t-and-s",
+      "points": [
+        "テックペイの手数料は2〜12%で、ティー・アンド・エス（3〜15%）より低め",
+        "両社とも即日入金に対応"
+      ]
+    },
     {
       "competitor": "CXコミット",
       "competitorSlug": "cx-commit",

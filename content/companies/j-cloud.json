@@ -39,7 +39,7 @@
     "サービス業"
   ],
   "overallRating": 3.5,
-  "rankPosition": 58,
+  "rankPosition": 122,
   "requiredDocuments": [
     "請求書",
     "通帳コピー",
@@ -91,7 +91,24 @@
       "handMax": 9800000
     }
   ],
-  "comparisons": [],
+  "comparisons": [
+    {
+      "competitor": "ハートフルライフ",
+      "competitorSlug": "heartful-life",
+      "points": [
+        "ジェイクラウドの手数料は2〜12%で、ハートフルライフ（3〜15%）より低め",
+        "両社とも即日入金に対応"
+      ]
+    },
+    {
+      "competitor": "浜銀ファイナンス",
+      "competitorSlug": "hamagin-finance",
+      "points": [
+        "浜銀ファイナンスの手数料1〜5%に対し、ジェイクラウドは2〜12%",
+        "ジェイクラウドは即日入金対応、浜銀ファイナンスは最短5日対応"
+      ]
+    }
+  ],
   "detailSections": {
     "merits": [
       {

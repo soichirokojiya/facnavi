@@ -39,7 +39,7 @@
     "サービス業"
   ],
   "overallRating": 3,
-  "rankPosition": 100,
+  "rankPosition": 242,
   "requiredDocuments": [
     "請求書",
     "印鑑証明書",
@@ -93,6 +93,14 @@
     }
   ],
   "comparisons": [
+    {
+      "competitor": "シンシア",
+      "competitorSlug": "sinsia",
+      "points": [
+        "両社とも手数料は3〜15%で同水準",
+        "両社とも即日入金に対応"
+      ]
+    },
     {
       "competitor": "SMFL",
       "competitorSlug": "smfl",

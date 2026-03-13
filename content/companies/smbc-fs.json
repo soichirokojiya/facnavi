@@ -39,7 +39,7 @@
     "サービス業"
   ],
   "overallRating": 4.5,
-  "rankPosition": 13,
+  "rankPosition": 15,
   "requiredDocuments": [
     "売掛債権に関する書類",
     "決算書",
@@ -152,6 +152,15 @@
     }
   ],
   "comparisons": [
+    {
+      "competitor": "セゾンインボイス",
+      "competitorSlug": "saison-invoice",
+      "points": [
+        "SMBCはメガバンクグループ、セゾンインボイスは信販大手グループ",
+        "SMBCは主に3社間、セゾンインボイスは2社間・3社間対応",
+        "SMBCは大口取引に特に強い"
+      ]
+    },
     {
       "competitor": "ビートレーディング",
       "competitorSlug": "betrading",

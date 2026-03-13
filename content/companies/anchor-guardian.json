@@ -39,7 +39,7 @@
     "サービス業"
   ],
   "overallRating": 3.5,
-  "rankPosition": 34,
+  "rankPosition": 42,
   "requiredDocuments": [
     "請求書",
     "通帳コピー",
@@ -92,6 +92,14 @@
     }
   ],
   "comparisons": [
+    {
+      "competitor": "AGビジネスサポート",
+      "competitorSlug": "ag-business",
+      "points": [
+        "AGビジネスサポートの手数料2〜12%に対し、アンカーガーディアンは3〜15%",
+        "両社とも即日入金に対応"
+      ]
+    },
     {
       "competitor": "アクリーティブ",
       "competitorSlug": "accretive",

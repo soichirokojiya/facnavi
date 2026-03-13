@@ -39,7 +39,7 @@
     "サービス業"
   ],
   "overallRating": 3.5,
-  "rankPosition": 60,
+  "rankPosition": 126,
   "requiredDocuments": [
     "請求書",
     "通帳コピー",
@@ -91,7 +91,24 @@
       "handMax": 9700000
     }
   ],
-  "comparisons": [],
+  "comparisons": [
+    {
+      "competitor": "建設Pay",
+      "competitorSlug": "kensetsu-pay",
+      "points": [
+        "両社とも手数料は3〜15%で同水準",
+        "両社とも即日入金に対応"
+      ]
+    },
+    {
+      "competitor": "浜銀ファイナンス",
+      "competitorSlug": "hamagin-finance",
+      "points": [
+        "浜銀ファイナンスの手数料1〜5%に対し、KISマネジメントは3〜15%",
+        "KISマネジメントは即日入金対応、浜銀ファイナンスは最短5日対応"
+      ]
+    }
+  ],
   "detailSections": {
     "merits": [
       {

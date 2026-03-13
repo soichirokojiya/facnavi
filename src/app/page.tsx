@@ -276,7 +276,7 @@ export default async function HomePage() {
               className="inline-flex items-center gap-2 px-8 py-3.5 bg-gradient-to-r from-blue-600 to-blue-700 text-white font-bold text-sm rounded-full shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300"
             >
               4位以降のランキングを見る
-              <span className="text-xs opacity-80">（全{companies.length}社）</span>
+              <span className="text-xs opacity-80">（全255社）</span>
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg>
             </Link>
           </div>

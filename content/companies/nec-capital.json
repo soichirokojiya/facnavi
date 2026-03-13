@@ -39,7 +39,7 @@
     "大企業・中堅企業"
   ],
   "overallRating": 3.5,
-  "rankPosition": 17,
+  "rankPosition": 20,
   "requiredDocuments": [
     "売掛債権に関する書類",
     "決算書"
@@ -158,6 +158,15 @@
         "NECキャピタルはNECグループ、SMBCは三井住友グループ",
         "両社とも大手企業の信頼性が強み",
         "SMBCは金融特化、NECキャピタルはIT・製造にも強い"
+      ]
+    },
+    {
+      "competitor": "セゾンインボイス",
+      "competitorSlug": "saison-invoice",
+      "points": [
+        "NECキャピタルは総合リース・ファイナンス企業",
+        "セゾンインボイスは信販大手グループ",
+        "両社とも法人向けの安定したサービスを提供"
       ]
     }
   ]

@@ -38,7 +38,7 @@
     "サービス業"
   ],
   "overallRating": 3.5,
-  "rankPosition": 89,
+  "rankPosition": 201,
   "requiredDocuments": [
     "請求書",
     "通帳コピー"
@@ -89,7 +89,26 @@
       "handMax": 9850000
     }
   ],
-  "comparisons": [],
+  "comparisons": [
+    {
+      "competitor": "ジャパンファクター",
+      "competitorSlug": "japanfactor",
+      "points": [
+        "日本中小企業金融サポート機構の手数料は1.5〜10%で、ジャパンファクター（5〜20%）より低め",
+        "日本中小企業金融サポート機構は最短3日対応、ジャパンファクターは即日入金対応",
+        "日本中小企業金融サポート機構の買取上限は3億円、ジャパンファクターは1億円"
+      ]
+    },
+    {
+      "competitor": "インボイスPay",
+      "competitorSlug": "invoice-pay",
+      "points": [
+        "日本中小企業金融サポート機構の手数料は1.5〜10%で、インボイスPay（2.5〜15%）より低め",
+        "日本中小企業金融サポート機構は最短3日対応、インボイスPayは即日入金対応",
+        "日本中小企業金融サポート機構の買取上限は3億円、インボイスPayは5,000万円"
+      ]
+    }
+  ],
   "detailSections": {
     "merits": [
       {

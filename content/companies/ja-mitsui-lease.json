@@ -39,7 +39,7 @@
     "サービス業"
   ],
   "overallRating": 3.5,
-  "rankPosition": 40,
+  "rankPosition": 57,
   "requiredDocuments": [
     "請求書",
     "通帳コピー",
@@ -93,6 +93,14 @@
       "points": [
         "両社とも手数料は1〜5%で同水準",
         "JA三井リースは最短5日対応、福岡銀行アーリーペイメントは最短3日対応"
+      ]
+    },
+    {
+      "competitor": "喜望大地",
+      "competitorSlug": "gmmi",
+      "points": [
+        "JA三井リースの手数料は1〜5%で、喜望大地（3〜15%）より低め",
+        "JA三井リースは最短5日対応、喜望大地は即日入金対応"
       ]
     }
   ],

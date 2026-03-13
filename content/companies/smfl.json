@@ -39,7 +39,7 @@
     "サービス業"
   ],
   "overallRating": 3,
-  "rankPosition": 101,
+  "rankPosition": 244,
   "requiredDocuments": [
     "請求書",
     "売掛金明細",
@@ -86,7 +86,24 @@
       "handMax": 9950000
     }
   ],
-  "comparisons": [],
+  "comparisons": [
+    {
+      "competitor": "太平フィナンシャルサービス",
+      "competitorSlug": "taihei-fs",
+      "points": [
+        "SMFLの手数料は0.5〜3%で、太平フィナンシャルサービス（1〜8%）より低め",
+        "SMFLは最短5日対応、太平フィナンシャルサービスは最短3日対応"
+      ]
+    },
+    {
+      "competitor": "スマートファクター",
+      "competitorSlug": "smart-factor",
+      "points": [
+        "SMFLの手数料は0.5〜3%で、スマートファクター（2〜12%）より低め",
+        "SMFLは最短5日対応、スマートファクターは即日入金対応"
+      ]
+    }
+  ],
   "detailSections": {
     "merits": [
       {

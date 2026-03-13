@@ -39,7 +39,7 @@
     "サービス業"
   ],
   "overallRating": 3.5,
-  "rankPosition": 72,
+  "rankPosition": 173,
   "requiredDocuments": [
     "請求書",
     "通帳コピー"
@@ -97,6 +97,15 @@
       "points": [
         "CXコミットの手数料は2〜15%で、miraregi（5〜15%）より低め",
         "両社とも即日入金に対応"
+      ]
+    },
+    {
+      "competitor": "財務会計支援機構",
+      "competitorSlug": "zaimukaikei-shien",
+      "points": [
+        "CXコミットの手数料は2〜15%で、財務会計支援機構（3〜15%）より低め",
+        "両社とも即日入金に対応",
+        "CXコミットの買取上限は1,000万円、財務会計支援機構は5,000万円"
       ]
     }
   ],

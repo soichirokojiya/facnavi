@@ -39,7 +39,7 @@
     "サービス業"
   ],
   "overallRating": 4.5,
-  "rankPosition": 103,
+  "rankPosition": 256,
   "requiredDocuments": [
     "請求書",
     "本人確認書類",
@@ -150,5 +150,23 @@
       "handMax": 9050000
     }
   ],
-  "comparisons": []
+  "comparisons": [
+    {
+      "competitor": "ウィット",
+      "competitorSlug": "witt",
+      "points": [
+        "CASH NOWの手数料は9.5〜9.5%で、ウィット（5〜20%）より低め",
+        "両社とも即日入金に対応",
+        "CASH NOWの買取上限は5,000万円、ウィットは500万円"
+      ]
+    },
+    {
+      "competitor": "ZEROファク",
+      "competitorSlug": "zerofac",
+      "points": [
+        "ZEROファクの手数料1〜10%に対し、CASH NOWは9.5〜9.5%",
+        "両社とも即日入金に対応"
+      ]
+    }
+  ]
 }

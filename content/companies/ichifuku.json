@@ -38,7 +38,7 @@
     "サービス業"
   ],
   "overallRating": 3,
-  "rankPosition": 96,
+  "rankPosition": 224,
   "requiredDocuments": [
     "請求書",
     "通帳コピー",
@@ -97,6 +97,14 @@
       "points": [
         "両社とも手数料は3〜15%で同水準",
         "両社とも即日入金に対応"
+      ]
+    },
+    {
+      "competitor": "HealtheeOne",
+      "competitorSlug": "healthee-one",
+      "points": [
+        "HealtheeOneの手数料1〜5%に対し、一福は3〜15%",
+        "一福は即日入金対応、HealtheeOneは最短3日対応"
       ]
     }
   ],

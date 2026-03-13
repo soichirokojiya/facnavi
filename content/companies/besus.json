@@ -39,7 +39,7 @@
     "サービス業"
   ],
   "overallRating": 3.5,
-  "rankPosition": 53,
+  "rankPosition": 95,
   "requiredDocuments": [
     "請求書",
     "通帳コピー",
@@ -92,6 +92,14 @@
     }
   ],
   "comparisons": [
+    {
+      "competitor": "ベルシステム",
+      "competitorSlug": "belle-system",
+      "points": [
+        "besusの手数料は2〜15%で、ベルシステム（3〜15%）より低め",
+        "両社とも即日入金に対応"
+      ]
+    },
     {
       "competitor": "ヤマトクレジットファイナンス",
       "competitorSlug": "yamato-credit",

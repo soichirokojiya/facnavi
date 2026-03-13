@@ -39,7 +39,7 @@
     "サービス業"
   ],
   "overallRating": 3.5,
-  "rankPosition": 87,
+  "rankPosition": 195,
   "requiredDocuments": [
     "注文書・発注書",
     "通帳コピー（3ヶ月分）",
@@ -92,6 +92,15 @@
     }
   ],
   "comparisons": [
+    {
+      "competitor": "バイオン",
+      "competitorSlug": "bion",
+      "points": [
+        "バイオンの手数料10〜10%に対し、ベストペイは5〜20%",
+        "ベストペイは最短2日対応、バイオンは即日入金対応",
+        "ベストペイの買取上限は3億円、バイオンは5,000万円"
+      ]
+    },
     {
       "competitor": "財全グループ",
       "competitorSlug": "zaizen-group",

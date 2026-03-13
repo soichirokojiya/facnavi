@@ -39,7 +39,7 @@
     "サービス業"
   ],
   "overallRating": 3.5,
-  "rankPosition": 56,
+  "rankPosition": 112,
   "requiredDocuments": [
     "請求書",
     "通帳コピー",
@@ -91,7 +91,24 @@
       "handMax": 9800000
     }
   ],
-  "comparisons": [],
+  "comparisons": [
+    {
+      "competitor": "ファクタリングノース",
+      "competitorSlug": "factoring-north",
+      "points": [
+        "ファクタリングプロの手数料は2〜15%で、ファクタリングノース（3〜15%）より低め",
+        "両社とも即日入金に対応"
+      ]
+    },
+    {
+      "competitor": "FPSメディカル",
+      "competitorSlug": "fps-medical",
+      "points": [
+        "FPSメディカルの手数料0.25〜5%に対し、ファクタリングプロは2〜15%",
+        "ファクタリングプロは即日入金対応、FPSメディカルは最短14日対応"
+      ]
+    }
+  ],
   "detailSections": {
     "merits": [
       {

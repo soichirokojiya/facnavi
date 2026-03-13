@@ -39,7 +39,7 @@
     "サービス業"
   ],
   "overallRating": 3.5,
-  "rankPosition": 67,
+  "rankPosition": 153,
   "requiredDocuments": [
     "請求書",
     "通帳コピー",
@@ -92,6 +92,14 @@
     }
   ],
   "comparisons": [
+    {
+      "competitor": "資金調達ダイレクト",
+      "competitorSlug": "shikinchotatsu-direct",
+      "points": [
+        "資金調達ダイレクトの手数料2〜12%に対し、シンキコーポレーションは3〜15%",
+        "両社とも即日入金に対応"
+      ]
+    },
     {
       "competitor": "セイノーフィナンシャル",
       "competitorSlug": "seino-financial",

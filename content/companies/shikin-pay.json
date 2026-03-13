@@ -39,7 +39,7 @@
     "サービス業"
   ],
   "overallRating": 3.5,
-  "rankPosition": 91,
+  "rankPosition": 209,
   "requiredDocuments": [
     "請求書",
     "通帳コピー",
@@ -91,7 +91,25 @@
       "handMax": 9700000
     }
   ],
-  "comparisons": [],
+  "comparisons": [
+    {
+      "competitor": "Sファクタリング",
+      "competitorSlug": "s-factoring",
+      "points": [
+        "両社とも手数料は3〜15%で同水準",
+        "両社とも即日入金に対応",
+        "資金調達ペイの買取上限は5,000万円、Sファクタリングは3,000万円"
+      ]
+    },
+    {
+      "competitor": "VISTIA",
+      "competitorSlug": "vistia",
+      "points": [
+        "両社とも手数料は3〜15%で同水準",
+        "両社とも即日入金に対応"
+      ]
+    }
+  ],
   "detailSections": {
     "merits": [
       {

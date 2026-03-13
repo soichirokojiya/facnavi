@@ -39,7 +39,7 @@
     "サービス業"
   ],
   "overallRating": 4.3,
-  "rankPosition": 20,
+  "rankPosition": 25,
   "requiredDocuments": [
     "請求書",
     "通帳コピー",
@@ -99,6 +99,15 @@
         "マネーフォワードは会計ソフト連携が強み、OLTAはAI審査が強み",
         "両社ともオンライン完結型",
         "マネーフォワードは手数料1〜10%、OLTAは2〜9%"
+      ]
+    },
+    {
+      "competitor": "Chatwork先払い",
+      "competitorSlug": "chatwork-sakibarai",
+      "points": [
+        "マネーフォワードは会計ソフト企業、Chatworkはコミュニケーション企業",
+        "両社ともIT大手グループが提供するファクタリング",
+        "マネーフォワードは会計データ連携でスムーズな審査"
       ]
     }
   ],

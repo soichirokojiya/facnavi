@@ -39,7 +39,7 @@
     "サービス業"
   ],
   "overallRating": 3.7,
-  "rankPosition": 84,
+  "rankPosition": 188,
   "requiredDocuments": [
     "売掛金証明書類",
     "決算書",
@@ -85,7 +85,24 @@
       "handMax": 9900000
     }
   ],
-  "comparisons": [],
+  "comparisons": [
+    {
+      "competitor": "NXキャピタル",
+      "competitorSlug": "nx-capital",
+      "points": [
+        "両社とも手数料は1〜5%で同水準",
+        "両社とも最短5日入金に対応"
+      ]
+    },
+    {
+      "competitor": "OTTI",
+      "competitorSlug": "otti",
+      "points": [
+        "オリックスの手数料は1〜5%で、OTTI（5〜20%）より低め",
+        "オリックスは最短5日対応、OTTIは即日入金対応"
+      ]
+    }
+  ],
   "detailSections": {
     "merits": [
       {

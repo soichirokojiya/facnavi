@@ -39,7 +39,7 @@
     "サービス業"
   ],
   "overallRating": 3.5,
-  "rankPosition": 61,
+  "rankPosition": 133,
   "requiredDocuments": [
     "請求書",
     "通帳コピー",
@@ -92,6 +92,14 @@
     }
   ],
   "comparisons": [
+    {
+      "competitor": "三田証券",
+      "competitorSlug": "mita-securities",
+      "points": [
+        "三田証券の手数料2〜10%に対し、mkトラストマネジメントは3〜15%",
+        "両社とも即日入金に対応"
+      ]
+    },
     {
       "competitor": "PayPay銀行ビジネスローン",
       "competitorSlug": "paypal-biz-loan",

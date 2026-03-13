@@ -39,7 +39,7 @@
     "サービス業"
   ],
   "overallRating": 3.5,
-  "rankPosition": 43,
+  "rankPosition": 68,
   "requiredDocuments": [
     "請求書",
     "通帳コピー",
@@ -92,7 +92,24 @@
       "handMax": 9800000
     }
   ],
-  "comparisons": [],
+  "comparisons": [
+    {
+      "competitor": "プラスライン",
+      "competitorSlug": "plus-line",
+      "points": [
+        "プラスラインの手数料3〜15%に対し、onfactは2〜20%",
+        "両社とも即日入金に対応"
+      ]
+    },
+    {
+      "competitor": "のりかえPLUS",
+      "competitorSlug": "norikae-plus",
+      "points": [
+        "のりかえPLUSの手数料5〜15%に対し、onfactは2〜20%",
+        "両社とも即日入金に対応"
+      ]
+    }
+  ],
   "detailSections": {
     "merits": [
       {
