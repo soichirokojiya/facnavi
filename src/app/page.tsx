@@ -62,6 +62,9 @@ export default async function HomePage() {
     <>
       <OrganizationJsonLd />
 
+      {/* ━━━ ニュースティッカー ━━━ */}
+      <NewsTicker news={latestNews.map(n => ({ slug: n.slug, title: n.title, publishedAt: n.publishedAt, category: n.category }))} />
+
       {/* ━━━ Hero ━━━ */}
       <section className="relative overflow-hidden bg-gradient-to-br from-blue-50 via-white to-emerald-50/40">
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
@@ -178,9 +181,6 @@ export default async function HomePage() {
           </div>
         </div>
       </section>
-
-      {/* ━━━ ニュースティッカー ━━━ */}
-      <NewsTicker news={latestNews.map(n => ({ slug: n.slug, title: n.title, publishedAt: n.publishedAt, category: n.category }))} />
 
       {/* ━━━ おすすめ TOP3 ━━━ */}
       <section className="pt-6 md:pt-8 pb-10 md:pb-14 bg-white">
