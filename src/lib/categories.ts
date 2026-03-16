@@ -390,7 +390,7 @@ const PREFECTURE_CATEGORIES: Category[] = PREFECTURE_DATA.map((pref) => ({
 const OTHER_CATEGORIES: Category[] = [
   {
     slug: "all-companies",
-    title: "ファクタリング会社一覧",
+    title: "ファクタリング会社一覧 - 全社比較で最適な業者が見つかる",
     h1: "ファクタリング会社一覧",
     description: "ファクナビに掲載されている全てのファクタリング会社を一覧で表示。手数料・入金スピード・口コミを比較できます。",
     metaDescription: "ファクタリング会社一覧。全社の手数料・入金スピード・口コミを比較してあなたに最適な業者が見つかります。",

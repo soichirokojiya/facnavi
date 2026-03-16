@@ -261,7 +261,7 @@ export function Footer() {
         <div className="max-w-6xl mx-auto px-4 py-6">
           <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
             <p className="text-xs">
-              &copy; {new Date().getFullYear()} {SITE_NAME} All rights reserved.
+              &copy; {new Date().getFullYear()} {SITE_NAME}（運営：<a href="https://www.cfac.co.jp/" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">Common Future &amp; Co.株式会社</a>）All rights reserved.
             </p>
             <p className="text-xs text-gray-500">
               ※当サイトはアフィリエイトプログラムに参加しています。掲載情報は各社公式サイトの内容に基づいていますが、最新情報は各社にお問い合わせください。

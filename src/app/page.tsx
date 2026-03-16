@@ -317,7 +317,7 @@ export default async function HomePage() {
                   <span className="text-[10px] font-bold text-white/80 bg-white/15 px-2.5 py-0.5 rounded-full">FACTORING GUIDE</span>
                   <span className="text-[10px] font-bold text-amber-200 bg-amber-400/20 px-2.5 py-0.5 rounded-full">寄稿記事</span>
                 </div>
-                <h3 className="text-lg md:text-xl font-black text-white mb-1.5 tracking-tight">ファクタリング入門</h3>
+                <h2 className="text-lg md:text-xl font-black text-white mb-1.5 tracking-tight">ファクタリング入門</h2>
                 <p className="text-sm text-white/80 leading-relaxed">30社以上の利用経験を持つ専門家「ろい」氏が、仕組み・手数料・選び方をわかりやすく解説</p>
               </div>
 
