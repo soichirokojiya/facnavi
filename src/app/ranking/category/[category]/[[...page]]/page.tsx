@@ -35,13 +35,16 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!cat) return {};
   const pageNum = page?.[0] ? parseInt(page[0]) : 1;
   const pageLabel = pageNum > 1 ? ` (${pageNum}ページ目)` : "";
+  const canonicalUrl = pageNum === 1
+    ? `${SITE_URL}/ranking/category/${cat.slug}`
+    : `${SITE_URL}/ranking/category/${cat.slug}/${pageNum}`;
   return {
     title: `${cat.title}${pageLabel}`,
     description: cat.metaDescription,
-    alternates: {
-      canonical: pageNum === 1
-        ? `${SITE_URL}/ranking/category/${cat.slug}`
-        : `${SITE_URL}/ranking/category/${cat.slug}/${pageNum}`,
+    alternates: { canonical: canonicalUrl },
+    openGraph: {
+      title: `${cat.title}${pageLabel} | ファクナビ`,
+      description: cat.metaDescription,
     },
   };
 }

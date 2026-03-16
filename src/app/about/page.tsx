@@ -5,9 +5,13 @@ import { BreadcrumbJsonLd } from "@/components/seo/JsonLd";
 import { SITE_NAME, SITE_URL } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: "運営会社情報",
-  description: `${SITE_NAME}の運営会社情報・サイト概要をご紹介します。`,
+  title: "運営会社情報 - サイト概要・会社概要",
+  description: `${SITE_NAME}の運営会社情報・サイト概要をご紹介します。運営元のCommon Future & Co.株式会社の会社概要、事業内容、免責事項について。`,
   alternates: { canonical: `${SITE_URL}/about` },
+  openGraph: {
+    title: `運営会社情報 - サイト概要・会社概要 | ${SITE_NAME}`,
+    description: `${SITE_NAME}の運営会社情報・サイト概要をご紹介します。`,
+  },
 };
 
 const companyInfo = [

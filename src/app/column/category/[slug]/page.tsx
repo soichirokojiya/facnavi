@@ -22,6 +22,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: `${category.label}の記事一覧｜ファクナビ`,
     description: category.description,
     alternates: { canonical: `${SITE_URL}/column/category/${slug}` },
+    openGraph: {
+      title: `${category.label}の記事一覧 | ファクナビ`,
+      description: category.description,
+    },
   };
 }
 

@@ -1,14 +1,17 @@
 import Link from "next/link";
 import { getAllNews } from "@/lib/news";
 import type { Metadata } from "next";
+import { Breadcrumb } from "@/components/layout/Breadcrumb";
+import { BreadcrumbJsonLd, JsonLd } from "@/components/seo/JsonLd";
+import { SITE_URL } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: "ファクタリング最新ニュース | ファクナビ",
+  title: "ファクタリング最新ニュース - 業界動向・法改正情報",
   description:
     "ファクタリング業界の最新ニュース・動向をお届け。法改正、新サービス、市場調査など、資金調達に役立つ情報を随時更新。",
-  alternates: { canonical: "https://facnavi.info/news" },
+  alternates: { canonical: `${SITE_URL}/news` },
   openGraph: {
-    title: "ファクタリング最新ニュース | ファクナビ",
+    title: "ファクタリング最新ニュース - 業界動向・法改正情報 | ファクナビ",
     description:
       "ファクタリング業界の最新ニュース・動向をお届け。法改正、新サービス、市場調査など、資金調達に役立つ情報を随時更新。",
   },
@@ -20,6 +23,27 @@ export default function NewsPage() {
   return (
     <div className="bg-slate-50 min-h-screen">
       <div className="max-w-4xl mx-auto px-4 py-10 md:py-14">
+        <BreadcrumbJsonLd
+          items={[
+            { name: "ホーム", url: SITE_URL },
+            { name: "ニュース", url: `${SITE_URL}/news` },
+          ]}
+        />
+        <JsonLd
+          data={{
+            "@context": "https://schema.org",
+            "@type": "CollectionPage",
+            name: "ファクタリング最新ニュース",
+            description: "ファクタリング業界の最新ニュース・動向をお届け。法改正、新サービス、市場調査など、資金調達に役立つ情報を随時更新。",
+            url: `${SITE_URL}/news`,
+            publisher: {
+              "@type": "Organization",
+              name: "ファクナビ",
+              url: SITE_URL,
+            },
+          }}
+        />
+        <Breadcrumb items={[{ label: "ニュース" }]} />
         <div className="mb-8">
           <p className="text-xs font-bold tracking-[0.15em] text-blue-600 mb-1">
             NEWS

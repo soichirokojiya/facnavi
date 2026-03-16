@@ -4,9 +4,13 @@ import { BreadcrumbJsonLd } from "@/components/seo/JsonLd";
 import { SITE_NAME, SITE_URL } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: "利用規約",
-  description: `${SITE_NAME}の利用規約です。当サイトをご利用いただく前に必ずお読みください。`,
+  title: "利用規約 - サイトご利用にあたって",
+  description: `${SITE_NAME}の利用規約です。サービス内容・免責事項・広告掲載について定めています。ご利用前に必ずお読みください。`,
   alternates: { canonical: `${SITE_URL}/terms` },
+  openGraph: {
+    title: `利用規約 - サイトご利用にあたって | ${SITE_NAME}`,
+    description: `${SITE_NAME}の利用規約です。サービス内容・免責事項・広告掲載について定めています。ご利用前に必ずお読みください。`,
+  },
 };
 
 export default function TermsPage() {

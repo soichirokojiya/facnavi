@@ -6,10 +6,15 @@ import { SITE_URL } from "@/lib/constants";
 import { ColumnListClient } from "@/components/articles/ColumnListClient";
 
 export const metadata: Metadata = {
-  title: "ファクナビ｜実践経営ノート",
+  title: "実践経営ノート - 資金繰り・経営改善コラム",
   description:
     "中小企業の資金繰り・経営改善に役立つナレッジを発信。ファクタリング・補助金・助成金など幅広く解説。",
   alternates: { canonical: `${SITE_URL}/column` },
+  openGraph: {
+    title: "実践経営ノート - 資金繰り・経営改善コラム | ファクナビ",
+    description:
+      "中小企業の資金繰り・経営改善に役立つナレッジを発信。ファクタリング・補助金・助成金など幅広く解説。",
+  },
 };
 
 export default function ColumnPage() {

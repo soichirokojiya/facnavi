@@ -5,9 +5,13 @@ import { SITE_NAME, SITE_URL } from "@/lib/constants";
 import { ContactForm } from "./ContactForm";
 
 export const metadata: Metadata = {
-  title: "お問い合わせ",
+  title: "お問い合わせ - ご質問・掲載依頼はこちら",
   description: `${SITE_NAME}へのお問い合わせはこちらから。サイトに関するご質問・ご意見・掲載依頼など、お気軽にご連絡ください。`,
   alternates: { canonical: `${SITE_URL}/contact` },
+  openGraph: {
+    title: `お問い合わせ - ご質問・掲載依頼はこちら | ${SITE_NAME}`,
+    description: `${SITE_NAME}へのお問い合わせはこちらから。サイトに関するご質問・ご意見・掲載依頼など、お気軽にご連絡ください。`,
+  },
 };
 
 export default function ContactPage() {

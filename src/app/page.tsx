@@ -172,10 +172,10 @@ export default async function HomePage() {
           <div className="text-center mt-5">
             <a href="https://px.a8.net/svt/ejp?a8mat=4AX5KD+9QOC36+4JGG+BXIYP" rel="nofollow">
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img width="468" height="60" alt="" src="https://www26.a8.net/svt/bgt?aid=260207725589&wid=001&eno=01&mid=s00000021184002004000&mc=1" className="inline-block max-w-full h-auto" />
+              <img width="468" height="60" alt="ファクタリングサービス広告" src="https://www26.a8.net/svt/bgt?aid=260207725589&wid=001&eno=01&mid=s00000021184002004000&mc=1" className="inline-block max-w-full h-auto" />
             </a>
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img width="1" height="1" src="https://www13.a8.net/0.gif?a8mat=4AX5KD+9QOC36+4JGG+BXIYP" alt="" />
+            <img width="1" height="1" src="https://www13.a8.net/0.gif?a8mat=4AX5KD+9QOC36+4JGG+BXIYP" alt="" role="presentation" />
             <p className="text-[9px] text-gray-300 mt-1">PR</p>
           </div>
         </div>

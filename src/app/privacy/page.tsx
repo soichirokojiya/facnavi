@@ -4,9 +4,13 @@ import { BreadcrumbJsonLd } from "@/components/seo/JsonLd";
 import { SITE_NAME, SITE_URL } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: "プライバシーポリシー",
-  description: `${SITE_NAME}のプライバシーポリシー（個人情報保護方針）です。`,
+  title: "プライバシーポリシー - 個人情報保護方針",
+  description: `${SITE_NAME}のプライバシーポリシー（個人情報保護方針）です。個人情報の取り扱い・Cookie・アクセス解析について説明しています。`,
   alternates: { canonical: `${SITE_URL}/privacy` },
+  openGraph: {
+    title: `プライバシーポリシー - 個人情報保護方針 | ${SITE_NAME}`,
+    description: `${SITE_NAME}のプライバシーポリシー（個人情報保護方針）です。個人情報の取り扱い・Cookie・アクセス解析について説明しています。`,
+  },
 };
 
 export default function PrivacyPage() {

@@ -29,6 +29,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: `ファクタリング業者おすすめランキング ${startIdx + 1}〜${startIdx + PER_PAGE}位【${new Date().getFullYear()}年最新】`,
     description: `ファクタリング業者ランキング${startIdx + 1}〜${startIdx + PER_PAGE}位を徹底比較。手数料・入金スピード・口コミ評価であなたに最適な業者が見つかります。条件別・業種別のカテゴリからも検索可能。`,
     alternates: { canonical: `${SITE_URL}/ranking/page/${pageNum}` },
+    openGraph: {
+      title: `ファクタリング業者おすすめランキング ${startIdx + 1}〜${startIdx + PER_PAGE}位 | ファクナビ`,
+      description: `ファクタリング業者ランキング${startIdx + 1}〜${startIdx + PER_PAGE}位を徹底比較。手数料・入金スピード・口コミ評価であなたに最適な業者が見つかります。`,
+    },
   };
 }
 

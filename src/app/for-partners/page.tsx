@@ -9,6 +9,11 @@ export const metadata: Metadata = {
   description:
     "ファクナビの一括見積もりサービスに掲載しませんか？質の高いリードを成果報酬型でお届け。初期費用・月額費用0円。先着5社限定で掲載パートナーを募集中。",
   alternates: { canonical: `${SITE_URL}/for-partners` },
+  openGraph: {
+    title: "ファクタリング会社様向け｜一括見積もりサービス掲載のご案内",
+    description:
+      "ファクナビの一括見積もりサービスに掲載しませんか？質の高いリードを成果報酬型でお届け。初期費用・月額費用0円。先着5社限定で掲載パートナーを募集中。",
+  },
 };
 
 function SectionHeading({
